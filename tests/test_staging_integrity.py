@@ -47,8 +47,12 @@ class StagingTests(unittest.TestCase):
   self.assertEqual(d['colors']['river_teal'],'#04AAB0')
   self.assertEqual(d['tagline'],'Know Pueblo. Help Shape Its Future.')
  def test_no_production_deploy(self):
-  self.assertFalse((P/'functions').exists())
+  # Pre-existing Cloudflare Pages config Function must remain intact.
+  # This candidate does not introduce new production API routes or D1 migrations.
   self.assertFalse((P/'wrangler.toml').exists())
+  for route in ['wiki','visor','shadow','scenarios','money','sources']:
+   self.assertFalse((P/'functions/api/v1'/route).exists(), route)
+  self.assertFalse((P/'migrations').exists())
   self.assertTrue((P/'candidates/unified-api/schema-proposal.sql').exists())
  def test_learning_links_to_explore(self):
   h=Collect();h.feed((P/'public/learn/index.html').read_text())

@@ -40,10 +40,13 @@ Perspectives are attributed and evaluated independently. Their existence does no
 ## Public projection gate
 Block unless S0, approved for PUBLIC with real human reviewer and unexpired date, source fingerprint/license verified, source chain intact, no protected person/location, past/present/future child statement reviewed. Bitemporal query checks `valid_from` and `recorded_at` separately. Source metadata and evidence states can be public while sensitive original contents remain inaccessible. For actual operational data, a verified, signed public manifest and identity-backed grants are required; reference approval strings alone are not genuine enforcement.
 
+## Two independent readiness axes
+The website may pass platform launch while issue/entity/source packets remain DISCOVERED, INDEXED or RESEARCHING. See `docs/RESEARCH_MATURITY_AND_PUBLICATION_POLICY.md`. Platform-wide security/hosting/accessibility/human release gates remain binding; an incomplete or disputed assertion blocks its own claim promotion, not every public navigation entry.
+
 ## Open NO-GO gates
 G0 Validate existence and exact SHA of prior 16MB hardened Q-Pueblo candidate and canonical brand vector/logo rights. Resolve main-vs-candidate ownership and release integration.
 G1 Integrate and execute D1 migrations in isolated Cloudflare test namespace after reviewing preexisting schema. No direct production mutation.
-G2 Reconcile original 2025–2026 archive, including October 16 counts (102 issue rows, 289 entities, 184 sources, 210 relationships, 435 held assertions) with identity version and evidentiary status before selecting any public subset.
+G2 Protect original 2025–2026 archive and reconcile each selected record before publishing its substantive claims. A safe neutral existing topic name may be indexed without a complete packet. Site launch is NOT gated on completing every historical packet; no held assertion may be auto-published.
 G3 Legal/privacy/defamation/child review of source-linked items, doxxing and metadata linkage risks, GIS license and precision, accessibility and educational age appropriateness.
 G4 Exact-head tests: Python, Node, hosted CSP, Playwright keyboard/viewport 320/390/768/1440, WAVE/axe review, actual source links and licenses. Local tests do not prove hosted behaviour.
 G5 Admin identity, approval and revocation; audit, backup/restore, retention, rate limiting, incident response, monitoring and rollback.

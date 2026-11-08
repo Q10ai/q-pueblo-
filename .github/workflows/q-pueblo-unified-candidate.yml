@@ -4,6 +4,9 @@ on:
     paths:
       - 'public/learn/**'
       - 'public/explore/**'
+      - 'public/stages/**'
+      - 'scripts/build_stages.py'
+      - 'tests/test_stages.py'
       - 'candidates/unified-api/**'
       - 'tests/test_staging_integrity.py'
       - '.github/workflows/q-pueblo-unified-candidate.yml'
@@ -25,6 +28,12 @@ jobs:
         run: node --test candidates/unified-api/tests/public-projection.test.mjs
       - name: Static-first learning, brand, Child Core and multiple-POV structural checks
         run: python3 -m unittest discover -s tests -p 'test_staging_integrity.py' -v
+      - name: Public navigation-only stage generation and policy checks
+        run: |
+          python3 scripts/build_stages.py
+          python3 -m unittest discover -s tests -p 'test_stages.py' -v
+          git diff --exit-code -- public/stages/catalog.json public/stages/index.html
+          node --check public/stages/stages.js
       - name: Explicit no-secret-artifact checks
         run: |
           test ! -e .env

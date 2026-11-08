@@ -1,0 +1,636 @@
+{
+  "schema": "Q_PUEBLO_PUBLIC_RESEARCH_STAGE_CATALOG_V0.1",
+  "built_from": "public/site.js",
+  "as_of": "2026-11-08",
+  "stage_definitions": [
+    {
+      "code": "DISCOVERED",
+      "explanation": "Signal received; authenticity and relevance not yet checked"
+    },
+    {
+      "code": "INDEXED",
+      "explanation": "Topic or institution located in the public navigation; not a finding"
+    },
+    {
+      "code": "RESEARCHING",
+      "explanation": "Sources and questions being assembled; conclusions withheld"
+    },
+    {
+      "code": "EVIDENCE_DEVELOPING",
+      "explanation": "Individual claims checked, counterevidence sought"
+    },
+    {
+      "code": "REVIEWED_FINDINGS",
+      "explanation": "Specific findings passed source and human review"
+    },
+    {
+      "code": "COMPREHENSIVE_PACKET",
+      "explanation": "Full QIFY packet with child, money, history and risk analysis"
+    },
+    {
+      "code": "MONITORING",
+      "explanation": "Reviewed evidence monitored for dated change and TTL"
+    },
+    {
+      "code": "SUPERSEDED_ARCHIVED",
+      "explanation": "Older version retained with amendment and successor links"
+    }
+  ],
+  "disclaimer": "Navigation labels from existing public site only. No assertion verification or operational City Shadow.",
+  "records": [
+    {
+      "id": "qp-public-issue-half-cent",
+      "kind": "ISSUE_NAVIGATION",
+      "title": "Half-Cent Economic Development Fund",
+      "summary": "Track economic-development funding authority, restrictions, projects and measurable returns.",
+      "category": "finance",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public issue index",
+          "href": "/#issues"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-issue-lime-road",
+      "kind": "ISSUE_NAVIGATION",
+      "title": "Lime Road and Industrial Corridor",
+      "summary": "Review road ownership, project boundaries, maintenance responsibility and funding.",
+      "category": "infrastructure",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public issue index",
+          "href": "/#issues"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-issue-airport",
+      "kind": "ISSUE_NAVIGATION",
+      "title": "Pueblo Memorial Airport Governance",
+      "summary": "Investigate lease versions, operating policy, airport funds and public oversight.",
+      "category": "governance",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public issue index",
+          "href": "/#issues"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-issue-falcon",
+      "kind": "ISSUE_NAVIGATION",
+      "title": "Project Falcon Research Archive",
+      "summary": "Separate industrial development proposals, infrastructure costs, incentives and realized results.",
+      "category": "development",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public issue index",
+          "href": "/#issues"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-issue-leaf",
+      "kind": "ISSUE_NAVIGATION",
+      "title": "Little Leaf Farms Proposal",
+      "summary": "Review airport-area economic-development proposal documents and performance conditions.",
+      "category": "development",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public issue index",
+          "href": "/#issues"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-issue-pura",
+      "kind": "ISSUE_NAVIGATION",
+      "title": "PURA, Urban Renewal and TIF",
+      "summary": "Follow tax-increment financing, urban-renewal boundaries, debt and reimbursement agreements.",
+      "category": "finance",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public issue index",
+          "href": "/#issues"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-issue-west-roads",
+      "kind": "ISSUE_NAVIGATION",
+      "title": "Pueblo West Roads and Drainage",
+      "summary": "Explore district roads, stormwater obligations, funding options and cross-jurisdiction decisions.",
+      "category": "infrastructure",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public issue index",
+          "href": "/#issues"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-issue-black-hills",
+      "kind": "ISSUE_NAVIGATION",
+      "title": "Black Hills Energy Rates",
+      "summary": "Track filed utility rate proposals, regulatory decisions and local bill consequences.",
+      "category": "energy",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public issue index",
+          "href": "/#issues"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-issue-salt-creek",
+      "kind": "ISSUE_NAVIGATION",
+      "title": "Salt Creek Environmental History",
+      "summary": "Build a dated record of land-use history, exposure pathways and environmental reviews.",
+      "category": "environment",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public issue index",
+          "href": "/#issues"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-issue-water",
+      "kind": "ISSUE_NAVIGATION",
+      "title": "Regional Water Supply and Treatment",
+      "summary": "Explore water rights, regional delivery, capital projects, funding and governance.",
+      "category": "water",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public issue index",
+          "href": "/#issues"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-issue-housing",
+      "kind": "ISSUE_NAVIGATION",
+      "title": "Housing Projects and Public Subsidies",
+      "summary": "Investigate public financing, affordability terms, land, TIF and housing results.",
+      "category": "housing",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public issue index",
+          "href": "/#issues"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-issue-comanche",
+      "kind": "ISSUE_NAVIGATION",
+      "title": "Comanche Energy Transition",
+      "summary": "Track facility-related energy policy, tax base, workforce support and planning.",
+      "category": "energy",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public issue index",
+          "href": "/#issues"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-issue-county-budget",
+      "kind": "ISSUE_NAVIGATION",
+      "title": "Pueblo County Budget and Debt",
+      "summary": "Compare adopted budgets, amendments, grants, debt and audited performance.",
+      "category": "finance",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public issue index",
+          "href": "/#issues"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-issue-elections",
+      "kind": "ISSUE_NAVIGATION",
+      "title": "Elections, Rules and Representation",
+      "summary": "Access official election procedures and laws without campaign advocacy.",
+      "category": "governance",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public issue index",
+          "href": "/#issues"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-issue-schools",
+      "kind": "ISSUE_NAVIGATION",
+      "title": "School Funding and District Decisions",
+      "summary": "Explore school district finance, board decisions, facilities and educational outcomes.",
+      "category": "finance",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public issue index",
+          "href": "/#issues"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-issue-transport",
+      "kind": "ISSUE_NAVIGATION",
+      "title": "Front Range Rail and Regional Transport",
+      "summary": "Track transportation proposals, state actions, funding commitments and plausible local impacts.",
+      "category": "infrastructure",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public issue index",
+          "href": "/#issues"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-group-01",
+      "kind": "INSTITUTION_GROUP_NAVIGATION",
+      "title": "City of Pueblo",
+      "summary": "Municipal ordinances, City Council, mayoral administration, municipal contracts and services.",
+      "category": "governance",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public institutions index",
+          "href": "/#governance"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-group-02",
+      "kind": "INSTITUTION_GROUP_NAVIGATION",
+      "title": "Pueblo County",
+      "summary": "County administration, land-use planning, elected offices, roads in county jurisdiction and public records.",
+      "category": "governance",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public institutions index",
+          "href": "/#governance"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-group-03",
+      "kind": "INSTITUTION_GROUP_NAVIGATION",
+      "title": "Pueblo West Metropolitan District",
+      "summary": "District services and governance, including its board, budgets and applicable road and utility functions.",
+      "category": "governance",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public institutions index",
+          "href": "/#governance"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-group-04",
+      "kind": "INSTITUTION_GROUP_NAVIGATION",
+      "title": "Pueblo Urban Renewal Authority",
+      "summary": "A distinct public body with redevelopment, tax-increment and project-specific governing instruments.",
+      "category": "governance",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public institutions index",
+          "href": "/#governance"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-group-05",
+      "kind": "INSTITUTION_GROUP_NAVIGATION",
+      "title": "Water, school and special districts",
+      "summary": "Separate authorities, budgets and boundaries. Search the relevant district rather than assuming city control.",
+      "category": "governance",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public institutions index",
+          "href": "/#governance"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    },
+    {
+      "id": "qp-public-group-06",
+      "kind": "INSTITUTION_GROUP_NAVIGATION",
+      "title": "Colorado and federal governments",
+      "summary": "Statutes, utility regulation, transportation, grants, environmental compliance and federal programs.",
+      "category": "governance",
+      "stage": "INDEXED",
+      "publication_state": "NAVIGATION_ONLY",
+      "evidence_state": "NOT_A_FINDING",
+      "child_impact": {
+        "past": "NOT_ASSESSED",
+        "present": "NOT_ASSESSED",
+        "future": "NOT_ASSESSED"
+      },
+      "links": [
+        {
+          "label": "Existing public institutions index",
+          "href": "/#governance"
+        }
+      ],
+      "provenance": {
+        "source_path": "public/site.js",
+        "source_kind": "ALREADY_PUBLIC_NAVIGATION",
+        "observed_at": "2026-11-08"
+      },
+      "packet_id": null
+    }
+  ]
+}
