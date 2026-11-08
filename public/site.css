@@ -8,3 +8,8 @@
 
 /* Linked research atlas card (separate review release) */
 .quick-actions a.action{text-decoration:none}
+
+/* Brand consistency in preserved beta tools (source artwork-derived mark). */
+.brand .brandmark{display:none}
+.brand:before{content:'';display:inline-block;flex:0 0 60px;width:60px;height:60px;background:#181039 url('qpueblo-mark.jpg') center/cover no-repeat;border-radius:11px;box-shadow:0 0 13px #ffb44e77}
+.brand strong{color:#ffcf7d;font-family:Georgia,serif}
