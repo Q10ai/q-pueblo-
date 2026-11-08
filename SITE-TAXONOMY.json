@@ -1,0 +1,295 @@
+{
+  "schema": "qpueblo.site-taxonomy.v0.2",
+  "date": "2026-11-07",
+  "status": "review-only; non-operational; human approval required",
+  "source_catalog": "Q-PUEBLO_FULL_CATALOG_AND_SHADOW_v2.0_2026-09-14.xlsx, DOMAIN CATALOG QP-00 through QP-30",
+  "header_navigation": [
+    "Home",
+    "Explore",
+    "Issue Packs",
+    "Data & Money",
+    "Digital Twin",
+    "Learn & Play",
+    "Search"
+  ],
+  "home_tiles": [
+    {
+      "id": "people-places",
+      "title": "People, Places & Pueblo History",
+      "domain_ids": [
+        "QP-01",
+        "QP-02",
+        "QP-04",
+        "QP-27"
+      ],
+      "facets": [
+        "neighborhoods",
+        "regional history",
+        "demographics",
+        "quality of life"
+      ],
+      "remark": "Expand beyond links: historical timeline, maps, source-backed neighborhood profiles."
+    },
+    {
+      "id": "government-law",
+      "title": "Government, Law & Civic Action",
+      "domain_ids": [
+        "QP-07",
+        "QP-16",
+        "QP-29"
+      ],
+      "facets": [
+        "city",
+        "county",
+        "special districts",
+        "elections",
+        "ordinances",
+        "public participation"
+      ],
+      "remark": "Office-holder effective-date snapshots; certified election and ordinance documents."
+    },
+    {
+      "id": "money",
+      "title": "Follow the Money",
+      "domain_ids": [
+        "QP-13"
+      ],
+      "facets": [
+        "budgets",
+        "taxes",
+        "grants",
+        "TIF",
+        "debt",
+        "contracts",
+        "funding flows",
+        "incentives"
+      ],
+      "cross_cutting": true,
+      "remark": "Cross-domain lens; do not flatten requested, authorized, paid and outcome."
+    },
+    {
+      "id": "housing-infrastructure",
+      "title": "Housing, Land & Infrastructure",
+      "domain_ids": [
+        "QP-10",
+        "QP-17",
+        "QP-18"
+      ],
+      "facets": [
+        "housing",
+        "property",
+        "roads",
+        "utility assets",
+        "development",
+        "maintenance",
+        "parcels"
+      ],
+      "remark": "Parcel, capital maintenance, affordability and whole-life cost linked to operators."
+    },
+    {
+      "id": "jobs-economy",
+      "title": "Jobs, Business & Industry",
+      "domain_ids": [
+        "QP-11",
+        "QP-12",
+        "QP-13",
+        "QP-28"
+      ],
+      "facets": [
+        "small business",
+        "workforce",
+        "unions",
+        "steel",
+        "industrial redevelopment",
+        "agriculture jobs"
+      ],
+      "remark": "Distinguish projected vs realized jobs, wages, local vendors, training and retention."
+    },
+    {
+      "id": "environment-resources",
+      "title": "Water, Energy & Environment",
+      "domain_ids": [
+        "QP-19",
+        "QP-20",
+        "QP-21"
+      ],
+      "facets": [
+        "energy",
+        "rates",
+        "water",
+        "air",
+        "contamination",
+        "food systems",
+        "animals",
+        "climate"
+      ],
+      "remark": "Human health impacts appear also in Health & Safety; regional watershed dependencies."
+    },
+    {
+      "id": "health-safety",
+      "title": "Health, Safety & Families",
+      "domain_ids": [
+        "QP-03",
+        "QP-09",
+        "QP-15",
+        "QP-26"
+      ],
+      "facets": [
+        "physical health",
+        "behavioral health",
+        "public safety",
+        "emergency recovery",
+        "civil rights",
+        "youth"
+      ],
+      "remark": "Protect private persons and clients; separation of allegations from findings."
+    },
+    {
+      "id": "learning-culture",
+      "title": "Education, Culture & Community",
+      "domain_ids": [
+        "QP-04",
+        "QP-05",
+        "QP-06",
+        "QP-08",
+        "QP-14",
+        "QP-22"
+      ],
+      "facets": [
+        "schools",
+        "higher education",
+        "arts",
+        "heritage",
+        "food culture",
+        "events",
+        "sports",
+        "nonprofits"
+      ],
+      "remark": "Includes local opportunities and life in Pueblo, not just government."
+    },
+    {
+      "id": "transportation",
+      "title": "Transportation, Airport & Connections",
+      "domain_ids": [
+        "QP-17",
+        "QP-25"
+      ],
+      "facets": [
+        "airport",
+        "freight",
+        "rail",
+        "transit",
+        "roads",
+        "military and federal sites",
+        "regional partners"
+      ],
+      "remark": "Airport remains a featured issue pack, not the only industrial entry point."
+    },
+    {
+      "id": "technology-future",
+      "title": "Technology, Information & the Future",
+      "domain_ids": [
+        "QP-23",
+        "QP-24",
+        "QP-30"
+      ],
+      "facets": [
+        "digital privacy",
+        "AI",
+        "media integrity",
+        "data centers",
+        "forecasts",
+        "long-run outcomes"
+      ],
+      "remark": "Digital Twin is a tool requiring versioned inputs, scope and simulation gate; not live until proven."
+    }
+  ],
+  "cross_cutting_domains": [
+    {
+      "id": "QP-00",
+      "name": "Provenance and Qification",
+      "exposure": "Every packet"
+    },
+    {
+      "id": "QP-13",
+      "name": "Public investment and finance",
+      "exposure": "Follow-the-Money lens across every substantive tile"
+    },
+    {
+      "id": "QP-17",
+      "name": "Public infrastructure",
+      "exposure": "Asset dependencies across topics"
+    },
+    {
+      "id": "QP-23",
+      "name": "Information integrity",
+      "exposure": "Controversy, fact checks and source lineage"
+    },
+    {
+      "id": "QP-25",
+      "name": "Regional / external dependencies",
+      "exposure": "All multi-jurisdiction and second/third-order graphs"
+    },
+    {
+      "id": "QP-26",
+      "name": "Resilience",
+      "exposure": "Stress/rollback on relevant packets"
+    },
+    {
+      "id": "QP-27",
+      "name": "Perceptions / quality of life",
+      "exposure": "Measure vs reported perspectives"
+    },
+    {
+      "id": "QP-28",
+      "name": "Makers and civic connectors",
+      "exposure": "Contribution edges only when verified"
+    },
+    {
+      "id": "QP-30",
+      "name": "Outcomes / long-term memory",
+      "exposure": "Every lifecycle and Q Effect"
+    }
+  ],
+  "tools_separate_from_topics": [
+    {
+      "id": "issue-packs",
+      "stage": "review candidate",
+      "description": "Living packets by case/issue ID"
+    },
+    {
+      "id": "data-money",
+      "stage": "review candidate",
+      "description": "Cross-domain finance tables and source-to-recipient chain"
+    },
+    {
+      "id": "digital-twin",
+      "stage": "non-operational",
+      "description": "Scenario visualization; no validated real-time model"
+    },
+    {
+      "id": "learn-play",
+      "stage": "prototype",
+      "description": "Multi-level Pueblo challenge with verified question bank and accessible play"
+    },
+    {
+      "id": "prompt-library",
+      "stage": "existing static utility",
+      "description": "Evidence prompts are optional, not primary answers"
+    },
+    {
+      "id": "contribute-correct",
+      "stage": "review only",
+      "description": "No live personal submission/intake enabled"
+    }
+  ],
+  "publication_gates": [
+    "Every surfaced fact has a dated provenance and review state.",
+    "Each section can be partial without a completion percentage.",
+    "Direct, second-order, third-order entity links require distinct evidence and inference labels.",
+    "No release of held assertions, identifiable private-person allegations, or confidential case material.",
+    "All visual artwork is labeled illustrative where geography or history is composited.",
+    "All site images are real assets with credits/rights and not a screenshot used as interactive UI.",
+    "All production changes need ZIP checksum, manual Cloudflare deployment confirmation and reverse live readback."
+  ]
+}
