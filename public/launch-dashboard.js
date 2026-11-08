@@ -48,7 +48,7 @@ const AGENTS=[
  {name:"Updates & Monitoring Agent",desc:"Would identify changed sources, dates, public notices and amendments after audited automation is enabled.",status:"Not operational",href:"legacy.html#sources",action:"Check sources manually"}
 ];
 const safe=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-function tile(x){return '<a class="tile" href="research-atlas.html?q='+encodeURIComponent(x.query)+'" data-category="'+safe(x.id)+'"><span class="tile-badge">EXPLORE</span><span class="tile-icon" aria-hidden="true">'+x.icon+'</span><span class="tile-title">'+safe(x.name)+'</span><span class="tile-desc">'+safe(x.desc)+'</span></a>'}
+function tile(x){return '<a class="tile" href="category.html?topic='+encodeURIComponent(x.id)+'" data-category="'+safe(x.id)+'"><span class="tile-badge">EXPLORE</span><span class="tile-icon" aria-hidden="true">'+x.icon+'</span><span class="tile-title">'+safe(x.name)+'</span><span class="tile-desc">'+safe(x.desc)+'</span></a>'}
 function pack(x){return '<article class="pack"><span class="flag">◈ '+safe(x.tag)+' · REVIEWED CONTEXT VARIES</span><h3>'+safe(x.name)+'</h3><p>'+safe(x.desc)+'</p><a href="'+safe(x.href)+'">Open research →</a></article>'}
 function engine(x,agent=false){return '<article class="'+(agent?"agent":"tool")+'"><span class="status '+(x.kind==="future"||x.status==="Not operational"?"future":x.kind==="limited"?"limited":"")+'">'+safe(x.status)+'</span><h3>'+safe(x.name)+'</h3><p>'+safe(x.desc)+'</p><a href="'+safe(x.href)+'">'+safe(x.action)+' →</a></article>'}
 document.getElementById("categories").innerHTML=CATEGORIES.map(tile).join("");
