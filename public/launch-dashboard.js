@@ -35,6 +35,7 @@ const ENGINES=[
  {name:"Q Effect Analysis",desc:"Examine people, money, time, trust, alternatives, consequences, resilience and learning.",status:"Guided / static",kind:"ready",href:"legacy.html#research/effect",action:"Explore Q Effect"},
  {name:"Research Outline Builder",desc:"Generate structured research outlines and source-request checklists without a live AI account.",status:"Available now",kind:"ready",href:"legacy.html#research/report",action:"Create an outline"},
  {name:"Prompt Builder",desc:"Create evidence-aware prompts for an independent research assistant, with review controls.",status:"Available now",kind:"ready",href:"legacy.html#research/prompt",action:"Build a prompt"},
+ {name:"Cost Explorer",desc:"Calculate household, small-business and civic-project lifecycle costs using your own inputs; nothing is saved or transmitted.",status:"Available now",kind:"ready",href:"cost-explorer.html",action:"Calculate costs"},
  {name:"Pueblo Digital Twin",desc:"A future integrated scenario model. The current static view does not provide validated forecasts.",status:"Not operational",kind:"future",href:"research-atlas.html",action:"View model inputs"}
 ];
 const AGENTS=[
