@@ -17,6 +17,7 @@ jobs:
         run: |
           node --check public/site.js
           node --check public/research-atlas.js
+          node --check public/launch-dashboard.js
           node --check scripts/audit-site.cjs
           node --check functions/api/v1/config.js
       - name: Validate required public pages and safety headers
@@ -25,6 +26,13 @@ jobs:
           test -s public/research-atlas.html
           test -s public/research-atlas.css
           test -s public/research-atlas.js
+          test -s public/launch-dashboard.html
+          test -s public/launch-dashboard.css
+          test -s public/launch-dashboard.js
+          grep -q 'id="categories"' public/launch-dashboard.html
+          grep -q 'id="featuredPacks"' public/launch-dashboard.html
+          grep -q 'id="engineCards"' public/launch-dashboard.html
+          grep -q 'id="agentCards"' public/launch-dashboard.html
           grep -q 'research-atlas.js' public/research-atlas.html
           test -s public/site.css
           test -s public/_headers
