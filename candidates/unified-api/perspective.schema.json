@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.invalid/q-pueblo/perspective-candidate-v0.3.json",
+  "title": "Q-Pueblo versioned perspective candidate",
+  "description": "Draft schema, not a recognized canonical URL or production validator. Preserves evidence/support, attribution, temporal lineage, child impact, dissent and alternatives.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "issue_id", "perspective_kind", "attribution_kind", "statement", "evidence_status", "source_ids", "valid_from", "recorded_at", "security_class", "release_status", "child_impact", "review"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9_-]{2,64}$"},
+    "issue_id": {"type": "string", "minLength": 2},
+    "perspective_kind": {"enum": ["FIRST_PERSON_EXPERIENCE", "ATTRIBUTED_INSTITUTIONAL_POSITION", "ANALYST_INTERPRETATION", "CRITICAL_COUNTERVIEW", "FICTIONAL_EDUCATIONAL_LENS"]},
+    "attribution_kind": {"enum": ["CONSENTED_SOURCE", "PUBLIC_OFFICIAL_RECORD", "ANONYMOUS_REDACTED", "FICTIONAL"]},
+    "statement": {"type": "string", "minLength": 8, "maxLength": 4000},
+    "assumptions": {"type": "array", "items": {"type": "string"}},
+    "evidence_status": {"enum": ["SUPPORTED_PRIMARY", "SUPPORTED_SECONDARY_ATTRIBUTED", "DISPUTED", "INFERENCE", "UNKNOWN", "SIMULATION_ONLY"]},
+    "source_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "counterevidence_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "confidence": {"enum": ["NOT_ESTIMATED", "QUALITATIVE_LOW", "QUALITATIVE_MODERATE", "QUALITATIVE_HIGH", "INDEPENDENTLY_CALIBRATED"]},
+    "valid_from": {"type": "string", "format": "date-time"},
+    "valid_to": {"type": ["string", "null"], "format": "date-time"},
+    "recorded_at": {"type": "string", "format": "date-time"},
+    "supersedes_id": {"type": ["string", "null"]},
+    "ttl_review_at": {"type": ["string", "null"], "format": "date-time"},
+    "security_class": {"enum": ["S0", "S1", "S2", "S3", "S4"]},
+    "release_status": {"enum": ["HOLD", "REVIEW_REQUIRED", "APPROVED_PUBLIC", "REVOKED"]},
+    "child_impact": {
+      "type": "object",
+      "required": ["past", "present", "future", "review_status"],
+      "properties": {
+        "past": {"type": "string", "minLength": 8},
+        "present": {"type": "string", "minLength": 8},
+        "future": {"type": "string", "minLength": 8},
+        "review_status": {"enum": ["NOT_ASSESSED", "REVIEW_REQUIRED", "REVIEWED", "BLOCKED"]}
+      },
+      "additionalProperties": false
+    },
+    "review": {
+      "type": "object",
+      "required": ["human_owner", "review_receipt_id"],
+      "properties": {
+        "human_owner": {"type": ["string", "null"]},
+        "review_receipt_id": {"type": ["string", "null"]},
+        "appeal_path": {"type": ["string", "null"]},
+        "repair_path": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

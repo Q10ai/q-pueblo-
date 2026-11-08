@@ -1,0 +1,56 @@
+name: Q-Pueblo Unified Candidate — Offline Controls
+on:
+  pull_request:
+    paths:
+      - 'public/learn/**'
+      - 'public/explore/**'
+      - 'public/stages/**'
+      - 'scripts/build_stages.py'
+      - 'tests/test_stages.py'
+      - 'candidates/unified-api/**'
+      - 'tests/test_staging_integrity.py'
+      - '.github/workflows/q-pueblo-unified-candidate.yml'
+jobs:
+  reference-tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Review-gated public-projection and bitemporal query tests
+        run: node --test candidates/unified-api/tests/public-projection.test.mjs
+      - name: Static-first learning, brand, Child Core and multiple-POV structural checks
+        run: python3 -m unittest discover -s tests -p 'test_staging_integrity.py' -v
+      - name: Public navigation-only stage generation and policy checks
+        run: |
+          python3 scripts/build_stages.py
+          python3 -m unittest discover -s tests -p 'test_stages.py' -v
+          git diff --exit-code -- public/stages/catalog.json public/stages/index.html
+          node --check public/stages/stages.js
+      - name: Package complete static website preview (not production Functions)
+        run: |
+          (cd public && zip -qr ../q-pueblo-static-preview.zip .)
+          sha256sum q-pueblo-static-preview.zip | tee q-pueblo-static-preview.zip.sha256
+          test -s q-pueblo-static-preview.zip
+      - name: Retain complete static preview for owner verification
+        uses: actions/upload-artifact@v4
+        with:
+          name: qpueblo-complete-static-preview-${{ github.sha }}
+          path: |
+            q-pueblo-static-preview.zip
+            q-pueblo-static-preview.zip.sha256
+          retention-days: 14
+          if-no-files-found: error
+      - name: Explicit no-secret-artifact checks
+        run: |
+          test ! -e .env
+          test ! -e .dev.vars
+          test ! -e public/learn/.env
+          test ! -e public/explore/.env

@@ -1,0 +1,21 @@
+{
+  "schema": "Q-PUEBLO-BRAND-KIT-TOKENS",
+  "version": "1.0",
+  "status": "USER_SUPPLIED_DESIGN_DIRECTION_PENDING_ASSET_PARITY",
+  "tagline": "Know Pueblo. Help Shape Its Future.",
+  "colors": {
+    "midnight_navy": "#05082D",
+    "royal_indigo": "#171657",
+    "sunset_plum": "#451B5E",
+    "river_teal": "#04AAB0",
+    "glow_cyan": "#4BE6D9",
+    "pueblo_gold": "#E9A52F",
+    "champagne_gold": "#FFE7A3",
+    "furnace_ember": "#FF7C27",
+    "chile_red": "#BF1D31",
+    "chile_green": "#70A829"
+  },
+  "fonts": {"editorial": "EB Garamond, Georgia, serif", "ui": "Lato, system-ui, sans-serif"},
+  "asset_status": "Existing GitHub homepage steel-mill SVG reused as derived inline-logo reference. User-approved original image/vector master and 16MB hardened release candidate not present in this active workspace; exact byte parity remains unverified.",
+  "image_policy": "Pueblo-specific art and photographs must have source, license, image date and attribution when documentary; decorative drawings clearly labeled as such."
+}
