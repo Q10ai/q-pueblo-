@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "packet_id": "QP-ECON-2026-1106",
+  "version": "0.3.0",
+  "source_as_of": "2026-11-06",
+  "archived_on": "2026-11-08",
+  "visibility": "public_redacted",
+  "status": "candidate_for_human_review",
+  "digital_twin_operational": false,
+  "issue_records": [
+    {
+      "id": "QP-ECO-EDU-001",
+      "domain": "education_workforce",
+      "signal": "course_access_credential_outcomes",
+      "verification": "course_specific_loss_unverified",
+      "ttl_days": 90,
+      "child_impact": "pathway_equity_and_work_placement_safety"
+    },
+    {
+      "id": "QP-ECO-TOUR-002",
+      "domain": "tourism_local_capture",
+      "signal": "incremental_locally_retained_visitation_spending",
+      "verification": "park_visits_corroborated_incrementality_unmeasured",
+      "ttl_days": 365,
+      "child_impact": "affordability_access_safety_ecological_quality"
+    },
+    {
+      "id": "QP-ECO-EAST-003",
+      "domain": "eastside_housing_neighborhood",
+      "signal": "grant_disbursement_inspected_rehabilitation",
+      "verification": "community_activities_corroborated_specific_awards_unverified",
+      "ttl_days": 30,
+      "child_impact": "safe_housing_no_displacement"
+    },
+    {
+      "id": "QP-GOV-TRUST-004",
+      "domain": "governance_deliberation",
+      "signal": "representative_issue_specific_public_feedback",
+      "verification": "unrepresentative_commentary",
+      "ttl_days": 30,
+      "child_impact": "accessible_youth_family_participation"
+    }
+  ],
+  "tourism_scenario_inputs": {
+    "annual_park_visits_fy2025": 3009507,
+    "scenarios": [
+      {
+        "name": "conservative",
+        "share": 0.05,
+        "spend_per_converted_visit_usd": 25
+      },
+      {
+        "name": "working",
+        "share": 0.15,
+        "spend_per_converted_visit_usd": 40
+      },
+      {
+        "name": "stretch",
+        "share": 0.3,
+        "spend_per_converted_visit_usd": 60
+      }
+    ],
+    "output_type": "illustrative_incremental_gross_sales_not_public_revenue"
+  },
+  "risk_controls": {
+    "no_person_level_profiling": true,
+    "private_evidence_not_committed": true,
+    "manual_source_check_required": true,
+    "major_changes_require_human_signoff": true,
+    "append_only_corrections": true
+  },
+  "retention": {
+    "original_source_exhibits": "separate_nonpublic_controlled_archive",
+    "public_git": "redacted_packet_only"
+  },
+  "activation": {
+    "alerts": false,
+    "ingestion": false,
+    "site_publication": false,
+    "automation": false
+  },
+  "upstream_control_names": [
+    "QPueblo Master Evidence Ledger V5",
+    "QPueblo Integrated QIFY-QRX (2026-10-16)",
+    "Q-Pueblo Master Index Registry",
+    "Pre-election Freeze 2026-11-01"
+  ],
+  "sources": [
+    "https://cpw.state.co.us/sites/default/files/dam/rrtrdzzzvx/item.9_financial-report-fy25-monthly.pdf",
+    "https://www.pueblod60.org/post-details-dbpp/~board/d60-newsroom-pueblo-school-district-60-439/post/district-cte-offerings-continue-to-grow",
+    "https://www.district70.org/district-information/district-departments/college-and-career-connections-concurrent-enrollment/cte",
+    "https://visitpueblo.org/attractions/lake-pueblo-state-park/",
+    "https://krdo.com/news/2026/03/16/eastside-neighbors-council-takes-action-in-pueblo/"
+  ]
+}
