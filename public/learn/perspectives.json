@@ -1,0 +1,618 @@
+{
+  "schema": "QP-POV-TEMPORAL-EXERCISES",
+  "version": "0.2.0",
+  "status": "CONTROLLED_CANDIDATE",
+  "mode": "ALL_SCENARIOS_FICTIONAL",
+  "provenance": "Source institutions named for research context only. Not evidence of a real Pueblo case.",
+  "quantum_note": "Parallel alternatives represent ordinary hypothetical scenario analysis; not quantum mechanics, quantum hardware, probabilities or quantum advantage.",
+  "likelihood": "NOT_ESTIMATED",
+  "as_of": "2026-11-08",
+  "cases": [
+    {
+      "id": "street",
+      "tag": "INFRASTRUCTURE",
+      "title": "Repair a busy industrial road",
+      "question": "A fictional community must decide how and when to repair a road used by trucks, workers, and families.",
+      "kind": "FICTIONAL_CIVIC_EXERCISE",
+      "actual_project_findings": false,
+      "lens_count": 5,
+      "perspectives": [
+        {
+          "id": "family",
+          "title": "Family / student",
+          "priority": "Reliable access to schools and care",
+          "potential_benefit": "Safer travel routes and fewer disruptions",
+          "potential_burden": "Construction detours can increase travel time",
+          "question_to_test": "Which routes do children and caregivers actually use?",
+          "child_lens": "Past access barriers, present crossings, future mobility",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        },
+        {
+          "id": "worker",
+          "title": "Worker / commuter",
+          "priority": "Safety and predictable shifts",
+          "potential_benefit": "Fewer vehicle hazards and delays",
+          "potential_burden": "Temporary access disruptions can affect wages",
+          "question_to_test": "When do people travel, and what alternate routes exist?",
+          "child_lens": "Parents may bear shift and childcare disruptions",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        },
+        {
+          "id": "business",
+          "title": "Business / freight",
+          "priority": "Reliable industrial access",
+          "potential_benefit": "Lower damage and transit uncertainty",
+          "potential_burden": "Short-term deliveries may be disrupted",
+          "question_to_test": "What are the freight volumes and verified cost exposures?",
+          "child_lens": "Local jobs, air exposure and future business resilience",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        },
+        {
+          "id": "public",
+          "title": "Public works / finance",
+          "priority": "Legal authority, useful-life cost and maintenance",
+          "potential_benefit": "Coordinated durable repair",
+          "potential_burden": "Other essential projects may face tradeoffs",
+          "question_to_test": "Who owns the road and which funds are legally eligible?",
+          "child_lens": "Long-run safety and intergenerational public cost",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        },
+        {
+          "id": "environment",
+          "title": "Environmental / neighborhood",
+          "priority": "Air, noise and access equity",
+          "potential_benefit": "Possible reduction of vehicle idling",
+          "potential_burden": "Work may generate dust, traffic and noise",
+          "question_to_test": "What baseline air/noise readings exist?",
+          "child_lens": "Disproportionate burdens on children close to the route",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        }
+      ],
+      "branches": [
+        {
+          "id": "repair",
+          "title": "Repair now",
+          "potential_benefit": "Potentially addresses current hazards",
+          "downside": "Construction disruption and upfront cost",
+          "critical_dependency": "Valid jurisdiction and appropriated funds",
+          "child_future": "Safer future routes if design works",
+          "observable_indicator": "Injury data and post-repair maintenance cost",
+          "kind": "UNRANKED_HYPOTHETICAL_SCENARIO"
+        },
+        {
+          "id": "phase",
+          "title": "Phase repairs and safety controls",
+          "potential_benefit": "May spread cost and maintain some access",
+          "downside": "Hazards may persist during phases",
+          "critical_dependency": "Verified hazard ranking and monitored controls",
+          "child_future": "Children may benefit later, but interim risks remain",
+          "observable_indicator": "Phase-specific access and incident trends",
+          "kind": "UNRANKED_HYPOTHETICAL_SCENARIO"
+        },
+        {
+          "id": "defer",
+          "title": "Defer and monitor",
+          "potential_benefit": "Preserves immediate funds",
+          "downside": "Maintenance and safety risks may grow",
+          "critical_dependency": "Evidence that near-term conditions meet required standards",
+          "child_future": "Potentially transfers cost and risk to future residents",
+          "observable_indicator": "Safety inspections and worsening pavement condition",
+          "kind": "UNRANKED_HYPOTHETICAL_SCENARIO"
+        }
+      ],
+      "child_impact": {
+        "past": "Review prior road design, historical access and maintenance decisions.",
+        "present": "Evaluate current travel safety, access and displacement of risks.",
+        "future": "Consider 5, 10, 25 and 50-year safety, budgets and mobility."
+      },
+      "unknowns": [
+        "Who legally controls the road?",
+        "What is the actual maintenance liability?",
+        "Are there reliable accident, truck and air-quality measurements?"
+      ],
+      "scenario_weights": "NOT_ESTIMATED",
+      "evidence_note": "No actual local position, project-specific evidence or forecast is asserted. These are teaching lenses, not attributed quotes or verified local claims.",
+      "source_context": [
+        "City public works and council archives",
+        "Recorded transportation and safety studies"
+      ]
+    },
+    {
+      "id": "investment",
+      "tag": "PUBLIC MONEY",
+      "title": "Should a city support a major employer?",
+      "question": "A fictional public incentive proposal promises jobs but also requires taxpayer support and new infrastructure.",
+      "kind": "FICTIONAL_CIVIC_EXERCISE",
+      "actual_project_findings": false,
+      "lens_count": 5,
+      "perspectives": [
+        {
+          "id": "worker",
+          "title": "Worker / job seeker",
+          "priority": "Wages, access and training",
+          "potential_benefit": "Potential jobs and skills",
+          "potential_burden": "Jobs may differ from forecasts",
+          "question_to_test": "What pay, benefits and realized employment are documented?",
+          "child_lens": "Parents and future students need accessible career paths",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        },
+        {
+          "id": "taxpayer",
+          "title": "Taxpayer / household",
+          "priority": "Affordability and accountable spending",
+          "potential_benefit": "Potential future tax base",
+          "potential_burden": "Debt, utility and opportunity costs may be shifted",
+          "question_to_test": "What is authorized versus actually paid?",
+          "child_lens": "Public services used by children compete for resources",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        },
+        {
+          "id": "localbiz",
+          "title": "Existing small business",
+          "priority": "Competition and local supply chains",
+          "potential_benefit": "More regional customers",
+          "potential_burden": "Unequal incentives could disadvantage incumbents",
+          "question_to_test": "Which local suppliers benefit and at what cost?",
+          "child_lens": "Long-term local ownership and apprenticeship opportunities",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        },
+        {
+          "id": "institution",
+          "title": "Public finance / government",
+          "priority": "Legal use, performance and clawbacks",
+          "potential_benefit": "Conditional investment tied to outcomes",
+          "potential_burden": "Monitoring or fiscal failure",
+          "question_to_test": "What approvals, terms and clawbacks actually exist?",
+          "child_lens": "Who inherits maintenance obligations and costs?",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        },
+        {
+          "id": "neighborhood",
+          "title": "Neighborhood / environment",
+          "priority": "Land, water, housing and traffic",
+          "potential_benefit": "Potential amenities and infrastructure upgrades",
+          "potential_burden": "Environmental exposure or housing pressure",
+          "question_to_test": "What independent assessments and mitigation plans exist?",
+          "child_lens": "Long-term water, air and neighborhood conditions",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        }
+      ],
+      "branches": [
+        {
+          "id": "grant",
+          "title": "Approve conditional support",
+          "potential_benefit": "Could accelerate jobs and construction",
+          "downside": "Public cost if milestones fail",
+          "critical_dependency": "Independent financial review, measurable jobs and enforceable terms",
+          "child_future": "Future children could inherit assets or liabilities",
+          "observable_indicator": "Observed payroll and audited payments",
+          "kind": "UNRANKED_HYPOTHETICAL_SCENARIO"
+        },
+        {
+          "id": "redesign",
+          "title": "Negotiate smaller or different package",
+          "potential_benefit": "Could reduce exposure and improve conditions",
+          "downside": "Project might change scope or location",
+          "critical_dependency": "Evidence of counteroffers and legal eligibility",
+          "child_future": "Could balance educational investment and employment",
+          "observable_indicator": "Signed revised terms and realized outcomes",
+          "kind": "UNRANKED_HYPOTHETICAL_SCENARIO"
+        },
+        {
+          "id": "decline",
+          "title": "Decline support",
+          "potential_benefit": "Avoids direct incentive burden",
+          "downside": "Potential economic opportunity forgone",
+          "critical_dependency": "Credible no-action baseline and legal review",
+          "child_future": "Other public priorities could retain resources",
+          "observable_indicator": "Employment baseline and opportunity cost",
+          "kind": "UNRANKED_HYPOTHETICAL_SCENARIO"
+        }
+      ],
+      "child_impact": {
+        "past": "Identify older commitments and whether earlier benefits materialized.",
+        "present": "Separate proposed, authorized, obligated and spent money.",
+        "future": "Model job durability, fiscal liabilities, skills and environmental burden."
+      },
+      "unknowns": [
+        "Do the projected jobs have verified baselines?",
+        "Who pays for operations and maintenance?",
+        "Which funds are restricted?"
+      ],
+      "scenario_weights": "NOT_ESTIMATED",
+      "evidence_note": "No actual local position, project-specific evidence or forecast is asserted. These are teaching lenses, not attributed quotes or verified local claims.",
+      "source_context": [
+        "City Council finance and agenda records",
+        "Audited financial statements and signed agreements"
+      ]
+    },
+    {
+      "id": "environment",
+      "tag": "HISTORY & HEALTH",
+      "title": "What should happen at an old industrial site?",
+      "question": "A fictional former industrial parcel has incomplete historical records and disputed ideas for future use.",
+      "kind": "FICTIONAL_CIVIC_EXERCISE",
+      "actual_project_findings": false,
+      "lens_count": 5,
+      "perspectives": [
+        {
+          "id": "resident",
+          "title": "Long-term resident / oral historian",
+          "priority": "Recognition of lived history",
+          "potential_benefit": "Local knowledge can guide research",
+          "potential_burden": "Memories may lack independently dated corroboration",
+          "question_to_test": "What historical records confirm or contextualize oral accounts?",
+          "child_lens": "Children inherit both place memory and exposure concerns",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        },
+        {
+          "id": "publichealth",
+          "title": "Public health / clinician",
+          "priority": "Safe, defensible evidence",
+          "potential_benefit": "Appropriate exposure evaluation",
+          "potential_burden": "False reassurance or unwarranted alarm",
+          "question_to_test": "What samples and pathways are scientifically valid?",
+          "child_lens": "Age-specific exposure pathways and future health",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        },
+        {
+          "id": "developer",
+          "title": "Property owner / developer",
+          "priority": "Viable, lawful reuse",
+          "potential_benefit": "New housing or business opportunities",
+          "potential_burden": "Remediation and legal costs",
+          "question_to_test": "What land-use and cleanup standards actually apply?",
+          "child_lens": "Future residents need durable protections",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        },
+        {
+          "id": "school",
+          "title": "Child / family advocate",
+          "priority": "Safety, belonging and access",
+          "potential_benefit": "Could provide safe shared spaces",
+          "potential_burden": "Unrecognized exposure or exclusion",
+          "question_to_test": "Are exposure and accessibility independently reviewed?",
+          "child_lens": "Place-sensitive, age-specific and multigenerational impacts",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        },
+        {
+          "id": "historian",
+          "title": "Archivist / researcher",
+          "priority": "Provenance and uncertainty",
+          "potential_benefit": "Better historical understanding",
+          "potential_burden": "Incomplete maps or mistaken identification",
+          "question_to_test": "How do we reconcile conflicting parcel names and dates?",
+          "child_lens": "Preserve honest history without stigma",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        }
+      ],
+      "branches": [
+        {
+          "id": "investigate",
+          "title": "Investigate before major reuse",
+          "potential_benefit": "Improves evidence before irreversible choices",
+          "downside": "Time and investigative expense",
+          "critical_dependency": "Qualified environmental and rights review",
+          "child_future": "Could prevent exposure across generations",
+          "observable_indicator": "Verified sampling, record access and correction events",
+          "kind": "UNRANKED_HYPOTHETICAL_SCENARIO"
+        },
+        {
+          "id": "protect",
+          "title": "Introduce bounded interim protections",
+          "potential_benefit": "May reduce plausible exposure",
+          "downside": "May affect land access and costs",
+          "critical_dependency": "Clear legal authority and proportionate safeguards",
+          "child_future": "Near-term precaution while preserving future options",
+          "observable_indicator": "Access and exposure monitoring",
+          "kind": "UNRANKED_HYPOTHETICAL_SCENARIO"
+        },
+        {
+          "id": "reuse",
+          "title": "Proceed with conditioned reuse",
+          "potential_benefit": "May create community value",
+          "downside": "Unresolved conditions could harm users",
+          "critical_dependency": "Demonstrated regulatory, technical and human clearance",
+          "child_future": "Long-horizon health and remediation obligations",
+          "observable_indicator": "Independent compliance and post-use monitoring",
+          "kind": "UNRANKED_HYPOTHETICAL_SCENARIO"
+        }
+      ],
+      "child_impact": {
+        "past": "Recover prior land use, permits, historic mapping and residents’ accounts.",
+        "present": "Assess known and unknown current exposure without inferring diagnosis.",
+        "future": "Track stewardship duties, groundwater, housing and child-health horizons."
+      },
+      "unknowns": [
+        "Are parcel identities and historic uses verified?",
+        "What samples and standards apply?",
+        "Who is legally responsible for follow-up?"
+      ],
+      "scenario_weights": "NOT_ESTIMATED",
+      "evidence_note": "No actual local position, project-specific evidence or forecast is asserted. These are teaching lenses, not attributed quotes or verified local claims.",
+      "source_context": [
+        "Environmental agencies and qualified historic archives",
+        "County parcel and land use records"
+      ]
+    },
+    {
+      "id": "online",
+      "tag": "INFORMATION SAFETY",
+      "title": "A viral claim about a local official",
+      "question": "A fictional social post makes a serious accusation. Many repost it, but the original evidence is unclear.",
+      "kind": "FICTIONAL_CIVIC_EXERCISE",
+      "actual_project_findings": false,
+      "lens_count": 5,
+      "perspectives": [
+        {
+          "id": "resident",
+          "title": "Resident / reader",
+          "priority": "Truth and fair participation",
+          "potential_benefit": "Better civic literacy",
+          "potential_burden": "Amplifying unverified accusations can harm people",
+          "question_to_test": "Which documents independently support the claim?",
+          "child_lens": "Families and children may be harmed by false allegations",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        },
+        {
+          "id": "journalist",
+          "title": "Reporter / editor",
+          "priority": "Verification and public interest",
+          "potential_benefit": "Verified investigative reporting",
+          "potential_burden": "Rushing can misstate context",
+          "question_to_test": "What primary records and direct responses have been checked?",
+          "child_lens": "Long-term trust in local information",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        },
+        {
+          "id": "namedparty",
+          "title": "Person named in claim",
+          "priority": "Fair process and privacy",
+          "potential_benefit": "Opportunity to correct the record",
+          "potential_burden": "Misidentification and harassment",
+          "question_to_test": "Has the subject been afforded appropriate response?",
+          "child_lens": "Avoid exposing the person’s children or household",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        },
+        {
+          "id": "records",
+          "title": "Records custodian",
+          "priority": "Authenticity and lawful release",
+          "potential_benefit": "Authenticated accessible records",
+          "potential_burden": "Redactions may be misunderstood",
+          "question_to_test": "What is the original signed record and its revision history?",
+          "child_lens": "Future use of records requires privacy safeguards",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        },
+        {
+          "id": "educator",
+          "title": "Teacher / youth educator",
+          "priority": "Critical thinking without targeting",
+          "potential_benefit": "Learn how misinformation spreads",
+          "potential_burden": "Students may mistake repetition for proof",
+          "question_to_test": "Can we teach with fictional examples rather than real names?",
+          "child_lens": "Protect learner identity and emotional safety",
+          "attribution": "ILLUSTRATIVE_ANALYTICAL_LENS"
+        }
+      ],
+      "branches": [
+        {
+          "id": "share",
+          "title": "Reshare immediately",
+          "potential_benefit": "May spread an important concern if accurate",
+          "downside": "Could amplify misinformation and privacy harm",
+          "critical_dependency": "Independent verification not yet available",
+          "child_future": "Children may inherit lasting digital harm",
+          "observable_indicator": "Independent original-source count",
+          "kind": "UNRANKED_HYPOTHETICAL_SCENARIO"
+        },
+        {
+          "id": "verify",
+          "title": "Verify then contextualize",
+          "potential_benefit": "Improves accuracy and procedural fairness",
+          "downside": "Requires time and careful redaction",
+          "critical_dependency": "Primary documents and meaningful response opportunity",
+          "child_future": "Protects future trust and families",
+          "observable_indicator": "Source-lineage and correction audit",
+          "kind": "UNRANKED_HYPOTHETICAL_SCENARIO"
+        },
+        {
+          "id": "pause",
+          "title": "Pause amplification and seek records",
+          "potential_benefit": "Reduces immediate exposure",
+          "downside": "May delay legitimate discussion",
+          "critical_dependency": "Available, safe public-records process",
+          "child_future": "Reduces unnecessary reputational harm",
+          "observable_indicator": "New original evidence and response records",
+          "kind": "UNRANKED_HYPOTHETICAL_SCENARIO"
+        }
+      ],
+      "child_impact": {
+        "past": "Recover original posting time, context and older corrections.",
+        "present": "Distinguish reposts from independent sources and avoid doxxing.",
+        "future": "Observe whether corrections reach the original audience over time."
+      },
+      "unknowns": [
+        "Is there even one authenticated original record?",
+        "Are reposts mistakenly counted as corroboration?",
+        "Would publication expose a private family?"
+      ],
+      "scenario_weights": "NOT_ESTIMATED",
+      "evidence_note": "No actual local position, project-specific evidence or forecast is asserted. These are teaching lenses, not attributed quotes or verified local claims.",
+      "source_context": [
+        "Original public records",
+        "Professional verification and editorial standards"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "event_id": "street-1",
+      "case_id": "street",
+      "sequence": 1,
+      "kind": "INTAKE",
+      "claim_id": "street-initial",
+      "state": "UNVERIFIED",
+      "simulated": true,
+      "notes": "Initial claim recorded as an unverified teaching hypothesis.",
+      "event_time": "EXERCISE_SEQUENCE_1",
+      "recorded_at": "2026-11-08T01:00:00Z",
+      "original_source_id": null,
+      "review_receipt": null
+    },
+    {
+      "event_id": "street-2",
+      "case_id": "street",
+      "sequence": 2,
+      "kind": "REVIEW",
+      "claim_id": "street-initial",
+      "state": "STILL_UNVERIFIED",
+      "simulated": true,
+      "notes": "Possible sources identified; no source authenticated in this fictional exercise.",
+      "event_time": "EXERCISE_SEQUENCE_2",
+      "recorded_at": "2026-11-08T02:00:00Z",
+      "original_source_id": null,
+      "review_receipt": null
+    },
+    {
+      "event_id": "street-3",
+      "case_id": "street",
+      "sequence": 3,
+      "kind": "AMENDMENT",
+      "claim_id": "street-initial",
+      "state": "UNKNOWN",
+      "simulated": true,
+      "notes": "Earlier uncertainty preserved; reassessment would require new authenticated records.",
+      "event_time": "EXERCISE_SEQUENCE_3",
+      "recorded_at": "2026-11-08T03:00:00Z",
+      "original_source_id": null,
+      "review_receipt": null
+    },
+    {
+      "event_id": "investment-1",
+      "case_id": "investment",
+      "sequence": 1,
+      "kind": "INTAKE",
+      "claim_id": "investment-initial",
+      "state": "UNVERIFIED",
+      "simulated": true,
+      "notes": "Initial claim recorded as an unverified teaching hypothesis.",
+      "event_time": "EXERCISE_SEQUENCE_1",
+      "recorded_at": "2026-11-08T01:00:00Z",
+      "original_source_id": null,
+      "review_receipt": null
+    },
+    {
+      "event_id": "investment-2",
+      "case_id": "investment",
+      "sequence": 2,
+      "kind": "REVIEW",
+      "claim_id": "investment-initial",
+      "state": "STILL_UNVERIFIED",
+      "simulated": true,
+      "notes": "Possible sources identified; no source authenticated in this fictional exercise.",
+      "event_time": "EXERCISE_SEQUENCE_2",
+      "recorded_at": "2026-11-08T02:00:00Z",
+      "original_source_id": null,
+      "review_receipt": null
+    },
+    {
+      "event_id": "investment-3",
+      "case_id": "investment",
+      "sequence": 3,
+      "kind": "AMENDMENT",
+      "claim_id": "investment-initial",
+      "state": "UNKNOWN",
+      "simulated": true,
+      "notes": "Earlier uncertainty preserved; reassessment would require new authenticated records.",
+      "event_time": "EXERCISE_SEQUENCE_3",
+      "recorded_at": "2026-11-08T03:00:00Z",
+      "original_source_id": null,
+      "review_receipt": null
+    },
+    {
+      "event_id": "environment-1",
+      "case_id": "environment",
+      "sequence": 1,
+      "kind": "INTAKE",
+      "claim_id": "environment-initial",
+      "state": "UNVERIFIED",
+      "simulated": true,
+      "notes": "Initial claim recorded as an unverified teaching hypothesis.",
+      "event_time": "EXERCISE_SEQUENCE_1",
+      "recorded_at": "2026-11-08T01:00:00Z",
+      "original_source_id": null,
+      "review_receipt": null
+    },
+    {
+      "event_id": "environment-2",
+      "case_id": "environment",
+      "sequence": 2,
+      "kind": "REVIEW",
+      "claim_id": "environment-initial",
+      "state": "STILL_UNVERIFIED",
+      "simulated": true,
+      "notes": "Possible sources identified; no source authenticated in this fictional exercise.",
+      "event_time": "EXERCISE_SEQUENCE_2",
+      "recorded_at": "2026-11-08T02:00:00Z",
+      "original_source_id": null,
+      "review_receipt": null
+    },
+    {
+      "event_id": "environment-3",
+      "case_id": "environment",
+      "sequence": 3,
+      "kind": "AMENDMENT",
+      "claim_id": "environment-initial",
+      "state": "UNKNOWN",
+      "simulated": true,
+      "notes": "Earlier uncertainty preserved; reassessment would require new authenticated records.",
+      "event_time": "EXERCISE_SEQUENCE_3",
+      "recorded_at": "2026-11-08T03:00:00Z",
+      "original_source_id": null,
+      "review_receipt": null
+    },
+    {
+      "event_id": "online-1",
+      "case_id": "online",
+      "sequence": 1,
+      "kind": "INTAKE",
+      "claim_id": "online-initial",
+      "state": "UNVERIFIED",
+      "simulated": true,
+      "notes": "Initial claim recorded as an unverified teaching hypothesis.",
+      "event_time": "EXERCISE_SEQUENCE_1",
+      "recorded_at": "2026-11-08T01:00:00Z",
+      "original_source_id": null,
+      "review_receipt": null
+    },
+    {
+      "event_id": "online-2",
+      "case_id": "online",
+      "sequence": 2,
+      "kind": "REVIEW",
+      "claim_id": "online-initial",
+      "state": "STILL_UNVERIFIED",
+      "simulated": true,
+      "notes": "Possible sources identified; no source authenticated in this fictional exercise.",
+      "event_time": "EXERCISE_SEQUENCE_2",
+      "recorded_at": "2026-11-08T02:00:00Z",
+      "original_source_id": null,
+      "review_receipt": null
+    },
+    {
+      "event_id": "online-3",
+      "case_id": "online",
+      "sequence": 3,
+      "kind": "AMENDMENT",
+      "claim_id": "online-initial",
+      "state": "UNKNOWN",
+      "simulated": true,
+      "notes": "Earlier uncertainty preserved; reassessment would require new authenticated records.",
+      "event_time": "EXERCISE_SEQUENCE_3",
+      "recorded_at": "2026-11-08T03:00:00Z",
+      "original_source_id": null,
+      "review_receipt": null
+    }
+  ]
+}

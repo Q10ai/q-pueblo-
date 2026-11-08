@@ -1,0 +1,17 @@
+{
+  "schema": "Q-UNIVERSAL-PACKET",
+  "schema_version": "0.1.0",
+  "mode": "SYNTHETIC_ONLY",
+  "identity": {"canonical_id": "EXAMPLE-QP-TRAINING-001", "domain": "qpueblo", "subject": "Fictional street crossing education packet"},
+  "security": {"classification": "S1", "sharing_policy": "INTERNAL", "allowed_roles": ["researcher", "reviewer"]},
+  "risk": {"consequence_level": "R2", "internal_external": "BOTH", "affected_scales": ["individual", "family", "community"], "likelihood": "UNKNOWN", "residual_risk": "UNKNOWN"},
+  "evidence": {"claims": [{"id": "EX-CLAIM-001", "text": "An illustrative street crossing is under consideration", "state": "UNVERIFIED", "source_ids": []}]},
+  "child_impact": {
+    "exposure": "YES", "specialist_review": "REQUIRED_NOT_YET_COMPLETED", "hard_stop": false,
+    "past": {"status": "IN_PROGRESS", "assessment": "Historical exposure not yet investigated"},
+    "present": {"status": "IN_PROGRESS", "assessment": "Current access and safety not yet investigated"},
+    "future": {"status": "IN_PROGRESS", "assessment": "5/10/25/50-year effects require separate evidence"}
+  },
+  "governance": {"human_owner": "TRAINING_OPERATOR_PLACEHOLDER", "external_execution": false, "publication": "BLOCKED", "release_receipt_id": null},
+  "lifecycle": {"next_review_at": "2027-01-01T00:00:00Z", "authority_expires_at": null}
+}

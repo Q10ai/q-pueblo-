@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:q:packet:security-risk-child:0.1.0",
+  "title": "Q governed security/risk/child packet envelope — candidate",
+  "description": "Syntactic contract only. A schema match does not prove truth, safety, authority or operational readiness.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["schema", "identity", "security", "risk", "evidence", "child_impact", "governance", "lifecycle"],
+  "properties": {
+    "schema": {"const": "Q-UNIVERSAL-PACKET"},
+    "identity": {"type": "object", "required": ["canonical_id", "domain"], "properties": {"canonical_id": {"type": "string", "minLength": 1}, "domain": {"type": "string", "minLength": 1}}},
+    "security": {"type": "object", "required": ["classification", "sharing_policy"], "properties": {"classification": {"enum": ["S0", "S1", "S2", "S3", "S4"]}, "sharing_policy": {"enum": ["PUBLIC", "INTERNAL", "RESTRICTED"]}, "tlp_marking": {"type": ["string", "null"]}}},
+    "risk": {"type": "object", "required": ["consequence_level"], "properties": {"consequence_level": {"enum": ["R0", "R1", "R2", "R3", "R4", "UNKNOWN"]}, "internal_external": {"enum": ["INTERNAL", "EXTERNAL", "BOTH", "UNKNOWN"]}}},
+    "evidence": {"type": "object", "required": ["claims"], "properties": {"claims": {"type": "array", "items": {"type": "object", "required": ["id", "state"], "properties": {"id": {"type": "string", "minLength": 1}, "state": {"enum": ["SUPPORTED_PRIMARY", "SUPPORTED_SECONDARY", "UNVERIFIED", "DISPUTED", "UNKNOWN"]}, "source_ids": {"type": "array", "items": {"type": "string"}}}}}}},
+    "child_impact": {"type": "object", "required": ["past", "present", "future", "exposure"], "properties": {"exposure": {"enum": ["YES", "NO", "UNKNOWN"]}, "hard_stop": {"type": "boolean"}, "past": {"$ref": "#/$defs/horizon"}, "present": {"$ref": "#/$defs/horizon"}, "future": {"$ref": "#/$defs/horizon"}}},
+    "governance": {"type": "object", "required": ["human_owner", "external_execution", "publication"], "properties": {"human_owner": {"type": ["string", "null"]}, "external_execution": {"type": "boolean", "const": false}, "publication": {"enum": ["BLOCKED", "REVIEWED_CANDIDATE", "APPROVED"]}}},
+    "lifecycle": {"type": "object", "properties": {"next_review_at": {"type": ["string", "null"], "format": "date-time"}, "authority_expires_at": {"type": ["string", "null"], "format": "date-time"}}}
+  },
+  "$defs": {"horizon": {"type": "object", "required": ["status"], "properties": {"status": {"enum": ["NOT_ASSESSED", "IN_PROGRESS", "REVIEWED", "UNKNOWN", "BLOCKED"]}, "assessment": {"type": "string"}}}}
+}

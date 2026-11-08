@@ -1,0 +1,33 @@
+name: Q-Pueblo Unified Candidate — Offline Controls
+on:
+  pull_request:
+    paths:
+      - 'public/learn/**'
+      - 'public/explore/**'
+      - 'candidates/unified-api/**'
+      - 'tests/test_staging_integrity.py'
+      - '.github/workflows/q-pueblo-unified-candidate.yml'
+jobs:
+  reference-tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Review-gated public-projection and bitemporal query tests
+        run: node --test candidates/unified-api/tests/public-projection.test.mjs
+      - name: Static-first learning, brand, Child Core and multiple-POV structural checks
+        run: python3 -m unittest discover -s tests -p 'test_staging_integrity.py' -v
+      - name: Explicit no-secret-artifact checks
+        run: |
+          test ! -e .env
+          test ! -e .dev.vars
+          test ! -e public/learn/.env
+          test ! -e public/explore/.env
