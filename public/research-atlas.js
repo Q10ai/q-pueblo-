@@ -86,5 +86,13 @@ for(const [s,vals] of [["#category",topics],["#area",areas]])for(const v of vals
 $("#allcount").textContent=ITEMS.length;$("#entitycount").textContent=Object.keys(NODES).length;$("#sourcecount").textContent=Object.keys(SOURCES).length;
 document.addEventListener("click",e=>{const btn=e.target.closest("[data-id]");if(btn)select(btn.dataset.id,true);});
 $("#search").addEventListener("input",renderResults);$("#category").addEventListener("change",renderResults);$("#area").addEventListener("change",renderResults);
-const hash=decodeURIComponent(location.hash.slice(1)),selected=ITEMS.find(x=>x.id===hash),featured=ITEMS.find(x=>x.id===current);
-select((selected||featured||ITEMS[0]).id,false);
+const query = new URLSearchParams(location.search);
+const requestTerm = (query.get("q")||"").slice(0,160);
+if(requestTerm)$("#search").value=requestTerm;
+const catParam = query.get("domain")||"";
+if(topics.includes(catParam))$("#category").value=catParam;
+const geoParam = query.get("area")||"";
+if(areas.includes(geoParam))$("#area").value=geoParam;
+const hash=decodeURIComponent(location.hash.slice(1)), selected=ITEMS.find(x=>x.id===hash),featured=ITEMS.find(x=>x.id===current);
+const filtered = matching();
+select((selected||filtered[0]||featured||ITEMS[0]).id,false);
