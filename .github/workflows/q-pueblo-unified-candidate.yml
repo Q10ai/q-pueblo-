@@ -34,6 +34,20 @@ jobs:
           python3 -m unittest discover -s tests -p 'test_stages.py' -v
           git diff --exit-code -- public/stages/catalog.json public/stages/index.html
           node --check public/stages/stages.js
+      - name: Package complete static website preview (not production Functions)
+        run: |
+          (cd public && zip -qr ../q-pueblo-static-preview.zip .)
+          sha256sum q-pueblo-static-preview.zip | tee q-pueblo-static-preview.zip.sha256
+          test -s q-pueblo-static-preview.zip
+      - name: Retain complete static preview for owner verification
+        uses: actions/upload-artifact@v4
+        with:
+          name: qpueblo-complete-static-preview-${{ github.sha }}
+          path: |
+            q-pueblo-static-preview.zip
+            q-pueblo-static-preview.zip.sha256
+          retention-days: 14
+          if-no-files-found: error
       - name: Explicit no-secret-artifact checks
         run: |
           test ! -e .env
