@@ -1,0 +1,69 @@
+# QPueblo Twin Pueblo signal candidate set — documentation only
+id: QP-ECON-2026-1106
+schema: qpueblo.research.signals.v1
+version: 0.3.0
+source_as_of: 2026-11-06
+archive_as_of: 2026-11-08
+enabled: false
+ingest_enabled: false
+monitoring_enabled: false
+notifications_enabled: false
+site_publication_enabled: false
+human_approval_required: true
+child_impact_statement_required: true
+privacy:
+  person_level_profiling: forbidden
+  political_inference: forbidden
+  store_minors_personal_data: false
+  screenshots: "controlled Drive archive only; no Git or public model indexing"
+signals:
+  - id: qp.tour.lake_pueblo.visits
+    issue: QP-ECO-TOUR-002
+    jurisdiction: Colorado_Parks_and_Wildlife
+    source: cpw.state.co.us
+    units: visits_per_fiscal_year
+    ttl_days: 365
+    when_to_review: "new annual report, published correction, significant park access or weather change"
+    measured_now: false
+    child_impact: "youth recreation accessibility, park safety, environmental load"
+  - id: qp.edu.pathway_availability
+    issue: QP-ECO-EDU-001
+    jurisdiction: "D60/D70/PCC/CSU_Pueblo"
+    source: district70.org_and_pueblod60.org
+    units: verified_course_sections_and_outcomes
+    ttl_days: 90
+    when_to_review: "term catalogs, actual section rosters and discontinuations"
+    measured_now: false
+    child_impact: "course equity, travel time, paid placement safeguards"
+  - id: qp.east.property_rehabilitation
+    issue: QP-ECO-EAST-003
+    jurisdiction: "City_of_Pueblo/PURA/County"
+    source: "public grants, permits, inspections and procurement records"
+    units: grants_and_inspected_properties
+    ttl_days: 30
+    when_to_review: "award, disbursement, inspection, completion or resident correction"
+    measured_now: false
+    child_impact: "housing hazards, affordability and non-displacement"
+  - id: qp.gov.civic_voice
+    issue: QP-GOV-TRUST-004
+    jurisdiction: Pueblo_region
+    source: "representative and documented human-led civic input"
+    units: aggregate_issue_specific_responses
+    ttl_days: 30
+    when_to_review: "new verified representative engagement"
+    measured_now: false
+    child_impact: "family-accessible participation; never build child/political profiles"
+failure_modes:
+  - duplicate tourism spending counted as new local sales
+  - park visits mislabelled as unique tourists
+  - grant awards conflated with cash paid or actual delivery
+  - social comments mistaken for representative public views
+  - policy criticism mislabelled proven misconduct
+  - inaccurate attribution through cropped screenshots
+  - automated political targeting or resident dossiers
+controls:
+  ledger: "human-curated versioned public evidence register"
+  separate_baseline_from_scenario: true
+  maintain_source_correction_lineage: true
+  human_override_and_shutdown: true
+  publish_gate: "explicit reviewed promotion to website; never auto-publish on commit"
