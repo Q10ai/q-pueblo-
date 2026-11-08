@@ -17,6 +17,7 @@ jobs:
         run: |
           node --check public/site.js
           node --check public/research-atlas.js
+          node --check scripts/audit-site.cjs
           node --check functions/api/v1/config.js
       - name: Validate required public pages and safety headers
         run: |
@@ -30,6 +31,9 @@ jobs:
           grep -q 'Q-PUEBLO' public/index.html
           grep -q 'contributions_enabled: false' functions/api/v1/config.js
           grep -q "Content-Security-Policy" public/_headers
+      - name: Audit Q-Pueblo site coverage and reverse graph integrity
+        run: |
+          node scripts/audit-site.cjs
       - name: Block obvious local credentials
         run: |
           test ! -e .env
