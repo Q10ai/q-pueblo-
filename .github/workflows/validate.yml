@@ -42,6 +42,14 @@ jobs:
       - name: Audit Q-Pueblo site coverage and reverse graph integrity
         run: |
           node scripts/audit-site.cjs
+      - name: Verify Cloudflare Direct Upload review archive
+        run: |
+          unzip -t qpueblo-v2-dashboard-review.zip
+          test "$(unzip -Z -1 qpueblo-v2-dashboard-review.zip | wc -l)" -eq 15
+          unzip -p qpueblo-v2-dashboard-review.zip index.html | cmp - public/index.html
+          unzip -p qpueblo-v2-dashboard-review.zip launch-dashboard.js | cmp - public/launch-dashboard.js
+          unzip -p qpueblo-v2-dashboard-review.zip research-atlas.js | cmp - public/research-atlas.js
+          unzip -p qpueblo-v2-dashboard-review.zip qpueblo-mark.jpg | cmp - public/qpueblo-mark.jpg
       - name: Block obvious local credentials
         run: |
           test ! -e .env
