@@ -1,0 +1,32 @@
+name: Q-Pueblo Public Beta Validation
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate JavaScript syntax
+        run: |
+          node --check public/site.js
+          node --check functions/api/v1/config.js
+      - name: Validate required public pages and safety headers
+        run: |
+          test -s public/index.html
+          test -s public/site.css
+          test -s public/_headers
+          grep -q 'Q-PUEBLO' public/index.html
+          grep -q 'contributions_enabled: false' functions/api/v1/config.js
+          grep -q "Content-Security-Policy" public/_headers
+      - name: Block obvious local credentials
+        run: |
+          test ! -e .env
+          test ! -e .dev.vars
+          test ! -e public/.env
