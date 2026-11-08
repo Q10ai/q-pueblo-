@@ -1,109 +1,44 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#07172d">
-<meta name="description" content="Q-Pueblo is an independent regional governance transparency dashboard. Investigate public decisions, budgets, contracts, laws, evidence and consequences across the Pueblo region.">
-<title>Q-Pueblo | Regional Governance & Transparency</title>
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="site.css">
-<script src="site.js" defer></script>
-</head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark"><meta name="description" content="Q-Pueblo regional knowledge dashboard. Explore issue packets, money, people and places, public records, connected consequences, learning and research tools.">
+<title>Q-Pueblo | Know Pueblo. Help Shape Its Future. — Dashboard Review</title>
+<link rel="stylesheet" href="launch-dashboard.css"><script src="launch-dashboard.js" defer></script><link rel="icon" type="image/jpeg" href="qpueblo-mark.jpg"></head>
 <body>
-<a class="skip-link" href="#main">Skip to main content</a>
-<div class="topline"><span>Q-PUEBLO <b>•</b> PUEBLO REGION, COLORADO</span><span>INDEPENDENT <b>•</b> NONPARTISAN <b>•</b> HUMAN-GOVERNED</span></div>
-<header class="site-head">
- <a class="brand" href="#home" aria-label="Q-Pueblo homepage" data-go="home">
-  <svg class="brandmark" viewBox="0 0 110 110" role="img" aria-label="Steel mill inside the Q-Pueblo mark">
-   <defs><linearGradient id="rim" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ffcf73"/><stop offset=".35" stop-color="#db792d"/><stop offset=".74" stop-color="#f4efe9"/><stop offset="1" stop-color="#1c8aab"/></linearGradient></defs>
-   <circle cx="51" cy="51" r="41" fill="#061c35" stroke="url(#rim)" stroke-width="10"/>
-   <path d="M15 66L37 39 47 48 68 25 91 54" stroke="#53b4d1" stroke-width="3" fill="none"/>
-   <path d="M19 74h63V57h-12v-9h-7v-8h-7v28h-8V54H35V38h-5v30H20z" fill="#f4a447"/>
-   <path d="M32 37V15M57 38V19M71 49V29" stroke="#fcf5e0" stroke-width="5" stroke-linecap="round"/>
-   <path d="M69 83L102 105" stroke="url(#rim)" stroke-width="14" stroke-linecap="round"/>
-   <path d="M17 92Q29 82 35 88Q43 96 53 86" stroke="#cf2735" fill="none" stroke-width="5" stroke-linecap="round"/>
-  </svg>
-  <span><strong>Q<span class="brand-dash">-</span>PUEBLO</strong><small>REGIONAL GOVERNANCE & TRANSPARENCY</small></span>
- </a>
- <button class="menu-toggle" id="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">☰ Menu</button>
- <nav class="site-nav" id="primary-nav" aria-label="Main navigation">
-  <a href="#home" data-go="home">Home</a><a href="#issues" data-go="issues">Issues & Projects</a>
-  <a href="#money" data-go="money">Money & Contracts</a><a href="#governance" data-go="governance">Governance</a>
-  <a href="#research" data-go="research">AI Research Tools</a><a href="#sources" data-go="sources">Data & Evidence</a>
-  <a href="#participate" data-go="participate">Community</a><a href="#trust" data-go="trust">About & Boundaries</a>
- </nav>
-</header>
-<main id="main">
-<section class="screen active" id="screen-home" data-screen="home">
- <div class="hero">
-  <svg class="hero-art" viewBox="0 0 1600 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#152e62"/><stop offset=".45" stop-color="#c35455"/><stop offset=".82" stop-color="#eda152"/><stop offset="1" stop-color="#0a304f"/></linearGradient><linearGradient id="river" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#498daf"/><stop offset="1" stop-color="#031830"/></linearGradient></defs>
-  <rect width="1600" height="360" fill="url(#sky)"/>
-  <circle cx="1284" cy="86" r="51" fill="#ffe9ac" opacity=".68"/>
-  <path d="M0 198L130 110 200 160 340 93 420 158 536 74 660 177 746 111 861 178 930 104 1110 187 1190 128 1360 196 1445 121 1600 209V300H0" fill="#3c5076"/>
-  <path d="M0 208L130 130 200 170 340 114 420 171 536 91 660 189 746 130 861 194 930 126 1110 203 1190 145 1360 208 1445 142 1600 215" stroke="#ced3e2" stroke-width="9" fill="none" stroke-linejoin="round" opacity=".76"/>
-  <rect y="290" width="1600" height="70" fill="url(#river)"/>
-  <g fill="#13283f"><path d="M0 266V183h48v-20h62v103h17V208h57v58h20V194h64v72h25v-89h55v89h35V219h68v47h27V191h55v75h83V218h51v48h48V211h55v55h48V193h39v73h70V179h56v87h35V199h65v67h42V185h75v81h41V221h65v45h61V188h90v78h50V203h45v63h30v-64h30v64h36V227h39v39h50v-45h38v45h79V192h69v74h60v94H0z" opacity=".9"/>
-   <path d="M1090 250l27-111h18l27 111h16l23-127h17l28 127h19l20-86h18l19 86" stroke="#202e42" stroke-width="17" fill="none"/>
-   <path d="M21 170H163M113 165l-4-49H86l-4 49M31 171v-23h50" stroke="#c68f61" stroke-width="8" fill="none"/>
-   <path d="M830 238v-77h92v77M849 158v-35h57v35M861 122l18-31 18 31M877 90v-20" stroke="#d6aa77" stroke-width="7" fill="none"/>
-   <path d="M667 263q144-121 291 0M668 263H957M703 249v-19m37 0v-16m36 0v-9m36 0v-8m35 8v9m35 0v15m37 0v20" stroke="#c6b4a6" stroke-width="6" fill="none"/>
-  </g>
-  <g stroke="#e8a85a" opacity=".65"><path d="M0 302H1600"/><path d="M0 318H1600" opacity=".3"/></g>
-  </svg>
-  <div class="hero-shade"></div>
-  <div class="hero-copy wrap">
-   <div class="eyebrow">PUEBLO CITY • PUEBLO COUNTY • PUEBLO WEST • REGIONAL CONNECTIONS</div>
-   <h1>Understand the decisions.<br><em>Follow the money.</em><br>See the impact.</h1>
-   <p>Independent, source-first AI-assisted research for the entire Pueblo region. Explore public decisions, budgets, contracts, history and competing explanations—without giving AI authority over people.</p>
-   <form id="hero-search" class="searchbar" role="search"><label class="sr-only" for="search-input">Ask a question or search Q-Pueblo</label><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="Search a Pueblo issue, budget, contract, law, or question…" maxlength="150"><button type="submit">Investigate <span aria-hidden="true">→</span></button></form>
-   <p class="hero-note">PUBLIC BETA • Research tools work without a paid AI account • Source dates and limitations are shown</p>
-  </div>
- </div>
- <div class="wrap">
-  <div class="quick-actions">
-   <button data-go="issues" class="action blue"><span class="action-icon">⌕</span><strong>Find & Understand</strong><small>Issue history, definitions, sources, and evidence gaps</small></button>
-   <button data-go="money" class="action amber"><span class="action-icon">◉</span><strong>Follow the Money</strong><small>Who proposes, pays, receives, and measures results</small></button>
-   <button data-go="research" class="action violet"><span class="action-icon">✦</span><strong>Build & Challenge</strong><small>Research prompts, RX, scenarios, and Q Effect</small></button>
-   <button data-go="governance" class="action teal"><span class="action-icon">▦</span><strong>Governance Watch</strong><small>Institutions, legal authority, decisions and oversight</small></button>
-   <button data-go="participate" class="action red"><span class="action-icon">＋</span><strong>Contribute or Correct</strong><small>Request review with evidence, safely</small></button>
-  </div>
-  <div class="section-kicker">INVESTIGATE BY PUBLIC INTEREST</div>
-  <div class="topic-ribbon">
-   <button data-go="issues" data-filter="development">🏗️ <span>Development</span></button>
-   <button data-go="issues" data-filter="infrastructure">🛣️ <span>Infrastructure</span></button>
-   <button data-go="issues" data-filter="energy">⚡ <span>Energy</span></button>
-   <button data-go="issues" data-filter="housing">🏠 <span>Housing</span></button>
-   <button data-go="issues" data-filter="water">💧 <span>Water</span></button>
-   <button data-go="issues" data-filter="finance">💰 <span>Public Finance</span></button>
-   <button data-go="issues" data-filter="environment">🌱 <span>Environment</span></button>
-   <button data-go="issues" data-filter="governance">⚖️ <span>Law & Decisions</span></button>
-   <button data-go="issues">◫ <span>All Topics</span></button>
-  </div>
-  <div class="home-panels">
-   <article class="panel dark"><div class="panel-h"><h2>The Q Effect</h2><span class="kicker">PEOPLE • MONEY • TIME • TRUST</span></div><p>See the wider consequences of a decision—who is affected, which costs are known, what changes, and which alternatives remain possible.</p><div class="impact-grid"><span>♟ People</span><span>◉ Money</span><span>◷ Time</span><span>◇ Trust</span><span>⇆ Alternatives</span><span>↗ Consequences</span><span>♜ Resilience</span><span>✦ Learning</span></div><button class="text-link" data-go="research" data-tool="effect">Explore Q Effect →</button></article>
-   <article class="panel"><div class="panel-h"><h2>Featured Issue Research</h2><button class="text-link" data-go="issues">View all →</button></div><div id="home-issues" class="tight-list"></div></article>
-   <article class="panel"><div class="panel-h"><h2>Public Money Explained</h2><button class="text-link" data-go="money">Follow funds →</button></div><p>Learn how to distinguish a funding request from an appropriation, a signed contract, a payment, and a measurable outcome.</p><ol class="mini-steps"><li>Find the original authorization</li><li>Identify fund restrictions</li><li>Track agreements and disbursements</li><li>Check outcomes and corrections</li></ol></article>
-   <article class="panel"><div class="panel-h"><h2>Evidence & Boundaries</h2><button class="text-link" data-go="trust">How it works →</button></div><p>Q-Pueblo is independent and nonpartisan. It does not endorse political choices, adjudicate allegations, or grant civic authority to AI.</p><div class="assurance"><span>✓ Source links</span><span>✓ Visible uncertainty</span><span>✓ Human review gates</span><span>✓ Correction history</span></div></article>
-  </div>
- </div>
-</section>
-<section class="screen wrap content-screen" id="screen-issues" data-screen="issues"><div class="page-head"><div class="eyebrow">Q-PUEBLO • ISSUE RESEARCH</div><h1>Issues & projects</h1><p>Real Pueblo-region research entry points. These cards identify original-source starting points and outstanding questions; they are not published findings of wrongdoing or live case-status certifications.</p></div><div class="toolbar"><label class="sr-only" for="issue-search">Search issues</label><input id="issue-search" placeholder="Filter projects, agencies, roads, utilities…" type="search"><select id="issue-filter" aria-label="Filter category"><option value="all">All issue categories</option><option value="development">Development</option><option value="infrastructure">Infrastructure</option><option value="finance">Public finance</option><option value="energy">Energy</option><option value="water">Water</option><option value="environment">Environment</option><option value="housing">Housing</option><option value="governance">Governance</option></select></div><div id="issue-grid" class="issue-grid"></div></section>
-<section class="screen wrap content-screen" id="screen-issue" data-screen="issue"><button class="backlink" data-go="issues">← All issues</button><div id="issue-detail"></div></section>
-<section class="screen wrap content-screen" id="screen-money" data-screen="money"><div class="page-head"><div class="eyebrow">Q-PUEBLO • FINANCIAL TRANSPARENCY</div><h1>Follow the money</h1><p>Understand what a public-dollar figure means before making a comparison. Requests, budgets, commitments, invoices and outcomes are not interchangeable.</p></div><div class="money-flow"><div><span>01</span><strong>Funding source</strong><small>Tax, grant, fee, borrowing or restricted fund</small></div><b>→</b><div><span>02</span><strong>Legal authority</strong><small>Budget, ordinance, agreement or vote</small></div><b>→</b><div><span>03</span><strong>Recipient & use</strong><small>Agreement, contractor and eligible cost</small></div><b>→</b><div><span>04</span><strong>Verified outcome</strong><small>Paid versus proposed; deliverables and audit</small></div></div><div class="columns"><article class="panel"><h2>Seven different dollar states</h2><div id="money-states"></div></article><article class="panel"><h2>Start with source records</h2><p>City and county budget portals, audited financial statements, special district records, grants, contracts and procurement records are the first step.</p><div id="money-sources"></div><button class="solid-btn" data-go="research" data-tool="report">Create financial research outline →</button></article></div></section>
-<section class="screen wrap content-screen" id="screen-governance" data-screen="governance"><div class="page-head"><div class="eyebrow">Q-PUEBLO • REGIONAL JURISDICTIONS</div><h1>Who governs what?</h1><p>City, county, special districts, schools, state and federal authorities have distinct powers and boundaries. Trace the legal authority before assigning responsibility.</p></div><div id="gov-cards" class="issue-grid"></div><div class="panel notice"><strong>Institutional connections are not allegations.</strong> A documented contract, board seat, grant or common address establishes only the specific relationship supported by its source—not improper conduct.</div></section>
-<section class="screen wrap content-screen" id="screen-research" data-screen="research"><div class="page-head"><div class="eyebrow">Q-PUEBLO • PUBLIC RESEARCH STUDIO</div><h1>Investigate with Q-Pueblo</h1><p>Use local, transparent tools without a paid AI subscription. No autonomous AI model or live external data feed is running in this beta; export prompts into a model you choose.</p></div><div class="tabs" role="tablist" aria-label="Research tools"><button data-tool="prompt" class="active">✦ Prompt Builder</button><button data-tool="report">▤ Report Outline</button><button data-tool="rx">⚖ RX Challenger</button><button data-tool="effect">◉ Q Effect</button><button data-tool="agent">⚙ Research Lenses</button><button data-tool="learn">★ Pueblo Challenge</button></div>
-<div class="tool-panel" id="tool-prompt"><h2>Build a source-first research prompt</h2><p>Pick the investigative lens and ask a question. Q-Pueblo writes a portable prompt that requires sources, dates, uncertainty and counterevidence.</p><div class="form-grid"><label>Research question<input id="prompt-topic" maxlength="240" placeholder="Example: Who pays to maintain Lime Road?"></label><label>Research lens<select id="prompt-lens"><option value="money">Money Trail</option><option value="governance">Governance & Authority</option><option value="source">Evidence Librarian</option><option value="rx">RX Perspective Challenger</option><option value="sim">Scenario Explorer</option><option value="region">Pueblo Region Lens</option></select></label><label>Depth<select id="prompt-depth"><option>Plain-language</option><option>Detailed</option><option>Technical</option></select></label></div><button id="make-prompt" class="solid-btn">Generate prompt →</button><textarea id="prompt-output" readonly rows="11" aria-label="Generated prompt"></textarea><div class="button-row"><button data-copy="prompt-output">Copy</button><button data-download="prompt-output" data-filename="qpueblo-research-prompt.txt">Download prompt</button></div></div>
-<div class="tool-panel" id="tool-report" hidden><h2>Build a research report outline</h2><p>This is an <strong>unverified outline</strong>, not a published factual report. Use it to organize questions and source collection.</p><div class="form-grid"><label>Topic<input id="report-topic" maxlength="240" placeholder="Example: Pueblo Half-Cent Fund"></label><label>Report type<select id="report-type"><option>Public-money trace</option><option>Issue briefing</option><option>Governance timeline</option><option>RX evidence comparison</option><option>Scenario and Q Effect</option></select></label><label>Audience<select id="report-audience"><option>Residents</option><option>Public officials</option><option>Journalists</option><option>Technical reviewers</option></select></label></div><button id="make-report" class="solid-btn">Create research outline →</button><textarea id="report-output" rows="17" readonly aria-label="Generated report outline"></textarea><div class="button-row"><button data-copy="report-output">Copy</button><button data-download="report-output" data-filename="qpueblo-report-outline.md">Download Markdown</button></div></div>
-<div class="tool-panel" id="tool-rx" hidden><h2>RX: Challenge your starting perspective</h2><p>The goal is to expose assumptions and inspect contrary evidence—not to rate political actors or select political outcomes.</p><label>Choose an assumption to examine<select id="rx-view"><option value="always">“Public incentives always help the local economy.”</option><option value="never">“Public incentives never help taxpayers.”</option><option value="links">“If two organizations work together, there must be wrongdoing.”</option><option value="viral">“Many posts repeating a claim prove it is true.”</option></select></label><button id="run-rx" class="solid-btn">Challenge this assumption →</button><div id="rx-results" class="result-box" aria-live="polite"></div></div>
-<div class="tool-panel" id="tool-effect" hidden><h2>The Q Effect: consequences before conclusions</h2><p>Use eight impact dimensions to test how decisions affect the region. These are research questions, not rankings or verdicts.</p><div id="effect-grid" class="impact-questions"></div></div>
-<div class="tool-panel" id="tool-agent" hidden><h2>Choose your investigative lens</h2><p>Each lens changes the research <em>questions</em>, not the accepted facts. One evidence standard is shared by every lens. An independent AI agent service is not deployed yet.</p><div id="agent-grid" class="issue-grid"></div></div>
-<div class="tool-panel" id="tool-learn" hidden><h2>Pueblo Governance Challenge</h2><p>Five levels · ten questions per level · 50 total. Learn how to read decisions, funding and evidence. Scores stay in this browser session and are not submitted.</p><div class="level-picker" id="level-picker"></div><div id="quiz-box" class="result-box" aria-live="polite"></div></div>
-</section>
-<section class="screen wrap content-screen" id="screen-sources" data-screen="sources"><div class="page-head"><div class="eyebrow">Q-PUEBLO • PROVENANCE FIRST</div><h1>Public source directory</h1><p>Direct links to source publishers, indexes and original records. A link is a research starting point, not proof that Q-Pueblo has verified every linked statement or document.</p></div><input id="source-search" type="search" placeholder="Find budgets, agenda, law, schools, maps, environmental records…" aria-label="Filter source directory"><div id="source-grid" class="source-grid"></div><div class="panel notice"><strong>Source classification:</strong> Government records, audited reports, official agency publications and credible secondary reporting are distinguishable. An official statement is evidence of what was stated; it is not automatically proof of projected results or disputed interpretations.</div></section>
-<section class="screen wrap content-screen" id="screen-participate" data-screen="participate"><div class="page-head"><div class="eyebrow">Q-PUEBLO • COMMUNITY INPUT</div><h1>Contribute or correct</h1><p>Questions, corrections and firsthand perspectives help identify research priorities—but submissions are signals, not automatically verified facts.</p></div><div class="columns"><article class="panel"><h2>Draft a correction packet</h2><p>Prepare a clear, reviewable public correction without disclosing private or sensitive information.</p><div class="form-grid"><label>What needs reviewing?<input id="correction-topic" maxlength="180" placeholder="Page, issue or assertion"></label><label>Type<select id="correction-type"><option>Correction request</option><option>Additional primary source</option><option>Alternative interpretation</option><option>Research question</option></select></label><label>Source URL (optional)<input id="correction-url" type="url" maxlength="350" placeholder="https://..."></label><label>Explanation<textarea id="correction-body" rows="5" maxlength="1500" placeholder="What is the specific claim and what evidence supports the requested change?"></textarea></label></div><button id="make-correction" class="solid-btn">Prepare packet →</button><textarea id="correction-output" rows="12" readonly aria-label="Correction packet"></textarea><div class="button-row"><button data-copy="correction-output">Copy packet</button><button data-download="correction-output" data-filename="qpueblo-correction.txt">Download</button><a class="outline-link" target="_blank" rel="noopener noreferrer" href="https://github.com/Q10ai/q-pueblo-/issues/new">Open public GitHub issue ↗</a></div></article><article class="panel"><h2>Important participation boundaries</h2><ul class="bullet"><li>No personal allegations, private medical details, children's identifying information or unpublished accusations.</li><li>GitHub issues are <strong>public</strong> and require a GitHub account. Do not share secrets or confidential files there.</li><li>No live private submission database or automatic publication pipeline is enabled.</li><li>Organized or repeated comments are one or more viewpoints, not proof of majority opinion.</li><li>Human reviewers must approve consequential changes before they become published findings.</li></ul><h3>How corrections should proceed</h3><ol class="mini-steps"><li>Receive a specific, attributable claim</li><li>Quarantine unsafe content</li><li>Locate source versions and opposing evidence</li><li>Propose an amendment with rationale</li><li>Human review, dated publication, and rollback</li></ol></article></div></section>
-<section class="screen wrap content-screen" id="screen-trust" data-screen="trust"><div class="page-head"><div class="eyebrow">Q-PUEBLO • MISSION & LIMITS</div><h1>Public transparency, not public authority</h1><p>Q-Pueblo organizes research for people who want to understand governance. It is independent of government and does not speak for elected officials or agencies.</p></div><div class="columns"><article class="panel"><h2>What Q-Pueblo does</h2><ul class="check-list"><li>Explain laws, budgets, public decisions and agencies in accessible language</li><li>Link original records, identify uncertainty and document corrections</li><li>Trace documented financial and institutional relationships</li><li>Compare evidence, perspectives, options and conditional impacts</li><li>Maintain human consent, review, override and audit controls</li></ul></article><article class="panel"><h2>What it does not do</h2><ul class="no-list"><li>Act as a government agency, legal advisor, auditor or court</li><li>Endorse or oppose candidates, campaigns or policy choices</li><li>Make autonomous government, spending or enforcement decisions</li><li>Publish an allegation as fact because it is repeated or popular</li><li>Build political persuasion profiles or identify private citizens for targeting</li></ul></article></div><div class="panel"><h2>Verification, TTL, EE and T2Y</h2><p><strong>TTL:</strong> Each record has its own review cadence and expiry policy. Outdated source snapshots remain dated and are not silently repackaged as current. <strong>RX:</strong> Competing explanations receive fair, evidence-based scrutiny. <strong>EE:</strong> Use the least costly intelligence adequate to the task, falling back to source links when AI capacity is unavailable. <strong>T2Y:</strong> Prefer research that improves verified public understanding and usable outcomes without sacrificing truth, safety, reversibility or human agency.</p><p><strong>Publication gate:</strong> Human review is required before consequential findings, sensitive corrections or new evidence claims are promoted. The present website is a public beta and does not imply completion of Q10's full internal evidence reconciliation.</p></div></section>
+<a class="skip" href="#discover">Skip to explore</a>
+<header class="mast"><div class="mast-inner">
+<a class="logo" href="launch-dashboard.html" aria-label="Q-Pueblo dashboard">Q<span>·</span>PUEBLO</a>
+<nav class="primary" id="primary-nav" aria-label="Main navigation">
+<a href="#discover">Explore</a><a href="#packs">Issue Packs</a><a href="#engines">Data & Money</a><a href="#agents">Research Guides</a><a href="#learn">Learn & Play</a>
+</nav><a class="header-search" href="#site-search" aria-label="Search Q-Pueblo">⌕</a>
+<button id="menuToggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">☰ Menu</button>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="hero-inner">
+<div class="orb" aria-hidden="true"><span>Q</span></div><div class="hero-wordmark">Q-PUEBLO</div>
+<p class="tagline">Know Pueblo. Help Shape Its Future.</p>
+<p class="hero-subtitle">People · Places · Projects · Progress</p>
+<form id="searchForm" class="hero-search" role="search">
+<label class="sr-only" for="site-search">Search Pueblo topics, issues, agencies and documents</label>
+<span aria-hidden="true">⌕</span><input id="site-search" type="search" maxlength="140" autocomplete="off" placeholder="Search issues, projects, money, people, Pueblo history…">
+<button type="submit">Search <span aria-hidden="true">→</span></button>
+</form>
+<p class="hero-disclosure">PUBLIC RESEARCH BETA · Dated source records · Living, incomplete packets · No autonomous agent decisions</p>
+</div></section>
+<section class="wrap" id="discover"><div class="section-head"><div><p class="kicker">DISCOVER PUEBLO</p><h1>Explore every side of the region</h1><p>Ten public entryways organized across 31 research domains. Open an issue from a simple explanation to its sources, funding and ripple effects.</p></div><a class="textlink" href="research-atlas.html">Open the research index →</a></div>
+<div class="tiles" id="categories"></div></section>
+<section class="wrap panel-row" id="packs"><div class="section-head"><div><p class="kicker">ISSUE PACKETS</p><h2>Featured research pathways</h2><p>Real Pueblo subjects with dated research records. A packet may be partial; unresolved issues remain visible.</p></div><a class="textlink" href="research-atlas.html">All indexed topics →</a></div>
+<div class="pack-grid" id="featuredPacks"></div></section>
+<section class="wrap tools" id="engines"><div class="section-head"><div><p class="kicker">Q-ENGINES</p><h2>Tools you can use across every category</h2><p>Shared infrastructure rather than separate agents for every subject. Available functions are distinguished from planned automation.</p></div></div><div class="tool-grid" id="engineCards"></div></section>
+<section class="wrap" id="agents"><div class="section-head"><div><p class="kicker">Q-ASSISTANTS</p><h2>Choose a research task, not an unverified answer</h2><p>At launch, these are guided workflows and structured tools. Automated live agents will require backend deployment, permissions, audited sources and human review.</p></div></div><div class="agent-grid" id="agentCards"></div></section>
+<section class="wrap feature-row" id="learn"><div class="feature-card">
+<p class="kicker">POINTER · DIGITAL TWIN</p><h2>Explore Pueblo as a connected system</h2><p>Understand how a decision in one field can affect roads, utility rates, jobs, services and neighborhoods. The current view is an exploratory research model—not a validated real-time digital twin.</p>
+<a class="button ghost" href="research-atlas.html#QRX-REG-060-01">Explore connected issues →</a>
+</div><div class="feature-card">
+<p class="kicker">PUEBLO LEARNING</p><h2>Understand it. Test it. Use it.</h2><p>Learn the basics of public records, municipal finance, legal authority and how to separate reported claims from established evidence.</p>
+<a class="button ghost" href="legacy.html#research/learn">Open the Pueblo challenge →</a>
+</div></section>
+<section class="wrap utility-row"><a href="legacy.html#research/prompt"><span>✦</span> Prompt Library</a><a href="legacy.html#research/report"><span>▤</span> Research Outline</a><a href="legacy.html#sources"><span>▦</span> Official Sources</a><a href="legacy.html#research/effect"><span>◎</span> Q Effect</a><a href="cost-explorer.html"><span>＄</span> Cost Explorer</a><a href="legacy.html#participate"><span>↗</span> Participation Guidance</a></section>
+<section class="wrap safety" id="about"><div><h2>How QPueblo protects the public record</h2><p>Source and event dates stay visible. A proposed budget is not a paid invoice; a relationship is not misconduct; a modeled effect is not a measured outcome. Draft packets can grow as evidence arrives without rewriting earlier versions.</p></div><div><strong>Release boundary</strong><p>October 16, 2026 research register; not live data. Historical snapshots require current-record refresh. Sensitive held assertions, private submissions and autonomous agents are not published.</p></div></section>
 </main>
-<footer class="site-footer"><div class="wrap footer-inside"><div><strong>Q-PUEBLO</strong><p>Regional Governance & Transparency<br>Independent civic research. Pueblo region, Colorado.</p></div><div><strong>Inform • Analyze • Verify • Explain • Empower</strong><p>Public beta • Last website release: November 2026 • <a href="#trust" data-go="trust">About our boundaries</a></p></div></div></footer>
-<div id="toast" role="status" aria-live="polite"></div>
+<footer><div class="wrap foot"><span><b>Q-PUEBLO</b> · Know Pueblo. Help Shape Its Future.</span><span>Visual identity implementation draft · Actual city facts require source dates and review</span><a href="legacy.html#trust">Transparency & boundaries</a></div></footer>
 </body></html>
