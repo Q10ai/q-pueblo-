@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cost Explorer | Q-Pueblo</title><meta name="description" content="Privacy-preserving household, small business and public-project cost calculator with transparent assumptions.">
+<link rel="icon" type="image/jpeg" href="qpueblo-mark.jpg"><link rel="stylesheet" href="launch-dashboard.css"><link rel="stylesheet" href="cost-explorer.css">
+<script src="cost-explorer.js" defer></script></head><body>
+<a class="skip" href="#calculator">Skip to calculator</a><header class="mast"><div class="mast-inner"><a class="logo" href="index.html">Q<span>·</span>PUEBLO</a><nav class="primary open-static" aria-label="Sections"><a href="index.html">Dashboard</a><a href="research-atlas.html">Issue Packs</a><a href="legacy.html#money">Public Money</a></nav></div></header>
+<main class="wrap cost-shell" id="calculator">
+<p class="kicker">QPUEBLO · PRACTICAL COSTS · LOCAL DATA CAN BE ADDED WHEN VERIFIED</p>
+<h1>What does it actually cost?</h1><p class="lead">Model a household budget, a small-business expense plan or a public project's long-term cost using your own assumptions. No information you enter is transmitted or saved.</p>
+<div class="notice"><strong>Important distinction:</strong> This is arithmetic—not a quote, official Pueblo rate, tax calculation, financing advice, or forecast. All values are entered by you. If you don't know an input, leave it at zero and treat the result as incomplete.</div>
+<div class="segment" role="group" aria-label="Cost model">
+<button type="button" data-mode="household" aria-pressed="true">🏠 Household</button>
+<button type="button" data-mode="business" aria-pressed="false">🏪 Small Business</button>
+<button type="button" data-mode="project" aria-pressed="false">🏗️ Public Project</button>
+</div>
+<form id="cost-form" class="cost-grid"><section class="input-panel"><h2 id="model-title">Monthly household expenses</h2><p id="model-note" class="desc"></p><div id="fields"></div><button type="submit" class="calc-btn">Calculate cost →</button></section>
+<section class="output-panel" aria-live="polite"><p class="kicker">COST EXPLORER RESULT</p><h2 id="result-label">Total modeled cost</h2><div class="big-number" id="result-total">—</div><div id="result-explanation" class="desc">Enter values and calculate.</div><div id="breakdown"></div><button type="button" id="copyresult" class="copy" disabled>Copy transparent summary</button></section></form>
+<section class="how"><h2>How to interpret the result</h2><div class="three"><div><strong>Account for the missing values</strong><p>Zero is treated as no input, not proof of no cost. Actual rates or bids may differ.</p></div><div><strong>Keep stages separate</strong><p>Approved public funding, cash paid, debt service, operations and verified benefits are different financial objects.</p></div><div><strong>Understand lifecycle exposure</strong><p>A large upfront cost may be only one component of a project with decades of staffing, maintenance and replacement obligations.</p></div></div></section>
+</main><footer><div class="wrap foot"><span>Q-PUEBLO · Know Pueblo. Help Shape Its Future.</span><span>Calculations are local to this device · No tracking</span><a href="index.html">Dashboard</a></div></footer>
+</body></html>
