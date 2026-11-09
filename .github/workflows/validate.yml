@@ -16,10 +16,17 @@ jobs:
       - name: Validate JavaScript syntax
         run: |
           node --check public/site.js
+          node --check public/explore.js
+          node --check public/data/q-pueblo-public-catalog-2026-11-08.js
+          node --check scripts/check-public-catalog.mjs
           node --check functions/api/v1/config.js
       - name: Validate required public pages and safety headers
         run: |
           test -s public/index.html
+          test -s public/explore.html
+          test -s public/explore.css
+          test -s public/data/q-pueblo-public-catalog-2026-11-08.js
+          node scripts/check-public-catalog.mjs
           test -s public/site.css
           test -s public/_headers
           grep -q 'Q-PUEBLO' public/index.html
