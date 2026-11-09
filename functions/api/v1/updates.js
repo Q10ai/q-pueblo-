@@ -1,0 +1,1 @@
+import {assetJson,reply} from './_public.js';export async function onRequestGet(ctx){try{const d=await assetJson(ctx,'/data/updates.json');return reply(d)}catch{return reply({error:'notice_index_unavailable'},503)}}

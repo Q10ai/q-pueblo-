@@ -1,0 +1,37 @@
+name: Q-Pueblo Source Watch — Review Queue
+on:
+  schedule:
+    - cron: '11 14,20 * * 1-5'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run review-queue unit tests
+        run: node --test backend/official-monitor.test.mjs
+      - name: Inspect allowlisted public publisher portals (no automatic conclusions)
+        run: node backend/official-monitor.mjs
+      - name: Create or refresh publisher-change review PR
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: bot/official-source-review
+          delete-branch: true
+          add-paths: |
+            backend/state.json
+            public/data/updates.json
+          title: 'Source watch: review publisher changes before public release'
+          body: |
+            Machine observed official publisher pages. A changed page does not establish a vote, meeting time, cost, outcome, wrongdoing or new policy.
+            Human editor: open every linked original; verify date, jurisdiction, relevance, privacy and contradictions; amend inaccurate signals; only then merge.
+          commit-message: 'chore(watch): stage official page hashes and signals for editorial verification'

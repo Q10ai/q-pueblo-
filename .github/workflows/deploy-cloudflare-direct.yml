@@ -1,0 +1,31 @@
+name: Q-Pueblo Deploy Validated Static Site to Cloudflare
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  deployments: write
+jobs:
+  deploy:
+    if: ${{ vars.QP_CLOUDFLARE_AUTO_DEPLOY == 'enabled' }}
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate source, evidence boundaries and available media
+        run: |
+          node --test backend/official-monitor.test.mjs
+          node scripts/check-site-v3.mjs
+          node scripts/check-public-catalog.mjs
+          node scripts/check-workbench.mjs
+      - name: Deploy to existing Direct Upload Pages project
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy public --project-name=${{ vars.CLOUDFLARE_PAGES_PROJECT }} --branch=main
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

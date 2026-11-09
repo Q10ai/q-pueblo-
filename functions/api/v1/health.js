@@ -1,0 +1,1 @@
+export async function onRequestGet(){return Response.json({status:'ok',service:'Q-Pueblo public read-only functions',state:'backend route only; not an evidence freshness guarantee'},{headers:{'Cache-Control':'no-store'}})}

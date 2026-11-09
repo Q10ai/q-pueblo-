@@ -1,0 +1,35 @@
+name: Q-Pueblo RSS Source Metadata — Human Review Queue
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 13,22 * * 1-5'
+permissions:
+  contents: read
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate normalizer before fetching
+        run: python -m unittest discover -s scripts -p 'test_*.py' -v
+      - name: Fetch official source titles for editorial review only
+        run: python scripts/sync-official-feeds.py
+      - name: Validate content, links, privacy boundaries
+        run: python scripts/check-release.py
+      - name: Open review-only PR; never commit directly to main or deploy
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: bot/official-rss-review
+          delete-branch: true
+          add-paths: public/data/updates.json
+          title: 'Q-Pueblo official RSS metadata — editor verification required'
+          body: |
+            This PR contains attributed publisher RSS/Atom titles only; it is not a report of meeting outcomes or public votes.
+            Editor: review original URLs, dates, title changes, legal/publication restrictions, privacy and relevance before release.
+          commit-message: 'data: stage official source metadata (unreviewed)'

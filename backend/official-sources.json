@@ -1,0 +1,10 @@
+{
+  "schema": "qp-official-watch-sources-v1",
+  "minReview": "Human approval before externally attributed signals reach public site",
+  "sources": [
+    {"id":"city-council-agendas","publisher":"City of Pueblo","name":"City Council agenda notices and public meeting postings","url":"https://www.pueblo.us/list.aspx","jurisdiction":"Municipal","type":"official_notice_hub"},
+    {"id":"city-council-videos","publisher":"City of Pueblo / Granicus","name":"City Council sessions and archived recordings","url":"https://pueblo.granicus.com/ViewPublisher.php?view_id=4","jurisdiction":"Municipal","type":"official_video_hub"},
+    {"id":"county-board","publisher":"Pueblo County","name":"County commissioners’ board agendas and minutes","url":"https://www.pueblocounty.gov/board-county-commissioners/board-meeting-agendas-and-minutes","jurisdiction":"County","type":"official_agenda_hub"},
+    {"id":"state-legislature","publisher":"Colorado General Assembly","name":"Legislative session schedules, bills and votes","url":"https://leg.colorado.gov/","jurisdiction":"State","type":"official_legislative_hub"}
+  ]
+}

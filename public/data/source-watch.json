@@ -1,0 +1,34 @@
+{
+  "schema": "qp-official-source-watch-v1",
+  "reviewRequired": true,
+  "sources": [
+    {
+      "id": "city-council",
+      "label": "Pueblo City Council meeting archive",
+      "url": "https://pueblo.granicus.com/ViewPublisher.php?view_id=4",
+      "category": "meeting",
+      "priority": "high"
+    },
+    {
+      "id": "city-budget",
+      "label": "City budget and public financial records",
+      "url": "https://www.pueblo.us/Archive/101",
+      "category": "money",
+      "priority": "high"
+    },
+    {
+      "id": "pueblo-west-roads",
+      "label": "Pueblo West roads transparency",
+      "url": "https://pueblowestmetro.us/1838/Pueblo-West-Road-Funding-Transparency",
+      "category": "transport",
+      "priority": "medium"
+    },
+    {
+      "id": "county-priorities",
+      "label": "Pueblo County publicly posted priorities",
+      "url": "https://www.pueblocounty.gov/what-we-are-working",
+      "category": "county",
+      "priority": "medium"
+    }
+  ]
+}
