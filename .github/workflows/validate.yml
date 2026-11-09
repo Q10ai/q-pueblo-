@@ -33,6 +33,8 @@ jobs:
           test -s public/workbench.html
           test -s public/workbench.css
           test -s public/workbench-spec.js
+          test -s public/packet-schema.json
+          node -e "JSON.parse(require('node:fs').readFileSync('public/packet-schema.json','utf8'))"
           node scripts/check-workbench.mjs
           test -s public/site.css
           test -s public/_headers

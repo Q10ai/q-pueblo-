@@ -1,0 +1,240 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Q10ai/q-pueblo-/blob/main/public/packet-schema.json",
+  "title": "Q Pueblo Public Research Packet Contract",
+  "description": "A client-generated research starter, not a verified finding. Semantic fields remain explicitly provisional until source-by-source human review.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema",
+    "createdAt",
+    "state",
+    "platform",
+    "role",
+    "question",
+    "issue",
+    "fiveWH",
+    "entityImpact",
+    "finance",
+    "sources",
+    "shock",
+    "RX",
+    "timeModel",
+    "childImpact",
+    "adaptive",
+    "nextSteps",
+    "limitations"
+  ],
+  "properties": {
+    "schema": {
+      "const": "qp-research-workbench-v1"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "state": {
+      "const": "UNVERIFIED_RESEARCH_STARTER_NOT_PUBLISHED_FACT"
+    },
+    "role": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "need"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "need": {
+          "type": "string"
+        }
+      }
+    },
+    "question": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "issue": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "registryStatus"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "registryStatus": {
+          "type": "string"
+        }
+      }
+    },
+    "fiveWH": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "required": [
+          "dimension",
+          "prompt",
+          "status"
+        ]
+      }
+    },
+    "entityImpact": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "depth",
+          "title",
+          "questions",
+          "confidence"
+        ]
+      }
+    },
+    "relatedTopics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "relationship"
+        ]
+      }
+    },
+    "finance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "check",
+          "status"
+        ]
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "publisher",
+          "url",
+          "kind",
+          "evidenceStatus"
+        ],
+        "properties": {
+          "url": {
+            "type": "string",
+            "pattern": "^https://"
+          },
+          "kind": {
+            "enum": [
+              "registry-linked",
+              "discovery-only"
+            ]
+          }
+        }
+      }
+    },
+    "shock": {
+      "type": "object",
+      "required": [
+        "kind",
+        "horizon",
+        "posture",
+        "confidence",
+        "scenarios",
+        "earlyWarning",
+        "protect",
+        "improve",
+        "compoundedFailure"
+      ],
+      "properties": {
+        "scenarios": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "label",
+              "assumption",
+              "trigger",
+              "response",
+              "measure",
+              "evidenceStatus"
+            ]
+          }
+        }
+      }
+    },
+    "RX": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "required": [
+          "key",
+          "title",
+          "question",
+          "status"
+        ]
+      }
+    },
+    "timeModel": {
+      "type": "object",
+      "required": [
+        "past",
+        "present",
+        "future",
+        "learning"
+      ]
+    },
+    "childImpact": {
+      "type": "object",
+      "required": [
+        "status",
+        "questions"
+      ]
+    },
+    "adaptive": {
+      "type": "object",
+      "required": [
+        "unknownIssueSupported",
+        "models",
+        "integration",
+        "provenance"
+      ]
+    },
+    "nextSteps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
