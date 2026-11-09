@@ -34,13 +34,22 @@
 <textarea id="wb-question" rows="3" maxlength="1000" placeholder="Example: Who approved this project, what is its public cost and what happens next?"></textarea>
 <label for="wb-issue-filter">Find a relevant research record</label><input id="wb-issue-filter" type="search" placeholder="Search by topic, registry ID, institution or location" autocomplete="off">
 <label for="wb-issue">Choose a dated issue record</label><select id="wb-issue" required></select>
-<p id="wb-issue-meta" class="wb-field-info" role="status"></p>
+<p id="wb-issue-meta" class="wb-field-info" role="status"></p><p class="wb-field-info"><strong>Not in our index?</strong> Select “Emerging topic / unknown issue” to generate source routes, preliminary safeguards and an intake packet without inventing an answer.</p>
 </fieldset>
 <fieldset class="wb-fieldset"><legend>3. How deep and what output?</legend>
 <div class="wb-form-grid">
 <div><label for="wb-level">Research depth</label><select id="wb-level"></select></div>
 <div><label for="wb-lens">Focus</label><select id="wb-lens"></select></div>
 <div class="wb-wide"><label for="wb-output">Useful deliverable</label><select id="wb-output"></select></div></div>
+</fieldset>
+<fieldset class="wb-fieldset"><legend>4. Shock factors and preparedness</legend>
+<div class="wb-form-grid">
+<div><label for="wb-shock">Scenario or disruption</label><select id="wb-shock">
+<option value="none">No specific shock</option><option value="economic">Economic / fiscal shock</option><option value="infrastructure">Infrastructure / energy / water</option><option value="health">Health / public safety / environmental</option><option value="climate">Drought / flood / wildfire / climate</option><option value="governance">Election / law / governance / trust</option><option value="technology">AI / cyber / data / technology change</option><option value="supply">Labor / materials / logistics / supply</option><option value="unknown">Compound / novel / unknown shock</option>
+</select></div>
+<div><label for="wb-horizon">Time horizon</label><select id="wb-horizon"><option value="immediate">Immediate / weeks</option><option value="mid" selected>Months / 1–2 years</option><option value="long">3–10 years</option><option value="generation">Generation / children’s future</option></select></div>
+<div><label for="wb-posture">Preparedness posture</label><select id="wb-posture"><option value="balanced">Balanced: protect and build</option><option value="defend">Defensive: continuity and recovery</option><option value="advance">Proactive: opportunity and resilience</option><option value="explore">Exploratory: LEAP and alternatives</option></select></div>
+<div><label for="wb-risk">Screening intensity (not a measured score)</label><select id="wb-risk"><option value="standard">Standard</option><option value="heightened">Heightened: critical services</option><option value="severe">Severe: correlated failures</option></select></div></div>
 </fieldset>
 <div class="wb-actions"><button class="wb-primary" type="submit">Build my Q Pueblo research brief</button><button class="wb-secondary" type="button" id="wb-reset">Reset</button></div>
 </form>
