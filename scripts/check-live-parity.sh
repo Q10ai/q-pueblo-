@@ -6,7 +6,7 @@ output="${1:-release-parity-report.txt}"
 : > "$output"
 printf 'Q Pueblo Live Parity Check\nUTC: %s\nExpected GitHub revision: %s\nTarget: %s\n\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "${GITHUB_SHA:-unknown}" "$base" >> "$output"
 result=0
-for spec in 'index.html:Q-PUEBLO' 'explore.html:Explore the Pueblo' 'workbench.html:Q Pueblo Workbench' 'packet-schema.json:qp-research-workbench-v1'; do
+for spec in 'index.html:Q-PUEBLO' 'explore.html:Explore the Pueblo' 'workbench.html:Q Pueblo Workbench' 'q-tools.html:Q Tools | Q-Pueblo' 'q-tools.js:QP_TOOLS_CORE' 'q-tools.css:.qt-head' 'packet-schema.json:qp-research-workbench-v1'; do
   path="${spec%%:*}"
   marker="${spec#*:}"
   filename="$(mktemp)"
