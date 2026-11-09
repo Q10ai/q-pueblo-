@@ -1,0 +1,7 @@
+.qp-tool-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:14px;padding:20px;border:1px solid #9ba4bd;background:#0c2746;border-radius:16px}
+.qp-tool-form label{display:grid;gap:7px;font-weight:700;color:#e4edff}.qp-tool-form input{width:100%;min-height:44px;padding:11px;border-radius:9px;border:1px solid #94b5cb;background:#f8fbfe;color:#0c2746;font-size:1rem}
+.qp-tool-actions{display:flex;align-items:end;gap:9px;flex-wrap:wrap;grid-column:1/-1}.qp-tool-actions button{min-height:46px;background:#edb860;border:1px solid #ffe19d;color:#1b1e30;padding:12px 18px;font-weight:800;border-radius:9px}.qp-tool-actions button+button{background:#234f70;color:white;border-color:#8db6ca}
+.qp-tool-result{border-left:4px solid #83e0eb;padding:18px;background:#123454;color:#fff;border-radius:9px;line-height:1.7}
+.qp-tool-status{color:#e9b364;font-weight:750}
+.qp-tool-form input:focus-visible,.qp-tool-actions button:focus-visible{outline:3px solid #8eeafa;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
