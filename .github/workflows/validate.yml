@@ -32,6 +32,23 @@ jobs:
           grep -q 'Q-PUEBLO' public/index.html
           grep -q 'contributions_enabled: false' functions/api/v1/config.js
           grep -q "Content-Security-Policy" public/_headers
+      - name: Package static Cloudflare Pages upload
+        if: github.ref == 'refs/heads/main'
+        run: |
+          cd public
+          zip -q -r ../q-pueblo-cloudflare-pages.zip .
+          cd ..
+          test -s q-pueblo-cloudflare-pages.zip
+          unzip -l q-pueblo-cloudflare-pages.zip | grep -q 'explore.html'
+          unzip -l q-pueblo-cloudflare-pages.zip | grep -q 'index.html'
+      - name: Preserve Pages upload bundle as Actions artifact
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@v4
+        with:
+          name: q-pueblo-cloudflare-upload
+          path: q-pueblo-cloudflare-pages.zip
+          if-no-files-found: error
+          retention-days: 30
       - name: Block obvious local credentials
         run: |
           test ! -e .env
