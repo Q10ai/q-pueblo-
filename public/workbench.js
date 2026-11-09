@@ -1,0 +1,234 @@
+'use strict';
+(() => {
+  const cat = window.QP_PUBLIC_CATALOG, spec = window.QP_WORKBENCH_SPEC;
+  const $ = id => document.getElementById(id);
+  const esc = v => String(v ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+  if (!cat || !spec || !Array.isArray(cat.issues) || !Array.isArray(spec.roles)) {
+    const status = $('wb-persona-summary');
+    if(status) status.textContent = 'Research reference data are unavailable. Use the public issue library.';
+    return;
+  }
+  const roles=spec.roles,issues=[...cat.issues].sort((a,b)=>a.title.localeCompare(b.title));
+  const bySource=new Map(cat.sources.map(s=>[s.id,s]));
+  const form=$('wb-form'),role=$('wb-persona'),issue=$('wb-issue'),search=$('wb-issue-filter');
+  const level=$('wb-level'),lens=$('wb-lens'),output=$('wb-output');
+  const fallback={id:'NEW-LEAD',title:'Emerging topic / unknown issue (new research lead)',category:'Unclassified / emerging',domain:'Needs jurisdiction and source classification',lastReviewed:'No indexed record',sourceIds:[],geography:'Not determined',childImpact:'Must be assessed after scope is established'};
+  let packet=null,markdown='';
+  const option=(value,label)=>{const n=document.createElement('option');n.value=value;n.textContent=label;return n;};
+  const chosenRole=()=>roles.find(x=>x.id===role.value)||roles[0];
+  const chosenIssue=()=>issues.find(x=>x.id===issue.value)||fallback;
+  const chosen=(arr,value)=>arr.find(x=>x.id===value)||arr[0];
+  const checklist=arr=>'<ul>'+arr.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';
+  const section=(name,body,full=false)=>'<section class="wb-packet-block'+(full?' wb-full':'')+'" aria-label="'+esc(name)+'"><h3>'+esc(name)+'</h3>'+body+'</section>';
+  const msg=text=>{$('wb-toast').textContent=text;$('wb-toast').hidden=false;};
+  const hostValid=url=>/^https:\/\//i.test(url)&&!/[<>"']/.test(url);
+  const sourceLine=s=>'<div><a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.title)+'</a><small>'+esc(s.publisher)+' · '+esc(s.asOf||'check current version')+'</small></div>';
+  const clean=s=>String(s||'').replace(/[\r\n]+/g,' ').trim().slice(0,1000);
+  const shockData={
+    none:{focus:'General change and decision uncertainty',signals:['Official decision, budget or contract change','Source revision or contradictory reporting','Service-access or delivery change'],defense:['Keep a dated source trail and responsible custodian','Preserve continuity of service and correction path'],advance:['Identify no-regret improvements, collaboration and public learning']},
+    economic:{focus:'Revenue, grants, jobs, business continuity and affordability',signals:['Budget amendment and cash-flow stress','Employer and procurement changes','Price, jobs and tax-base trend'],defense:['Maintain essential-service funding alternatives','Review cash reserves, debt covenants and double counting'],advance:['Diversify suppliers and workforce partnerships','Target sustainable investment tied to measured outcomes']},
+    infrastructure:{focus:'Utility, transport and physical asset service reliability',signals:['Outage, capacity and maintenance indicators','Asset lifecycle, permits and access limitations','Supplier or contractor dependency'],defense:['Identify backup service and critical loads','Test maintenance reserves and recovery contracts'],advance:['Invest in resilience and preventive maintenance','Design modular infrastructure alternatives']},
+    health:{focus:'Population health, safety, hazardous exposure and emergency services',signals:['Official health/safety notices','Service-capacity and response trends','Publicly verified exposure measures'],defense:['Prioritize emergency access and child safeguards','Separate clinical/public-safety alerts from rumors'],advance:['Improve prevention, coordination and equitable access']},
+    climate:{focus:'Water, drought, flood, fire and environmental continuity',signals:['Official hazard outlooks and monitoring','Water reliability, extreme weather and burn conditions','Recovery funding and property exposure'],defense:['Use authorized emergency plans and evacuation notices','Protect critical utilities, documents and vulnerable populations'],advance:['Improve watershed and land resilience','Use adaptive building/land-use decisions and local skills']},
+    governance:{focus:'Elections, authority, compliance and institutional trust',signals:['New official results or certification','Legal, board, staffing and delegation changes','Budget/contract/ordinance amendments'],defense:['Preserve valid-vs-observed time and status','Verify legal powers and transition handoffs'],advance:['Improve transparent decision packets and access','Make correction and public participation easier']},
+    technology:{focus:'AI, data, cybersecurity and changing technical capacity',signals:['System/integration changes and vendor controls','Security incidents or privacy revisions','Costs, workforce and service adoption'],defense:['Protect identity, consent, backups and human override','Stage pilots with disable/rollback switches'],advance:['Train staff and residents in AI literacy','Pilot accessible low-cost human-reviewed public tools']},
+    supply:{focus:'Labor, materials, logistics and capacity',signals:['Materials availability and pricing','Supplier concentration and labor gaps','Transportation/permit delays'],defense:['Identify alternatives for critical suppliers','Document inventory, lead times and service continuity'],advance:['Invest in local workforce and modular sourcing','Build transparent vendor access and collaboration']},
+    unknown:{focus:'Compound or novel uncertainties across domains',signals:['Unexpected correlated service changes','Emerging claims without verified primary records','Cross-agency failure and rapid context shifts'],defense:['Protect life, essential services and verified communication','Use independent backup records, escalation and reversible actions'],advance:['Explore multiple bounded scenarios without assuming forecasts','Create a repeatable intake and learning record']}
+  };
+  const shockName={none:'General',economic:'Economic/fiscal',infrastructure:'Infrastructure/utility',health:'Health/safety',climate:'Climate/environment',governance:'Governance/transition',technology:'AI/technology/cyber',supply:'Labor/supply chain',unknown:'Compound/novel'};
+  const horizonName={immediate:'Immediate / weeks',mid:'Months to 2 years',long:'3–10 years',generation:'Generational / children’s future'};
+  const postureName={balanced:'Balanced protection and opportunity',defend:'Defensive continuity and recovery',advance:'Proactive development and capability',explore:'LEAP exploratory alternatives'};
+  const riskName={standard:'Standard screening',heightened:'Heightened attention to essential services',severe:'Severe correlated-failure exercise'};
+  const moneyStages=[
+    'Requested or proposed amount — identify applicant, estimates and purpose',
+    'Legal or voter authority — inspect statute, ordinance, measure or board resolution',
+    'Appropriated amount — check year, fund restrictions, transfer and balance',
+    'Awarded or obligated amount — confirm instrument, conditions and recipient',
+    'Executed contract — verify parties, scope, pricing, amendments and milestones',
+    'Invoiced versus cash paid — trace actual transaction IDs, dates and payees',
+    'Recovered or clawed back — separate recovery from original obligations',
+    'Actual results — verify delivery, maintenance, jobs, lifecycle costs and outcome'
+  ];
+  function roleChange(){
+    const r=chosenRole();$('wb-persona-summary').textContent=r.need;
+    $('wb-starters').innerHTML=r.questions.map((q,i)=>'<button type="button" data-starter="'+i+'">'+esc(q)+'</button>').join('');
+    $('wb-persona-chips').querySelectorAll('[data-role]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.role===r.id)));
+  }
+  roles.forEach(r=>role.appendChild(option(r.id,r.title)));
+  spec.levels.forEach(x=>level.appendChild(option(x.id,x.title)));
+  spec.lenses.forEach(x=>lens.appendChild(option(x.id,x.title)));
+  spec.outputs.forEach(x=>output.appendChild(option(x.id,x.title)));
+  role.value='resident';level.value='investigate';lens.value='balanced';output.value='snapshot';
+  const common=['resident','family','business','investor','council','mayor','commissioner','state','federal'];
+  $('wb-persona-chips').innerHTML=common.map(id=>{
+    const r=roles.find(x=>x.id===id);
+    return '<button type="button" data-role="'+esc(r.id)+'" aria-pressed="false">'+esc(r.title.split(' / ')[0])+'</button>';
+  }).join('');
+  $('wb-persona-chips').addEventListener('click',e=>{const b=e.target.closest('[data-role]');if(!b)return;role.value=b.dataset.role;output.value=chosenRole().outputs[0];roleChange();});
+  $('wb-starters').addEventListener('click',e=>{const b=e.target.closest('[data-starter]');if(!b)return;$('wb-question').value=chosenRole().questions[Number(b.dataset.starter)]||'';$('wb-question').focus();});
+  role.addEventListener('change',()=>{output.value=chosenRole().outputs[0];roleChange();});
+  function showIssue(){
+    const i=chosenIssue();
+    $('wb-issue-meta').textContent=i.id==='NEW-LEAD'?'Unlisted topic: initial classification and original-source discovery needed. No claim is registered.':
+      i.id+' · '+i.category+' · last historical review: '+(i.lastReviewed||'not recorded')+' · '+i.sourceIds.length+' crosswalked public source links. This title is a research scope, not a finding.';
+  }
+  function issueOptions(){
+    const q=search.value.toLowerCase().trim(),old=issue.value;
+    const rows=issues.filter(i=>!q||[i.id,i.title,i.domain,i.category,i.geography].join(' ').toLowerCase().includes(q));
+    issue.replaceChildren(option('NEW-LEAD','NEW-LEAD — Emerging topic / not in the indexed research'));
+    rows.forEach(i=>issue.appendChild(option(i.id,i.id+' — '+i.title)));
+    issue.value=rows.some(i=>i.id===old)?old:(q&&!rows.length?'NEW-LEAD':rows.length?rows[0].id:'NEW-LEAD');
+    showIssue();
+  }
+  search.addEventListener('input',issueOptions);issue.addEventListener('change',showIssue);
+  issueOptions();roleChange();
+  function relatedIssues(target,question){
+    const text=(target.id==='NEW-LEAD'?question:target.title+' '+question).toLowerCase();
+    const stop=new Set(['pueblo','county','city','local','what','when','that','from','have','will','this','their','public','with','there','into','about','current','issue','does','who','why','how','project']);
+    const tokens=new Set((text.match(/[a-z]{4,}/g)||[]).filter(t=>!stop.has(t)));
+    return issues.filter(i=>i.id!==target.id).map(i=>{
+      const words=new Set((i.title+' '+i.domain).toLowerCase().match(/[a-z]{4,}/g)||[]);
+      let score=0;for(const t of tokens)if(words.has(t))score++;
+      if(target.id!=='NEW-LEAD'&&i.category===target.category)score+=.5;
+      return {i,score};
+    }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score||a.i.id.localeCompare(b.i.id)).slice(0,6).map(x=>({...x.i,provenance:'TEXT MATCH ONLY; not a verified relationship'}));
+  }
+  function linksFor(i,q){
+    const direct=i.sourceIds.map(id=>bySource.get(id)).filter(Boolean).filter(s=>hostValid(s.url));
+    const original=direct.length?direct:[];
+    const keywords=new Set((q+' '+i.title).toLowerCase().match(/[a-z]{5,}/g)||[]);
+    const ranked=cat.sources.filter(s=>hostValid(s.url)&&!original.some(d=>d.id===s.id)).map(s=>{
+      const words=new Set((s.title+' '+s.publisher).toLowerCase().match(/[a-z]{5,}/g)||[]);
+      let n=0;for(const t of keywords)if(words.has(t))n++;
+      if(/pueblo city council|pueblo county|colorado state|official|municipal code|budget/i.test(s.title))n+=.15;
+      return {s,n};
+    }).sort((a,b)=>b.n-a.n||a.s.id.localeCompare(b.s.id));
+    const general=ranked.slice(0,Math.max(0,7-Math.min(original.length,5))).map(x=>x.s);
+    const wrap=(s,type)=>({id:s.id,title:s.title,publisher:s.publisher,url:s.url,asOf:s.asOf||'unknown',kind:type,
+      evidenceStatus:type==='registry-linked'?'Source lead linked to issue in dated registry; claim-level check still required':'General or keyword-matched official-source lead; NOT established as evidence on this issue'});
+    return [...original.slice(0,5).map(s=>wrap(s,'registry-linked')),...general.map(s=>wrap(s,'discovery-only'))];
+  }
+  function build(){
+    const r=chosenRole(),i=chosenIssue(),q=clean($('wb-question').value)||r.questions[0],L=chosen(spec.levels,level.value),focus=chosen(spec.lenses,lens.value),deliverable=chosen(spec.outputs,output.value);
+    const shock=$('wb-shock').value, horizon=$('wb-horizon').value,posture=$('wb-posture').value,risk=$('wb-risk').value;
+    const s=shockData[shock]||shockData.unknown;
+    const direct=linksFor(i,q),crosswalk=relatedIssues(i,q);
+    return {
+      schema:'qp-research-workbench-v1',createdAt:new Date().toISOString(),
+      state:'UNVERIFIED_RESEARCH_STARTER_NOT_PUBLISHED_FACT',
+      platform:'static-public-workbench-no-network-inquiry-no-automatic-AI',
+      role:{id:r.id,title:r.title,need:r.need},question:q,
+      issue:{id:i.id,title:i.title,domain:i.domain,category:i.category,lastReviewed:i.lastReviewed,scope:i.geography,registryStatus:i.id==='NEW-LEAD'?'NOT YET REGISTERED':'HISTORICAL SCOPED RESEARCH'},
+      output:{depth:L.title,lens:focus.title,deliverable:deliverable.title,purpose:deliverable.purpose},
+      initialResponse:i.id==='NEW-LEAD'?
+        'This issue is not matched to a canonical Pueblo research record. The starting answer is to determine scope and responsible authority; locate the earliest original source; establish time and jurisdiction; test risk and child impact; then review whether to attach it to an existing case or create a new signal.' :
+        'Q Pueblo has a dated research entry for this topic. It identifies a question for investigation, not a verified current resolution. Start with the listed source leads, check the historical review date and authority, then compare newer official records before using any finding.',
+      questions:r.questions,
+      fiveWH:spec.questions.map(x=>({dimension:x.code,prompt:x.prompt,status:'VERIFY FROM ORIGINAL RECORD'})),
+      entityImpact:[
+        ...spec.layers.map(x=>({depth:x.depth,title:x.title,questions:x.questions,confidence:x.type+' — source-backed specific entities and edges are NOT provided by this tool'}))
+      ],
+      relatedTopics:crosswalk.map(x=>({id:x.id,title:x.title,relationship:'Keyword/research affinity only; no documented causal or legal edge'})),
+      finance:moneyStages.map(x=>({check:x,status:'NO DOLLAR AMOUNT OR RESULT ASSUMED'})),
+      sources:direct,
+      shock:{kind:shockName[shock],horizon:horizonName[horizon],posture:postureName[posture],riskScreen:riskName[risk],confidence:'Illustrative qualitative readiness checklist — not measured probability or hazard warning',focus:s.focus,earlyWarning:s.signals,protect:s.defense,improve:s.advance,
+        compoundedFailure:['What if the primary system and its backup fail together?','What if responsible authority, funding and service access change simultaneously?','How do we reach residents without digital access, with accessible language and privacy?'],
+        preparedness:['Map essential functions and dependency owners','Identify alternate contacts, vendors and source custodians','Define triggers, thresholds only when measured, escalation and stop/rollback','Review financial and equity tradeoffs under at least two plausible scenarios','Recheck outcomes and archive what changed']},
+      RX:spec.rx.map(x=>({key:x.key,title:x.title,question:x.question,status:'TO DO — not automatically completed'})),
+      timeModel:{
+        past:'Preserve original event/decision, governing text and versioned amendments',
+        present:'Find latest authoritative records; keep event, publication, observation and effective dates separate',
+        future:'Branch alternative conditional scenarios with ranges, assumptions, sources and reversibility',
+        learning:'Record observed outcome, contradictions and correction, then update the next version only after review'
+      },
+      childImpact:{
+        status:'REQUIRED FOR ANY CONSEQUENTIALLY PUBLISHED PACKET',
+        questions:['Which children and families are affected indirectly or directly at safe aggregate scale?','What changes in safety, health, services, education, cost and access?','What liabilities and resilience benefits extend into adulthood and future generations?','Are there disparate burdens, unresolved evidence, or privacy and dignity risks?']},
+      adaptive:{unknownIssueSupported:true,models:'Classical multi-scenario and graph-oriented specification; no quantum hardware, neural network, live predictions or autonomous agents running here',
+        integration:'Stable versioned JSON/Markdown export suitable for human-reviewed downstream ingestion',
+        provenance:'Any external assistant, data tool, or future model must attach exact sources, validity windows, permissions and review receipts'},
+      nextSteps:i.id==='NEW-LEAD'?
+        ['Classify threat/opportunity, jurisdiction, date, domain and child impact','Locate primary custodian; archive original and relevant alternative authorities','Create a lead with unknown/contested labels, not a proven finding','Search for existing canonical aliases and cross-domain case relationships','Prepare a human-reviewed source-backed packet; reassess during refresh']:
+        ['Read original documents or official portal and establish source versions','Distinguish proposed, authorized, contracted, paid and realized outcomes','Map direct, second and third-order dependencies only with evidence','Challenge with independent origin records and documented alternative interpretations','Write dated brief with child impact, scenario bounds, reviewer, correction and refresh triggers'],
+      limitations:['No automatic claim verification','No inference of a source-supported relationship from text similarity','No emergency instruction or personalized legal/financial/medical advice','No automatic scraping, user profiling, private input submission or quantum advantage claim']
+    };
+  }
+  function render(p){
+    const linked=p.sources.filter(s=>s.kind==='registry-linked').length;
+    let pieces=[];
+    const claimList=[p.initialResponse,'Focus: '+p.output.lens+'.','Perspective: '+p.role.need];
+    pieces.push(section('A. Starting answer and decision context',checklist(claimList)+'<p class="wb-warn"><strong>Status:</strong> Initial research plan, not a finding. '+esc(p.issue.id)+' • Review '+esc(p.issue.lastReviewed)+'. '+esc(p.issue.registryStatus)+'.</p>',true));
+    pieces.push(section('B. Who / What / When / Where / Why / How',checklist(p.fiveWH.map(x=>x.dimension+': '+x.prompt)),true));
+    if(level.value!=='quick'){
+      pieces.push(section('C. Who is connected? Direct → third order',p.entityImpact.map(x=>'<h4>'+esc(x.title)+'</h4>'+checklist(x.questions)+'<small>'+esc(x.confidence)+'</small>').join('')));
+      pieces.push(section('D. Money and lifecycle exposure',checklist(p.finance.map(x=>x.check))));
+    }
+    pieces.push(section('E. Child, household and generational impact',checklist(p.childImpact.questions)));
+    pieces.push(section('F. Shock factors, protection and positive opportunities','<p><strong>'+esc(p.shock.kind)+'</strong> • '+esc(p.shock.horizon)+' • '+esc(p.shock.posture)+'</p><p><span class="wb-tag">'+esc(p.shock.riskScreen)+'</span> Illustrative screen, not a measured hazard.</p><h4>Signals to check</h4>'+checklist(p.shock.earlyWarning)+'<h4>Defensive continuity / recovery</h4>'+checklist(p.shock.protect)+'<h4>Proactive improvement / opportunity</h4>'+checklist(p.shock.improve)));
+    if(level.value==='deep'||level.value==='strategy'){
+      pieces.push(section('G. Compound failures and backup to backup',checklist(p.shock.compoundedFailure.concat(p.shock.preparedness))));
+      pieces.push(section('H. LEAP — past, present, future and learning',checklist(Object.entries(p.timeModel).map(([a,b])=>a.toUpperCase()+': '+b))));
+    }
+    if(level.value!=='quick'){
+      pieces.push(section('I. RX: test the strongest alternative and failure path',checklist(p.RX.map(x=>x.title+': '+x.question)),true));
+    }
+    pieces.push(section('J. Original sources and research routes','<p>'+linked+' registry-linked leads; '+(p.sources.length-linked)+' additional discovery links. Links do not prove a claim and must be checked for freshness.</p><div class="wb-source-grid">'+p.sources.filter(s=>/^https:\/\//i.test(s.url)).map(sourceLine).join('')+'</div>',true));
+    if(p.relatedTopics.length&&level.value!=='quick'){
+      pieces.push(section('K. Candidate crosswalks — not validated relationships',checklist(p.relatedTopics.map(x=>x.id+' — '+x.title+' [textual proximity only]'))));
+    }
+    pieces.push(section('L. What to do next',checklist(p.nextSteps)+'<p><strong>Output:</strong> '+esc(p.output.deliverable)+' — '+esc(p.output.purpose)+'.</p>',true));
+    pieces.push(section('M. Governance and AI boundaries',checklist(p.limitations.concat(['Human-reviewed release, corrections and rollback are required','Quantum-inspired or neural modelling is a future testable option, not a deployed capability'])),true));
+    $('wb-output-body').innerHTML=pieces.join('');
+    $('wb-output-section').hidden=false;
+    $('wb-packet-status').textContent=p.issue.id+' · '+p.role.title+' · '+p.output.depth+' · '+p.shock.kind+' · '+p.sources.length+' public source routes · Not a verified finding';
+    $('wb-output-section').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  function toMarkdown(p){
+    const text=[];
+    const line=(h,body)=>{text.push('## '+h,'',body,'');};
+    const bullets=x=>x.map(a=>'- '+String(a).replace(/[\r\n]+/g,' ')).join('\n');
+    text.push('# Q Pueblo — '+p.output.deliverable,'','**Status:** UNVERIFIED RESEARCH STARTER / HUMAN REVIEW REQUIRED',
+      '**Snapshot:** '+p.createdAt+' | master index '+cat.snapshot,
+      '**Issue:** '+p.issue.id+' — '+p.issue.title,
+      '**Historical review:** '+p.issue.lastReviewed,
+      '**Perspective:** '+p.role.title+' | **Depth:** '+p.output.depth,
+      '**Shock:** '+p.shock.kind+' | **Horizon:** '+p.shock.horizon,'');
+    line('The question',p.question);
+    line('Initial response',p.initialResponse);
+    line('Five Ws + How',bullets(p.fiveWH.map(x=>x.dimension+': '+x.prompt)));
+    line('Direct, secondary and tertiary impact questions',p.entityImpact.map(x=>'### '+x.title+'\n'+bullets(x.questions)).join('\n'));
+    line('Money and lifecycle audit',bullets(p.finance.map(x=>x.check)));
+    line('Past, present, future and LEAP',bullets(Object.entries(p.timeModel).map(([k,v])=>k+': '+v)));
+    line('Child and family impact',bullets(p.childImpact.questions));
+    line('Shock and preparedness',bullets(['Focus: '+p.shock.focus,'Early warnings:',...p.shock.earlyWarning,'Defensive continuity:',...p.shock.protect,'Proactive improvement:',...p.shock.improve,'Backups to backups:',...p.shock.compoundedFailure]));
+    line('RX / contradiction and backup chain',bullets(p.RX.map(x=>x.title+': '+x.question)));
+    line('Unverified crosswalk candidates',bullets(p.relatedTopics.map(x=>x.id+' — '+x.title+' [textual proximity only]')));
+    line('Source inspection leads',bullets(p.sources.map(s=>s.title+' — '+s.publisher+' — '+s.url+' ['+s.kind+': '+s.evidenceStatus+']')));
+    line('Next acquisition / decision steps',bullets(p.nextSteps));
+    line('Constraints',bullets(p.limitations.concat(['Not a completed investigation, legal finding, risk score, operational twin, or validated forecast.','Specific second/third-order entity links require independent source verification.'])));
+    return text.join('\n');
+  }
+  function download(filename,data,type){
+    const blob=new Blob([data],{type}),u=URL.createObjectURL(blob),a=document.createElement('a');
+    a.href=u;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),3000);
+  }
+  form.addEventListener('submit',event=>{event.preventDefault();packet=build();markdown=toMarkdown(packet);render(packet);});
+  $('wb-reset').addEventListener('click',()=>{
+    form.reset();role.value='resident';level.value='investigate';lens.value='balanced';output.value='snapshot';
+    search.value='';issueOptions();roleChange();packet=null;markdown='';
+    $('wb-output-section').hidden=true;$('wb-output-body').replaceChildren();$('wb-toast').hidden=true;
+  });
+  $('wb-copy').addEventListener('click',async()=>{
+    if(!packet)return;try{await navigator.clipboard.writeText(markdown);msg('Markdown research packet copied.');}
+    catch{msg('Clipboard unavailable; download the Markdown file instead.');}
+  });
+  $('wb-download-md').addEventListener('click',()=>{if(packet)download('QP-'+packet.issue.id+'-research.md',markdown,'text/markdown;charset=utf-8');});
+  $('wb-download-json').addEventListener('click',()=>{if(packet)download('QP-'+packet.issue.id+'-research.json',JSON.stringify(packet,null,2)+'\n','application/json');});
+  $('wb-print').addEventListener('click',()=>{if(packet)window.print();});
+  // Optional deep link uses public canonical IDs only. No private state or custom text in URL.
+  const param=new URLSearchParams(location.search).get('issue');
+  if(param){
+    const found=issues.find(i=>i.id===param);
+    if(found){search.value=found.id;issueOptions();issue.value=found.id;showIssue();}
+  }
+})();
