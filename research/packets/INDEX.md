@@ -17,3 +17,11 @@ This index registers **research candidates**, not live website content or operat
 ## Memory coherence / amendment rule
 
 Use packet ID plus a monotonically increasing version to link each new source, correction or contested interpretation to its predecessor. Never replace source excerpts without an amendment event. No claims of automated ChatGPT long-term memory updates are made by this index.
+
+## Archive-reconciliation correction (2026-11-08; controlled ZIP v0.3.1)
+
+The first ZIP archive (v0.3.0) retains an *outdated* filing manifest because its later Drive writes had not yet occurred when it was assembled. The original ZIP has been preserved, and a **separate immutable v0.3.1 successor** includes a current manifest, source hashes and amendment while retaining the original history. The source comments and four screenshot exhibits are kept outside this public Git repository.
+
+Verification: seven original files were uploaded individually to controlled Google Drive, a full ZIP copy was uploaded, a separate Drive Doc contains four embedded screenshot objects, and the QPueblo registry recorded additions A-077 through A-083, LC-024, RH-027 through RH-036. The corrected ZIP was locally CRC-tested, and source-file hashes matched; **a remote byte-for-byte SHA-256 verification of Drive's uploaded files was not performed**. The current ZIP filename is `QP_TWIN_PUEBLO_ECONOMIC_RENEWAL_ARCHIVE_v0.3.1_2026-11-08.zip`.
+
+This correction improves archive continuity only: it does not certify all-year or all-account completeness, promote claims to canonical facts, connect a live twin, start recurring monitoring, or publish any site changes.
