@@ -19,6 +19,7 @@ jobs:
           node --check public/site.js
           node --check public/explore.js
           node --check public/workbench.js
+          node --check public/q-tools.js
           node --check public/workbench-spec.js
           node --check scripts/check-workbench.mjs
           node --check scripts/check-public-release.mjs
@@ -41,6 +42,7 @@ jobs:
           test -s public/packet-schema.json
           node -e "JSON.parse(require('node:fs').readFileSync('public/packet-schema.json','utf8'))"
           node scripts/check-workbench.mjs
+          node scripts/check-q-tools.mjs
           test -s public/site.css
           test -s public/_headers
           grep -q 'Q-PUEBLO' public/index.html
