@@ -9,6 +9,6 @@ assert(html.includes('href="support.css"') && html.includes('src="support.js"'))
 assert(html.includes('Qified issue or entity packet') && html.includes('Merchandise inquiry') && html.includes('Sponsorship') && html.includes('Voluntary support'));
 assert(js.includes("const CONTACT_EMAIL = '';"),'Email recipient must remain unset until owner confirms public inbox');
 assert(js.includes('mailto:') && js.includes('validEmail(CONTACT_EMAIL)'),'No gated email draft action');
-assert(!/https?:\\/\\/(?:js\\.stripe\\.com|checkout\\.stripe\\.com|paypal\\.com)/i.test(html+js),'Unexpected third-party payment link');
-assert(!/fetch\\(|XMLHttpRequest|sendBeacon/i.test(js),'Public inquiry form must remain local-only until a reviewed intake backend exists');
+assert(!['js.stripe.com','checkout.stripe.com','paypal.com'].some(host => (html+js).includes(host)),'Unexpected third-party payment link');
+assert(!['fetch(', 'XMLHttpRequest', 'sendBeacon'].some(marker => js.includes(marker)),'Public inquiry form must remain local-only until a reviewed intake backend exists');
 console.log('Q-Pueblo email inquiry: PASS; no third-party checkout; recipient not yet configured');
