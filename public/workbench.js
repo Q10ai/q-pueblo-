@@ -39,6 +39,13 @@
   const horizonName={immediate:'Immediate / weeks',mid:'Months to 2 years',long:'3–10 years',generation:'Generational / children’s future'};
   const postureName={balanced:'Balanced protection and opportunity',defend:'Defensive continuity and recovery',advance:'Proactive development and capability',explore:'LEAP exploratory alternatives'};
   const riskName={standard:'Standard screening',heightened:'Heightened attention to essential services',severe:'Severe correlated-failure exercise'};
+  // Bounded scenario branches are planning templates, not quantified predictions.
+  const fourScenarios=(s,horizon,posture,risk)=>[
+    {id:'baseline',label:'Baseline continuity',assumption:'No additional shock is assumed; verify current source versions, operating capacity and lawful budgets before acting.',trigger:'New authoritative baseline or status amendment',response:['Confirm the responsible offices and published service standards','Preserve the existing service, funding and children/family access baseline','Track changes through dated official records'],measure:'Documented service availability and independently reviewable spending/outcome baseline'},
+    {id:'single',label:'Single-system stress',assumption:'One material stress affects '+s.focus.toLowerCase()+'. This is a hypothesis requiring place-specific evidence.',trigger:'A verified material disruption or authoritative notice affecting the issue',response:[...s.defense,'Assign a lawful continuity owner and measurable recovery milestones'],measure:'Officially measured disruption extent, service restoration and equitable access'},
+    {id:'compound',label:'Correlated / backup failure',assumption:'Two connected services or the primary and its backup fail due to a common dependency. Do not multiply independent failure probabilities.',trigger:'Independent original records indicate overlapping disruptions or the proposed backup is unavailable',response:['Find a distinct custodian, supplier or independent fallback path',...s.defense,'Activate accessible communications and child/family continuity before noncritical optimizations'],measure:'Documented recovery time, failed common dependencies, safety and resource tradeoffs'},
+    {id:'adaptive',label:'Recovery and LEAP improvement',assumption:'An authorized recovery and improvement path is compared against baseline, with explicit funding, rights and rollback constraints.',trigger:'Documented service stabilization and post-event assessment',response:[...s.advance,'Test the proposed improvement against simpler lower-cost alternatives','Record observed outcomes, amendments and a human-reviewed rollback decision'],measure:'Verified outcomes versus baseline, lifecycle cost, resource/energy use and child/community effects'}
+  ].map(x=>({...x,horizon:horizonName[horizon],posture:postureName[posture],riskLabel:riskName[risk],evidenceStatus:'MODELLED CONDITIONAL PATH — NOT A VERIFIED EVENT OR FORECAST'}));
   const moneyStages=[
     'Requested or proposed amount — identify applicant, estimates and purpose',
     'Legal or voter authority — inspect statute, ordinance, measure or board resolution',
@@ -131,7 +138,7 @@
       relatedTopics:crosswalk.map(x=>({id:x.id,title:x.title,relationship:'Keyword/research affinity only; no documented causal or legal edge'})),
       finance:moneyStages.map(x=>({check:x,status:'NO DOLLAR AMOUNT OR RESULT ASSUMED'})),
       sources:direct,
-      shock:{kind:shockName[shock],horizon:horizonName[horizon],posture:postureName[posture],riskScreen:riskName[risk],confidence:'Illustrative qualitative readiness checklist — not measured probability or hazard warning',focus:s.focus,earlyWarning:s.signals,protect:s.defense,improve:s.advance,
+      shock:{kind:shockName[shock],horizon:horizonName[horizon],posture:postureName[posture],riskScreen:riskName[risk],confidence:'Illustrative qualitative readiness checklist — not measured probability or hazard warning',focus:s.focus,earlyWarning:s.signals,protect:s.defense,improve:s.advance,scenarios:fourScenarios(s,horizon,posture,risk),
         compoundedFailure:['What if the primary system and its backup fail together?','What if responsible authority, funding and service access change simultaneously?','How do we reach residents without digital access, with accessible language and privacy?'],
         preparedness:['Map essential functions and dependency owners','Identify alternate contacts, vendors and source custodians','Define triggers, thresholds only when measured, escalation and stop/rollback','Review financial and equity tradeoffs under at least two plausible scenarios','Recheck outcomes and archive what changed']},
       RX:spec.rx.map(x=>({key:x.key,title:x.title,question:x.question,status:'TO DO — not automatically completed'})),
@@ -167,6 +174,7 @@
     pieces.push(section('F. Shock factors, protection and positive opportunities','<p><strong>'+esc(p.shock.kind)+'</strong> • '+esc(p.shock.horizon)+' • '+esc(p.shock.posture)+'</p><p><span class="wb-tag">'+esc(p.shock.riskScreen)+'</span> Illustrative screen, not a measured hazard.</p><h4>Signals to check</h4>'+checklist(p.shock.earlyWarning)+'<h4>Defensive continuity / recovery</h4>'+checklist(p.shock.protect)+'<h4>Proactive improvement / opportunity</h4>'+checklist(p.shock.improve)));
     if(level.value==='deep'||level.value==='strategy'){
       pieces.push(section('G. Compound failures and backup to backup',checklist(p.shock.compoundedFailure.concat(p.shock.preparedness))));
+      pieces.push(section('G2. Four conditional scenario branches — not forecasts',p.shock.scenarios.map(x=>'<h4>'+esc(x.label)+'</h4><p><strong>Assumption:</strong> '+esc(x.assumption)+'</p><p><strong>Verification trigger:</strong> '+esc(x.trigger)+'</p>'+checklist(x.response)+'<p><small>Measurement to obtain: '+esc(x.measure)+'</small></p>').join(''),true));
       pieces.push(section('H. LEAP — past, present, future and learning',checklist(Object.entries(p.timeModel).map(([a,b])=>a.toUpperCase()+': '+b))));
     }
     if(level.value!=='quick'){
@@ -201,6 +209,7 @@
     line('Past, present, future and LEAP',bullets(Object.entries(p.timeModel).map(([k,v])=>k+': '+v)));
     line('Child and family impact',bullets(p.childImpact.questions));
     line('Shock and preparedness',bullets(['Focus: '+p.shock.focus,'Early warnings:',...p.shock.earlyWarning,'Defensive continuity:',...p.shock.protect,'Proactive improvement:',...p.shock.improve,'Backups to backups:',...p.shock.compoundedFailure]));
+    line('Four conditional scenario branches — not forecasts',p.shock.scenarios.map(x=>'### '+x.label+'\nAssumption: '+x.assumption+'\nTrigger: '+x.trigger+'\nResponses:\n'+bullets(x.response)+'\nMeasure: '+x.measure).join('\n\n'));
     line('RX / contradiction and backup chain',bullets(p.RX.map(x=>x.title+': '+x.question)));
     line('Unverified crosswalk candidates',bullets(p.relatedTopics.map(x=>x.id+' — '+x.title+' [textual proximity only]')));
     line('Source inspection leads',bullets(p.sources.map(s=>s.title+' — '+s.publisher+' — '+s.url+' ['+s.kind+': '+s.evidenceStatus+']')));
