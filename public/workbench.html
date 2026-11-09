@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07172d">
+<meta name="description" content="Q Pueblo civic research workbench for residents, families, businesses, investors, public officials, journalists and researchers. Trace who, what, when, where, why, how, authority, money, sources and consequences.">
+<title>Q Pueblo Workbench | Ask, Trace, Challenge & Learn</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css"><link rel="stylesheet" href="workbench.css">
+<script src="data/q-pueblo-public-catalog-2026-11-08.js" defer></script>
+<script src="workbench-spec.js" defer></script>
+<script src="workbench.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#workbench-main">Skip to workbench</a>
+<div class="topline"><span>Q-PUEBLO <b>•</b> CIVIC RESEARCH WORKBENCH</span><span>INDEPENDENT <b>•</b> NONPARTISAN <b>•</b> HUMAN-GOVERNED</span></div>
+<header class="wb-head wrap"><a class="wb-brand" href="index.html#home"><img width="48" height="48" src="favicon.svg" alt="" decoding="async"><span><strong>Q-PUEBLO</strong><small>Know Pueblo. Help Shape Its Future.</small></span></a>
+<nav class="wb-nav" aria-label="Workbench navigation"><a href="index.html#home">Home</a><a href="explore.html">174-Issue Library</a><a href="explore.html#source-directory">Source Directory</a><a href="index.html#trust">Methods &amp; Corrections</a></nav></header>
+<main id="workbench-main">
+<section class="wrap wb-hero"><p class="wb-eyebrow">ASK • TRACE • CHALLENGE • LEAP</p><h1>Understand an issue from <em>your perspective</em>—without losing the evidence.</h1>
+<p class="wb-lede">Whether you live, work, invest, report or govern in the Pueblo region, start with the same traceable records. Change the level of detail and the decision questions, not the underlying facts.</p>
+<div class="wb-hero-tags"><span>5Ws + How</span><span>Who does what</span><span>Money stages</span><span>Direct → second → third order</span><span>RX &amp; backups</span><span>Past → present → future</span></div>
+<p class="wb-disclosure"><strong>Current capability:</strong> a no-login, static research assembly tool using a dated 174-issue public index and screened source links. It creates reproducible research questions and briefs; it does not fetch live records, independently verify claims, run AI in the browser or automatically identify real relationships.</p>
+</section>
+<section class="wrap wb-main" aria-labelledby="wb-build-title"><div class="wb-section-title"><p class="wb-eyebrow">RESEARCH BUILDER</p><h2 id="wb-build-title">Make one question useful at every level.</h2><p>Choose your use case and what you need to prepare. Nothing you type is submitted to a server by this page.</p></div>
+<div class="wb-workspace">
+<form id="wb-form" class="wb-form">
+<fieldset class="wb-fieldset"><legend>1. Whose perspective?</legend><div id="wb-persona-chips" class="wb-persona-chips" role="group" aria-label="Common research audiences"></div>
+<label for="wb-persona">Role or use case</label><select id="wb-persona" required></select><p id="wb-persona-summary" class="wb-field-info"></p>
+<div id="wb-starters" class="wb-starters" aria-label="Example research questions"></div>
+</fieldset>
+<fieldset class="wb-fieldset"><legend>2. Which question and issue?</legend>
+<label for="wb-question">Your question (do not include private identifying information)</label>
+<textarea id="wb-question" rows="3" maxlength="1000" placeholder="Example: Who approved this project, what is its public cost and what happens next?"></textarea>
+<label for="wb-issue-filter">Find a relevant research record</label><input id="wb-issue-filter" type="search" placeholder="Search by topic, registry ID, institution or location" autocomplete="off">
+<label for="wb-issue">Choose a dated issue record</label><select id="wb-issue" required></select>
+<p id="wb-issue-meta" class="wb-field-info" role="status"></p>
+</fieldset>
+<fieldset class="wb-fieldset"><legend>3. How deep and what output?</legend>
+<div class="wb-form-grid">
+<div><label for="wb-level">Research depth</label><select id="wb-level"></select></div>
+<div><label for="wb-lens">Focus</label><select id="wb-lens"></select></div>
+<div class="wb-wide"><label for="wb-output">Useful deliverable</label><select id="wb-output"></select></div></div>
+</fieldset>
+<div class="wb-actions"><button class="wb-primary" type="submit">Build my Q Pueblo research brief</button><button class="wb-secondary" type="button" id="wb-reset">Reset</button></div>
+</form>
+<aside class="wb-guide" aria-labelledby="wb-guide-title"><p class="wb-eyebrow">WHAT THE WORKBENCH DOES</p><h3 id="wb-guide-title">One source, many useful views</h3>
+<div class="wb-guide-step"><strong>01</strong><div><b>Find the right issue and record</b><p>Start with source IDs, jurisdiction and review dates—not generic summaries.</p></div></div>
+<div class="wb-guide-step"><strong>02</strong><div><b>Identify 5Ws + How</b><p>Who controls, decides, pays, implements, benefits and verifies?</p></div></div>
+<div class="wb-guide-step"><strong>03</strong><div><b>Crosswalk dependencies</b><p>Trace direct obligations, connected actors and possible regional consequences, without inventing edges.</p></div></div>
+<div class="wb-guide-step"><strong>04</strong><div><b>Run RX + backups</b><p>Original source, independently originated records, archive, contradiction and correction.</p></div></div>
+<div class="wb-guide-step"><strong>05</strong><div><b>Share a reusable packet</b><p>Copy or download a Markdown or JSON research contract for further human investigation.</p></div></div>
+</aside>
+</div>
+</section>
+<section class="wrap wb-output-section" id="wb-output-section" aria-labelledby="wb-output-title" hidden><div class="wb-result-head"><div><p class="wb-eyebrow">VERSIONED DRAFT • HUMAN VERIFICATION REQUIRED</p><h2 id="wb-output-title">Your research packet</h2><p id="wb-packet-status" role="status"></p></div><div class="wb-toolbar"><button type="button" id="wb-copy">Copy Markdown</button><button type="button" id="wb-download-md">Download .md</button><button type="button" id="wb-download-json">Download .json</button><button type="button" id="wb-print">Print</button></div></div>
+<div id="wb-output-body" class="wb-output-body" aria-live="polite"></div></section>
+<section class="wrap wb-methods" aria-labelledby="wb-methods-title"><div><p class="wb-eyebrow">HOW Q PUEBLO GOVERNS KNOWLEDGE</p><h2 id="wb-methods-title">From signal to accountable explanation</h2><p>Research can be open-ended; publication cannot silently convert a lead into proof. Versioning, independent checks, correction and human review persist through every level.</p></div>
+<ol class="wb-pipeline"><li>Signal</li><li>Source</li><li>Evidence</li><li>Assertion</li><li>Challenge</li><li>Review</li><li>Explain</li><li>Refresh / LEAP</li></ol>
+<div class="wb-method-grid"><article><h3>Accuracy &amp; uncertainty</h3><p>Proposals, authorizations, appropriations, contracts, payments and outcomes are different. Do not merge them into one dollar amount.</p></article><article><h3>RX backup to backup</h3><p>A copied headline does not become an independent source. Use separate origin records, archives, alternative custodians and versioned corrections.</p></article><article><h3>Child &amp; community impact</h3><p>Test direct and indirect effects, distribution, access, safety and future liabilities. Do not profile children or residents.</p></article><article><h3>Reuse and integration</h3><p>Use public IDs, dated metadata and source links. Automated ingestion, private records and high-stakes decisions need additional authorization and review.</p></article></div>
+</section>
+</main>
+<footer class="wb-footer"><div class="wrap"><strong>Q-PUEBLO</strong><p>Independent Pueblo-region civic learning and evidence navigation • Static public beta • Issue snapshot 8 November 2026</p><p><a href="explore.html">Browse the research library</a> · <a href="index.html#trust">Editorial policy</a></p></div></footer>
+<div id="wb-toast" role="status" aria-live="polite" class="wb-toast" hidden></div>
+</body></html>
