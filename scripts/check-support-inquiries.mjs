@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {readFileSync,existsSync} from 'node:fs';
+for(const p of ['support.html','support.js','support.css','assets/q-pueblo-approved-logo.jpg'])assert(existsSync('public/'+p),'Missing '+p);
+const html=readFileSync('public/support.html','utf8');
+const js=readFileSync('public/support.js','utf8');
+const home=readFileSync('public/index.html','utf8');
+assert(home.includes('href="support.html"'),'No support link on homepage');
+assert(html.includes('href="support.css"') && html.includes('src="support.js"'));
+assert(html.includes('Qified issue or entity packet') && html.includes('Merchandise inquiry') && html.includes('Sponsorship') && html.includes('Voluntary support'));
+assert(js.includes("const CONTACT_EMAIL = '';"),'Email recipient must remain unset until owner confirms public inbox');
+assert(js.includes('mailto:') && js.includes('validEmail(CONTACT_EMAIL)'),'No gated email draft action');
+assert(!/https?:\\/\\/(?:js\\.stripe\\.com|checkout\\.stripe\\.com|paypal\\.com)/i.test(html+js),'Unexpected third-party payment link');
+assert(!/fetch\\(|XMLHttpRequest|sendBeacon/i.test(js),'Public inquiry form must remain local-only until a reviewed intake backend exists');
+console.log('Q-Pueblo email inquiry: PASS; no third-party checkout; recipient not yet configured');

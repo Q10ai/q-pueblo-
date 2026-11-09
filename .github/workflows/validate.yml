@@ -48,6 +48,8 @@ jobs:
           test -s public/topics.html
           test -s public/topics.css
           node scripts/check-topic-nav.mjs
+          node --check public/support.js
+          node scripts/check-support-inquiries.mjs
           test -s public/workbench.html
           test -s public/workbench.css
           test -s public/workbench-spec.js
