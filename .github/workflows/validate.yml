@@ -18,6 +18,8 @@ jobs:
           bash -n scripts/check-live-parity.sh
           node --check public/site.js
           node --check public/explore.js
+          node --check public/issues.js
+          node --check scripts/check-issue-index.mjs
           node --check public/workbench.js
           node --check public/q-tools.js
           node --check public/workbench-spec.js
@@ -36,6 +38,12 @@ jobs:
           test -s public/explore.css
           test -s public/data/q-pueblo-public-catalog-2026-11-08.js
           node scripts/check-public-catalog.mjs
+          test -s public/issues.html
+          test -s public/issues.css
+          test -s public/issues.js
+          test -s public/data/q-pueblo-issue-index-2026-11-09.json
+          test -s public/data/q-pueblo-issue-index-2026-11-09.csv
+          node scripts/check-issue-index.mjs
           test -s public/workbench.html
           test -s public/workbench.css
           test -s public/workbench-spec.js

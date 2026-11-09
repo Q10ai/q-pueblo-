@@ -1,0 +1,3942 @@
+{
+  "schema": "qp-issue-index-v1",
+  "publishedSnapshot": "2026-11-08",
+  "assembledFor": "2026-11-09 launch inventory",
+  "evidenceStatus": "INDEX_ONLY_NO_CURRENT_FINDING_CERTIFICATION",
+  "interpretation": "Dated public research scopes from historical Q Pueblo catalog, not all current issues or verified findings",
+  "counts": {
+    "historicalIssueRecords": 174,
+    "sourceMappedIssueRecords": 82,
+    "unmappedIssueRecords": 92,
+    "publicSourceLinks": 141,
+    "sourcePublishers": 54,
+    "categories": 10,
+    "candidateTopicsPendingDedup": 12
+  },
+  "reviewDateCounts": {
+    "2026-09-06": 17,
+    "2026-09-07": 1,
+    "2026-09-09": 1,
+    "2026-09-14": 1,
+    "2026-10-05": 144,
+    "2026-10-16": 10
+  },
+  "categoryCounts": {
+    "Culture & history": 8,
+    "Economy & jobs": 8,
+    "Education & children": 6,
+    "Environment & place": 4,
+    "Government & law": 18,
+    "Health & safety": 28,
+    "Housing & land": 18,
+    "Public money": 38,
+    "Roads & transport": 23,
+    "Water & energy": 23
+  },
+  "publicSourceOrigin": "public/data/q-pueblo-public-catalog-2026-11-08.js",
+  "candidateCoverageDisclaimer": "Candidate topics are coverage/workflow suggestions, not independently verified new issues, findings or extra official records.",
+  "issues": [
+    {
+      "id": "REG-001",
+      "parent": "",
+      "title": "Half-Cent Jobs Fund principal, interest, and voter-purpose controls",
+      "domain": "Public finance / economic development",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-002",
+      "parent": "",
+      "title": "Dittmer Building additional $182,175 and $60,000 lineage",
+      "domain": "Capital projects / public finance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-003",
+      "parent": "",
+      "title": "Municipal Court SUV account origin and retransfer",
+      "domain": "Fund lineage / municipal assets",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-004",
+      "parent": "",
+      "title": "PEDCO transition and replacement-provider continuity",
+      "domain": "Economic development / governance",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-005",
+      "parent": "",
+      "title": "Advance Pueblo authority, legal form, budget, and role",
+      "domain": "Economic development / governance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-006",
+      "parent": "",
+      "title": "Economic-development RFQ/RFP process and cancellation",
+      "domain": "Procurement / governance",
+      "category": "Economy & jobs",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-007",
+      "parent": "",
+      "title": "Project Falcon confidentiality, jobs, incentives, and public-value packet",
+      "domain": "Economic development / NDA",
+      "category": "Public money",
+      "lastReviewed": "2026-10-16",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-008",
+      "parent": "",
+      "title": "St. Charles Industrial Park execution status",
+      "domain": "Industrial development",
+      "category": "Economy & jobs",
+      "lastReviewed": "2026-10-16",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-009",
+      "parent": "",
+      "title": "Leonardo da Vinci Museum / ED2602 public-finance, governance, related-party, tourism, and post-denial project exposure",
+      "domain": "Culture / economic development / nonprofit governance / public finance",
+      "category": "Culture & history",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-010",
+      "parent": "",
+      "title": "Strategic-plan inventory and duplicate-planning expenditure",
+      "domain": "Planning / procurement",
+      "category": "Housing & land",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-011",
+      "parent": "",
+      "title": "Dillon Drive URA / RRA / TIF public-value ledger",
+      "domain": "Urban renewal / tax increment",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-012",
+      "parent": "",
+      "title": "Mayor appointment to PURA: narrow legality versus governance controls",
+      "domain": "Urban renewal / ethics",
+      "category": "Government & law",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-013",
+      "parent": "",
+      "title": "Mayor/City recognition and award promotion spending",
+      "domain": "Ethics / communications / public money",
+      "category": "Government & law",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-014",
+      "parent": "",
+      "title": "City Council direction, execution, meeting conduct, and public legibility",
+      "domain": "Governance / administration",
+      "category": "Government & law",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-015",
+      "parent": "",
+      "title": "County governance signals: land use, disclosure/recusal, HR, holidays",
+      "domain": "County governance",
+      "category": "Housing & land",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-016",
+      "parent": "",
+      "title": "Property-tax ability-to-pay and assessed-value education",
+      "domain": "Property tax / household burden",
+      "category": "Education & children",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-017",
+      "parent": "",
+      "title": "May 2026 sales-tax report and revenue trend",
+      "domain": "Fiscal monitoring",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-018",
+      "parent": "",
+      "title": "Women-owned business ecosystem and local enterprise growth",
+      "domain": "Economic ecosystem / inclusion",
+      "category": "Economy & jobs",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-019",
+      "parent": "",
+      "title": "Youth safeguarding and public-service accountability records",
+      "domain": "Child welfare / privacy",
+      "category": "Education & children",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-020",
+      "parent": "",
+      "title": "Pueblo Police statistics update and interpretation",
+      "domain": "Public safety / data",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-021",
+      "parent": "",
+      "title": "Southern Colorado water-yield, storage, and drought resilience",
+      "domain": "Water systems",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-022",
+      "parent": "",
+      "title": "Comanche / Ray Nixon / workforce and tax-base transition",
+      "domain": "Energy transition",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-023",
+      "parent": "",
+      "title": "Nuclear/SMR and large-load/data-center public-value gates",
+      "domain": "Energy / infrastructure / industry",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-024",
+      "parent": "",
+      "title": "Aspen Acres live incident operations and official information",
+      "domain": "Wildfire / emergency",
+      "category": "Environment & place",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-025",
+      "parent": "",
+      "title": "Aspen Acres long-term recovery and regional shock absorption",
+      "domain": "Disaster recovery",
+      "category": "Government & law",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-026",
+      "parent": "",
+      "title": "Volunteer stories, mutual aid, animal rescue, recognition, and burnout",
+      "domain": "Community resilience",
+      "category": "Government & law",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-027",
+      "parent": "",
+      "title": "Rumor, gossip, misinformation, and emerging-signal ledger",
+      "domain": "Information integrity",
+      "category": "Government & law",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-028",
+      "parent": "",
+      "title": "Public proof, youth ecology, Pueblo Zoo, and community learning",
+      "domain": "Community / education",
+      "category": "Education & children",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-029",
+      "parent": "",
+      "title": "Q governance explainer, CTA infographic, and commercial assets",
+      "domain": "Communications / adoption",
+      "category": "Government & law",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-030",
+      "parent": "",
+      "title": "Hart Beat / civic source-document library",
+      "domain": "Transparency / records",
+      "category": "Culture & history",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-031",
+      "parent": "",
+      "title": "AI-laundered civic claims and summary contamination",
+      "domain": "AI governance / evidence",
+      "category": "Environment & place",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-032",
+      "parent": "",
+      "title": "Regional shock continuity and threat-mapping system",
+      "domain": "Resilience / systems",
+      "category": "Government & law",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-033",
+      "parent": "",
+      "title": "Half-cent extension election-history correction and 2031 funding horizon",
+      "domain": "Election history / public finance",
+      "category": "Culture & history",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-034",
+      "parent": "",
+      "title": "City Annex / PBR / museum asset naming and interest-dependency theory",
+      "domain": "Asset governance / finance",
+      "category": "Culture & history",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-035",
+      "parent": "",
+      "title": "Property-assessment public narrative and policy-option design",
+      "domain": "Public education / tax policy",
+      "category": "Education & children",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-036",
+      "parent": "",
+      "title": "CORA/public-records source-fill queue and custodian verification",
+      "domain": "Records operations",
+      "category": "Government & law",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-037",
+      "parent": "",
+      "title": "Cross-system storage integrity and artifact recovery",
+      "domain": "Storage / provenance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-038",
+      "parent": "",
+      "title": "Q10 Pueblo architecture, tests, production, and official-use gates",
+      "domain": "System architecture",
+      "category": "Government & law",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-039",
+      "parent": "",
+      "title": "Water marketing and site-serviceability claim integrity",
+      "domain": "Water / economic development / communications",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-050",
+      "parent": "",
+      "title": "Arkansas River 4.25M-gallon sewage spill / Stockyard CIPP 25-070A responsibility and regional impact",
+      "domain": "Wastewater / infrastructure / public health / procurement",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-041",
+      "parent": "",
+      "title": "Economic-development institutional fragmentation, authority, and attribution matrix",
+      "domain": "Economic development / governance / trust",
+      "category": "Economy & jobs",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-042",
+      "parent": "",
+      "title": "Social-sentiment representativeness and evidence-upgrade control",
+      "domain": "Information integrity / civic engagement",
+      "category": "Government & law",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-043",
+      "parent": "",
+      "title": "Pueblo workforce decline, economic capacity, and countywide job-growth funding architecture",
+      "domain": "Economic development / workforce / public finance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-044",
+      "parent": "",
+      "title": "Date, supersession, and reshared-post integrity control",
+      "domain": "Information integrity / civic communications",
+      "category": "Government & law",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-045",
+      "parent": "",
+      "title": "Colorado Connector tax, debt, lifecycle cost, schedule and public-value ledger",
+      "domain": "Transportation / public finance / election",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-046",
+      "parent": "",
+      "title": "Bluffs URA / superseded Riverly proposal / current Prop 123 housing and public-finance lineage",
+      "domain": "Housing / urban renewal / public finance",
+      "category": "Housing & land",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-047",
+      "parent": "",
+      "title": "Pueblo ALPR/RTCC inventory, vendor, privacy, sharing and outcome governance",
+      "domain": "Public safety / surveillance / data governance",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-048",
+      "parent": "",
+      "title": "PCCLD AI procurement, privacy, literacy outcomes and value-for-money review",
+      "domain": "Library / AI governance / public finance",
+      "category": "Culture & history",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-049",
+      "parent": "",
+      "title": "CSAC nonprofit allocation, concentration, conflicts and outcome ledger",
+      "domain": "Community services / grants / governance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-051",
+      "parent": "",
+      "title": "Pueblo West Fire Department sales-tax/property-tax fund additionality and fungibility",
+      "domain": "Fire services / special district / public finance",
+      "category": "Housing & land",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-052",
+      "parent": "",
+      "title": "Pueblo County D70 board governance, Open Meetings Law court order, appeal/litigation cost and policy-record integrity",
+      "domain": "Education / governance / litigation / public finance",
+      "category": "Education & children",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-053",
+      "parent": "",
+      "title": "Pueblo D60 proclamation, heritage-recognition and ceremonial-governance record",
+      "domain": "Education / culture / representation / information integrity",
+      "category": "Culture & history",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-054",
+      "parent": "",
+      "title": "Q-Pueblo real-world mechanism transfer, portable-assurance convergence, continuity repair and field validation",
+      "domain": "System architecture / assurance / civic operations",
+      "category": "Government & law",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-055",
+      "parent": "",
+      "title": "Q-Pueblo continuity/index concurrency and current-state drift control",
+      "domain": "Continuity / provenance / registry integrity",
+      "category": "Government & law",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-056",
+      "parent": "",
+      "title": "McLaughlin Building preservation grant match, milestone and completion-state integrity",
+      "domain": "Historic preservation / public-private grants / civic information integrity",
+      "category": "Culture & history",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-057",
+      "parent": "",
+      "title": "Pueblo behavioral-health continuum, CMHHIP role, crisis capacity, civil/forensic pathways and care-transition integrity",
+      "domain": "Health / behavioral health / justice / housing / workforce",
+      "category": "Housing & land",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-058",
+      "parent": "",
+      "title": "Pueblo Memorial Airport governance, lease authority, federal litigation residue, legal spend and Council appropriation controls",
+      "domain": "Airport / municipal law / public finance / procurement",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-059",
+      "parent": "",
+      "title": "Acacia Lyn-Darr federal civil-rights litigation and law-enforcement evidence-integrity chain",
+      "domain": "Civil rights / justice / law enforcement / county governance",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-060",
+      "parent": "",
+      "title": "Pueblo West roads IGA, Reverse IGA, 6C road-sales-tax accounting and MS4 responsibility",
+      "domain": "Roads / intergovernmental governance / public finance / stormwater",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-061",
+      "parent": "",
+      "title": "Pueblo West water/wastewater enterprise reserves, rates, tap limits and $200M-plus infrastructure planning",
+      "domain": "Water / wastewater / enterprise finance / growth",
+      "category": "Housing & land",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-062",
+      "parent": "",
+      "title": "Runyon Sports Complex governance, County relationship, staffing, lease/operating model and subsidy/outcome ledger",
+      "domain": "Parks / sports / nonprofit governance / county finance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-063",
+      "parent": "",
+      "title": "2026 Pueblo-area ballot measures: tax, revenue-retention, debt, duration and service-purpose crosswalk",
+      "domain": "Elections / public finance / special districts / service funding",
+      "category": "Public money",
+      "lastReviewed": "2026-10-16",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [
+        "SRC-CUR-20261016-ELECTION-PROPERTY-BALLOTS"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261016-ELECTION-PROPERTY-BALLOTS",
+          "url": "https://www.pueblocounty.gov/clerk-and-recorder-department/election-department-press-release-office-clerk-recorder",
+          "publisher": "Pueblo County Clerk & Recorder / Election Department",
+          "title": "Statement Regarding Property Owner Ballots Received by Pueblo County Residents",
+          "sourceDate": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "REG-064",
+      "parent": "",
+      "title": "Black Hills electric/gas rates, Clean Energy Plan, battery/solar recovery, merger and Pueblo ratepayer exposure",
+      "domain": "Utilities / energy / regulation / household cost",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-065",
+      "parent": "",
+      "title": "Colorado Rural Health Transformation funding and actual Pueblo beneficiary/allocation map",
+      "domain": "Health / grants / rural systems / workforce",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-066",
+      "parent": "",
+      "title": "DOJ Model Cities Initiative: Pueblo $100M application, partner governance, allowable uses, federal conditions and award risk",
+      "domain": "Public safety / federal grants / civil liberties / cross-sector governance",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-067",
+      "parent": "",
+      "title": "Aspen Acres / Gold Mountain post-fire watershed protection, EWP cost share, flood risk and long-term recovery",
+      "domain": "Disaster / watershed / public finance / infrastructure / housing",
+      "category": "Housing & land",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-068",
+      "parent": "",
+      "title": "Pueblo homelessness, shelter, transitional housing, PIT methodology and service-continuum outcomes",
+      "domain": "Housing / homelessness / behavioral health / public finance",
+      "category": "Housing & land",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-069",
+      "parent": "",
+      "title": "Pueblo County fiscal strategy, 2026 amendments, staffing/HR consolidation, CAO governance and 2027 budget pressure",
+      "domain": "County finance / workforce / administration / governance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-16",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [
+        "SRC-CUR-20261016-COUNTY-BUDGET-PAGE"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261016-COUNTY-BUDGET-PAGE",
+          "url": "https://pueblocounty.gov/budget-and-finance-department/county-budget",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County current budget page / 2027 budget lane",
+          "sourceDate": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "REG-070",
+      "parent": "",
+      "title": "Pueblo County Coroner independence, funding, office capacity, election transition and political-claim integrity",
+      "domain": "Coroner / county governance / public finance / justice",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-071",
+      "parent": "",
+      "title": "2026 Pueblo candidate, officeholder and campaign claim verification across county/state/local races",
+      "domain": "Elections / information integrity / governance",
+      "category": "Government & law",
+      "lastReviewed": "2026-10-16",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [
+        "SRC-CUR-20261016-TRACER-LUCERO",
+        "SRC-CUR-20261016-TRACER-SWEARINGEN",
+        "SRC-CUR-20261016-TRACER-MEDINA",
+        "SRC-CUR-20261016-TRACER-MUSSO"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261016-TRACER-LUCERO",
+          "url": "https://tracer.sos.colorado.gov/PublicSite/SearchPages/CandidateDetail.aspx?SeqID=66378",
+          "publisher": "Colorado TRACER",
+          "title": "David Lucero 4 Sheriff TRACER candidate/committee detail",
+          "sourceDate": "2026-10-16"
+        },
+        {
+          "id": "SRC-CUR-20261016-TRACER-SWEARINGEN",
+          "url": "https://tracer.sos.colorado.gov/PublicSite/SearchPages/CandidateDetail.aspx?SeqID=53261",
+          "publisher": "Colorado TRACER",
+          "title": "Zach Swearingen for Pueblo County Commissioner TRACER detail",
+          "sourceDate": "2026-10-16"
+        },
+        {
+          "id": "SRC-CUR-20261016-TRACER-MEDINA",
+          "url": "https://tracer.sos.colorado.gov/PublicSite/SearchPages/CandidateDetail.aspx?SeqID=52472",
+          "publisher": "Colorado TRACER",
+          "title": "Allen Medina / Committee to Elect Allen Medina TRACER detail",
+          "sourceDate": "2026-10-16"
+        },
+        {
+          "id": "SRC-CUR-20261016-TRACER-MUSSO",
+          "url": "https://tracer.sos.colorado.gov/PublicSite/SearchPages/CandidateDetail.aspx?SeqID=52348&Type=CA",
+          "publisher": "Colorado TRACER",
+          "title": "Musso for Sheriff of Pueblo County TRACER detail",
+          "sourceDate": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "REG-072",
+      "parent": "",
+      "title": "Rocky Mountain Steel Mills / Orion ownership, long-rail mill, railroad customers, USW contract and industrial-transition outcomes",
+      "domain": "Industry / workforce / economic development / labor / infrastructure",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-073",
+      "parent": "",
+      "title": "City of Pueblo marijuana licensing and reported 2026 retail-license moratorium: ordinance, existing-license rights and market/tax impacts",
+      "domain": "Business regulation / public health / licensing / local governance",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "REGIONAL / ISSUE-DEFINED",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-001",
+      "parent": "REG-001",
+      "title": "Complete Pueblo regional taxing-authority enumeration",
+      "domain": "government/finance",
+      "category": "Public money",
+      "lastReviewed": "2026-09-06",
+      "geography": "Countywide",
+      "sourceIds": [
+        "SRC-COUNTY-TAXGROUPS-2026",
+        "SRC-DOLA-LGIS-2026"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-COUNTY-TAXGROUPS-2026",
+          "url": "https://www.pueblocounty.gov/sites/default/files/2026-01/2026%20Tax%20Groups.pdf",
+          "publisher": "Pueblo County Assessor",
+          "title": "2026/2027 Pueblo County Real Estate Tax Groups",
+          "sourceDate": "2026-01-12"
+        },
+        {
+          "id": "SRC-DOLA-LGIS-2026",
+          "url": "https://dola.colorado.gov/dlg_lgis_ui_pu/",
+          "publisher": "Colorado Department of Local Affairs",
+          "title": "Colorado Local Government Information System",
+          "sourceDate": "2026"
+        }
+      ]
+    },
+    {
+      "id": "QRX-RTA-001",
+      "parent": "",
+      "title": "City/PURA RTA principal and intergovernmental balance reconciliation",
+      "domain": "economic development/public finance",
+      "category": "Public money",
+      "lastReviewed": "2026-09-06",
+      "geography": "City/Riverwalk",
+      "sourceIds": [
+        "SRC-PURA-AUDIT-2025",
+        "SRC-CITY-ACFR-2024",
+        "SRC-CITY-RTA-FINANCE-2017"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-PURA-AUDIT-2025",
+          "url": "https://puebloura.org/wp-content/uploads/2026/07/2025-financial-statements-pueblo-urban-renewal-authority-final.pdf",
+          "publisher": "Pueblo Urban Renewal Authority",
+          "title": "PURA 2025 Financial Statements and Independent Auditors' Report",
+          "sourceDate": "2025-12-31"
+        },
+        {
+          "id": "SRC-CITY-ACFR-2024",
+          "url": "https://www.pueblo.us/ArchiveCenter/ViewFile/Item/5348",
+          "publisher": "City of Pueblo",
+          "title": "City of Pueblo 2024 Annual Comprehensive Financial Report",
+          "sourceDate": "2024-12-31"
+        },
+        {
+          "id": "SRC-CITY-RTA-FINANCE-2017",
+          "url": "https://www.pueblo.us/AgendaCenter/ViewFile/Item/17888?fileID=51371",
+          "publisher": "City of Pueblo / PURA",
+          "title": "RTA Amendment No. 1 / $14.4M Construction Financing",
+          "sourceDate": "2017"
+        }
+      ]
+    },
+    {
+      "id": "QRX-RTA-002",
+      "parent": "",
+      "title": "PURA interest-payment/accrual reconciliation",
+      "domain": "public finance",
+      "category": "Public money",
+      "lastReviewed": "2026-09-06",
+      "geography": "City/Riverwalk",
+      "sourceIds": [
+        "SRC-PURA-AUDIT-2025",
+        "SRC-CITY-ED-ARCHIVE"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-PURA-AUDIT-2025",
+          "url": "https://puebloura.org/wp-content/uploads/2026/07/2025-financial-statements-pueblo-urban-renewal-authority-final.pdf",
+          "publisher": "Pueblo Urban Renewal Authority",
+          "title": "PURA 2025 Financial Statements and Independent Auditors' Report",
+          "sourceDate": "2025-12-31"
+        },
+        {
+          "id": "SRC-CITY-ED-ARCHIVE",
+          "url": "https://www.pueblo.us/Archive/101",
+          "publisher": "City of Pueblo",
+          "title": "Economic Development Cash Recap Archive",
+          "sourceDate": "2026"
+        }
+      ]
+    },
+    {
+      "id": "QRX-RTA-003",
+      "parent": "",
+      "title": "2019 $112,800 City/PURA note accounting",
+      "domain": "public finance",
+      "category": "Public money",
+      "lastReviewed": "2026-09-06",
+      "geography": "City",
+      "sourceIds": [
+        "SRC-PURA-AUDIT-2025"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-PURA-AUDIT-2025",
+          "url": "https://puebloura.org/wp-content/uploads/2026/07/2025-financial-statements-pueblo-urban-renewal-authority-final.pdf",
+          "publisher": "Pueblo Urban Renewal Authority",
+          "title": "PURA 2025 Financial Statements and Independent Auditors' Report",
+          "sourceDate": "2025-12-31"
+        }
+      ]
+    },
+    {
+      "id": "QRX-HARP-001",
+      "parent": "",
+      "title": "HARP 1A/Boathouse lifecycle funding and closeout",
+      "domain": "capital/public investment",
+      "category": "Public money",
+      "lastReviewed": "2026-09-06",
+      "geography": "Riverwalk",
+      "sourceIds": [
+        "SRC-HARP-BOATHOUSE-2024",
+        "SRC-PURA-AUDIT-2025"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-HARP-BOATHOUSE-2024",
+          "url": "https://www.pueblo.us/ArchiveCenter/ViewFile/Item/4832",
+          "publisher": "City of Pueblo",
+          "title": "HARP Channel Extension and Boathouse Half-Cent authorization",
+          "sourceDate": "2024-04-08"
+        },
+        {
+          "id": "SRC-PURA-AUDIT-2025",
+          "url": "https://puebloura.org/wp-content/uploads/2026/07/2025-financial-statements-pueblo-urban-renewal-authority-final.pdf",
+          "publisher": "Pueblo Urban Renewal Authority",
+          "title": "PURA 2025 Financial Statements and Independent Auditors' Report",
+          "sourceDate": "2025-12-31"
+        }
+      ]
+    },
+    {
+      "id": "QRX-COUNTY-1A-001",
+      "parent": "",
+      "title": "County 1A capital program + COP debt lifecycle",
+      "domain": "county finance/capital",
+      "category": "Public money",
+      "lastReviewed": "2026-09-06",
+      "geography": "Countywide",
+      "sourceIds": [
+        "SRC-COUNTY-ACFR-2024",
+        "SRC-COUNTY-BUDGET-2026"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-COUNTY-ACFR-2024",
+          "url": "https://www.pueblocounty.gov/sites/default/files/2025-11/Pueblo%20County%20Annual%20Comprehensive%20Financial%20Report%202024.pdf",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County 2024 Annual Comprehensive Financial Report",
+          "sourceDate": "2024-12-31"
+        },
+        {
+          "id": "SRC-COUNTY-BUDGET-2026",
+          "url": "https://www.pueblocounty.gov/sites/default/files/2026-05/2026%20Adopted%20Budget.pdf",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Adopted Budget 2026",
+          "sourceDate": "2026"
+        }
+      ]
+    },
+    {
+      "id": "QRX-PWEST-001",
+      "parent": "REG-061",
+      "title": "Pueblo West water reliable-yield/capacity/growth constraint",
+      "domain": "water/growth",
+      "category": "Water & energy",
+      "lastReviewed": "2026-09-06",
+      "geography": "Pueblo West",
+      "sourceIds": [
+        "SRC-PWEST-FIN",
+        "SRC-SECWCD-HOME-2026",
+        "SRC-USBR-PUEBLO-RESERVOIR"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-PWEST-FIN",
+          "url": "https://www.pueblowestmetro.us/548/Budget-and-Annual-Financial-Reports",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Budget and Annual Financial Reports",
+          "sourceDate": "2026"
+        },
+        {
+          "id": "SRC-SECWCD-HOME-2026",
+          "url": "https://www.secwcd.org/",
+          "publisher": "SECWCD",
+          "title": "Southeastern Colorado Water Conservancy District",
+          "sourceDate": "2026"
+        },
+        {
+          "id": "SRC-USBR-PUEBLO-RESERVOIR",
+          "url": "https://www.usbr.gov/gp/ecao/pueblo/pueblo.html",
+          "publisher": "U.S. Bureau of Reclamation",
+          "title": "Pueblo Reservoir",
+          "sourceDate": "current"
+        }
+      ]
+    },
+    {
+      "id": "QRX-PWEST-002",
+      "parent": "REG-051",
+      "title": "Pueblo West fire funding and service sustainability",
+      "domain": "public safety/finance",
+      "category": "Health & safety",
+      "lastReviewed": "2026-09-06",
+      "geography": "Pueblo West",
+      "sourceIds": [
+        "SRC-PWEST-FIN"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-PWEST-FIN",
+          "url": "https://www.pueblowestmetro.us/548/Budget-and-Annual-Financial-Reports",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Budget and Annual Financial Reports",
+          "sourceDate": "2026"
+        }
+      ]
+    },
+    {
+      "id": "QRX-PWEST-003",
+      "parent": "",
+      "title": "Desert Hawk joint ownership/loan/debt/service reconciliation",
+      "domain": "enterprise/public finance",
+      "category": "Public money",
+      "lastReviewed": "2026-09-06",
+      "geography": "Pueblo West",
+      "sourceIds": [
+        "SRC-COUNTY-ACFR-2024",
+        "SRC-PWEST-FIN"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-COUNTY-ACFR-2024",
+          "url": "https://www.pueblocounty.gov/sites/default/files/2025-11/Pueblo%20County%20Annual%20Comprehensive%20Financial%20Report%202024.pdf",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County 2024 Annual Comprehensive Financial Report",
+          "sourceDate": "2024-12-31"
+        },
+        {
+          "id": "SRC-PWEST-FIN",
+          "url": "https://www.pueblowestmetro.us/548/Budget-and-Annual-Financial-Reports",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Budget and Annual Financial Reports",
+          "sourceDate": "2026"
+        }
+      ]
+    },
+    {
+      "id": "QRX-CCMD-001",
+      "parent": "",
+      "title": "Colorado City Metro complete finance/debt/service map",
+      "domain": "special-district finance",
+      "category": "Public money",
+      "lastReviewed": "2026-09-06",
+      "geography": "Colorado City",
+      "sourceIds": [
+        "SRC-COUNTY-TAXGROUPS-2026",
+        "SRC-PACOG-MEMBERS-2026"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-COUNTY-TAXGROUPS-2026",
+          "url": "https://www.pueblocounty.gov/sites/default/files/2026-01/2026%20Tax%20Groups.pdf",
+          "publisher": "Pueblo County Assessor",
+          "title": "2026/2027 Pueblo County Real Estate Tax Groups",
+          "sourceDate": "2026-01-12"
+        },
+        {
+          "id": "SRC-PACOG-MEMBERS-2026",
+          "url": "https://www.pacog.net/pacogmembers",
+          "publisher": "Pueblo Area Council of Governments",
+          "title": "PACOG Member Governments and 2026 Membership",
+          "sourceDate": "2026"
+        }
+      ]
+    },
+    {
+      "id": "QRX-WATER-REG-001",
+      "parent": "",
+      "title": "Arkansas Valley Conduit Pueblo-region cost/benefit and obligation graph",
+      "domain": "regional water/infrastructure",
+      "category": "Water & energy",
+      "lastReviewed": "2026-09-06",
+      "geography": "Pueblo + Lower Arkansas Valley",
+      "sourceIds": [
+        "SRC-USBR-AVC-2026",
+        "SRC-SECWCD-AVC-2026"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-USBR-AVC-2026",
+          "url": "https://www.usbr.gov/gp/ecao/avc/index.html",
+          "publisher": "U.S. Bureau of Reclamation",
+          "title": "Arkansas Valley Conduit Overview",
+          "sourceDate": "2026"
+        },
+        {
+          "id": "SRC-SECWCD-AVC-2026",
+          "url": "https://www.secwcd.org/content/arkansas-valley-conduit",
+          "publisher": "Southeastern Colorado Water Conservancy District",
+          "title": "Arkansas Valley Conduit",
+          "sourceDate": "2026"
+        }
+      ]
+    },
+    {
+      "id": "QRX-PDPHE-001",
+      "parent": "",
+      "title": "PDPHE joint-governance subsidy and outcome ledger",
+      "domain": "health/governance/finance",
+      "category": "Health & safety",
+      "lastReviewed": "2026-09-06",
+      "geography": "Countywide",
+      "sourceIds": [
+        "SRC-COUNTY-ACFR-JOINT-2024",
+        "SRC-PDPHE-BOARD-2026"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-COUNTY-ACFR-JOINT-2024",
+          "url": "https://www.pueblocounty.gov/sites/default/files/2025-11/Pueblo%20County%20Annual%20Comprehensive%20Financial%20Report%202024.pdf",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County 2024 ACFR joint ventures and component units",
+          "sourceDate": "2024-12-31"
+        },
+        {
+          "id": "SRC-PDPHE-BOARD-2026",
+          "url": "https://www.pueblocounty.gov/public-health-department/board-health",
+          "publisher": "Pueblo Department of Public Health and Environment",
+          "title": "Pueblo Department of Public Health and Environment Board of Health",
+          "sourceDate": "2026"
+        }
+      ]
+    },
+    {
+      "id": "QRX-E911-001",
+      "parent": "",
+      "title": "E-911 component-unit surcharge, assets, contracts and service outcomes",
+      "domain": "public safety/technology/finance",
+      "category": "Health & safety",
+      "lastReviewed": "2026-09-06",
+      "geography": "Countywide",
+      "sourceIds": [
+        "SRC-COUNTY-ACFR-JOINT-2024",
+        "SRC-COUNTY-OPENGOV-2026"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-COUNTY-ACFR-JOINT-2024",
+          "url": "https://www.pueblocounty.gov/sites/default/files/2025-11/Pueblo%20County%20Annual%20Comprehensive%20Financial%20Report%202024.pdf",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County 2024 ACFR joint ventures and component units",
+          "sourceDate": "2024-12-31"
+        },
+        {
+          "id": "SRC-COUNTY-OPENGOV-2026",
+          "url": "https://www.pueblocounty.gov/budget-and-finance-department/opengov",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County OpenGov financial transparency",
+          "sourceDate": "2026"
+        }
+      ]
+    },
+    {
+      "id": "QRX-BUILD-001",
+      "parent": "REG-074",
+      "title": "2026 Regional Building split — authority, finance and permitting performance",
+      "domain": "planning/building/economic development",
+      "category": "Housing & land",
+      "lastReviewed": "2026-10-16",
+      "geography": "Pueblo County",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-PLEX-001",
+      "parent": "",
+      "title": "PuebloPlex federal-property transfer/remediation/infrastructure/jobs lifecycle",
+      "domain": "redevelopment/federal dependency",
+      "category": "Housing & land",
+      "lastReviewed": "2026-09-06",
+      "geography": "PuebloPlex/former depot",
+      "sourceIds": [
+        "SRC-PUEBLOPLEX-BOARD-2026"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-PUEBLOPLEX-BOARD-2026",
+          "url": "https://puebloplex.com/about-us/",
+          "publisher": "PuebloPlex",
+          "title": "PuebloPlex Board of Directors",
+          "sourceDate": "2026"
+        }
+      ]
+    },
+    {
+      "id": "QRX-SCHOOL-001",
+      "parent": "",
+      "title": "Regional school-tax/bond/enrollment/capital-outcome model",
+      "domain": "education/public finance",
+      "category": "Education & children",
+      "lastReviewed": "2026-09-06",
+      "geography": "Countywide",
+      "sourceIds": [
+        "SRC-COUNTY-TAXGROUPS-2026",
+        "SRC-D70-FIN-2026"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-COUNTY-TAXGROUPS-2026",
+          "url": "https://www.pueblocounty.gov/sites/default/files/2026-01/2026%20Tax%20Groups.pdf",
+          "publisher": "Pueblo County Assessor",
+          "title": "2026/2027 Pueblo County Real Estate Tax Groups",
+          "sourceDate": "2026-01-12"
+        },
+        {
+          "id": "SRC-D70-FIN-2026",
+          "url": "https://www.district70.org/district-information/district-departments/business-services/financial-transparency",
+          "publisher": "Pueblo County School District 70",
+          "title": "Pueblo County School District 70 Financial Transparency",
+          "sourceDate": "2026"
+        }
+      ]
+    },
+    {
+      "id": "QRX-FED-001",
+      "parent": "",
+      "title": "City federal grant accounting/control findings and closeout",
+      "domain": "federal grants/audit",
+      "category": "Public money",
+      "lastReviewed": "2026-09-06",
+      "geography": "City",
+      "sourceIds": [
+        "SRC-CITY-ACFR-2024",
+        "SRC-HUD-FY26-ALLOC",
+        "SRC-FTA-FY26",
+        "SRC-TREASURY-SLFRF-2026"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CITY-ACFR-2024",
+          "url": "https://www.pueblo.us/ArchiveCenter/ViewFile/Item/5348",
+          "publisher": "City of Pueblo",
+          "title": "City of Pueblo 2024 Annual Comprehensive Financial Report",
+          "sourceDate": "2024-12-31"
+        },
+        {
+          "id": "SRC-HUD-FY26-ALLOC",
+          "url": "https://www.hud.gov/hud-partners/community-budget-26",
+          "publisher": "U.S. HUD",
+          "title": "FY2026 Community Planning and Development Formula Program Allocations",
+          "sourceDate": "2026-08-03"
+        },
+        {
+          "id": "SRC-FTA-FY26",
+          "url": "https://www.transit.dot.gov/funding/apportionments/current-apportionments",
+          "publisher": "Federal Transit Administration",
+          "title": "FY2026 FTA Full-Year Apportionments",
+          "sourceDate": "2026-04-21"
+        },
+        {
+          "id": "SRC-TREASURY-SLFRF-2026",
+          "url": "https://home.treasury.gov/policy-issues/coronavirus/assistance-for-state-local-and-tribal-governments/state-and-local-fiscal-recovery-funds/reporting-and-compliance",
+          "publisher": "U.S. Department of the Treasury",
+          "title": "State and Local Fiscal Recovery Funds Reporting and Compliance",
+          "sourceDate": "2026"
+        }
+      ]
+    },
+    {
+      "id": "QRX-PROC-REG-001",
+      "parent": "",
+      "title": "Cross-jurisdiction procurement/vendor/change-order network",
+      "domain": "procurement/public finance",
+      "category": "Public money",
+      "lastReviewed": "2026-09-06",
+      "geography": "Regional",
+      "sourceIds": [
+        "SRC-COUNTY-BIDS"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-COUNTY-BIDS",
+          "url": "https://pueblocounty.gov/purchasing-department/bids-and-proposals",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Bids and Proposals",
+          "sourceDate": "2026-09-03"
+        }
+      ]
+    },
+    {
+      "id": "QRX-DEV-METRO-001",
+      "parent": "",
+      "title": "Development metro/special-district levy, debt, infrastructure and assessed-value reconciliation",
+      "domain": "special-district finance/public infrastructure",
+      "category": "Public money",
+      "lastReviewed": "2026-09-07",
+      "geography": "Pueblo County development districts",
+      "sourceIds": [
+        "SRC-COUNTY-TAXGROUPS-2026",
+        "SRC-COUNTY-PRELIM-CERT-2026",
+        "SRC-DOLA-LGIS-2026",
+        "SRC-COUNTY-SPECIALDIST-SERVICEPLAN"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-COUNTY-TAXGROUPS-2026",
+          "url": "https://www.pueblocounty.gov/sites/default/files/2026-01/2026%20Tax%20Groups.pdf",
+          "publisher": "Pueblo County Assessor",
+          "title": "2026/2027 Pueblo County Real Estate Tax Groups",
+          "sourceDate": "2026-01-12"
+        },
+        {
+          "id": "SRC-COUNTY-PRELIM-CERT-2026",
+          "url": "https://www.pueblocounty.gov/sites/default/files/2026-08/2026%20PRELIMINARYT%20CERTIFICATION%20OF%20VALUES.pdf",
+          "publisher": "Pueblo County Assessor",
+          "title": "2026 Preliminary Certification of Values",
+          "sourceDate": "2026-08-26"
+        },
+        {
+          "id": "SRC-DOLA-LGIS-2026",
+          "url": "https://dola.colorado.gov/dlg_lgis_ui_pu/",
+          "publisher": "Colorado Department of Local Affairs",
+          "title": "Colorado Local Government Information System",
+          "sourceDate": "2026"
+        },
+        {
+          "id": "SRC-COUNTY-SPECIALDIST-SERVICEPLAN",
+          "url": "https://www.pueblocounty.gov/planning-and-development-department/land-use-administration",
+          "publisher": "Pueblo County Planning and Development",
+          "title": "Pueblo County Special District Service Plan authority",
+          "sourceDate": "2026"
+        }
+      ]
+    },
+    {
+      "id": "QRX-QP-CONVERGENCE-001",
+      "parent": "REG-054",
+      "title": "Q-Pueblo Q10 convergence, external-pattern adaptation, EH/EE/LEAP/RX integration and field-validation closure",
+      "domain": "cross-domain/control architecture",
+      "category": "Government & law",
+      "lastReviewed": "2026-09-09",
+      "geography": "Pueblo region",
+      "sourceIds": [
+        "SRC-EXT-USASPENDING-API-2026",
+        "SRC-EXT-GAO-GREENBOOK-2025",
+        "SRC-EXT-WA-FIT-2026",
+        "SRC-EXT-NYC-MMR-2026",
+        "SRC-EXT-BOSTON-CITYSCORE"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-EXT-USASPENDING-API-2026",
+          "url": "https://api.usaspending.gov/docs/endpoints",
+          "publisher": "U.S. Treasury USAspending",
+          "title": "USAspending API v2 endpoints",
+          "sourceDate": "2026 access"
+        },
+        {
+          "id": "SRC-EXT-GAO-GREENBOOK-2025",
+          "url": "https://www.gao.gov/products/gao-25-107721",
+          "publisher": "U.S. Government Accountability Office",
+          "title": "Standards for Internal Control in the Federal Government — 2025 Green Book",
+          "sourceDate": "2025 / effective FY2026"
+        },
+        {
+          "id": "SRC-EXT-WA-FIT-2026",
+          "url": "https://sao.wa.gov/resource-library/Financial-Intelligence-Tool-%28FIT%29",
+          "publisher": "Washington State Auditor",
+          "title": "Washington State Auditor Financial Intelligence Tool",
+          "sourceDate": "2026 access"
+        },
+        {
+          "id": "SRC-EXT-NYC-MMR-2026",
+          "url": "https://www.nyc.gov/site/operations/reports/mmr.page",
+          "publisher": "City of New York",
+          "title": "NYC Mayor's Management Report / Dynamic MMR",
+          "sourceDate": "FY2026"
+        },
+        {
+          "id": "SRC-EXT-BOSTON-CITYSCORE",
+          "url": "https://content.boston.gov/departments/analytics-team/cityscore",
+          "publisher": "City of Boston Analytics Team",
+          "title": "Boston CityScore",
+          "sourceDate": "current access"
+        }
+      ]
+    },
+    {
+      "id": "QRX-RISE-001",
+      "parent": "",
+      "title": "RISE / Section 108 financing-to-parcel-to-reuse lifecycle reconciliation",
+      "domain": "housing/land/public finance/redevelopment",
+      "category": "Housing & land",
+      "lastReviewed": "2026-09-14",
+      "geography": "Pueblo / targeted low-moderate-income and blight areas",
+      "sourceIds": [
+        "SRC-RISE-CITY-CONPLAN-2025-29",
+        "SRC-RISE-HUD-S108"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-RISE-CITY-CONPLAN-2025-29",
+          "url": "https://www.pueblo.us/DocumentCenter/View/39802/2025---2029-Con-Plan-Update---FINAL",
+          "publisher": "City of Pueblo",
+          "title": "City of Pueblo 2025–2029 Consolidated Plan",
+          "sourceDate": "2025 plan / current RISE baseline"
+        },
+        {
+          "id": "SRC-RISE-HUD-S108",
+          "url": "https://www.hud.gov/hud-partners/community-section108",
+          "publisher": "U.S. HUD",
+          "title": "Section 108 Loan Guarantee Program",
+          "sourceDate": "current"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-058-01",
+      "parent": "REG-058",
+      "title": "Airport: Lease/termination/supersession authority chain",
+      "domain": "airport/municipal law/public finance",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo Memorial Airport / City",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-058-02",
+      "parent": "REG-058",
+      "title": "Airport: Outside-counsel engagement, invoice and appropriation lineage",
+      "domain": "airport/municipal law/public finance",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo Memorial Airport / City",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-058-03",
+      "parent": "REG-058",
+      "title": "Airport: Airport Properties federal docket state and attorney-fee residue",
+      "domain": "airport/municipal law/public finance",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo Memorial Airport / City",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-058-04",
+      "parent": "REG-058",
+      "title": "Airport: FAA grant/property/minimum-standards obligations",
+      "domain": "airport/municipal law/public finance",
+      "category": "Housing & land",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo Memorial Airport / City",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-059-01",
+      "parent": "REG-059",
+      "title": "Lyn-Darr civil-rights case: Current pleadings, parties and scheduling state",
+      "domain": "civil rights/justice/law enforcement",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County / Colorado Springs / federal court",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-059-02",
+      "parent": "REG-059",
+      "title": "Civil-rights litigation: source documents, evidentiary disputes and case procedure",
+      "domain": "civil rights/justice/law enforcement",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County / Colorado Springs / federal court",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-059-03",
+      "parent": "REG-059",
+      "title": "Lyn-Darr civil-rights case: County/PCSO defense, insurance and counsel exposure",
+      "domain": "civil rights/justice/law enforcement",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County / Colorado Springs / federal court",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-059-04",
+      "parent": "REG-059",
+      "title": "Lyn-Darr civil-rights case: Underlying vacatur/dismissal and policy-learning lineage",
+      "domain": "civil rights/justice/law enforcement",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County / Colorado Springs / federal court",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-060-01",
+      "parent": "REG-060",
+      "title": "Pueblo West roads IGA: 6C road-sales-tax receipts and expenditure reconciliation",
+      "domain": "roads/public finance/MS4/intergovernmental",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo West",
+      "sourceIds": [
+        "SRC-CUR-20261005-022",
+        "SRC-CUR-20261005-061"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-022",
+          "url": "https://pueblowestmetro.us/1838/Pueblo-West-Road-Funding-Transparency",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Road Funding Transparency",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-061",
+          "url": "https://www.pueblocounty.gov/pueblo-west-roads",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Pueblo West Roads",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-060-02",
+      "parent": "REG-060",
+      "title": "Pueblo West roads IGA: 2023 IGA versus Sept. 2026 Reverse IGA responsibility map",
+      "domain": "roads/public finance/MS4/intergovernmental",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo West",
+      "sourceIds": [
+        "SRC-CUR-20261005-022",
+        "SRC-CUR-20261005-061"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-022",
+          "url": "https://pueblowestmetro.us/1838/Pueblo-West-Road-Funding-Transparency",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Road Funding Transparency",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-061",
+          "url": "https://www.pueblocounty.gov/pueblo-west-roads",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Pueblo West Roads",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-060-03",
+      "parent": "REG-060",
+      "title": "Pueblo West roads IGA: MS4/drainage/stormwater responsibility and cost allocation",
+      "domain": "roads/public finance/MS4/intergovernmental",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo West",
+      "sourceIds": [
+        "SRC-CUR-20261005-022",
+        "SRC-CUR-20261005-061"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-022",
+          "url": "https://pueblowestmetro.us/1838/Pueblo-West-Road-Funding-Transparency",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Road Funding Transparency",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-061",
+          "url": "https://www.pueblocounty.gov/pueblo-west-roads",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Pueblo West Roads",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-060-04",
+      "parent": "REG-060",
+      "title": "Pueblo West roads IGA: Road condition, work-order, maintenance and rehabilitation outcomes",
+      "domain": "roads/public finance/MS4/intergovernmental",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo West",
+      "sourceIds": [
+        "SRC-CUR-20261005-022",
+        "SRC-CUR-20261005-061"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-022",
+          "url": "https://pueblowestmetro.us/1838/Pueblo-West-Road-Funding-Transparency",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Road Funding Transparency",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-061",
+          "url": "https://www.pueblocounty.gov/pueblo-west-roads",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Pueblo West Roads",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-061-01",
+      "parent": "REG-061",
+      "title": "Pueblo West utilities: 2027 rate scenarios and reserve depletion model",
+      "domain": "water/wastewater/enterprise finance",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo West",
+      "sourceIds": [
+        "SRC-CUR-20261005-063",
+        "SRC-CUR-20261005-064"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-063",
+          "url": "https://www.pueblowestmetro.us/1639/Water-Sewer-Rates",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Water and Sewer Rates",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-064",
+          "url": "https://www.pueblowestmetro.us/1641/Water-Tap-Policy",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Water Tap Policy",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-061-02",
+      "parent": "REG-061",
+      "title": "Pueblo West utilities: Water/wastewater capital plan, debt and first-five-year needs",
+      "domain": "water/wastewater/enterprise finance",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo West",
+      "sourceIds": [
+        "SRC-CUR-20261005-063",
+        "SRC-CUR-20261005-064"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-063",
+          "url": "https://www.pueblowestmetro.us/1639/Water-Sewer-Rates",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Water and Sewer Rates",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-064",
+          "url": "https://www.pueblowestmetro.us/1641/Water-Tap-Policy",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Water Tap Policy",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-061-03",
+      "parent": "REG-061",
+      "title": "Pueblo West utilities: Reliable water yield, treatment/storage and tap commitments",
+      "domain": "water/wastewater/enterprise finance",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo West",
+      "sourceIds": [
+        "SRC-CUR-20261005-063",
+        "SRC-CUR-20261005-064"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-063",
+          "url": "https://www.pueblowestmetro.us/1639/Water-Sewer-Rates",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Water and Sewer Rates",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-064",
+          "url": "https://www.pueblowestmetro.us/1641/Water-Tap-Policy",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Water Tap Policy",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-061-04",
+      "parent": "REG-061",
+      "title": "Pueblo West utilities: Wastewater capacity, reserves and serviceability",
+      "domain": "water/wastewater/enterprise finance",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo West",
+      "sourceIds": [
+        "SRC-CUR-20261005-063",
+        "SRC-CUR-20261005-064"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-063",
+          "url": "https://www.pueblowestmetro.us/1639/Water-Sewer-Rates",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Water and Sewer Rates",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-064",
+          "url": "https://www.pueblowestmetro.us/1641/Water-Tap-Policy",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Water Tap Policy",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-062-01",
+      "parent": "REG-062",
+      "title": "Runyon governance: New County-Runyon operating/lease agreement and control rights",
+      "domain": "parks/nonprofit governance/finance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "Runyon Sports Complex / Pueblo County",
+      "sourceIds": [
+        "SRC-CUR-20261005-009"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-009",
+          "url": "https://county.pueblo.org/strengthening-runyons-future",
+          "publisher": "Pueblo County",
+          "title": "Strengthening Runyon's Future",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-062-02",
+      "parent": "REG-062",
+      "title": "Runyon governance: Staff employer, supervision, benefits and transition",
+      "domain": "parks/nonprofit governance/finance",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "Runyon Sports Complex / Pueblo County",
+      "sourceIds": [
+        "SRC-CUR-20261005-009"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-009",
+          "url": "https://county.pueblo.org/strengthening-runyons-future",
+          "publisher": "Pueblo County",
+          "title": "Strengthening Runyon's Future",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-062-03",
+      "parent": "REG-062",
+      "title": "Runyon governance: County subsidy, revenues, capital obligations and liabilities",
+      "domain": "parks/nonprofit governance/finance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "Runyon Sports Complex / Pueblo County",
+      "sourceIds": [
+        "SRC-CUR-20261005-009"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-009",
+          "url": "https://county.pueblo.org/strengthening-runyons-future",
+          "publisher": "Pueblo County",
+          "title": "Strengthening Runyon's Future",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-062-04",
+      "parent": "REG-062",
+      "title": "Runyon governance: Utilization, tournament economics and community outcomes",
+      "domain": "parks/nonprofit governance/finance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "Runyon Sports Complex / Pueblo County",
+      "sourceIds": [
+        "SRC-CUR-20261005-009"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-009",
+          "url": "https://county.pueblo.org/strengthening-runyons-future",
+          "publisher": "Pueblo County",
+          "title": "Strengthening Runyon's Future",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-063-01",
+      "parent": "REG-063",
+      "title": "2026 Pueblo-area ballot measures: Certified text, geography, duration and legal effect for all local measures",
+      "domain": "elections/public finance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County / applicable districts",
+      "sourceIds": [
+        "SRC-CUR-20261005-058",
+        "SRC-CUR-20261005-023",
+        "SRC-CUR-20261005-024"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-058",
+          "url": "https://www.pueblocounty.gov/clerk-and-recorder-department/elections",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Elections",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-023",
+          "url": "https://pueblowestmetro.us/1861/Fire-Protection-Sales-Tax-6B",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Fire Protection Sales Tax 6B",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-024",
+          "url": "https://pueblowestmetro.us/1862/Excess-Revenue-TABOR-Retention-6C",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Excess Revenue TABOR Retention 6C",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-063-02",
+      "parent": "REG-063",
+      "title": "2026 Pueblo-area ballot measures: Combined tax/levy/revenue-retention stack by geography",
+      "domain": "elections/public finance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County / applicable districts",
+      "sourceIds": [
+        "SRC-CUR-20261005-058",
+        "SRC-CUR-20261005-023",
+        "SRC-CUR-20261005-024"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-058",
+          "url": "https://www.pueblocounty.gov/clerk-and-recorder-department/elections",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Elections",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-023",
+          "url": "https://pueblowestmetro.us/1861/Fire-Protection-Sales-Tax-6B",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Fire Protection Sales Tax 6B",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-024",
+          "url": "https://pueblowestmetro.us/1862/Excess-Revenue-TABOR-Retention-6C",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Excess Revenue TABOR Retention 6C",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-063-03",
+      "parent": "REG-063",
+      "title": "2026 Pueblo-area ballot measures: Implementation, fund restriction, audit and sunset rules",
+      "domain": "elections/public finance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County / applicable districts",
+      "sourceIds": [
+        "SRC-CUR-20261005-058",
+        "SRC-CUR-20261005-023",
+        "SRC-CUR-20261005-024"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-058",
+          "url": "https://www.pueblocounty.gov/clerk-and-recorder-department/elections",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Elections",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-023",
+          "url": "https://pueblowestmetro.us/1861/Fire-Protection-Sales-Tax-6B",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Fire Protection Sales Tax 6B",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-024",
+          "url": "https://pueblowestmetro.us/1862/Excess-Revenue-TABOR-Retention-6C",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Excess Revenue TABOR Retention 6C",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-063-04",
+      "parent": "REG-063",
+      "title": "2026 Pueblo-area ballot measures: Public claim/campaign statement verification",
+      "domain": "elections/public finance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County / applicable districts",
+      "sourceIds": [
+        "SRC-CUR-20261005-058",
+        "SRC-CUR-20261005-023",
+        "SRC-CUR-20261005-024"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-058",
+          "url": "https://www.pueblocounty.gov/clerk-and-recorder-department/elections",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Elections",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-023",
+          "url": "https://pueblowestmetro.us/1861/Fire-Protection-Sales-Tax-6B",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Fire Protection Sales Tax 6B",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-024",
+          "url": "https://pueblowestmetro.us/1862/Excess-Revenue-TABOR-Retention-6C",
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "Pueblo West Excess Revenue TABOR Retention 6C",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-064-01",
+      "parent": "REG-064",
+      "title": "Black Hills utility proceedings: 2026 electric base-rate case and proposed bill impacts",
+      "domain": "utility rates/energy/regulation",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo / Colorado service territories",
+      "sourceIds": [
+        "SRC-BESS-BH-RATE-2026"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-BESS-BH-RATE-2026",
+          "url": "https://www.blackhillsenergy.com/billing-and-payments/rates-and-regulatory-information/2026-colorado-electric-regulatory-rate-review",
+          "publisher": "Black Hills Energy",
+          "title": "2026 Colorado electric regulatory rate review",
+          "sourceDate": "2026-09-11 access"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-064-02",
+      "parent": "REG-064",
+      "title": "Black Hills utility proceedings: Gas clean-heat plan, riders and ratepayer impacts",
+      "domain": "utility rates/energy/regulation",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo / Colorado service territories",
+      "sourceIds": [
+        "SRC-BESS-BH-RATE-2026"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-BESS-BH-RATE-2026",
+          "url": "https://www.blackhillsenergy.com/billing-and-payments/rates-and-regulatory-information/2026-colorado-electric-regulatory-rate-review",
+          "publisher": "Black Hills Energy",
+          "title": "2026 Colorado electric regulatory rate review",
+          "sourceDate": "2026-09-11 access"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-064-03",
+      "parent": "REG-064",
+      "title": "Black Hills utility proceedings: Electric resource plan, battery/solar and rider transition",
+      "domain": "utility rates/energy/regulation",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo / Colorado service territories",
+      "sourceIds": [
+        "SRC-BESS-BH-RATE-2026"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-BESS-BH-RATE-2026",
+          "url": "https://www.blackhillsenergy.com/billing-and-payments/rates-and-regulatory-information/2026-colorado-electric-regulatory-rate-review",
+          "publisher": "Black Hills Energy",
+          "title": "2026 Colorado electric regulatory rate review",
+          "sourceDate": "2026-09-11 access"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-064-04",
+      "parent": "REG-064",
+      "title": "Black Hills utility proceedings: Black Hills-NorthWestern merger regulatory/local implications",
+      "domain": "utility rates/energy/regulation",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo / Colorado service territories",
+      "sourceIds": [
+        "SRC-BESS-BH-RATE-2026"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-BESS-BH-RATE-2026",
+          "url": "https://www.blackhillsenergy.com/billing-and-payments/rates-and-regulatory-information/2026-colorado-electric-regulatory-rate-review",
+          "publisher": "Black Hills Energy",
+          "title": "2026 Colorado electric regulatory rate review",
+          "sourceDate": "2026-09-11 access"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-065-01",
+      "parent": "REG-065",
+      "title": "Rural Health Transformation: Awardee/subaward/project geography serving Pueblo",
+      "domain": "health grants/access/workforce",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "Colorado / Pueblo County",
+      "sourceIds": [
+        "SRC-CUR-20261005-015"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-015",
+          "url": "https://hcpf.colorado.gov/",
+          "publisher": "Colorado Department of Health Care Policy & Financing",
+          "title": "Colorado Department of Health Care Policy & Financing",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-065-02",
+      "parent": "REG-065",
+      "title": "Rural Health Transformation: Pueblo provider participation and direct/indirect benefit",
+      "domain": "health grants/access/workforce",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "Colorado / Pueblo County",
+      "sourceIds": [
+        "SRC-CUR-20261005-015"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-015",
+          "url": "https://hcpf.colorado.gov/",
+          "publisher": "Colorado Department of Health Care Policy & Financing",
+          "title": "Colorado Department of Health Care Policy & Financing",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-065-03",
+      "parent": "REG-065",
+      "title": "Rural Health Transformation: Workforce, service-line and technology deliverables",
+      "domain": "health grants/access/workforce",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "Colorado / Pueblo County",
+      "sourceIds": [
+        "SRC-CUR-20261005-015"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-015",
+          "url": "https://hcpf.colorado.gov/",
+          "publisher": "Colorado Department of Health Care Policy & Financing",
+          "title": "Colorado Department of Health Care Policy & Financing",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-065-04",
+      "parent": "REG-065",
+      "title": "Rural Health Transformation: Access, quality and financial-sustainability outcomes",
+      "domain": "health grants/access/workforce",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "Colorado / Pueblo County",
+      "sourceIds": [
+        "SRC-CUR-20261005-015"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-015",
+          "url": "https://hcpf.colorado.gov/",
+          "publisher": "Colorado Department of Health Care Policy & Financing",
+          "title": "Colorado Department of Health Care Policy & Financing",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-066-01",
+      "parent": "REG-066",
+      "title": "DOJ Model Cities Initiative: Phase-two application, authority, certifications and requested budget",
+      "domain": "public safety/federal grants/civil rights",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo city/county",
+      "sourceIds": [
+        "SRC-CUR-20261005-055",
+        "SRC-CUR-20261005-034"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-055",
+          "url": "https://www.pueblo.us/m/newsflash/home/detail/5008",
+          "publisher": "City of Pueblo",
+          "title": "City of Pueblo Model Cities Initiative phase-two announcement",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-034",
+          "url": "https://www.justice.gov/opa/pr/making-america-safe-again-doj-award-300-million-model-cities-dedicated-restoring-law-and",
+          "publisher": "U.S. Department of Justice",
+          "title": "DOJ Model Cities Initiative",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-066-02",
+      "parent": "REG-066",
+      "title": "DOJ Model Cities Initiative: Partner allocation, governance, procurement and subaward map",
+      "domain": "public safety/federal grants/civil rights",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo city/county",
+      "sourceIds": [
+        "SRC-CUR-20261005-055",
+        "SRC-CUR-20261005-034"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-055",
+          "url": "https://www.pueblo.us/m/newsflash/home/detail/5008",
+          "publisher": "City of Pueblo",
+          "title": "City of Pueblo Model Cities Initiative phase-two announcement",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-034",
+          "url": "https://www.justice.gov/opa/pr/making-america-safe-again-doj-award-300-million-model-cities-dedicated-restoring-law-and",
+          "publisher": "U.S. Department of Justice",
+          "title": "DOJ Model Cities Initiative",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-066-03",
+      "parent": "REG-066",
+      "title": "DOJ Model Cities Initiative: Federal conditions, civil-rights, immigration, data/privacy and technology controls",
+      "domain": "public safety/federal grants/civil rights",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo city/county",
+      "sourceIds": [
+        "SRC-CUR-20261005-055",
+        "SRC-CUR-20261005-034"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-055",
+          "url": "https://www.pueblo.us/m/newsflash/home/detail/5008",
+          "publisher": "City of Pueblo",
+          "title": "City of Pueblo Model Cities Initiative phase-two announcement",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-034",
+          "url": "https://www.justice.gov/opa/pr/making-america-safe-again-doj-award-300-million-model-cities-dedicated-restoring-law-and",
+          "publisher": "U.S. Department of Justice",
+          "title": "DOJ Model Cities Initiative",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-066-04",
+      "parent": "REG-066",
+      "title": "DOJ Model Cities Initiative: Crime, victim, reentry and prevention outcome framework",
+      "domain": "public safety/federal grants/civil rights",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo city/county",
+      "sourceIds": [
+        "SRC-CUR-20261005-055",
+        "SRC-CUR-20261005-034"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-055",
+          "url": "https://www.pueblo.us/m/newsflash/home/detail/5008",
+          "publisher": "City of Pueblo",
+          "title": "City of Pueblo Model Cities Initiative phase-two announcement",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-034",
+          "url": "https://www.justice.gov/opa/pr/making-america-safe-again-doj-award-300-million-model-cities-dedicated-restoring-law-and",
+          "publisher": "U.S. Department of Justice",
+          "title": "DOJ Model Cities Initiative",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-067-01",
+      "parent": "REG-067",
+      "title": "Post-fire watershed/EWP: Federal/state/local EWP cost-share reconciliation",
+      "domain": "disaster/watershed/flood/public finance",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "Aspen Acres/Beulah/Pueblo County burn-scar areas",
+      "sourceIds": [
+        "SRC-CUR-20261005-018",
+        "SRC-CUR-20261005-035"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-018",
+          "url": "https://pueblocounty.gov/aspen-acres-fire-recovery-assistance",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Aspen Acres Fire Recovery Assistance",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-035",
+          "url": "https://www.nrcs.usda.gov/programs-initiatives/ewp-emergency-watershed-protection",
+          "publisher": "USDA Natural Resources Conservation Service",
+          "title": "USDA NRCS Emergency Watershed Protection Program",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-067-02",
+      "parent": "REG-067",
+      "title": "Post-fire watershed/EWP: Project engineering, procurement, scope and schedule",
+      "domain": "disaster/watershed/flood/public finance",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "Aspen Acres/Beulah/Pueblo County burn-scar areas",
+      "sourceIds": [
+        "SRC-CUR-20261005-018",
+        "SRC-CUR-20261005-035"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-018",
+          "url": "https://pueblocounty.gov/aspen-acres-fire-recovery-assistance",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Aspen Acres Fire Recovery Assistance",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-035",
+          "url": "https://www.nrcs.usda.gov/programs-initiatives/ewp-emergency-watershed-protection",
+          "publisher": "USDA Natural Resources Conservation Service",
+          "title": "USDA NRCS Emergency Watershed Protection Program",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-067-03",
+      "parent": "REG-067",
+      "title": "Post-fire watershed/EWP: Burn-scar flood/debris hazard and infrastructure exposure",
+      "domain": "disaster/watershed/flood/public finance",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "Aspen Acres/Beulah/Pueblo County burn-scar areas",
+      "sourceIds": [
+        "SRC-CUR-20261005-018",
+        "SRC-CUR-20261005-035"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-018",
+          "url": "https://pueblocounty.gov/aspen-acres-fire-recovery-assistance",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Aspen Acres Fire Recovery Assistance",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-035",
+          "url": "https://www.nrcs.usda.gov/programs-initiatives/ewp-emergency-watershed-protection",
+          "publisher": "USDA Natural Resources Conservation Service",
+          "title": "USDA NRCS Emergency Watershed Protection Program",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-067-04",
+      "parent": "REG-067",
+      "title": "Post-fire watershed/EWP: Household/agriculture/insurance/recovery burden",
+      "domain": "disaster/watershed/flood/public finance",
+      "category": "Culture & history",
+      "lastReviewed": "2026-10-05",
+      "geography": "Aspen Acres/Beulah/Pueblo County burn-scar areas",
+      "sourceIds": [
+        "SRC-CUR-20261005-018",
+        "SRC-CUR-20261005-035"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-018",
+          "url": "https://pueblocounty.gov/aspen-acres-fire-recovery-assistance",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Aspen Acres Fire Recovery Assistance",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-035",
+          "url": "https://www.nrcs.usda.gov/programs-initiatives/ewp-emergency-watershed-protection",
+          "publisher": "USDA Natural Resources Conservation Service",
+          "title": "USDA NRCS Emergency Watershed Protection Program",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-068-01",
+      "parent": "REG-068",
+      "title": "Pueblo homelessness continuum: PIT/HMIS methodology, coverage and trend interpretation",
+      "domain": "homelessness/housing/health",
+      "category": "Housing & land",
+      "lastReviewed": "2026-10-05",
+      "geography": "City of Pueblo / regional service area",
+      "sourceIds": [
+        "SRC-CUR-20261005-041",
+        "SRC-RISE-CITY-CONPLAN-2025-29"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-041",
+          "url": "https://www.pueblo.us/2949/Housing-and-Homelessness-Guide",
+          "publisher": "City of Pueblo",
+          "title": "City of Pueblo Housing and Homelessness Guide",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-RISE-CITY-CONPLAN-2025-29",
+          "url": "https://www.pueblo.us/DocumentCenter/View/39802/2025---2029-Con-Plan-Update---FINAL",
+          "publisher": "City of Pueblo",
+          "title": "City of Pueblo 2025–2029 Consolidated Plan",
+          "sourceDate": "2025 plan / current RISE baseline"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-068-02",
+      "parent": "REG-068",
+      "title": "Pueblo homelessness continuum: Shelter ownership, SafeSide operating contract and capacity",
+      "domain": "homelessness/housing/health",
+      "category": "Housing & land",
+      "lastReviewed": "2026-10-05",
+      "geography": "City of Pueblo / regional service area",
+      "sourceIds": [
+        "SRC-CUR-20261005-041",
+        "SRC-RISE-CITY-CONPLAN-2025-29"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-041",
+          "url": "https://www.pueblo.us/2949/Housing-and-Homelessness-Guide",
+          "publisher": "City of Pueblo",
+          "title": "City of Pueblo Housing and Homelessness Guide",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-RISE-CITY-CONPLAN-2025-29",
+          "url": "https://www.pueblo.us/DocumentCenter/View/39802/2025---2029-Con-Plan-Update---FINAL",
+          "publisher": "City of Pueblo",
+          "title": "City of Pueblo 2025–2029 Consolidated Plan",
+          "sourceDate": "2025 plan / current RISE baseline"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-068-03",
+      "parent": "REG-068",
+      "title": "Pueblo homelessness continuum: CDBG/HOME/ESG/local funding and provider flow",
+      "domain": "homelessness/housing/health",
+      "category": "Housing & land",
+      "lastReviewed": "2026-10-05",
+      "geography": "City of Pueblo / regional service area",
+      "sourceIds": [
+        "SRC-CUR-20261005-041",
+        "SRC-RISE-CITY-CONPLAN-2025-29"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-041",
+          "url": "https://www.pueblo.us/2949/Housing-and-Homelessness-Guide",
+          "publisher": "City of Pueblo",
+          "title": "City of Pueblo Housing and Homelessness Guide",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-RISE-CITY-CONPLAN-2025-29",
+          "url": "https://www.pueblo.us/DocumentCenter/View/39802/2025---2029-Con-Plan-Update---FINAL",
+          "publisher": "City of Pueblo",
+          "title": "City of Pueblo 2025–2029 Consolidated Plan",
+          "sourceDate": "2025 plan / current RISE baseline"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-068-04",
+      "parent": "REG-068",
+      "title": "Pueblo homelessness continuum: Exits to housing, returns, health/employment and system outcomes",
+      "domain": "homelessness/housing/health",
+      "category": "Housing & land",
+      "lastReviewed": "2026-10-05",
+      "geography": "City of Pueblo / regional service area",
+      "sourceIds": [
+        "SRC-CUR-20261005-041",
+        "SRC-RISE-CITY-CONPLAN-2025-29"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-041",
+          "url": "https://www.pueblo.us/2949/Housing-and-Homelessness-Guide",
+          "publisher": "City of Pueblo",
+          "title": "City of Pueblo Housing and Homelessness Guide",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-RISE-CITY-CONPLAN-2025-29",
+          "url": "https://www.pueblo.us/DocumentCenter/View/39802/2025---2029-Con-Plan-Update---FINAL",
+          "publisher": "City of Pueblo",
+          "title": "City of Pueblo 2025–2029 Consolidated Plan",
+          "sourceDate": "2025 plan / current RISE baseline"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-069-01",
+      "parent": "REG-069",
+      "title": "Pueblo County fiscal/organizational state: 2026 adopted budget to amendments, actuals and 2027 baseline",
+      "domain": "county finance/workforce/governance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County",
+      "sourceIds": [
+        "SRC-COUNTY-BUDGET-2026",
+        "SRC-COUNTY-PRIORITIES",
+        "SRC-CUR-20261005-019"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-COUNTY-BUDGET-2026",
+          "url": "https://www.pueblocounty.gov/sites/default/files/2026-05/2026%20Adopted%20Budget.pdf",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Adopted Budget 2026",
+          "sourceDate": "2026"
+        },
+        {
+          "id": "SRC-COUNTY-PRIORITIES",
+          "url": "https://www.pueblocounty.gov/what-we-are-working",
+          "publisher": "Pueblo County",
+          "title": "BOCC Smart Priorities Dashboard",
+          "sourceDate": "2026-08-08"
+        },
+        {
+          "id": "SRC-CUR-20261005-019",
+          "url": "https://pueblocounty.gov/cao",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Chief Administrative Officer",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-069-02",
+      "parent": "REG-069",
+      "title": "Pueblo County fiscal/organizational state: Hiring, vacancies, HR consolidation and service capacity",
+      "domain": "county finance/workforce/governance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County",
+      "sourceIds": [
+        "SRC-COUNTY-BUDGET-2026",
+        "SRC-COUNTY-PRIORITIES",
+        "SRC-CUR-20261005-019"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-COUNTY-BUDGET-2026",
+          "url": "https://www.pueblocounty.gov/sites/default/files/2026-05/2026%20Adopted%20Budget.pdf",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Adopted Budget 2026",
+          "sourceDate": "2026"
+        },
+        {
+          "id": "SRC-COUNTY-PRIORITIES",
+          "url": "https://www.pueblocounty.gov/what-we-are-working",
+          "publisher": "Pueblo County",
+          "title": "BOCC Smart Priorities Dashboard",
+          "sourceDate": "2026-08-08"
+        },
+        {
+          "id": "SRC-CUR-20261005-019",
+          "url": "https://pueblocounty.gov/cao",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Chief Administrative Officer",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-069-03",
+      "parent": "REG-069",
+      "title": "Pueblo County fiscal/organizational state: CAO delegated authority versus independently elected offices",
+      "domain": "county finance/workforce/governance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County",
+      "sourceIds": [
+        "SRC-COUNTY-BUDGET-2026",
+        "SRC-COUNTY-PRIORITIES",
+        "SRC-CUR-20261005-019"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-COUNTY-BUDGET-2026",
+          "url": "https://www.pueblocounty.gov/sites/default/files/2026-05/2026%20Adopted%20Budget.pdf",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Adopted Budget 2026",
+          "sourceDate": "2026"
+        },
+        {
+          "id": "SRC-COUNTY-PRIORITIES",
+          "url": "https://www.pueblocounty.gov/what-we-are-working",
+          "publisher": "Pueblo County",
+          "title": "BOCC Smart Priorities Dashboard",
+          "sourceDate": "2026-08-08"
+        },
+        {
+          "id": "SRC-CUR-20261005-019",
+          "url": "https://pueblocounty.gov/cao",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Chief Administrative Officer",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-069-04",
+      "parent": "REG-069",
+      "title": "Pueblo County fiscal/organizational state: Jail, wildfire recovery, grants and other pressure drivers",
+      "domain": "county finance/workforce/governance",
+      "category": "Environment & place",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County",
+      "sourceIds": [
+        "SRC-COUNTY-BUDGET-2026",
+        "SRC-COUNTY-PRIORITIES",
+        "SRC-CUR-20261005-019"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-COUNTY-BUDGET-2026",
+          "url": "https://www.pueblocounty.gov/sites/default/files/2026-05/2026%20Adopted%20Budget.pdf",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Adopted Budget 2026",
+          "sourceDate": "2026"
+        },
+        {
+          "id": "SRC-COUNTY-PRIORITIES",
+          "url": "https://www.pueblocounty.gov/what-we-are-working",
+          "publisher": "Pueblo County",
+          "title": "BOCC Smart Priorities Dashboard",
+          "sourceDate": "2026-08-08"
+        },
+        {
+          "id": "SRC-CUR-20261005-019",
+          "url": "https://pueblocounty.gov/cao",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Chief Administrative Officer",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-070-01",
+      "parent": "REG-070",
+      "title": "Pueblo County Coroner governance: Statutory independence, qualifications and authority",
+      "domain": "coroner/governance/public finance/justice",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County",
+      "sourceIds": [
+        "SRC-CUR-20261005-059",
+        "SRC-CUR-20261005-019"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-059",
+          "url": "https://www.pueblocounty.gov/coroner/coroner-home",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Coroner",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-019",
+          "url": "https://pueblocounty.gov/cao",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Chief Administrative Officer",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-070-02",
+      "parent": "REG-070",
+      "title": "Pueblo County Coroner governance: Budget, staffing, pathology/investigation contracts and capacity",
+      "domain": "coroner/governance/public finance/justice",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County",
+      "sourceIds": [
+        "SRC-CUR-20261005-059",
+        "SRC-CUR-20261005-019"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-059",
+          "url": "https://www.pueblocounty.gov/coroner/coroner-home",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Coroner",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-019",
+          "url": "https://pueblocounty.gov/cao",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Chief Administrative Officer",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-070-03",
+      "parent": "REG-070",
+      "title": "Pueblo County Coroner governance: Election/candidate and office-transition claim integrity",
+      "domain": "coroner/governance/public finance/justice",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County",
+      "sourceIds": [
+        "SRC-CUR-20261005-059",
+        "SRC-CUR-20261005-019"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-059",
+          "url": "https://www.pueblocounty.gov/coroner/coroner-home",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Coroner",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-019",
+          "url": "https://pueblocounty.gov/cao",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Chief Administrative Officer",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-070-04",
+      "parent": "REG-070",
+      "title": "Pueblo County Coroner governance: Service quality, family/public-health/justice handoffs",
+      "domain": "coroner/governance/public finance/justice",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County",
+      "sourceIds": [
+        "SRC-CUR-20261005-059",
+        "SRC-CUR-20261005-019"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-059",
+          "url": "https://www.pueblocounty.gov/coroner/coroner-home",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Coroner",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-019",
+          "url": "https://pueblocounty.gov/cao",
+          "publisher": "Pueblo County",
+          "title": "Pueblo County Chief Administrative Officer",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-071-01",
+      "parent": "REG-071",
+      "title": "2026 candidate/public claim integrity: Exact claim capture, speaker, date, venue and wording",
+      "domain": "elections/information integrity",
+      "category": "Government & law",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County / relevant districts",
+      "sourceIds": [
+        "SRC-COUNTY-MUNICIPAL-SCHOOL-2026"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-COUNTY-MUNICIPAL-SCHOOL-2026",
+          "url": "https://www.pueblocounty.gov/clerk-and-recorder-department/candidate-running-office",
+          "publisher": "Pueblo County Clerk and Recorder",
+          "title": "Candidate Running for Office - municipalities, school districts, special districts",
+          "sourceDate": "2026"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-071-02",
+      "parent": "REG-071",
+      "title": "2026 candidate/public claim integrity: Budget/tax/public-finance campaign claims",
+      "domain": "elections/information integrity",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County / relevant districts",
+      "sourceIds": [
+        "SRC-COUNTY-MUNICIPAL-SCHOOL-2026"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-COUNTY-MUNICIPAL-SCHOOL-2026",
+          "url": "https://www.pueblocounty.gov/clerk-and-recorder-department/candidate-running-office",
+          "publisher": "Pueblo County Clerk and Recorder",
+          "title": "Candidate Running for Office - municipalities, school districts, special districts",
+          "sourceDate": "2026"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-071-03",
+      "parent": "REG-071",
+      "title": "2026 candidate/public claim integrity: Crime/litigation/government-authority campaign claims",
+      "domain": "elections/information integrity",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County / relevant districts",
+      "sourceIds": [
+        "SRC-COUNTY-MUNICIPAL-SCHOOL-2026"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-COUNTY-MUNICIPAL-SCHOOL-2026",
+          "url": "https://www.pueblocounty.gov/clerk-and-recorder-department/candidate-running-office",
+          "publisher": "Pueblo County Clerk and Recorder",
+          "title": "Candidate Running for Office - municipalities, school districts, special districts",
+          "sourceDate": "2026"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-071-04",
+      "parent": "REG-071",
+      "title": "2026 candidate/public claim integrity: Healthcare/economic-development/service-impact campaign claims",
+      "domain": "elections/information integrity",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo County / relevant districts",
+      "sourceIds": [
+        "SRC-COUNTY-MUNICIPAL-SCHOOL-2026"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-COUNTY-MUNICIPAL-SCHOOL-2026",
+          "url": "https://www.pueblocounty.gov/clerk-and-recorder-department/candidate-running-office",
+          "publisher": "Pueblo County Clerk and Recorder",
+          "title": "Candidate Running for Office - municipalities, school districts, special districts",
+          "sourceDate": "2026"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-025-MTN-PARK",
+      "parent": "REG-025",
+      "title": "Aspen Acres recovery: Pueblo Mountain Park insurance, fire-damage assessment and access restoration",
+      "domain": "disaster recovery/parks/municipal asset",
+      "category": "Government & law",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo Mountain Park / Beulah",
+      "sourceIds": [
+        "SRC-CUR-20261005-047",
+        "SRC-CUR-20261005-048"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-047",
+          "url": "https://www.pueblo.us/Calendar.aspx?EID=15847&calType=0&day=5&month=10&year=2026",
+          "publisher": "City of Pueblo",
+          "title": "Pueblo Mountain Park Community Meeting — October 20, 2026",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-048",
+          "url": "https://www.pueblo.us/Calendar.aspx?EID=15850&calType=0&day=5&month=10&year=2026",
+          "publisher": "City of Pueblo",
+          "title": "Pueblo Mountain Park Community Meeting — October 22, 2026",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-043-MISSION-01",
+      "parent": "REG-043",
+      "title": "Mission Foods: primary closure/WARN/CDLE notice and closure-date reconciliation",
+      "domain": "workforce/economic transition",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-043-MISSION-02",
+      "parent": "REG-043",
+      "title": "Mission Foods: worker displacement, bumping rights, reemployment and income transition",
+      "domain": "workforce/household economy",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-043-MISSION-03",
+      "parent": "REG-043",
+      "title": "Mission Foods: plant property, reuse and industrial-site transition",
+      "domain": "economic development/land/workforce",
+      "category": "Housing & land",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo manufacturing site",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-043-MISSION-04",
+      "parent": "REG-043",
+      "title": "Mission Foods: realized local payroll, tax-base, supplier and household impact",
+      "domain": "economic development/public finance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo region",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-072-01",
+      "parent": "REG-072",
+      "title": "Steel: 2026 five-year USW CBA terms, wage schedules and realized compensation",
+      "domain": "labor/workforce",
+      "category": "Economy & jobs",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo steel mill",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-072-02",
+      "parent": "REG-072",
+      "title": "Steel: $1.2B long-rail mill commissioning, production, capacity and reliability outcomes",
+      "domain": "industrial infrastructure/production",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo steel mill",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-072-03",
+      "parent": "REG-072",
+      "title": "Steel: railroad customer contracts and dispute-state reconciliation",
+      "domain": "industry/contracts/litigation",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo / national rail market",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-072-04",
+      "parent": "REG-072",
+      "title": "Steel: ownership, incentives, utilities, workforce and local fiscal/outcome ledger",
+      "domain": "economic development/public finance/energy/workforce",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo region",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-073-01",
+      "parent": "REG-073",
+      "title": "Marijuana: exact 2026 retail-license moratorium ordinance, vote, scope and sunset",
+      "domain": "business regulation/licensing",
+      "category": "Economy & jobs",
+      "lastReviewed": "2026-10-05",
+      "geography": "City of Pueblo",
+      "sourceIds": [
+        "SRC-CUR-20261005-MJ-LIC",
+        "SRC-CUR-20261005-COUNCIL-0928"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-MJ-LIC",
+          "url": "https://www.pueblo.us/1849/Marijuana-Licensing",
+          "publisher": "City of Pueblo",
+          "title": "Marijuana Licensing",
+          "sourceDate": "2026-10-05"
+        },
+        {
+          "id": "SRC-CUR-20261005-COUNCIL-0928",
+          "url": "https://www.pueblo.us/calendar.aspx?CID=48&month=9&view=list&year=2026",
+          "publisher": "City of Pueblo",
+          "title": "Pueblo City Council meeting calendar — September 28, 2026",
+          "sourceDate": "2026-09-28"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-073-02",
+      "parent": "REG-073",
+      "title": "Marijuana: current license universe, applications, renewals, transfers and existing-rights treatment",
+      "domain": "licensing/business",
+      "category": "Economy & jobs",
+      "lastReviewed": "2026-10-05",
+      "geography": "City of Pueblo",
+      "sourceIds": [
+        "SRC-CUR-20261005-MJ-LIC"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-MJ-LIC",
+          "url": "https://www.pueblo.us/1849/Marijuana-Licensing",
+          "publisher": "City of Pueblo",
+          "title": "Marijuana Licensing",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-073-03",
+      "parent": "REG-073",
+      "title": "Marijuana: tax/revenue, market concentration and business-transition effects",
+      "domain": "public finance/business regulation",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "City of Pueblo",
+      "sourceIds": [
+        "SRC-CUR-20261005-MJ-LIC"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-MJ-LIC",
+          "url": "https://www.pueblo.us/1849/Marijuana-Licensing",
+          "publisher": "City of Pueblo",
+          "title": "Marijuana Licensing",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-073-04",
+      "parent": "REG-073",
+      "title": "Marijuana: enforcement, complaints, sanctions and public-health/safety outcomes",
+      "domain": "public health/public safety/licensing",
+      "category": "Health & safety",
+      "lastReviewed": "2026-10-05",
+      "geography": "City of Pueblo",
+      "sourceIds": [
+        "SRC-CUR-20261005-MJ-LIC"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-MJ-LIC",
+          "url": "https://www.pueblo.us/1849/Marijuana-Licensing",
+          "publisher": "City of Pueblo",
+          "title": "Marijuana Licensing",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-047-SPEED-01",
+      "parent": "REG-047",
+      "title": "Automated speed enforcement: Obvio contract, authority, payment and deployment scope",
+      "domain": "traffic enforcement/procurement/data governance",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "City of Pueblo",
+      "sourceIds": [
+        "SRC-CUR-20261005-TRAFFICCODE"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-TRAFFICCODE",
+          "url": "https://www.pueblo.us/DocumentCenter/View/28561/Pueblo-Traffic-Code-?bidId=",
+          "publisher": "City of Pueblo",
+          "title": "Pueblo Traffic Code — automated vehicle identification system provisions",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-047-SPEED-02",
+      "parent": "REG-047",
+      "title": "Automated speed enforcement: signage, public notice, warning period and citation transition",
+      "domain": "traffic enforcement/legal compliance",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "City of Pueblo",
+      "sourceIds": [
+        "SRC-CUR-20261005-TRAFFICCODE"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-TRAFFICCODE",
+          "url": "https://www.pueblo.us/DocumentCenter/View/28561/Pueblo-Traffic-Code-?bidId=",
+          "publisher": "City of Pueblo",
+          "title": "Pueblo Traffic Code — automated vehicle identification system provisions",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-047-SPEED-03",
+      "parent": "REG-047",
+      "title": "Automated speed enforcement: evidence review, service, appeals, data retention and vendor access",
+      "domain": "traffic enforcement/privacy/due process",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "City of Pueblo",
+      "sourceIds": [
+        "SRC-CUR-20261005-TRAFFICCODE"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-TRAFFICCODE",
+          "url": "https://www.pueblo.us/DocumentCenter/View/28561/Pueblo-Traffic-Code-?bidId=",
+          "publisher": "City of Pueblo",
+          "title": "Pueblo Traffic Code — automated vehicle identification system provisions",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-047-SPEED-04",
+      "parent": "REG-047",
+      "title": "Automated speed enforcement: speed/crash outcomes, citations, collections and net fiscal effect",
+      "domain": "traffic safety/public finance",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-05",
+      "geography": "City of Pueblo",
+      "sourceIds": [
+        "SRC-CUR-20261005-TRAFFICCODE"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261005-TRAFFICCODE",
+          "url": "https://www.pueblo.us/DocumentCenter/View/28561/Pueblo-Traffic-Code-?bidId=",
+          "publisher": "City of Pueblo",
+          "title": "Pueblo Traffic Code — automated vehicle identification system provisions",
+          "sourceDate": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-041-TORTUGA-01",
+      "parent": "REG-041",
+      "title": "Project Tortuga: authority, confidentiality, negotiation and approval path",
+      "domain": "economic development/governance/confidentiality",
+      "category": "Economy & jobs",
+      "lastReviewed": "2026-10-05",
+      "geography": "City of Pueblo",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-041-TORTUGA-02",
+      "parent": "REG-041",
+      "title": "Project Tortuga: eventual jobs, wages, incentives, infrastructure and public-value packet",
+      "domain": "economic development/public finance/infrastructure",
+      "category": "Public money",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo region",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-025-CAUSE",
+      "parent": "REG-025",
+      "title": "Aspen Acres recovery: official ignition/cause investigation and evidence boundary",
+      "domain": "wildfire cause/investigation",
+      "category": "Environment & place",
+      "lastReviewed": "2026-10-05",
+      "geography": "Aspen Acres / Beulah / multi-county fire footprint",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-025-LIT",
+      "parent": "REG-025",
+      "title": "Aspen Acres recovery: San Isabel Electric civil litigation, insurance, damages and recovery interactions",
+      "domain": "disaster/litigation/insurance/economic recovery",
+      "category": "Water & energy",
+      "lastReviewed": "2026-10-05",
+      "geography": "Pueblo/Custer fire-affected areas",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "REG-074",
+      "parent": "",
+      "title": "Pueblo building/permitting jurisdiction split, transition cost, staffing and performance",
+      "domain": "Building regulation / economic development / county-city governance",
+      "category": "Roads & transport",
+      "lastReviewed": "2026-10-16",
+      "geography": "Pueblo County / City of Pueblo / Town of Boone",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-007-01",
+      "parent": "REG-007",
+      "title": "Project Falcon land option: Oct. 13 first presentation, Oct. 26 hearing, appraisal and future-purchase controls",
+      "domain": "economic development/land/public finance",
+      "category": "Public money",
+      "lastReviewed": "2026-10-16",
+      "geography": "St. Charles Industrial Park",
+      "sourceIds": [],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": []
+    },
+    {
+      "id": "QRX-REG-063-05",
+      "parent": "REG-063",
+      "title": "2026 property-owner/special-district ballots: multiple-mailing eligibility, list certification and duplicate-handling controls",
+      "domain": "elections/eligibility/information integrity",
+      "category": "Housing & land",
+      "lastReviewed": "2026-10-16",
+      "geography": "Pueblo County / special districts",
+      "sourceIds": [
+        "SRC-CUR-20261016-ELECTION-PROPERTY-BALLOTS"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261016-ELECTION-PROPERTY-BALLOTS",
+          "url": "https://www.pueblocounty.gov/clerk-and-recorder-department/election-department-press-release-office-clerk-recorder",
+          "publisher": "Pueblo County Clerk & Recorder / Election Department",
+          "title": "Statement Regarding Property Owner Ballots Received by Pueblo County Residents",
+          "sourceDate": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "id": "QRX-REG-071-05",
+      "parent": "REG-071",
+      "title": "2026 Pueblo campaign finance: candidate/committee filing, penalty, waiver and complaint state",
+      "domain": "elections/campaign finance/information integrity",
+      "category": "Public money",
+      "lastReviewed": "2026-10-16",
+      "geography": "Pueblo County",
+      "sourceIds": [
+        "SRC-CUR-20261016-TRACER-LUCERO",
+        "SRC-CUR-20261016-TRACER-SWEARINGEN",
+        "SRC-CUR-20261016-TRACER-MEDINA",
+        "SRC-CUR-20261016-TRACER-MUSSO"
+      ],
+      "status": "Research record — current source review required",
+      "childImpact": "Child and family effects require case-specific review; no individual child is profiled.",
+      "availableSourceUrls": [
+        {
+          "id": "SRC-CUR-20261016-TRACER-LUCERO",
+          "url": "https://tracer.sos.colorado.gov/PublicSite/SearchPages/CandidateDetail.aspx?SeqID=66378",
+          "publisher": "Colorado TRACER",
+          "title": "David Lucero 4 Sheriff TRACER candidate/committee detail",
+          "sourceDate": "2026-10-16"
+        },
+        {
+          "id": "SRC-CUR-20261016-TRACER-SWEARINGEN",
+          "url": "https://tracer.sos.colorado.gov/PublicSite/SearchPages/CandidateDetail.aspx?SeqID=53261",
+          "publisher": "Colorado TRACER",
+          "title": "Zach Swearingen for Pueblo County Commissioner TRACER detail",
+          "sourceDate": "2026-10-16"
+        },
+        {
+          "id": "SRC-CUR-20261016-TRACER-MEDINA",
+          "url": "https://tracer.sos.colorado.gov/PublicSite/SearchPages/CandidateDetail.aspx?SeqID=52472",
+          "publisher": "Colorado TRACER",
+          "title": "Allen Medina / Committee to Elect Allen Medina TRACER detail",
+          "sourceDate": "2026-10-16"
+        },
+        {
+          "id": "SRC-CUR-20261016-TRACER-MUSSO",
+          "url": "https://tracer.sos.colorado.gov/PublicSite/SearchPages/CandidateDetail.aspx?SeqID=52348&Type=CA",
+          "publisher": "Colorado TRACER",
+          "title": "Musso for Sheriff of Pueblo County TRACER detail",
+          "sourceDate": "2026-10-16"
+        }
+      ]
+    }
+  ],
+  "coverageCandidates": [
+    {
+      "id": "CAND-BUDGET-2027",
+      "topic": "2027 Pueblo municipal budget, reserves, sales-tax decisions and labor impacts",
+      "topicArea": "Public money",
+      "priority": "high",
+      "possibleMatches": [
+        "REG-001",
+        "REG-002",
+        "REG-005",
+        "REG-009",
+        "REG-011",
+        "REG-016",
+        "REG-017",
+        "REG-022",
+        "REG-033",
+        "REG-034",
+        "REG-035",
+        "REG-043"
+      ],
+      "state": "RECONCILE_NOT_ADDED_TO_PUBLISHED_COUNT"
+    },
+    {
+      "id": "CAND-MEETING-20261109",
+      "topic": "November 9, 2026 Pueblo City Council agenda, meeting type, decisions and follow-up",
+      "topicArea": "Government & law",
+      "priority": "high",
+      "possibleMatches": [
+        "REG-014",
+        "REG-058",
+        "REG-073",
+        "QRX-REG-073-01"
+      ],
+      "state": "RECONCILE_NOT_ADDED_TO_PUBLISHED_COUNT"
+    },
+    {
+      "id": "CAND-ELECTIONS-GOV",
+      "topic": "Certified election outcomes, office transitions, mayor/manager governance and council election structure",
+      "topicArea": "Government & law",
+      "priority": "high",
+      "possibleMatches": [
+        "REG-012",
+        "REG-013",
+        "REG-014",
+        "REG-033",
+        "REG-045",
+        "REG-058",
+        "REG-063",
+        "REG-070",
+        "REG-071",
+        "QRX-REG-063-01",
+        "QRX-REG-063-02",
+        "QRX-REG-063-03"
+      ],
+      "state": "RECONCILE_NOT_ADDED_TO_PUBLISHED_COUNT"
+    },
+    {
+      "id": "CAND-HOUSING-SVC",
+      "topic": "Housing, homelessness, CDBG/HOME programs and service outcomes",
+      "topicArea": "Housing & land",
+      "priority": "high",
+      "possibleMatches": [
+        "REG-046",
+        "REG-057",
+        "REG-067",
+        "REG-068",
+        "QRX-RISE-001",
+        "QRX-REG-068-01",
+        "QRX-REG-068-02",
+        "QRX-REG-068-03",
+        "QRX-REG-068-04"
+      ],
+      "state": "RECONCILE_NOT_ADDED_TO_PUBLISHED_COUNT"
+    },
+    {
+      "id": "CAND-SAFETY-TECH",
+      "topic": "Public safety technology, surveillance coverage, cost and civil liberties",
+      "topicArea": "Health & safety",
+      "priority": "medium",
+      "possibleMatches": [
+        "REG-020",
+        "REG-047",
+        "REG-066",
+        "QRX-PWEST-002",
+        "QRX-E911-001",
+        "QRX-REG-066-01",
+        "QRX-REG-066-02",
+        "QRX-REG-066-03",
+        "QRX-REG-066-04",
+        "QRX-REG-073-04"
+      ],
+      "state": "RECONCILE_NOT_ADDED_TO_PUBLISHED_COUNT"
+    },
+    {
+      "id": "CAND-HEALTH-MEDICAID",
+      "topic": "Medicaid, county health budget and access to public-health services",
+      "topicArea": "Health & safety",
+      "priority": "high",
+      "possibleMatches": [
+        "REG-050",
+        "REG-057",
+        "REG-065",
+        "REG-068",
+        "REG-073",
+        "QRX-PDPHE-001",
+        "QRX-REG-065-01",
+        "QRX-REG-065-02",
+        "QRX-REG-065-03",
+        "QRX-REG-065-04",
+        "QRX-REG-068-01",
+        "QRX-REG-068-02"
+      ],
+      "state": "RECONCILE_NOT_ADDED_TO_PUBLISHED_COUNT"
+    },
+    {
+      "id": "CAND-WATER-CONDUIT",
+      "topic": "Arkansas Valley Conduit, Fry-Ark water availability and regional water affordability",
+      "topicArea": "Water & energy",
+      "priority": "high",
+      "possibleMatches": [
+        "REG-021",
+        "REG-039",
+        "REG-050",
+        "REG-060",
+        "REG-061",
+        "REG-067",
+        "QRX-PWEST-001",
+        "QRX-WATER-REG-001",
+        "QRX-REG-060-03",
+        "QRX-REG-061-01",
+        "QRX-REG-061-02",
+        "QRX-REG-061-03"
+      ],
+      "state": "RECONCILE_NOT_ADDED_TO_PUBLISHED_COUNT"
+    },
+    {
+      "id": "CAND-SCHOOLS-D60",
+      "topic": "D60 consolidation, enrollment, capital decisions and student continuity",
+      "topicArea": "Education & children",
+      "priority": "high",
+      "possibleMatches": [
+        "REG-016",
+        "REG-028",
+        "REG-035",
+        "REG-051",
+        "REG-052",
+        "REG-053",
+        "REG-063",
+        "QRX-CCMD-001",
+        "QRX-SCHOOL-001",
+        "QRX-DEV-METRO-001",
+        "QRX-REG-063-05"
+      ],
+      "state": "RECONCILE_NOT_ADDED_TO_PUBLISHED_COUNT"
+    },
+    {
+      "id": "CAND-STEEL-ENERGY",
+      "topic": "Steel, solar, industrial hiring and utility franchise/energy decisions",
+      "topicArea": "Economy & jobs",
+      "priority": "medium",
+      "possibleMatches": [
+        "REG-022",
+        "REG-023",
+        "REG-064",
+        "REG-072",
+        "QRX-REG-064-01",
+        "QRX-REG-064-02",
+        "QRX-REG-064-03",
+        "QRX-REG-064-04",
+        "QRX-REG-072-01",
+        "QRX-REG-072-02",
+        "QRX-REG-072-03",
+        "QRX-REG-072-04"
+      ],
+      "state": "RECONCILE_NOT_ADDED_TO_PUBLISHED_COUNT"
+    },
+    {
+      "id": "CAND-REGIONAL-BODIES",
+      "topic": "PACOG, Board of Water Works, D70 and rural special-district governance",
+      "topicArea": "Government & law",
+      "priority": "medium",
+      "possibleMatches": [
+        "REG-015",
+        "REG-021",
+        "REG-025",
+        "REG-032",
+        "REG-039",
+        "REG-050",
+        "REG-043",
+        "REG-051",
+        "REG-052",
+        "REG-059",
+        "REG-060",
+        "REG-061"
+      ],
+      "state": "RECONCILE_NOT_ADDED_TO_PUBLISHED_COUNT"
+    },
+    {
+      "id": "CAND-AI-REGULATION",
+      "topic": "Current Colorado AI laws, local procurement and data/algorithmic accountability",
+      "topicArea": "Government & law",
+      "priority": "medium",
+      "possibleMatches": [
+        "REG-006",
+        "REG-010",
+        "REG-019",
+        "REG-026",
+        "REG-029",
+        "REG-031",
+        "REG-039",
+        "REG-050",
+        "REG-047",
+        "REG-048",
+        "REG-054",
+        "REG-058"
+      ],
+      "state": "RECONCILE_NOT_ADDED_TO_PUBLISHED_COUNT"
+    },
+    {
+      "id": "CAND-ACCESS-TRUST",
+      "topic": "Language access, digital exclusion, public libraries and transparency of Q-Pueblo governance",
+      "topicArea": "Culture & history",
+      "priority": "medium",
+      "possibleMatches": [
+        "REG-030",
+        "REG-048",
+        "QRX-REG-065-01",
+        "QRX-REG-065-02",
+        "QRX-REG-065-03",
+        "QRX-REG-065-04",
+        "QRX-REG-025-MTN-PARK",
+        "QRX-REG-047-SPEED-03"
+      ],
+      "state": "RECONCILE_NOT_ADDED_TO_PUBLISHED_COUNT"
+    }
+  ]
+}
