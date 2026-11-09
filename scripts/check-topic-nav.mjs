@@ -13,7 +13,7 @@ for(const name of names){
  assert(home.includes(url),'Homepage topic menu missing: '+name);
 }
 assert(home.includes('href="topics.html"'),'No full topic directory link');
-assert(js.includes("searchParams.get('topic')"),'Issue filter must accept shareable topic query parameter');
+assert(js.includes("params.get('topic')"),'Issue filter must accept shareable topic query parameter');
 assert(topicPage.includes('Counts describe a dated index'),'Missing scope limit');
 assert(topicPage.includes('independent ID'),'No deduplication boundary');
 console.log('Q Pueblo topic navigation: PASS; '+names.length+' public categories; '+json.issues.length+' dated issue records');
