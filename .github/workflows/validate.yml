@@ -21,12 +21,16 @@ jobs:
           node --check public/workbench.js
           node --check public/workbench-spec.js
           node --check scripts/check-workbench.mjs
+          node --check scripts/check-public-release.mjs
           node --check public/data/q-pueblo-public-catalog-2026-11-08.js
           node --check scripts/check-public-catalog.mjs
           node --check functions/api/v1/config.js
       - name: Validate required public pages and safety headers
         run: |
           test -s public/index.html
+          test -s public/launch.html
+          test -s public/release.css
+          node scripts/check-public-release.mjs
           test -s public/explore.html
           test -s public/explore.css
           test -s public/data/q-pueblo-public-catalog-2026-11-08.js

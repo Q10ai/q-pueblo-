@@ -1,0 +1,48 @@
+name: Q Pueblo GitHub Pages Public-Beta Release (optional mirror)
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/**'
+      - 'scripts/check-public-catalog.mjs'
+      - 'scripts/check-workbench.mjs'
+      - 'scripts/check-public-release.mjs'
+      - '.github/workflows/publish-pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: q-pueblo-github-pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check public beta assets and editorial boundaries
+        run: |
+          node --check public/site.js
+          node --check public/explore.js
+          node --check public/workbench.js
+          node --check public/workbench-spec.js
+          node --check public/data/q-pueblo-public-catalog-2026-11-08.js
+          node scripts/check-public-catalog.mjs
+          node scripts/check-workbench.mjs
+          node scripts/check-public-release.mjs
+      - name: Configure GitHub Pages (repository Pages must be enabled for Actions)
+        uses: actions/configure-pages@v5
+      - name: Upload audited static public assets only
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./public
+      - name: Deploy static site
+        id: deployment
+        uses: actions/deploy-pages@v4
