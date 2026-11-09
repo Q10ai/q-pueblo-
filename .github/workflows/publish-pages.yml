@@ -31,11 +31,13 @@ jobs:
         run: |
           node --check public/site.js
           node --check public/explore.js
-          node --check public/workbench.js\n          node --check public/q-tools.js
+          node --check public/workbench.js
+          node --check public/q-tools.js
           node --check public/workbench-spec.js
           node --check public/data/q-pueblo-public-catalog-2026-11-08.js
           node scripts/check-public-catalog.mjs
-          node scripts/check-workbench.mjs\n          node scripts/check-q-tools.mjs
+          node scripts/check-workbench.mjs
+          node scripts/check-q-tools.mjs
           node scripts/check-public-release.mjs
       - name: Configure GitHub Pages (repository Pages must be enabled for Actions)
         uses: actions/configure-pages@v5
