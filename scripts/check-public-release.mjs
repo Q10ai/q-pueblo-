@@ -6,10 +6,10 @@ const guide = read('public/launch.html');
 const lib = read('public/explore.html');
 const bench = read('public/workbench.html');
 const headers = read('public/_headers');
-for (const name of ['index.html','explore.html','workbench.html','launch.html','release.css','site.css','site.js','explore.js','workbench.js','packet-schema.json','data/q-pueblo-public-catalog-2026-11-08.js']) {
+for (const name of ['index.html','explore.html','workbench.html','launch.html','release.css','site.css','site.js','explore.js','workbench.js','q-tools.html','q-tools.css','q-tools.js','packet-schema.json','data/q-pueblo-public-catalog-2026-11-08.js']) {
   assert(existsSync('public/' + name), 'missing public asset: ' + name);
 }
-for (const name of ['launch.html','explore.html','workbench.html']) assert(home.includes('href="' + name + '"'), 'homepage missing link ' + name);
+for (const name of ['launch.html','explore.html','workbench.html','q-tools.html']) assert(home.includes('href="' + name + '"'), 'homepage missing link ' + name);
 assert(guide.includes('not a live AI assistant'), 'missing truthful capability disclosure');
 assert(guide.includes('Children and the future'), 'missing child impact guidance');
 assert(guide.includes('SHOCK'), 'missing preparedness guidance');
