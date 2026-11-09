@@ -17,6 +17,9 @@ jobs:
         run: |
           node --check public/site.js
           node --check public/explore.js
+          node --check public/workbench.js
+          node --check public/workbench-spec.js
+          node --check scripts/check-workbench.mjs
           node --check public/data/q-pueblo-public-catalog-2026-11-08.js
           node --check scripts/check-public-catalog.mjs
           node --check functions/api/v1/config.js
@@ -27,6 +30,10 @@ jobs:
           test -s public/explore.css
           test -s public/data/q-pueblo-public-catalog-2026-11-08.js
           node scripts/check-public-catalog.mjs
+          test -s public/workbench.html
+          test -s public/workbench.css
+          test -s public/workbench-spec.js
+          node scripts/check-workbench.mjs
           test -s public/site.css
           test -s public/_headers
           grep -q 'Q-PUEBLO' public/index.html
@@ -40,6 +47,7 @@ jobs:
           cd ..
           test -s q-pueblo-cloudflare-pages.zip
           unzip -l q-pueblo-cloudflare-pages.zip | grep -q 'explore.html'
+          unzip -l q-pueblo-cloudflare-pages.zip | grep -q 'workbench.html'
           unzip -l q-pueblo-cloudflare-pages.zip | grep -q 'index.html'
       - name: Preserve Pages upload bundle as Actions artifact
         if: github.ref == 'refs/heads/main'
