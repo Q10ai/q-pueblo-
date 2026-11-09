@@ -1,0 +1,23 @@
+name: Q Pueblo Live Deployment Parity
+on:
+  schedule:
+    - cron: '17 15 * * *'
+  workflow_dispatch:
+jobs:
+  live-check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare live site to required public release routes
+        id: parity
+        run: bash scripts/check-live-parity.sh release-parity-report.txt
+      - name: Preserve readback evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: q-pueblo-live-parity-report
+          path: release-parity-report.txt
+          if-no-files-found: error
+          retention-days: 30
