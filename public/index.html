@@ -7,6 +7,7 @@
 <title>Q-Pueblo | Regional Governance & Transparency</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="topics.css">
 <script src="site.js" defer></script>
 </head>
 <body>
@@ -27,13 +28,29 @@
  </a>
  <button class="menu-toggle" id="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">☰ Menu</button>
  <nav class="site-nav" id="primary-nav" aria-label="Main navigation">
-  <a href="#home" data-go="home">Home</a><a href="#issues" data-go="issues">Issues & Projects</a><a href="launch.html" aria-label="Start here: Q-Pueblo public beta guide and limitations">Start Here</a><a href="issues.html" aria-label="Browse the dated Q-Pueblo issue index with historical research IDs">Dated Issue Index</a><a href="workbench.html" aria-label="Role-based Pueblo civic research and preparedness workbench">Research Workbench</a><a href="q-tools.html" aria-label="Q Tools: run calculations and challenge evidence">Q Tools</a>
-  <a href="#money" data-go="money">Money & Contracts</a><a href="#governance" data-go="governance">Governance</a>
-  <a href="#research" data-go="research">AI Research Tools</a><a href="#sources" data-go="sources">Data & Evidence</a>
-  <a href="#participate" data-go="participate">Community</a><a href="#trust" data-go="trust">About & Boundaries</a>
- </nav>
+  <a href="#home" data-go="home">Home</a>
+  <details class="topic-menu"><summary>Browse topics</summary><div class="topic-menu-panel">
+    <a class="topic-menu-all" href="topics.html">All topics and how the index works</a>
+    <a href="issues.html?topic=Public%20money">Public money (38)</a>
+<a href="issues.html?topic=Health%20%26%20safety">Health &amp; safety (28)</a>
+<a href="issues.html?topic=Roads%20%26%20transport">Roads &amp; transport (23)</a>
+<a href="issues.html?topic=Water%20%26%20energy">Water &amp; energy (23)</a>
+<a href="issues.html?topic=Government%20%26%20law">Government &amp; law (18)</a>
+<a href="issues.html?topic=Housing%20%26%20land">Housing &amp; land (18)</a>
+<a href="issues.html?topic=Culture%20%26%20history">Culture &amp; history (8)</a>
+<a href="issues.html?topic=Economy%20%26%20jobs">Economy &amp; jobs (8)</a>
+<a href="issues.html?topic=Education%20%26%20children">Education &amp; children (6)</a>
+<a href="issues.html?topic=Environment%20%26%20place">Environment &amp; place (4)</a>
+  </div></details>
+  <a href="issues.html">Issue index</a>
+  <a href="workbench.html">Reports</a>
+  <a href="q-tools.html">Q Tools</a>
+  <a href="#money" data-go="money">Follow the money</a>
+  <a href="#participate" data-go="participate">Community</a>
+  <a href="launch.html">About</a>
+</nav>
 </header>
-<section class="public-catalog-banner wrap" aria-labelledby="catalog-intro-title"><div><p class="catalog-eyebrow">NEW • DATED RESEARCH LIBRARY</p><h2 id="catalog-intro-title">Know Pueblo. Help Shape Its Future.</h2><p>Explore 174 dated research records (not the complete current regional total), 141 public institutional source links and interconnected civic topics. Each record shows its historical review date, research scope and limitations. Open evidence, not unexplained claims.</p></div><a class="catalog-entry-link" href="explore.html">Explore the full public research index</a></section>
+<section class="public-catalog-banner wrap" aria-labelledby="catalog-intro-title"><div><p class="catalog-eyebrow">NEW • DATED RESEARCH LIBRARY</p><h2 id="catalog-intro-title">Know Pueblo. Help Shape Its Future.</h2><p>Explore 174 dated research records (not the complete current regional total), 141 public institutional source links and interconnected civic topics. Each record shows its historical review date, research scope and limitations. Open evidence, not unexplained claims.</p></div><a class="catalog-entry-link" href="issues.html">Browse the dated public issue index</a></section>
 <main id="main">
 <section class="screen active" id="screen-home" data-screen="home">
  <div class="hero">

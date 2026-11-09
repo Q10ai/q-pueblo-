@@ -19,6 +19,7 @@ jobs:
           node --check public/site.js
           node --check public/explore.js
           node --check public/issues.js
+          node --check scripts/check-topic-nav.mjs
           node --check scripts/check-issue-index.mjs
           node --check public/workbench.js
           node --check public/q-tools.js
@@ -44,6 +45,9 @@ jobs:
           test -s public/data/q-pueblo-issue-index-2026-11-09.json
           test -s public/data/q-pueblo-issue-index-2026-11-09.csv
           node scripts/check-issue-index.mjs
+          test -s public/topics.html
+          test -s public/topics.css
+          node scripts/check-topic-nav.mjs
           test -s public/workbench.html
           test -s public/workbench.css
           test -s public/workbench-spec.js
