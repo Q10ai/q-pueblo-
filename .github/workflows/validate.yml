@@ -15,6 +15,7 @@ jobs:
           node-version: '22'
       - name: Validate JavaScript syntax
         run: |
+          bash -n scripts/check-live-parity.sh
           node --check public/site.js
           node --check public/explore.js
           node --check public/workbench.js
