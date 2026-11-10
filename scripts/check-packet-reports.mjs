@@ -7,7 +7,7 @@ const archive=JSON.parse(read('data/q-pueblo-historical-library-2026-11-10.json'
 const issues=JSON.parse(read('data/q-pueblo-issue-index-2026-11-09.json')).issues;
 const context={window:{},URL};vm.createContext(context);vm.runInContext(read('report-core.js'),context);
 const core=context.window.QPReport;
-assert.equal(doc.reports.length,13);
+assert.equal(doc.reports.length,14);
 assert.equal(new Set(doc.reports.map(r=>r.id)).size,doc.reports.length);
 assert.equal(new Set(doc.reports.map(r=>r.slug)).size,doc.reports.length);
 for(const r of doc.reports){
@@ -38,4 +38,12 @@ assert(read('launch-system.js').includes('qify.html#q='));
 for(const page of ['reports.html','qify.html'])assert(read(page).indexOf('report-core.js')<read(page).indexOf(page.replace('.html','.js')),'shared code load order');
 const publicFiles=['packets.html','data/q-pueblo-historical-library-2026-11-10.json','report-core.js','qify.js'];
 for(const p of publicFiles)assert(!/libfile_|docs\.google\.com|q10-core\/blob|SECRET|BEGIN PRIVATE KEY/.test(read(p)),p+': private locator leaked');
-console.log('PACKET_REPORT_CHECK=PASS; reports=13; claims=44; public draft families=55; case captures=8; private originals excluded');
+console.log('PACKET_REPORT_CHECK=PASS; reports=14; claims=49; public draft families=55; case captures=8; private originals excluded');
+
+const road=doc.reports.find(r=>r.slug==='pueblo-boulevard-agenda');
+assert.equal(175638340+3256160+1933200+25000000,165827700+40000000,'agenda sources/uses in integer cents');
+assert(road.summary.includes('not evidence of adoption'));
+assert(road.money.some(x=>x.stage==='Contingency'&&x.status.includes('not an incurred expense')));
+assert(road.unknowns.some(x=>x.includes('executed contract')));
+assert(read('entities.html').includes('An asset or address is not automatically'));
+assert(read('entities.html').includes('TBTD Pueblo, LLC'));
