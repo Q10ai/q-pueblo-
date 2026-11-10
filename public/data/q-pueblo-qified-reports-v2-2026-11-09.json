@@ -2617,6 +2617,224 @@
         "Contemporary corroborating records",
         "Modern flood and infrastructure evidence for any current claim"
       ]
+    },
+    {
+      "id": "QP-QIFY-2026-012",
+      "slug": "pueblo-boulevard-agenda",
+      "title": "Pueblo Boulevard: reconciling the funding listed on the October 26 agenda",
+      "topic": "Roads & transport",
+      "stage": "SOURCE-ATTRIBUTED EXPLANATORY REPORT · INDEPENDENT REVIEW OPEN",
+      "date": "2026-11-10",
+      "review": "Stated source sections checked; independent review and full outcome reconciliation remain open.",
+      "summary": "The October 26, 2026 Council agenda lists proposed funding sources totaling $2,058,277.00 for road and signal work, matching its listed $1,658,277.00 construction contract plus $400,000.00 contingency. This is an arithmetic reconciliation of agenda amounts, not evidence of adoption, execution, payment or final cost. The adjacent PURA reimbursement item needs its own agreement.",
+      "keyFacts": [
+        {
+          "label": "Half-Cent transfer",
+          "value": "$1,756,383.40",
+          "stage": "Listed ED2606 funding proposal",
+          "source": "council-oct26"
+        },
+        {
+          "label": "Acero signal deposit",
+          "value": "$32,561.60",
+          "stage": "Listed transfer from D1801 into CI2623",
+          "source": "council-oct26"
+        },
+        {
+          "label": "Laredo signal deposit",
+          "value": "$19,332.00",
+          "stage": "Listed transfer from D0201 into CI2623",
+          "source": "council-oct26"
+        },
+        {
+          "label": "Martinez contribution",
+          "value": "$250,000.00",
+          "stage": "Listed acceptance/appropriation into CI2623",
+          "source": "council-oct26"
+        },
+        {
+          "label": "Listed sources total",
+          "value": "$2,058,277.00",
+          "stage": "Calculated from the four agenda amounts; not cash paid",
+          "source": "council-oct26"
+        }
+      ],
+      "whatKnown": [
+        "Agenda N12 names ED2606, CI2623, C&D Electric, Inc. and a $1,658,277.00 construction contract with $400,000.00 contingency.",
+        "Arithmetic: 1,756,383.40 + 32,561.60 + 19,332.00 + 250,000.00 = 2,058,277.00; 1,658,277.00 + 400,000.00 = 2,058,277.00.",
+        "Agenda N13 separately lists a City–PURA reimbursement agreement for traffic improvements between Acero Avenue and Mirror Avenue. The agenda excerpt does not reproduce the agreement terms."
+      ],
+      "unknowns": [
+        "Final adopted ordinance, amendments, roll-call vote, executed contract, reimbursement terms and actual payments are not established here.",
+        "Whether contingency was used, the final allocation between accounts, maintenance responsibility and accepted construction outcomes require later records."
+      ],
+      "who": "City Council for the listed ordinance process; City Purchasing for the listed contract execution role; City Finance for account reconciliation; PURA for its separate agreement and Board authority.",
+      "what": "An agenda-level funding and contract reconciliation, with separate transaction states.",
+      "when": "October 26, 2026 agenda, PDF page 3, N12–N13; retrieved November 10. The listed motion sets November 9 hearings; it is not a recorded final vote.",
+      "where": "State Highway 45A / Pueblo Boulevard; N13 describes Acero to Mirror. Exact construction limits remain governed by the plans and executed instruments.",
+      "why": "Four sources can be compared with contract and contingency only when their scopes match. Reimbursement obligations must not be added again as if all were new public cost.",
+      "how": "Match project IDs, authorizations, executed instruments, invoices, payments and acceptance records; reconcile fund transfers without double counting.",
+      "money": [
+        {
+          "stage": "Listed sources",
+          "detail": "Four agenda amounts sum to $2,058,277.00",
+          "status": "Arithmetic of proposals, not cash received."
+        },
+        {
+          "stage": "Listed contract",
+          "detail": "$1,658,277.00",
+          "status": "Agenda item; execution and payments not established."
+        },
+        {
+          "stage": "Contingency",
+          "detail": "$400,000.00",
+          "status": "Allowance, not an incurred expense."
+        },
+        {
+          "stage": "Reimbursement",
+          "detail": "Separate City–PURA instrument in N13",
+          "status": "Amount, eligibility and repayment terms not established by this agenda."
+        }
+      ],
+      "relations": [
+        "Source-named: City project accounts, C&D Electric and Martinez Property Holdings, Inc. in N12.",
+        "Source-named: City and PURA in N13; adjacent listing does not establish identical costs or reimbursement terms.",
+        "Second-order questions: utility interfaces, adjacent access and maintenance responsibilities need plans and agreements.",
+        "Third-order questions: mobility, emergency access, local commerce and future upkeep need measured outcomes; no causal benefit is asserted."
+      ],
+      "counter": "A balanced list of proposed sources and uses does not establish that a project is fully funded in cash, that costs are final, or that the PURA agreement covers the entire amount. Later amendments could change this baseline.",
+      "options": [
+        "Reconcile adopted and executed versions to the agenda baseline.",
+        "Publish eligible reimbursement, invoices and payments by shared project IDs without adding the same cost twice."
+      ],
+      "actions": [
+        "Read PDF page 3 and distinguish N12 from N13.",
+        "Obtain the final ordinance, executed construction and reimbursement agreements, amendments, invoices and acceptance record.",
+        "Compare actual payments with authorized scope and document any unused or spent contingency."
+      ],
+      "sources": [
+        {
+          "id": "council-oct26",
+          "title": "City of Pueblo — October 26, 2026 Council agenda",
+          "url": "https://pueblo.granicus.com/DocumentViewer.php?file=pueblo_4d7361378191251092f2c6b1ac3fbd40.pdf&view=1",
+          "kind": "Controlling public document",
+          "role": "A0",
+          "asOf": "Agenda dated 2026-10-26",
+          "locator": "PDF page 3, N12, N13 and proposed consent motion",
+          "checked": "2026-11-10",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        }
+      ],
+      "child": "Assess school routes and accessible crossings using plans and measured conditions; no child exposure is inferred.",
+      "ee": "Reuse one project-ID ledger across authorizations, construction and reimbursement. No measured savings or resource score is claimed.",
+      "t2y": "Truth-to-Yield: use the supported record to identify a practical next step; no numerical score or verified community outcome is inferred.",
+      "rx": "Keep original source dates and alternative explanations. Reopen this analysis when the listed records or corrections become available.",
+      "qification": {
+        "assessment": "The agenda supports a precise planning reconciliation while leaving the legal and delivery states open.",
+        "reasoning": [
+          "Q arithmetic: listed sources equal listed construction plus contingency; equality does not prove collection or spending.",
+          "Q inference: a reimbursement flow may repay an already-counted eligible cost. The signed agreement and ledger determine whether it is a source, obligation or payment."
+        ],
+        "temporal": {
+          "past": "Preserve the October 26 proposal and later amendments as separate editions.",
+          "present": "The original agenda has been retrieved; final adoption and delivery records remain open.",
+          "future": "Conditional: scope changes, unused contingency or reimbursement conditions can alter final public exposure."
+        },
+        "alternatives": [
+          {
+            "option": "Single project-code reconciliation",
+            "tradeoff": "Requires both governments and separate account states.",
+            "owner": "City Finance, project owner and PURA",
+            "verification": "Adopted amount, executed terms, invoices, payments and final acceptance."
+          },
+          {
+            "option": "Verify milestones before benefit claims",
+            "tradeoff": "Adds engineering and service review.",
+            "owner": "Responsible public-works and oversight roles",
+            "verification": "Accepted work, maintenance allocation, operating performance and corrections."
+          }
+        ],
+        "reopen": [
+          "Final ordinance and recorded vote",
+          "Executed N12 contract and N13 reimbursement agreement",
+          "Payment, contingency and construction acceptance records"
+        ],
+        "childImpact": {
+          "past": "Historic road and funding choices affect present access.",
+          "present": "Assess school routes and accessible crossings using plans and measured conditions; no child exposure is inferred.",
+          "future": "Keep upkeep obligations and safe access visible over the asset lifecycle."
+        },
+        "shock": "Conditional stress: overruns or delayed reimbursement. Separate authorized contingencies, cash timing, eligible costs and reversible scope changes."
+      },
+      "aliases": [
+        "pueblo boulevard",
+        "acero",
+        "mirror avenue",
+        "ed2606",
+        "ci2623",
+        "co45"
+      ],
+      "questions": [
+        "Do the Pueblo Boulevard agenda funding amounts reconcile?"
+      ],
+      "issueIds": [],
+      "version": "2.0.0",
+      "sourceChecked": "2026-11-10",
+      "reviewDue": "2026-12-09",
+      "publicationClass": "PUBLIC_EXPLANATORY_ANALYSIS",
+      "independentAudit": false,
+      "claims": [
+        {
+          "id": "QP-QIFY-2026-012-C01",
+          "claim": "Half-Cent transfer: $1,756,383.40",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "council-oct26"
+          ],
+          "boundary": "Listed ED2606 funding proposal"
+        },
+        {
+          "id": "QP-QIFY-2026-012-C02",
+          "claim": "Acero signal deposit: $32,561.60",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "council-oct26"
+          ],
+          "boundary": "Listed transfer from D1801 into CI2623"
+        },
+        {
+          "id": "QP-QIFY-2026-012-C03",
+          "claim": "Laredo signal deposit: $19,332.00",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "council-oct26"
+          ],
+          "boundary": "Listed transfer from D0201 into CI2623"
+        },
+        {
+          "id": "QP-QIFY-2026-012-C04",
+          "claim": "Martinez contribution: $250,000.00",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "council-oct26"
+          ],
+          "boundary": "Listed acceptance/appropriation into CI2623"
+        },
+        {
+          "id": "QP-QIFY-2026-012-C05",
+          "claim": "Listed sources total: $2,058,277.00",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "council-oct26"
+          ],
+          "boundary": "Calculated from the four agenda amounts; not cash paid"
+        }
+      ],
+      "recordsNeeded": [
+        "Final ordinance and recorded vote",
+        "Executed N12 contract and N13 reimbursement agreement",
+        "Payment, contingency and construction acceptance records"
+      ]
     }
   ]
 }

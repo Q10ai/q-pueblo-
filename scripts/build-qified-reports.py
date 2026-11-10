@@ -183,6 +183,33 @@ add('pueblo-flood-history','The 1921 Pueblo flood: connecting historical evidenc
  ['1921 flood','pueblo history','historical flood','archives','heritage'],['Can a 1921 flood photograph establish my property’s flood risk today?'],['REG-026','REG-056'],
  'Reuse verified item metadata and lawful archival copies. Reserve deeper reconstruction for material questions; no disaster-loss or risk model is implied.')
 
+add('pueblo-boulevard-agenda','Pueblo Boulevard: reconciling the funding listed on the October 26 agenda','Roads & transport',
+ 'The October 26, 2026 Council agenda lists proposed funding sources totaling $2,058,277.00 for road and signal work, matching its listed $1,658,277.00 construction contract plus $400,000.00 contingency. This is an arithmetic reconciliation of agenda amounts, not evidence of adoption, execution, payment or final cost. The adjacent PURA reimbursement item needs its own agreement.',
+ [('Half-Cent transfer','$1,756,383.40','Listed ED2606 funding proposal','council-oct26'),('Acero signal deposit','$32,561.60','Listed transfer from D1801 into CI2623','council-oct26'),('Laredo signal deposit','$19,332.00','Listed transfer from D0201 into CI2623','council-oct26'),('Martinez contribution','$250,000.00','Listed acceptance/appropriation into CI2623','council-oct26'),('Listed sources total','$2,058,277.00','Calculated from the four agenda amounts; not cash paid','council-oct26')],
+ ['Agenda N12 names ED2606, CI2623, C&D Electric, Inc. and a $1,658,277.00 construction contract with $400,000.00 contingency.', 'Arithmetic: 1,756,383.40 + 32,561.60 + 19,332.00 + 250,000.00 = 2,058,277.00; 1,658,277.00 + 400,000.00 = 2,058,277.00.', 'Agenda N13 separately lists a City–PURA reimbursement agreement for traffic improvements between Acero Avenue and Mirror Avenue. The agenda excerpt does not reproduce the agreement terms.'],
+ ['Final adopted ordinance, amendments, roll-call vote, executed contract, reimbursement terms and actual payments are not established here.', 'Whether contingency was used, the final allocation between accounts, maintenance responsibility and accepted construction outcomes require later records.'],
+ 'City Council for the listed ordinance process; City Purchasing for the listed contract execution role; City Finance for account reconciliation; PURA for its separate agreement and Board authority.',
+ 'An agenda-level funding and contract reconciliation, with separate transaction states.', 'October 26, 2026 agenda, PDF page 3, N12–N13; retrieved November 10. The listed motion sets November 9 hearings; it is not a recorded final vote.',
+ 'State Highway 45A / Pueblo Boulevard; N13 describes Acero to Mirror. Exact construction limits remain governed by the plans and executed instruments.',
+ 'Four sources can be compared with contract and contingency only when their scopes match. Reimbursement obligations must not be added again as if all were new public cost.',
+ 'Match project IDs, authorizations, executed instruments, invoices, payments and acceptance records; reconcile fund transfers without double counting.',
+ [('Listed sources','Four agenda amounts sum to $2,058,277.00','Arithmetic of proposals, not cash received.'),('Listed contract','$1,658,277.00','Agenda item; execution and payments not established.'),('Contingency','$400,000.00','Allowance, not an incurred expense.'),('Reimbursement','Separate City–PURA instrument in N13','Amount, eligibility and repayment terms not established by this agenda.')],
+ ['Source-named: City project accounts, C&D Electric and Martinez Property Holdings, Inc. in N12.', 'Source-named: City and PURA in N13; adjacent listing does not establish identical costs or reimbursement terms.', 'Second-order questions: utility interfaces, adjacent access and maintenance responsibilities need plans and agreements.', 'Third-order questions: mobility, emergency access, local commerce and future upkeep need measured outcomes; no causal benefit is asserted.'],
+ 'A balanced list of proposed sources and uses does not establish that a project is fully funded in cash, that costs are final, or that the PURA agreement covers the entire amount. Later amendments could change this baseline.',
+ ['Reconcile adopted and executed versions to the agenda baseline.','Publish eligible reimbursement, invoices and payments by shared project IDs without adding the same cost twice.'],
+ ['Read PDF page 3 and distinguish N12 from N13.','Obtain the final ordinance, executed construction and reimbursement agreements, amendments, invoices and acceptance record.','Compare actual payments with authorized scope and document any unused or spent contingency.'],
+ [source('council-oct26','City of Pueblo — October 26, 2026 Council agenda','https://pueblo.granicus.com/DocumentViewer.php?file=pueblo_4d7361378191251092f2c6b1ac3fbd40.pdf&view=1','Agenda dated 2026-10-26','PDF page 3, N12, N13 and proposed consent motion','A0')],
+ q('The agenda supports a precise planning reconciliation while leaving the legal and delivery states open.', ['Q arithmetic: listed sources equal listed construction plus contingency; equality does not prove collection or spending.', 'Q inference: a reimbursement flow may repay an already-counted eligible cost. The signed agreement and ledger determine whether it is a source, obligation or payment.'],
+ 'Preserve the October 26 proposal and later amendments as separate editions.', 'The original agenda has been retrieved; final adoption and delivery records remain open.', 'Conditional: scope changes, unused contingency or reimbursement conditions can alter final public exposure.',
+ [option('Single project-code reconciliation','Requires both governments and separate account states.','City Finance, project owner and PURA','Adopted amount, executed terms, invoices, payments and final acceptance.'),option('Verify milestones before benefit claims','Adds engineering and service review.','Responsible public-works and oversight roles','Accepted work, maintenance allocation, operating performance and corrections.')],
+ ['Final ordinance and recorded vote','Executed N12 contract and N13 reimbursement agreement','Payment, contingency and construction acceptance records'],
+ ['Historic road and funding choices affect present access.','Assess school routes and accessible crossings using plans and measured conditions; no child exposure is inferred.', 'Keep upkeep obligations and safe access visible over the asset lifecycle.'],
+ 'Conditional stress: overruns or delayed reimbursement. Separate authorized contingencies, cash timing, eligible costs and reversible scope changes.'),
+ ['pueblo boulevard','acero','mirror avenue','ed2606','ci2623','co45'],['Do the Pueblo Boulevard agenda funding amounts reconcile?'],[],
+ 'Reuse one project-ID ledger across authorizations, construction and reimbursement. No measured savings or resource score is claimed.')
+new[-1]['date']='2026-11-10'
+new[-1]['sources'][0]['checked']='2026-11-10'
+
 enrich['county-priorities-2026'] = q(
  'Use the dashboard as an August County-reported inventory, then test individual initiatives against records of authority, funding and delivery. A progress label alone cannot establish current completion.',
  ['Q inference: an initiative identifier can connect Board action, procurement, payments and service milestones without equating those records.', 'The displayed August update matters even when a monthly update cadence is intended.'],
@@ -225,12 +252,12 @@ issue_ids={
  'wastewater-2026': ['REG-050'], 'housing-pipeline': ['REG-046','REG-068'],
  'aspen-recovery': ['REG-025'], 'lime-road-costs': ['REG-007','REG-008'],
  'water-budget-evidence': [], 'records-request': ['REG-036'],
- 'pueblo-flood-history': [], 'county-priorities-2026': [], 'city-mill-levy-2026': []}
+ 'pueblo-flood-history': [], 'county-priorities-2026': [], 'city-mill-levy-2026': [], 'pueblo-boulevard-agenda': []}
 for r in reports:
     # Packet-family groupings include adjacent topics, not direct assertions.
     r['issueIds']=issue_ids[r['slug']]
     r.setdefault('version','2.0.0')
-    r['sourceChecked']=DATE
+    r['sourceChecked']='2026-11-10' if r['slug']=='pueblo-boulevard-agenda' else DATE
     r['reviewDue']='2026-11-16' if r['slug'] in ['budget-2026','csac-2027','aspen-recovery'] else '2026-12-09'
     r['publicationClass']='PUBLIC_EXPLANATORY_ANALYSIS'
     r['independentAudit']=False

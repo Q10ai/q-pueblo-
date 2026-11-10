@@ -10,3 +10,5 @@
 .qp-qify-output details{padding:1rem;border:1px solid #66728d;border-radius:.5rem;margin-block:1rem}
 .qp-action-card h3{font-size:1.1rem;line-height:1.4}
 @media print{.qp-site-header,.qp-footer,.qp-tool-actions,#report-links,#packet-search{display:none!important}.qp-report-detail{max-width:100%;color:#000;background:#fff}}
+
+.record-role-table{overflow-x:auto}.record-role-table table{width:100%;border-collapse:collapse}.record-role-table td,.record-role-table th{padding:.75rem;vertical-align:top;text-align:left;border-bottom:1px solid #64718d}.record-role-table th{color:#f5d789}
