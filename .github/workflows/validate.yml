@@ -28,6 +28,9 @@ jobs:
           node --check public/packets.js
           node --check scripts/check-qify.mjs
           node --check public/workbench.js
+          node --check public/evidence-data.js
+          node --check public/evidence-desk.js
+          node --check scripts/check-evidence-desk.mjs
           node --check public/q-tools.js
           node --check public/workbench-spec.js
           node --check scripts/check-workbench.mjs
@@ -56,6 +59,10 @@ jobs:
           node scripts/check-topic-nav.mjs
           node --check public/support.js
           node scripts/check-support-inquiries.mjs
+          test -s public/evidence-desk.html
+          test -s public/evidence-desk.css
+          test -s public/evidence-data.js
+          test -s public/evidence-desk.js
           test -s public/workbench.html
           test -s public/workbench.css
           test -s public/workbench-spec.js
@@ -64,6 +71,7 @@ jobs:
           node scripts/check-workbench.mjs
           node scripts/check-q-tools.mjs
           node scripts/check-qify.mjs
+          node scripts/check-evidence-desk.mjs
           node scripts/check-packet-reports.mjs
           node scripts/check-launch.mjs
           test -s public/site.css
@@ -80,6 +88,7 @@ jobs:
           test -s q-pueblo-cloudflare-pages.zip
           unzip -l q-pueblo-cloudflare-pages.zip | grep -q 'explore.html'
           unzip -l q-pueblo-cloudflare-pages.zip | grep -q 'workbench.html'
+          unzip -l q-pueblo-cloudflare-pages.zip | grep -q 'evidence-desk.html'
           unzip -l q-pueblo-cloudflare-pages.zip | grep -q 'index.html'
       - name: Preserve Pages upload bundle as Actions artifact
         if: github.ref == 'refs/heads/main'

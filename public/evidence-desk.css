@@ -1,0 +1,56 @@
+/* Q-Pueblo public Evidence Desk — local static data, accessible first. */
+:root{color-scheme:light;--desk-ink:#152d3c;--desk-muted:#475966;--desk-navy:#062c46;--desk-cream:#f7f4e9;--desk-accent:#b47328;--desk-border:#c7d4dc}
+body{background:#f2f6f8;color:var(--desk-ink);font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+.desk-nav{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px 16px;background:#062c46;padding:12px 20px}
+.desk-nav a{color:#f9f9f5;text-decoration:underline;text-underline-offset:4px;font-size:.88rem;font-weight:650}
+.desk-wrap{max-width:1060px;margin:0 auto;padding:22px 16px 70px}
+.desk-hero{padding:30px 24px;border-radius:18px;background:#062c46;color:#f2f6fc}
+.desk-kicker{font-size:.75rem!important;letter-spacing:.085em;text-transform:uppercase;font-weight:800;color:#8b541d;margin:0 0 10px}
+.desk-hero .desk-kicker{color:#ffda9c}
+.desk-hero h1{font-size:clamp(2rem,5.5vw,3.4rem);line-height:1.13;margin:6px 0 16px;letter-spacing:-.03em;color:#fff}
+.desk-hero h1 em{color:#ffdcab;font-style:normal}
+.desk-hero>p{line-height:1.65;max-width:850px}
+.desk-notice{border-left:4px solid #f3ca86;background:#123b55;padding:12px 16px;border-radius:5px}
+.desk-shortcuts{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.desk-shortcuts a{padding:10px 13px;border:1px solid #a0c4d8;border-radius:9px;text-decoration:none;color:#fff;font-size:.86rem;font-weight:700}
+.desk-shortcuts a:hover,.desk-shortcuts a:focus-visible{background:#24516b}
+.desk-section{margin-top:20px;padding:22px 22px 26px;background:#fff;border:1px solid var(--desk-border);border-radius:16px;box-shadow:0 2px 5px #1730440a}
+.desk-section h2{font-size:clamp(1.45rem,3vw,2.2rem);line-height:1.25;margin:2px 0 10px;color:#10354b}
+.desk-section h3{font-size:1.08rem;line-height:1.3;color:#153d54;margin:12px 0 7px}
+.desk-section p{line-height:1.55;margin:8px 0 14px}
+.desk-section a{color:#075a86;text-underline-offset:3px}
+.desk-head{max-width:900px}
+.desk-metric{background:#eaf2f6;border-left:5px solid #b47328;border-radius:10px;padding:16px;margin:15px 0}
+.desk-metric span,.desk-metric small{display:block}
+.desk-metric strong{font-size:clamp(1.7rem,5vw,2.8rem);display:block;color:#12354e;line-height:1.25;margin:5px 0}
+.desk-metric small{color:var(--desk-muted);font-size:.85rem;line-height:1.5}
+.budget-rows{display:grid;gap:10px}
+.budget-row{padding:10px 12px;border:1px solid #d9e3e9;border-radius:8px}
+.budget-row-label{display:flex;justify-content:space-between;gap:12px;align-items:baseline;font-size:.87rem}
+.budget-row-label span{white-space:nowrap;color:#37536a}
+.budget-rail{height:11px;border-radius:10px;background:#e7edf2;overflow:hidden;margin-top:7px}
+.budget-bar{height:100%;background:#007b83;border-radius:10px;min-width:2px}
+.desk-comparison{margin-top:20px;padding:17px;background:#f2f6fa;border-radius:12px}
+.desk-inputrow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:14px 0}
+.desk-inputrow label,.desk-section>label{display:block;font-size:.86rem;font-weight:700;margin:0 0 6px}
+.desk-section input,.desk-section select{width:100%;border:1px solid #60778b;border-radius:9px;background:#fff;color:#172e40;padding:11px;font:inherit;font-size:.92rem}
+.desk-section input:focus-visible,.desk-section select:focus-visible,.desk-section button:focus-visible,.desk-section a:focus-visible{outline:3px solid #c88838;outline-offset:3px}
+.desk-result{padding:12px 15px;border-radius:9px;background:#dfedf1;border-left:4px solid #156878;font-weight:650}
+.county-list{padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.county-entry{border:1px solid #d6e3eb;border-radius:9px;padding:11px 13px;display:flex;flex-direction:column;gap:6px}
+.county-entry strong{font-size:.89rem;line-height:1.4}
+.county-entry span{font-size:.75rem;color:#395468}
+.desk-reports{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:12px;margin:17px 0}
+.desk-report{border:1px solid #b9d4e0;border-radius:12px;padding:15px;background:#f9fcfd}
+.desk-report h3{margin:7px 0 8px}
+.desk-report p{font-size:.87rem}
+.desk-meta{font-size:.73rem!important;color:#476071}
+.desk-docket-item{background:#fff4e4;border-left:4px solid #bb741e;padding:16px;border-radius:10px}
+.desk-docket-item p{line-height:1.6}
+.desk-takeaway{background:#fcfaf3}
+#desk-download{cursor:pointer;background:#07577b;border:0;color:#fff;border-radius:10px;padding:13px 20px;font:inherit;font-weight:750;min-height:44px}
+#desk-download:hover{background:#063d5e}
+.desk-footer{padding:20px 20px 35px;background:#082c45;color:#e9f3f8;text-align:center}
+.desk-footer a{color:#c4eaff}.desk-footer p{margin:6px auto;line-height:1.5}.desk-footer small{color:#b8d0dd}
+@media(max-width:640px){.desk-hero{padding:23px 17px}.desk-section{padding:17px 15px}.desk-inputrow{grid-template-columns:1fr;gap:8px}.county-list{grid-template-columns:1fr}.desk-shortcuts a{font-size:.8rem}.budget-row-label{flex-direction:column;gap:3px}.budget-row-label span{white-space:normal}.desk-wrap{padding:12px 10px 45px}}
+@media print{.desk-shortcuts,.desk-nav,.desk-inputrow,#desk-download{display:none!important}.desk-wrap{max-width:none}.desk-section,.desk-hero{box-shadow:none;break-inside:avoid;color:#111;background:#fff;border:1px solid #999}.desk-hero h1,.desk-hero h1 em{color:#111}.desk-footer{color:#111;background:#fff}}

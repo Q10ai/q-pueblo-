@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Q-Pueblo resident evidence desk: calculate FY2026 City budget shares, inspect County priorities, source-backed records and unresolved corrections.">
+<meta name="theme-color" content="#07172d"><title>Resident Evidence Desk | Q-Pueblo</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="launch-system.css"><link rel="stylesheet" href="evidence-desk.css">
+<script src="evidence-data.js" defer></script><script src="evidence-desk.js" defer></script>
+</head><body>
+<a class="skip-to" href="#main">Skip to evidence desk</a>
+<header class="qp-site-header">
+<a class="qp-brand" href="index.html" aria-label="Q-Pueblo home"><img src="assets/q-pueblo-header-wide.png" alt="Q-Pueblo — Get to know Pueblo. Help shape its future." width="2172" height="724"></a>
+<div class="qp-underbrand"><span>INDEPENDENT PUEBLO CIVIC INTELLIGENCE</span><span>Not a government website · Humans make decisions</span></div>
+<nav class="desk-nav" aria-label="Q-Pueblo pages"><a href="index.html">Home</a><a href="reports.html">Complete reports</a><a href="q-tools.html">Q Tools</a><a href="workbench.html">Workbench</a><a href="method.html">Trust and privacy</a><a href="participate.html">Contribute</a></nav>
+</header>
+<main id="main" class="desk-wrap">
+<section class="desk-hero" aria-labelledby="desk-title">
+<p class="desk-kicker">SOURCE ATTRIBUTION · WORKING CALCULATIONS · DATED SNAPSHOTS</p>
+<h1 id="desk-title">Real Pueblo records.<br><em>Useful answers and calculations.</em></h1>
+<p>See documented facts first. Calculate shares of the enacted City budget, inspect every County priority, and open the original documents. This page does <strong>not</strong> claim to track live spending, automatically verify relationships, or replace current government records.</p>
+<p class="desk-notice" id="desk-status" role="status">Checking bundled evidence snapshot...</p>
+<div class="desk-shortcuts"><a href="#budget">Compare budget departments</a><a href="#county">Find County priorities</a><a href="#published">Search published answers</a><a href="#challenge">Check contradictions</a></div>
+</section>
+<section id="budget" class="desk-section" aria-labelledby="budget-title">
+<div class="desk-head"><p class="desk-kicker">01 / PUEBLO CITY · FY2026 · ORDINANCE 11075</p><h2 id="budget-title">Where the adopted General Fund authorization goes</h2>
+<p>The City budget establishes authority to spend; it is not proof of checks written, delivered services, contracts executed, or actual year-end costs.</p></div>
+<div class="desk-metric"><span>Total enacted General Fund appropriation</span><strong id="budget-total">Loading...</strong><small>Adopted November 24, 2025. Source: Section 2 of <a href="https://www.pueblo.us/DocumentCenter/View/39357/Ordinance11075-Adopted-Budget" target="_blank" rel="noopener noreferrer">Ordinance 11075</a>. Category figures reconcile to this total.</small></div>
+<div id="budget-rows" class="budget-rows" aria-label="General Fund category amounts and proportions"></div>
+<div class="desk-comparison"><h3>Compare two enacted categories</h3><p>This calculation is based on the same approved 2026 General Fund denominator. It is <em>not</em> a forecast or a comparison of payments.</p>
+<div class="desk-inputrow"><div><label for="desk-a">First department or category</label><select id="desk-a"></select></div><div><label for="desk-b">Compare against</label><select id="desk-b"></select></div></div>
+<p id="desk-compare-result" class="desk-result" role="status" aria-live="polite">Calculating...</p></div>
+</section>
+<section id="county" class="desk-section" aria-labelledby="county-title">
+<div class="desk-head"><p class="desk-kicker">02 / PUEBLO COUNTY · SELF-REPORTED STATUS</p><h2 id="county-title">What are the County commissioners working on?</h2>
+<p id="county-totals">Loading County initiative snapshot...</p><p>These are the County's own August 8, 2026 statuses, not independently tested project outcomes, cost or payment records. <a href="https://www.pueblocounty.gov/what-we-are-working" target="_blank" rel="noopener noreferrer">Inspect the original County dashboard</a>.</p></div>
+<div class="desk-inputrow"><div><label for="county-status">Filter by reported status</label><select id="county-status"><option value="all">All statuses</option><option value="Underway">Underway</option><option value="Waiting">Waiting</option><option value="Complete">Complete</option></select></div><div><label for="county-portfolio">Filter by portfolio</label><select id="county-portfolio"><option value="all">All portfolios</option></select></div></div>
+<p id="county-match" role="status" aria-live="polite"></p>
+<ol id="county-list" class="county-list"></ol></section>
+<section id="published" class="desk-section" aria-labelledby="published-title">
+<div class="desk-head"><p class="desk-kicker">03 / DATED PUBLISHED BRIEFS · FINITE INDEX</p><h2 id="published-title">Find a sourced answer</h2>
+<p>The current curated library has 14 dated explanatory reports, not 14 independently audited investigations. The original five source-scoped records remain separately documented. A matching title is not evidence of current activity. Open each full source ledger and inspect the dated original.</p></div>
+<label for="desk-search">Search the 14 curated published reports by topic or figure</label>
+<input id="desk-search" type="search" placeholder="Budget, Half-Cent, nonprofits, County, mill levy..." maxlength="120" autocomplete="off">
+<p id="desk-search-count" role="status" aria-live="polite">Loading library...</p>
+<div id="desk-reports" class="desk-reports"></div>
+<p><a href="issues.html">Explore 174 historical issue records</a> — issue titles are not 174 verified findings.</p></section>
+<section id="challenge" class="desk-section" aria-labelledby="challenge-title">
+<div class="desk-head"><p class="desk-kicker">04 / RX · SOURCE CONFLICTS · HUMAN REVIEW</p><h2 id="challenge-title">An unresolved contradiction, not a hidden correction</h2>
+<p>Every conflicting official statement should be disclosed and preserved. This is an issue to verify, not a conclusion that anyone misrepresented the record.</p></div>
+<div id="desk-docket"></div>
+<p><strong>Have a primary record that changes an answer?</strong> <a href="participate.html">Review how to submit a correction</a> or <a href="mailto:Q10pueblo@gmail.com?subject=Q-Pueblo%20evidence%20challenge">prepare an email to the public project inbox</a>. The website has no verified online submission or case-tracking backend; an email is not an automatic publication or guaranteed investigation.</p>
+</section>
+<section class="desk-section desk-takeaway" aria-labelledby="takeaway-title">
+<p class="desk-kicker">05 / REPRODUCIBLE LOCAL OUTPUT</p><h2 id="takeaway-title">Take the evidence with you</h2>
+<p>Download a local Markdown receipt of the official figures, exact filter selections, original source URLs and limitations. The file is assembled inside your browser, with no question or personal input uploaded by this tool.</p>
+<button id="desk-download" type="button">Download my evidence receipt (.md)</button>
+<p><strong>Limits:</strong> No new records are fetched automatically, no expenditure database is connected, and an external link does not prove a newer version has been reviewed. Compare all material conclusions with current records.</p>
+</section>
+</main>
+<footer class="desk-footer"><p><strong>Q-PUEBLO</strong> · Get to know Pueblo. Help shape its future.</p><p>Independent project, not the City or County. <a href="method.html">Method, privacy and current capability</a> · <a href="reports.html">All dated reports</a> · <a href="index.html">Home</a></p><small>Desk data assembled November 10, 2026 from original sources; not continuously synced. No automated public decisions.</small></footer>
+</body></html>
