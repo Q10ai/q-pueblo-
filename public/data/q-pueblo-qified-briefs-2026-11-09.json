@@ -361,6 +361,205 @@
           "asOf": "November 2026"
         }
       ]
+    },
+    {
+      "id": "QP-COUNTY-2026-004",
+      "slug": "county-priorities-2026",
+      "title": "Pueblo County commissioners priorities dashboard — August 2026",
+      "topic": "County government and infrastructure",
+      "stage": "COUNTY-REPORTED DATED SNAPSHOT · NOT INDEPENDENT VERIFICATION",
+      "date": "2026-11-09",
+      "review": "Official dashboard checked 2026-11-09; displayed August 8, 2026",
+      "summary": "Pueblo County's Board of County Commissioners Smart Priorities Dashboard displays 26 initiatives: 1 complete, 22 underway, and 3 waiting, as of its August 8, 2026 update. These are County-reported statuses, not audited outcomes, payments, or live project states.",
+      "keyFacts": [
+        {
+          "label": "Tracked initiatives",
+          "value": "26",
+          "stage": "August 2026 County snapshot"
+        },
+        {
+          "label": "Complete",
+          "value": "1",
+          "stage": "Self-reported County status"
+        },
+        {
+          "label": "Underway",
+          "value": "22",
+          "stage": "Self-reported County status"
+        },
+        {
+          "label": "Waiting",
+          "value": "3",
+          "stage": "Self-reported County status"
+        }
+      ],
+      "whatKnown": [
+        "The dashboard divides 26 priorities into eight portfolios: Financial Strategy (4), Correctional Services & Safety Support (4), Workforce & Organization (4), Growth & Development (6), Economic Development (1), Infrastructure (4), Housing (2), Human Services (1).",
+        "The only item marked complete is Housing trust project checks. The County describes contributions to three affordable housing projects.",
+        "The three items marked waiting are debris removal program, public roads and bridges dashboard, and detention center solar PPA.",
+        "The August financial priorities—2025 audit close, 2026 budget amendment, standing financial reporting, and grant management system—are each marked underway."
+      ],
+      "unknowns": [
+        "Whether a later Board action or operational change altered any August status.",
+        "Contracts, exact funding, cash payments, performance outcomes and individual legal owners for each program.",
+        "Whether any County-listed relationship has enforceable terms; the dashboard alone cannot establish that."
+      ],
+      "who": "The Pueblo County Board of County Commissioners sets the published priorities and reviews them with its Chief Administrative Officer, according to the County dashboard. Individual contractors and grant custodians require separate records.",
+      "what": "26 County initiatives across eight portfolios; not City Council projects.",
+      "when": "Dashboard displays August 8, 2026 as its update; checked November 9, 2026.",
+      "where": "Pueblo County, Colorado; County government and partner agencies, not City of Pueblo.",
+      "why": "The County says the dashboard provides residents a public view of Board priorities and their progress.",
+      "how": "Read the portfolio and status for each initiative. Corroborate material funding, contracts and achieved outcomes in Board agendas, executed agreements, financial reports and delivery evidence.",
+      "money": [
+        {
+          "stage": "Priority status",
+          "detail": "26 published initiatives (1 Complete, 22 Underway, 3 Waiting).",
+          "status": "Self-reported as of August 8, 2026."
+        },
+        {
+          "stage": "Appropriated",
+          "detail": "No comprehensive initiative-by-initiative appropriations in dashboard summary.",
+          "status": "Not established by this page."
+        },
+        {
+          "stage": "Contracted",
+          "detail": "Debris removal procurement marked waiting; no award established in snapshot.",
+          "status": "Check Board resolutions and purchasing records."
+        },
+        {
+          "stage": "Paid and delivered",
+          "detail": "Dashboard status is not a payment ledger or verified outcome.",
+          "status": "Independent receipts and milestones required."
+        }
+      ],
+      "relations": [
+        "Board of County Commissioners → Chief Administrative Officer: stated monitoring relationship in the dashboard.",
+        "County ↔ Pueblo West Metropolitan District: road agreement discussion marked underway; no terms established here.",
+        "County ↔ recovery partners: public dashboard lists wildfire, flood and shelter initiatives, but does not verify each obligation."
+      ],
+      "counter": "A progress label may lag actual activity; the County describes its dashboard as updated monthly, but the displayed date remains August 8. Complete does not prove final spend or delivered outcomes.",
+      "options": [
+        "Open the original dashboard and select the relevant portfolio.",
+        "Retrieve Board minutes, contracts, invoices and outcome metrics for the selected initiative.",
+        "Preserve the August snapshot; compare newer published records rather than silently replacing old states."
+      ],
+      "child": "Sheltering, recovery and housing may have family effects, but this dashboard does not quantify child-level outcomes.",
+      "ee": "Use the dated County index to prioritize high-value original record checks rather than repeat unverified research.",
+      "t2y": "The value is a traceable published status snapshot, not independently audited progress.",
+      "rx": "Compare later Board minutes, grant documents, procurement and finance records; record corrected statuses with provenance.",
+      "actions": [
+        "Open the County dashboard and select one of the 26 initiatives.",
+        "Request initiative-specific authorizations, contract and current status from its public custodian.",
+        "Distinguish County, City and special-district responsibilities."
+      ],
+      "sources": [
+        {
+          "id": "county-dashboard",
+          "title": "Pueblo County — Board of County Commissioners Smart Priorities Dashboard",
+          "url": "https://www.pueblocounty.gov/what-we-are-working",
+          "kind": "Primary County self-reported dashboard",
+          "asOf": "Dashboard updated August 8, 2026; reviewed November 9, 2026"
+        }
+      ]
+    },
+    {
+      "id": "QP-CITY-TAX-2026-005",
+      "slug": "city-mill-levy-2026",
+      "title": "City of Pueblo 2026 property tax mill levy — Ordinance 11074",
+      "topic": "Taxes and local finance",
+      "stage": "ADOPTED MUNICIPAL ORDINANCE · NOT A TOTAL PROPERTY TAX BILL",
+      "date": "2026-11-09",
+      "review": "City Ordinance 11074 checked November 9, 2026",
+      "summary": "City of Pueblo Ordinance 11074 establishes a 15.633-mill City property-tax levy for the 2026 budget year. It is the City's rate only, not a total bill that also reflects County, school, district and other levies.",
+      "keyFacts": [
+        {
+          "label": "2026 City levy",
+          "value": "15.633 mills",
+          "stage": "Adopted Ordinance 11074"
+        },
+        {
+          "label": "2025 comparison",
+          "value": "15.633 mills",
+          "stage": "Background paper says unchanged"
+        },
+        {
+          "label": "Assessed valuation",
+          "value": "$1,386,854,524",
+          "stage": "2025 City taxable assessed value"
+        },
+        {
+          "label": "Estimated revenue",
+          "value": "$21,280,697",
+          "stage": "City estimate, not cash collected"
+        }
+      ],
+      "whatKnown": [
+        "The City adopted Ordinance 11074 on November 24, 2025, with mayoral approval dated November 26, 2025.",
+        "The ordinance certifies 15.633 gross City mills for the 2026 budget year.",
+        "The accompanying background estimates property-tax revenue of $21,280,697, net of estimated uncollectible taxes. The adopted levy rate is reported as the same as in 2025."
+      ],
+      "unknowns": [
+        "Any household's parcel-specific taxable assessed value and other local taxing jurisdictions.",
+        "Actually collected cash, delinquency, adjustments and refunds.",
+        "Any later amendments or corrections to rate and valuation."
+      ],
+      "who": "City Council authorized the municipal levy; the County Assessor supplies the taxable valuation basis. Other governments set additional rates.",
+      "what": "City municipal mill levy, not Pueblo County's aggregate property tax rate.",
+      "when": "Council final adoption November 24, 2025; levy for fiscal 2026.",
+      "where": "Taxable property within City of Pueblo, Colorado.",
+      "why": "To support the City's general operating expenditures.",
+      "how": "Municipal component is assessed taxable value multiplied by 15.633 / 1000, subject to actual parcel assessment, exemptions and applicable rules.",
+      "money": [
+        {
+          "stage": "Rate adopted",
+          "detail": "15.633 City mills",
+          "status": "Primary ordinance, not all jurisdictions."
+        },
+        {
+          "stage": "Expected revenues",
+          "detail": "Estimated $21,280,697",
+          "status": "Not proof of actual collections."
+        },
+        {
+          "stage": "Tax bill",
+          "detail": "Depends on parcel and every applicable taxing entity.",
+          "status": "Not computable without official parcel values."
+        },
+        {
+          "stage": "Paid",
+          "detail": "No collection figures in ordinance.",
+          "status": "Treasury accounting required."
+        }
+      ],
+      "relations": [
+        "City Council → City levy: adoption and certification in Ordinance 11074.",
+        "County Assessor → valuation input: certified City assessed valuation.",
+        "Other taxing jurisdictions → additional components: property bills vary by parcel."
+      ],
+      "counter": "15.633 mills does not equal Pueblo County's full levy or an individual resident's complete tax bill.",
+      "options": [
+        "Read the City ordinance directly.",
+        "Use official parcel-specific assessments and all relevant district rates for a household calculation.",
+        "Compare estimates and collections only after checking accounting periods."
+      ],
+      "child": "No independent child-specific outcome is evidenced by a levy rate; trace actual funded services.",
+      "ee": "Retrieve assessed valuation and taxing districts first to avoid invalid individual estimates.",
+      "t2y": "The enacted rate is source-backed, but a complete tax bill needs more records.",
+      "rx": "Preserve the ordinance and seek authenticated assessment, levy and collection records when challenged.",
+      "actions": [
+        "Read Ordinance 11074.",
+        "Use official County assessment and treasurer records for property-specific figures.",
+        "Separate enacted levy, revenue forecast, cash collected and public service delivery."
+      ],
+      "sources": [
+        {
+          "id": "ordinance11074",
+          "title": "City of Pueblo — Ordinance 11074, FY2026 mill levy",
+          "url": "https://www.pueblo.us/DocumentCenter/View/39356/Ordinance11074-Mill-Levy",
+          "kind": "Primary municipal ordinance",
+          "asOf": "Adopted November 24, 2025; checked November 9, 2026"
+        }
+      ]
     }
   ]
 }
