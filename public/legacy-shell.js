@@ -1,0 +1,15 @@
+'use strict';
+(()=>{
+  if(document.querySelector('.qp-site-header'))return;
+  const old=document.querySelector('body > header');
+  if(old){old.setAttribute('hidden','');old.style.display='none';old.setAttribute('aria-hidden','true')}
+  const nav=[['index.html','Home'],['topics.html','Topics'],['issues.html','Issue index'],['reports.html','Qified reports'],['entities.html','Institutions'],['qify.html','Qify a question'],['q-tools.html','Q Tools'],['updates.html','Updates'],['participate.html','Contribute'],['support.html','Support']];
+  const header=document.createElement('header');header.className='qp-site-header';
+  const brand=document.createElement('a');brand.href='index.html';brand.className='qp-brand';brand.setAttribute('aria-label','Q-Pueblo homepage');
+  const image=document.createElement('img');image.src='assets/q-pueblo-header-wide.png';image.alt='Q-Pueblo full original emblem and motto, Know Pueblo. Help Shape Its Future.';image.width=2172;image.height=724;brand.append(image);header.append(brand);
+  const subtitle=document.createElement('div');subtitle.className='qp-underbrand';subtitle.append(document.createElement('span'),document.createElement('span'));subtitle.children[0].textContent='INDEPENDENT PUEBLO CIVIC INTELLIGENCE';subtitle.children[1].textContent='Not a government website · AI assists, people decide';header.append(subtitle);
+  const line=document.createElement('div');line.className='qp-navline';const title=document.createElement('a');title.className='qp-navtitle';title.href='index.html';title.textContent='Explore Q-Pueblo';line.append(title);
+  const toggle=document.createElement('button');toggle.type='button';toggle.id='qp-menu-toggle';toggle.className='qp-menu-button';toggle.textContent='☰ Menu';toggle.setAttribute('aria-controls','qp-global-nav');toggle.setAttribute('aria-expanded','false');line.append(toggle);
+  const n=document.createElement('nav');n.className='qp-global-nav';n.id='qp-global-nav';n.setAttribute('aria-label','Q-Pueblo sections');for(const [href,label] of nav){const a=document.createElement('a');a.href=href;a.textContent=label;if(location.pathname.split('/').pop()===href)a.setAttribute('aria-current','page');n.append(a)}line.append(n);header.append(line);
+  document.body.insertBefore(header,document.body.firstChild);toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));n.classList.toggle('is-open',open)});
+})();

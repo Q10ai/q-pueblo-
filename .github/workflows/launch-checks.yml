@@ -1,0 +1,34 @@
+name: Q-Pueblo Launch Candidate Integrity
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  static-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax and link integrity
+        run: |
+          node --check public/reports.js
+          node --check public/qify.js
+          node --check public/entities.js
+          node --check public/sources.js
+          node --check public/updates.js
+          node --check public/participate.js
+          node --check public/legacy-shell.js
+          node --check public/q-tools-view.js
+          node --check scripts/civic-source-watch.mjs
+          node scripts/check-launch.mjs
+      - name: No live backend or unsupported publication claims
+        run: |
+          grep -q '"autonomous_public_research_agents":false' public/api/v1/capabilities.json
+          grep -q '"server_side_contribution_intake":false' public/api/v1/capabilities.json
+          test ! -e public/.env
+          test ! -e .dev.vars
