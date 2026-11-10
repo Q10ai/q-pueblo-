@@ -24,3 +24,7 @@
 
 ## Known system limitations
 The public Q-Pueblo site uses locally generated Qify outputs and browser-local Q Tools. This artifact does not enable live AI research, payments, private Q10 memory ingestion, autonomous publications or a digital twin. Controlled originals and full image history are stored in private Google Drive and the private Q10 GitHub repository; **no original binary sources are included in this public review branch**.
+
+
+## Relationship to existing source-of-record documentation
+This is a **supplemental** production/website-release checklist. The original Q-Pueblo T-shirt handover is already on `main` at `docs/brand/Q_PUEBLO_TSHIRT_DESIGN_HANDOVER_2026-11-10.md`. Do not supersede or duplicate that primary record. The controlled Q10 reconciliation receipt preserves both provenance exports. This draft PR must remain unmerged pending human review.
