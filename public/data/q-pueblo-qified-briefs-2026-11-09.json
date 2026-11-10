@@ -488,20 +488,22 @@
           "stage": "2025 City taxable assessed value"
         },
         {
-          "label": "Estimated revenue",
+          "label": "Estimated tax revenue (disputed year)",
           "value": "$21,280,697",
-          "stage": "City estimate, not cash collected"
+          "stage": "Background paper says tax estimate for 2026 budget; ordinance recital labels it fiscal year 2024. Ask City Clerk/Finance for clarification."
         }
       ],
       "whatKnown": [
         "The City adopted Ordinance 11074 on November 24, 2025, with mayoral approval dated November 26, 2025.",
         "The ordinance certifies 15.633 gross City mills for the 2026 budget year.",
-        "The accompanying background estimates property-tax revenue of $21,280,697, net of estimated uncollectible taxes. The adopted levy rate is reported as the same as in 2025."
+        "The accompanying background estimates property-tax revenue of $21,280,697, net of estimated uncollectible taxes. The adopted levy rate is reported as the same as in 2025.",
+        "SOURCE DISCREPANCY: The ordinance's accompanying November 24, 2025 background paper says the 15.633-mill levy is for 2026 and estimates $21,280,697 in property-tax revenue, but the ordinance's WHEREAS clause explicitly labels the $21,280,697 figure as fiscal year 2024. Q-Pueblo does not silently correct this inconsistency or treat it as an audited 2026 collection."
       ],
       "unknowns": [
         "Any household's parcel-specific taxable assessed value and other local taxing jurisdictions.",
         "Actually collected cash, delinquency, adjustments and refunds.",
-        "Any later amendments or corrections to rate and valuation."
+        "Any later amendments or corrections to rate and valuation.",
+        "Whether the fiscal year 2024 reference is a clerical error or the revenue projection was carried from another accounting period; obtain written clarification from the originating authority."
       ],
       "who": "City Council authorized the municipal levy; the County Assessor supplies the taxable valuation basis. Other governments set additional rates.",
       "what": "City municipal mill levy, not Pueblo County's aggregate property tax rate.",
@@ -517,8 +519,8 @@
         },
         {
           "stage": "Expected revenues",
-          "detail": "Estimated $21,280,697",
-          "status": "Not proof of actual collections."
+          "detail": "Background paper estimates $21,280,697; ordinance recital instead identifies fiscal year 2024.",
+          "status": "Disputed year across pages of the same source document. Not verified 2026 collected cash."
         },
         {
           "stage": "Tax bill",
@@ -536,7 +538,7 @@
         "County Assessor → valuation input: certified City assessed valuation.",
         "Other taxing jurisdictions → additional components: property bills vary by parcel."
       ],
-      "counter": "15.633 mills does not equal Pueblo County's full levy or an individual resident's complete tax bill.",
+      "counter": "15.633 mills does not equal Pueblo County's full levy or an individual resident's complete tax bill. The ordinance's $21,280,697 revenue recital calls it fiscal year 2024 while the covering 2026 background paper treats it as the 2026 levy estimate; both statements must be preserved.",
       "options": [
         "Read the City ordinance directly.",
         "Use official parcel-specific assessments and all relevant district rates for a household calculation.",
