@@ -6,13 +6,15 @@ const ctx={window:{}}; vm.runInNewContext(script,ctx,{timeout:3000});
 const {selectReport}=ctx.window.QP_QIFY_MATCH;
 const data=JSON.parse(readFileSync('public/data/q-pueblo-qified-briefs-2026-11-09.json','utf8'));
 const records=data.reports;
-assert.equal(records.length,3);
+assert.equal(records.length,5);
 const choose=q=>selectReport(q,records)?.report.slug||null;
 assert.equal(choose('How much did Pueblo approve for the 2026 budget?'),'budget-2026');
 assert.equal(choose('What are the 2027 nonprofit funding requests?'),'csac-2027');
 assert.equal(choose('How much is committed in the Half-Cent fund?'),'half-cent-2026');
 assert.equal(choose('CSAC'),'csac-2027');
-for(const q of ['What has actually been spent on Lime Road?','2027 proposed city budget','Who maintains Lime Road?','Pueblo schools','water bills','election results','2026 budget and road maintenance'])assert.equal(choose(q),null,'False source-backed answer: '+q);
+assert.equal(choose("What initiatives are on Pueblo County's August 2026 priorities dashboard?"),'county-priorities-2026');
+assert.equal(choose('What is the City of Pueblo property tax mill levy for 2026?'),'city-mill-levy-2026');
+for(const q of ['What has actually been spent on Lime Road?','2027 proposed city budget','Who maintains Lime Road?','Pueblo schools','water bills','election results','2026 budget and road maintenance','How much has the City paid to Project Falcon?','What is the County 2027 budget?','How much was paid for Lime Road in 2026?'])assert.equal(choose(q),null,'False source-backed answer: '+q);
 const malicious={...records[0],slug:'test',sources:[{title:'bad',url:'javascript:alert(1)'}]};
 assert.equal(selectReport('2026 adopted budget',[malicious]),null);
 const page=readFileSync('public/qify.html','utf8');
@@ -24,3 +26,18 @@ assert(client.includes('Dated sources in matched brief'),'Show citations in the 
 assert(!/setTimeout\(\(\)=>render/.test(client),'No arbitrary initial-query timer');
 assert(!/localStorage|sessionStorage|sendBeacon|XMLHttpRequest/.test(client),'No client-side user-data persistence or telemetry');
 console.log('PASS Qify deterministic matching, year/domain conflicts, invalid citations, asynchronous load, disclosure, and privacy.');
+
+const wbHtml=readFileSync('public/workbench.html','utf8');
+const wbJs=readFileSync('public/workbench.js','utf8');
+const wbCSS=readFileSync('public/workbench.css','utf8');
+assert(wbHtml.includes('src="qify-match.js"') && wbHtml.indexOf('src="qify-match.js"')<wbHtml.indexOf('src="workbench.js"'));
+assert(wbHtml.includes('wb-evidence-examples') && wbHtml.includes('County priority status'));
+assert(wbJs.includes('await briefsReady') && wbJs.includes('matchPublished(clean'));
+assert(wbJs.includes('No published source-backed answer') && wbJs.includes('unverified research questions'));
+assert(wbJs.includes('keyFacts.map') && wbJs.includes('r.money.map') && wbJs.includes('r.sources.map'));
+assert(wbCSS.includes('wb-fact-grid') && wbCSS.includes('@media(max-width:660px)'));
+for(const report of records){
+ assert(report.keyFacts.length && report.money.length && report.sources.length,report.slug);
+ assert(report.sources.every(x=>/^https:\/\//.test(x.url)),report.slug);
+}
+console.log('PASS Evidence-first workbench: five reports, dated sources, explicit unknowns and display gates.');
