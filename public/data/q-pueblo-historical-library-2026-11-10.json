@@ -1,0 +1,453 @@
+{
+  "schema": "qp-historical-public-library-v1",
+  "observed": "2026-11-10",
+  "sourceURL": "https://q10asi.com/projects/q-pueblo/sources/",
+  "historicalInventoryDate": "2026-07-22",
+  "historicalVariantCount": 109,
+  "scope": "Public links already exposed by Q10ASI; historical draft claims are not newly validated.",
+  "families": [
+    {
+      "title": "Breaking the Guinness Record for the Longest Mural in Pueblo, CO",
+      "category": "Culture, tourism & community projects",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Breaking-the-Guinness-Record-for-the-Longest-Mural-in-Pueblo-CO-ketqbggpxl4vytn",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Building Caregiver Support in Southern Colorado",
+      "category": "Health, caregiving & PPCH operations",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Building-Caregiver-Support-in-Southern-Colorado-4pvcoenl3yezopz",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Cultivating the Perfect Chili Pepper Garden in Pueblo, Colorado",
+      "category": "Culture, tourism & community projects",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Cultivating-the-Perfect-Chili-Pepper-Garden-in-Pueblo-Colorado-pv2unhpx8ues4ds",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Desert Hawk Golf Course",
+      "category": "Culture, tourism & community projects",
+      "variants": 2,
+      "url": "https://gamma.app/docs/Desert-Hawk-Golf-Course-9djux89b4cw7nhs",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Governing for a Thriving Pueblo",
+      "category": "Economic, budget & resource intelligence",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Governing-for-a-Thriving-Pueblo-1a3o4nqppdhzfsq",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Grand Opening: Glow Up Pueblo",
+      "category": "Culture, tourism & community projects",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Grand-Opening-Glow-Up-Pueblo-pv5gx50iwb1xpfa",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Green Chile Sloppers: A Pueblo, CO Culinary Delight",
+      "category": "Culture, tourism & community projects",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Green-Chile-Sloppers-A-Pueblo-CO-Culinary-Delight-v9bd058wjh4sv54",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Integrating Q10 Civic Intelligence into Pueblo's Governance",
+      "category": "Civic AI & digital workforce",
+      "variants": 2,
+      "url": "https://gamma.app/docs/Integrating-Q10-Civic-Intelligence-into-Pueblos-Governance-j3uo9famvzzj30f",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Leonardo da Vinci Museum of North America",
+      "category": "Culture, tourism & community projects",
+      "variants": 2,
+      "url": "https://gamma.app/docs/Leonardo-da-Vinci-Museum-of-North-America-19oh26dh5vckx2q",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "PPCH Pueblo — 52-Week Operations, Compliance, Marketing & Community Plan",
+      "category": "Health, caregiving & PPCH operations",
+      "variants": 1,
+      "url": "https://gamma.app/docs/PPCH-Pueblo-52-Week-Operations-Compliance-Marketing-Community-Pla-akqt3k89e4ui23i",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Project Falcon Autopsy Report",
+      "category": "Economic development governance",
+      "variants": 2,
+      "url": "https://gamma.app/docs/Project-Falcon-Autopsy-Report-o0yg0vubf0ru6vv",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Project Falcon: Governance Checklist & Question Kit",
+      "category": "Economic development governance",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Project-Falcon-Governance-Checklist-Question-Kit-yssrqbtngh9urr4",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Project Falcon: Integrated Public Governance Report",
+      "category": "Economic development governance",
+      "variants": 3,
+      "url": "https://gamma.app/docs/Project-Falcon-Integrated-Public-Governance-Report-71pck6f7oaf4dow",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Project Falcon: Public Governance Report",
+      "category": "Economic development governance",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Project-Falcon-Public-Governance-Report-709nhvczlzmkp6r",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo & Southern Colorado Caregiver Intelligence Report",
+      "category": "Health, caregiving & PPCH operations",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Pueblo-Southern-Colorado-Caregiver-Intelligence-Report-qkqjzpztt7gvq1g",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo as a Reference Implementation",
+      "category": "Pueblo narrative & reference template",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Pueblo-as-a-Reference-Implementation-2418d4rflrrn98i",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Civic Governance Integration Report",
+      "category": "Economic development governance",
+      "variants": 2,
+      "url": "https://gamma.app/docs/Pueblo-Civic-Governance-Integration-Report-gws9m4p7b6u5vtk",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Civic Governance Report",
+      "category": "Economic development governance",
+      "variants": 3,
+      "url": "https://gamma.app/docs/Pueblo-Civic-Governance-Report-a5u6qa4nvzi4nsj",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Civic GPT (Q10AI)",
+      "category": "Civic AI & digital workforce",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Pueblo-Civic-GPT-Q10AI-x6tg80rq9x0pwld",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo County Governance Report",
+      "category": "Economic development governance",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Pueblo-County-Governance-Report-rx4hnh4t3v9e3rn",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Decision & Governance Action Paper",
+      "category": "Pueblo narrative & reference template",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Pueblo-Decision-Governance-Action-Paper-b6xs6b6ghvnmivz",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Decision & Governance Infrastructure",
+      "category": "Civic decision & governance infrastructure",
+      "variants": 8,
+      "url": "https://gamma.app/docs/Pueblo-Decision-Governance-Infrastructure-aojymfpu402j0k1",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Decision Infrastructure Report",
+      "category": "Civic decision & governance infrastructure",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Pueblo-Decision-Infrastructure-Report-0wmm5t2l2nt3hgq",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Economic Dashboard and the Next Stage of Civic Decision Intelligence",
+      "category": "Economic, budget & resource intelligence",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Pueblo-Economic-Dashboard-and-the-Next-Stage-of-Civic-Decision-In-gsfnnouc7fqrv9b",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Economic Development Governance Toolkit v1.0",
+      "category": "Economic development governance",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Pueblo-Economic-Development-Governance-Toolkit-v10-uq4iqb7d2k8gg8z",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo in Plain Sight",
+      "category": "Regional ledgers & findings",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Pueblo-in-Plain-Sight-dsrrsg1ya0cwcs8",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo in the Decision Era",
+      "category": "Economic, budget & resource intelligence",
+      "variants": 4,
+      "url": "https://gamma.app/docs/Pueblo-in-the-Decision-Era-kdjbfi8zoqhvy92",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Integrated Governance Infrastructure",
+      "category": "Civic decision & governance infrastructure",
+      "variants": 3,
+      "url": "https://gamma.app/docs/Pueblo-Integrated-Governance-Infrastructure-7ifox9l35o9git7",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Master Report: Implementation Blueprint",
+      "category": "Civic decision & governance infrastructure",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Pueblo-Master-Report-Implementation-Blueprint-gsxz4hcdnbnmvqu",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "PUEBLO Q10 CIVIC INTELLIGENCE INFRASTRUCTURE",
+      "category": "Civic AI & digital workforce",
+      "variants": 4,
+      "url": "https://gamma.app/docs/PUEBLO-Q10-CIVIC-INTELLIGENCE-INFRASTRUCTURE-vcy2ccp0dibo6hk",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "PUEBLO Q10 — TESTED, SIMULATED, AND BOUNDED INTELLIGENCE RECORD",
+      "category": "Civic AI & digital workforce",
+      "variants": 1,
+      "url": "https://gamma.app/docs/PUEBLO-Q10-TESTED-SIMULATED-AND-BOUNDED-INTELLIGENCE-RECORD-24pxvoqiw61i2mf",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Quantified Case Library",
+      "category": "Case, scenario & testing libraries",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Pueblo-Quantified-Case-Library-2s5pp6bn1tgt11b",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Real-World Governance Scenario Library",
+      "category": "Case, scenario & testing libraries",
+      "variants": 2,
+      "url": "https://gamma.app/docs/Pueblo-Real-World-Governance-Scenario-Library-elsdo5j2yaop5kd",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Region Decision & Governance Infrastructure",
+      "category": "Civic decision & governance infrastructure",
+      "variants": 2,
+      "url": "https://gamma.app/docs/Pueblo-Region-Decision-Governance-Infrastructure-sp23epixanmwq84",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Region Governance Infrastructure",
+      "category": "Civic decision & governance infrastructure",
+      "variants": 2,
+      "url": "https://gamma.app/docs/Pueblo-Region-Governance-Infrastructure-akt1yttwz3phe7w",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Regional Civic Operating System",
+      "category": "Civic decision & governance infrastructure",
+      "variants": 2,
+      "url": "https://gamma.app/docs/Pueblo-Regional-Civic-Operating-System-t4s98d9qq3b5rkn",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Regional Decision & Governance Infrastructure",
+      "category": "Civic decision & governance infrastructure",
+      "variants": 2,
+      "url": "https://gamma.app/docs/Pueblo-Regional-Decision-Governance-Infrastructure-eiu5gl5rno3ko4x",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Regional Decision Infrastructure",
+      "category": "Civic decision & governance infrastructure",
+      "variants": 22,
+      "url": "https://gamma.app/docs/Pueblo-Regional-Decision-Infrastructure-6e3d5opukozggq7",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Regional Findings Report & Immediate Action Briefs",
+      "category": "Regional ledgers & findings",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Pueblo-Regional-Findings-Report-Immediate-Action-Briefs-zauecr1ju80q5x5",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Regional Findings Report and Immediate Action Briefs",
+      "category": "Regional ledgers & findings",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Pueblo-Regional-Findings-Report-and-Immediate-Action-Briefs-f02gv31fsjmu8i6",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Regional Ledger",
+      "category": "Regional ledgers & findings",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Pueblo-Regional-Ledger-rkt9shset2klc86",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo Regional Operational Issue Ledger",
+      "category": "Regional ledgers & findings",
+      "variants": 2,
+      "url": "https://gamma.app/docs/Pueblo-Regional-Operational-Issue-Ledger-ng1bm3x3y2dcz7r",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo's Decision Infrastructure",
+      "category": "Civic decision & governance infrastructure",
+      "variants": 3,
+      "url": "https://gamma.app/docs/Pueblos-Decision-Infrastructure-8iooc11n3sq7b6u",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo's Hidden Opportunity",
+      "category": "Pueblo narrative & reference template",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Pueblos-Hidden-Opportunity-ztlly1u3yg8sqld",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Pueblo's Real Problem: Fragmentation",
+      "category": "Pueblo narrative & reference template",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Pueblos-Real-Problem-Fragmentation-16zahvnsalcrn0k",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "PuebloGPT & Pueblo County GPT",
+      "category": "Civic AI & digital workforce",
+      "variants": 1,
+      "url": "https://gamma.app/docs/PuebloGPT-Pueblo-County-GPT-lma070msjqzb4hc",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "PUE‑015 v2.2 – Advance Pueblo Governance Observation Packet",
+      "category": "Economic development governance",
+      "variants": 2,
+      "url": "https://gamma.app/docs/PUE015-v22-Advance-Pueblo-Governance-Observation-Packet-njln4lc393bp792",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Q10 Handover Report: Leonardo da Vinci Museum of North America / Pueblo",
+      "category": "Culture, tourism & community projects",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Q10-Handover-Report-Leonardo-da-Vinci-Museum-of-North-America-Pue-ni2rnaeq7vm3iok",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Q10 Pueblo Civic Intelligence",
+      "category": "Civic AI & digital workforce",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Q10-Pueblo-Civic-Intelligence-jjbv33hxh5whmdy",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Q10AI: Pueblo 2026 Strategic Deployment Plan",
+      "category": "Civic AI & digital workforce",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Q10AI-Pueblo-2026-Strategic-Deployment-Plan-lw7m62wu6gzgu8j",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Sizzling Green Chile Sloppers: A Pueblo Classic",
+      "category": "Culture, tourism & community projects",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Sizzling-Green-Chile-Sloppers-A-Pueblo-Classic-taefdhwudrvk9r5",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "Supporting Nursing Homes in Pueblo Colorado",
+      "category": "Health, caregiving & PPCH operations",
+      "variants": 1,
+      "url": "https://gamma.app/docs/Supporting-Nursing-Homes-in-Pueblo-Colorado-bfjc7nfy1a80d8a",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "The Pueblo Q-Infrastructure Master Plan",
+      "category": "Economic development governance",
+      "variants": 1,
+      "url": "https://gamma.app/docs/The-Pueblo-Q-Infrastructure-Master-Plan-t8uzvtmbjqub8oj",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "The Pueblo Story",
+      "category": "Pueblo narrative & reference template",
+      "variants": 1,
+      "url": "https://gamma.app/docs/The-Pueblo-Story-l4mr054plt7mcb6",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    },
+    {
+      "title": "The Pueblo Template + Q: Governance Infrastructure in Practice",
+      "category": "Pueblo narrative & reference template",
+      "variants": 1,
+      "url": "https://gamma.app/docs/The-Pueblo-Template-Q-Governance-Infrastructure-in-Practice-s7wf5mrwrelqpg1",
+      "status": "HISTORICAL_DRAFT_REQUIRES_REVALIDATION"
+    }
+  ],
+  "caseSummaries": [
+    {
+      "slug": "case-fiber",
+      "title": "Fiber access: ownership, permits and service",
+      "url": "https://q10asi.com/projects/q-pueblo/issues/case-fiber/",
+      "captured": "2026-11-10",
+      "localDownload": "archive/case-fiber-q10asi-2026-11-10.md"
+    },
+    {
+      "slug": "case-library-ai",
+      "title": "Library AI: contracts, privacy, costs and useful outcomes",
+      "url": "https://q10asi.com/projects/q-pueblo/issues/case-library-ai/",
+      "captured": "2026-11-10",
+      "localDownload": "archive/case-library-ai-q10asi-2026-11-10.md"
+    },
+    {
+      "slug": "case-library-finance",
+      "title": "Library finance: audited records, services and facility use",
+      "url": "https://q10asi.com/projects/q-pueblo/issues/case-library-finance/",
+      "captured": "2026-11-10",
+      "localDownload": "archive/case-library-finance-q10asi-2026-11-10.md"
+    },
+    {
+      "slug": "case-rail",
+      "title": "Passenger rail: station plans, owners and service commitments",
+      "url": "https://q10asi.com/projects/q-pueblo/issues/case-rail/",
+      "captured": "2026-11-10",
+      "localDownload": "archive/case-rail-q10asi-2026-11-10.md"
+    },
+    {
+      "slug": "case-rail-fire",
+      "title": "Railroad-tie fire: evidence, material and jurisdiction questions",
+      "url": "https://q10asi.com/projects/q-pueblo/issues/case-rail-fire/",
+      "captured": "2026-11-10",
+      "localDownload": "archive/case-rail-fire-q10asi-2026-11-10.md"
+    },
+    {
+      "slug": "case-school-governance",
+      "title": "School authorization and governance: roles and public records",
+      "url": "https://q10asi.com/projects/q-pueblo/issues/case-school-governance/",
+      "captured": "2026-11-10",
+      "localDownload": "archive/case-school-governance-q10asi-2026-11-10.md"
+    },
+    {
+      "slug": "case-trail",
+      "title": "Connecting Communities: trail funding and delivery",
+      "url": "https://q10asi.com/projects/q-pueblo/issues/case-trail/",
+      "captured": "2026-11-10",
+      "localDownload": "archive/case-trail-q10asi-2026-11-10.md"
+    },
+    {
+      "slug": "case-wastewater",
+      "title": "Wastewater: incident, repair and public-health clearance",
+      "url": "https://q10asi.com/projects/q-pueblo/issues/case-wastewater/",
+      "captured": "2026-11-10",
+      "localDownload": "archive/case-wastewater-q10asi-2026-11-10.md"
+    }
+  ]
+}

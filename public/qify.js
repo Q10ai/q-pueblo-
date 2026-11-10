@@ -1,38 +1,38 @@
 'use strict';
-(()=>{
- const $=id=>document.getElementById(id),catalog=window.QP_PUBLIC_CATALOG;
- const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- const validUrl=u=>{try{const z=new URL(u);return z.protocol==='https:'?z.href:null}catch{return null}};
- let briefs=[],packet=null,briefLoadError=false;
- const briefsReady=fetch('data/q-pueblo-qified-briefs-2026-11-09.json',{cache:'no-store'})
-  .then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()})
-  .then(x=>{if(!Array.isArray(x.reports))throw Error('Invalid report data');briefs=x.reports})
-  .catch(()=>{briefLoadError=true;briefs=[]});
- const norm=s=>String(s||'').toLowerCase().replace(/[^a-z0-9\s]/g,' ').replace(/\s+/g,' ').trim();
- const words=q=>[...new Set(norm(q).split(' ').filter(x=>x.length>2&&!['the','what','does','pueblo','about','how','who','why','with','from','and'].includes(x)))];
- const lookup=(q,items,fn)=>items.map(x=>{const str=norm(fn(x));let score=0;for(const w of words(q))if(str.includes(w))score+=w.length>=6?2:1;return {x,score}}).filter(y=>y.score>0).sort((a,b)=>b.score-a.score).slice(0,8).map(y=>y.x);
- function safeLink(url,label){const u=validUrl(url);return u?'<a href="'+esc(u)+'" target="_blank" rel="noopener noreferrer">'+esc(label)+' ↗</a>':esc(label)}
- function render(q){const lens=$('qify-lens').value,depth=$('qify-depth').value;
-  const matches=catalog?lookup(q,catalog.issues,i=>i.title+' '+i.id+' '+i.category+' '+i.domain):[];
-  const selected=window.QP_QIFY_MATCH.selectReport(q,briefs);
-  const exact=selected?selected.report:null;let status='INDEXED_RESEARCH_SCOPE_NOT_A_CURRENT_FINDING',answer='Q-Pueblo has historical research entries related to your question, but cannot establish a current answer without additional crosswalked primary records.';
-  if(exact){status='MATCHED_DATED_PUBLIC_BRIEF_NOT_LIVE_VERIFICATION';answer=exact.summary}
-  if(!exact&&!matches.length){status='NEW_OR_UNMATCHED_RESEARCH_LEAD';answer='This question is not matched confidently to the dated public index. Q cannot yet give a sourced answer. The next step is to establish the responsible agency, date, public decision, source record and evidence boundary.'}
-  const links=matches.map(i=>{const ss=(i.sourceIds||[]).map(id=>catalog.sources.find(s=>s.id===id)).filter(Boolean);return {id:i.id,title:i.title,date:i.lastReviewed,category:i.category,sourceCount:ss.length,sources:ss.map(s=>({title:s.title,url:s.url}))}});
-  packet={schema:'qp-qification-question-packet-v1',prepared:new Date().toISOString(),question:q,lens,depth,evidenceState:status,answer,report:exact?{id:exact.id,title:exact.title,date:exact.date,review:exact.review,stage:exact.stage,summary:exact.summary,sources:exact.sources,matchTerms:selected.strong}:null,matches:links,sections:{'5Ws':'Verify decision maker, action, date, jurisdiction, purpose and procedural mechanism.','Authority':'Locate authorizing ordinance, charter provision, governing body or executed agreement.','Money lifecycle':'Separate proposed, authorized, committed, paid and outcome figures before any comparison.','Direct → second → third order':'Identify institutions, delivery partners and systemic effects only with source-backed relationships.','Contrary evidence':'Search for revisions, rebuttals, alternate accounting and records that could disprove the favored explanation.','Child/community lens':'Measure programs and community outcomes at population level; never profile minors.','EE / T2Y':'Evaluate useful supported result versus audit time, cost, energy, risk, reversibility and human approval. No numerical score inferred.','RX / backup':'Preserve dated originals and alternative explanations; route disputed findings to human review.','Solutions':'Compare status quo, supported action and reversible alternative once evidence and constraints are known.'},publication:'Local packet draft; no autonomous investigation or publication. User may email request to Q10pueblo@gmail.com.'};
-  const html='\n<h2>Q answer / evidence boundary</h2><p class="qp-qa-label">'+esc(status.replaceAll('_',' '))+'</p><p><strong>'+esc(answer)+'</strong></p>'+
-  (exact?'<p><a href="reports.html?report='+encodeURIComponent(exact.slug)+'">Open the complete Qified public report — sources, accounting, RX and options →</a></p><section aria-label="Dated report sources"><h3>Dated sources in matched brief</h3><p>Brief prepared '+esc(exact.date)+' · '+esc(exact.review||'Review status not specified')+'. This match does not verify newer facts.</p><ul>'+exact.sources.filter(s=>validUrl(s.url)).map(s=>'<li>'+safeLink(s.url,s.title)+' · '+esc(s.asOf||'date to verify')+'</li>').join('')+'</ul></section>':'')+
-  '<h3>Related dated issue records</h3>'+(links.length?'<ul>'+links.map(i=>'<li><a href="issues.html#'+encodeURIComponent(i.id)+'">'+esc(i.id)+' — '+esc(i.title)+'</a><small> · reviewed '+esc(i.date)+' · '+i.sourceCount+' mapped source(s)</small>'+(i.sources.length?'<ul>'+i.sources.map(s=>'<li>'+safeLink(s.url,s.title)+'</li>').join('')+'</ul>':'<p>No record-specific public source crosswalk yet.</p>')+'</li>').join('')+'</ul>':'<p>No indexed issue matched confidently. That is an investigation gap, not proof of absence.</p>')+
-  '<h3>Qified analysis structure</h3><div class="qp-packet-grid">'+Object.entries(packet.sections).map(([k,v])=>'<section><h3>'+esc(k)+'</h3><p>'+esc(v)+'</p></section>').join('')+'</div><h3>What to do now</h3><p>Read the matched source-based report (if available), inspect record-specific sources, or request deeper research via email. A genuine Q result requires original documents, comparisons, human review and a reviewable publication date.</p>';
-  $('qify-output').innerHTML=html;$('qify-output').hidden=false;$('qify-actions').hidden=false;$('qify-status').textContent=(briefLoadError?'Published briefs could not be loaded; only dated issue leads are available. ':exact?'A relevant dated public brief was matched, not freshly verified. ':'')+links.length+' matched historical issues. No live web or AI backend used.';
-  const email=$('qify-email');email.href='mailto:Q10pueblo@gmail.com?subject='+encodeURIComponent('Q-Pueblo Qified research request: '+q.slice(0,90))+'&body='+encodeURIComponent('Please review and quote deeper Q research on:\n'+q+'\n\nRequested lens: '+lens+'\nExisting index matches: '+links.map(i=>i.id).join(', ')+'\n\nI understand Q-Pueblo will confirm scope and cost before work begins.');
-  $('qify-output').scrollIntoView({block:'start',behavior:'smooth'});
+(() => {
+ const $=id=>document.getElementById(id),core=window.QPReport,catalog=window.QP_PUBLIC_CATALOG;
+ let reports=[],packet=null;
+ const briefsReady=fetch('data/q-pueblo-qified-reports-v2-2026-11-09.json').then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>{reports=d.reports;return true;}).catch(()=>false);
+ const sourceLink=s=>{const u=core.safeUrl(s.url);return u?'<a href="'+core.esc(u)+'" target="_blank" rel="noopener noreferrer">'+core.esc(s.title)+' ↗</a>':core.esc(s.title);};
+ const investigation={
+  'Question and scope':'Record the exact question, geography, jurisdiction and valid date. No current answer is established by a related title.',
+  'Research already built':'Check the historical packet library and preserve prior IDs, original editions, sources and corrections.',
+  'Evidence and counterevidence':'Retrieve the controlling record and a materially contrary account; keep claims, estimates, facts and unknowns separate.',
+  'Facts, figures and finance':'Preserve units, denominators, dates and proposed/authorized/contracted/paid/outcome states.',
+  'Authority and effects':'Confirm who can act; examine direct, secondary and systemic impacts, including children and families over time.',
+  'Alternatives and practical result':'Compare supported options, constraints, costs, reversibility, implementation evidence and the smallest useful next step.',
+  'Q review and reopening':'Document applicable EE/T2Y/RX/LEAP/TSLP checks actually performed, gaps, human review, freshness and correction triggers.'
+ };
+ async function render(question){
+  $('qify-status').textContent='Loading the dated report collection…';const loaded=await briefsReady;
+  const terms=core.words(question), candidates=core.matchReports(question,reports);
+  const gatedMatch=window.QP_QIFY_MATCH.selectReport(question,reports);
+  const exact=candidates.find(x=>x.exact)?.report||gatedMatch?.report;
+  const matches=(catalog?.issues||[]).map(i=>{const tokens=new Set(core.words(i.title+' '+i.category+' '+i.domain));return {i,score:terms.filter(w=>tokens.has(w)).length};}).filter(x=>x.score>=2||core.norm(question)===core.norm(x.i.id)).sort((a,b)=>b.score-a.score).slice(0,8).map(({i})=>({id:i.id,title:i.title,date:i.lastReviewed,sources:(i.sourceIds||[]).map(id=>catalog.sources.find(s=>s.id===id)).filter(Boolean)}));
+  const answer=exact?exact.summary:'No prepared, source-supported answer matches this exact question. Related research below may help, but it does not establish the answer to your question.';
+  packet={schema:'qp-question-packet-v2',prepared:new Date().toISOString(),question,evidenceState:exact?'PREPARED_ANSWER_WITH_DATED_SOURCES':'INVESTIGATION_DRAFT_NO_CONFIRMED_ANSWER',answer,matchedReport:exact||null,relatedReports:candidates.filter(x=>!x.exact).map(x=>x.report),issues:matches,investigation,publication:'Local research draft. No external investigation, records request or publication has been performed by this page.'};
+  $('qify-output').innerHTML='<h2>Answer and evidence boundary</h2><p><strong>'+core.esc(answer)+'</strong></p>'+(!loaded?'<p>Prepared reports could not load. Existing index matches cannot substitute for them.</p>':'')+(exact?'<h3>Dated sources in matched brief</h3>'+core.render(exact):'')+
+   (candidates.some(x=>!x.exact)?'<h3>Related prepared analyses — each has its own scope</h3>'+candidates.filter(x=>!x.exact).map(x=>'<details><summary>'+core.esc(x.report.title)+'</summary>'+core.render(x.report)+'</details>').join(''):'')+
+   '<h3>Related dated issue records</h3>'+(matches.length?'<ul>'+matches.map(i=>'<li><a href="issues.html#'+encodeURIComponent(i.id)+'">'+core.esc(i.id+' — '+i.title)+'</a><small> · historical review '+core.esc(i.date)+'</small>'+(i.sources.length?'<ul>'+i.sources.map(s=>'<li>'+sourceLink(s)+'</li>').join('')+'</ul>':'<p>Record-specific source crosswalk remains open.</p>')+'</li>').join('')+'</ul>':'<p>No confident issue match. This is a coverage gap.</p>')+
+   '<h3>Investigation packet requirements</h3>'+Object.entries(investigation).map(([h,v])=>'<section><h4>'+core.esc(h)+'</h4><p>'+core.esc(v)+'</p></section>').join('')+'<p><a href="packets.html">Search the historical packets and Q10ASI Pueblo collection →</a></p>';
+  $('qify-output').hidden=false;$('qify-actions').hidden=false;
+  $('qify-status').textContent=(exact?'Prepared dated answer found. ':'Investigation draft; no confirmed answer. ')+candidates.length+' related/prepared analyses and '+matches.length+' historical issues. External research is not connected.';
+  $('qify-email').href='mailto:Q10pueblo@gmail.com?subject='+encodeURIComponent('Q-Pueblo research request: '+question.slice(0,90))+'&body='+encodeURIComponent('Please review this research question:\n'+question+'\n\nI understand scope, any cost and evidence needs must be confirmed before work begins.');
  }
- const run=async q=>{await briefsReady;render(q)};
- $('qify-form').addEventListener('submit',e=>{e.preventDefault();const q=$('qify-query').value.trim();if(q.length>=3)void run(q)});
- const initial=new URLSearchParams(location.search).get('q');if(initial&&initial.length>=3){const q=initial.slice(0,180);$('qify-query').value=q;void run(q)}
- const download=(filename,contents,type)=>{const blob=new Blob([contents],{type}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=filename;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),500)};
- const markdown=()=>{if(!packet)return '';return '# Qified question: '+packet.question+'\n\nEvidence: '+packet.evidenceState+'\n\n## Best supported answer\n'+packet.answer+'\n\n## Dated brief and original source leads\n'+(packet.report?packet.report.id+' | Prepared '+packet.report.date+' | '+packet.report.stage+'\n'+packet.report.sources.map(s=>'- '+s.title+' — '+s.url+' ('+(s.asOf||'date to verify')+')').join('\n'):'No matched dated source-backed brief.')+'\n\n## Related records\n'+packet.matches.map(x=>'- '+x.id+' '+x.title+' | Reviewed '+x.date+' | '+x.sourceCount+' mapped sources').join('\n')+'\n\n'+Object.entries(packet.sections).map(([k,v])=>'## '+k+'\n'+v).join('\n\n')+'\n\n'+packet.publication};
- $('qify-download').addEventListener('click',()=>packet&&download('Q-Pueblo-Qified-Question.md',markdown(),'text/markdown;charset=utf-8'));
- $('qify-copy').addEventListener('click',async()=>{if(!packet)return;try{await navigator.clipboard.writeText(markdown());$('qify-status').textContent='Packet copied to your clipboard.'}catch{$('qify-status').textContent='Copy not permitted by browser; download the file instead.'}});
+ $('qify-form').addEventListener('submit',e=>{e.preventDefault();const q=$('qify-query').value.trim();if(q.length>=3)render(q);});
+ const initial=new URLSearchParams(location.hash.slice(1)).get('q')||new URLSearchParams(location.search).get('q');
+ if(initial&&initial.length>=3){$('qify-query').value=initial.slice(0,180);render($('qify-query').value);}
+ const md=()=>packet?'# Q-Pueblo question\n\n'+packet.question+'\n\n'+packet.evidenceState+'\n\n'+packet.answer+'\n\n'+Object.entries(packet.investigation).map(([h,v])=>'## '+h+'\n'+v).join('\n\n')+'\n\n## Related issue records\n'+packet.issues.map(i=>'- '+i.id+' — '+i.title+'\n'+i.sources.map(s=>'  - '+s.title+' '+s.url).join('\n')).join('\n')+'\n\n'+[packet.matchedReport,...packet.relatedReports].filter(Boolean).map(core.markdown).join('\n\n---\n\n')+'\n\n'+packet.publication:'';
+ $('qify-download').addEventListener('click',()=>packet&&core.download('Q-Pueblo-Question-Packet.md',md(),'text/markdown;charset=utf-8'));
+ $('qify-copy').addEventListener('click',async()=>{if(!packet)return;try{await navigator.clipboard.writeText(md());$('qify-status').textContent='Packet copied.';}catch{$('qify-status').textContent='Copy unavailable; download the packet instead.';}});
 })();
