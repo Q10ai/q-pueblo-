@@ -17,7 +17,7 @@ assert(guide.includes('An issue title is not proof'), 'missing investigation cau
 assert(guide.includes('not a live AI assistant'), 'missing unsupported AI warning');
 assert(guide.includes('href="explore.html"') && guide.includes('href="workbench.html"'), 'missing release paths');
 assert(lib.includes('174'), 'expected historical index baseline absent');
-assert(bench.includes('static') || bench.includes('no-login') || bench.includes('browser'), 'static-only disclosure missing');
+assert(bench.toLowerCase().includes('static public beta') && bench.includes('not live AI research'), 'static-only disclosure missing');
 assert(headers.includes('Content-Security-Policy:'), 'CSP missing');
 assert(!guide.includes('PRIVATE Q10') && !guide.includes('q10agi@gmail.com'), 'unexpected private context in public guide');
 console.log('PUBLIC_BETA_RELEASE_CHECK=PASS; STATIC_ONLY=TRUE; PUBLICATION_STATUS=SOURCE_ONLY_UNTIL_LIVE_READBACK');
