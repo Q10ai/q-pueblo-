@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="site.css"><link rel="stylesheet" href="workbench.css">
 <script src="data/q-pueblo-public-catalog-2026-11-08.js" defer></script>
 <script src="workbench-spec.js" defer></script>
+<script src="qify-match.js" defer></script>
 <script src="workbench.js" defer></script>
 </head>
 <body>
@@ -20,7 +21,7 @@
 <section class="wrap wb-hero"><p class="wb-eyebrow">ASK • TRACE • CHALLENGE • LEAP</p><h1>Understand an issue from <em>your perspective</em>—without losing the evidence.</h1>
 <p class="wb-lede">Whether you live, work, invest, report or govern in the Pueblo region, start with the same traceable records. Change the level of detail and the decision questions, not the underlying facts.</p>
 <div class="wb-hero-tags"><span>5Ws + How</span><span>Who does what</span><span>Money stages</span><span>Direct → second → third order</span><span>RX &amp; backups</span><span>Past → present → future</span></div>
-<p class="wb-disclosure"><strong>Current capability:</strong> a no-login, static research assembly tool using a dated 174-issue public index and screened source links. It creates reproducible research questions and briefs; it does not fetch live records, independently verify claims, run AI in the browser or automatically identify real relationships.</p>
+<p class="wb-disclosure"><strong>Current capability:</strong> five source-attributed dated public answers with original links, accounting stages and explicit gaps, plus a 174-issue historical research index. Unknown questions are not automatically answered. This is not live AI research, continuously synchronized government data or independent real-time verification.</p>
 </section>
 <section class="wrap wb-main" aria-labelledby="wb-build-title"><div class="wb-section-title"><p class="wb-eyebrow">RESEARCH BUILDER</p><h2 id="wb-build-title">Make one question useful at every level.</h2><p>Choose your use case and what you need to prepare. Nothing you type is submitted to a server by this page.</p></div>
 <div class="wb-workspace">
@@ -28,6 +29,12 @@
 <fieldset class="wb-fieldset"><legend>1. Whose perspective?</legend><div id="wb-persona-chips" class="wb-persona-chips" role="group" aria-label="Common research audiences"></div>
 <label for="wb-persona">Role or use case</label><select id="wb-persona" required></select><p id="wb-persona-summary" class="wb-field-info"></p>
 <div id="wb-starters" class="wb-starters" aria-label="Example research questions"></div>
+<div class="wb-evidence-examples" id="wb-evidence-examples" aria-label="Questions with original-source answers"><p><strong>Try an answer Q-Pueblo can source today:</strong></p>
+<button type="button" data-evidence-question="What is Pueblo's 2026 General Fund budget appropriation?">City 2026 budget</button>
+<button type="button" data-evidence-question="How much Half-Cent money was committed in 2026?">Half-Cent commitments</button>
+<button type="button" data-evidence-question="What was requested and proposed for 2027 CSAC nonprofit funding?">2027 nonprofit funding</button>
+<button type="button" data-evidence-question="What initiatives are on Pueblo County's August 2026 priorities dashboard?">County priority status</button>
+<button type="button" data-evidence-question="What is the City of Pueblo property tax mill levy for 2026?">2026 City mill levy</button></div>
 </fieldset>
 <fieldset class="wb-fieldset"><legend>2. Which question and issue?</legend>
 <label for="wb-question">Your question (do not include private identifying information)</label>
@@ -51,7 +58,7 @@
 <div><label for="wb-posture">Preparedness posture</label><select id="wb-posture"><option value="balanced">Balanced: protect and build</option><option value="defend">Defensive: continuity and recovery</option><option value="advance">Proactive: opportunity and resilience</option><option value="explore">Exploratory: LEAP and alternatives</option></select></div>
 <div><label for="wb-risk">Screening intensity (not a measured score)</label><select id="wb-risk"><option value="standard">Standard</option><option value="heightened">Heightened: critical services</option><option value="severe">Severe: correlated failures</option></select></div></div>
 </fieldset>
-<div class="wb-actions"><button class="wb-primary" type="submit">Build my Q Pueblo research brief</button><button class="wb-secondary" type="button" id="wb-reset">Reset</button></div>
+<div class="wb-actions"><button class="wb-primary" type="submit">Find a sourced answer or build a review packet</button><button class="wb-secondary" type="button" id="wb-reset">Reset</button></div>
 </form>
 <aside class="wb-guide" aria-labelledby="wb-guide-title"><p class="wb-eyebrow">WHAT THE WORKBENCH DOES</p><h3 id="wb-guide-title">One source, many useful views</h3>
 <div class="wb-guide-step"><strong>01</strong><div><b>Find the right issue and record</b><p>Start with source IDs, jurisdiction and review dates—not generic summaries.</p></div></div>

@@ -10,6 +10,13 @@
   }
   const roles=spec.roles,issues=[...cat.issues].sort((a,b)=>a.title.localeCompare(b.title));
   const bySource=new Map(cat.sources.map(s=>[s.id,s]));
+  // Dated public reports are loaded once. This is not a live AI/web research service.
+  let publishedBriefs=[];
+  const briefsReady=fetch('data/q-pueblo-qified-briefs-2026-11-09.json',{cache:'no-store'})
+    .then(r=>{if(!r.ok)throw Error('Unavailable evidence ledger');return r.json();})
+    .then(data=>{if(!Array.isArray(data.reports))throw Error('Invalid evidence ledger');publishedBriefs=data.reports;})
+    .catch(()=>{publishedBriefs=[];});
+  const matchPublished=q=>q&&window.QP_QIFY_MATCH?window.QP_QIFY_MATCH.selectReport(q,publishedBriefs)?.report||null:null;
   const form=$('wb-form'),role=$('wb-persona'),issue=$('wb-issue'),search=$('wb-issue-filter');
   const level=$('wb-level'),lens=$('wb-lens'),output=$('wb-output');
   const fallback={id:'NEW-LEAD',title:'Emerging topic / unknown issue (new research lead)',category:'Unclassified / emerging',domain:'Needs jurisdiction and source classification',lastReviewed:'No indexed record',sourceIds:[],geography:'Not determined',childImpact:'Must be assessed after scope is established'};
@@ -73,6 +80,9 @@
   }).join('');
   $('wb-persona-chips').addEventListener('click',e=>{const b=e.target.closest('[data-role]');if(!b)return;role.value=b.dataset.role;output.value=chosenRole().outputs[0];roleChange();});
   $('wb-starters').addEventListener('click',e=>{const b=e.target.closest('[data-starter]');if(!b)return;$('wb-question').value=chosenRole().questions[Number(b.dataset.starter)]||'';$('wb-question').focus();});
+  const evidenceExamples=$('wb-evidence-examples');
+  if(evidenceExamples)evidenceExamples.addEventListener('click',e=>{const b=e.target.closest('[data-evidence-question]');if(!b)return;
+    $('wb-question').value=b.dataset.evidenceQuestion;issue.value='NEW-LEAD';showIssue();form.requestSubmit();});
   role.addEventListener('change',()=>{output.value=chosenRole().outputs[0];roleChange();});
   function showIssue(){
     const i=chosenIssue();
@@ -120,9 +130,12 @@
     const shock=$('wb-shock').value, horizon=$('wb-horizon').value,posture=$('wb-posture').value,risk=$('wb-risk').value;
     const s=shockData[shock]||shockData.unknown;
     const direct=linksFor(i,q),crosswalk=relatedIssues(i,q);
+    // Never treat the generic persona starter or an indexed issue title as claim evidence.
+    const reviewedBrief=matchPublished(clean($('wb-question').value));
     return {
       schema:'qp-research-workbench-v1',createdAt:new Date().toISOString(),
-      state:'UNVERIFIED_RESEARCH_STARTER_NOT_PUBLISHED_FACT',
+      state:reviewedBrief?'DATED_SOURCE_ATTRIBUTED_BRIEF_NOT_CURRENT_VERIFICATION':'UNVERIFIED_RESEARCH_STARTER_NOT_PUBLISHED_FACT',
+      reviewedBrief,
       platform:'static-public-workbench-no-network-inquiry-no-automatic-AI',
       role:{id:r.id,title:r.title,need:r.need},question:q,
       issue:{id:i.id,title:i.title,domain:i.domain,category:i.category,lastReviewed:i.lastReviewed,scope:i.geography,registryStatus:i.id==='NEW-LEAD'?'NOT YET REGISTERED':'HISTORICAL SCOPED RESEARCH'},
@@ -161,34 +174,46 @@
     };
   }
   function render(p){
-    const linked=p.sources.filter(s=>s.kind==='registry-linked').length;
-    let pieces=[];
-    const claimList=[p.initialResponse,'Focus: '+p.output.lens+'.','Perspective: '+p.role.need];
-    pieces.push(section('A. Starting answer and decision context',checklist(claimList)+'<p class="wb-warn"><strong>Status:</strong> Initial research plan, not a finding. '+esc(p.issue.id)+' • Review '+esc(p.issue.lastReviewed)+'. '+esc(p.issue.registryStatus)+'.</p>',true));
-    pieces.push(section('B. Who / What / When / Where / Why / How',checklist(p.fiveWH.map(x=>x.dimension+': '+x.prompt)),true));
-    if(level.value!=='quick'){
-      pieces.push(section('C. Who is connected? Direct → third order',p.entityImpact.map(x=>'<h4>'+esc(x.title)+'</h4>'+checklist(x.questions)+'<small>'+esc(x.confidence)+'</small>').join('')));
-      pieces.push(section('D. Money and lifecycle exposure',checklist(p.finance.map(x=>x.check))));
+    const r=p.reviewedBrief, pieces=[];
+    const listed=r&&Array.isArray(r.sources)?r.sources.filter(s=>hostValid(s.url)):[];
+    if(r){
+      pieces.push(section('A. Answer from a dated original public record',
+        '<p class="wb-qa-scope">'+esc(r.stage)+' · Prepared '+esc(r.date)+' · '+esc(r.review)+'</p>'+
+        '<p class="wb-direct-answer"><strong>'+esc(r.summary)+'</strong></p>'+
+        '<p><a href="reports.html?report='+encodeURIComponent(r.slug)+'">Read the complete sourced Qified report</a></p>',true));
+      pieces.push(section('B. Actual reported figures and documented facts',
+        '<div class="wb-fact-grid">'+r.keyFacts.map(f=>'<article><small>'+esc(f.label)+'</small><strong>'+esc(f.value)+'</strong><span>'+esc(f.stage)+'</span></article>').join('')+'</div>'+checklist(r.whatKnown),true));
+      pieces.push(section('C. Who, what, when, where, why and how',
+        '<dl class="wb-evidence-dl">'+[['Who',r.who],['What',r.what],['When',r.when],['Where',r.where],['Why',r.why],['How',r.how]].map(([k,v])=>'<dt>'+esc(k)+'</dt><dd>'+esc(v)+'</dd>').join('')+'</dl>'));
+      pieces.push(section('D. Follow the money — keep accounting stages separate',
+        '<table class="wb-evidence-money"><thead><tr><th>Stage</th><th>Recorded details</th><th>Evidence boundary</th></tr></thead><tbody>'+r.money.map(m=>'<tr><th>'+esc(m.stage)+'</th><td>'+esc(m.detail)+'</td><td>'+esc(m.status)+'</td></tr>').join('')+'</tbody></table>'));
+      pieces.push(section('E. Counterevidence and unresolved gaps',
+        '<h4>Competing interpretation</h4><p>'+esc(r.counter)+'</p><h4>What is not established</h4>'+checklist(r.unknowns),true));
+      pieces.push(section('F. Primary sources to inspect',
+        '<p>Published dates and source scopes control. These documents do not establish subsequent events.</p><div class="wb-source-grid">'+listed.map(s=>'<div><a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.title)+'</a><small>'+esc(s.kind)+' · '+esc(s.asOf)+'</small></div>').join('')+'</div>',true));
+      pieces.push(section('G. Next useful, reversible actions',checklist(r.actions.concat(r.options))));
+      pieces.push(section('H. Children, families and future effects','<p>'+esc(r.child)+'</p>'));
+    }else{
+      pieces.push(section('A. No published source-backed answer for this exact question',
+        '<p class="wb-direct-answer">Q-Pueblo cannot substantiate a direct answer from its five dated source-attributed briefs. It will not present research prompts, inferred relationships or an issue-index title as completed findings.</p>'+
+        '<p>This is an evidence coverage gap, not proof that an issue is unimportant or untrue.</p>'+
+        '<p><a href="qify.html?q='+encodeURIComponent(p.question)+'">Check the dated Qified library</a> · <a href="mailto:Q10pueblo@gmail.com?subject='+encodeURIComponent('Pueblo original-record research request')+'">Request source-backed research and review</a></p>',true));
+      pieces.push(section('B. Source leads — not proof of a claim',
+        '<p>These are historically indexed or keyword-discovered routes, not independently verified answers.</p><div class="wb-source-grid">'+p.sources.filter(s=>hostValid(s.url)).map(sourceLine).join('')+'</div>',true));
+      pieces.push(section('C. Specific evidence needed next',
+        '<p>Obtain the original decision, responsible jurisdiction, governing text, dated financial stage and supporting outcome. Any contested conclusion requires independent contrary evidence and human review.</p>',true));
     }
-    pieces.push(section('E. Child, household and generational impact',checklist(p.childImpact.questions)));
-    pieces.push(section('F. Shock factors, protection and positive opportunities','<p><strong>'+esc(p.shock.kind)+'</strong> • '+esc(p.shock.horizon)+' • '+esc(p.shock.posture)+'</p><p><span class="wb-tag">'+esc(p.shock.riskScreen)+'</span> Illustrative screen, not a measured hazard.</p><h4>Signals to check</h4>'+checklist(p.shock.earlyWarning)+'<h4>Defensive continuity / recovery</h4>'+checklist(p.shock.protect)+'<h4>Proactive improvement / opportunity</h4>'+checklist(p.shock.improve)));
-    if(level.value==='deep'||level.value==='strategy'){
-      pieces.push(section('G. Compound failures and backup to backup',checklist(p.shock.compoundedFailure.concat(p.shock.preparedness))));
-      pieces.push(section('G2. Four conditional scenario branches — not forecasts',p.shock.scenarios.map(x=>'<h4>'+esc(x.label)+'</h4><p><strong>Assumption:</strong> '+esc(x.assumption)+'</p><p><strong>Verification trigger:</strong> '+esc(x.trigger)+'</p>'+checklist(x.response)+'<p><small>Measurement to obtain: '+esc(x.measure)+'</small></p>').join(''),true));
-      pieces.push(section('H. LEAP — past, present, future and learning',checklist(Object.entries(p.timeModel).map(([a,b])=>a.toUpperCase()+': '+b))));
-    }
-    if(level.value!=='quick'){
-      pieces.push(section('I. RX: test the strongest alternative and failure path',checklist(p.RX.map(x=>x.title+': '+x.question)),true));
-    }
-    pieces.push(section('J. Original sources and research routes','<p>'+linked+' registry-linked leads; '+(p.sources.length-linked)+' additional discovery links. Links do not prove a claim and must be checked for freshness.</p><div class="wb-source-grid">'+p.sources.filter(s=>/^https:\/\//i.test(s.url)).map(sourceLine).join('')+'</div>',true));
-    if(p.relatedTopics.length&&level.value!=='quick'){
-      pieces.push(section('K. Candidate crosswalks — not validated relationships',checklist(p.relatedTopics.map(x=>x.id+' — '+x.title+' [textual proximity only]'))));
-    }
-    pieces.push(section('L. What to do next',checklist(p.nextSteps)+'<p><strong>Output:</strong> '+esc(p.output.deliverable)+' — '+esc(p.output.purpose)+'.</p>',true));
-    pieces.push(section('M. Governance and AI boundaries',checklist(p.limitations.concat(['Human-reviewed release, corrections and rollback are required','Quantum-inspired or neural modelling is a future testable option, not a deployed capability'])),true));
+    const prompts=[];
+    prompts.push(section('5 Ws + How research prompts',checklist(p.fiveWH.map(x=>x.dimension+': '+x.prompt)),true));
+    prompts.push(section('Unverified relationships to investigate',p.entityImpact.map(x=>'<h4>'+esc(x.title)+'</h4>'+checklist(x.questions)+'<small>'+esc(x.confidence)+'</small>').join('')));
+    prompts.push(section('Money lifecycle checklist',checklist(p.finance.map(x=>x.check))));
+    prompts.push(section('Safety, continuity and opportunity prompts',checklist(p.shock.earlyWarning.concat(p.shock.protect,p.shock.improve))));
+    if(p.shock.scenarios.length)prompts.push(section('Conditional scenarios, not forecasts',p.shock.scenarios.map(x=>'<h4>'+esc(x.label)+'</h4><p>'+esc(x.assumption)+'</p>'+checklist(x.response)).join('')));
+    prompts.push(section('RX contradiction questions',checklist(p.RX.map(x=>x.title+': '+x.question))));
+    pieces.push('<details class="wb-extra-research wb-full"><summary>Optional: unverified research questions, dependency checks and hypothetical scenarios</summary><p>For planning only. Nothing below is a source-backed local finding.</p><div class="wb-extra-grid">'+prompts.join('')+'</div></details>');
     $('wb-output-body').innerHTML=pieces.join('');
     $('wb-output-section').hidden=false;
-    $('wb-packet-status').textContent=p.issue.id+' · '+p.role.title+' · '+p.output.depth+' · '+p.shock.kind+' · '+p.sources.length+' public source routes · Not a verified finding';
+    $('wb-packet-status').textContent=r?r.id+' · Dated record '+r.date+' · NOT current verification':p.issue.id+' · No source-backed answer matched · Human investigation required';
     $('wb-output-section').scrollIntoView({behavior:'smooth',block:'start'});
   }
   function toMarkdown(p){
@@ -203,6 +228,14 @@
       '**Shock:** '+p.shock.kind+' | **Horizon:** '+p.shock.horizon,'');
     line('The question',p.question);
     line('Initial response',p.initialResponse);
+    if(p.reviewedBrief){const r=p.reviewedBrief;
+      line('Source-attributed answer',r.summary+' [Dated '+r.date+'; '+r.id+']');
+      line('Actual figures',bullets(r.keyFacts.map(x=>x.label+': '+x.value+' ['+x.stage+']')));
+      line('Money by accounting stage',bullets(r.money.map(x=>x.stage+': '+x.detail+' ['+x.status+']')));
+      line('What the record establishes',bullets(r.whatKnown));
+      line('Counterevidence and unknowns',r.counter+'\n'+bullets(r.unknowns));
+      line('Primary sources',bullets(r.sources.map(x=>x.title+' — '+x.url+' ('+x.asOf+')')));
+    }else line('Answer coverage','NO MATCHED SOURCE-ATTRIBUTED ANSWER. Research prompts are not evidence.');
     line('Five Ws + How',bullets(p.fiveWH.map(x=>x.dimension+': '+x.prompt)));
     line('Direct, secondary and tertiary impact questions',p.entityImpact.map(x=>'### '+x.title+'\n'+bullets(x.questions)).join('\n'));
     line('Money and lifecycle audit',bullets(p.finance.map(x=>x.check)));
@@ -221,7 +254,7 @@
     const blob=new Blob([data],{type}),u=URL.createObjectURL(blob),a=document.createElement('a');
     a.href=u;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),3000);
   }
-  form.addEventListener('submit',event=>{event.preventDefault();packet=build();markdown=toMarkdown(packet);render(packet);});
+  form.addEventListener('submit',async event=>{event.preventDefault();await briefsReady;packet=build();markdown=toMarkdown(packet);render(packet);});
   $('wb-reset').addEventListener('click',()=>{
     form.reset();role.value='resident';level.value='investigate';lens.value='balanced';output.value='snapshot';
     search.value='';issueOptions();roleChange();packet=null;markdown='';
