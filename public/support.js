@@ -1,7 +1,7 @@
 'use strict';
 (() => {
-  // This address is deliberately unset. Publish a verified project-owned public inbox only after owner approval.
-  const CONTACT_EMAIL = '';
+  // Designated public inquiries address supplied by the project owner on 2026-11-09. Email delivery is not independently tested.
+  const CONTACT_EMAIL = 'Q10pueblo@gmail.com';
   const $ = id => document.getElementById(id);
   const clean = (value, max) => String(value || '').replace(/[\u0000-\u001f\u007f]/g, ' ').trim().slice(0, max);
   let prepared = null;
@@ -32,8 +32,8 @@
     const mail = $('email-link');
     if (validEmail(CONTACT_EMAIL)) {
       mail.hidden = false;
-      mail.href = 'mailto:' + encodeURIComponent(CONTACT_EMAIL) + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-      $('contact-status').textContent = 'Email is ready. Opening your email app does not send it automatically.';
+      mail.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      $('contact-status').textContent = 'Email draft addressed to Q10pueblo@gmail.com. Opening your email app does not send it automatically.';
     } else {
       mail.hidden = true;
       mail.removeAttribute('href');
