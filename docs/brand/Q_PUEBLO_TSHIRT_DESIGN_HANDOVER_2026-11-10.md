@@ -30,7 +30,7 @@
 
 - Binary source, intermediate proofs, SHA-256 manifest, release checklist and Twin Pueblo intent/signal JSON are kept in a controlled 11-file ZIP on Q10 Drive, dated 2026-11-10.
 - SHA-256 of ZIP: `914e0a1acb6cf4c02797cb1fe91161210f73709f20228252496bd50f2adb015c`.
-- The private `Q10ai/q10-core` archive holds the detailed handover, Drive record and memory/signal crosswalk at `docs/q10/q-pueblo/merch/tshirt/`.
+- The private `Q10ai/q10-core` archive holds the detailed handover, Drive record, memory/signal crosswalk **and the complete ZIP in six rebuildable binary parts** at `docs/q10/q-pueblo/merch/tshirt/`. Stored Git blob SHA-1 values were matched against the exact local ZIP segments; use `archive_parts/RESTORE_AND_VERIFY.md` to reconstruct it.
 - This record is a design and provenance pointer, not a live-memory mutation. Q-Pueblo's public site must remain independently edited, reviewed, validated and deployed under its release gates.
 
 **Chat handover status:** Documented and safely archivable.  
