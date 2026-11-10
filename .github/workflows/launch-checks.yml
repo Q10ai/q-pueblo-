@@ -27,6 +27,8 @@ jobs:
           node --check scripts/civic-source-watch.mjs
           node scripts/check-launch.mjs
           node scripts/check-release-parity.mjs
+          node --check scripts/check-legacy-navigation.mjs
+          node scripts/check-legacy-navigation.mjs
       - name: No live backend or unsupported publication claims
         run: |
           grep -q '"autonomous_public_research_agents":false' public/api/v1/capabilities.json
