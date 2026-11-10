@@ -1,0 +1,22 @@
+{
+  "schema": "qp-public-release-manifest-v1",
+  "releaseId": "QP-PUBLIC-2026-11-10-HANDOVER-R1",
+  "sourceRepository": "Q10ai/q-pueblo-",
+  "productionBranch": "main",
+  "baseSourceCommit": "19d8114e42d52e99f1c586ed9f5797d86e323343",
+  "sourceDate": "2026-11-10",
+  "classification": "PUBLIC_BETA_STATIC_RELEASE_CANDIDATE",
+  "publicationAuthority": "human_required",
+  "capabilityClaims": {
+    "historicalIssueLibrary": true,
+    "localQTools": true,
+    "curatedSourceLinkedReports": true,
+    "automatedAIAnswers": false,
+    "authenticatedEvidenceIntake": false,
+    "autonomousPublication": false,
+    "realTimeMeetingIngestion": false,
+    "officialCivicDigitalTwin": false
+  },
+  "deploymentRule": "A manifest on GitHub or in a ZIP does not prove production deployment. Require live host route readback plus functional checks and authorized human approval.",
+  "previousZip": "Q-Pueblo-NEW-SITE-Cloudflare-Upload-2026-11-09.zip is superseded for live deployment because it omits later GitHub pages, reports and corrections."
+}
