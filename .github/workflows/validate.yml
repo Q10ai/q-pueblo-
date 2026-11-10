@@ -74,6 +74,7 @@ jobs:
           node scripts/check-evidence-desk.mjs
           node scripts/check-packet-reports.mjs
           node scripts/check-launch.mjs
+          node scripts/check-release-parity.mjs
           test -s public/site.css
           test -s public/_headers
           grep -q 'Q-PUEBLO' public/index.html
