@@ -11,6 +11,13 @@
     if (!Array.isArray(reports)) return null;
     const q = unique(query), qYears = years(query);
     if (!q.length) return null;
+    // A question about disbursements must not receive an authorization or
+    // commitment figure as though it were paid. Financial stages are not synonyms.
+    const askedPaid = /\b(spent|spending|expenditure|paid|payment|disbursed|disbursement|invoiced|collected|receipts|received)\b/i.test(query);
+    const paidAnchors = ['actually paid','paid to date','total expenditure','expenditures through','actual collections'];
+    if (askedPaid && !reports.some(r => reportValid(r) && paidAnchors.some(a => String(r.summary).toLowerCase().includes(a)))) {
+      return null;
+    }
     const ranked = reports.filter(reportValid).map(report => {
       const title = new Set(unique([report.title,report.slug,report.id,report.topic || ''].join(' ')));
       const context = new Set(unique([report.summary,report.what || ''].join(' ')));
