@@ -1,0 +1,2622 @@
+{
+  "schema": "qp-qified-public-report-v2",
+  "version": "2.0.0",
+  "assembled": "2026-11-10",
+  "mode": "CURATED_SOURCE_ATTRIBUTED_ANALYSIS",
+  "automaticPublication": false,
+  "archiveBoundary": "A public explanatory subset; historical originals and private research are preserved separately. Not the complete Q-Pueblo archive.",
+  "reports": [
+    {
+      "id": "QP-FIN-2026-001",
+      "slug": "budget-2026",
+      "title": "Pueblo’s 2026 adopted budget: what the ordinance actually authorizes",
+      "topic": "Budget & taxes",
+      "stage": "SOURCE-BACKED EXPLANATORY BRIEF · NOT AN EXPENDITURE AUDIT",
+      "date": "2026-11-09",
+      "review": "Source-attributed analysis; independent audit and outcome reconciliation remain open.",
+      "summary": "The City adopted a $128,202,143 General Fund appropriation for fiscal 2026 under Ordinance 11075. This is an adopted spending authorization, not evidence that every appropriated dollar has been paid.",
+      "keyFacts": [
+        {
+          "label": "FY2026 adopted General Fund total",
+          "value": "$128,202,143",
+          "stage": "Adopted appropriation",
+          "source": "budget-ordinance"
+        },
+        {
+          "label": "FY2026 estimated taxes",
+          "value": "$100,071,808",
+          "stage": "Revenue estimate, not collections",
+          "source": "budget-ordinance"
+        },
+        {
+          "label": "Police department appropriation",
+          "value": "$43,655,487",
+          "stage": "Appropriation",
+          "source": "budget-ordinance"
+        },
+        {
+          "label": "Fire department appropriation",
+          "value": "$29,883,192",
+          "stage": "Appropriation",
+          "source": "budget-ordinance"
+        }
+      ],
+      "whatKnown": [
+        "Ordinance 11075 adopts the FY2026 city budget and states the General Fund revenue and department appropriation schedule.",
+        "The Finance Department separately lists a 2027 proposed budget. A proposal is not an enacted appropriation or a verified payment.",
+        "The 2026 State of the City describes a revenue outlook and service pressures; that narrative must be read as an administration statement and reconciled against financial statements."
+      ],
+      "unknowns": [
+        "FY2026 actual disbursements and audited year-end results were not reconciled for this brief.",
+        "The 2027 proposal may change through Council action; do not label its amounts as adopted before reviewing final ordinances.",
+        "Different budget documents may group funds differently; avoid comparing citywide and General Fund numbers as though they share a denominator."
+      ],
+      "who": "City Council adopts budget ordinances; the Mayor submits an executive proposal; the Finance Department keeps official financial records. Specific charter authority and any amendments must be checked against source instruments.",
+      "what": "General Fund FY2026 adopted budget and associated revenue estimates.",
+      "when": "FY2026 appropriation, adopted under Ordinance 11075; this explanatory brief prepared November 9, 2026.",
+      "where": "City of Pueblo, Colorado; General Fund scope, not all entities in Pueblo County.",
+      "why": "Budget authorizations determine available public spending and services; households need to distinguish proposed, authorized and actually spent amounts.",
+      "how": "Compare the adopted ordinance with later monthly financial statements, treasury outflows, amendments, staffing changes and audited ACFR.",
+      "money": [
+        {
+          "stage": "Proposed",
+          "detail": "Mayor’s proposal; can be amended before adoption.",
+          "status": "Do not substitute for adopted."
+        },
+        {
+          "stage": "Authorized",
+          "detail": "FY2026 General Fund appropriation: $128,202,143.",
+          "status": "Supported by Ordinance 11075."
+        },
+        {
+          "stage": "Obligated",
+          "detail": "Contracts and purchase orders create separate commitments.",
+          "status": "Not reconciled here."
+        },
+        {
+          "stage": "Paid",
+          "detail": "Payments require actual transaction or audited expenditure evidence.",
+          "status": "Not reconciled here."
+        },
+        {
+          "stage": "Outcome",
+          "detail": "Services, employment and community results require independent measures.",
+          "status": "No causal outcome claimed."
+        }
+      ],
+      "relations": [
+        "Direct: City Council approval, Finance Department budget implementation, departments receiving appropriations.",
+        "Second order: contractors, service providers, unions, nonprofits and capital projects affected by allocations.",
+        "Third order: residents’ services, long-term operating commitments, household and child impacts; impacts are hypotheses until measured."
+      ],
+      "counter": "Adoption of a budget is not itself evidence of money being misspent. An apparent difference between proposals and final appropriations may reflect amendments or accounting classifications.",
+      "options": [
+        "Publish adopted versus amended versus actual FY2026 tables, with clear fund scope.",
+        "Create a 2027 proposal-to-adoption change log by meeting, ordinance and vote.",
+        "Track cost reductions alongside observed service levels and resident impacts rather than assuming either success or failure."
+      ],
+      "child": "Potential service effects for children and families should be traced to program budgets and measured delivery, without profiling minors.",
+      "ee": "Compare review time, source availability and accounting effort before deeper forensic work; do not claim an EE score without measured inputs.",
+      "t2y": "Truth stage: adopted ordinance supports the appropriation figure. Useful-yield stage: residents can compare authority and actuals once spending records are reconciled. Publication remains human-reviewed.",
+      "rx": "Preserve original and amended budgets, archived ordinances and dated reconciliations; flag contradictory totals for review.",
+      "actions": [
+        "Use the City’s annual budget and financial transparency portal to inspect expenditure records.",
+        "For any disputed line, record department, fund, budget year, accounting stage, document URL and last verification date.",
+        "Request a public-record crosswalk before alleging misuse or predicting program effects."
+      ],
+      "sources": [
+        {
+          "id": "budget-ordinance",
+          "title": "City of Pueblo — Ordinance 11075, FY2026 adopted budget",
+          "url": "https://www.pueblo.us/DocumentCenter/View/39357/Ordinance11075-Adopted-Budget",
+          "kind": "Primary municipal ordinance",
+          "asOf": "FY2026; accessed during November 2026 review",
+          "checked": "2026-11-09",
+          "role": "A0",
+          "locator": "See the named document and stated reporting period; no wider source claim implied.",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        },
+        {
+          "id": "finance-page",
+          "title": "City of Pueblo Finance Department — 2027 proposed budget and reporting hub",
+          "url": "https://www.pueblo.us/92/Finance",
+          "kind": "Official source hub",
+          "asOf": "November 2026",
+          "checked": "2026-11-09",
+          "role": "A2",
+          "locator": "See the named document and stated reporting period; no wider source claim implied.",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        },
+        {
+          "id": "state-2026",
+          "title": "City of Pueblo — 2026 State of the City",
+          "url": "https://www.pueblo.us/DocumentCenter/View/31157/State-of-the-City-2026",
+          "kind": "Official administration report",
+          "asOf": "2026",
+          "checked": "2026-11-09",
+          "role": "A2",
+          "locator": "See the named document and stated reporting period; no wider source claim implied.",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        }
+      ],
+      "qification": {
+        "assessment": "The defensible baseline is the adopted General Fund appropriation, not a claim about money already spent. A useful budget judgment requires both the authority to spend and evidence of the services delivered.",
+        "reasoning": [
+          "Q inference: a proposed cut can reduce an appropriation without producing an equal cash saving. Timing, vacancies, contracts and restricted funding can change the result.",
+          "Q inference: police and fire appropriations are material budget lines, but their size alone cannot establish adequate staffing, waste, response performance or a causal public-safety effect. Those require compatible service measures.",
+          "The practical comparison is adopted budget → subsequent amendments → year-to-date actuals → projected year-end result. Keeping that sequence prevents a forecast from being mistaken for a settled account."
+        ],
+        "temporal": {
+          "past": "Ordinance 11075 establishes the FY2026 authorization baseline. The original October proposal and the adopted schedule are different versions.",
+          "present": "The cited ordinance supports its amounts. This report has not reconciled subsequent amendments, payroll, contracts or cash outflows.",
+          "future": "Conditional: reserve use becomes more consequential if recurring costs exceed recurring revenue over several years. No insolvency or service-failure forecast is made."
+        },
+        "alternatives": [
+          {
+            "option": "Publish one monthly reconciliation",
+            "tradeoff": "Requires staff reconciliation but makes deviations visible before year end.",
+            "owner": "City Finance; Council oversight",
+            "verification": "Fund-specific adopted, amended, actual and forecast columns with dated explanations."
+          },
+          {
+            "option": "Compare savings with service outcomes",
+            "tradeoff": "A lower cost can also reduce service; a larger budget may still underperform.",
+            "owner": "Departments and public reviewers",
+            "verification": "Comparable staffing, response, workload and access measures alongside cost changes."
+          }
+        ],
+        "reopen": [
+          "Latest FY2026 monthly actuals and budget amendments",
+          "FY2026 year-end financial statements when available",
+          "Final FY2027 budget ordinance and department service measures"
+        ],
+        "childImpact": {
+          "past": "Historical program allocations are not evidence of historical child outcomes.",
+          "present": "Identify which services families actually use; no household-level effect has been measured here.",
+          "future": "Evaluate service continuity and deferred-maintenance burdens before moving costs to later generations."
+        },
+        "shock": "Conditional stress: lower tax receipts or higher operating costs. Compare reserve draw, reversible spending changes and service effects using documented inputs."
+      },
+      "version": "2.0.0",
+      "aliases": [
+        "2026 budget",
+        "general fund",
+        "city budget",
+        "police appropriation",
+        "fire appropriation"
+      ],
+      "questions": [
+        "What does Pueblo’s 2026 General Fund appropriation authorize?"
+      ],
+      "issueIds": [],
+      "sourceChecked": "2026-11-09",
+      "reviewDue": "2026-11-16",
+      "publicationClass": "PUBLIC_EXPLANATORY_ANALYSIS",
+      "independentAudit": false,
+      "claims": [
+        {
+          "id": "QP-FIN-2026-001-C01",
+          "claim": "FY2026 adopted General Fund total: $128,202,143",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "budget-ordinance"
+          ],
+          "boundary": "Adopted appropriation"
+        },
+        {
+          "id": "QP-FIN-2026-001-C02",
+          "claim": "FY2026 estimated taxes: $100,071,808",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "budget-ordinance"
+          ],
+          "boundary": "Revenue estimate, not collections"
+        },
+        {
+          "id": "QP-FIN-2026-001-C03",
+          "claim": "Police department appropriation: $43,655,487",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "budget-ordinance"
+          ],
+          "boundary": "Appropriation"
+        },
+        {
+          "id": "QP-FIN-2026-001-C04",
+          "claim": "Fire department appropriation: $29,883,192",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "budget-ordinance"
+          ],
+          "boundary": "Appropriation"
+        }
+      ],
+      "recordsNeeded": [
+        "Latest FY2026 monthly actuals and budget amendments",
+        "FY2026 year-end financial statements when available",
+        "Final FY2027 budget ordinance and department service measures"
+      ]
+    },
+    {
+      "id": "QP-MONEY-2026-002",
+      "slug": "half-cent-2026",
+      "title": "Half-Cent Economic Development Fund: commitments are not cash spent",
+      "topic": "Public money & development",
+      "stage": "SOURCE-BACKED DATED FUND BRIEF · CURRENT BALANCE NOT VERIFIED",
+      "date": "2026-11-09",
+      "review": "Source-attributed analysis; independent audit and outcome reconciliation remain open.",
+      "summary": "The City’s April 2026 economic-development cash recap, with data as of May 13, 2026, reports $22,085,740 in Council-approved commitments, $66,641,474 uncommitted and $88,727,214 total funds. These amounts represent the report’s stated accounting categories, not a present-day cash balance.",
+      "keyFacts": [
+        {
+          "label": "Approved commitments",
+          "value": "$22,085,740",
+          "stage": "Dated report classification",
+          "source": "half-cent-april"
+        },
+        {
+          "label": "Uncommitted funds",
+          "value": "$66,641,474",
+          "stage": "Dated report classification",
+          "source": "half-cent-april"
+        },
+        {
+          "label": "Total reported funds",
+          "value": "$88,727,214",
+          "stage": "Dated fund report",
+          "source": "half-cent-april"
+        },
+        {
+          "label": "St Charles public improvements line",
+          "value": "$7,990,246",
+          "stage": "Specific commitment listed; included in fund report",
+          "source": "half-cent-april"
+        }
+      ],
+      "whatKnown": [
+        "The official report distinguishes approved commitments, uncommitted funds and total fund amounts.",
+        "The report lists project-specific future commitments, including St Charles public improvements.",
+        "The classifications are date-bound and cannot be assumed current for November 2026 without newer reports."
+      ],
+      "unknowns": [
+        "Changes in commitments after May 13, 2026; amended project budgets and actual cash disbursement are not reconciled.",
+        "Different descriptions of project incentives and infrastructure could overlap; nothing in this report proves any single consolidated Project Falcon figure.",
+        "The underlying expenditures, delivery milestones and achieved employment outcomes need separate records."
+      ],
+      "who": "City Council approved commitments are reported by the City of Pueblo; responsible spending departments and beneficiaries require case-specific executed instruments.",
+      "what": "Economic Development Half-Cent Tax Fund, future commitments in April 2026 report.",
+      "when": "April reporting period; reported data as of May 13, 2026; Qified brief November 9, 2026.",
+      "where": "City of Pueblo fund; applicability to individual industrial projects must be established line by line.",
+      "why": "Residents need to know whether a published amount is promised, available, contracted, paid, or associated with an achieved result.",
+      "how": "Reconcile project codes, council approvals, contracts, invoices and cash outflows across successive finance reports.",
+      "money": [
+        {
+          "stage": "Appropriation/fund availability",
+          "detail": "Total reported fund amount of $88,727,214.",
+          "status": "Dated report figure, not FY2026 citywide budget."
+        },
+        {
+          "stage": "Commitment",
+          "detail": "$22,085,740 classified as Council-approved commitments.",
+          "status": "Fund report as of May 13, 2026."
+        },
+        {
+          "stage": "Uncommitted",
+          "detail": "$66,641,474 classified as uncommitted.",
+          "status": "Separate from commitments; do not add twice."
+        },
+        {
+          "stage": "Payment",
+          "detail": "Requires disbursement ledgers or invoices.",
+          "status": "Not established from commitments table."
+        },
+        {
+          "stage": "Result",
+          "detail": "Jobs, infrastructure delivery and tax effects require separate outcome records.",
+          "status": "Not established."
+        }
+      ],
+      "relations": [
+        "Direct: Council approval, Finance Fund accounting and named project code.",
+        "Second order: eligible projects, infrastructure contractors, industrial site users and operating agencies.",
+        "Third order: public services, opportunities for workers and household effects; all require case-specific evidence."
+      ],
+      "counter": "A commitment is not automatically an improper expense or an actual cash payment. Infrastructure spending can serve multiple projects, so allocations require a defensible methodology and no double counting.",
+      "options": [
+        "Publish a project-code reconciliation with authorized, obligated and paid columns.",
+        "Show changes between April 2026 and the latest available economic-development report.",
+        "For debated projects, assign infrastructure costs on transparent criteria and disclose alternate allocations."
+      ],
+      "child": "Long-term tax revenues, commitments and public-services tradeoffs may affect young residents. This brief makes no unmeasured child-level claims.",
+      "ee": "Spend detailed audit effort on high-value discrepancies first: material dollars, weak documentation, public risk and potential reversibility.",
+      "t2y": "The 2026 fund report supports its own dated classifications. Benefit conclusions remain conditional until realized payments and project outcomes are verified.",
+      "rx": "Preserve earlier monthly recaps and note superseding figures; create a correction ticket for each unexplained project-code change.",
+      "actions": [
+        "Inspect the dated cash recap and find the matching next report.",
+        "Confirm the specific ordinance and project code before calculating a company or road total.",
+        "Use the Q Tools lifecycle calculator only with compatible, documented cost inputs."
+      ],
+      "sources": [
+        {
+          "id": "half-cent-april",
+          "title": "City of Pueblo — April 2026 Half-Cent Economic Development Cash Recap",
+          "url": "https://www.pueblo.us/ArchiveCenter/ViewFile/Item/5528",
+          "kind": "Primary City finance report",
+          "asOf": "Data as of 2026-05-13",
+          "checked": "2026-11-09",
+          "role": "A0",
+          "locator": "See the named document and stated reporting period; no wider source claim implied.",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        },
+        {
+          "id": "city-finance",
+          "title": "City of Pueblo — Finance and economic-development reports",
+          "url": "https://www.pueblo.us/92/Finance",
+          "kind": "Official source hub",
+          "asOf": "November 2026",
+          "checked": "2026-11-09",
+          "role": "A2",
+          "locator": "See the named document and stated reporting period; no wider source claim implied.",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        }
+      ],
+      "qification": {
+        "assessment": "The fund report supports a dated division between committed and uncommitted funds. It does not support calling all commitments cash spent, or assigning the whole fund balance to one project.",
+        "reasoning": [
+          "Q inference: a commitment ledger is an exposure map. A payment ledger is a cash-flow map. Both are needed to judge whether resources are available, already promised or actually disbursed.",
+          "A project may appear in several agreements or infrastructure accounts. Adding every headline figure risks counting the same obligation twice.",
+          "Q inference: economic-development value depends on additional benefits attributable to the investment, continuing operating costs and enforceable performance conditions—not simply the announced project value."
+        ],
+        "temporal": {
+          "past": "The April report uses a May 13, 2026 data date and identifies project codes.",
+          "present": "These figures are historical. November balances, amended commitments and realized employment outcomes are not established here.",
+          "future": "Conditional: delays, employer withdrawal or shared infrastructure can change the public return and allocation of costs."
+        },
+        "alternatives": [
+          {
+            "option": "Build a project-code ledger",
+            "tradeoff": "Slower than adding headline figures; resolves overlap and timing.",
+            "owner": "Finance and agreement custodians",
+            "verification": "Each commitment links to authorization, contract, payment and delivery records."
+          },
+          {
+            "option": "Require a public-benefit follow-up",
+            "tradeoff": "Needs compatible job and investment definitions; protects against announcement-only evaluation.",
+            "owner": "Approving body and project operator",
+            "verification": "Measured milestones and agreement conditions, with any repayment or correction process."
+          }
+        ],
+        "reopen": [
+          "Latest monthly fund recap",
+          "Project agreements, amendments and payment detail",
+          "Employment and capital-investment performance records"
+        ],
+        "childImpact": {
+          "past": "Older commitments can affect resources available in later budget years.",
+          "present": "No child-level benefit or harm is measured by the fund balance.",
+          "future": "Assess public-service opportunity costs and long-term infrastructure maintenance alongside claimed job benefits."
+        },
+        "shock": "Conditional stress: project cancellation or lower receipts. Separate recoverable commitments, sunk payments and infrastructure with continuing community use."
+      },
+      "version": "2.0.0",
+      "aliases": [
+        "half cent",
+        "half-cent",
+        "economic development fund",
+        "approved commitments"
+      ],
+      "questions": [
+        "Do Half-Cent commitments equal cash spent?"
+      ],
+      "issueIds": [
+        "REG-001",
+        "REG-004"
+      ],
+      "sourceChecked": "2026-11-09",
+      "reviewDue": "2026-12-09",
+      "publicationClass": "PUBLIC_EXPLANATORY_ANALYSIS",
+      "independentAudit": false,
+      "claims": [
+        {
+          "id": "QP-MONEY-2026-002-C01",
+          "claim": "Approved commitments: $22,085,740",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "half-cent-april"
+          ],
+          "boundary": "Dated report classification"
+        },
+        {
+          "id": "QP-MONEY-2026-002-C02",
+          "claim": "Uncommitted funds: $66,641,474",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "half-cent-april"
+          ],
+          "boundary": "Dated report classification"
+        },
+        {
+          "id": "QP-MONEY-2026-002-C03",
+          "claim": "Total reported funds: $88,727,214",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "half-cent-april"
+          ],
+          "boundary": "Dated fund report"
+        },
+        {
+          "id": "QP-MONEY-2026-002-C04",
+          "claim": "St Charles public improvements line: $7,990,246",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "half-cent-april"
+          ],
+          "boundary": "Specific commitment listed; included in fund report"
+        }
+      ],
+      "recordsNeeded": [
+        "Latest monthly fund recap",
+        "Project agreements, amendments and payment detail",
+        "Employment and capital-investment performance records"
+      ]
+    },
+    {
+      "id": "QP-SOC-2027-003",
+      "slug": "csac-2027",
+      "title": "2027 nonprofit funding: requests versus proposed City support",
+      "topic": "Community services & public money",
+      "stage": "SOURCE-ATTRIBUTED DEVELOPING ISSUE · MULTI-PARTY REVIEW OPEN",
+      "date": "2026-11-09",
+      "review": "Source-attributed analysis; independent audit and outcome reconciliation remain open.",
+      "summary": "The City of Pueblo reports approximately $2.2 million in 2027 nonprofit funding requests from 46 organizations, while its 2027 proposed budget includes $490,000 for CSAC. That proposed allocation remains subject to Council approval. A request, proposed allocation, recommendation and award are different stages.",
+      "keyFacts": [
+        {
+          "label": "Applicant organizations",
+          "value": "46",
+          "stage": "Applications reported by City",
+          "source": "csac-release"
+        },
+        {
+          "label": "Aggregate requests",
+          "value": "Approximately $2.2 million",
+          "stage": "Applications, not awards",
+          "source": "csac-release"
+        },
+        {
+          "label": "Proposed City allocation",
+          "value": "$490,000",
+          "stage": "2027 proposal, not enacted",
+          "source": "city-csac"
+        },
+        {
+          "label": "Final 2027 awards",
+          "value": "Not confirmed",
+          "stage": "No final award conclusion",
+          "source": "csac-release"
+        }
+      ],
+      "whatKnown": [
+        "The City’s September 2026 release states that 46 applications were received and cautions that applications are not awards.",
+        "A later City release states its 2027 proposed budget includes $490,000 for CSAC; the City describes a dispute over County participation and reimbursement.",
+        "The source release describes CSAC as an established City–County recommendation process."
+      ],
+      "unknowns": [
+        "Actual approved 2027 City and County awards, if any, and the results of later deliberations.",
+        "Independent reconciliation of the County’s position on funding and any reimbursements.",
+        "Which applicants meet eligibility standards and what service levels a given grant would purchase."
+      ],
+      "who": "Community Services Advisory Commission evaluates nonprofit applications; City and County decision-making bodies have their own funding authority.",
+      "what": "2027 nonprofit application pipeline, proposed City funding and disputed intergovernmental arrangements.",
+      "when": "Applications announced September 2026; City funding statement published in early November 2026.",
+      "where": "Pueblo regional nonprofit service organizations; allocations and jurisdiction should be recorded separately.",
+      "why": "Funding decisions may affect social services; stakeholders need clear amounts, conditions, timing and official decisions.",
+      "how": "Compare the published application ledger to CSAC scores/recommendations, both governments’ votes and final grant agreements.",
+      "money": [
+        {
+          "stage": "Requested",
+          "detail": "Approximately $2.2 million submitted by 46 organizations.",
+          "status": "Applications; not approved grants."
+        },
+        {
+          "stage": "Proposed",
+          "detail": "City says $490,000 in proposed 2027 CSAC budget.",
+          "status": "Subject to Council consideration."
+        },
+        {
+          "stage": "Recommended",
+          "detail": "CSAC recommendations require deliberation.",
+          "status": "Not reconciled to completed vote."
+        },
+        {
+          "stage": "Awarded",
+          "detail": "City/County approvals and award letters needed.",
+          "status": "Not established."
+        },
+        {
+          "stage": "Paid",
+          "detail": "Actual grant disbursements require transaction records.",
+          "status": "Not established."
+        }
+      ],
+      "relations": [
+        "Direct: applicant nonprofits, CSAC and appropriating governments.",
+        "Second order: staff, subcontractors and providers that deliver funded services.",
+        "Third order: vulnerable residents and long-term service impacts; protect individual identities."
+      ],
+      "counter": "The City’s description of County withdrawal and the reimbursement disagreement is the City’s position in a public statement, not a neutral finding of responsibility. A request-to-proposal funding gap alone does not identify which programs qualify.",
+      "options": [
+        "Publish a program-by-program application, recommendation, award and payment ledger, with appeal/correction routes.",
+        "Compare service-continuity scenarios for reduced, delayed and full funding while protecting confidential client data.",
+        "Document both City and County responses and the executed funding arrangements before assigning fault."
+      ],
+      "child": "Childcare, nutrition, elder support and housing-service impacts should be analyzed at program level with privacy protections; no child is profiled.",
+      "ee": "Use one cross-government reconciliation and reusable program-level data model rather than repeated manual comparisons.",
+      "t2y": "Source-backed request and proposal amounts are useful, but the actual award and service outcomes remain undetermined and must not be predicted as facts.",
+      "rx": "Maintain dated releases and recommendations, publish revised grant decisions and keep a clear correction history.",
+      "actions": [
+        "Review the published application list and official funding statement.",
+        "Check subsequent CSAC recommendations and each governing body’s appropriation votes.",
+        "Ask how service continuity and independent oversight are protected if funding is reduced."
+      ],
+      "sources": [
+        {
+          "id": "csac-release",
+          "title": "City of Pueblo — 46 nonprofit applications for 2027 CSAC funding",
+          "url": "https://www.pueblo.us/m/newsflash/home/detail/4996",
+          "kind": "Official City application announcement",
+          "asOf": "September 2026",
+          "checked": "2026-11-09",
+          "role": "A2",
+          "locator": "See the named document and stated reporting period; no wider source claim implied.",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        },
+        {
+          "id": "city-csac",
+          "title": "City of Pueblo — public statement on City–County CSAC funding",
+          "url": "https://www.pueblo.us/m/newsflash/Home/Detail/5027",
+          "kind": "Official City position statement (not independent adjudication)",
+          "asOf": "November 2026",
+          "checked": "2026-11-09",
+          "role": "A2",
+          "locator": "See the named document and stated reporting period; no wider source claim implied.",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        },
+        {
+          "id": "finance-2027",
+          "title": "City of Pueblo — 2027 proposed budget access",
+          "url": "https://www.pueblo.us/92/Finance",
+          "kind": "Official finance hub",
+          "asOf": "November 2026",
+          "checked": "2026-11-09",
+          "role": "A2",
+          "locator": "See the named document and stated reporting period; no wider source claim implied.",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        }
+      ],
+      "qification": {
+        "assessment": "The request total and proposed City allocation describe different stages and different funding scopes. Their difference is a planning signal, not a final service-loss estimate or a finding against either government.",
+        "reasoning": [
+          "Q inference: total requests cannot be treated as an established funding need without eligibility, duplication, scoring and service-cost review.",
+          "The City statement is evidence of the City’s position. Responsibility for disputed reimbursement requires the agreements, payment records and County response.",
+          "A useful public comparison follows each program from requested amount to recommendation, award, payment and actual service capacity."
+        ],
+        "temporal": {
+          "past": "The application announcement records the 2027 request pipeline; the November 3 statement describes proposed funding and an intergovernmental dispute.",
+          "present": "Final appropriations, awards, payment reconciliation and the independent County position remain open.",
+          "future": "Conditional: reduced or delayed grants may affect capacity, but the number of people affected cannot be inferred from the aggregate request total."
+        },
+        "alternatives": [
+          {
+            "option": "Publish a joint application-to-payment table",
+            "tradeoff": "Requires both governments’ records; reduces contradictory totals.",
+            "owner": "City and County funding authorities",
+            "verification": "Program IDs, requests, recommendations, awards, payments and unresolved reimbursements."
+          },
+          {
+            "option": "Prepare service-continuity alternatives",
+            "tradeoff": "Temporary support can create later obligations; disclose cost and duration.",
+            "owner": "Funding authorities and service providers",
+            "verification": "Which essential services continue, for how long, under which approved funding source."
+          }
+        ],
+        "reopen": [
+          "County work-session records and response",
+          "Executed intergovernmental agreements and reimbursement ledger",
+          "Final 2027 appropriation and grant awards"
+        ],
+        "childImpact": {
+          "past": "Prior awards and paid services need their own dates and program records.",
+          "present": "Family and youth impacts must be tied to identifiable services at aggregate level.",
+          "future": "Compare service interruption, bridging and funding redesign without identifying clients."
+        },
+        "shock": "Conditional stress: delayed reimbursement or reduced grants. Compare cash timing, provider continuity and lawful temporary funding options."
+      },
+      "version": "2.0.0",
+      "aliases": [
+        "csac",
+        "nonprofit funding",
+        "2027 grants"
+      ],
+      "questions": [
+        "Are the 2027 CSAC requests the same as final awards?"
+      ],
+      "issueIds": [
+        "REG-049"
+      ],
+      "sourceChecked": "2026-11-09",
+      "reviewDue": "2026-11-16",
+      "publicationClass": "PUBLIC_EXPLANATORY_ANALYSIS",
+      "independentAudit": false,
+      "claims": [
+        {
+          "id": "QP-SOC-2027-003-C01",
+          "claim": "Applicant organizations: 46",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "csac-release"
+          ],
+          "boundary": "Applications reported by City"
+        },
+        {
+          "id": "QP-SOC-2027-003-C02",
+          "claim": "Aggregate requests: Approximately $2.2 million",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "csac-release"
+          ],
+          "boundary": "Applications, not awards"
+        },
+        {
+          "id": "QP-SOC-2027-003-C03",
+          "claim": "Proposed City allocation: $490,000",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "city-csac"
+          ],
+          "boundary": "2027 proposal, not enacted"
+        },
+        {
+          "id": "QP-SOC-2027-003-C04",
+          "claim": "Final 2027 awards: Not confirmed",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "csac-release"
+          ],
+          "boundary": "No final award conclusion"
+        }
+      ],
+      "recordsNeeded": [
+        "County work-session records and response",
+        "Executed intergovernmental agreements and reimbursement ledger",
+        "Final 2027 appropriation and grant awards"
+      ]
+    },
+    {
+      "id": "QP-COUNTY-2026-004",
+      "slug": "county-priorities-2026",
+      "title": "Pueblo County commissioners priorities dashboard — August 2026",
+      "topic": "County government and infrastructure",
+      "stage": "COUNTY-REPORTED DATED SNAPSHOT · NOT INDEPENDENT VERIFICATION",
+      "date": "2026-11-09",
+      "review": "Source-attributed analysis; independent audit and outcome reconciliation remain open.",
+      "summary": "Pueblo County's Board of County Commissioners Smart Priorities Dashboard displays 26 initiatives: 1 complete, 22 underway, and 3 waiting, as of its August 8, 2026 update. These are County-reported statuses, not audited outcomes, payments, or live project states.",
+      "keyFacts": [
+        {
+          "label": "Tracked initiatives",
+          "value": "26",
+          "stage": "August 2026 County snapshot",
+          "source": "county-dashboard"
+        },
+        {
+          "label": "Complete",
+          "value": "1",
+          "stage": "Self-reported County status",
+          "source": "county-dashboard"
+        },
+        {
+          "label": "Underway",
+          "value": "22",
+          "stage": "Self-reported County status",
+          "source": "county-dashboard"
+        },
+        {
+          "label": "Waiting",
+          "value": "3",
+          "stage": "Self-reported County status",
+          "source": "county-dashboard"
+        }
+      ],
+      "whatKnown": [
+        "The dashboard divides 26 priorities into eight portfolios: Financial Strategy (4), Correctional Services & Safety Support (4), Workforce & Organization (4), Growth & Development (6), Economic Development (1), Infrastructure (4), Housing (2), Human Services (1).",
+        "The only item marked complete is Housing trust project checks. The County describes contributions to three affordable housing projects.",
+        "The three items marked waiting are debris removal program, public roads and bridges dashboard, and detention center solar PPA.",
+        "The August financial priorities—2025 audit close, 2026 budget amendment, standing financial reporting, and grant management system—are each marked underway."
+      ],
+      "unknowns": [
+        "Whether a later Board action or operational change altered any August status.",
+        "Contracts, exact funding, cash payments, performance outcomes and individual legal owners for each program.",
+        "Whether any County-listed relationship has enforceable terms; the dashboard alone cannot establish that."
+      ],
+      "who": "The Pueblo County Board of County Commissioners sets the published priorities and reviews them with its Chief Administrative Officer, according to the County dashboard. Individual contractors and grant custodians require separate records.",
+      "what": "26 County initiatives across eight portfolios; not City Council projects.",
+      "when": "Dashboard displays August 8, 2026 as its update; checked November 9, 2026.",
+      "where": "Pueblo County, Colorado; County government and partner agencies, not City of Pueblo.",
+      "why": "The County says the dashboard provides residents a public view of Board priorities and their progress.",
+      "how": "Read the portfolio and status for each initiative. Corroborate material funding, contracts and achieved outcomes in Board agendas, executed agreements, financial reports and delivery evidence.",
+      "money": [
+        {
+          "stage": "Priority status",
+          "detail": "26 published initiatives (1 Complete, 22 Underway, 3 Waiting).",
+          "status": "Self-reported as of August 8, 2026."
+        },
+        {
+          "stage": "Appropriated",
+          "detail": "No comprehensive initiative-by-initiative appropriations in dashboard summary.",
+          "status": "Not established by this page."
+        },
+        {
+          "stage": "Contracted",
+          "detail": "Debris removal procurement marked waiting; no award established in snapshot.",
+          "status": "Check Board resolutions and purchasing records."
+        },
+        {
+          "stage": "Paid and delivered",
+          "detail": "Dashboard status is not a payment ledger or verified outcome.",
+          "status": "Independent receipts and milestones required."
+        }
+      ],
+      "relations": [
+        "Board of County Commissioners → Chief Administrative Officer: stated monitoring relationship in the dashboard.",
+        "County ↔ Pueblo West Metropolitan District: road agreement discussion marked underway; no terms established here.",
+        "County ↔ recovery partners: public dashboard lists wildfire, flood and shelter initiatives, but does not verify each obligation."
+      ],
+      "counter": "A progress label may lag actual activity; the County describes its dashboard as updated monthly, but the displayed date remains August 8. Complete does not prove final spend or delivered outcomes.",
+      "options": [
+        "Open the original dashboard and select the relevant portfolio.",
+        "Retrieve Board minutes, contracts, invoices and outcome metrics for the selected initiative.",
+        "Preserve the August snapshot; compare newer published records rather than silently replacing old states."
+      ],
+      "child": "Sheltering, recovery and housing may have family effects, but this dashboard does not quantify child-level outcomes.",
+      "ee": "Use the dated County index to prioritize high-value original record checks rather than repeat unverified research.",
+      "t2y": "The value is a traceable published status snapshot, not independently audited progress.",
+      "rx": "Compare later Board minutes, grant documents, procurement and finance records; record corrected statuses with provenance.",
+      "actions": [
+        "Open the County dashboard and select one of the 26 initiatives.",
+        "Request initiative-specific authorizations, contract and current status from its public custodian.",
+        "Distinguish County, City and special-district responsibilities."
+      ],
+      "sources": [
+        {
+          "id": "county-dashboard",
+          "title": "Pueblo County — Board of County Commissioners Smart Priorities Dashboard",
+          "url": "https://www.pueblocounty.gov/what-we-are-working",
+          "kind": "Primary County self-reported dashboard",
+          "asOf": "Dashboard updated August 8, 2026; reviewed November 9, 2026",
+          "checked": "2026-11-09",
+          "role": "A2",
+          "locator": "See the named document and stated reporting period; no wider source claim implied.",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        }
+      ],
+      "qification": {
+        "assessment": "Use the dashboard as an August County-reported inventory, then test individual initiatives against records of authority, funding and delivery. A progress label alone cannot establish current completion.",
+        "reasoning": [
+          "Q inference: an initiative identifier can connect Board action, procurement, payments and service milestones without equating those records.",
+          "The displayed August update matters even when a monthly update cadence is intended."
+        ],
+        "temporal": {
+          "past": "August 8, 2026 is the displayed status baseline.",
+          "present": "Counts are preserved from the November 9 brief, not independently audited in this migration.",
+          "future": "Conditional: later Board records can change a status; preserve both versions."
+        },
+        "alternatives": [
+          {
+            "option": "Trace one initiative end to end",
+            "tradeoff": "Needs records beyond the dashboard.",
+            "owner": "County Board and relevant department",
+            "verification": "Authorization, agreement, payments and accepted milestone."
+          },
+          {
+            "option": "Publish dated status differences",
+            "tradeoff": "Needs compatible initiative identifiers.",
+            "owner": "County reporting owner",
+            "verification": "Baseline, later public record and explanation of change."
+          }
+        ],
+        "reopen": [
+          "Later Board minutes and initiative status records",
+          "Project appropriations, contracts and payments",
+          "Accepted deliverables and measured service outcomes"
+        ],
+        "childImpact": {
+          "past": "Older priorities do not measure past family outcomes.",
+          "present": "Housing and recovery effects need aggregate service evidence.",
+          "future": "Assess maintenance and service continuity without household profiling."
+        },
+        "shock": "Conditional stress: delayed funding or a completion label before delivery; require dated acceptance and operating evidence."
+      },
+      "version": "2.0.0",
+      "aliases": [
+        "county dashboard",
+        "county priorities",
+        "smart priorities"
+      ],
+      "questions": [
+        "Does the County priorities dashboard prove all projects are complete?"
+      ],
+      "issueIds": [],
+      "sourceChecked": "2026-11-09",
+      "reviewDue": "2026-12-09",
+      "publicationClass": "PUBLIC_EXPLANATORY_ANALYSIS",
+      "independentAudit": false,
+      "claims": [
+        {
+          "id": "QP-COUNTY-2026-004-C01",
+          "claim": "Tracked initiatives: 26",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "county-dashboard"
+          ],
+          "boundary": "August 2026 County snapshot"
+        },
+        {
+          "id": "QP-COUNTY-2026-004-C02",
+          "claim": "Complete: 1",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "county-dashboard"
+          ],
+          "boundary": "Self-reported County status"
+        },
+        {
+          "id": "QP-COUNTY-2026-004-C03",
+          "claim": "Underway: 22",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "county-dashboard"
+          ],
+          "boundary": "Self-reported County status"
+        },
+        {
+          "id": "QP-COUNTY-2026-004-C04",
+          "claim": "Waiting: 3",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "county-dashboard"
+          ],
+          "boundary": "Self-reported County status"
+        }
+      ],
+      "recordsNeeded": [
+        "Later Board minutes and initiative status records",
+        "Project appropriations, contracts and payments",
+        "Accepted deliverables and measured service outcomes"
+      ]
+    },
+    {
+      "id": "QP-CITY-TAX-2026-005",
+      "slug": "city-mill-levy-2026",
+      "title": "City of Pueblo 2026 property tax mill levy — Ordinance 11074",
+      "topic": "Taxes and local finance",
+      "stage": "ADOPTED MUNICIPAL ORDINANCE · NOT A TOTAL PROPERTY TAX BILL",
+      "date": "2026-11-09",
+      "review": "Source-attributed analysis; independent audit and outcome reconciliation remain open.",
+      "summary": "City of Pueblo Ordinance 11074 establishes a 15.633-mill City property-tax levy for the 2026 budget year. It is the City's rate only, not a total bill that also reflects County, school, district and other levies.",
+      "keyFacts": [
+        {
+          "label": "2026 City levy",
+          "value": "15.633 mills",
+          "stage": "Adopted Ordinance 11074",
+          "source": "ordinance11074"
+        },
+        {
+          "label": "2025 comparison",
+          "value": "15.633 mills",
+          "stage": "Background paper says unchanged",
+          "source": "ordinance11074"
+        },
+        {
+          "label": "Assessed valuation",
+          "value": "$1,386,854,524",
+          "stage": "2025 City taxable assessed value",
+          "source": "ordinance11074"
+        },
+        {
+          "label": "Estimated tax revenue (disputed year)",
+          "value": "$21,280,697",
+          "stage": "Background paper says tax estimate for 2026 budget; ordinance recital labels it fiscal year 2024. Ask City Clerk/Finance for clarification.",
+          "source": "ordinance11074"
+        }
+      ],
+      "whatKnown": [
+        "The City adopted Ordinance 11074 on November 24, 2025, with mayoral approval dated November 26, 2025.",
+        "The ordinance certifies 15.633 gross City mills for the 2026 budget year.",
+        "The accompanying background estimates property-tax revenue of $21,280,697, net of estimated uncollectible taxes. The adopted levy rate is reported as the same as in 2025.",
+        "SOURCE DISCREPANCY: The ordinance's accompanying November 24, 2025 background paper says the 15.633-mill levy is for 2026 and estimates $21,280,697 in property-tax revenue, but the ordinance's WHEREAS clause explicitly labels the $21,280,697 figure as fiscal year 2024. Q-Pueblo does not silently correct this inconsistency or treat it as an audited 2026 collection."
+      ],
+      "unknowns": [
+        "Any household's parcel-specific taxable assessed value and other local taxing jurisdictions.",
+        "Actually collected cash, delinquency, adjustments and refunds.",
+        "Any later amendments or corrections to rate and valuation.",
+        "Whether the fiscal year 2024 reference is a clerical error or the revenue projection was carried from another accounting period; obtain written clarification from the originating authority."
+      ],
+      "who": "City Council authorized the municipal levy; the County Assessor supplies the taxable valuation basis. Other governments set additional rates.",
+      "what": "City municipal mill levy, not Pueblo County's aggregate property tax rate.",
+      "when": "Council final adoption November 24, 2025; levy for fiscal 2026.",
+      "where": "Taxable property within City of Pueblo, Colorado.",
+      "why": "To support the City's general operating expenditures.",
+      "how": "Municipal component is assessed taxable value multiplied by 15.633 / 1000, subject to actual parcel assessment, exemptions and applicable rules.",
+      "money": [
+        {
+          "stage": "Rate adopted",
+          "detail": "15.633 City mills",
+          "status": "Primary ordinance, not all jurisdictions."
+        },
+        {
+          "stage": "Expected revenues",
+          "detail": "Background paper estimates $21,280,697; ordinance recital instead identifies fiscal year 2024.",
+          "status": "Disputed year across pages of the same source document. Not verified 2026 collected cash."
+        },
+        {
+          "stage": "Tax bill",
+          "detail": "Depends on parcel and every applicable taxing entity.",
+          "status": "Not computable without official parcel values."
+        },
+        {
+          "stage": "Paid",
+          "detail": "No collection figures in ordinance.",
+          "status": "Treasury accounting required."
+        }
+      ],
+      "relations": [
+        "City Council → City levy: adoption and certification in Ordinance 11074.",
+        "County Assessor → valuation input: certified City assessed valuation.",
+        "Other taxing jurisdictions → additional components: property bills vary by parcel."
+      ],
+      "counter": "15.633 mills does not equal Pueblo County's full levy or an individual resident's complete tax bill. The ordinance's $21,280,697 revenue recital calls it fiscal year 2024 while the covering 2026 background paper treats it as the 2026 levy estimate; both statements must be preserved.",
+      "options": [
+        "Read the City ordinance directly.",
+        "Use official parcel-specific assessments and all relevant district rates for a household calculation.",
+        "Compare estimates and collections only after checking accounting periods."
+      ],
+      "child": "No independent child-specific outcome is evidenced by a levy rate; trace actual funded services.",
+      "ee": "Retrieve assessed valuation and taxing districts first to avoid invalid individual estimates.",
+      "t2y": "The enacted rate is source-backed, but a complete tax bill needs more records.",
+      "rx": "Preserve the ordinance and seek authenticated assessment, levy and collection records when challenged.",
+      "actions": [
+        "Read Ordinance 11074.",
+        "Use official County assessment and treasurer records for property-specific figures.",
+        "Separate enacted levy, revenue forecast, cash collected and public service delivery."
+      ],
+      "sources": [
+        {
+          "id": "ordinance11074",
+          "title": "City of Pueblo — Ordinance 11074, FY2026 mill levy",
+          "url": "https://www.pueblo.us/DocumentCenter/View/39356/Ordinance11074-Mill-Levy",
+          "kind": "Primary municipal ordinance",
+          "asOf": "Adopted November 24, 2025; checked November 9, 2026",
+          "checked": "2026-11-09",
+          "role": "A0",
+          "locator": "See the named document and stated reporting period; no wider source claim implied.",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        }
+      ],
+      "qification": {
+        "assessment": "The adopted City rate and the conflicting revenue-year labels must remain separate. A disputed-year estimate is not a verified collection or a complete property tax bill.",
+        "reasoning": [
+          "The background paper and ordinance recital use different fiscal-year language for the same revenue figure. Seek written clarification from the originating authority.",
+          "Q inference: household comparisons require parcel assessment, all applicable districts and exemptions."
+        ],
+        "temporal": {
+          "past": "November 2025 adoption for the 2026 City levy.",
+          "present": "The 2024/2026 revenue-year discrepancy remains open.",
+          "future": "Conditional: official clarification or amendment may supersede part of this analysis; preserve the original conflict."
+        },
+        "alternatives": [
+          {
+            "option": "Obtain written source clarification",
+            "tradeoff": "Avoids silently rewriting an enacted record.",
+            "owner": "City Clerk and Finance",
+            "verification": "Authenticated explanation, corrected instrument or unresolved disposition."
+          },
+          {
+            "option": "Compare parcel-specific obligations",
+            "tradeoff": "Needs current assessment and all taxing districts.",
+            "owner": "Assessor, Treasurer and taxing authorities",
+            "verification": "Compatible assessed value, exemptions, levies and period."
+          }
+        ],
+        "reopen": [
+          "Clerk/Finance clarification of 2024/2026 revenue labels",
+          "Parcel assessment and applicable taxing districts",
+          "Actual collection and adjustment records"
+        ],
+        "childImpact": {
+          "past": "An older levy does not prove services received.",
+          "present": "No child or household hardship is inferred from a rate.",
+          "future": "Trace service and maintenance commitments separately from revenues."
+        },
+        "shock": "Conditional stress: valuation or collections change. Quantify only with validated assessments, exemptions and cash records."
+      },
+      "version": "2.0.0",
+      "aliases": [
+        "mill levy",
+        "city property tax",
+        "ordinance 11074"
+      ],
+      "questions": [
+        "Is the 2026 City mill levy my complete property tax bill?"
+      ],
+      "issueIds": [],
+      "sourceChecked": "2026-11-09",
+      "reviewDue": "2026-12-09",
+      "publicationClass": "PUBLIC_EXPLANATORY_ANALYSIS",
+      "independentAudit": false,
+      "claims": [
+        {
+          "id": "QP-CITY-TAX-2026-005-C01",
+          "claim": "2026 City levy: 15.633 mills",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "ordinance11074"
+          ],
+          "boundary": "Adopted Ordinance 11074"
+        },
+        {
+          "id": "QP-CITY-TAX-2026-005-C02",
+          "claim": "2025 comparison: 15.633 mills",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "ordinance11074"
+          ],
+          "boundary": "Background paper says unchanged"
+        },
+        {
+          "id": "QP-CITY-TAX-2026-005-C03",
+          "claim": "Assessed valuation: $1,386,854,524",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "ordinance11074"
+          ],
+          "boundary": "2025 City taxable assessed value"
+        },
+        {
+          "id": "QP-CITY-TAX-2026-005-C04",
+          "claim": "Estimated tax revenue (disputed year): $21,280,697",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "ordinance11074"
+          ],
+          "boundary": "Background paper says tax estimate for 2026 budget; ordinance recital labels it fiscal year 2024. Ask City Clerk/Finance for clarification."
+        }
+      ],
+      "recordsNeeded": [
+        "Clerk/Finance clarification of 2024/2026 revenue labels",
+        "Parcel assessment and applicable taxing districts",
+        "Actual collection and adjustment records"
+      ]
+    },
+    {
+      "id": "QP-QIFY-2026-004",
+      "slug": "permits-jurisdiction",
+      "title": "Building permits: location determines the responsible authority",
+      "topic": "Government & law",
+      "stage": "SOURCE-ATTRIBUTED EXPLANATORY REPORT · INDEPENDENT REVIEW OPEN",
+      "date": "2026-11-09",
+      "review": "Stated source sections checked; independent review and full outcome reconciliation remain open.",
+      "summary": "The current County and Southern Colorado Building Department pages distinguish City of Pueblo/Town of Boone projects from unincorporated Pueblo County projects. A Pueblo mailing address alone does not identify the permitting authority.",
+      "keyFacts": [
+        {
+          "label": "City of Pueblo and Boone",
+          "value": "Southern Colorado Building Department",
+          "stage": "Published service jurisdiction",
+          "source": "socobd"
+        },
+        {
+          "label": "Unincorporated county",
+          "value": "Pueblo County Building Division",
+          "stage": "Published service jurisdiction",
+          "source": "county-permits"
+        },
+        {
+          "label": "County transition",
+          "value": "January 1, 2026",
+          "stage": "Published operational transition date",
+          "source": "county-permits"
+        }
+      ],
+      "whatKnown": [
+        "The County portal routes projects by jurisdiction and provides access to pre-2026 historical permit records.",
+        "SoCoBD publishes a separate transition notice and 2026 fee/code changes."
+      ],
+      "unknowns": [
+        "The correct authority for an individual parcel still requires the official jurisdiction map and agency confirmation.",
+        "Project-specific fees, code edition, utility approvals and transfer status are not determined by this report."
+      ],
+      "who": "County Building Division for unincorporated areas; SoCoBD for the City and Boone, subject to parcel confirmation.",
+      "what": "Jurisdiction, historical permits and continuity across the 2026 transition.",
+      "when": "Transition effective January 1, 2026; web guidance checked November 9.",
+      "where": "City of Pueblo, Boone and unincorporated Pueblo County, including Pueblo West.",
+      "why": "A misrouted application can add avoidable delay and leave missing inspection or permit history.",
+      "how": "Confirm parcel jurisdiction; retrieve the historical permit; ask the receiving authority which approval, fees and inspections remain required.",
+      "money": [
+        {
+          "stage": "Estimate",
+          "detail": "Project-specific permit and plan-review fees",
+          "status": "No fee estimate calculated here."
+        },
+        {
+          "stage": "Authorization",
+          "detail": "Permit and related approvals",
+          "status": "A submitted application is not an issued permit."
+        },
+        {
+          "stage": "Delivery",
+          "detail": "Completed inspections and final acceptance",
+          "status": "A payment is not construction approval."
+        }
+      ],
+      "relations": [
+        "Direct: parcel → permitting authority, based on jurisdiction.",
+        "Second order, analytical: permit continuity can affect lenders, contractors and utilities.",
+        "Third order, conditional: delay or incomplete records can affect housing delivery and future maintenance."
+      ],
+      "counter": "A changed department name does not itself establish lost records or poorer service. Existing and new projects can have different transition arrangements.",
+      "options": [
+        "Confirm jurisdiction before preparing a paid application.",
+        "Request a transfer/history checklist for an existing project."
+      ],
+      "actions": [
+        "Use the official jurisdiction check before choosing a portal.",
+        "Retain the old permit number and written transfer instructions.",
+        "Ask the responsible agency for the applicable code and fee schedule for the specific project."
+      ],
+      "sources": [
+        {
+          "id": "county-permits",
+          "title": "Pueblo County Building Division",
+          "url": "https://pueblopermits.com/",
+          "kind": "Official attributed communication",
+          "role": "A2",
+          "asOf": "Current portal checked 2026-11-09",
+          "locator": "City vs County Permits; historical records; transition notice",
+          "checked": "2026-11-09",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        },
+        {
+          "id": "socobd",
+          "title": "Southern Colorado Building Department",
+          "url": "https://socobd.com/",
+          "kind": "Official attributed communication",
+          "role": "A2",
+          "asOf": "Current portal checked 2026-11-09",
+          "locator": "Transition Notes; 2026 fee/code notices",
+          "checked": "2026-11-09",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        }
+      ],
+      "child": "Housing safety and accessibility remain material for children and families.",
+      "ee": "Avoid duplicate applications and repeated plan preparation by confirming jurisdiction first. No time or dollar saving is claimed without measurements.",
+      "t2y": "Truth-to-Yield: use the supported record to identify a practical next step; no numerical score or verified community outcome is inferred.",
+      "rx": "Keep original source dates and alternative explanations. Reopen this analysis when the listed records or corrections become available.",
+      "qification": {
+        "assessment": "A location-first workflow is the clearest supported action. The transition creates a need to preserve record continuity; it does not establish a service failure.",
+        "reasoning": [
+          "Q inference: project geography, record custody and inspection responsibility should be resolved together. Routing only by a mailing address can produce the wrong workflow.",
+          "Q inference: a written handoff reduces uncertainty about which inspections and prior approvals are recognized; it cannot waive applicable safety requirements."
+        ],
+        "temporal": {
+          "past": "Pre-2026 permits remain part of project history.",
+          "present": "Current official pages publish distinct jurisdictions.",
+          "future": "Conditional: a repeatable transfer checklist can reduce rework; savings have not been measured."
+        },
+        "alternatives": [
+          {
+            "option": "Confirm routing before applying",
+            "tradeoff": "Adds an early check but can avoid rework.",
+            "owner": "Applicant and responsible building authority",
+            "verification": "Parcel confirmation and the receiving portal in writing."
+          },
+          {
+            "option": "Preserve the permit chain",
+            "tradeoff": "Requires matching old and new identifiers.",
+            "owner": "Records custodians and applicant",
+            "verification": "Complete permit and inspection sequence, with open conditions."
+          }
+        ],
+        "reopen": [
+          "Parcel jurisdiction determination",
+          "Any transfer policy and project-specific inspection record"
+        ],
+        "childImpact": {
+          "past": "Historic approvals can affect present building conditions.",
+          "present": "Housing safety and accessibility remain material for children and families.",
+          "future": "Keep inspection and maintenance records available for later occupants."
+        },
+        "shock": "Conditional stress: a portal outage or disputed transfer. Preserve local copies and obtain written agency instructions."
+      },
+      "aliases": [
+        "building permit",
+        "permits",
+        "pueblo west",
+        "boone",
+        "socobd",
+        "building department"
+      ],
+      "questions": [
+        "Where do I get a building permit in Pueblo West?",
+        "Which building department serves the City of Pueblo?"
+      ],
+      "issueIds": [
+        "REG-074"
+      ],
+      "version": "2.0.0",
+      "sourceChecked": "2026-11-09",
+      "reviewDue": "2026-12-09",
+      "publicationClass": "PUBLIC_EXPLANATORY_ANALYSIS",
+      "independentAudit": false,
+      "claims": [
+        {
+          "id": "QP-QIFY-2026-004-C01",
+          "claim": "City of Pueblo and Boone: Southern Colorado Building Department",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "socobd"
+          ],
+          "boundary": "Published service jurisdiction"
+        },
+        {
+          "id": "QP-QIFY-2026-004-C02",
+          "claim": "Unincorporated county: Pueblo County Building Division",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "county-permits"
+          ],
+          "boundary": "Published service jurisdiction"
+        },
+        {
+          "id": "QP-QIFY-2026-004-C03",
+          "claim": "County transition: January 1, 2026",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "county-permits"
+          ],
+          "boundary": "Published operational transition date"
+        }
+      ],
+      "recordsNeeded": [
+        "Parcel jurisdiction determination",
+        "Any transfer policy and project-specific inspection record"
+      ]
+    },
+    {
+      "id": "QP-QIFY-2026-005",
+      "slug": "wastewater-2026",
+      "title": "Arkansas River sewage discharge: repair, water testing and accountability are different questions",
+      "topic": "Health & safety",
+      "stage": "SOURCE-ATTRIBUTED EXPLANATORY REPORT · INDEPENDENT REVIEW OPEN",
+      "date": "2026-11-09",
+      "review": "Stated source sections checked; independent review and full outcome reconciliation remain open.",
+      "summary": "The City’s September 14, 2026 statement describes an August discharge, its account of detection and bypass repair, and a separate water-testing role for CDPHE. That statement does not establish present-day river safety or an independent cause finding.",
+      "keyFacts": [
+        {
+          "label": "Incident account",
+          "value": "August 2026 discharge",
+          "stage": "City-attributed event description",
+          "source": "city-spill"
+        },
+        {
+          "label": "Public explanation",
+          "value": "September 14, 2026",
+          "stage": "City statement date",
+          "source": "city-spill"
+        },
+        {
+          "label": "Current river safety",
+          "value": "Not established here",
+          "stage": "Requires current official testing/advisories",
+          "source": "city-spill"
+        }
+      ],
+      "whatKnown": [
+        "The City attributes the release to a bypass operation and a pipe configuration described in its statement.",
+        "The City identifies CDPHE testing and points readers to the state public-health record."
+      ],
+      "unknowns": [
+        "Independent engineering cause, regulatory disposition and final repair acceptance have not been reconciled.",
+        "A current sampling series, affected uses, notification chronology and costs are not established in this report."
+      ],
+      "who": "City Wastewater for its infrastructure account; CDPHE and other competent agencies for testing, regulatory records and current advisories.",
+      "what": "Discharge explanation, evidence separation and follow-up accountability.",
+      "when": "August incident; September 14 City explanation; source checked November 9.",
+      "where": "Arkansas River and potentially affected downstream jurisdictions; exact exposure depends on official data.",
+      "why": "Stopping a release, restoring a system and establishing safe downstream use require different evidence.",
+      "how": "Compare operating logs, engineering investigation, regulator notices, laboratory results and notification records.",
+      "money": [
+        {
+          "stage": "Authorized repair",
+          "detail": "Relevant project authority and emergency work orders",
+          "status": "Not reconciled."
+        },
+        {
+          "stage": "Payment",
+          "detail": "Invoices and actual outflows",
+          "status": "No repair-cost total established."
+        },
+        {
+          "stage": "Outcome",
+          "detail": "System performance and current water-use evidence",
+          "status": "No safety conclusion inferred from a completed repair."
+        }
+      ],
+      "relations": [
+        "Direct: wastewater bypass and receiving river, as described by the City.",
+        "Second order, conditional: downstream water users, recreation and agriculture may require distinct guidance.",
+        "Third order, conditional: service reliability and trust depend on independently reviewable repair and notice records."
+      ],
+      "counter": "The City is the operator explaining its own incident. Its account deserves attribution, while an independent engineering or regulatory finding may add or change the explanation.",
+      "options": [
+        "Publish a source-linked incident chronology.",
+        "Compare the repair closeout and sampling record before making a present-safety claim."
+      ],
+      "actions": [
+        "Use current official advisories for water-use decisions.",
+        "Request the incident log, regulator correspondence, laboratory results and repair closeout by date.",
+        "Keep estimated discharge, observed flow difference and independently measured impact separate."
+      ],
+      "sources": [
+        {
+          "id": "city-spill",
+          "title": "City of Pueblo — Wastewater discharge follow-up",
+          "url": "https://www.pueblo.us/m/newsflash/home/detail/5002",
+          "kind": "Official attributed communication",
+          "role": "A2",
+          "asOf": "Published 2026-09-14",
+          "locator": "Detection, bypass explanation and CDPHE reference",
+          "checked": "2026-11-09",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        }
+      ],
+      "child": "Any child or family exposure claim needs appropriate public-health evidence; none is inferred here.",
+      "ee": "Use one verified incident chronology across agencies. Reduce repeated information requests while preserving distinct engineering and health evidence.",
+      "t2y": "Truth-to-Yield: use the supported record to identify a practical next step; no numerical score or verified community outcome is inferred.",
+      "rx": "Keep original source dates and alternative explanations. Reopen this analysis when the listed records or corrections become available.",
+      "qification": {
+        "assessment": "The strongest supported conclusion is that several accountability questions remain separate. An operator’s explanation cannot substitute for independent cause, exposure or current-safety evidence.",
+        "reasoning": [
+          "Q inference: use a single chronology with separate clocks for discovery, control, agency notification, public notice and test results. This reveals actual timing without presuming delay or fault.",
+          "Q inference: an engineering acceptance record and a water-quality result answer different questions. Treating either as a universal closeout can conceal a remaining evidence gap."
+        ],
+        "temporal": {
+          "past": "Preserve the incident and maintenance history without assuming that old conditions persist.",
+          "present": "The cited explanation is historical; no live safety data are available in this report.",
+          "future": "Conditional: independently checked repair and notification changes can reduce repeat risk; effectiveness needs later measurement."
+        },
+        "alternatives": [
+          {
+            "option": "Independent incident reconciliation",
+            "tradeoff": "Requires operating and regulatory records; avoids judging from one statement.",
+            "owner": "Operator and competent regulator",
+            "verification": "A dated cause, repair, notification and sampling crosswalk."
+          },
+          {
+            "option": "Publish a readable closeout",
+            "tradeoff": "Needs redaction of sensitive infrastructure details.",
+            "owner": "Responsible agencies",
+            "verification": "What was repaired, which tests apply, unresolved conditions and next review."
+          }
+        ],
+        "reopen": [
+          "Regulator incident and enforcement record",
+          "Laboratory sampling dates, locations and applicable standards",
+          "Engineering cause and repair acceptance"
+        ],
+        "childImpact": {
+          "past": "Historical infrastructure choices can affect present reliability.",
+          "present": "Any child or family exposure claim needs appropriate public-health evidence; none is inferred here.",
+          "future": "Evaluate maintenance, notification and safe access over time at aggregate level."
+        },
+        "shock": "Conditional stress: another bypass or sampling conflict. Use current regulator instructions and preserve contradictory results."
+      },
+      "aliases": [
+        "wastewater",
+        "sewage",
+        "sewer spill",
+        "arkansas river discharge"
+      ],
+      "questions": [
+        "Does the 2026 sewage-discharge report prove the river is safe today?"
+      ],
+      "issueIds": [
+        "REG-050"
+      ],
+      "version": "2.0.0",
+      "sourceChecked": "2026-11-09",
+      "reviewDue": "2026-12-09",
+      "publicationClass": "PUBLIC_EXPLANATORY_ANALYSIS",
+      "independentAudit": false,
+      "claims": [
+        {
+          "id": "QP-QIFY-2026-005-C01",
+          "claim": "Incident account: August 2026 discharge",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "city-spill"
+          ],
+          "boundary": "City-attributed event description"
+        },
+        {
+          "id": "QP-QIFY-2026-005-C02",
+          "claim": "Public explanation: September 14, 2026",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "city-spill"
+          ],
+          "boundary": "City statement date"
+        },
+        {
+          "id": "QP-QIFY-2026-005-C03",
+          "claim": "Current river safety: Not established here",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "city-spill"
+          ],
+          "boundary": "Requires current official testing/advisories"
+        }
+      ],
+      "recordsNeeded": [
+        "Regulator incident and enforcement record",
+        "Laboratory sampling dates, locations and applicable standards",
+        "Engineering cause and repair acceptance"
+      ]
+    },
+    {
+      "id": "QP-QIFY-2026-006",
+      "slug": "housing-pipeline",
+      "title": "Pueblo housing: permitted, financed, built and occupied are different outcomes",
+      "topic": "Housing & land",
+      "stage": "SOURCE-ATTRIBUTED EXPLANATORY REPORT · INDEPENDENT REVIEW OPEN",
+      "date": "2026-11-09",
+      "review": "Stated source sections checked; independent review and full outcome reconciliation remain open.",
+      "summary": "The City’s October 20, 2026 release reports 320 units permitted in 2025 and describes Compass Pointe, Riverly and other housing projects at different development stages. These figures do not establish that all the homes are completed, occupied or affordable to every household.",
+      "keyFacts": [
+        {
+          "label": "2025 units",
+          "value": "320",
+          "stage": "City-reported permitted units",
+          "source": "city-housing"
+        },
+        {
+          "label": "Compass Pointe",
+          "value": "192 homes",
+          "stage": "City-described development; completion scheduled for 2027",
+          "source": "city-housing"
+        },
+        {
+          "label": "Riverly",
+          "value": "98 proposed units",
+          "stage": "City-described proposal",
+          "source": "city-housing"
+        }
+      ],
+      "whatKnown": [
+        "The City release distinguishes a permit count from projects scheduled or proposed for later delivery.",
+        "It describes Proposition 123 eligibility and financing arrangements, which need their own award and agreement records."
+      ],
+      "unknowns": [
+        "Independent permit-to-completion reconciliation, occupancy, rents and household access have not been verified here.",
+        "Project subsidy totals may contain different instruments and overlapping funding sources."
+      ],
+      "who": "City Housing and Citizen Services; relevant permitting authority; developers, funding agencies and property operators under their own agreements.",
+      "what": "Housing supply stages, public investment and practical affordability.",
+      "when": "City release October 20, 2026; 2025 permit statistic; some future project milestones.",
+      "where": "City permit totals and individual Pueblo projects; countywide needs are a separate denominator.",
+      "why": "A headline production number can coexist with unmet need if units are unfinished, inaccessible, differently priced or in a different geography.",
+      "how": "Trace project IDs from permit through financing, construction, acceptance, covenant, occupancy and observed rents.",
+      "money": [
+        {
+          "stage": "Eligibility",
+          "detail": "Ability to compete for funding",
+          "status": "Not an award to every local project."
+        },
+        {
+          "stage": "Financing",
+          "detail": "Bonds, loans, grants, waivers and private equity",
+          "status": "Different instruments must not be added as equivalent cash grants."
+        },
+        {
+          "stage": "Delivery",
+          "detail": "Completed and occupied units",
+          "status": "Needs completion and occupancy evidence."
+        },
+        {
+          "stage": "Outcome",
+          "detail": "Stable and affordable housing access",
+          "status": "Requires income, rent, eligibility and service measures."
+        }
+      ],
+      "relations": [
+        "Direct: project sponsor, funding instruments and permitting body.",
+        "Second order, analytical: utilities, contractors, nearby services and transport affect delivery and access.",
+        "Third order, conditional: household stability and school continuity depend on actual availability, cost and location."
+      ],
+      "counter": "Permit growth is a useful supply signal, but it is neither proof that an affordability problem is solved nor evidence that investment has failed.",
+      "options": [
+        "Publish a project-by-project pipeline with a single unit identifier.",
+        "Compare promised affordability terms with observed rents and access once homes open."
+      ],
+      "actions": [
+        "Check whether a cited number refers to permits, proposed units, construction, completion or occupancy.",
+        "For a named development, request the funding instrument, affordability covenant and latest delivery milestone.",
+        "Use the City resource guide for assistance routes; do not infer present vacancies or eligibility from this report."
+      ],
+      "sources": [
+        {
+          "id": "city-housing",
+          "title": "City of Pueblo — Housing production and development statement",
+          "url": "https://www.pueblo.us/m/newsflash/Home/Detail/5024",
+          "kind": "Official attributed communication",
+          "role": "A2",
+          "asOf": "Published 2026-10-20",
+          "locator": "Permit totals; Compass Pointe; Riverly; Proposition 123",
+          "checked": "2026-11-09",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        },
+        {
+          "id": "housing-help",
+          "title": "City of Pueblo — Housing and Homelessness Guide",
+          "url": "https://www.pueblo.us/2949/Housing-and-Homelessness-Guide",
+          "kind": "Official attributed communication",
+          "role": "A2",
+          "asOf": "Guide checked 2026-11-09",
+          "locator": "Service categories; provider details require current confirmation",
+          "checked": "2026-11-09",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        }
+      ],
+      "child": "Housing stability can matter for school and care continuity; project-level effects are not measured here.",
+      "ee": "Reuse one project pipeline instead of repeatedly reconciling press-release totals. Include infrastructure, operating costs and staff review where documented.",
+      "t2y": "Truth-to-Yield: use the supported record to identify a practical next step; no numerical score or verified community outcome is inferred.",
+      "rx": "Keep original source dates and alternative explanations. Reopen this analysis when the listed records or corrections become available.",
+      "qification": {
+        "assessment": "The useful measure is conversion through the housing pipeline, together with who can actually obtain a home. Aggregate permit growth cannot answer those distribution and delivery questions.",
+        "reasoning": [
+          "Q inference: a unit-level pipeline prevents proposed and completed homes from being counted together. It also makes delays visible without assuming their cause.",
+          "Q inference: public financing is best evaluated against enforceable affordability, delivery and access conditions. A financing announcement alone is too early to claim a household outcome."
+        ],
+        "temporal": {
+          "past": "Keep prior permit definitions, city boundaries and project amendments when comparing years.",
+          "present": "The source establishes the City’s dated account of the pipeline.",
+          "future": "Conditional: completed homes could improve access, but rents, eligibility, transport and household resources determine the experienced benefit."
+        },
+        "alternatives": [
+          {
+            "option": "Track conversion and delays",
+            "tradeoff": "Requires matching identifiers across agencies.",
+            "owner": "Housing staff, permit authority and project operator",
+            "verification": "Permit → financed → completed → occupied counts without duplicates."
+          },
+          {
+            "option": "Measure affordability after opening",
+            "tradeoff": "Requires privacy-preserving aggregate data.",
+            "owner": "Funding agency and operator",
+            "verification": "Covenant terms, actual rents, eligible demand and access barriers."
+          }
+        ],
+        "reopen": [
+          "Completion and occupancy records",
+          "Executed affordability covenant and financing agreements",
+          "Comparable rent, income and access measures"
+        ],
+        "childImpact": {
+          "past": "Past shortages and land choices need dated evidence, not assumed causes.",
+          "present": "Housing stability can matter for school and care continuity; project-level effects are not measured here.",
+          "future": "Compare long-lived affordability terms and infrastructure obligations with later household outcomes."
+        },
+        "shock": "Conditional stress: financing delay, construction overrun or higher operating costs. Compare continuity and affordability protections under each scenario."
+      },
+      "aliases": [
+        "housing",
+        "riverly",
+        "compass pointe",
+        "affordable homes",
+        "proposition 123"
+      ],
+      "questions": [
+        "Do Pueblo housing permit totals equal completed homes?",
+        "What stage is Riverly described as in the October 2026 City statement?"
+      ],
+      "issueIds": [
+        "REG-046",
+        "REG-068"
+      ],
+      "version": "2.0.0",
+      "sourceChecked": "2026-11-09",
+      "reviewDue": "2026-12-09",
+      "publicationClass": "PUBLIC_EXPLANATORY_ANALYSIS",
+      "independentAudit": false,
+      "claims": [
+        {
+          "id": "QP-QIFY-2026-006-C01",
+          "claim": "2025 units: 320",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "city-housing"
+          ],
+          "boundary": "City-reported permitted units"
+        },
+        {
+          "id": "QP-QIFY-2026-006-C02",
+          "claim": "Compass Pointe: 192 homes",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "city-housing"
+          ],
+          "boundary": "City-described development; completion scheduled for 2027"
+        },
+        {
+          "id": "QP-QIFY-2026-006-C03",
+          "claim": "Riverly: 98 proposed units",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "city-housing"
+          ],
+          "boundary": "City-described proposal"
+        }
+      ],
+      "recordsNeeded": [
+        "Completion and occupancy records",
+        "Executed affordability covenant and financing agreements",
+        "Comparable rent, income and access measures"
+      ]
+    },
+    {
+      "id": "QP-QIFY-2026-007",
+      "slug": "aspen-recovery",
+      "title": "Aspen Acres recovery: a disaster declaration is not the same as individual assistance",
+      "topic": "Environment & place",
+      "stage": "SOURCE-ATTRIBUTED EXPLANATORY REPORT · INDEPENDENT REVIEW OPEN",
+      "date": "2026-11-09",
+      "review": "Stated source sections checked; independent review and full outcome reconciliation remain open.",
+      "summary": "Pueblo County’s rebuilding page, updated October 19, 2026, describes a major-disaster declaration supporting infrastructure and debris work while distinguishing denied individual-assistance portions. Its damage-registration portal is explicitly not a FEMA individual-assistance application. Later amendments and appeal outcomes still need checking.",
+      "keyFacts": [
+        {
+          "label": "County guidance date",
+          "value": "October 19, 2026",
+          "stage": "Published page update",
+          "source": "county-recovery"
+        },
+        {
+          "label": "Damage registration",
+          "value": "Not an individual-assistance application",
+          "stage": "Explicit County distinction",
+          "source": "county-recovery"
+        },
+        {
+          "label": "Federal declaration record",
+          "value": "FEMA-4944-DR",
+          "stage": "Amendment identifies declaration dated September 1, 2026",
+          "source": "federal-amendment"
+        }
+      ],
+      "whatKnown": [
+        "The County page separates damage reporting, rebuilding permits and assistance pathways.",
+        "A Federal Register amendment identifies FEMA-4944-DR; its general funding-code list is not proof that every assistance program is authorized for every survivor."
+      ],
+      "unknowns": [
+        "Latest appeal or assistance amendments, applicant eligibility and remaining program deadlines are not independently reconciled.",
+        "Amounts committed, paid by insurance, paid by public programs and provided by charities may overlap."
+      ],
+      "who": "FEMA and state authorities for authorized federal programs; County agencies for local rebuilding processes; each aid provider for its own eligibility and application.",
+      "what": "Recovery pathways, assistance categories and evidence needed to measure progress.",
+      "when": "County page updated October 19; federal amendment published November 3; checked November 9.",
+      "where": "Fire-affected Pueblo/Custer region as applicable to each specific program.",
+      "why": "A household could otherwise register damage and reasonably, but incorrectly, believe a separate aid application is complete.",
+      "how": "Confirm current program authorization, eligible geography, applicant requirements, application receipt and funding stage with the responsible provider.",
+      "money": [
+        {
+          "stage": "Authorized program",
+          "detail": "Declaration and program-specific designation",
+          "status": "Not every assistance category follows automatically."
+        },
+        {
+          "stage": "Application or registration",
+          "detail": "Different administrative purposes",
+          "status": "A damage report is not proof of an aid application."
+        },
+        {
+          "stage": "Award and payment",
+          "detail": "Provider-specific decision and disbursement",
+          "status": "No household award is determined here."
+        },
+        {
+          "stage": "Recovery",
+          "detail": "Safe housing, utilities and durable restoration",
+          "status": "Not established by dollars announced or a permit alone."
+        }
+      ],
+      "relations": [
+        "Direct: applicant or public project → specific assistance authority.",
+        "Second order, analytical: insurance, debris work, utilities, permits and rebuilding can constrain each other.",
+        "Third order, conditional: school, employment and household stability depend on durable recovery rather than one milestone."
+      ],
+      "counter": "A declaration can be real while a particular assistance category is unavailable or contested. An old request, a general program-code list and a current individual award are not interchangeable.",
+      "options": [
+        "Publish a dated program-status table.",
+        "Track aggregate recovery stages with separate funding categories and no personal survivor profiles."
+      ],
+      "actions": [
+        "Open the latest County guidance and the relevant program’s current official instructions before acting.",
+        "Confirm separate application requirements and retain receipts.",
+        "Do not treat older listed deadlines or service hours as current without provider confirmation."
+      ],
+      "sources": [
+        {
+          "id": "county-recovery",
+          "title": "Pueblo County — Aspen Acres rebuilding resources",
+          "url": "https://pueblopermits.com/aspen-acres-fire-recovery-resources/",
+          "kind": "Official attributed communication",
+          "role": "A2",
+          "asOf": "Page updated 2026-10-19",
+          "locator": "FEMA information; damage registration; program deadlines",
+          "checked": "2026-11-09",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        },
+        {
+          "id": "federal-amendment",
+          "title": "Federal Register — Declaration amendments, FEMA-4944-DR section",
+          "url": "https://public-inspection.federalregister.gov/2026-22371.pdf",
+          "kind": "Controlling public document",
+          "role": "A0",
+          "asOf": "Published 2026-11-03",
+          "locator": "PDF page 16, Colorado amendment; not individual eligibility",
+          "checked": "2026-11-09",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        }
+      ],
+      "child": "Protect survivor identities; measure school, housing and care continuity only in appropriate aggregates.",
+      "ee": "Use one current program register and reusable document checklist. Avoid duplicate applications and measure review burden; no saving or aid amount is inferred.",
+      "t2y": "Truth-to-Yield: use the supported record to identify a practical next step; no numerical score or verified community outcome is inferred.",
+      "rx": "Keep original source dates and alternative explanations. Reopen this analysis when the listed records or corrections become available.",
+      "qification": {
+        "assessment": "Recovery information must be organized by program and applicant, not by the existence of one declaration. The present evidence supports clear distinctions but not an eligibility decision or a claim that recovery is complete.",
+        "reasoning": [
+          "Q inference: a pathway should make registration, application, award, payment, physical repair and durable recovery visible as separate steps.",
+          "Q inference: combine aid data only after checking overlap with insurance and other providers; otherwise an aggregate total can overstate resources actually available for unmet needs."
+        ],
+        "temporal": {
+          "past": "Preserve requests, original decisions and amendments; an earlier incomplete search is not controlling authority.",
+          "present": "Use the dated County and federal records within their scopes. Current amendments and deadlines remain a recheck requirement.",
+          "future": "Conditional: track housing, utility and service restoration to assess whether recovery is durable."
+        },
+        "alternatives": [
+          {
+            "option": "Program-status and deadline register",
+            "tradeoff": "Requires frequent official checks; prevents expired offers appearing current.",
+            "owner": "Program administrators and local information custodians",
+            "verification": "Authorization, eligibility, deadline, application route and checked date."
+          },
+          {
+            "option": "Aggregate recovery pathway",
+            "tradeoff": "Needs privacy controls and common definitions.",
+            "owner": "Authorized recovery partners",
+            "verification": "Stage counts, blockers and independently documented completion."
+          }
+        ],
+        "reopen": [
+          "Latest FEMA/state program designation or appeal decision",
+          "Current provider deadlines and application confirmation",
+          "Separated public, insurance and charitable disbursement totals"
+        ],
+        "childImpact": {
+          "past": "Disaster losses and assistance requests require their original dates.",
+          "present": "Protect survivor identities; measure school, housing and care continuity only in appropriate aggregates.",
+          "future": "Evaluate rebuilding resilience, affordability and recurring maintenance without claiming a model predicts future loss."
+        },
+        "shock": "Conditional stress: another disruption or provider outage. Keep dated official alternatives and a human assistance route; this report is not an emergency-status feed."
+      },
+      "aliases": [
+        "aspen acres",
+        "fire recovery",
+        "fema",
+        "disaster assistance"
+      ],
+      "questions": [
+        "Is Aspen Acres damage registration a FEMA individual-assistance application?"
+      ],
+      "issueIds": [
+        "REG-025"
+      ],
+      "version": "2.0.0",
+      "sourceChecked": "2026-11-09",
+      "reviewDue": "2026-11-16",
+      "publicationClass": "PUBLIC_EXPLANATORY_ANALYSIS",
+      "independentAudit": false,
+      "claims": [
+        {
+          "id": "QP-QIFY-2026-007-C01",
+          "claim": "County guidance date: October 19, 2026",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "county-recovery"
+          ],
+          "boundary": "Published page update"
+        },
+        {
+          "id": "QP-QIFY-2026-007-C02",
+          "claim": "Damage registration: Not an individual-assistance application",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "county-recovery"
+          ],
+          "boundary": "Explicit County distinction"
+        },
+        {
+          "id": "QP-QIFY-2026-007-C03",
+          "claim": "Federal declaration record: FEMA-4944-DR",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "federal-amendment"
+          ],
+          "boundary": "Amendment identifies declaration dated September 1, 2026"
+        }
+      ],
+      "recordsNeeded": [
+        "Latest FEMA/state program designation or appeal decision",
+        "Current provider deadlines and application confirmation",
+        "Separated public, insurance and charitable disbursement totals"
+      ]
+    },
+    {
+      "id": "QP-QIFY-2026-008",
+      "slug": "lime-road-costs",
+      "title": "Lime Road and St Charles: what a commitment line can—and cannot—tell us",
+      "topic": "Roads & transport",
+      "stage": "SOURCE-ATTRIBUTED EXPLANATORY REPORT · INDEPENDENT REVIEW OPEN",
+      "date": "2026-11-09",
+      "review": "Stated source sections checked; independent review and full outcome reconciliation remain open.",
+      "summary": "The April 2026 Half-Cent report lists $7,990,246 for St Charles public improvements under project ED2503. That dated commitment is not a verified total for all Lime Road work, a payment total, or a cost attributable solely to Project Falcon.",
+      "keyFacts": [
+        {
+          "label": "ED2503 line",
+          "value": "St Charles public improvements",
+          "stage": "Named project in fund report",
+          "source": "ed-april"
+        },
+        {
+          "label": "Listed amount",
+          "value": "$7,990,246",
+          "stage": "Dated commitment, not a verified road payment",
+          "source": "ed-april"
+        },
+        {
+          "label": "Whole Lime Road cost",
+          "value": "Not established",
+          "stage": "Scope, contracts and transactions required",
+          "source": "ed-april"
+        }
+      ],
+      "whatKnown": [
+        "The report identifies a specific project code and amount within a larger commitments table.",
+        "The report’s May 13 data date limits reuse as a present balance or latest project estimate."
+      ],
+      "unknowns": [
+        "Exact road limits, city/county asset ownership, utility scope and separate project agreements are not reconciled here.",
+        "A complete authorization-to-payment ledger and cost-sharing allocation are still needed."
+      ],
+      "who": "Relevant City and County authorities, fund custodians, asset owners and contracted delivery parties, to be resolved by road segment and agreement.",
+      "what": "Infrastructure cost boundaries, funding stages and allocation of shared benefits.",
+      "when": "April report, data as of May 13, 2026; explanation prepared November 9.",
+      "where": "St Charles industrial area and any separately evidenced Lime Road segments.",
+      "why": "A shared road or utility corridor can serve several users; one commitment line cannot fairly assign all public costs to one company.",
+      "how": "Define the physical scope, identify each owner and agreement, reconcile project codes, eliminate overlapping costs, and match payments to accepted work.",
+      "money": [
+        {
+          "stage": "Commitment",
+          "detail": "$7,990,246 listed for ED2503",
+          "status": "Dated fund report only."
+        },
+        {
+          "stage": "Contract",
+          "detail": "Executed scope and amendments",
+          "status": "Not reconciled here."
+        },
+        {
+          "stage": "Paid",
+          "detail": "Invoices and transaction entries",
+          "status": "Not established by the commitment."
+        },
+        {
+          "stage": "Allocation",
+          "detail": "Shares by agreement or defensible benefit method",
+          "status": "No company-specific share calculated."
+        },
+        {
+          "stage": "Lifecycle",
+          "detail": "Maintenance, replacement and operating obligations",
+          "status": "Not included in a verified total."
+        }
+      ],
+      "relations": [
+        "Direct: ED2503 commitment → its described public-improvements scope.",
+        "Second order, conditional: adjacent land users and utilities may benefit under different agreements.",
+        "Third order, conditional: freight access, fiscal obligations and regional development depend on what is actually delivered and maintained."
+      ],
+      "counter": "Infrastructure can have value beyond one prospect, but that does not establish a particular allocation as fair. Both exclusive-beneficiary and universal-benefit claims need evidence.",
+      "options": [
+        "Build one segment-and-project-code cost ledger.",
+        "Compare allocation methods without implying each produces an additional cost."
+      ],
+      "actions": [
+        "Request ED2503 authorization, scope, amendments, invoices and payment detail.",
+        "Request executed cost-sharing and maintenance agreements for each road segment.",
+        "Compare no-build, safety-only and broader-capacity alternatives using the same lifecycle boundary."
+      ],
+      "sources": [
+        {
+          "id": "ed-april",
+          "title": "City of Pueblo — April 2026 Economic Development Cash Recap",
+          "url": "https://www.pueblo.us/ArchiveCenter/ViewFile/Item/5528",
+          "kind": "Controlling public document",
+          "role": "A0",
+          "asOf": "Data as of 2026-05-13",
+          "locator": "PDF page 2, ED2503 commitment row",
+          "checked": "2026-11-09",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        }
+      ],
+      "child": "Assess public-service opportunity costs and safe access without inferring effects on individual families.",
+      "ee": "Reconcile the largest overlapping project codes first. Compare physical resources, road maintenance and staff effort as well as dollars; no unsupported EE score is assigned.",
+      "t2y": "Truth-to-Yield: use the supported record to identify a practical next step; no numerical score or verified community outcome is inferred.",
+      "rx": "Keep original source dates and alternative explanations. Reopen this analysis when the listed records or corrections become available.",
+      "qification": {
+        "assessment": "The available record supports one commitment line, not a consolidated road-cost or company-benefit conclusion. Q’s useful contribution is a defensible cost boundary and an allocation test that can be disproved by better records.",
+        "reasoning": [
+          "Q inference: combine road, drainage, utility and maintenance costs only after defining which physical assets and beneficiaries belong in the comparison.",
+          "Q inference: show alternative allocations side by side—contractual responsibility, incremental demand and shared public use—without adding the alternatives together.",
+          "A canceled or delayed private project does not automatically make every infrastructure cost worthless; equally, potential shared use is not proof of an adequate public return."
+        ],
+        "temporal": {
+          "past": "Preserve original commitments, option/land instruments and earlier scope estimates.",
+          "present": "One historical project line is verified; current total exposure remains unknown.",
+          "future": "Conditional: phased delivery can preserve options, but may change unit cost and utility coordination."
+        },
+        "alternatives": [
+          {
+            "option": "Safety-only or phased scope",
+            "tradeoff": "Can limit early exposure but may raise later mobilization or coordination costs.",
+            "owner": "Lawful asset owner and approving body",
+            "verification": "Documented safety requirement, phase boundaries and full lifecycle comparison."
+          },
+          {
+            "option": "Full corridor investment",
+            "tradeoff": "May serve more users but needs demand and cost-sharing evidence.",
+            "owner": "Approving bodies and benefiting asset owners",
+            "verification": "Comparable alternatives, executed contributions and measurable use."
+          }
+        ],
+        "reopen": [
+          "Segment-level asset ownership and design scope",
+          "Executed funding and maintenance agreements",
+          "Project-code transaction and acceptance records"
+        ],
+        "childImpact": {
+          "past": "Earlier land and infrastructure choices may create continuing obligations.",
+          "present": "Assess public-service opportunity costs and safe access without inferring effects on individual families.",
+          "future": "Include maintenance and replacement burdens borne by future residents."
+        },
+        "shock": "Conditional stress: prospect withdrawal, construction escalation or uncollected partner contribution. Compare recoverable funds, sunk cost and continuing public use."
+      },
+      "aliases": [
+        "lime road",
+        "st charles",
+        "project falcon",
+        "ed2503",
+        "industrial infrastructure"
+      ],
+      "questions": [
+        "Does the $7,990,246 St Charles commitment prove the total spent on Lime Road?"
+      ],
+      "issueIds": [
+        "REG-007",
+        "REG-008"
+      ],
+      "version": "2.0.0",
+      "sourceChecked": "2026-11-09",
+      "reviewDue": "2026-12-09",
+      "publicationClass": "PUBLIC_EXPLANATORY_ANALYSIS",
+      "independentAudit": false,
+      "claims": [
+        {
+          "id": "QP-QIFY-2026-008-C01",
+          "claim": "ED2503 line: St Charles public improvements",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "ed-april"
+          ],
+          "boundary": "Named project in fund report"
+        },
+        {
+          "id": "QP-QIFY-2026-008-C02",
+          "claim": "Listed amount: $7,990,246",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "ed-april"
+          ],
+          "boundary": "Dated commitment, not a verified road payment"
+        },
+        {
+          "id": "QP-QIFY-2026-008-C03",
+          "claim": "Whole Lime Road cost: Not established",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "ed-april"
+          ],
+          "boundary": "Scope, contracts and transactions required"
+        }
+      ],
+      "recordsNeeded": [
+        "Segment-level asset ownership and design scope",
+        "Executed funding and maintenance agreements",
+        "Project-code transaction and acceptance records"
+      ]
+    },
+    {
+      "id": "QP-QIFY-2026-009",
+      "slug": "water-budget-evidence",
+      "title": "Pueblo Water: a budget, an audit and a household bill answer different questions",
+      "topic": "Water & energy",
+      "stage": "SOURCE-ATTRIBUTED EXPLANATORY REPORT · INDEPENDENT REVIEW OPEN",
+      "date": "2026-11-09",
+      "review": "Stated source sections checked; independent review and full outcome reconciliation remain open.",
+      "summary": "Pueblo Water’s finance page lists a 2026 budget and a 2025 annual financial report. The latter includes an independent audit opinion on specified 2025/2024 financial statements. Neither document alone determines a household’s current bill, affordability, future rate or system reliability.",
+      "keyFacts": [
+        {
+          "label": "Planning document",
+          "value": "2026 budget listed",
+          "stage": "Finance-page listing, not a reproduced budget audit",
+          "source": "water-finance"
+        },
+        {
+          "label": "Historical statements",
+          "value": "2025 and 2024",
+          "stage": "Periods covered by cited audit opinion",
+          "source": "water-acfr"
+        },
+        {
+          "label": "Current household cost",
+          "value": "Not calculated",
+          "stage": "Needs applicable tariff and actual usage",
+          "source": "water-finance"
+        }
+      ],
+      "whatKnown": [
+        "The finance hub provides annual budgets and annual financial reports as different document series.",
+        "The auditors’ report states its financial-statement scope; it is not a guarantee of every operating or policy outcome."
+      ],
+      "unknowns": [
+        "Budget tables, tariff schedules and a representative bill model have not been fully reconciled here.",
+        "Current service performance, household affordability and future rate decisions require additional evidence."
+      ],
+      "who": "Pueblo Water’s Board and authorized management for their respective decisions; auditors for the stated financial-statement opinion; other service providers retain their own jurisdictions.",
+      "what": "How to connect financial planning, audited results and experienced water cost.",
+      "when": "2026 budget listing; 2025/2024 audited statement periods; checked November 9.",
+      "where": "Pueblo Water service and financial scope, not all water systems in Pueblo County.",
+      "why": "Water-rate debate can be distorted by treating budgeted capital, depreciation, cash and household bills as the same measure.",
+      "how": "Read budget, actual statements, cash-flow notes, debt and capital schedules alongside the applicable tariff and service data.",
+      "money": [
+        {
+          "stage": "Budget",
+          "detail": "Planned revenue, capital and operating activity",
+          "status": "Not proof of actual cash movement."
+        },
+        {
+          "stage": "Audited statements",
+          "detail": "Historical financial reporting under the stated opinion",
+          "status": "Not a forecast or universal internal-control assurance."
+        },
+        {
+          "stage": "Bill",
+          "detail": "Applicable fixed and usage charges",
+          "status": "Requires the specific tariff, customer class and consumption."
+        },
+        {
+          "stage": "Outcome",
+          "detail": "Reliable and affordable service",
+          "status": "Needs operating and household-impact measures."
+        }
+      ],
+      "relations": [
+        "Direct: Board financial decisions, utility operations and customers.",
+        "Second order, analytical: energy, treatment, construction and debt costs can affect operating needs.",
+        "Third order, conditional: maintenance choices and affordability influence long-term service access."
+      ],
+      "counter": "An audit opinion is meaningful within its scope. It neither establishes that all rates are optimal nor supports dismissing audited accounts as irrelevant.",
+      "options": [
+        "Publish a budget-to-actual capital and operating crosswalk.",
+        "Model representative bills only with a verified tariff and explicit usage assumptions."
+      ],
+      "actions": [
+        "Open both the budget and annual financial statements, preserving their reporting periods.",
+        "For a bill question, identify the provider, customer class and tariff before comparing costs.",
+        "Request measured service and capital-delivery results before inferring reliability from spending."
+      ],
+      "sources": [
+        {
+          "id": "water-finance",
+          "title": "Pueblo Water — Financials",
+          "url": "https://pueblowater.org/our-board/financials/",
+          "kind": "Official attributed communication",
+          "role": "A2",
+          "asOf": "Finance listing checked 2026-11-09",
+          "locator": "Budgets and Annual Comprehensive Financial Reports",
+          "checked": "2026-11-09",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        },
+        {
+          "id": "water-acfr",
+          "title": "Pueblo Water — 2025 Annual Comprehensive Financial Report",
+          "url": "https://pueblowater.org/wp-content/uploads/2026/03/2025-ACFR-2025-Linked.pdf",
+          "kind": "Controlling public document",
+          "role": "A0",
+          "asOf": "FY2025/2024 financial statement periods",
+          "locator": "PDF page 23, Independent Auditors’ Report; selected scope only",
+          "checked": "2026-11-09",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        }
+      ],
+      "child": "No individual household hardship is inferred from a bill or neighborhood.",
+      "ee": "Use the smallest sufficient financial and operational evidence set. Include pumping/treatment energy only where measured; no kWh, dollar or EE score is invented.",
+      "t2y": "Truth-to-Yield: use the supported record to identify a practical next step; no numerical score or verified community outcome is inferred.",
+      "rx": "Keep original source dates and alternative explanations. Reopen this analysis when the listed records or corrections become available.",
+      "qification": {
+        "assessment": "A useful water-cost answer needs three linked views: planned resources, historical financial results and the actual service/bill experienced by customers. No single view can replace the other two.",
+        "reasoning": [
+          "Q inference: a capital program may increase current financing needs while reducing later failure risk; evaluating it requires asset condition, delivery and maintenance evidence.",
+          "Q inference: average revenue per customer is not a household affordability measure. Customer class, usage, fixed charges and household resources change the comparison."
+        ],
+        "temporal": {
+          "past": "Use compatible fiscal periods and retain prior capital and debt commitments.",
+          "present": "The report establishes document availability and the stated audit scope; it does not reproduce the full financial analysis.",
+          "future": "Conditional: compare maintenance, energy costs, drought or construction changes with documented sensitivity inputs."
+        },
+        "alternatives": [
+          {
+            "option": "Reconcile capital delivery with accounts",
+            "tradeoff": "Requires project milestones and accounting treatment.",
+            "owner": "Utility management and Board",
+            "verification": "Authorized cost, contract, payment, acceptance and service improvement."
+          },
+          {
+            "option": "Show representative bill scenarios",
+            "tradeoff": "Useful only with verified tariffs and clearly stated usage.",
+            "owner": "Tariff authority and public reviewers",
+            "verification": "Reproducible bill calculations, without inferring individual eligibility or hardship."
+          }
+        ],
+        "reopen": [
+          "Current tariff and Board rate decisions",
+          "2026 budget and actual financial crosswalk",
+          "Asset-condition, service-performance and capital-acceptance records"
+        ],
+        "childImpact": {
+          "past": "Earlier asset and debt choices can affect present costs.",
+          "present": "No individual household hardship is inferred from a bill or neighborhood.",
+          "future": "Compare future maintenance and service continuity with long-lived debt and replacement obligations."
+        },
+        "shock": "Conditional stress: energy-cost increase, drought or capital overrun. Quantify only with validated cost, demand and capacity inputs."
+      },
+      "aliases": [
+        "pueblo water",
+        "water budget",
+        "water bill",
+        "water rates",
+        "water financials"
+      ],
+      "questions": [
+        "Does Pueblo Water’s annual audit establish my current water bill?"
+      ],
+      "issueIds": [],
+      "version": "2.0.0",
+      "sourceChecked": "2026-11-09",
+      "reviewDue": "2026-12-09",
+      "publicationClass": "PUBLIC_EXPLANATORY_ANALYSIS",
+      "independentAudit": false,
+      "claims": [
+        {
+          "id": "QP-QIFY-2026-009-C01",
+          "claim": "Planning document: 2026 budget listed",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "water-finance"
+          ],
+          "boundary": "Finance-page listing, not a reproduced budget audit"
+        },
+        {
+          "id": "QP-QIFY-2026-009-C02",
+          "claim": "Historical statements: 2025 and 2024",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "water-acfr"
+          ],
+          "boundary": "Periods covered by cited audit opinion"
+        },
+        {
+          "id": "QP-QIFY-2026-009-C03",
+          "claim": "Current household cost: Not calculated",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "water-finance"
+          ],
+          "boundary": "Needs applicable tariff and actual usage"
+        }
+      ],
+      "recordsNeeded": [
+        "Current tariff and Board rate decisions",
+        "2026 budget and actual financial crosswalk",
+        "Asset-condition, service-performance and capital-acceptance records"
+      ]
+    },
+    {
+      "id": "QP-QIFY-2026-010",
+      "slug": "records-request",
+      "title": "Getting the records that could resolve a disputed public-spending claim",
+      "topic": "Government & law",
+      "stage": "SOURCE-ATTRIBUTED EXPLANATORY REPORT · INDEPENDENT REVIEW OPEN",
+      "date": "2026-11-09",
+      "review": "Stated source sections checked; independent review and full outcome reconciliation remain open.",
+      "summary": "A focused request for existing authorizations, agreements and payment records is more useful than asking a custodian to prove a broad allegation. Colorado’s legislative legal summary explains CORA, custodians, exceptions and potential research/retrieval charges; the current custodian policy and applicable law still control.",
+      "keyFacts": [
+        {
+          "label": "Request target",
+          "value": "Existing responsive records",
+          "stage": "Not a demand to create a new analysis",
+          "source": "cora-summary"
+        },
+        {
+          "label": "Responsible recipient",
+          "value": "Custodian of the particular record",
+          "stage": "May differ by agency or record type",
+          "source": "cora-summary"
+        },
+        {
+          "label": "Fees and exclusions",
+          "value": "May apply",
+          "stage": "Check current law and custodian policy",
+          "source": "cora-summary"
+        }
+      ],
+      "whatKnown": [
+        "The legislative legal summary describes broad public-record coverage, custodians and exceptions.",
+        "It distinguishes electronic-copy handling from research/retrieval charges; a request should ask for a written estimate before chargeable work."
+      ],
+      "unknowns": [
+        "No individual request’s legal status, deadline, exemption or fee is determined here.",
+        "The correct custodian, exact record existence and any separate criminal-justice or federal process require confirmation."
+      ],
+      "who": "The custodian holding the relevant record; the requester approves scope and any cost; legal disputes require the appropriate formal process.",
+      "what": "A usable evidence request and a receipt-based follow-up method.",
+      "when": "Legislative summary published October 30, 2025; source checked November 9, 2026.",
+      "where": "Colorado state/local public records within applicable law; federal and tribal processes differ.",
+      "why": "A specific request can test a public claim without presuming that missing information proves misconduct.",
+      "how": "Identify record classes, project identifiers, date range, custodian, electronic format and cost limit; retain the response and any stated withholding basis.",
+      "money": [
+        {
+          "stage": "Requested records",
+          "detail": "Authorizations, agreements, invoices and payments",
+          "status": "Each answers a different stage question."
+        },
+        {
+          "stage": "Retrieval cost",
+          "detail": "Possible custodian charges",
+          "status": "Ask for an estimate; no payment authorization is implied."
+        },
+        {
+          "stage": "Finding",
+          "detail": "Analysis after records are obtained",
+          "status": "Silence or a partial return is not proof of wrongdoing."
+        }
+      ],
+      "relations": [
+        "Direct: a specific claim → existing record class → custodian.",
+        "Second order, analytical: shared projects may require records from more than one government.",
+        "Third order, conditional: accessible records can improve correction and public understanding without establishing a favorable outcome."
+      ],
+      "counter": "A custodian may lawfully withhold or redact material, may not hold the record, or may use another process. Those possibilities must be recorded before inferring concealment.",
+      "options": [
+        "Start with the narrowest material transaction or decision.",
+        "Expand only when the returned records reveal a specific remaining gap."
+      ],
+      "actions": [
+        "Use the report’s records-request download as an editable draft, not an automatically sent request.",
+        "Confirm the recipient and current policy before sending.",
+        "Retain the original request, acknowledgement, estimate, response and any appeal or correction."
+      ],
+      "sources": [
+        {
+          "id": "cora-summary",
+          "title": "Colorado General Assembly OLLS — Colorado Open Records Act legal summary",
+          "url": "https://content.leg.colorado.gov/sites/default/files/colorado-open-records-act-cora-colorado-law-summary-accessible.pdf",
+          "kind": "Controlling public document",
+          "role": "A0",
+          "asOf": "Summary published 2025-10-30",
+          "locator": "Pages 1–3: scope, custodian, response, exclusions and fees; general overview, not legal advice",
+          "checked": "2026-11-09",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        }
+      ],
+      "child": "Request aggregate program records rather than private child or client files.",
+      "ee": "Bound dates and record classes, reuse prior lawful disclosures and approve cost estimates before additional retrieval work.",
+      "t2y": "Truth-to-Yield: use the supported record to identify a practical next step; no numerical score or verified community outcome is inferred.",
+      "rx": "Keep original source dates and alternative explanations. Reopen this analysis when the listed records or corrections become available.",
+      "qification": {
+        "assessment": "The most useful first step is to define the proposition that needs testing and request the existing records capable of testing it. A document return is evidence to analyze, not an automatic verdict.",
+        "reasoning": [
+          "Q inference: split a broad spending allegation into authority, scope, obligation, cash and delivery questions. This reduces ambiguity and avoids adding unlike amounts.",
+          "Q inference: record the reason for each gap—no record held, withheld, pending, missing identifier or unavailable format—because those states imply different next steps."
+        ],
+        "temporal": {
+          "past": "Preserve the original statement and the versions of documents that were available at that time.",
+          "present": "Current custodian rules and applicable law must be checked for the particular request.",
+          "future": "Conditional: a narrower follow-up can resolve remaining gaps with less agency and requester effort."
+        },
+        "alternatives": [
+          {
+            "option": "Focused first request",
+            "tradeoff": "May need follow-up but lowers unnecessary retrieval burden.",
+            "owner": "Requester and record custodian",
+            "verification": "A bounded date range, project IDs and specific existing record classes."
+          },
+          {
+            "option": "Cross-agency reconciliation",
+            "tradeoff": "Adds work; needed when responsibility and cash cross jurisdictions.",
+            "owner": "Requester, custodians and reviewers",
+            "verification": "Common identifiers and explicit treatment of overlapping or withheld records."
+          }
+        ],
+        "reopen": [
+          "Actual request acknowledgement and response",
+          "Current custodian fee and access policy",
+          "The specific authorizing, contracting, payment and delivery documents"
+        ],
+        "childImpact": {
+          "past": "Earlier requests and responses remain part of the audit trail.",
+          "present": "Request aggregate program records rather than private child or client files.",
+          "future": "Keep retention, correction and access needs visible without assuming permanent availability."
+        },
+        "shock": "Conditional stress: a source disappears or a request is narrowed. Preserve lawful copies and the exact response; do not bypass access controls."
+      },
+      "aliases": [
+        "cora",
+        "public records",
+        "records request",
+        "documents",
+        "request invoices"
+      ],
+      "questions": [
+        "How do I request records to check a public-spending claim?"
+      ],
+      "issueIds": [
+        "REG-036"
+      ],
+      "version": "2.0.0",
+      "sourceChecked": "2026-11-09",
+      "reviewDue": "2026-12-09",
+      "publicationClass": "PUBLIC_EXPLANATORY_ANALYSIS",
+      "independentAudit": false,
+      "claims": [
+        {
+          "id": "QP-QIFY-2026-010-C01",
+          "claim": "Request target: Existing responsive records",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "cora-summary"
+          ],
+          "boundary": "Not a demand to create a new analysis"
+        },
+        {
+          "id": "QP-QIFY-2026-010-C02",
+          "claim": "Responsible recipient: Custodian of the particular record",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "cora-summary"
+          ],
+          "boundary": "May differ by agency or record type"
+        },
+        {
+          "id": "QP-QIFY-2026-010-C03",
+          "claim": "Fees and exclusions: May apply",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "cora-summary"
+          ],
+          "boundary": "Check current law and custodian policy"
+        }
+      ],
+      "recordsNeeded": [
+        "Actual request acknowledgement and response",
+        "Current custodian fee and access policy",
+        "The specific authorizing, contracting, payment and delivery documents"
+      ]
+    },
+    {
+      "id": "QP-QIFY-2026-011",
+      "slug": "pueblo-flood-history",
+      "title": "The 1921 Pueblo flood: connecting historical evidence to present resilience",
+      "topic": "Culture & history",
+      "stage": "SOURCE-ATTRIBUTED EXPLANATORY REPORT · INDEPENDENT REVIEW OPEN",
+      "date": "2026-11-09",
+      "review": "Stated source sections checked; independent review and full outcome reconciliation remain open.",
+      "summary": "CSU Pueblo’s archive identifies a collection of photographs, newspaper material and printed records about the 1921 flood, including material dated 1921, 1956 and 1971. The collection is accessible, but its record warns that not all material is in the public domain. Historical damage evidence does not establish today’s parcel-level flood risk.",
+      "keyFacts": [
+        {
+          "label": "Historical event",
+          "value": "June 1921 flood",
+          "stage": "Event described by the institutional archive",
+          "source": "csu-flood"
+        },
+        {
+          "label": "Collection dates",
+          "value": "1921, 1956, 1971",
+          "stage": "Different material dates, not one simultaneous account",
+          "source": "csu-flood"
+        },
+        {
+          "label": "Reuse rights",
+          "value": "Item-specific review required",
+          "stage": "Access does not equal reproduction permission",
+          "source": "csu-flood"
+        }
+      ],
+      "whatKnown": [
+        "The archive describes newspaper, photograph, postcard and printed material related to the flood.",
+        "Its collection description identifies access, rights and acquisition-provenance limits."
+      ],
+      "unknowns": [
+        "Individual photographs and claims still need item-level identification, dates and context.",
+        "This report does not determine a present flood zone, engineering capacity or the exact historical death toll."
+      ],
+      "who": "CSU Pueblo University Archives and Special Collections for the collection; relevant present-day authorities for modern flood and infrastructure determinations.",
+      "what": "Historical source interpretation, rights and a bounded connection to resilience.",
+      "when": "Flood in 1921; later collection material and retrospective interpretations must retain their own dates.",
+      "where": "Pueblo historical places; current locations and hazard boundaries need independent verification.",
+      "why": "A historical image can explain a city’s development while still being insufficient evidence for a current hazard claim.",
+      "how": "Identify the original item, creator/date/context, source chain and rights; compare any present-day claim with current maps and engineering records.",
+      "money": [
+        {
+          "stage": "Historical estimate",
+          "detail": "Damage figures in historical sources",
+          "status": "Not converted to present dollars or treated as an audited total here."
+        },
+        {
+          "stage": "Modern investment",
+          "detail": "Current mitigation and maintenance",
+          "status": "Requires its own authority, design and budget records."
+        },
+        {
+          "stage": "Outcome",
+          "detail": "Present resilience",
+          "status": "Cannot be inferred from an archival photograph."
+        }
+      ],
+      "relations": [
+        "Direct: source item → documented historical place or event.",
+        "Second order, analytical: rebuilding and infrastructure decisions can be investigated through later records.",
+        "Third order, conditional: present resilience lessons require current hydrology, land-use and maintenance evidence."
+      ],
+      "counter": "A retrospective account can differ from contemporary reporting without implying deception. Collection gaps and uncertain acquisition history should remain visible.",
+      "options": [
+        "Publish attributed item-level historical exhibits.",
+        "Link historical questions to a separately sourced modern resilience analysis."
+      ],
+      "actions": [
+        "Use the archive’s preferred citation and check each item’s reuse rights.",
+        "Distinguish the event date, document date and later interpretation.",
+        "For current risk, obtain present official hazard and infrastructure records rather than extrapolating from historical scenes."
+      ],
+      "sources": [
+        {
+          "id": "csu-flood",
+          "title": "CSU Pueblo Library — 1921 Pueblo Flood materials collection",
+          "url": "https://csupueblo.libraryhost.com/index.php?id=4&p=collections/controlcard&q=Pueblo+flood",
+          "kind": "Institutional archive or operator record",
+          "role": "B",
+          "asOf": "Collection dates 1921, 1956, 1971; checked 2026-11-09",
+          "locator": "Scope, historical description, acquisition note and rights",
+          "checked": "2026-11-09",
+          "scope": "Supports the attributed proposition only; no independent outcome audit implied."
+        }
+      ],
+      "child": "Use age-appropriate historical learning and avoid identifying vulnerable residents.",
+      "ee": "Reuse verified item metadata and lawful archival copies. Reserve deeper reconstruction for material questions; no disaster-loss or risk model is implied.",
+      "t2y": "Truth-to-Yield: use the supported record to identify a practical next step; no numerical score or verified community outcome is inferred.",
+      "rx": "Keep original source dates and alternative explanations. Reopen this analysis when the listed records or corrections become available.",
+      "qification": {
+        "assessment": "The archive is valuable both as community memory and as a starting point for questions about rebuilding and resilience. It should preserve multiple dated sources while keeping modern hazard conclusions separate.",
+        "reasoning": [
+          "Q inference: a history page is stronger when a reader can trace a narrative to a specific item and see what is original, retrospective or uncertain.",
+          "Q inference: resilience learning requires an explicit bridge from the historic event to present conditions. Without that bridge, a dramatic image can exaggerate or understate current risk."
+        ],
+        "temporal": {
+          "past": "Keep the 1921 event distinct from later collection and interpretation dates.",
+          "present": "The collection supplies a historical research pathway, with rights and provenance limits.",
+          "future": "Conditional: historical lessons can inform questions for modern planning, but do not replace engineering evidence."
+        },
+        "alternatives": [
+          {
+            "option": "Curated source-linked exhibit",
+            "tradeoff": "Requires item-level rights and context review.",
+            "owner": "Archive custodian and editors",
+            "verification": "Item identifiers, dates, attribution, uncertainty and permitted reuse."
+          },
+          {
+            "option": "Historical-to-current comparison",
+            "tradeoff": "Requires compatible geographic and engineering evidence.",
+            "owner": "Researchers and competent planning authorities",
+            "verification": "Clear separation of historical observation from current hazard assessment."
+          }
+        ],
+        "reopen": [
+          "Item-level catalogue and reproduction permission",
+          "Contemporary corroborating records",
+          "Modern flood and infrastructure evidence for any current claim"
+        ],
+        "childImpact": {
+          "past": "Document lived history without erasing uncertainty or overlooked communities.",
+          "present": "Use age-appropriate historical learning and avoid identifying vulnerable residents.",
+          "future": "Preserve accessible memory and distinguish lessons from untested predictions."
+        },
+        "shock": "Conditional stress: archival loss or misleading reuse. Preserve provenance and rights-reviewed copies; avoid publishing unsafe access locations."
+      },
+      "aliases": [
+        "1921 flood",
+        "pueblo history",
+        "historical flood",
+        "archives",
+        "heritage"
+      ],
+      "questions": [
+        "Can a 1921 flood photograph establish my property’s flood risk today?"
+      ],
+      "issueIds": [],
+      "version": "2.0.0",
+      "sourceChecked": "2026-11-09",
+      "reviewDue": "2026-12-09",
+      "publicationClass": "PUBLIC_EXPLANATORY_ANALYSIS",
+      "independentAudit": false,
+      "claims": [
+        {
+          "id": "QP-QIFY-2026-011-C01",
+          "claim": "Historical event: June 1921 flood",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "csu-flood"
+          ],
+          "boundary": "Event described by the institutional archive"
+        },
+        {
+          "id": "QP-QIFY-2026-011-C02",
+          "claim": "Collection dates: 1921, 1956, 1971",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "csu-flood"
+          ],
+          "boundary": "Different material dates, not one simultaneous account"
+        },
+        {
+          "id": "QP-QIFY-2026-011-C03",
+          "claim": "Reuse rights: Item-specific review required",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "csu-flood"
+          ],
+          "boundary": "Access does not equal reproduction permission"
+        }
+      ],
+      "recordsNeeded": [
+        "Item-level catalogue and reproduction permission",
+        "Contemporary corroborating records",
+        "Modern flood and infrastructure evidence for any current claim"
+      ]
+    }
+  ]
+}

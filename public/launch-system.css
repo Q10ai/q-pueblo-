@@ -2,3 +2,11 @@
 /* Plain-language presentation on top of the existing, tested Q Tools reference calculations. */
 .qp-qt-result-card{background:#ebf4ee;color:#16344a;border:3px solid #e5bb68;border-radius:13px;padding:1.1rem 1.4rem;margin:1rem 0}.qp-qt-result-card h3{color:#0b4e67;margin:.1rem 0 .7rem}.qp-qt-verdict{font-size:1.15rem;font-weight:850;color:#193450}.qp-qt-detail{font-size:.91rem;line-height:1.7;color:#3a5362}.qp-qt-raw{border:1px solid #64859d;border-radius:10px;padding:.6rem 1rem;margin:1rem 0;color:#e2ebee}.qp-qt-raw summary{cursor:pointer;font-weight:800;padding:.5rem 0}.qp-qt-raw pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.88rem;max-height:38rem;overflow:auto}
 .qp-inline-upgrade{width:min(980px,calc(100% - 2rem));margin:1.1rem auto;border:2px solid #e4b564;border-radius:13px;background:#152b49;padding:1rem 1.3rem;color:#eff8ff}.qp-inline-upgrade strong{display:block;color:#ffd58a;font-size:1.2rem}.qp-inline-upgrade p{margin:.3rem 0}.qp-inline-upgrade a{color:#98f4e8;font-weight:750}
+
+/* Long research titles and public archive filters. */
+[hidden]{display:none!important}
+#packet-search{display:block;width:100%;max-width:42rem;padding:.8rem;border:1px solid #697594;border-radius:.5rem;font:inherit;background:#fff;color:#132044}
+.qp-report-detail li,.qp-qify-output li{overflow-wrap:anywhere;margin-block:.45rem}
+.qp-qify-output details{padding:1rem;border:1px solid #66728d;border-radius:.5rem;margin-block:1rem}
+.qp-action-card h3{font-size:1.1rem;line-height:1.4}
+@media print{.qp-site-header,.qp-footer,.qp-tool-actions,#report-links,#packet-search{display:none!important}.qp-report-detail{max-width:100%;color:#000;background:#fff}}
