@@ -27,6 +27,17 @@ assert(!/setTimeout\(\(\)=>render/.test(client),'No arbitrary initial-query time
 assert(!/localStorage|sessionStorage|sendBeacon|XMLHttpRequest/.test(client),'No client-side user-data persistence or telemetry');
 console.log('PASS Qify deterministic matching, year/domain conflicts, invalid citations, asynchronous load, disclosure, and privacy.');
 
+
+const v2Reports=JSON.parse(readFileSync('public/data/q-pueblo-qified-reports-v2-2026-11-09.json','utf8')).reports;
+assert.equal(v2Reports.length,14,'Current public answer register');
+for(const r of v2Reports){
+ assert(r.questions?.length>0,'No reviewed intent question '+r.slug);
+ const matched=selectReport(r.questions[0],v2Reports);
+ assert.equal(matched?.report.slug,r.slug,'Exact dated report question not reachable: '+r.slug);
+}
+assert.equal(selectReport('How much has Pueblo paid for Lime Road this week?',v2Reports),null);
+assert.equal(selectReport('What is the total cash disbursed on Project Falcon?',v2Reports),null);
+
 const wbHtml=readFileSync('public/workbench.html','utf8');
 const wbJs=readFileSync('public/workbench.js','utf8');
 const wbCSS=readFileSync('public/workbench.css','utf8');
@@ -44,4 +55,4 @@ const mill=records.find(r=>r.slug==='city-mill-levy-2026');
 assert(mill.whatKnown.some(x=>x.includes('fiscal year 2024')&&x.includes('2026')));
 assert(mill.unknowns.some(x=>x.includes('clarification')));
 assert(mill.money.some(x=>x.stage==='Expected revenues'&&x.status.includes('Disputed year')));
-console.log('PASS Evidence-first workbench: five reports, dated sources, explicit unknowns and display gates.');
+console.log('PASS Evidence-first workbench: five preserved originals plus fourteen current reports, dated sources, explicit unknowns and display gates.');

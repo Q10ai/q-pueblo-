@@ -12,7 +12,7 @@
   const bySource=new Map(cat.sources.map(s=>[s.id,s]));
   // Dated public reports are loaded once. This is not a live AI/web research service.
   let publishedBriefs=[];
-  const briefsReady=fetch('data/q-pueblo-qified-briefs-2026-11-09.json',{cache:'no-store'})
+  const briefsReady=fetch('data/q-pueblo-qified-reports-v2-2026-11-09.json',{cache:'no-store'})
     .then(r=>{if(!r.ok)throw Error('Unavailable evidence ledger');return r.json();})
     .then(data=>{if(!Array.isArray(data.reports))throw Error('Invalid evidence ledger');publishedBriefs=data.reports;})
     .catch(()=>{publishedBriefs=[];});
@@ -178,11 +178,12 @@
     const listed=r&&Array.isArray(r.sources)?r.sources.filter(s=>hostValid(s.url)):[];
     if(r){
       pieces.push(section('A. Answer from a dated original public record',
-        '<p class="wb-qa-scope">'+esc(r.stage)+' · Prepared '+esc(r.date)+' · '+esc(r.review)+'</p>'+
+        '<p class="wb-qa-scope">'+esc(r.stage)+' · Source check '+esc(r.sourceChecked||r.date)+' · Review due '+esc(r.reviewDue||'not scheduled')+'</p>'+
         '<p class="wb-direct-answer"><strong>'+esc(r.summary)+'</strong></p>'+
         '<p><a href="reports.html?report='+encodeURIComponent(r.slug)+'">Read the complete sourced Qified report</a></p>',true));
       pieces.push(section('B. Actual reported figures and documented facts',
-        '<div class="wb-fact-grid">'+r.keyFacts.map(f=>'<article><small>'+esc(f.label)+'</small><strong>'+esc(f.value)+'</strong><span>'+esc(f.stage)+'</span></article>').join('')+'</div>'+checklist(r.whatKnown),true));
+        '<div class="wb-fact-grid">'+r.keyFacts.map(f=>'<article><small>'+esc(f.label)+'</small><strong>'+esc(f.value)+'</strong><span>'+esc(f.stage)+(f.source?' · source '+esc(f.source):'')+'</span></article>').join('')+'</div>'+checklist(r.whatKnown),true));
+      if(Array.isArray(r.claims)&&r.claims.length)pieces.push(section('Claim-to-source crosswalk',checklist(r.claims.map(c=>c.id+' | '+c.claim+' | '+c.classification+' | Sources: '+c.sourceIds.join(', ')+' | '+c.boundary))));
       pieces.push(section('C. Who, what, when, where, why and how',
         '<dl class="wb-evidence-dl">'+[['Who',r.who],['What',r.what],['When',r.when],['Where',r.where],['Why',r.why],['How',r.how]].map(([k,v])=>'<dt>'+esc(k)+'</dt><dd>'+esc(v)+'</dd>').join('')+'</dl>'));
       pieces.push(section('D. Follow the money — keep accounting stages separate',
@@ -213,7 +214,7 @@
     pieces.push('<details class="wb-extra-research wb-full"><summary>Optional: unverified research questions, dependency checks and hypothetical scenarios</summary><p>For planning only. Nothing below is a source-backed local finding.</p><div class="wb-extra-grid">'+prompts.join('')+'</div></details>');
     $('wb-output-body').innerHTML=pieces.join('');
     $('wb-output-section').hidden=false;
-    $('wb-packet-status').textContent=r?r.id+' · Dated record '+r.date+' · NOT current verification':p.issue.id+' · No source-backed answer matched · Human investigation required';
+    $('wb-packet-status').textContent=r?r.id+' · Source checked '+(r.sourceChecked||r.date)+' · '+((r.reviewDue && new Date().toISOString().slice(0,10)>r.reviewDue)?'REVIEW DUE · HISTORICAL':'DATED REPORT · NOT LIVE VERIFICATION'):p.issue.id+' · No source-backed answer matched · Human investigation required';
     $('wb-output-section').scrollIntoView({behavior:'smooth',block:'start'});
   }
   function toMarkdown(p){
@@ -229,12 +230,13 @@
     line('The question',p.question);
     line('Initial response',p.initialResponse);
     if(p.reviewedBrief){const r=p.reviewedBrief;
-      line('Source-attributed answer',r.summary+' [Dated '+r.date+'; '+r.id+']');
+      line('Source-attributed answer',r.summary+' [Source checked '+(r.sourceChecked||r.date)+'; review due '+(r.reviewDue||'not scheduled')+'; '+r.id+']');
       line('Actual figures',bullets(r.keyFacts.map(x=>x.label+': '+x.value+' ['+x.stage+']')));
       line('Money by accounting stage',bullets(r.money.map(x=>x.stage+': '+x.detail+' ['+x.status+']')));
       line('What the record establishes',bullets(r.whatKnown));
       line('Counterevidence and unknowns',r.counter+'\n'+bullets(r.unknowns));
       line('Primary sources',bullets(r.sources.map(x=>x.title+' — '+x.url+' ('+x.asOf+')')));
+      if(r.claims)line('Claims mapped to original-source IDs',bullets(r.claims.map(x=>x.id+' | '+x.claim+' | '+x.classification+' | '+x.sourceIds.join(', ')+' | '+x.boundary)));
     }else line('Answer coverage','NO MATCHED SOURCE-ATTRIBUTED ANSWER. Research prompts are not evidence.');
     line('Five Ws + How',bullets(p.fiveWH.map(x=>x.dimension+': '+x.prompt)));
     line('Direct, secondary and tertiary impact questions',p.entityImpact.map(x=>'### '+x.title+'\n'+bullets(x.questions)).join('\n'));
