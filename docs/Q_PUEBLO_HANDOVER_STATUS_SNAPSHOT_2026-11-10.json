@@ -1,0 +1,23 @@
+{
+  "schema": "q-pueblo-handover-status-v1",
+  "auditDate": "2026-11-10",
+  "sourceRepository": "Q10ai/q-pueblo-",
+  "auditedMainSha": "19d8114e42d52e99f1c586ed9f5797d86e323343",
+  "publicHost": "https://qpueblo.pages.dev/",
+  "separateWorkerHost": "https://raspy-bar-4291.q10agi.workers.dev/",
+  "archiveDriveFolder": "1RJ-630fpZnz2ckTNzGDqSBS2UBKT8nQC",
+  "disposition": "SOURCE_INTEGRATED_STATIC_LAUNCH_CANDIDATE__LIVE_PARITY_BLOCKED__AGENTS_NOT_OPERATIONAL",
+  "publicCounts": {"historicalIssueIDs":174,"sourceMappedIssueIDs":82,"unmappedHistoricalIssueIDs":92,"publicCatalogSourceLinks":141,"sourcePublishers":54,"topicCategories":10,"pendingCandidateTopics":12,"curatedQifiedAnalyses":14,"historicalPacketFamilies":55,"historicalVariants":109,"archivedCaseSummaries":8},
+  "exactHeadChecks": {"publicBetaValidation":{"run":42810897549,"result":"PASS"},"launchIntegrity":{"run":42810897756,"result":"PASS"},"optionalGithubPages":{"result":"FAIL_NOT_REQUIRED_FOR_CLOUDFLARE"}},
+  "localArtifactAudit":{"javascriptFilesSyntaxPass":20,"jsonFilesParsePass":6,"htmlPages":18,"checkedInternalReferences":945,"missingInternalFiles":0,"staleHomepageFragmentLinksFound":14,"mobileBrowserTest":"NOT_RUN_BROWSER_EXECUTABLE_ABSENT"},
+  "liveReadback":{"homepage":200,"reports":404,"packets":404,"capabilities":404,"workerReports":404,"observed":"2026-11-10"},
+  "publicEmail":"Q10pueblo@gmail.com",
+  "staticArtifact":{"driveFileId":"1xT-wrrkNY75DXiTCHKjM0rdPHYWSM8RL","bytes":2332071,"sha256":"6b2731ec9302fedaa372aebf9febec0a6b2fd009e4434ec1c8652d6fd762f011"},
+  "operationalAgents":false,
+  "liveSearch":false,
+  "automaticSubmissionBackend":false,
+  "fundsAcceptedOnline":false,
+  "q10CoreDeploymentAuthorized":false,
+  "claimOfChatMemoryIntegration":false,
+  "requiresHumanGate":["Cloudflare deploy and exact-host readback","email inbox delivery verification","mobile and accessibility QA","source freshness and legal/evidence review","backend permissions and agent testing","security/incident/rollback drill","2027 commercial terms and sponsor neutrality"]
+}
