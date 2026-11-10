@@ -1,11 +1,19 @@
-# Q-Pueblo — Regional Governance Intelligence
+# Q-Pueblo — Regional Civic Knowledge Service
 
-Independent, nonpartisan civic evidence and public-finance research for the Pueblo region. This is the public website codebase, separate from private Q10 systems.
+Independent, nonpartisan civic evidence, source-linked local research and decision support for the Pueblo region. This public website is separate from controlled Q10 systems.
 
-**Status (verified 2026-11-09):** Public beta source. Cloudflare serves the homepage, but its deployment is stale: the Explore and Workbench routes returned HTTP 404 on independent readback. GitHub source changes do not guarantee Cloudflare publication. An optional GitHub Pages static mirror workflow is staged for activation after Pages is enabled by an admin. The site is informational, not a government agency, legal advisor, political campaign, or autonomous civic decision-maker. All source material is dated; unresolved claims are not presented as established fact. Public submissions and AI automation remain disabled until reviewed.
+## Actual capabilities
+- Dated historical issue index and source directory; curated, human-reviewed explanatory briefs.
+- Qify a question: conservative lexical matching to a dated published brief, direct source links and a locally generated research-lead packet. A match is **not** fresh verification.
+- Q Tools: browser-local normalized EE / T2Y, nominal lifecycle comparison, and challenge draft exports.
+- Institution directory, update snapshots and user-directed email inquiries.
+- Read-only source availability watch; no automatic public edits.
+
+## Not enabled
+Live AI research, autonomous crawlers/publication, verified live fiscal ledgers, public contributions backend, full digital twin, or Cloudflare Pages Functions. Public safety and source review remain human-governed.
 
 ## Deployment
+Cloudflare Pages: repository `Q10ai/q-pueblo-`, production branch `main`, framework None, no build command, output `public`. A GitHub merge does not deploy or verify the host. Gate launch on the exact deployed commit, HTTP readback of all major pages/scripts, mobile and keyboard checks, source checks and a documented rollback. Refer to `docs/LAUNCH-RELEASE-NOTES.md`.
 
-Cloudflare Pages: connect this GitHub repository, production branch `main`, framework `None`, build command **leave empty**, build output directory `public`.
-
-No API tokens or payment setup are required for the static public beta. Review all claims and external links before a broad announcement.
+## Developer checks
+Run `node scripts/check-launch.mjs`, `node scripts/check-qify.mjs`, `node scripts/check-q-tools.mjs`, `node scripts/check-workbench.mjs` and other checks configured in `.github/workflows/validate.yml`.
