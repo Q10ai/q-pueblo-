@@ -17,7 +17,7 @@ const q=JSON.parse(read('data/q-pueblo-issue-index-2026-11-09.json'));
 const reports=JSON.parse(read('data/q-pueblo-qified-briefs-2026-11-09.json'));
 assert.equal(q.issues.length,174,'historical records count changed without reconciliation');
 assert.equal(new Set(q.issues.map(i=>i.id)).size,q.issues.length,'duplicate IDs');
-assert.equal(reports.reports.length,3);
+assert.equal(reports.reports.length,5,'Five source-scoped public briefs required');
 for(const r of reports.reports){for(const k of ['id','slug','summary','who','what','when','where','why','how','money','relations','counter','options','child','ee','t2y','rx','sources','unknowns','actions'])assert(k in r,r.id+': missing '+k);assert(r.sources.some(s=>/https:\/\//.test(s.url)),r.id+': no primary source');assert(!/CERTIFIED|PROVEN GUILTY/i.test(r.stage));}
 for(const name of ['index.html','qify.html','reports.html','entities.html','updates.html','sources.html','participate.html','support.html','method.html','es.html','q-tools.html','issues.html','topics.html','explore.html','workbench.html'])assert(pages.includes(name),'required page missing: '+name);
 assert(read('support.js').includes('Q10pueblo@gmail.com'),'public inbox missing');
