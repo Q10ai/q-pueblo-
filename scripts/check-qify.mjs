@@ -40,4 +40,8 @@ for(const report of records){
  assert(report.keyFacts.length && report.money.length && report.sources.length,report.slug);
  assert(report.sources.every(x=>/^https:\/\//.test(x.url)),report.slug);
 }
+const mill=records.find(r=>r.slug==='city-mill-levy-2026');
+assert(mill.whatKnown.some(x=>x.includes('fiscal year 2024')&&x.includes('2026')));
+assert(mill.unknowns.some(x=>x.includes('clarification')));
+assert(mill.money.some(x=>x.stage==='Expected revenues'&&x.status.includes('Disputed year')));
 console.log('PASS Evidence-first workbench: five reports, dated sources, explicit unknowns and display gates.');
