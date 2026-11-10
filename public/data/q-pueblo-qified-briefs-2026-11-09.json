@@ -1,0 +1,366 @@
+{
+  "schema": "qp-qified-source-packet-v1",
+  "assembled": "2026-11-09",
+  "curation": "Authoritative public records, explanatory analysis, review gaps explicitly disclosed",
+  "reports": [
+    {
+      "id": "QP-FIN-2026-001",
+      "slug": "budget-2026",
+      "title": "Pueblo’s 2026 adopted budget: what the ordinance actually authorizes",
+      "topic": "Budget & taxes",
+      "stage": "SOURCE-BACKED EXPLANATORY BRIEF · NOT AN EXPENDITURE AUDIT",
+      "date": "2026-11-09",
+      "review": "Source-backed figures; independently reproduced accounting audit pending",
+      "summary": "The City adopted a $128,202,143 General Fund appropriation for fiscal 2026 under Ordinance 11075. This is an adopted spending authorization, not evidence that every appropriated dollar has been paid.",
+      "keyFacts": [
+        {
+          "label": "FY2026 adopted General Fund total",
+          "value": "$128,202,143",
+          "stage": "Adopted appropriation",
+          "source": "budget-ordinance"
+        },
+        {
+          "label": "FY2026 estimated taxes",
+          "value": "$100,071,808",
+          "stage": "Revenue estimate, not collections",
+          "source": "budget-ordinance"
+        },
+        {
+          "label": "Police department appropriation",
+          "value": "$43,655,487",
+          "stage": "Appropriation",
+          "source": "budget-ordinance"
+        },
+        {
+          "label": "Fire department appropriation",
+          "value": "$29,883,192",
+          "stage": "Appropriation",
+          "source": "budget-ordinance"
+        }
+      ],
+      "whatKnown": [
+        "Ordinance 11075 adopts the FY2026 city budget and states the General Fund revenue and department appropriation schedule.",
+        "The Finance Department separately lists a 2027 proposed budget. A proposal is not an enacted appropriation or a verified payment.",
+        "The 2026 State of the City describes a revenue outlook and service pressures; that narrative must be read as an administration statement and reconciled against financial statements."
+      ],
+      "unknowns": [
+        "FY2026 actual disbursements and audited year-end results were not reconciled for this brief.",
+        "The 2027 proposal may change through Council action; do not label its amounts as adopted before reviewing final ordinances.",
+        "Different budget documents may group funds differently; avoid comparing citywide and General Fund numbers as though they share a denominator."
+      ],
+      "who": "City Council adopts budget ordinances; the Mayor submits an executive proposal; the Finance Department keeps official financial records. Specific charter authority and any amendments must be checked against source instruments.",
+      "what": "General Fund FY2026 adopted budget and associated revenue estimates.",
+      "when": "FY2026 appropriation, adopted under Ordinance 11075; this explanatory brief prepared November 9, 2026.",
+      "where": "City of Pueblo, Colorado; General Fund scope, not all entities in Pueblo County.",
+      "why": "Budget authorizations determine available public spending and services; households need to distinguish proposed, authorized and actually spent amounts.",
+      "how": "Compare the adopted ordinance with later monthly financial statements, treasury outflows, amendments, staffing changes and audited ACFR.",
+      "money": [
+        {
+          "stage": "Proposed",
+          "detail": "Mayor’s proposal; can be amended before adoption.",
+          "status": "Do not substitute for adopted."
+        },
+        {
+          "stage": "Authorized",
+          "detail": "FY2026 General Fund appropriation: $128,202,143.",
+          "status": "Supported by Ordinance 11075."
+        },
+        {
+          "stage": "Obligated",
+          "detail": "Contracts and purchase orders create separate commitments.",
+          "status": "Not reconciled here."
+        },
+        {
+          "stage": "Paid",
+          "detail": "Payments require actual transaction or audited expenditure evidence.",
+          "status": "Not reconciled here."
+        },
+        {
+          "stage": "Outcome",
+          "detail": "Services, employment and community results require independent measures.",
+          "status": "No causal outcome claimed."
+        }
+      ],
+      "relations": [
+        "Direct: City Council approval, Finance Department budget implementation, departments receiving appropriations.",
+        "Second order: contractors, service providers, unions, nonprofits and capital projects affected by allocations.",
+        "Third order: residents’ services, long-term operating commitments, household and child impacts; impacts are hypotheses until measured."
+      ],
+      "counter": "Adoption of a budget is not itself evidence of money being misspent. An apparent difference between proposals and final appropriations may reflect amendments or accounting classifications.",
+      "options": [
+        "Publish adopted versus amended versus actual FY2026 tables, with clear fund scope.",
+        "Create a 2027 proposal-to-adoption change log by meeting, ordinance and vote.",
+        "Track cost reductions alongside observed service levels and resident impacts rather than assuming either success or failure."
+      ],
+      "child": "Potential service effects for children and families should be traced to program budgets and measured delivery, without profiling minors.",
+      "ee": "Compare review time, source availability and accounting effort before deeper forensic work; do not claim an EE score without measured inputs.",
+      "t2y": "Truth stage: adopted ordinance supports the appropriation figure. Useful-yield stage: residents can compare authority and actuals once spending records are reconciled. Publication remains human-reviewed.",
+      "rx": "Preserve original and amended budgets, archived ordinances and dated reconciliations; flag contradictory totals for review.",
+      "actions": [
+        "Use the City’s annual budget and financial transparency portal to inspect expenditure records.",
+        "For any disputed line, record department, fund, budget year, accounting stage, document URL and last verification date.",
+        "Request a public-record crosswalk before alleging misuse or predicting program effects."
+      ],
+      "sources": [
+        {
+          "id": "budget-ordinance",
+          "title": "City of Pueblo — Ordinance 11075, FY2026 adopted budget",
+          "url": "https://www.pueblo.us/DocumentCenter/View/39357/Ordinance11075-Adopted-Budget",
+          "kind": "Primary municipal ordinance",
+          "asOf": "FY2026; accessed during November 2026 review"
+        },
+        {
+          "id": "finance-page",
+          "title": "City of Pueblo Finance Department — 2027 proposed budget and reporting hub",
+          "url": "https://www.pueblo.us/92/Finance",
+          "kind": "Official source hub",
+          "asOf": "November 2026"
+        },
+        {
+          "id": "state-2026",
+          "title": "City of Pueblo — 2026 State of the City",
+          "url": "https://www.pueblo.us/DocumentCenter/View/31157/State-of-the-City-2026",
+          "kind": "Official administration report",
+          "asOf": "2026"
+        }
+      ]
+    },
+    {
+      "id": "QP-MONEY-2026-002",
+      "slug": "half-cent-2026",
+      "title": "Half-Cent Economic Development Fund: commitments are not cash spent",
+      "topic": "Public money & development",
+      "stage": "SOURCE-BACKED DATED FUND BRIEF · CURRENT BALANCE NOT VERIFIED",
+      "date": "2026-11-09",
+      "review": "Dated primary cash recap; independent transaction reconciliation pending",
+      "summary": "The City’s April 2026 economic-development cash recap, with data as of May 13, 2026, reports $22,085,740 in Council-approved commitments, $66,641,474 uncommitted and $88,727,214 total funds. These amounts represent the report’s stated accounting categories, not a present-day cash balance.",
+      "keyFacts": [
+        {
+          "label": "Approved commitments",
+          "value": "$22,085,740",
+          "stage": "Dated report classification",
+          "source": "half-cent-april"
+        },
+        {
+          "label": "Uncommitted funds",
+          "value": "$66,641,474",
+          "stage": "Dated report classification",
+          "source": "half-cent-april"
+        },
+        {
+          "label": "Total reported funds",
+          "value": "$88,727,214",
+          "stage": "Dated fund report",
+          "source": "half-cent-april"
+        },
+        {
+          "label": "St Charles public improvements line",
+          "value": "$7,990,246",
+          "stage": "Specific commitment listed; included in fund report",
+          "source": "half-cent-april"
+        }
+      ],
+      "whatKnown": [
+        "The official report distinguishes approved commitments, uncommitted funds and total fund amounts.",
+        "The report lists project-specific future commitments, including St Charles public improvements.",
+        "The classifications are date-bound and cannot be assumed current for November 2026 without newer reports."
+      ],
+      "unknowns": [
+        "Changes in commitments after May 13, 2026; amended project budgets and actual cash disbursement are not reconciled.",
+        "Different descriptions of project incentives and infrastructure could overlap; nothing in this report proves any single consolidated Project Falcon figure.",
+        "The underlying expenditures, delivery milestones and achieved employment outcomes need separate records."
+      ],
+      "who": "City Council approved commitments are reported by the City of Pueblo; responsible spending departments and beneficiaries require case-specific executed instruments.",
+      "what": "Economic Development Half-Cent Tax Fund, future commitments in April 2026 report.",
+      "when": "April reporting period; reported data as of May 13, 2026; Qified brief November 9, 2026.",
+      "where": "City of Pueblo fund; applicability to individual industrial projects must be established line by line.",
+      "why": "Residents need to know whether a published amount is promised, available, contracted, paid, or associated with an achieved result.",
+      "how": "Reconcile project codes, council approvals, contracts, invoices and cash outflows across successive finance reports.",
+      "money": [
+        {
+          "stage": "Appropriation/fund availability",
+          "detail": "Total reported fund amount of $88,727,214.",
+          "status": "Dated report figure, not FY2026 citywide budget."
+        },
+        {
+          "stage": "Commitment",
+          "detail": "$22,085,740 classified as Council-approved commitments.",
+          "status": "Fund report as of May 13, 2026."
+        },
+        {
+          "stage": "Uncommitted",
+          "detail": "$66,641,474 classified as uncommitted.",
+          "status": "Separate from commitments; do not add twice."
+        },
+        {
+          "stage": "Payment",
+          "detail": "Requires disbursement ledgers or invoices.",
+          "status": "Not established from commitments table."
+        },
+        {
+          "stage": "Result",
+          "detail": "Jobs, infrastructure delivery and tax effects require separate outcome records.",
+          "status": "Not established."
+        }
+      ],
+      "relations": [
+        "Direct: Council approval, Finance Fund accounting and named project code.",
+        "Second order: eligible projects, infrastructure contractors, industrial site users and operating agencies.",
+        "Third order: public services, opportunities for workers and household effects; all require case-specific evidence."
+      ],
+      "counter": "A commitment is not automatically an improper expense or an actual cash payment. Infrastructure spending can serve multiple projects, so allocations require a defensible methodology and no double counting.",
+      "options": [
+        "Publish a project-code reconciliation with authorized, obligated and paid columns.",
+        "Show changes between April 2026 and the latest available economic-development report.",
+        "For debated projects, assign infrastructure costs on transparent criteria and disclose alternate allocations."
+      ],
+      "child": "Long-term tax revenues, commitments and public-services tradeoffs may affect young residents. This brief makes no unmeasured child-level claims.",
+      "ee": "Spend detailed audit effort on high-value discrepancies first: material dollars, weak documentation, public risk and potential reversibility.",
+      "t2y": "The 2026 fund report supports its own dated classifications. Benefit conclusions remain conditional until realized payments and project outcomes are verified.",
+      "rx": "Preserve earlier monthly recaps and note superseding figures; create a correction ticket for each unexplained project-code change.",
+      "actions": [
+        "Inspect the dated cash recap and find the matching next report.",
+        "Confirm the specific ordinance and project code before calculating a company or road total.",
+        "Use the Q Tools lifecycle calculator only with compatible, documented cost inputs."
+      ],
+      "sources": [
+        {
+          "id": "half-cent-april",
+          "title": "City of Pueblo — April 2026 Half-Cent Economic Development Cash Recap",
+          "url": "https://www.pueblo.us/ArchiveCenter/ViewFile/Item/5528",
+          "kind": "Primary City finance report",
+          "asOf": "Data as of 2026-05-13"
+        },
+        {
+          "id": "city-finance",
+          "title": "City of Pueblo — Finance and economic-development reports",
+          "url": "https://www.pueblo.us/92/Finance",
+          "kind": "Official source hub",
+          "asOf": "November 2026"
+        }
+      ]
+    },
+    {
+      "id": "QP-SOC-2027-003",
+      "slug": "csac-2027",
+      "title": "2027 nonprofit funding: requests versus proposed City support",
+      "topic": "Community services & public money",
+      "stage": "SOURCE-ATTRIBUTED DEVELOPING ISSUE · MULTI-PARTY REVIEW OPEN",
+      "date": "2026-11-09",
+      "review": "City statement is source-attributed; independent county counterstatement and final awards not reconciled",
+      "summary": "The City of Pueblo reports approximately $2.2 million in 2027 nonprofit funding requests from 46 organizations, while its 2027 proposed budget includes $490,000 for CSAC. That proposed allocation remains subject to Council approval. A request, proposed allocation, recommendation and award are different stages.",
+      "keyFacts": [
+        {
+          "label": "Applicant organizations",
+          "value": "46",
+          "stage": "Applications reported by City",
+          "source": "csac-release"
+        },
+        {
+          "label": "Aggregate requests",
+          "value": "Approximately $2.2 million",
+          "stage": "Applications, not awards",
+          "source": "csac-release"
+        },
+        {
+          "label": "Proposed City allocation",
+          "value": "$490,000",
+          "stage": "2027 proposal, not enacted",
+          "source": "city-csac"
+        },
+        {
+          "label": "Final 2027 awards",
+          "value": "Not confirmed",
+          "stage": "No final award conclusion",
+          "source": "csac-release"
+        }
+      ],
+      "whatKnown": [
+        "The City’s September 2026 release states that 46 applications were received and cautions that applications are not awards.",
+        "A later City release states its 2027 proposed budget includes $490,000 for CSAC; the City describes a dispute over County participation and reimbursement.",
+        "The source release describes CSAC as an established City–County recommendation process."
+      ],
+      "unknowns": [
+        "Actual approved 2027 City and County awards, if any, and the results of later deliberations.",
+        "Independent reconciliation of the County’s position on funding and any reimbursements.",
+        "Which applicants meet eligibility standards and what service levels a given grant would purchase."
+      ],
+      "who": "Community Services Advisory Commission evaluates nonprofit applications; City and County decision-making bodies have their own funding authority.",
+      "what": "2027 nonprofit application pipeline, proposed City funding and disputed intergovernmental arrangements.",
+      "when": "Applications announced September 2026; City funding statement published in early November 2026.",
+      "where": "Pueblo regional nonprofit service organizations; allocations and jurisdiction should be recorded separately.",
+      "why": "Funding decisions may affect social services; stakeholders need clear amounts, conditions, timing and official decisions.",
+      "how": "Compare the published application ledger to CSAC scores/recommendations, both governments’ votes and final grant agreements.",
+      "money": [
+        {
+          "stage": "Requested",
+          "detail": "Approximately $2.2 million submitted by 46 organizations.",
+          "status": "Applications; not approved grants."
+        },
+        {
+          "stage": "Proposed",
+          "detail": "City says $490,000 in proposed 2027 CSAC budget.",
+          "status": "Subject to Council consideration."
+        },
+        {
+          "stage": "Recommended",
+          "detail": "CSAC recommendations require deliberation.",
+          "status": "Not reconciled to completed vote."
+        },
+        {
+          "stage": "Awarded",
+          "detail": "City/County approvals and award letters needed.",
+          "status": "Not established."
+        },
+        {
+          "stage": "Paid",
+          "detail": "Actual grant disbursements require transaction records.",
+          "status": "Not established."
+        }
+      ],
+      "relations": [
+        "Direct: applicant nonprofits, CSAC and appropriating governments.",
+        "Second order: staff, subcontractors and providers that deliver funded services.",
+        "Third order: vulnerable residents and long-term service impacts; protect individual identities."
+      ],
+      "counter": "The City’s description of County withdrawal and the reimbursement disagreement is the City’s position in a public statement, not a neutral finding of responsibility. A request-to-proposal funding gap alone does not identify which programs qualify.",
+      "options": [
+        "Publish a program-by-program application, recommendation, award and payment ledger, with appeal/correction routes.",
+        "Compare service-continuity scenarios for reduced, delayed and full funding while protecting confidential client data.",
+        "Document both City and County responses and the executed funding arrangements before assigning fault."
+      ],
+      "child": "Childcare, nutrition, elder support and housing-service impacts should be analyzed at program level with privacy protections; no child is profiled.",
+      "ee": "Use one cross-government reconciliation and reusable program-level data model rather than repeated manual comparisons.",
+      "t2y": "Source-backed request and proposal amounts are useful, but the actual award and service outcomes remain undetermined and must not be predicted as facts.",
+      "rx": "Maintain dated releases and recommendations, publish revised grant decisions and keep a clear correction history.",
+      "actions": [
+        "Review the published application list and official funding statement.",
+        "Check subsequent CSAC recommendations and each governing body’s appropriation votes.",
+        "Ask how service continuity and independent oversight are protected if funding is reduced."
+      ],
+      "sources": [
+        {
+          "id": "csac-release",
+          "title": "City of Pueblo — 46 nonprofit applications for 2027 CSAC funding",
+          "url": "https://www.pueblo.us/m/newsflash/home/detail/4996",
+          "kind": "Official City application announcement",
+          "asOf": "September 2026"
+        },
+        {
+          "id": "city-csac",
+          "title": "City of Pueblo — public statement on City–County CSAC funding",
+          "url": "https://www.pueblo.us/m/newsflash/Home/Detail/5027",
+          "kind": "Official City position statement (not independent adjudication)",
+          "asOf": "November 2026"
+        },
+        {
+          "id": "finance-2027",
+          "title": "City of Pueblo — 2027 proposed budget access",
+          "url": "https://www.pueblo.us/92/Finance",
+          "kind": "Official finance hub",
+          "asOf": "November 2026"
+        }
+      ]
+    }
+  ]
+}

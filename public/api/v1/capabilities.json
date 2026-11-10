@@ -1,0 +1,19 @@
+{
+  "project":"Q-Pueblo",
+  "release":"source-attributed-public-candidate-2026-11-09",
+  "mode":"static-public-information",
+  "historical_issue_index":true,
+  "historical_issue_snapshot":"2026-11-08",
+  "local_question_search":true,
+  "qified_source_attributed_reports":3,
+  "local_ee_t2y_lifecycle_tools":true,
+  "email_only_inquiries":true,
+  "autonomous_public_research_agents":false,
+  "live_external_web_search":false,
+  "automated_public_meeting_ingest":false,
+  "automatic_publication":false,
+  "server_side_contribution_intake":false,
+  "live_digital_twin":false,
+  "review_gate":"human_required",
+  "limitations":"Read-only status declaration for static deployment, not an operational backend API."
+}
