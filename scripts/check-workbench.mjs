@@ -30,6 +30,8 @@ for(const token of ['fourScenarios','Correlated / backup failure','MODELLED COND
   if(token==='sourceBy')continue;
   assert.ok(js.includes(token),'Missing core fallback or packet capability: '+token);
 }
-assert.ok(!/\bfetch\(|XMLHttpRequest|localStorage|sessionStorage|sendBeacon/.test(js),'Workbench must not transmit or persist personal input');
+const fetches=[...js.matchAll(/\\bfetch\\s*\\(\\s*['"]([^'"]+)['"]/g)].map(x=>x[1]);
+assert.deepEqual(fetches,['data/q-pueblo-qified-briefs-2026-11-09.json'],'Only locally served public source evidence may be fetched');
+assert.ok(!/XMLHttpRequest|localStorage|sessionStorage|sendBeacon/.test(js),'No persistence or telemetry of personal queries');
 assert.ok(!/api_key=|SECRET_TOKEN|BEGIN PRIVATE KEY/.test(js+specJs));
 console.log('PASS: Role workbench schema, controls, unknown issue, 5Ws, impact layers, RX, shock/LEAP, local export and privacy boundaries.');
