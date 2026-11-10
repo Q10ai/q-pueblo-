@@ -7,8 +7,14 @@
   const years = value => new Set(terms(value).filter(w => /^(?:19|20)\d{2}$/.test(w)));
   const sourceValid = s => s && typeof s.title === 'string' && /^https:\/\/[^\s<>"']+$/i.test(String(s.url || ''));
   const reportValid = r => r && typeof r.id === 'string' && typeof r.slug === 'string' && typeof r.title === 'string' && typeof r.summary === 'string' && typeof r.date === 'string' && Array.isArray(r.sources) && r.sources.some(sourceValid);
+  // Exact author-specified questions are scoped to a particular dated report.
+  // They do NOT authorize an answer to a more general or subsequently changed claim.
+  const normalizeExact = v => String(v ?? '').toLowerCase().normalize('NFKD').replace(/[’']/g,'').replace(/[^a-z0-9]+/g,' ').trim();
   function selectReport(query, reports) {
     if (!Array.isArray(reports)) return null;
+    const exact = reports.filter(reportValid).filter(r=>Array.isArray(r.questions) && r.questions.some(q=>normalizeExact(q)===normalizeExact(query)));
+    if (exact.length===1) return {report:exact[0],score:1000,status:'EXACT_AUTHORED_QUESTION_DATED_REPORT_NOT_LIVE_VERIFICATION'};
+    if (exact.length>1) return null;
     const q = unique(query), qYears = years(query);
     if (!q.length) return null;
     // A question about disbursements must not receive an authorization or
