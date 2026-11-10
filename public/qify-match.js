@@ -15,10 +15,8 @@
     // commitment figure as though it were paid. Financial stages are not synonyms.
     const askedPaid = /\b(spent|spending|expenditure|paid|payment|disbursed|disbursement|invoiced|collected|receipts|received)\b/i.test(query);
     const paidAnchors = ['actually paid','paid to date','total expenditure','expenditures through','actual collections'];
-    if (askedPaid && !reports.some(r => reportValid(r) && paidAnchors.some(a => String(r.summary).toLowerCase().includes(a)))) {
-      return null;
-    }
     const ranked = reports.filter(reportValid).map(report => {
+      if (askedPaid && !paidAnchors.some(a => String(report.summary).toLowerCase().includes(a))) return null;
       const title = new Set(unique([report.title,report.slug,report.id,report.topic || ''].join(' ')));
       const context = new Set(unique([report.summary,report.what || ''].join(' ')));
       const subjectTerms = new Set(['budget','nonprofit','road','water','schools','school','election','airport','csac','half','cent','flood','police','tax','fire','housing']);
