@@ -1,0 +1,32 @@
+name: Q-Pueblo AI Security Gate
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate endpoint and controls
+        run: |
+          node --check functions/api/v1/report-draft.js
+          node --check scripts/check-live-ai-security.mjs
+          node --test scripts/check-live-ai-security.mjs
+          node -e "const r=require('./public/_routes.json'); if(r.version!==1||r.include.length!==2||r.include.includes('/*')) process.exit(1)"
+      - name: Reject accidental environment secrets
+        run: |
+          test ! -e .env
+          test ! -e .dev.vars
+          test ! -e public/.env
+          test ! -e functions/.env
+          test ! -e functions/.dev.vars
+          if find . -path './.git' -prune -o -type f \( -name '*.pem' -o -name '*.p12' -o -name '*.pfx' -o -name '*.secret' -o -name '.env.*' -o -name '.dev.vars.*' \) -print | grep -q .; then
+            echo 'Local key material detected'; exit 1
+          fi
