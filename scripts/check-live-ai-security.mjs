@@ -80,7 +80,7 @@ test("draft response is explicitly unverified, private, source-bound and capped"
     assert.equal(body.max_output_tokens, 600);
     assert.equal(body.model, "gpt-4.1-mini");
     assert.match(body.instructions, /UNVERIFIED/);
-    return new Response(JSON.stringify({ output: [{ content: [{ type: "output_text", text: "Source S1 supports an appropriation, not payment." }] }] }), {
+    return new Response(JSON.stringify({ status: "completed", output: [{ content: [{ type: "output_text", text: "Source S1 supports an appropriation, not payment." }] }] }), {
       status: 200, headers: { "Content-Type": "application/json" }
     });
   };
@@ -95,5 +95,17 @@ test("draft response is explicitly unverified, private, source-bound and capped"
     assert.equal(response.headers.get("Access-Control-Allow-Origin"), null);
     assert.match(response.headers.get("Cache-Control"), /no-store/);
     assert.equal(calls, 1);
+  } finally { globalThis.fetch = old; }
+});
+
+test("bounded streaming rejects oversized bodies without model contact", async () => {
+  const large = { ...payload, question: "x".repeat(14000) };
+  const old = globalThis.fetch;
+  let called = false;
+  globalThis.fetch = async () => { called = true; throw Error("unexpected upstream"); };
+  try {
+    const response = await onRequestPost({ request: request(large), env });
+    await checkStatus(response, 413, "REQUEST_TOO_LARGE");
+    assert.equal(called, false);
   } finally { globalThis.fetch = old; }
 });
