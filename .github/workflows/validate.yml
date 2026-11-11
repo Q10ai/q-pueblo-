@@ -41,6 +41,9 @@ jobs:
           node --check public/data/q-pueblo-public-catalog-2026-11-08.js
           node --check scripts/check-public-catalog.mjs
           node --check functions/api/v1/config.js
+          node --check functions/api/v1/research.js
+          node --check functions/api/v1/admin/research.js
+          node --check scripts/check-research-api.mjs
       - name: Validate required public pages and safety headers
         run: |
           test -s public/index.html
@@ -75,6 +78,7 @@ jobs:
           node scripts/check-q-tools.mjs
           node scripts/check-qify.mjs
           node scripts/check-question-pipeline.mjs
+          node scripts/check-research-api.mjs
           node scripts/check-evidence-desk.mjs
           node scripts/check-packet-reports.mjs
           node scripts/check-launch.mjs
