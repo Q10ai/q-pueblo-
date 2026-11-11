@@ -17,6 +17,7 @@ export async function onRequestPost({request,env}) {
   if(!/^application\/json\b/i.test(request.headers.get('Content-Type')||''))return json({error:'JSON_REQUIRED'},415);
   if(Number(request.headers.get('Content-Length')||0)>4096)return json({error:'REQUEST_TOO_LARGE'},413);
   let body;try{const raw=await request.text();if(raw.length>4096)throw Error();body=JSON.parse(raw)}catch{return json({error:'INVALID_JSON'},400)}
+  if(!body || typeof body!=='object' || Array.isArray(body))return json({error:'INVALID_JSON'},400);
   const question=compact(body.question,500),kind=compact(body.kind,30),source=compact(body.sourceUrl,700);
   if(question.length<20 || String(body.question||'').length>500 || !['question','correction','public_source'].includes(kind) || !urlOK(source) || body.publicInformationOnly!==true)return json({error:'INVALID_PUBLIC_INTAKE'},400);
   if(likelyPersonal(question))return json({error:'PERSONAL_DETAILS_DETECTED',message:'Do not submit personal details to a public research intake.'},400);
@@ -56,6 +57,6 @@ export async function onRequestDelete({request,env}) {
       env.QP_DB.prepare('DELETE FROM research_events WHERE case_id=?').bind(id),
       env.QP_DB.prepare('DELETE FROM research_cases WHERE id=? AND receipt_sha256=?').bind(id,row.receipt_sha256)
     ]);
-    return json({state:'WITHDRAWN',message:'The case and associated review events have been deleted.'});
+    return json({state:'WITHDRAWN',message:'Case rows deleted from primary D1. Provider backups may have separate retention.'});
   }catch{return json({error:'WITHDRAWAL_UNAVAILABLE'},503)}
 }
