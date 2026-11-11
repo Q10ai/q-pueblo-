@@ -6,6 +6,8 @@ This index registers **research candidates**, not live website content or operat
 | --- | --- | --- | --- | --- |
 | QP-ECON-2026-1106 | 2026-11-06 | 2026-11-08 | [Research brief](QP-ECON-2026-1106.md), [structured record](QP-ECON-2026-1106.public.json), [dormant signals](../signals/QP-ECON-2026-1106.yaml) | ARCHIVED — verification and editorial review required |
 
+| QP-ECON-2026-ECOASIS-001 | 2026-11-10 | 2026-11-10 | [Ecoasis research packet](QP-ECON-2026-ECOASIS-001.md), [dormant signal](../signals/QP-ECON-2026-ECOASIS-001.yaml) | NEW CANDIDATE — event / entity / jobs / funds unverified; no twin activation |
+
 ## Integration contract
 
 - **Control-plane:** existing QPueblo master evidence ledger / index registry / QIFY-QRX workbook; this page does not declare which historical artifact is canonical.
