@@ -1,0 +1,53 @@
+# Dormant Q-Pueblo project signal — human-review only; never ingest as live fact
+packet_id: QP-ECON-2026-ECOASIS-001
+packet_version: 0.1.0
+created_as_of: 2026-11-10
+source_class: user_supplied_announcement
+evidence_status: proposed_unverified
+publication_approved: false
+automated_monitoring_enabled: false
+digital_twin_import_enabled: false
+jurisdictions: [Pueblo_City, Pueblo_County, Colorado_State]
+event:
+  name: Ecoasis AgTech Park community information session
+  proposed_local_date: 2026-11-16
+  proposed_local_time: "18:00"
+  claimed_venue: Hoag Theater, Pueblo Community College
+  claimed_address: 900 W Orman Ave, Pueblo, CO 81004
+  venue_exists: true
+  event_booking_independently_verified: false
+entities:
+  Ecoasis_AgTech_Park:
+    legal_identity_verified: false
+  PEDCO:
+    relationship: collaborator_claimed_by_post
+    relationship_verified: false
+  Ecoasis_LLC_CO_20261636779:
+    match_to_project: unconfirmed
+  Project_Deep_Root:
+    relationship: comparison_only_no_proven_link
+metrics:
+  permanent_jobs_projected_floor: 1000
+  direct_fte_jobs_committed: null
+  permanent_jobs_observed: null
+  committed_project_capital_usd: null
+  approved_public_incentives_usd: null
+  paid_public_incentives_usd: null
+  annual_water_demand_af: null
+  peak_power_mw: null
+land:
+  verified_parcel_ids: []
+  geometry: null
+guards:
+  - projected_numbers_are_not_observed_results
+  - legal_entity_matches_require_primary_documents
+  - no_project_deep_root_identity_merge
+  - no_public_money_without_authorization_instrument
+  - human_editorial_signoff_required
+sources:
+  - https://pueblocc.edu/pcc-community/conference-event-services/facilities
+  - https://www.pedco.org/how-pedco-grows-pueblos-economy/
+  - https://www.cpr.org/2025/10/01/pueblo-ends-development-contract-with-pedco/
+  - https://opengovus.com/colorado-business/20261636779
+  - https://www.denvergazette.com/2026/09/17/colorado-has-to-get-creative-with-limited-economic-funds-to-lure-companies/
+followup_after_event: human_source_review_only
