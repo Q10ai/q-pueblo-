@@ -31,7 +31,6 @@ jobs:
           node scripts/check-legacy-navigation.mjs
       - name: No live backend or unsupported publication claims
         run: |
-          grep -q '"autonomous_public_research_agents":false' public/api/v1/capabilities.json
-          grep -q '"server_side_contribution_intake":false' public/api/v1/capabilities.json
+          node -e "const x=require('./public/api/v1/capabilities.json'); if(x.autonomous_public_research_agents!==false || x.server_side_contribution_intake!==false || x.automatic_publication!==false) process.exit(1)"
           test ! -e public/.env
           test ! -e .dev.vars
