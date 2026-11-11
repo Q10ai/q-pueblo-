@@ -39,3 +39,11 @@ Transitions: unverified_lead -> triage/rejected; triage -> researching/human_rev
 Node tests: scripts/check-question-pipeline.mjs and scripts/check-research-api.mjs, wired into Public Beta Validation. Test acceptance must be observed from GitHub Actions, not inferred from writing these scripts. Existing public site has 14 dated reports and a 174-issue historical index (source snapshot); those are not current verified civic-wide totals.
 
 Operator public status must remain: server intake DISABLED; autonomous research DISABLED; automatic publication DISABLED; evidence still requires human review. Do not claim a completed production loop until bindings, bots, deletion, human review UX, investigation worker and live host validation are all demonstrated.
+
+## Review-only amendments and contradiction pipeline
+
+A new proposal compiler (`scripts/propose-report-amendment.mjs`) accepts the **specific baseline report object**, a new candidate JSON, and a new file destination. It pins baseline ID/version and SHA-256, keeps original claim snapshots, validates new HTTPS source IDs and role classifications, flags incompatible financial stages and text contradictions, and writes a 0600 review-only proposal under a new filename (exclusive create). It never touches public report JSON or promotes a lead into a finding. Tests: `node scripts/check-report-amendment.mjs`.
+
+Input candidate contract: `schema: qp-amendment-candidate-v1`, `reportId`, `baseVersion`, `observedAt: YYYY-MM-DD`, `evidence: [{id,title,url,role,checked,originGroup}]` and `changes: [{claimId,proposedClaim,proposedStage,reason,evidenceId}]`. Distinct-origin evidence and original public records must be independently checked by a human before any subsequent authored-report version can supersede another.
+
+The output includes `state=CHALLENGE_PENDING_HUMAN_REVIEW`, `publicationAllowed=false`, contradiction and accounting-stage flags, affected issue IDs, original and proposal hashes, source freshness status and review requirements. The proposal is deliberately not a publishing tool.
