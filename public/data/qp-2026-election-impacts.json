@@ -1,0 +1,2018 @@
+{
+  "schema": "qp-election-impact-registry-v1",
+  "version": "0.1.0",
+  "as_of": "2026-11-05",
+  "last_reviewed": "2026-11-11",
+  "status": "UNOFFICIAL_PENDING_CANVASS",
+  "disclaimer": "Pueblo County Nov 5 unofficial returns; not certified, not necessarily district/statewide results. No elected-office or policy effective-date assertion. Refresh scheduled Nov 13.",
+  "source_url": "https://pueblocounty.gov/sites/default/files/2026-11/2026%20November%20Unofficial%20Results%20-%20November%205th%20Unofficial%20Results.pdf",
+  "source_status_url": "https://pueblocounty.gov/clerk-and-recorder-department/election-results-november-2026",
+  "records": [
+    {
+      "id": "US-SEN",
+      "record_type": "office_election",
+      "title": "United States Senator",
+      "source_page": 1,
+      "ballot_geography": "pueblo_county_election_geography",
+      "candidates": [
+        {
+          "name": "John Hickenlooper",
+          "affiliation": "DEM",
+          "votes": 36434
+        },
+        {
+          "name": "Mark Baisley",
+          "affiliation": "REP",
+          "votes": 29001
+        },
+        {
+          "name": "Bob Chew",
+          "affiliation": "FWD",
+          "votes": 1332
+        },
+        {
+          "name": "Christopher Baum",
+          "affiliation": "APV",
+          "votes": 175
+        },
+        {
+          "name": "Blake Huber",
+          "affiliation": "LBR",
+          "votes": 756
+        },
+        {
+          "name": "Adam Withrow",
+          "affiliation": "UNI",
+          "votes": 394
+        }
+      ],
+      "linked_entities": [
+        "US_SENATE",
+        "COLORADO_FEDERAL_DELEGATION"
+      ],
+      "impact_domains": [
+        "federal_budget",
+        "federal_grants",
+        "legislation"
+      ],
+      "impact_note": "Pueblo County subset ONLY; this is not the statewide result.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 68092,
+      "count_leader": "John Hickenlooper",
+      "count_margin": 7433
+    },
+    {
+      "id": "US-HOUSE-03",
+      "record_type": "office_election",
+      "title": "U.S. House District 3",
+      "source_page": 1,
+      "ballot_geography": "pueblo_county_election_geography",
+      "candidates": [
+        {
+          "name": "Dwayne L. Romero",
+          "affiliation": "DEM",
+          "votes": 34252
+        },
+        {
+          "name": "Jeff Hurd",
+          "affiliation": "REP",
+          "votes": 31131
+        },
+        {
+          "name": "Cory Robertson",
+          "affiliation": "LBR",
+          "votes": 1112
+        },
+        {
+          "name": "Clifton Brown",
+          "affiliation": "UAF",
+          "votes": 1386
+        }
+      ],
+      "linked_entities": [
+        "US_HOUSE_CD3",
+        "COLORADO_FEDERAL_DELEGATION"
+      ],
+      "impact_domains": [
+        "federal_grants",
+        "transportation",
+        "water",
+        "economy"
+      ],
+      "impact_note": "Pueblo county subsection, NOT district-wide totals; local lead does not determine congressional seat.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 67881,
+      "count_leader": "Dwayne L. Romero",
+      "count_margin": 3121
+    },
+    {
+      "id": "CO-GOV",
+      "record_type": "office_election",
+      "title": "Colorado Governor / Lieutenant Governor",
+      "source_page": 2,
+      "ballot_geography": "pueblo_county_election_geography",
+      "candidates": [
+        {
+          "name": "Phil Weiser / Lesley Dahlkemper",
+          "affiliation": "DEM",
+          "votes": 35368
+        },
+        {
+          "name": "Victor Marx / George Washington Market",
+          "affiliation": "REP",
+          "votes": 29128
+        },
+        {
+          "name": "Stephen T. Hamilton / James K Treibert",
+          "affiliation": "ACN",
+          "votes": 423
+        },
+        {
+          "name": "Eric Mulder / Wayne Harlos",
+          "affiliation": "LBR",
+          "votes": 712
+        },
+        {
+          "name": "Jeff Peckman / T.J. Cole",
+          "affiliation": "UNI",
+          "votes": 139
+        },
+        {
+          "name": "Erik Underwood / Frank Atwood",
+          "affiliation": "APV",
+          "votes": 221
+        },
+        {
+          "name": "Greg Lopez / Taralyn Romero",
+          "affiliation": "UAF",
+          "votes": 1987
+        }
+      ],
+      "linked_entities": [
+        "COLORADO_EXECUTIVE"
+      ],
+      "impact_domains": [
+        "state_budget",
+        "agencies",
+        "policy",
+        "education"
+      ],
+      "impact_note": "Pueblo county subdivision, not state totals or current officeholder.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 67978,
+      "count_leader": "Phil Weiser / Lesley Dahlkemper",
+      "count_margin": 6240
+    },
+    {
+      "id": "CO-SOS",
+      "record_type": "office_election",
+      "title": "Colorado Secretary of State",
+      "source_page": 2,
+      "ballot_geography": "pueblo_county_election_geography",
+      "candidates": [
+        {
+          "name": "Amanda Gonzalez",
+          "affiliation": "DEM",
+          "votes": 35980
+        },
+        {
+          "name": "James Wiley",
+          "affiliation": "REP",
+          "votes": 29818
+        },
+        {
+          "name": "Sean Vadney",
+          "affiliation": "LBR",
+          "votes": 814
+        },
+        {
+          "name": "Amanda Campbell",
+          "affiliation": "ACN",
+          "votes": 794
+        },
+        {
+          "name": "Celeste Landry",
+          "affiliation": "FWD",
+          "votes": 388
+        }
+      ],
+      "linked_entities": [
+        "COLORADO_SOS"
+      ],
+      "impact_domains": [
+        "elections",
+        "business_registration",
+        "governance"
+      ],
+      "impact_note": "",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 67794,
+      "count_leader": "Amanda Gonzalez",
+      "count_margin": 6162
+    },
+    {
+      "id": "CO-TREAS",
+      "record_type": "office_election",
+      "title": "Colorado State Treasurer",
+      "source_page": 3,
+      "ballot_geography": "pueblo_county_election_geography",
+      "candidates": [
+        {
+          "name": "Jeff Bridges",
+          "affiliation": "DEM",
+          "votes": 35351
+        },
+        {
+          "name": "Kevin Grantham",
+          "affiliation": "REP",
+          "votes": 30391
+        },
+        {
+          "name": "Jodie Barr",
+          "affiliation": "LBR",
+          "votes": 1312
+        },
+        {
+          "name": "Marilee Langner Sturgis",
+          "affiliation": "APV",
+          "votes": 458
+        }
+      ],
+      "linked_entities": [
+        "COLORADO_TREASURY"
+      ],
+      "impact_domains": [
+        "public_money",
+        "state_finance"
+      ],
+      "impact_note": "",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 67512,
+      "count_leader": "Jeff Bridges",
+      "count_margin": 4960
+    },
+    {
+      "id": "CO-AG",
+      "record_type": "office_election",
+      "title": "Colorado Attorney General",
+      "source_page": 3,
+      "ballot_geography": "pueblo_county_election_geography",
+      "candidates": [
+        {
+          "name": "Jena Griswold",
+          "affiliation": "DEM",
+          "votes": 36027
+        },
+        {
+          "name": "Michael J. Allen",
+          "affiliation": "REP",
+          "votes": 31584
+        }
+      ],
+      "linked_entities": [
+        "COLORADO_AG"
+      ],
+      "impact_domains": [
+        "enforcement",
+        "consumer_protection"
+      ],
+      "impact_note": "",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 67611,
+      "count_leader": "Jena Griswold",
+      "count_margin": 4443
+    },
+    {
+      "id": "CO-BOE-CD3",
+      "record_type": "office_election",
+      "title": "State Board of Education Congressional District 3",
+      "source_page": 3,
+      "ballot_geography": "pueblo_county_election_geography",
+      "candidates": [
+        {
+          "name": "Barb Clementi",
+          "affiliation": "DEM",
+          "votes": 36158
+        },
+        {
+          "name": "Sherri M Wright",
+          "affiliation": "REP",
+          "votes": 30732
+        }
+      ],
+      "linked_entities": [
+        "STATE_EDUCATION_BOARD"
+      ],
+      "impact_domains": [
+        "schools",
+        "education"
+      ],
+      "impact_note": "Pueblo County share only. District-wide result separately required.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 66890,
+      "count_leader": "Barb Clementi",
+      "count_margin": 5426
+    },
+    {
+      "id": "CO-SEN-03",
+      "record_type": "office_election",
+      "title": "Colorado Senate District 3",
+      "source_page": 4,
+      "ballot_geography": "pueblo_county_election_geography",
+      "candidates": [
+        {
+          "name": "Aaron Gutierrez",
+          "affiliation": "DEM",
+          "votes": 36624
+        },
+        {
+          "name": "Dana Charles",
+          "affiliation": "REP",
+          "votes": 30759
+        }
+      ],
+      "linked_entities": [
+        "COLORADO_LEGISLATURE",
+        "CO_SEN_DISTRICT_3"
+      ],
+      "impact_domains": [
+        "laws",
+        "state_budget",
+        "Pueblo_representation"
+      ],
+      "impact_note": "",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 67383,
+      "count_leader": "Aaron Gutierrez",
+      "count_margin": 5865
+    },
+    {
+      "id": "CO-HOUSE-46",
+      "record_type": "office_election",
+      "title": "Colorado House District 46",
+      "source_page": 4,
+      "ballot_geography": "pueblo_county_portion_of_district",
+      "candidates": [
+        {
+          "name": "Tisha Mauro",
+          "affiliation": "DEM",
+          "votes": 21250
+        },
+        {
+          "name": "Jonathan Post",
+          "affiliation": "REP",
+          "votes": 16284
+        }
+      ],
+      "linked_entities": [
+        "COLORADO_LEGISLATURE",
+        "CO_HOUSE_DISTRICT_46"
+      ],
+      "impact_domains": [
+        "laws",
+        "education",
+        "state_budget"
+      ],
+      "impact_note": "",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 37534,
+      "count_leader": "Tisha Mauro",
+      "count_margin": 4966
+    },
+    {
+      "id": "CO-HOUSE-47",
+      "record_type": "office_election",
+      "title": "Colorado House District 47",
+      "source_page": 4,
+      "ballot_geography": "pueblo_county_portion_of_district",
+      "candidates": [
+        {
+          "name": "Ty Winter",
+          "affiliation": "REP",
+          "votes": 6381
+        },
+        {
+          "name": "Vic Meyers",
+          "affiliation": "DEM",
+          "votes": 4367
+        }
+      ],
+      "linked_entities": [
+        "COLORADO_LEGISLATURE",
+        "CO_HOUSE_DISTRICT_47"
+      ],
+      "impact_domains": [
+        "laws",
+        "infrastructure"
+      ],
+      "impact_note": "",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 10748,
+      "count_leader": "Ty Winter",
+      "count_margin": 2014
+    },
+    {
+      "id": "CO-HOUSE-60",
+      "record_type": "office_election",
+      "title": "Colorado House District 60",
+      "source_page": 5,
+      "ballot_geography": "pueblo_county_portion_of_district",
+      "candidates": [
+        {
+          "name": "Matt Alexander",
+          "affiliation": "REP",
+          "votes": 4334
+        },
+        {
+          "name": "Kathryn Kester Green",
+          "affiliation": "DEM",
+          "votes": 2280
+        }
+      ],
+      "linked_entities": [
+        "COLORADO_LEGISLATURE",
+        "CO_HOUSE_DISTRICT_60"
+      ],
+      "impact_domains": [
+        "laws",
+        "water"
+      ],
+      "impact_note": "",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 6614,
+      "count_leader": "Matt Alexander",
+      "count_margin": 2054
+    },
+    {
+      "id": "CO-HOUSE-62",
+      "record_type": "office_election",
+      "title": "Colorado House District 62",
+      "source_page": 5,
+      "ballot_geography": "pueblo_county_portion_of_district",
+      "candidates": [
+        {
+          "name": "Matthew Martinez",
+          "affiliation": "DEM",
+          "votes": 8343
+        },
+        {
+          "name": "Steven Rodriguez",
+          "affiliation": "REP",
+          "votes": 3614
+        },
+        {
+          "name": "Donald Vermillion",
+          "affiliation": "LBR",
+          "votes": 392
+        }
+      ],
+      "linked_entities": [
+        "COLORADO_LEGISLATURE",
+        "CO_HOUSE_DISTRICT_62"
+      ],
+      "impact_domains": [
+        "laws",
+        "rural_economy"
+      ],
+      "impact_note": "",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 12349,
+      "count_leader": "Matthew Martinez",
+      "count_margin": 4729
+    },
+    {
+      "id": "PC-COMM-03",
+      "record_type": "office_election",
+      "title": "Pueblo County Commissioner District 3",
+      "source_page": 5,
+      "ballot_geography": "pueblo_county_election_geography",
+      "candidates": [
+        {
+          "name": "Angela Giron",
+          "affiliation": "DEM",
+          "votes": 33987
+        },
+        {
+          "name": "Zach Swearingen",
+          "affiliation": "REP",
+          "votes": 33177
+        }
+      ],
+      "linked_entities": [
+        "PUEBLO_COUNTY_COMMISSIONERS"
+      ],
+      "impact_domains": [
+        "county_budget",
+        "land_use",
+        "development",
+        "county_contracts"
+      ],
+      "impact_note": "810 vote lead in unofficial count; incumbent is not replaced before lawful qualification and term commencement.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 67164,
+      "count_leader": "Angela Giron",
+      "count_margin": 810
+    },
+    {
+      "id": "PC-CLERK",
+      "record_type": "office_election",
+      "title": "Pueblo County Clerk and Recorder",
+      "source_page": 6,
+      "ballot_geography": "pueblo_county_election_geography",
+      "candidates": [
+        {
+          "name": "Candace Rivera",
+          "affiliation": "DEM",
+          "votes": 40240
+        },
+        {
+          "name": "Mary Vieth",
+          "affiliation": "REP",
+          "votes": 27458
+        }
+      ],
+      "linked_entities": [
+        "PUEBLO_COUNTY_CLERK"
+      ],
+      "impact_domains": [
+        "election_administration",
+        "public_records",
+        "county_budget"
+      ],
+      "impact_note": "",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 67698,
+      "count_leader": "Candace Rivera",
+      "count_margin": 12782
+    },
+    {
+      "id": "PC-TREAS",
+      "record_type": "office_election",
+      "title": "Pueblo County Treasurer",
+      "source_page": 6,
+      "ballot_geography": "pueblo_county_election_geography",
+      "candidates": [
+        {
+          "name": "Kim Archuletta",
+          "affiliation": "DEM",
+          "votes": 38280
+        },
+        {
+          "name": "Jonathan Ambler",
+          "affiliation": "REP",
+          "votes": 28960
+        }
+      ],
+      "linked_entities": [
+        "PUEBLO_COUNTY_TREASURER"
+      ],
+      "impact_domains": [
+        "tax_collection",
+        "county_finance"
+      ],
+      "impact_note": "",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 67240,
+      "count_leader": "Kim Archuletta",
+      "count_margin": 9320
+    },
+    {
+      "id": "PC-ASSESSOR",
+      "record_type": "office_election",
+      "title": "Pueblo County Assessor",
+      "source_page": 6,
+      "ballot_geography": "pueblo_county_election_geography",
+      "candidates": [
+        {
+          "name": "Tammi Pando",
+          "affiliation": "REP",
+          "votes": 33992
+        },
+        {
+          "name": "Naseem Zubi",
+          "affiliation": "DEM",
+          "votes": 33054
+        }
+      ],
+      "linked_entities": [
+        "PUEBLO_COUNTY_ASSESSOR"
+      ],
+      "impact_domains": [
+        "property_values",
+        "tax_base",
+        "assessment_appeals"
+      ],
+      "impact_note": "938 vote lead; potential transition pending canvass.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 67046,
+      "count_leader": "Tammi Pando",
+      "count_margin": 938
+    },
+    {
+      "id": "PC-SHERIFF",
+      "record_type": "office_election",
+      "title": "Pueblo County Sheriff",
+      "source_page": 7,
+      "ballot_geography": "pueblo_county_election_geography",
+      "candidates": [
+        {
+          "name": "Allen Medina",
+          "affiliation": "DEM",
+          "votes": 33158
+        },
+        {
+          "name": "Leroy Mora",
+          "affiliation": "UAF",
+          "votes": 32880
+        }
+      ],
+      "linked_entities": [
+        "PUEBLO_COUNTY_SHERIFF"
+      ],
+      "impact_domains": [
+        "law_enforcement",
+        "jail",
+        "public_safety",
+        "county_budget"
+      ],
+      "impact_note": "278 vote lead; close race, do not represent leader as sheriff-elect or current sheriff.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 66038,
+      "count_leader": "Allen Medina",
+      "count_margin": 278
+    },
+    {
+      "id": "PC-SURVEYOR",
+      "record_type": "office_election",
+      "title": "Pueblo County Surveyor",
+      "source_page": 7,
+      "ballot_geography": "pueblo_county_election_geography",
+      "candidates": [
+        {
+          "name": "Randy Reeves",
+          "affiliation": "DEM",
+          "votes": 50888
+        }
+      ],
+      "linked_entities": [
+        "PUEBLO_COUNTY_SURVEYOR"
+      ],
+      "impact_domains": [
+        "land_records",
+        "surveying"
+      ],
+      "impact_note": "Unopposed ballot listing, not office transition proof.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 50888,
+      "count_leader": "Randy Reeves",
+      "count_margin": null
+    },
+    {
+      "id": "PC-CORONER",
+      "record_type": "office_election",
+      "title": "Pueblo County Coroner",
+      "source_page": 7,
+      "ballot_geography": "pueblo_county_election_geography",
+      "candidates": [
+        {
+          "name": "Zolanye McCulley-Bachicha",
+          "affiliation": "DEM",
+          "votes": 36167
+        },
+        {
+          "name": "Gregory Grahek",
+          "affiliation": "REP",
+          "votes": 31092
+        }
+      ],
+      "linked_entities": [
+        "PUEBLO_COUNTY_CORONER"
+      ],
+      "impact_domains": [
+        "death_investigations",
+        "public_health"
+      ],
+      "impact_note": "",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 67259,
+      "count_leader": "Zolanye McCulley-Bachicha",
+      "count_margin": 5075
+    },
+    {
+      "id": "CO-SC-HOOD",
+      "record_type": "measure",
+      "title": "Colorado Supreme Court Justice — Hood",
+      "source_page": 8,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 34336,
+      "no": 26360,
+      "linked_entities": [
+        "COLORADO_JUDICIARY"
+      ],
+      "impact_domains": [
+        "justice",
+        "judicial_governance"
+      ],
+      "impact_note": "Judicial retention count in Pueblo County, not a statewide appointment or legal ruling.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 60696,
+      "count_leader": "Yes/For",
+      "count_margin": 7976
+    },
+    {
+      "id": "CO-CA-FREYRE",
+      "record_type": "measure",
+      "title": "Colorado Court of Appeals — Freyre",
+      "source_page": 8,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 35327,
+      "no": 25799,
+      "linked_entities": [
+        "COLORADO_JUDICIARY"
+      ],
+      "impact_domains": [
+        "justice",
+        "judicial_governance"
+      ],
+      "impact_note": "Judicial retention count in Pueblo County, not a statewide appointment or legal ruling.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 61126,
+      "count_leader": "Yes/For",
+      "count_margin": 9528
+    },
+    {
+      "id": "CO-CA-HARRIS",
+      "record_type": "measure",
+      "title": "Colorado Court of Appeals — Harris",
+      "source_page": 8,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 34809,
+      "no": 26128,
+      "linked_entities": [
+        "COLORADO_JUDICIARY"
+      ],
+      "impact_domains": [
+        "justice",
+        "judicial_governance"
+      ],
+      "impact_note": "Judicial retention count in Pueblo County, not a statewide appointment or legal ruling.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 60937,
+      "count_leader": "Yes/For",
+      "count_margin": 8681
+    },
+    {
+      "id": "CO-CA-LUM",
+      "record_type": "measure",
+      "title": "Colorado Court of Appeals — Lum",
+      "source_page": 9,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 34690,
+      "no": 25533,
+      "linked_entities": [
+        "COLORADO_JUDICIARY"
+      ],
+      "impact_domains": [
+        "justice",
+        "judicial_governance"
+      ],
+      "impact_note": "Judicial retention count in Pueblo County, not a statewide appointment or legal ruling.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 60223,
+      "count_leader": "Yes/For",
+      "count_margin": 9157
+    },
+    {
+      "id": "CO-CA-MOULTRIE",
+      "record_type": "measure",
+      "title": "Colorado Court of Appeals — Moultrie",
+      "source_page": 9,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 34145,
+      "no": 25902,
+      "linked_entities": [
+        "COLORADO_JUDICIARY"
+      ],
+      "impact_domains": [
+        "justice",
+        "judicial_governance"
+      ],
+      "impact_note": "Judicial retention count in Pueblo County, not a statewide appointment or legal ruling.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 60047,
+      "count_leader": "Yes/For",
+      "count_margin": 8243
+    },
+    {
+      "id": "CO-CA-SCHOCK",
+      "record_type": "measure",
+      "title": "Colorado Court of Appeals — Schock",
+      "source_page": 9,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 34029,
+      "no": 25899,
+      "linked_entities": [
+        "COLORADO_JUDICIARY"
+      ],
+      "impact_domains": [
+        "justice",
+        "judicial_governance"
+      ],
+      "impact_note": "Judicial retention count in Pueblo County, not a statewide appointment or legal ruling.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 59928,
+      "count_leader": "Yes/For",
+      "count_margin": 8130
+    },
+    {
+      "id": "CO-CA-SULLIVAN",
+      "record_type": "measure",
+      "title": "Colorado Court of Appeals — Sullivan",
+      "source_page": 10,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 33666,
+      "no": 26170,
+      "linked_entities": [
+        "COLORADO_JUDICIARY"
+      ],
+      "impact_domains": [
+        "justice",
+        "judicial_governance"
+      ],
+      "impact_note": "Judicial retention count in Pueblo County, not a statewide appointment or legal ruling.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 59836,
+      "count_leader": "Yes/For",
+      "count_margin": 7496
+    },
+    {
+      "id": "CO-10-ALEXANDER",
+      "record_type": "measure",
+      "title": "District Court — 10th JD — Alexander",
+      "source_page": 10,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 25256,
+      "no": 35529,
+      "linked_entities": [
+        "TENTH_JUDICIAL_DISTRICT"
+      ],
+      "impact_domains": [
+        "justice",
+        "judicial_governance"
+      ],
+      "impact_note": "Judicial retention count in Pueblo County, not a statewide appointment or legal ruling.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 60785,
+      "count_leader": "No/Against",
+      "count_margin": 10273
+    },
+    {
+      "id": "CO-10-CHOSTNER",
+      "record_type": "measure",
+      "title": "District Court — 10th JD — Chostner",
+      "source_page": 10,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 35991,
+      "no": 24509,
+      "linked_entities": [
+        "TENTH_JUDICIAL_DISTRICT"
+      ],
+      "impact_domains": [
+        "justice",
+        "judicial_governance"
+      ],
+      "impact_note": "Judicial retention count in Pueblo County, not a statewide appointment or legal ruling.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 60500,
+      "count_leader": "Yes/For",
+      "count_margin": 11482
+    },
+    {
+      "id": "CO-10-ERNST",
+      "record_type": "measure",
+      "title": "District Court — 10th JD — Ernst",
+      "source_page": 11,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 32833,
+      "no": 27322,
+      "linked_entities": [
+        "TENTH_JUDICIAL_DISTRICT"
+      ],
+      "impact_domains": [
+        "justice",
+        "judicial_governance"
+      ],
+      "impact_note": "Judicial retention count in Pueblo County, not a statewide appointment or legal ruling.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 60155,
+      "count_leader": "Yes/For",
+      "count_margin": 5511
+    },
+    {
+      "id": "CO-10-THOMAS",
+      "record_type": "measure",
+      "title": "District Court — 10th JD — Thomas",
+      "source_page": 11,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 31946,
+      "no": 27961,
+      "linked_entities": [
+        "TENTH_JUDICIAL_DISTRICT"
+      ],
+      "impact_domains": [
+        "justice",
+        "judicial_governance"
+      ],
+      "impact_note": "Judicial retention count in Pueblo County, not a statewide appointment or legal ruling.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 59907,
+      "count_leader": "Yes/For",
+      "count_margin": 3985
+    },
+    {
+      "id": "CO-AMEND-81",
+      "record_type": "measure",
+      "title": "Colorado Amendment 81 (constitutional)",
+      "source_page": 12,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 37382,
+      "no": 29654,
+      "linked_entities": [
+        "COLORADO_CONSTITUTION",
+        "COLORADO_LEGISLATURE"
+      ],
+      "impact_domains": [
+        "state_law",
+        "ballot_process"
+      ],
+      "impact_note": "Pueblo-only vote; statewide outcome and constitutional 55% threshold must be separately verified.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 67036,
+      "count_leader": "Yes/For",
+      "count_margin": 7728
+    },
+    {
+      "id": "CO-AMEND-82",
+      "record_type": "measure",
+      "title": "Colorado Amendment 82 (constitutional)",
+      "source_page": 12,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 36585,
+      "no": 29896,
+      "linked_entities": [
+        "COLORADO_CONSTITUTION",
+        "COLORADO_LEGISLATURE"
+      ],
+      "impact_domains": [
+        "state_law",
+        "ballot_process"
+      ],
+      "impact_note": "Pueblo-only vote; statewide outcome and constitutional 55% threshold must be separately verified.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 66481,
+      "count_leader": "Yes/For",
+      "count_margin": 6689
+    },
+    {
+      "id": "CO-AMEND-83",
+      "record_type": "measure",
+      "title": "Colorado Amendment 83 (constitutional)",
+      "source_page": 12,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 36942,
+      "no": 29795,
+      "linked_entities": [
+        "COLORADO_CONSTITUTION",
+        "COLORADO_LEGISLATURE"
+      ],
+      "impact_domains": [
+        "state_law",
+        "ballot_process"
+      ],
+      "impact_note": "Pueblo-only vote; statewide outcome and constitutional 55% threshold must be separately verified.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 66737,
+      "count_leader": "Yes/For",
+      "count_margin": 7147
+    },
+    {
+      "id": "CO-AMEND-84",
+      "record_type": "measure",
+      "title": "Colorado Amendment 84 (constitutional)",
+      "source_page": 12,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 26988,
+      "no": 39923,
+      "linked_entities": [
+        "COLORADO_CONSTITUTION",
+        "COLORADO_LEGISLATURE"
+      ],
+      "impact_domains": [
+        "state_law",
+        "ballot_process"
+      ],
+      "impact_note": "Pueblo-only vote; statewide outcome and constitutional 55% threshold must be separately verified.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 66911,
+      "count_leader": "No/Against",
+      "count_margin": 12935
+    },
+    {
+      "id": "CO-AMEND-85",
+      "record_type": "measure",
+      "title": "Colorado Amendment 85 (constitutional)",
+      "source_page": 13,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 41991,
+      "no": 24576,
+      "linked_entities": [
+        "COLORADO_CONSTITUTION",
+        "COLORADO_LEGISLATURE"
+      ],
+      "impact_domains": [
+        "state_law",
+        "ballot_process"
+      ],
+      "impact_note": "Pueblo-only vote; statewide outcome and constitutional 55% threshold must be separately verified.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 66567,
+      "count_leader": "Yes/For",
+      "count_margin": 17415
+    },
+    {
+      "id": "CO-AMEND-86",
+      "record_type": "measure",
+      "title": "Colorado Amendment 86 (constitutional)",
+      "source_page": 13,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 32926,
+      "no": 32888,
+      "linked_entities": [
+        "COLORADO_CONSTITUTION",
+        "COLORADO_LEGISLATURE"
+      ],
+      "impact_domains": [
+        "state_law",
+        "ballot_process"
+      ],
+      "impact_note": "Pueblo-only vote; statewide outcome and constitutional 55% threshold must be separately verified.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 65814,
+      "count_leader": "Yes/For",
+      "count_margin": 38
+    },
+    {
+      "id": "CO-AMEND-87",
+      "record_type": "measure",
+      "title": "Colorado Amendment 87 (constitutional)",
+      "source_page": 13,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 27147,
+      "no": 39737,
+      "linked_entities": [
+        "COLORADO_CONSTITUTION",
+        "COLORADO_LEGISLATURE"
+      ],
+      "impact_domains": [
+        "state_law",
+        "ballot_process"
+      ],
+      "impact_note": "Pueblo-only vote; statewide outcome and constitutional 55% threshold must be separately verified.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 66884,
+      "count_leader": "No/Against",
+      "count_margin": 12590
+    },
+    {
+      "id": "CO-PROP-NN",
+      "record_type": "measure",
+      "title": "Colorado Proposition NN (statutory)",
+      "source_page": 14,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 34927,
+      "no": 32130,
+      "linked_entities": [
+        "COLORADO_LEGISLATURE"
+      ],
+      "impact_domains": [
+        "state_law",
+        "public_money"
+      ],
+      "impact_note": "County-only share; no statewide result inferred.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 67057,
+      "count_leader": "Yes/For",
+      "count_margin": 2797
+    },
+    {
+      "id": "CO-PROP-132",
+      "record_type": "measure",
+      "title": "Colorado Proposition 132 (statutory)",
+      "source_page": 14,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 44944,
+      "no": 21772,
+      "linked_entities": [
+        "COLORADO_LEGISLATURE"
+      ],
+      "impact_domains": [
+        "state_law"
+      ],
+      "impact_note": "County-only share; statewide effect to be checked against certified statewide result.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 66716,
+      "count_leader": "Yes/For",
+      "count_margin": 23172
+    },
+    {
+      "id": "CO-PROP-133",
+      "record_type": "measure",
+      "title": "Colorado Proposition 133 (statutory)",
+      "source_page": 14,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 50974,
+      "no": 15885,
+      "linked_entities": [
+        "COLORADO_LEGISLATURE"
+      ],
+      "impact_domains": [
+        "state_law"
+      ],
+      "impact_note": "County-only share; statewide effect to be checked against certified statewide result.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 66859,
+      "count_leader": "Yes/For",
+      "count_margin": 35089
+    },
+    {
+      "id": "CO-PROP-134",
+      "record_type": "measure",
+      "title": "Colorado Proposition 134 (statutory)",
+      "source_page": 15,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 41195,
+      "no": 25461,
+      "linked_entities": [
+        "COLORADO_LEGISLATURE"
+      ],
+      "impact_domains": [
+        "state_law"
+      ],
+      "impact_note": "County-only share; statewide effect to be checked against certified statewide result.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 66656,
+      "count_leader": "Yes/For",
+      "count_margin": 15734
+    },
+    {
+      "id": "CO-PROP-135",
+      "record_type": "measure",
+      "title": "Colorado Proposition 135 (statutory)",
+      "source_page": 15,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 42049,
+      "no": 24803,
+      "linked_entities": [
+        "COLORADO_LEGISLATURE"
+      ],
+      "impact_domains": [
+        "state_law"
+      ],
+      "impact_note": "County-only share; statewide effect to be checked against certified statewide result.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 66852,
+      "count_leader": "Yes/For",
+      "count_margin": 17246
+    },
+    {
+      "id": "CO-PROP-136",
+      "record_type": "measure",
+      "title": "Colorado Proposition 136 (statutory)",
+      "source_page": 15,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 37213,
+      "no": 27960,
+      "linked_entities": [
+        "COLORADO_LEGISLATURE"
+      ],
+      "impact_domains": [
+        "state_law"
+      ],
+      "impact_note": "County-only share; statewide effect to be checked against certified statewide result.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 65173,
+      "count_leader": "Yes/For",
+      "count_margin": 9253
+    },
+    {
+      "id": "CO-PROP-137",
+      "record_type": "measure",
+      "title": "Colorado Proposition 137 (statutory)",
+      "source_page": 16,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 34919,
+      "no": 31284,
+      "linked_entities": [
+        "COLORADO_LEGISLATURE"
+      ],
+      "impact_domains": [
+        "state_law"
+      ],
+      "impact_note": "County-only share; statewide effect to be checked against certified statewide result.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 66203,
+      "count_leader": "Yes/For",
+      "count_margin": 3635
+    },
+    {
+      "id": "PUEBLO-CITY-2A",
+      "record_type": "measure",
+      "title": "City of Pueblo ballot question 2A — Fire and public-safety technology sales/use tax",
+      "source_page": 16,
+      "ballot_geography": "pueblo_city_voters",
+      "yes": 13933,
+      "no": 24468,
+      "linked_entities": [
+        "PUEBLO_CITY_COUNCIL",
+        "PUEBLO_FIRE_DEPARTMENT"
+      ],
+      "impact_domains": [
+        "sales_tax",
+        "emergency_services",
+        "fire_equipment"
+      ],
+      "impact_note": "NO leads. Proposed added 0.25% sales/use tax for fire & technology; cannot imply enacted tax. Official ballot Ordinance 11243 conditional on approval.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 38401,
+      "count_leader": "No/Against",
+      "count_margin": 10535
+    },
+    {
+      "id": "PUEBLO-CITY-2B",
+      "record_type": "measure",
+      "title": "City of Pueblo ballot question 2B — Pueblo Zoo sales tax",
+      "source_page": 16,
+      "ballot_geography": "pueblo_city_voters",
+      "yes": 23472,
+      "no": 15261,
+      "linked_entities": [
+        "PUEBLO_CITY_COUNCIL",
+        "PUEBLO_ZOO"
+      ],
+      "impact_domains": [
+        "sales_tax",
+        "zoo_operations",
+        "capital_improvements"
+      ],
+      "impact_note": "YES leads. Proposed 0.167% city sales tax for 2027–2031; effective funding remains subject to certification and implementation. Official ballot Ordinance 11244.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 38733,
+      "count_leader": "Yes/For",
+      "count_margin": 8211
+    },
+    {
+      "id": "PCCLD-6A",
+      "record_type": "measure",
+      "title": "Pueblo City-County Library District Issue 6A",
+      "source_page": 17,
+      "ballot_geography": "pueblo_county_election_geography",
+      "yes": 38812,
+      "no": 26462,
+      "linked_entities": [
+        "PUEBLO_LIBRARY_DISTRICT"
+      ],
+      "impact_domains": [
+        "library_finance",
+        "property_tax_revenue_cap"
+      ],
+      "impact_note": "Revenue-growth limitation waiver, NOT an authorization of a new mill-levy rate.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 65274,
+      "count_leader": "Yes/For",
+      "count_margin": 12350
+    },
+    {
+      "id": "PUEBLO-WEST-6B",
+      "record_type": "measure",
+      "title": "Pueblo West Metropolitan Issue 6B",
+      "source_page": 17,
+      "ballot_geography": "pueblo_west_metropolitan_district",
+      "yes": 6533,
+      "no": 10148,
+      "linked_entities": [
+        "PUEBLO_WEST_METRO"
+      ],
+      "impact_domains": [
+        "metropolitan_services",
+        "local_finance"
+      ],
+      "impact_note": "NO leads. Substantive measure wording requires separate primary-source review.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 16681,
+      "count_leader": "No/Against",
+      "count_margin": 3615
+    },
+    {
+      "id": "PUEBLO-WEST-6C",
+      "record_type": "measure",
+      "title": "Pueblo West Metropolitan Issue 6C",
+      "source_page": 17,
+      "ballot_geography": "pueblo_west_metropolitan_district",
+      "yes": 5815,
+      "no": 10508,
+      "linked_entities": [
+        "PUEBLO_WEST_METRO"
+      ],
+      "impact_domains": [
+        "metropolitan_services",
+        "local_finance"
+      ],
+      "impact_note": "NO leads. Substantive measure wording requires separate primary-source review.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 16323,
+      "count_leader": "No/Against",
+      "count_margin": 4693
+    },
+    {
+      "id": "EDISON-6D",
+      "record_type": "measure",
+      "title": "Edison Fire Protection District Question 6D",
+      "source_page": 18,
+      "ballot_geography": "edison_fire_protection_district",
+      "yes": 93,
+      "no": 38,
+      "linked_entities": [
+        "EDISON_FIRE_DISTRICT"
+      ],
+      "impact_domains": [
+        "fire_governance",
+        "district_boundary"
+      ],
+      "impact_note": "For Inclusion vs Against Inclusion; boundary effect requires certification and legal record.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 131,
+      "count_leader": "Yes/For",
+      "count_margin": 55
+    },
+    {
+      "id": "FRPR-7A",
+      "record_type": "measure",
+      "title": "Front Range Passenger Rail District Issue 7A",
+      "source_page": 18,
+      "ballot_geography": "pueblo_county_voters_within_frpr_district",
+      "yes": 20408,
+      "no": 17975,
+      "linked_entities": [
+        "FRPR_DISTRICT",
+        "PUEBLO_CITY_COUNCIL"
+      ],
+      "impact_domains": [
+        "rail",
+        "transport",
+        "sales_tax",
+        "regional_economy"
+      ],
+      "impact_note": "YES leads in Pueblo-participating portion only; district-wide outcome controls any 0.333% district sales/use tax, borrowing and rail delivery.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 38383,
+      "count_leader": "Yes/For",
+      "count_margin": 2433
+    },
+    {
+      "id": "RYE-7B",
+      "record_type": "measure",
+      "title": "Rye Fire Protection District Issue 7B",
+      "source_page": 18,
+      "ballot_geography": "rye_fire_protection_district",
+      "yes": 1514,
+      "no": 987,
+      "linked_entities": [
+        "RYE_FIRE_DISTRICT"
+      ],
+      "impact_domains": [
+        "fire_governance",
+        "district_finance"
+      ],
+      "impact_note": "YES leads; source-specific legal text, certification and implementation still needed.",
+      "status": "UNOFFICIAL_COUNT_ONLY",
+      "effective_authority": "NO_CHANGE_PROVEN",
+      "source_id": "PC-2026-NOV05",
+      "votes_total": 2501,
+      "count_leader": "Yes/For",
+      "count_margin": 527
+    }
+  ],
+  "entities": [
+    {
+      "id": "PUEBLO_COUNTY_COMMISSIONERS",
+      "name": "County commissioners",
+      "level": "County",
+      "relationship_kind": "direct_elected",
+      "result_ids": [
+        "PC-COMM-03"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "currently_listed_officeholder": "Zach Swearingen (District 3)",
+      "current_officeholder_source": "https://pueblocounty.gov/",
+      "transition": "PENDING_CERTIFICATION_AND_2027_TERM_START"
+    },
+    {
+      "id": "PUEBLO_COUNTY_SHERIFF",
+      "name": "Sheriff office",
+      "level": "County",
+      "relationship_kind": "direct_elected",
+      "result_ids": [
+        "PC-SHERIFF"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "currently_listed_officeholder": "David J. Lucero",
+      "current_officeholder_source": "https://pueblocounty.gov/",
+      "transition": "PENDING_CERTIFICATION_AND_2027_TERM_START"
+    },
+    {
+      "id": "PUEBLO_COUNTY_CLERK",
+      "name": "Clerk and recorder",
+      "level": "County",
+      "relationship_kind": "direct_elected",
+      "result_ids": [
+        "PC-CLERK"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "currently_listed_officeholder": "Candace Rivera",
+      "current_officeholder_source": "https://pueblocounty.gov/",
+      "transition": "PENDING_CERTIFICATION_AND_2027_TERM_START"
+    },
+    {
+      "id": "PUEBLO_COUNTY_ASSESSOR",
+      "name": "Assessor",
+      "level": "County",
+      "relationship_kind": "direct_elected",
+      "result_ids": [
+        "PC-ASSESSOR"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "currently_listed_officeholder": "Frank Beltran",
+      "current_officeholder_source": "https://pueblocounty.gov/",
+      "transition": "PENDING_CERTIFICATION_AND_2027_TERM_START"
+    },
+    {
+      "id": "PUEBLO_COUNTY_TREASURER",
+      "name": "County treasurer",
+      "level": "County",
+      "relationship_kind": "direct_elected",
+      "result_ids": [
+        "PC-TREAS"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "currently_listed_officeholder": "Kimberly Archuletta",
+      "current_officeholder_source": "https://pueblocounty.gov/",
+      "transition": "PENDING_CERTIFICATION_AND_2027_TERM_START"
+    },
+    {
+      "id": "PUEBLO_COUNTY_CORONER",
+      "name": "County coroner",
+      "level": "County",
+      "relationship_kind": "direct_elected",
+      "result_ids": [
+        "PC-CORONER"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "currently_listed_officeholder": "Gregory Grahek",
+      "current_officeholder_source": "https://pueblocounty.gov/",
+      "transition": "PENDING_CERTIFICATION_AND_2027_TERM_START"
+    },
+    {
+      "id": "PUEBLO_COUNTY_SURVEYOR",
+      "name": "County surveyor",
+      "level": "County",
+      "relationship_kind": "direct_elected",
+      "result_ids": [
+        "PC-SURVEYOR"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "currently_listed_officeholder": "Randy Reeves",
+      "current_officeholder_source": "https://pueblocounty.gov/",
+      "transition": "PENDING_CERTIFICATION_AND_2027_TERM_START"
+    },
+    {
+      "id": "PUEBLO_CITY_COUNCIL",
+      "name": "City Council / municipal services",
+      "level": "City",
+      "relationship_kind": "ballot_fiscal_and_indirect",
+      "result_ids": [
+        "PUEBLO-CITY-2A",
+        "PUEBLO-CITY-2B"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "PUEBLO_FIRE_DEPARTMENT",
+      "name": "City Fire Department",
+      "level": "City",
+      "relationship_kind": "ballot_fiscal",
+      "result_ids": [
+        "PUEBLO-CITY-2A"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "PUEBLO_ZOO",
+      "name": "Pueblo Zoo",
+      "level": "Local nonprofit/service",
+      "relationship_kind": "ballot_fiscal",
+      "result_ids": [
+        "PUEBLO-CITY-2B"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "PUEBLO_LIBRARY_DISTRICT",
+      "name": "Pueblo City-County Library District",
+      "level": "Library district",
+      "relationship_kind": "ballot_revenue_limit",
+      "result_ids": [
+        "PCCLD-6A"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "PUEBLO_WEST_METRO",
+      "name": "Pueblo West Metropolitan District",
+      "level": "Special district",
+      "relationship_kind": "ballot",
+      "result_ids": [
+        "PUEBLO-WEST-6B",
+        "PUEBLO-WEST-6C"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "EDISON_FIRE_DISTRICT",
+      "name": "Edison Fire Protection District",
+      "level": "Special district",
+      "relationship_kind": "ballot",
+      "result_ids": [
+        "EDISON-6D"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "RYE_FIRE_DISTRICT",
+      "name": "Rye Fire Protection District",
+      "level": "Special district",
+      "relationship_kind": "ballot",
+      "result_ids": [
+        "RYE-7B"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "FRPR_DISTRICT",
+      "name": "Front Range Passenger Rail District",
+      "level": "Regional district",
+      "relationship_kind": "ballot_county_subset",
+      "result_ids": [
+        "FRPR-7A"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "COLORADO_EXECUTIVE",
+      "name": "Governor and statewide executive",
+      "level": "State",
+      "relationship_kind": "statewide_county_subset",
+      "result_ids": [
+        "CO-GOV"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "COLORADO_SOS",
+      "name": "Secretary of State",
+      "level": "State",
+      "relationship_kind": "statewide_county_subset",
+      "result_ids": [
+        "CO-SOS"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "COLORADO_AG",
+      "name": "Attorney General",
+      "level": "State",
+      "relationship_kind": "statewide_county_subset",
+      "result_ids": [
+        "CO-AG"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "COLORADO_TREASURY",
+      "name": "State Treasury",
+      "level": "State",
+      "relationship_kind": "statewide_county_subset",
+      "result_ids": [
+        "CO-TREAS"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "COLORADO_LEGISLATURE",
+      "name": "State legislature",
+      "level": "State",
+      "relationship_kind": "state_district_votes",
+      "result_ids": [
+        "CO-SEN-03",
+        "CO-HOUSE-46",
+        "CO-HOUSE-47",
+        "CO-HOUSE-60",
+        "CO-HOUSE-62"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "US_HOUSE_CD3",
+      "name": "U.S. House Congressional District 3",
+      "level": "Federal",
+      "relationship_kind": "district_county_subset",
+      "result_ids": [
+        "US-HOUSE-03"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "US_SENATE",
+      "name": "U.S. Senate",
+      "level": "Federal",
+      "relationship_kind": "statewide_county_subset",
+      "result_ids": [
+        "US-SEN"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "STATE_EDUCATION_BOARD",
+      "name": "State Board of Education CD3",
+      "level": "State",
+      "relationship_kind": "district_county_subset",
+      "result_ids": [
+        "CO-BOE-CD3"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "COLORADO_JUDICIARY",
+      "name": "State judiciary",
+      "level": "State",
+      "relationship_kind": "retention_county_subset",
+      "result_ids": [
+        "CO-SC-HOOD",
+        "CO-CA-FREYRE",
+        "CO-CA-HARRIS",
+        "CO-CA-LUM",
+        "CO-CA-MOULTRIE",
+        "CO-CA-SCHOCK",
+        "CO-CA-SULLIVAN"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "TENTH_JUDICIAL_DISTRICT",
+      "name": "10th Judicial District",
+      "level": "Judicial",
+      "relationship_kind": "retention",
+      "result_ids": [
+        "CO-10-ALEXANDER",
+        "CO-10-CHOSTNER",
+        "CO-10-ERNST",
+        "CO-10-THOMAS"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "PUEBLO_ECONOMIC_DEVELOPMENT",
+      "name": "Pueblo economic-development contracting",
+      "level": "Cross-agency",
+      "relationship_kind": "indirect_pending_transition",
+      "result_ids": [
+        "PC-COMM-03",
+        "CO-GOV",
+        "CO-SEN-03"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "PUEBLO_HOUSING_INFRASTRUCTURE",
+      "name": "Housing, water, roads and infrastructure",
+      "level": "Cross-agency",
+      "relationship_kind": "indirect_pending_transition",
+      "result_ids": [
+        "PC-COMM-03",
+        "CO-SEN-03",
+        "FRPR-7A"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "COLORADO_CONSTITUTION",
+      "name": "Colorado Constitution",
+      "level": "Federal/State",
+      "relationship_kind": "downstream_affected",
+      "result_ids": [
+        "CO-AMEND-81",
+        "CO-AMEND-82",
+        "CO-AMEND-83",
+        "CO-AMEND-84",
+        "CO-AMEND-85",
+        "CO-AMEND-86",
+        "CO-AMEND-87"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "COLORADO_FEDERAL_DELEGATION",
+      "name": "Colorado Federal Delegation",
+      "level": "Federal/State",
+      "relationship_kind": "downstream_affected",
+      "result_ids": [
+        "US-SEN",
+        "US-HOUSE-03"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "CO_HOUSE_DISTRICT_46",
+      "name": "Co House District 46",
+      "level": "Federal/State",
+      "relationship_kind": "downstream_affected",
+      "result_ids": [
+        "CO-HOUSE-46"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "CO_HOUSE_DISTRICT_47",
+      "name": "Co House District 47",
+      "level": "Federal/State",
+      "relationship_kind": "downstream_affected",
+      "result_ids": [
+        "CO-HOUSE-47"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "CO_HOUSE_DISTRICT_60",
+      "name": "Co House District 60",
+      "level": "Federal/State",
+      "relationship_kind": "downstream_affected",
+      "result_ids": [
+        "CO-HOUSE-60"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "CO_HOUSE_DISTRICT_62",
+      "name": "Co House District 62",
+      "level": "Federal/State",
+      "relationship_kind": "downstream_affected",
+      "result_ids": [
+        "CO-HOUSE-62"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    },
+    {
+      "id": "CO_SEN_DISTRICT_3",
+      "name": "Co Sen District 3",
+      "level": "Federal/State",
+      "relationship_kind": "downstream_affected",
+      "result_ids": [
+        "CO-SEN-03"
+      ],
+      "authority_change_status": "UNVERIFIED_OR_UNCHANGED",
+      "notes": "Never infer agency decision or incumbent replacement from an unofficial result.",
+      "transition": "NO_DIRECT_OFFICEHOLDER_CHANGE_INFERRED"
+    }
+  ],
+  "impact_domains": [
+    "Pueblo_representation",
+    "agencies",
+    "assessment_appeals",
+    "ballot_process",
+    "business_registration",
+    "capital_improvements",
+    "consumer_protection",
+    "county_budget",
+    "county_contracts",
+    "county_finance",
+    "death_investigations",
+    "development",
+    "district_boundary",
+    "district_finance",
+    "economy",
+    "education",
+    "election_administration",
+    "elections",
+    "emergency_services",
+    "enforcement",
+    "federal_budget",
+    "federal_grants",
+    "fire_equipment",
+    "fire_governance",
+    "governance",
+    "infrastructure",
+    "jail",
+    "judicial_governance",
+    "justice",
+    "land_records",
+    "land_use",
+    "law_enforcement",
+    "laws",
+    "legislation",
+    "library_finance",
+    "local_finance",
+    "metropolitan_services",
+    "policy",
+    "property_tax_revenue_cap",
+    "property_values",
+    "public_health",
+    "public_money",
+    "public_records",
+    "public_safety",
+    "rail",
+    "regional_economy",
+    "rural_economy",
+    "sales_tax",
+    "schools",
+    "state_budget",
+    "state_finance",
+    "state_law",
+    "surveying",
+    "tax_base",
+    "tax_collection",
+    "transport",
+    "transportation",
+    "water",
+    "zoo_operations"
+  ]
+}
