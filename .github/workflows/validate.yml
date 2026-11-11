@@ -44,6 +44,8 @@ jobs:
           node --check functions/api/v1/research.js
           node --check functions/api/v1/admin/research.js
           node --check scripts/check-research-api.mjs
+          node --check scripts/propose-report-amendment.mjs
+          node --check scripts/check-report-amendment.mjs
       - name: Validate required public pages and safety headers
         run: |
           test -s public/index.html
@@ -79,6 +81,7 @@ jobs:
           node scripts/check-qify.mjs
           node scripts/check-question-pipeline.mjs
           node scripts/check-research-api.mjs
+          node scripts/check-report-amendment.mjs
           node scripts/check-evidence-desk.mjs
           node scripts/check-packet-reports.mjs
           node scripts/check-launch.mjs
