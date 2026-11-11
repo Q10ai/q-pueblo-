@@ -1,0 +1,120 @@
+{
+  "schema": "qpueblo.public-report.v1",
+  "number": 1,
+  "issueId": "fisc-001",
+  "version": "1.0.0",
+  "date": "2026-11-10",
+  "title": "Can Pueblo County balance its budget and protect public services?",
+  "subtitle": "The 2027 plan closes a General Fund gap. Lasting recovery still depends on savings, financing and service results.",
+  "scope": "Pueblo County government. This is separate from the City of Pueblo budget.",
+  "status": "Complete explanatory report for publication review",
+  "answer": "The County's proposal would balance the General Fund through spending reductions, with a stated $1.265 million annual surplus. That is a plan, not money already saved. Other funds still show negative projected balances, and the starting General Fund balance assumes an asset sale and financing. The available records do not yet establish a durable recovery or unchanged public services.",
+  "verdict": "A proposed balanced General Fund is a meaningful step. It is not yet proof of financial recovery across County services.",
+  "money": {
+    "revenue": 122666601,
+    "baseSpending": 131213309,
+    "reductions": 9811472,
+    "proposedSpending": 121401837,
+    "statedSurplus": 1264763,
+    "statedShortfall": 8546709,
+    "targetBase": 65409813,
+    "targetRate": 0.15
+  },
+  "factRows": [
+    ["Revenue and other funding sources", "$122,666,601", "Proposed for 2027"],
+    ["Spending before the reduction plan", "$131,213,309", "Starting departmental budgets"],
+    ["Proposed spending reductions", "$9,811,472", "Targets, not achieved savings"],
+    ["Spending after those reductions", "$121,401,837", "Proposed for 2027"],
+    ["County's stated annual surplus", "$1,264,763", "An annual result, not cash or total reserves"]
+  ],
+  "fundRows": [
+    ["General Fund", "$2.16 million", "Positive, but conditional and unaudited"],
+    ["Road and Bridge", "-$5.10 million", "A negative projected budgetary balance"],
+    ["Human Services", "-$0.50 million", "A separate negative projected balance"]
+  ],
+  "findings": [
+    {
+      "title": "1. The proposal closes a real starting gap on paper",
+      "paragraphs": ["The detailed budget book lists the amounts in the table above. Its proposed reductions exceed its stated starting shortfall by about $1.265 million. These are proposed budgets for 2027, not a report of savings already delivered.", "The book bases its reduction target on eligible personnel costs, including the associated health allocation. Elected offices may meet their dollar targets in different spending categories. A 15% personnel-based target does not mean every department loses 15% of its total budget or that 15% of staff will be dismissed."],
+      "sources": ["S1", "S2"]
+    },
+    {
+      "title": "2. The wider financial position remains conditional",
+      "paragraphs": ["The proposal presentation projects the year-end balances shown below. Those are budgetary fund balances, not bank balances or interchangeable pots of unrestricted money. A positive General Fund projection does not clear a negative balance in another fund.", "The presentation says its starting General Fund balance uses unaudited 2025 and 2026 projections that include a $7 million asset sale and an anticipated $15 million financing transaction. Their completion and usable net proceeds were not established in this review. They must not be treated as completed cash receipts or reliable recurring revenue."],
+      "sources": ["S2"]
+    },
+    {
+      "title": "3. The underlying pressures connect revenue, facilities and services",
+      "paragraphs": ["The County's financial outlook describes declining marijuana-tax receipts, higher insurance and health-related costs, continuing debt payments and growing maintenance demands. Some totals cover several funds; some recent results are unaudited. Those figures do not all measure the General Fund or the same period.", "A building or financing decision creates costs after construction. A useful recovery test therefore follows the full chain: construction commitment, financing payment, operating cost, maintenance requirement and service outcome. A lower capital budget can reflect projects ending; it does not automatically measure a reduction in everyday services."],
+      "sources": ["S1", "S2", "S3"]
+    },
+    {
+      "title": "4. Small changes could consume the planned cushion",
+      "paragraphs": ["The stated surplus is about 1.03% of proposed General Fund revenue and other sources. Our scenarios below test that margin; they are illustrations, not County forecasts. A 1% revenue shortfall would leave roughly $38,097 of the planned surplus if every other assumption held. If only 80% of the planned reductions were achieved, the illustrative annual result would be about a $697,531 shortfall.", "That sensitivity is a reason for frequent actual-to-budget reporting and early service checks. It is not a prediction that the proposal will fail."],
+      "sources": ["S1", "CALC"]
+    },
+    {
+      "title": "5. The posted documents need a clearer reconciliation",
+      "paragraphs": ["The detailed book uses a $65,409,813 reduction target base; one financial-outlook slide displays $66.96 million. Those are different denominators. We use the book's detailed calculation and ask the County to identify the controlling version and explain the difference.", "Whole-dollar arithmetic also differs by $1 from the book's stated shortfall and surplus. Revenue less proposed spending is $1,264,764; the book states $1,264,763. Its rounded presentation figures have additional small differences. We retain the County's stated surplus for our scenarios. The dollar difference does not change this assessment, but the underlying schedule should reconcile before adoption."],
+      "sources": ["S1", "S2", "S3", "CALC"]
+    }
+  ],
+  "qified": [
+    {"title": "What changes when we connect the evidence?", "text": "The question is larger than whether one column balances. Test the operating plan, starting resources, payment deadlines, other funds and the services people actually receive together. A strong result in one can hide a problem in another."},
+    {"title": "Who could feel the effects?", "text": "Residents and businesses rely on public safety, road maintenance, permits and family services. Staff, contractors and community partners may carry extra work when a budget changes. These are pathways to investigate, not documented service cuts in this report. Use aggregate waits, workload and service coverage; keep personal case files private."},
+    {"title": "Where could costs move?", "text": "A saving for one office can become overtime, a repair bill, a longer wait or extra work for another provider. For example, postponing maintenance could reduce this year's spending while increasing later repair or service disruption. That is a risk to test, not an observed outcome established here."},
+    {"title": "Which choices deserve comparison?", "text": "Compare an across-the-board dollar target with targeted changes tied to workload, contracts and service obligations. Shared transactions may remove duplicated work; cuts can also create bottlenecks. The County says additional shared-services savings are not included in its proposed result. Do not count them a second time or promise them before a pilot measures cost and quality."},
+    {"title": "What would a convincing recovery look like?", "text": "Recurring operations supported by recurring resources; completed financing identified separately; manageable debt-payment dates; fund-specific reserve progress; and measured service continuity. Proposed policy milestones are not reserves already in place. The book proposes a 10% initial reserve floor and a 16.67% long-term target, with phased rebuilding."},
+    {"title": "Our recommended next decision", "text": "Before treating this as a completed recovery, publish a monthly fund-by-fund bridge from the proposal to actual revenue, spending, usable balances and service results. Start with the General Fund, Road and Bridge, and Human Services. Explain material differences and identify a responsible office and next reporting date."}
+  ],
+  "connections": [
+    ["Jail and public safety", "Separate construction and financing from recurring staffing, medical and overtime costs.", "Compare cost, staffing coverage and service obligations for the same period."],
+    ["Roads and infrastructure", "A negative projected Road and Bridge balance cannot be cured by assuming all County balances are transferable.", "Show fund-specific obligations, maintenance needs and the authorized funding plan."],
+    ["Family and health services", "A budget change may move work or waiting time to partner organizations or households.", "Check aggregate caseload, response time and referral completion; do not publish case identities."],
+    ["Reserves and future budgets", "One-time proceeds can help a transition but do not automatically sustain next year's operating costs.", "Separate recurring sources, one-time proceeds, restrictions and future debt payments."]
+  ],
+  "scorecard": [
+    ["Financial delivery", "Actual recurring revenue, actual spending and achieved reductions", "Monthly, by fund and department"],
+    ["Payment readiness", "Cash identified for each obligation and confirmation of receipt", "Before each contractual due date"],
+    ["Reserve progress", "Eligible usable balance against the adopted policy denominator", "Quarterly; distinguish restrictions"],
+    ["Service continuity", "Waits, coverage, closures and delayed maintenance", "Monthly, with a prior-period comparison"],
+    ["Corrections", "Explained differences between source documents and updated schedules", "Each budget revision"]
+  ],
+  "counterevidence": "The proposal itself is evidence that the County is planning a response; a projected negative fund balance alone does not establish insolvency or misconduct. Spending reductions may be achieved through contracts, vacancies or process changes rather than a proportional loss of service. The alternatives cannot be resolved without actual spending, implementation and service records.",
+  "unknowns": [
+    "The final adopted 2027 budget, appropriation and any later amendments. The budget page's adopted-budget heading had no linked document at this check.",
+    "Current audited 2025 results and a reconciled 2026 year-end forecast. The annual-report page checked here listed reports through 2024; that does not prove no newer audit exists elsewhere.",
+    "Whether the assumed asset sale and financing have closed, the net proceeds available to each fund and the resulting payment schedule.",
+    "The exact source of the differing reduction bases, whole-dollar differences and all presentation-to-book changes.",
+    "Achieved savings and service-level effects, including workload or costs shifted to other organizations."
+  ],
+  "nextEvent": "The posted calendar lists December 10, 2026 for a public hearing to adopt the 2027 budget. Confirm the agenda, time, location and any changes through the Board's official meeting portal or office before attending.",
+  "questions": [
+    "Please provide the current 2027 proposal and a reconciliation to the presentation, including the personnel reduction denominator and the final spending targets by office.",
+    "Please provide the latest actual-to-budget report and year-end forecast for the General Fund, Road and Bridge, and Human Services, with restrictions, commitments and transfers identified.",
+    "What is the status of the assumed asset sale and financing, their usable net proceeds, restrictions, debt costs and payment dates?",
+    "Which service measures will show whether the reductions affect waiting times, public safety coverage, road maintenance or family-service access, and when will those results be published?",
+    "Which reserve policy has been formally adopted, what spending denominator does it use, and how will annual contributions be reported?"
+  ],
+  "resources": [
+    {"title": "Inspect the proposal and presentations", "url": "https://pueblocounty.gov/budget-and-finance-department/2027-budget", "who": "Anyone checking the numbers", "use": "Open the detailed book and the presentation. Match the fund, year and before/after-reduction column. See the book sections named in the source ledger."},
+    {"title": "Ask Budget and Finance", "url": "https://pueblocounty.gov/budget-and-finance/contact-budget-and-finance", "who": "Residents requesting an explanation or existing financial schedules", "use": "Call (719) 583-6012. Refer to the document title and the questions below. This report has not submitted a request."},
+    {"title": "Confirm the public meeting", "url": "https://www.pueblocounty.gov/board-county-commissioners/board-county-commissioners", "who": "People wishing to follow or participate in the budget decision", "use": "Use Retrieve BOCC Meeting Documents for the actual agenda. Board office: 719-583-6000. The calendar alone does not establish the hearing time or participation procedure."},
+    {"title": "Find the public-records process", "url": "https://www.pueblocounty.gov/board-county-commissioners/open-records-policy", "who": "People seeking existing records that are not posted", "use": "Check the County's current policy and custodian instructions before submitting. Ask about any fees first. The questions here are an unsent draft."},
+    {"title": "Compare with audited annual reports", "url": "https://pueblocounty.gov/budget-and-finance-department/annual-comprehensive-financial-report-acfr", "who": "Readers checking historical financial statements", "use": "Confirm the year and auditor's report. A historical audited result is not a current 2026 cash position."}
+  ],
+  "sources": [
+    {"id":"S1","title":"2027 Preliminary Proposed Budget book","url":"https://pueblocounty.gov/sites/default/files/2026-10/Final%20Pueblo%20County%202027%20Preliminary%20Budget%20Book--2.pdf","date":"2027 proposal, hosted in October 2026; exact issue date not supplied","scope":"First 24 PDF pages retrieved. Sections: Budget message; Budget basis; Reducing spending; Financial Stabilization Policy; Where General Fund resources come from; General Fund budget calculation. Not all 115 PDF pages reviewed."},
+    {"id":"S2","title":"2027 Proposed Budget Presentation","url":"https://pueblocounty.gov/sites/default/files/2026-10/2027%20Proposed%20Budget%20SB.pdf","date":"October 2026 proposal meeting","scope":"All 9 pages retrieved; financial tables on PDF pages 2-9. General Fund, fund-balance assumptions and department targets. Key tables visually inspected."},
+    {"id":"S3","title":"2027 Financial Outlook Presentation","url":"https://pueblocounty.gov/sites/default/files/2026-10/2027%20Financial%20Update%20Final.pdf","date":"Hosted in October 2026; exact issue date not supplied","scope":"All 15 pages retrieved. Financial pressures, proposed reserve policy, reduction base, debt controls and shared-services assumptions. Reduction slide visually inspected."},
+    {"id":"S4","title":"2027 Budget Meeting Calendar","url":"https://pueblocounty.gov/sites/default/files/2026-10/2027%20Budget%20Meeting%20Calendar.pdf","date":"2026 planning calendar","scope":"One page. December 10 hearing date is scheduled, subject to the final agenda."},
+    {"id":"S5","title":"County 2027 budget page","url":"https://pueblocounty.gov/budget-and-finance-department/2027-budget","date":"Page checked November 10, 2026","scope":"Document directory and proposal/adopted-budget headings; absence of a link does not prove absence of an action elsewhere."},
+    {"id":"S6","title":"Budget and Finance contact page","url":"https://pueblocounty.gov/budget-and-finance/contact-budget-and-finance","date":"Page checked November 10, 2026","scope":"Published department contact, not a guarantee of response time."},
+    {"id":"S7","title":"Board of County Commissioners and open-records pages","url":"https://www.pueblocounty.gov/board-county-commissioners/board-county-commissioners","date":"Page checked November 10, 2026","scope":"Board role, phone and official meeting-document route. Open-records process linked separately in Resources."},
+    {"id":"S8","title":"Annual Comprehensive Financial Report directory","url":"https://pueblocounty.gov/budget-and-finance-department/annual-comprehensive-financial-report-acfr","date":"Page checked November 10, 2026","scope":"Listing through 2024 at retrieval. No claim that all possible 2025 audit locations were searched."}
+  ],
+  "method": "We independently retrieved official public records for this report, cross-checked the proposal book against two County presentations, visually inspected key slide tables and recalculated the financial examples. No private chat, Drive archive or recovered private text is quoted or used as evidence. All observations use November 10, 2026 in America/Denver. This is a source-attributed explanatory analysis, not an audit, legal opinion or certification of future service levels.",
+  "updateRule": "Reopen on an adopted budget, a corrected schedule, audited results, completed financing, actual savings or material service evidence. Preserve this edition and link the replacement. A correction to a dollar figure must also update its calculations and Qified assessment.",
+  "publicSourceOnly": true,
+  "humanReleaseApproved": false
+}
