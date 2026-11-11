@@ -69,8 +69,35 @@ function acceptedPayload(body) {
   }
   return { question, sources };
 }
+async function readLimitedBody(request) {
+  if (!request.body) return "";
+  const reader = request.body.getReader();
+  const chunks = [];
+  let size = 0;
+  try {
+    for (;;) {
+      const part = await reader.read();
+      if (part.done) break;
+      size += part.value.byteLength;
+      if (size > MAX_BODY) {
+        await reader.cancel();
+        return null;
+      }
+      chunks.push(part.value);
+    }
+    const bytes = new Uint8Array(size);
+    let offset = 0;
+    for (const chunk of chunks) {
+      bytes.set(chunk, offset);
+      offset += chunk.byteLength;
+    }
+    return new TextDecoder("utf-8", { fatal: true }).decode(bytes);
+  } finally {
+    reader.releaseLock();
+  }
+}
 function extractOutput(data) {
-  if (!data || !Array.isArray(data.output)) return null;
+  if (!data || data.status !== "completed" || !Array.isArray(data.output)) return null;
   const texts = data.output.flatMap(item => Array.isArray(item.content)
     ? item.content.filter(c => c.type === "output_text" && typeof c.text === "string").map(c => c.text)
     : []);
@@ -101,8 +128,8 @@ export async function onRequestPost({ request, env }) {
   if (!Number.isFinite(len) || len > MAX_BODY) return json(413, { status: "REQUEST_TOO_LARGE" });
   let raw;
   try {
-    raw = await request.text();
-    if (new TextEncoder().encode(raw).length > MAX_BODY) return json(413, { status: "REQUEST_TOO_LARGE" });
+    raw = await readLimitedBody(request);
+    if (raw === null) return json(413, { status: "REQUEST_TOO_LARGE" });
   } catch { return json(400, { status: "INVALID_REQUEST" }); }
   let value;
   try { value = JSON.parse(raw); } catch { return json(400, { status: "INVALID_JSON" }); }
