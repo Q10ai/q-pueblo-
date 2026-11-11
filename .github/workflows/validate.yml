@@ -27,6 +27,8 @@ jobs:
           node --check public/reports.js
           node --check public/living-reports.js
           node --check scripts/check-living-reports.mjs
+          node --check public/election-impacts.js
+          node --check scripts/check-election-impacts.mjs
           node --check public/packets.js
           node --check scripts/check-qify.mjs
           node --check public/workbench.js
@@ -76,6 +78,10 @@ jobs:
           test -s public/living-reports.html
           test -s public/data/qp-public-living-report-registry.json
           node scripts/check-living-reports.mjs
+          test -s public/election-impacts.html
+          test -s public/election-impacts.css
+          test -s public/data/qp-2026-election-impacts.json
+          node scripts/check-election-impacts.mjs
           node scripts/check-evidence-desk.mjs
           node scripts/check-packet-reports.mjs
           node scripts/check-launch.mjs
