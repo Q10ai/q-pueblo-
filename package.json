@@ -1,0 +1,21 @@
+{
+  "name": "qpueblo-release-tools",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "check": "node scripts/check-all.mjs",
+    "test": "node --test scripts/pages-release.test.mjs",
+    "release:prepare": "node scripts/pages-release.mjs prepare",
+    "release:compile": "cd .pages-release && ../node_modules/.bin/wrangler pages functions build functions --outdir function-build",
+    "dev": "node scripts/dev-server.mjs",
+    "release:dashboard": "node scripts/dashboard-bundle.mjs"
+  },
+  "devDependencies": {
+    "@phosphor-icons/core": "2.1.1",
+    "wrangler": "4.160.1"
+  }
+}
