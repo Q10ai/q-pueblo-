@@ -23,6 +23,8 @@ jobs:
           node --check scripts/check-issue-index.mjs
           node --check public/qify-match.js
           node --check public/qify.js
+          node --check public/search-lab.js
+          node --check scripts/check_search_lab.mjs
           node --check public/report-core.js
           node --check public/reports.js
           node --check public/packets.js
@@ -71,6 +73,9 @@ jobs:
           node scripts/check-workbench.mjs
           node scripts/check-q-tools.mjs
           node scripts/check-qify.mjs
+          test -s public/search-lab.html
+          test -s public/search-lab.css
+          node scripts/check_search_lab.mjs
           node scripts/check-evidence-desk.mjs
           node scripts/check-packet-reports.mjs
           node scripts/check-launch.mjs
