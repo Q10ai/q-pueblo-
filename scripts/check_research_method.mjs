@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const html=readFileSync('public/research-method.html','utf8');
+const lab=readFileSync('public/search-lab.html','utf8');
+assert(html.includes('<html lang="en">')&&html.includes('name="viewport"'));
+assert(html.includes('href="search-lab.css"')&&html.includes('href="reports.html"'));
+assert(html.includes('Not established:')&&html.includes('not proof'));
+assert(html.includes('draft')&&html.includes('stale')&&html.includes('disputed'));
+assert(!/<script|<iframe|<form|onerror=|onload=|fetch\(/i.test(html));
+assert(lab.includes('research-method.html'));
+console.log('PASS: citizen research method static page and link');

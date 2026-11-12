@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const html=readFileSync('public/search-lab.html','utf8');
+const js=readFileSync('public/search-lab.js','utf8');
+const css=readFileSync('public/search-lab.css','utf8');
+assert(html.includes('id="builder"')&&html.includes('id="query"')&&html.includes('id="notice"'));
+assert(html.includes('src="search-lab.js"')&&html.includes('href="search-lab.css"'));
+assert(html.includes('Q Pueblo verification path'));
+assert(html.includes('does not run searches or transmit'));
+assert(!/https?:\/\/[^\s"']+/i.test(js), 'Javascript must make no external requests');
+assert(!/\bfetch\s*\(|XMLHttpRequest|sendBeacon|WebSocket|localStorage|sessionStorage|eval\s*\(|innerHTML|window\.open|location\.href|new Image/i.test(js),'No external calls, storage or unsafe sinks');
+assert(js.includes('navigator.clipboard.writeText')&&js.includes('textContent'));
+assert(css.includes(':focus-visible')&&css.includes('@media'));
+console.log('PASS search learning lab: offline, privacy, navigation, accessibility hooks');
