@@ -1,0 +1,103 @@
+name: Q Pueblo — Existing Cloudflare Pages Release
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Prepare only, or explicitly publish the reviewed main commit
+        type: choice
+        options: [prepare, production]
+        default: prepare
+      release_sha:
+        description: Full 40-character reviewed main commit SHA (required for production)
+        type: string
+      previous_deployment_id:
+        description: Full current qpueblo production deployment ID (required for production)
+        type: string
+      approval:
+        description: Type PUBLISH qpueblo to authorize production publication
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: qpueblo-cloudflare-production
+  cancel-in-progress: false
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: npm run check && npm test
+      - run: npm run release:prepare && npm run release:compile && npm run release:dashboard
+      - name: Retain complete approved-scope source and hashes for review
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: qpueblo-release-review-${{ github.sha }}
+          path: |
+            .pages-release/public/
+            .pages-release/functions/
+            .pages-release/release-inventory.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
+  production:
+    needs: prepare
+    if: github.ref == 'refs/heads/main' && inputs.mode == 'production'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: cloudflare-production
+      url: https://qpueblo.pages.dev
+    env:
+      RELEASE_SHA: ${{ inputs.release_sha }}
+      PREVIOUS_DEPLOYMENT_ID: ${{ inputs.previous_deployment_id }}
+      RELEASE_APPROVAL: ${{ inputs.approval }}
+      WRANGLER_SEND_METRICS: 'false'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: npm run check && npm test
+      - run: npm run release:prepare && npm run release:compile && npm run release:dashboard
+      - name: Verify existing project, reviewed SHA and unchanged prior production
+        id: preflight
+        run: node scripts/pages-release.mjs preflight
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      - name: Deploy full public assets and read-only Function to existing qpueblo
+        working-directory: .pages-release
+        run: ../node_modules/.bin/wrangler pages deploy public --project-name qpueblo --branch "$PRODUCTION_BRANCH" --commit-hash "$RELEASE_SHA"
+        env:
+          PRODUCTION_BRANCH: ${{ steps.preflight.outputs.production_branch }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      - name: Verify exact deployed bytes, source SHA, headers and Function flags
+        run: node scripts/pages-release.mjs verify
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      - name: Preserve sanitized deployment and rollback receipts
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: qpueblo-production-receipts-${{ github.run_id }}
+          path: |
+            .pages-release/release-inventory.json
+            .pages-release/preflight-receipt.json
+            .pages-release/verification.json
+          if-no-files-found: warn
+          retention-days: 90

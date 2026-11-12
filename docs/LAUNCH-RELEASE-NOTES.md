@@ -24,11 +24,13 @@
 7. Future live monitoring and notifications need source-specific parsers, deduplication, operator action, queue and review-gated publications.
 8. Commercial quotes, merchandise fulfillment, sponsorship documentation, legal entity/payment terms, and tax status must be established by owner before taking funds.
 
-## Publishing to Cloudflare
+## Publishing to Cloudflare — corrected November 12, 2026
 
-Direct Upload: upload contents of the `public/` folder in `Q-Pueblo-Launch-Candidate-2026-11-09.zip` to the existing Cloudflare site. This static package does NOT include deployable Cloudflare Pages Functions; the read-only `/api/v1/capabilities.json` is static only. Do not advertise the project as having a functional server AI backend. Confirm exact expected hostname and every route.
-
-Git-connected: use repository `Q10ai/q-pueblo-`, output directory `public`, deploy only after merging reviewed, passing exact-head changes into `main`; Cloudflare project settings must match its deployment mode. Preserve previous known-good ZIP and deployment ID. Note that the current separate `raspy-bar-4291.q10agi.workers.dev` and `qpueblo.pages.dev` must be checked independently.
+The existing qpueblo project uses Direct Upload. Keep it and its address. The
+November 9 eighteen-file upload is not a complete current release. Follow
+DEPLOY-CLOUDFLARE.md for manual GitHub Actions/Wrangler release, the full public
+inventory, read-only Function, provenance, live hash checks and recorded rollback.
+Do not create a replacement Git-integrated project. Other Workers are separate.
 
 ## Dated official source receipts
 

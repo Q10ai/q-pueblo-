@@ -1,0 +1,8 @@
+node_modules/
+.pages-release/
+.pages-dashboard/
+.wrangler/
+.env
+.env.*
+.dev.vars
+*.log

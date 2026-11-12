@@ -13,7 +13,11 @@ Independent, nonpartisan civic evidence, source-linked local research and decisi
 Live AI research, autonomous crawlers/publication, verified live fiscal ledgers, public contributions backend, full digital twin, or Cloudflare Pages Functions. Public safety and source review remain human-governed.
 
 ## Deployment
-Cloudflare Pages: repository `Q10ai/q-pueblo-`, production branch `main`, framework None, no build command, output `public`. A GitHub merge does not deploy or verify the host. Gate launch on the exact deployed commit, HTTP readback of all major pages/scripts, mobile and keyboard checks, source checks and a documented rollback. Refer to `docs/LAUNCH-RELEASE-NOTES.md`.
+Production is the existing Direct Upload Pages project **qpueblo**, at **https://qpueblo.pages.dev**. Keep its address and history. The manual GitHub Actions / Wrangler workflow packages every committed public asset plus the read-only configuration Function, requires an approved main SHA, verifies the existing project and current deployment, and checks live asset hashes. A merge does not publish. See [DEPLOY-CLOUDFLARE.md](DEPLOY-CLOUDFLARE.md) for setup, review and rollback.
 
 ## Developer checks
 Run `node scripts/check-launch.mjs`, `node scripts/check-qify.mjs`, `node scripts/check-q-tools.mjs`, `node scripts/check-workbench.mjs` and other checks configured in `.github/workflows/validate.yml`.
+
+## Brand and responsive preview
+
+The supplied banner, navy/purple theme, locally bundled Phosphor icons and original illustrative thumbnails support desktop and mobile. Run `npm ci --ignore-scripts`, then `npm run dev -- --host 0.0.0.0 --port 4173 --strictPort`. Production assets remain dependency-free static files.
