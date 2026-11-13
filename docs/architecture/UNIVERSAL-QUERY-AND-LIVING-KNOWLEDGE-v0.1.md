@@ -67,3 +67,36 @@ Public site's present static mode must remain explicit until backend is authenti
 ## Handover
 Base repository: Q10ai/q-pueblo-. Candidate branch: feature/universal-knowledge-query-20261113. Do not merge or deploy without tests and editorial review.
 Related Q-Pueblo case example: docs/research/2026-11-13-pueblo-2027-street-repaving-review.md on independent research branch; it is a reference for the intended workflow, not automatically indexed in public search.
+
+
+## Mandatory answer-completeness amendment — 2026-11-13
+
+Acceptance rule: Previously listed investigation questions are not the public deliverable. Each is a required research and answer field. The engine must compile and present the best substantive answer to every supported field using available trusted evidence, without making citizens or professionals ask each subquestion again.
+
+Covered dimensions for every Qified report:
+- Direct answer and sourced factual findings, dates, relevant units, denominators, evidence status and financial stage.
+- Who, what, when, where, why and how, including authority and jurisdiction.
+- Past history; present verified state; conditional future, clearly separated.
+- Money and resources: proposed, appropriated, contracted/obligated, paid, physical results and open reconciliations.
+- Direct, second- and third-order entity relationships, community effects, children and long-term obligations.
+- Counterevidence, alternative explanations, failure modes, measurable risks, options and tradeoffs.
+- An explicit supported conclusion and usable next actions or decisions, with calculations where evidence allows.
+- Claim/source ledger, exact receipts, review dates, amendments and unverified boundaries.
+
+Every field is marked either ANSWERED_IN_DATED_REPORT or NOT_ESTABLISHED_IN_AVAILABLE_PUBLIC_EVIDENCE at projection time; future production evidence should additionally capture claim-specific evidence class and verification dates. Missing evidence requires an explicit limitation rather than a fabricated answer or the empty question originally used as a research instruction.
+
+Citizens get concise conclusions plus full expandable detail. Researchers, engineers, journalists and decision-makers get the same content sorted by relevance, plus appropriate public tools. No role-based omission or substituted truth. Source and claims must be traceable at every depth.
+
+Prompt templates and follow-up questions remain optional research tools: scenario generation, adversarial challenge, contradiction checks, new hypothesis exploration, comparison to external models and responsible red-team tests. They must never become the default response in place of established findings. A new topic without matched analysis receives every available dated indexed fact and source lead, and precisely labeled material gaps; that is not a verified full report.
+
+The first browser review candidate implements deterministic answer-coverage.js projection from 14 prepared public reports. It does not create new research, fill missing source records, merge private archives or run live searches. Future backend work must populate the canonical claim graph and report-quality gate before any packet is advertised as full Qified research.
+
+Adversarial acceptance tests:
+1. A single headline question produces substantive answers across all supported dimensions, not generic questions.
+2. Role switch preserves all answer statements and facts; only reading priority changes.
+3. Every financial stage is independently labeled; missing disbursements are never inferred from commitments.
+4. Every answer retains source edition and review dates; query time cannot substitute for source freshness.
+5. Unanswered areas are grouped as transparent limitations rather than repeated empty checklists.
+6. An indexed historical issue without a full report cannot be presented as a verified current answer.
+7. User challenges, unusual queries and contradictory public submissions remain permissible inputs, subject to normal access and safety rules.
+8. Untrusted documents and fabricated links do not promote claims without source review.
