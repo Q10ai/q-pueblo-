@@ -1,0 +1,600 @@
+{
+  "schema": "qp-master-build-crosswalk-v0.2",
+  "edition": "2026-11-12",
+  "timezone": "America/Denver",
+  "human_approval": "PENDING",
+  "public_auto_publish": false,
+  "claims_of_runtime_activation": false,
+  "truth_boundary": "Source-attributed research plus confirmed repository inspection; no independent civic audit and no live backend activation",
+  "canonical_repo": "Q10ai/q-pueblo-",
+  "canonical_domain_ids": "QP-00..QP-30",
+  "counts": {
+    "historical_issue_ids": 174,
+    "historical_issue_source_mapped": 82,
+    "historical_issue_unmapped": 92,
+    "public_source_links": 141,
+    "public_source_publishers": 54,
+    "current_public_dated_report_register": 14,
+    "preserved_original_briefs": 5,
+    "regional_qified_drafts": 25,
+    "regional_entity_candidate_index": 56
+  },
+  "existing_sources": {
+    "repo_readme": "https://github.com/Q10ai/q-pueblo-/blob/main/README.md",
+    "twin_benchmark": "https://docs.google.com/document/d/1Levn8SPMZrwGVJ6-PbL9KpIOUb5aH55xrxJrqe-hFVc/edit",
+    "qified_25": "https://docs.google.com/document/d/1s1PB5hXOIXP10Q64gChTwt-VX_hUAn4eK10G0WyopO0/edit",
+    "atlas_comparison": "https://github.com/Q10ai/q-pueblo-/blob/main/docs/research/2026-11-12-election-atlas-regional-twin-shadow.md"
+  },
+  "layers": [
+    {
+      "name": "Existing static civic website",
+      "status": "EXISTS_IN_REPOSITORY",
+      "boundary": "Pages, human-reviewed briefs, issue index and source links; production readback NOT done here"
+    },
+    {
+      "name": "Qify lexical matching and dated report renderer",
+      "status": "EXISTS_IN_REPOSITORY",
+      "boundary": "Deterministic matching; returns explicit no-answer state when not source supported"
+    },
+    {
+      "name": "Q Tools: EE/T2Y/lifecycle/challenges",
+      "status": "EXISTS_IN_REPOSITORY",
+      "boundary": "Browser-local models; relative scoring and client exports; not external fact checking"
+    },
+    {
+      "name": "Public research workbench",
+      "status": "EXISTS_IN_REPOSITORY",
+      "boundary": "Question/persona/method templates and dated report lookup, no autonomous external research"
+    },
+    {
+      "name": "Regional evidence registry and version graph",
+      "status": "DESIGNED_PARTIAL_CANDIDATE_DATA",
+      "boundary": "31-domain/174 historical IDs; 25 research drafts; 56-entity index; 92 historical issue IDs without source mapping"
+    },
+    {
+      "name": "Qified dynamic review/update engine",
+      "status": "REQUIRES_IMPLEMENTATION",
+      "boundary": "State machine, source diffs, queues, human signoff and public changes"
+    },
+    {
+      "name": "Regional GIS/twin temporal join",
+      "status": "REQUIRES_IMPLEMENTATION",
+      "boundary": "Dataset adapter, licensed/dated geometry versions, project maps, comparison views"
+    },
+    {
+      "name": "Financial obligation-to-outcome shadow",
+      "status": "REQUIRES_IMPLEMENTATION",
+      "boundary": "Authorization, appropriation, contract, payment, outcome reconciliation across agencies"
+    },
+    {
+      "name": "Nonpartisan historical election retrospective",
+      "status": "REQUIRES_IMPLEMENTATION",
+      "boundary": "Certified totals, symmetric spending disclosures, uncertainty and privacy tests"
+    },
+    {
+      "name": "External AI/continuous ingestion",
+      "status": "OFF_BY_DESIGN",
+      "boundary": "No autonomous crawling, publication, account connectors or paid APIs without operator authority"
+    },
+    {
+      "name": "Security/privacy/legal/release assurance",
+      "status": "PARTIALLY_SPECIFIED",
+      "boundary": "Requires penetration, accessibility, retention, consent and rollback exercises"
+    },
+    {
+      "name": "Production deployment verification",
+      "status": "UNVERIFIED_IN_THIS_REVIEW",
+      "boundary": "GitHub changes not evidence of Cloudflare deploy/live parity"
+    }
+  ],
+  "topic_index": [
+    {
+      "sequence": 1,
+      "canonical_issue_id": "QP-ISS-FISC-001",
+      "topic": "County budget / 2027 recurring balance",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 2,
+      "canonical_issue_id": "QP-ISS-FISC-002",
+      "topic": "City budget / spending and 2027 choices",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 3,
+      "canonical_issue_id": "QP-ISS-REG-001",
+      "topic": "Half-Cent Jobs Fund commitments",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 4,
+      "canonical_issue_id": "QP-ISS-REG-007",
+      "topic": "Project Falcon investment",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 5,
+      "canonical_issue_id": null,
+      "topic": "Wastewater incident, repairs, clearance",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 6,
+      "canonical_issue_id": "QP-ISS-ENV-001",
+      "topic": "Pueblo West water rights and reliability",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 7,
+      "canonical_issue_id": "QP-ISS-REG-022",
+      "topic": "Comanche energy transition",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 8,
+      "canonical_issue_id": "QP-ISS-REG-025",
+      "topic": "Aspen Acres recovery",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 9,
+      "canonical_issue_id": null,
+      "topic": "Railroad-tie fire",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 10,
+      "canonical_issue_id": "QP-ISS-SAFE-006",
+      "topic": "Jail lifecycle costs and outcomes",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 11,
+      "canonical_issue_id": "QP-ISS-HEAL-001",
+      "topic": "Behavioral health access",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 12,
+      "canonical_issue_id": "QP-ISS-HEAL-007",
+      "topic": "Homelessness systems and durable exits",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 13,
+      "canonical_issue_id": "QP-ISS-HOUS-005",
+      "topic": "Housing delivery and occupancy",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 14,
+      "canonical_issue_id": "QP-ISS-EDU-004",
+      "topic": "School finance",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 15,
+      "canonical_issue_id": null,
+      "topic": "School governance and audits",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 16,
+      "canonical_issue_id": null,
+      "topic": "Library AI / privacy / value",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 17,
+      "canonical_issue_id": null,
+      "topic": "Library funding and services",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 18,
+      "canonical_issue_id": null,
+      "topic": "Passenger rail and agreements",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 19,
+      "canonical_issue_id": null,
+      "topic": "Trail projects and funding",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 20,
+      "canonical_issue_id": null,
+      "topic": "Fiber infrastructure and service",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 21,
+      "canonical_issue_id": "QP-ISS-FISC-008",
+      "topic": "Procurement competition and contract value",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 22,
+      "canonical_issue_id": "QP-ISS-GOV-008",
+      "topic": "Intergovernmental agreements",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 23,
+      "canonical_issue_id": "QP-ISS-GOV-007",
+      "topic": "Election records and campaign finance",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 24,
+      "canonical_issue_id": "QP-ISS-HOUS-001",
+      "topic": "Utility affordability",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    },
+    {
+      "sequence": 25,
+      "canonical_issue_id": "QP-ISS-GOV-015",
+      "topic": "Public records and institutional memory",
+      "source": "existing Nov 10 25-packet collection",
+      "review_state": "UNPUBLISHED_DRAFT"
+    }
+  ],
+  "sources": [
+    {
+      "id": "SRC-COUNTY-ELECTION-2026",
+      "type": "official",
+      "url": "https://pueblocounty.gov/clerk-and-recorder-department/election-results-november-2026",
+      "topic": "Nov 2026 Pueblo County unofficial vote results and next dated update"
+    },
+    {
+      "id": "SRC-RESULTS-SECONDARY-SD3",
+      "type": "secondary",
+      "url": "https://spectrumvote.com/co/state-senate-district-3",
+      "topic": "Nov 11 unofficial SD3 candidate totals; must recheck certification"
+    },
+    {
+      "id": "SRC-COLORADOFILES-SD3",
+      "type": "independent-transformation",
+      "url": "https://coloradofiles.org/race/2026-general-state-senate-district-3",
+      "topic": "candidate committee and outside spend site-defined aggregation, historical snapshot"
+    },
+    {
+      "id": "SRC-COLORADOFILES-METHOD",
+      "type": "methodology",
+      "url": "https://coloradofiles.org/methodology",
+      "topic": "independent financial/legislative record matching and privacy"
+    },
+    {
+      "id": "SRC-TRACER-BULK",
+      "type": "official",
+      "url": "https://tracer.sos.colorado.gov/PublicSite/DataDownload.aspx",
+      "topic": "financial export; displayed underlying extract timestamp Oct 12, 2026 when checked; freshness gap"
+    },
+    {
+      "id": "SRC-COUNTY-BUDGET27",
+      "type": "official",
+      "url": "https://county.pueblo.org/budget-and-finance-department/2027-budget",
+      "topic": "2027 preliminary proposal and presentations; blank adopted-budget listing on check"
+    },
+    {
+      "id": "SRC-COUNTY-PRIORITIES",
+      "type": "official-attributed",
+      "url": "https://county.pueblo.org/board-county-commissioners-office/what-we-are-working",
+      "topic": "County's November 2026 stated target $9.81m and process status, not independently audited outcome"
+    },
+    {
+      "id": "SRC-CITY-FINANCE",
+      "type": "official",
+      "url": "https://www.pueblo.us/92/Finance",
+      "topic": "City financial report portals and 2027 proposal"
+    },
+    {
+      "id": "SRC-CITY-COUNCIL-OCT26",
+      "type": "meeting-intermediary",
+      "url": "https://www.openpublica.com/meetings/pueblo-colorado-city-council-2026-10-26-6ae11d31328dc7b98fa7fcb2",
+      "topic": "Oct 26 Council summarized votes and discussion; compare primary ordinance and minutes"
+    },
+    {
+      "id": "SRC-CITY-COUNCIL-AGENDA-RECORD",
+      "type": "meeting-document-index",
+      "url": "https://app.thecommonnews.com/summary/pueblo-co-2026-10-26-council-approves-automated-enforcement-position",
+      "topic": "links to City CivicClerk meeting source files; independently corroborate actions"
+    },
+    {
+      "id": "SRC-CPR-HERITAGE",
+      "type": "news-attributed",
+      "url": "https://www.cpr.org/2026/11/11/pueblo-heritage-center-building-future-unclear/",
+      "topic": "Nov 11 report with museum representatives, Mayor, Council member positions; sale not completed"
+    },
+    {
+      "id": "SRC-PUEBLO-GIS",
+      "type": "official",
+      "url": "https://www.pueblocounty.gov/information-technology/geographic-information-gis",
+      "topic": "GIS and parcel dataset source and custody"
+    },
+    {
+      "id": "SRC-PACOG",
+      "type": "regional-planning",
+      "url": "https://www.pacog.net/mpodocs",
+      "topic": "Transportation Improvement Program, 2050 LRTP and public participation"
+    },
+    {
+      "id": "SRC-OPENELECTIONS",
+      "type": "independent-transformation",
+      "url": "https://github.com/openelections/openelections-data-co",
+      "topic": "official-results conversion and precinct CSV, verify time/geography"
+    },
+    {
+      "id": "SRC-OPEN-CONTRACTING",
+      "type": "standard",
+      "url": "https://standard.open-contracting.org/latest/en/primer/releases_and_records/",
+      "topic": "immutable contracting releases and compiled records pattern"
+    },
+    {
+      "id": "SRC-REGIONAL-EXISTING",
+      "type": "internal-drive",
+      "url": "https://docs.google.com/document/d/1Levn8SPMZrwGVJ6-PbL9KpIOUb5aH55xrxJrqe-hFVc/edit",
+      "topic": "Nov 10 regional twin/shadow 14 audit portfolios and 31-domain master-reference"
+    },
+    {
+      "id": "SRC-QIFIED25-EXISTING",
+      "type": "internal-drive",
+      "url": "https://docs.google.com/document/d/1s1PB5hXOIXP10Q64gChTwt-VX_hUAn4eK10G0WyopO0/edit",
+      "topic": "25 regional draft Qified issue packets with 56 entity crosswalk"
+    },
+    {
+      "id": "SRC-ATLAS-PREVIOUS",
+      "type": "internal-github",
+      "url": "https://github.com/Q10ai/q-pueblo-/blob/main/docs/research/2026-11-12-election-atlas-regional-twin-shadow.md",
+      "topic": "Curator Atlas comparative review and election twin/shadow addendum"
+    }
+  ],
+  "qified_examples": [
+    {
+      "id": "QP-MASTER-QIFIED-SD3-001",
+      "status": "SOURCE_ATTRIBUTED_UNOFFICIAL",
+      "scope": "Colorado Senate District 3; 2026 general",
+      "question": "What do official returns and recorded campaign spending establish about the race, equally for both candidates?",
+      "known": [
+        "A Nov 11 secondary snapshot reports 36,624 for Aaron Gutierrez and 30,759 for Dana Charles; 5,865 spread and 8.704 percentage points of candidate votes; unofficial, not certified.",
+        "Colorado Files displays candidate committee raised/spent $149,182/$111,989 for Gutierrez and $132,973/$100,378 for Charles; different reporting cycles and update times must not be silently mixed.",
+        "Colorado Files defines independent expenditure totals in four for/against cells, adding to $2,331,240 under its allocation method. These are not candidate committee receipts or causal effectiveness measures.",
+        "County Nov 5 notice estimates 1,036 countywide outstanding ballots; not SD3-specific."
+      ],
+      "positions": [
+        "Candidates and committees: what official filings say",
+        "Independent groups: spending for and against both candidates",
+        "Community: historical outcomes and transparent reporting, no individual targeting"
+      ],
+      "unknowns": [
+        "certified SD3 vote total",
+        "each candidate/committee's post-election corrections, transfers, debts, and filing IDs",
+        "whether Atlas author's stated security features can be independently inspected",
+        "any causal impact of Atlas, advertising or fieldwork on the vote"
+      ],
+      "next": "Obtain official certified district vote report and individual TRACER amended committee and IE notices. Normalize period and de-duplicate according to record IDs. Publish precinct results only where appropriate and aggregate.",
+      "sources": [
+        "SRC-COUNTY-ELECTION-2026",
+        "SRC-RESULTS-SECONDARY-SD3",
+        "SRC-COLORADOFILES-SD3",
+        "SRC-TRACER-BULK"
+      ]
+    },
+    {
+      "id": "QP-MASTER-QIFIED-FISC-001",
+      "status": "DOCUMENTED_SOURCE_ATTRIBUTION_NOT_AUDIT",
+      "scope": "Pueblo County FY2026 adopted vs FY2027 proposed",
+      "question": "Is the County 2027 budget adopted and what is the reconciled recurring financial position?",
+      "known": [
+        "County's official 2027 budget page links preliminary proposed budget, calendar and presentations; its adopted section was empty at the November 12 check.",
+        "County management's priorities page describes a 15% of eligible General Fund personnel budgets targeting $9.81 million and work on monthly reporting and controls policies.",
+        "These management statements are not proof that proposed changes were enacted, recurring savings realized, or all interfund positions reconciled."
+      ],
+      "positions": [
+        "County: public proposed budget and finance reform narrative",
+        "Independent review: ask for verified recurring bridge, fund restrictions and monthly actuals",
+        "Service users: evaluate practical service and equity impact separately"
+      ],
+      "unknowns": [
+        "adopted 2027 ordinance or resolution",
+        "verified operating cash and fund restrictions by period",
+        "implementation and service-level impacts"
+      ],
+      "next": "Track adoption, verify line-item bridge and fund restrictions, reconcile transfers and performance by department.",
+      "sources": [
+        "SRC-COUNTY-BUDGET27",
+        "SRC-COUNTY-PRIORITIES"
+      ]
+    },
+    {
+      "id": "QP-MASTER-QIFIED-FALCON-001",
+      "status": "MEETING_REPORTED_AWAITING_PRIMARY_RECONCILIATION",
+      "scope": "Project Falcon; Lime Road; St Charles industrial area",
+      "question": "Which public commitments and road obligations exist, and how much has actually been paid?",
+      "known": [
+        "Open Publica's Oct 26 Council meeting summary reports a 7-0 vote approving an option-to-purchase ordinance for Project Falcon.",
+        "An option to purchase is not itself a demonstrated completed land sale, construction milestone, realized job count or cash disbursement.",
+        "The circulating $65 million combined public-investment claim remains un-reconciled across components in this master packet."
+      ],
+      "positions": [
+        "City and economic-development advocates: intended jobs and investment",
+        "Infrastructure and taxpayer critics: cost, road ownership, timing and transparency",
+        "Affected industrial employers and workers: road usability and service reliability"
+      ],
+      "unknowns": [
+        "final executed instrument, parcel IDs and valuation",
+        "Lime Road documented ownership and maintenance responsibility",
+        "commitment-by-fund, payment-by-entity, obligations and clawbacks",
+        "contractor and employer compliance data"
+      ],
+      "next": "Read primary ordinance and executed option, historical roads records, grants, title, audited payments and independent engineering condition records; construct no-double-count ledger.",
+      "sources": [
+        "SRC-CITY-COUNCIL-OCT26",
+        "SRC-CITY-COUNCIL-AGENDA-RECORD",
+        "SRC-REGIONAL-EXISTING"
+      ]
+    },
+    {
+      "id": "QP-MASTER-QIFIED-HERITAGE-001",
+      "status": "MULTI_PARTY_NEWS_ATTRIBUTED",
+      "scope": "Pueblo Heritage Center former railway freight station",
+      "question": "What legal and financial consequences would any disposition produce, and what alternatives exist?",
+      "known": [
+        "Colorado Public Radio reported Nov 11 the city has listed a city-owned former railroad freight station housing Pueblo Heritage Center for sale.",
+        "CPR attributes an appraisal exceeding $1.9m and a $300,000 nonprofit offer to statements made by Mayor Graham; these are not independently audited valuations in this packet.",
+        "CPR also reports museum-group concerns and council members seeking reconsideration; listing is not evidence of a completed sale."
+      ],
+      "positions": [
+        "Administration: property consolidation, appraisal and fiscal stewardship",
+        "Historical Society/heritage advocates: institutional history, grant-funded rehabilitation and cultural continuity",
+        "Council and public: evaluate alternatives, process, stewardship conditions, and nearby rail-planning context"
+      ],
+      "unknowns": [
+        "deed, appraisal document and scope",
+        "grant restrictions and preservation covenants",
+        "lease and occupancy agreements",
+        "executive-session/legal authority and executed disposition status"
+      ],
+      "next": "Read title/appraisal/council authorizations and grant restrictions; compare retain, lease, public sale, nonprofit sale and conservation arrangements using validated costs and rights.",
+      "sources": [
+        "SRC-CPR-HERITAGE"
+      ]
+    },
+    {
+      "id": "QP-MASTER-QIFIED-CAMERAS-001",
+      "status": "MEETING_REPORTED_CONTRACT_OPEN",
+      "scope": "Pueblo camera enforcement and related privacy controls",
+      "question": "What was authorized, how are data, fines, procurement and outcomes governed?",
+      "known": [
+        "Oct 26 independent Council summaries report 5-2 approval of an Automated Enforcement Coordinator position.",
+        "The staffing vote alone does not prove cameras are deployed, revenue offsets realized, safety outcomes delivered, or privacy practices effective."
+      ],
+      "positions": [
+        "Public safety rationale: road safety and enforcement consistency",
+        "Privacy and civil liberties: retention, access, discriminatory effects and mass-surveillance questions",
+        "Financial review: vendor payments, revenue assumptions, legal challenges and independent outcomes"
+      ],
+      "unknowns": [
+        "signed vendor agreement and all ordinance IDs",
+        "citation amounts, appeals, cost and net revenue by period",
+        "data retention, sharing, access, audits and deletion rules",
+        "measured crash/speed changes with comparable baseline"
+      ],
+      "next": "Retrieve signed agreements, council record, police policy, annual finances, complaint/appeals totals and road safety indicators; separate predictions from observed outcomes.",
+      "sources": [
+        "SRC-CITY-COUNCIL-OCT26",
+        "SRC-CITY-COUNCIL-AGENDA-RECORD"
+      ]
+    },
+    {
+      "id": "QP-MASTER-QIFIED-TRANSPORT-001",
+      "status": "DOCUMENTED_PLANNING_NOT_DELIVERY",
+      "scope": "PACOG metropolitan transport and infrastructure crosswalk",
+      "question": "Which routes and projects are planned, financed, obligated, built and operating?",
+      "known": [
+        "PACOG's published program page links 2025–2028 TIP, a TIP tracker, FY2025 obligated projects and its 2050 LRTP, adopted in April 2026.",
+        "A programmed improvement is not necessarily fully funded, let, completed or operating; route and parcel data have independent time versions."
+      ],
+      "positions": [
+        "Regional planners: forecast mobility and long-range needs",
+        "Local residents/business: current conditions, costs, access and construction impacts",
+        "Funding partners: federal/state/local eligibility and obligated deliverables"
+      ],
+      "unknowns": [
+        "latest executed project agreements and payment data",
+        "GIS layers and vintage/license compatibility",
+        "baseline transport performance and impacts by community"
+      ],
+      "next": "Normalize TIP/LRTP IDs to CDOT grants, contracts, completion, jurisdictional road status and spatial geometry. Report 2020/2030/2040/2050 models as scenarios, not observations.",
+      "sources": [
+        "SRC-PACOG",
+        "SRC-PUEBLO-GIS"
+      ]
+    }
+  ],
+  "contract": {
+    "entity": "entity_id, legal_name, aliases, kind, jurisdiction, valid_from/to, identity_verification, evidence_ids",
+    "source": "source_id, publisher, uri, retrieved_at, published_at, source_sha256, license, access_class, sensitivity, validity_interval",
+    "claim": "claim_id, subject, predicate, object/unit, valid_at, observed_at, evidence_support_ids, evidence_dispute_ids, verification_state, review_due_at, supersedes_id",
+    "event": "event_id, actor, type, date, jurisdiction, amount, financial_stage, contract_process_id, evidence_ids",
+    "geography": "geo_id, geometry_ref, CRS, valid_from/to, provenance, aggregation_unit, suppression_rule",
+    "publication": "release_id, reviewer, approved_at, source_hash_set, changed_claim_ids, rollback_ref, visibility"
+  },
+  "financial_stages": [
+    "estimated",
+    "proposed",
+    "authorized",
+    "appropriated",
+    "obligated",
+    "invoiced",
+    "paid",
+    "reconciled",
+    "audited",
+    "observed_outcome"
+  ],
+  "claim_states": [
+    "REPORTED",
+    "PARTIALLY_CORROBORATED",
+    "DOCUMENTED",
+    "DISPUTED",
+    "SUPERSEDED",
+    "WITHDRAWN",
+    "UNKNOWN"
+  ],
+  "packet_states": [
+    "OPEN",
+    "ACTIVE_REVIEW",
+    "MONITORING",
+    "EXPIRED_REVIEW_TTL",
+    "ARCHIVED_HISTORY"
+  ],
+  "tests": [
+    "stable ids and no fuzzy implicit merges",
+    "input snapshot hash and replay equivalence",
+    "official proposal never treated as adoption",
+    "appropriation != payment != outcome",
+    "corrected transactions reverse/replace without duplicate sums",
+    "financial sources reconciled separately by agency and fiscal year",
+    "candidate and independent spending treated symmetrically across parties",
+    "no home-address/person-level voter map or differential disclosure of small cells",
+    "scenario data never displayed as official observation",
+    "as-of date and geometry vintage preserved",
+    "counterclaim visible as attribution not legal finding",
+    "packet remains accessible while TTL expires",
+    "source review and rollback before public publication"
+  ],
+  "risk_decisions": [
+    "No real-time currentness implied by a stale TRACER CSV",
+    "No inferred individual vote preference",
+    "No automatic public crowdsourced facts",
+    "No unverified criminality/fraud allegations",
+    "Human authority and reversibility before release",
+    "No double count of pass-through transfers",
+    "No global production activation inferred from documentation"
+  ]
+}
