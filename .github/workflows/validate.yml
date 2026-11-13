@@ -80,6 +80,23 @@ jobs:
           grep -q 'Q-PUEBLO' public/index.html
           grep -q 'contributions_enabled: false' functions/api/v1/config.js
           grep -q "Content-Security-Policy" public/_headers
+      - name: Validate controlled evidence ledger and research receipts
+        run: |
+          node --check lib/qp-evidence-ledger.mjs
+          node --check scripts/build-controlled-evidence-registry.mjs
+          node --check scripts/check-evidence-ledger.mjs
+          node scripts/check-research-master.mjs
+          node scripts/check-evidence-ledger.mjs
+          node scripts/build-controlled-evidence-registry.mjs --write
+          node scripts/build-controlled-evidence-registry.mjs --check
+      - name: Preserve controlled evidence registry for human review
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: qp-controlled-evidence-registry-review
+          path: research/derived/qp-controlled-evidence-registry-v1.json
+          if-no-files-found: error
+          retention-days: 14
       - name: Package static Cloudflare Pages upload
         if: github.ref == 'refs/heads/main'
         run: |
