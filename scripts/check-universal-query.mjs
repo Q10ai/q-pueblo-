@@ -64,3 +64,34 @@ assert(!qify.includes('Investigation packet requirements'));
 assert(!qify.includes('Useful angles to check'));
 assert(!qify.includes('Object.entries(packet.investigation).map'));
 console.log('PASS answer-first reports: 14 records, all dimensions, financial stages, missing evidence, equal facts across roles.');
+
+
+vm.runInNewContext(readFileSync('public/q-native.js','utf8'),context,{timeout:3000});
+const Q=context.window.QPNative;
+for(const report of reports){
+ const insight=Q.derive(report);
+ assert.equal(insight.reportId,report.id);
+ assert.equal(insight.sourceChecked,report.sourceChecked);
+ assert.equal(insight.derivedNow,false,'Never falsely imply a new insight discovery');
+ assert.equal(insight.claimsIndividuallyMapped,false,'Report provenance alone is not claim-level provenance');
+ assert.equal(insight.insights.length,8,'Every report should answer Q-native extra dimensions');
+ for(const x of insight.insights){
+  assert.equal(x.state,'PREVIOUSLY_PREPARED_Q_ANALYSIS', 'Missing Q-native answer on '+report.id+' '+x.id);
+  assert(x.answer.length,'No Q-native answer content');
+  assert(x.evidenceClass!== 'UNKNOWN','Missing analytical evidence class');
+  assert.equal(x.sourceScope,report.id);
+ }
+ assert(insight.insights.some(x=>x.id==='underlying'&&x.answer.some(v=>v.includes(report.qification.assessment))));
+ assert(insight.insights.some(x=>x.id==='falsification'&&x.answer.length));
+}
+const unknownQ=Q.derive(null);
+assert.equal(unknownQ.reportId,null);
+assert.equal(unknownQ.insights.length,8);
+assert(unknownQ.insights.every(x=>x.state==='NOT_YET_EVIDENCED'&&x.answer.length===0));
+const clientQ=readFileSync('public/qify.js','utf8');
+assert(clientQ.includes('window.QPNative.derive(exact)'));
+assert(clientQ.includes('What Q found beyond the question'));
+assert(clientQ.includes('qPanel+sectionsPanel'));
+assert(clientQ.includes('packet.qNative.insights'));
+assert(readFileSync('public/qify.html','utf8').includes('src="q-native.js"'));
+console.log('PASS Q-native: eight extra substantive answer dimensions per dated report, uncertainty and export boundaries.');
