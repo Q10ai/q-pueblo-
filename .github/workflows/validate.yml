@@ -90,6 +90,11 @@ jobs:
           node --check lib/qp-regional-shadow.mjs
           node --check scripts/check-regional-shadow.mjs
           node scripts/check-regional-shadow.mjs
+          node --check scripts/check-source-gap-worklist.mjs
+          node --check scripts/build-controlled-qified-cases.mjs
+          node scripts/check-source-gap-worklist.mjs
+          node scripts/build-controlled-qified-cases.mjs --write
+          node scripts/build-controlled-qified-cases.mjs --check
           node scripts/build-controlled-evidence-registry.mjs --write
           node scripts/build-controlled-evidence-registry.mjs --check
       - name: Preserve controlled evidence registry for human review
@@ -97,7 +102,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: qp-controlled-evidence-registry-review
-          path: research/derived/qp-controlled-evidence-registry-v1.json
+          path: |
+            research/derived/qp-controlled-evidence-registry-v1.json
+            research/derived/qp-controlled-qified-cases-v1.json
+            research/derived/qp-controlled-qified-cases-v1.md
           if-no-files-found: error
           retention-days: 14
       - name: Package static Cloudflare Pages upload
