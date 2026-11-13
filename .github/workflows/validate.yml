@@ -87,6 +87,9 @@ jobs:
           node --check scripts/check-evidence-ledger.mjs
           node scripts/check-research-master.mjs
           node scripts/check-evidence-ledger.mjs
+          node --check lib/qp-regional-shadow.mjs
+          node --check scripts/check-regional-shadow.mjs
+          node scripts/check-regional-shadow.mjs
           node scripts/build-controlled-evidence-registry.mjs --write
           node scripts/build-controlled-evidence-registry.mjs --check
       - name: Preserve controlled evidence registry for human review
