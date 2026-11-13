@@ -24,3 +24,43 @@ assert(client.includes('QP Knowledge')||client.includes('QP Knowledge'.replace('
 assert(client.includes('window.QPKnowledge.compose'));
 assert(client.includes('No live source check was performed'));
 console.log('PASS universal read-only query, role view, revision gate and no false source freshness.');
+
+
+const answerScript=readFileSync('public/answer-coverage.js','utf8');
+vm.runInNewContext(answerScript,context,{timeout:3000});
+const A=context.window.QPAnswerCoverage;
+const reports=JSON.parse(readFileSync('public/data/q-pueblo-qified-reports-v2-2026-11-09.json','utf8')).reports;
+assert.equal(reports.length,14);
+for (const report of reports){
+  const resident=A.create(report,[], 'citizen');
+  const technical=A.create(report,[], 'engineer');
+  const journalism=A.create(report,[], 'journalist');
+  const sectionIds=resident.sections.map(s=>s.id);
+  for(const field of ['short','facts','who','what','when','where','why','how','money','history','entities','effects','alternatives','risks','counter','conclusions','next','unknowns','source']) assert(sectionIds.includes(field), 'Missing answer field '+report.id+': '+field);
+  assert.equal(resident.answeredCount+resident.missingCount,resident.sections.length);
+  assert(resident.answeredCount>=14,'Too few answered report facets: '+report.id);
+  assert.equal(resident.reportId,report.id);
+  assert.equal(technical.reportId,resident.reportId);
+  assert.equal(journalism.reportId,resident.reportId);
+  for(const section of resident.sections){
+    assert(section.answers.length,'Blank answer '+report.id+': '+section.id);
+    assert.equal(section.state,'ANSWERED_IN_DATED_REPORT','Missing report field '+report.id+': '+section.id);
+    const other=technical.sections.find(x=>x.id===section.id);
+    assert.equal(JSON.stringify(other.answers),JSON.stringify(section.answers),'Role changes answer content '+report.id+': '+section.id);
+  }
+  assert.equal(resident.sections.find(s=>s.id==='money').answers.length,report.money.length,'All finance stages must be shown');
+}
+const unidentified=A.create(null,[{id:'REG-001',title:'Existing historical issue',date:'2026-10-05',sources:[source]}]);
+assert.equal(unidentified.reportId,null);
+assert.equal(unidentified.sections.find(s=>s.id==='what').state,'NOT_ESTABLISHED_IN_AVAILABLE_PUBLIC_EVIDENCE');
+assert(unidentified.sections.find(s=>s.id==='facts').answers[0].includes('REG-001'));
+const changed=A.create(reports[0],[], 'engineer');
+assert.equal(changed.sections.length,A.create(reports[0],[], 'citizen').sections.length);
+assert.notEqual(changed.sections.map(x=>x.id).join(','),A.create(reports[0],[], 'citizen').sections.map(x=>x.id).join(','));
+const qify=readFileSync('public/qify.js','utf8');
+assert(qify.includes('window.QPAnswerCoverage.create'));
+assert(qify.includes('Full Qified answers by subject'));
+assert(!qify.includes('Investigation packet requirements'));
+assert(!qify.includes('Useful angles to check'));
+assert(!qify.includes('Object.entries(packet.investigation).map'));
+console.log('PASS answer-first reports: 14 records, all dimensions, financial stages, missing evidence, equal facts across roles.');
