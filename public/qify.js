@@ -4,15 +4,6 @@
  let reports=[],packet=null;
  const briefsReady=fetch('data/q-pueblo-qified-reports-v2-2026-11-09.json').then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>{reports=d.reports;return true;}).catch(()=>false);
  const sourceLink=s=>{const u=core.safeUrl(s.url);return u?'<a href="'+core.esc(u)+'" target="_blank" rel="noopener noreferrer">'+core.esc(s.title)+' ↗</a>':core.esc(s.title);};
- const investigation={
-  'Question and scope':'Record the exact question, geography, jurisdiction and valid date. No current answer is established by a related title.',
-  'Research already built':'Check the historical packet library and preserve prior IDs, original editions, sources and corrections.',
-  'Evidence and counterevidence':'Retrieve the controlling record and a materially contrary account; keep claims, estimates, facts and unknowns separate.',
-  'Facts, figures and finance':'Preserve units, denominators, dates and proposed/authorized/contracted/paid/outcome states.',
-  'Authority and effects':'Confirm who can act; examine direct, secondary and systemic impacts, including children and families over time.',
-  'Alternatives and practical result':'Compare supported options, constraints, costs, reversibility, implementation evidence and the smallest useful next step.',
-  'Q review and reopening':'Document applicable EE/T2Y/RX/LEAP/TSLP checks actually performed, gaps, human review, freshness and correction triggers.'
- };
  async function render(question){
   $('qify-status').textContent='Loading the dated report collection…';const loaded=await briefsReady;
   const terms=core.words(question), candidates=core.matchReports(question,reports);
@@ -30,7 +21,7 @@
     '</section>';
   const coveragePanel='<section aria-label="Evidence search and freshness"><h3>What Q knows at this search</h3><p><strong>'+core.esc(experience.freshness.label)+'</strong></p><p>Search performed '+core.esc(experience.searchedAt)+' · '+(experience.freshness.checked?'Source analysis checked '+core.esc(experience.freshness.checked)+' · ':'')+(experience.freshness.reviewDue?'Review due '+core.esc(experience.freshness.reviewDue)+' · ':'')+core.esc(experience.sourceCount)+' valid cited sources in the matched brief.</p><p><strong>No live source check was performed.</strong> The search uses Q-Pueblo’s dated public catalog. New information is not fetched or committed by this page.</p></section>';
   const rolePanel='<section aria-label="Audience detail"><h3>'+core.esc(experience.audience.title)+' view</h3><p>'+core.esc(experience.audience.focus)+'. This view changes the order of answers, not the evidence or access rights.</p></section>';
-  packet={schema:'qp-question-packet-v2',prepared:new Date().toISOString(),question,evidenceState:exact?'PREPARED_ANSWER_WITH_DATED_SOURCES':'INVESTIGATION_DRAFT_NO_CONFIRMED_ANSWER',answer,matchedReport:exact||null,relatedReports:candidates.filter(x=>!x.exact).map(x=>x.report),issues:matches,investigation,experience,coverage,publication:'Local research draft. No external investigation, records request or publication has been performed by this page.'};
+  packet={schema:'qp-question-packet-v2',prepared:new Date().toISOString(),question,evidenceState:exact?'PREPARED_ANSWER_WITH_DATED_SOURCES':'INVESTIGATION_DRAFT_NO_CONFIRMED_ANSWER',answer,matchedReport:exact||null,relatedReports:candidates.filter(x=>!x.exact).map(x=>x.report),issues:matches,experience,coverage,publication:'Local research draft. No external investigation, records request or publication has been performed by this page.'};
   $('qify-output').innerHTML='<h2>Answer and evidence boundary</h2><p><strong>'+core.esc(answer)+'</strong></p>'+coveragePanel+rolePanel+sectionsPanel+(!loaded?'<p>Prepared reports could not load. Existing index matches cannot substitute for them.</p>':'')+(exact?'<details><summary>Complete original published analysis, source links, claims and methods</summary>'+core.render(exact)+'</details>':'')+
    (candidates.some(x=>!x.exact)?'<h3>Related prepared analyses — each has its own scope</h3>'+candidates.filter(x=>!x.exact).map(x=>'<details><summary>'+core.esc(x.report.title)+'</summary>'+core.render(x.report)+'</details>').join(''):'')+
    '<h3>Related dated issue records</h3>'+(matches.length?'<ul>'+matches.map(i=>'<li><a href="issues.html#'+encodeURIComponent(i.id)+'">'+core.esc(i.id+' — '+i.title)+'</a><small> · historical review '+core.esc(i.date)+'</small>'+(i.sources.length?'<ul>'+i.sources.map(s=>'<li>'+sourceLink(s)+'</li>').join('')+'</ul>':'<p>Record-specific source crosswalk remains open.</p>')+'</li>').join('')+'</ul>':'<p>No confident issue match. This is a coverage gap.</p>')+
