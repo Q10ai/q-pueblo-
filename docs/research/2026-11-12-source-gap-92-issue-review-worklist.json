@@ -1,0 +1,1647 @@
+{
+  "schema": "qp-source-gap-worklist-v1",
+  "date": "2026-11-12",
+  "source_issue_file": "public/data/q-pueblo-issue-index-2026-11-09.json",
+  "source_report_file": "public/data/q-pueblo-qified-reports-v2-2026-11-09.json",
+  "privacy": "PUBLIC_RECORD_RESEARCH_METADATA_ONLY",
+  "publisher_authorization": "NOT_GRANTED",
+  "auto_source_attach": false,
+  "auto_publication": false,
+  "counts": {
+    "unmapped_original": 92,
+    "explicit_report_lead": 11,
+    "unmapped_no_explicit_lead": 81
+  },
+  "items": [
+    {
+      "historical_issue_id": "REG-001",
+      "category": "Public money",
+      "domain": "Public finance / economic development",
+      "issue_title": "Half-Cent Jobs Fund principal, interest, and voter-purpose controls",
+      "last_reviewed": "2026-10-05",
+      "review_state": "EXPLICIT_EXISTING_REPORT_CROSSWALK_NEEDS_DOCUMENT_REVIEW",
+      "existing_report_leads": [
+        {
+          "report_id": "QP-MONEY-2026-002",
+          "report_title": "Half-Cent Economic Development Fund: commitments are not cash spent",
+          "source_count": 2
+        }
+      ],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-004",
+      "category": "Roads & transport",
+      "domain": "Economic development / governance",
+      "issue_title": "PEDCO transition and replacement-provider continuity",
+      "last_reviewed": "2026-10-05",
+      "review_state": "EXPLICIT_EXISTING_REPORT_CROSSWALK_NEEDS_DOCUMENT_REVIEW",
+      "existing_report_leads": [
+        {
+          "report_id": "QP-MONEY-2026-002",
+          "report_title": "Half-Cent Economic Development Fund: commitments are not cash spent",
+          "source_count": 2
+        }
+      ],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-007",
+      "category": "Public money",
+      "domain": "Economic development / NDA",
+      "issue_title": "Project Falcon confidentiality, jobs, incentives, and public-value packet",
+      "last_reviewed": "2026-10-16",
+      "review_state": "EXPLICIT_EXISTING_REPORT_CROSSWALK_NEEDS_DOCUMENT_REVIEW",
+      "existing_report_leads": [
+        {
+          "report_id": "QP-QIFY-2026-008",
+          "report_title": "Lime Road and St Charles: what a commitment line can—and cannot—tell us",
+          "source_count": 1
+        }
+      ],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-008",
+      "category": "Economy & jobs",
+      "domain": "Industrial development",
+      "issue_title": "St. Charles Industrial Park execution status",
+      "last_reviewed": "2026-10-16",
+      "review_state": "EXPLICIT_EXISTING_REPORT_CROSSWALK_NEEDS_DOCUMENT_REVIEW",
+      "existing_report_leads": [
+        {
+          "report_id": "QP-QIFY-2026-008",
+          "report_title": "Lime Road and St Charles: what a commitment line can—and cannot—tell us",
+          "source_count": 1
+        }
+      ],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-025",
+      "category": "Government & law",
+      "domain": "Disaster recovery",
+      "issue_title": "Aspen Acres long-term recovery and regional shock absorption",
+      "last_reviewed": "2026-10-05",
+      "review_state": "EXPLICIT_EXISTING_REPORT_CROSSWALK_NEEDS_DOCUMENT_REVIEW",
+      "existing_report_leads": [
+        {
+          "report_id": "QP-QIFY-2026-007",
+          "report_title": "Aspen Acres recovery: a disaster declaration is not the same as individual assistance",
+          "source_count": 2
+        }
+      ],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-036",
+      "category": "Government & law",
+      "domain": "Records operations",
+      "issue_title": "CORA/public-records source-fill queue and custodian verification",
+      "last_reviewed": "2026-10-05",
+      "review_state": "EXPLICIT_EXISTING_REPORT_CROSSWALK_NEEDS_DOCUMENT_REVIEW",
+      "existing_report_leads": [
+        {
+          "report_id": "QP-QIFY-2026-010",
+          "report_title": "Getting the records that could resolve a disputed public-spending claim",
+          "source_count": 1
+        }
+      ],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-046",
+      "category": "Housing & land",
+      "domain": "Housing / urban renewal / public finance",
+      "issue_title": "Bluffs URA / superseded Riverly proposal / current Prop 123 housing and public-finance lineage",
+      "last_reviewed": "2026-10-05",
+      "review_state": "EXPLICIT_EXISTING_REPORT_CROSSWALK_NEEDS_DOCUMENT_REVIEW",
+      "existing_report_leads": [
+        {
+          "report_id": "QP-QIFY-2026-006",
+          "report_title": "Pueblo housing: permitted, financed, built and occupied are different outcomes",
+          "source_count": 2
+        }
+      ],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-049",
+      "category": "Public money",
+      "domain": "Community services / grants / governance",
+      "issue_title": "CSAC nonprofit allocation, concentration, conflicts and outcome ledger",
+      "last_reviewed": "2026-10-05",
+      "review_state": "EXPLICIT_EXISTING_REPORT_CROSSWALK_NEEDS_DOCUMENT_REVIEW",
+      "existing_report_leads": [
+        {
+          "report_id": "QP-SOC-2027-003",
+          "report_title": "2027 nonprofit funding: requests versus proposed City support",
+          "source_count": 3
+        }
+      ],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-050",
+      "category": "Water & energy",
+      "domain": "Wastewater / infrastructure / public health / procurement",
+      "issue_title": "Arkansas River 4.25M-gallon sewage spill / Stockyard CIPP 25-070A responsibility and regional impact",
+      "last_reviewed": "2026-10-05",
+      "review_state": "EXPLICIT_EXISTING_REPORT_CROSSWALK_NEEDS_DOCUMENT_REVIEW",
+      "existing_report_leads": [
+        {
+          "report_id": "QP-QIFY-2026-005",
+          "report_title": "Arkansas River sewage discharge: repair, water testing and accountability are different questions",
+          "source_count": 1
+        }
+      ],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-068",
+      "category": "Housing & land",
+      "domain": "Housing / homelessness / behavioral health / public finance",
+      "issue_title": "Pueblo homelessness, shelter, transitional housing, PIT methodology and service-continuum outcomes",
+      "last_reviewed": "2026-10-05",
+      "review_state": "EXPLICIT_EXISTING_REPORT_CROSSWALK_NEEDS_DOCUMENT_REVIEW",
+      "existing_report_leads": [
+        {
+          "report_id": "QP-QIFY-2026-006",
+          "report_title": "Pueblo housing: permitted, financed, built and occupied are different outcomes",
+          "source_count": 2
+        }
+      ],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-074",
+      "category": "Roads & transport",
+      "domain": "Building regulation / economic development / county-city governance",
+      "issue_title": "Pueblo building/permitting jurisdiction split, transition cost, staffing and performance",
+      "last_reviewed": "2026-10-16",
+      "review_state": "EXPLICIT_EXISTING_REPORT_CROSSWALK_NEEDS_DOCUMENT_REVIEW",
+      "existing_report_leads": [
+        {
+          "report_id": "QP-QIFY-2026-004",
+          "report_title": "Building permits: location determines the responsible authority",
+          "source_count": 2
+        }
+      ],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-BUILD-001",
+      "category": "Housing & land",
+      "domain": "planning/building/economic development",
+      "issue_title": "2026 Regional Building split — authority, finance and permitting performance",
+      "last_reviewed": "2026-10-16",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-007-01",
+      "category": "Public money",
+      "domain": "economic development/land/public finance",
+      "issue_title": "Project Falcon land option: Oct. 13 first presentation, Oct. 26 hearing, appraisal and future-purchase controls",
+      "last_reviewed": "2026-10-16",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-025-CAUSE",
+      "category": "Environment & place",
+      "domain": "wildfire cause/investigation",
+      "issue_title": "Aspen Acres recovery: official ignition/cause investigation and evidence boundary",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-025-LIT",
+      "category": "Water & energy",
+      "domain": "disaster/litigation/insurance/economic recovery",
+      "issue_title": "Aspen Acres recovery: San Isabel Electric civil litigation, insurance, damages and recovery interactions",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-041-TORTUGA-01",
+      "category": "Economy & jobs",
+      "domain": "economic development/governance/confidentiality",
+      "issue_title": "Project Tortuga: authority, confidentiality, negotiation and approval path",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-041-TORTUGA-02",
+      "category": "Public money",
+      "domain": "economic development/public finance/infrastructure",
+      "issue_title": "Project Tortuga: eventual jobs, wages, incentives, infrastructure and public-value packet",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-043-MISSION-01",
+      "category": "Roads & transport",
+      "domain": "workforce/economic transition",
+      "issue_title": "Mission Foods: primary closure/WARN/CDLE notice and closure-date reconciliation",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-043-MISSION-02",
+      "category": "Roads & transport",
+      "domain": "workforce/household economy",
+      "issue_title": "Mission Foods: worker displacement, bumping rights, reemployment and income transition",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-043-MISSION-03",
+      "category": "Housing & land",
+      "domain": "economic development/land/workforce",
+      "issue_title": "Mission Foods: plant property, reuse and industrial-site transition",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-043-MISSION-04",
+      "category": "Public money",
+      "domain": "economic development/public finance",
+      "issue_title": "Mission Foods: realized local payroll, tax-base, supplier and household impact",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-058-01",
+      "category": "Roads & transport",
+      "domain": "airport/municipal law/public finance",
+      "issue_title": "Airport: Lease/termination/supersession authority chain",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-058-02",
+      "category": "Roads & transport",
+      "domain": "airport/municipal law/public finance",
+      "issue_title": "Airport: Outside-counsel engagement, invoice and appropriation lineage",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-058-03",
+      "category": "Roads & transport",
+      "domain": "airport/municipal law/public finance",
+      "issue_title": "Airport: Airport Properties federal docket state and attorney-fee residue",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-058-04",
+      "category": "Housing & land",
+      "domain": "airport/municipal law/public finance",
+      "issue_title": "Airport: FAA grant/property/minimum-standards obligations",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-059-01",
+      "category": "Health & safety",
+      "domain": "civil rights/justice/law enforcement",
+      "issue_title": "Lyn-Darr civil-rights case: Current pleadings, parties and scheduling state",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-059-02",
+      "category": "Health & safety",
+      "domain": "civil rights/justice/law enforcement",
+      "issue_title": "Civil-rights litigation: source documents, evidentiary disputes and case procedure",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-059-03",
+      "category": "Health & safety",
+      "domain": "civil rights/justice/law enforcement",
+      "issue_title": "Lyn-Darr civil-rights case: County/PCSO defense, insurance and counsel exposure",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-059-04",
+      "category": "Health & safety",
+      "domain": "civil rights/justice/law enforcement",
+      "issue_title": "Lyn-Darr civil-rights case: Underlying vacatur/dismissal and policy-learning lineage",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-072-01",
+      "category": "Economy & jobs",
+      "domain": "labor/workforce",
+      "issue_title": "Steel: 2026 five-year USW CBA terms, wage schedules and realized compensation",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-072-02",
+      "category": "Roads & transport",
+      "domain": "industrial infrastructure/production",
+      "issue_title": "Steel: $1.2B long-rail mill commissioning, production, capacity and reliability outcomes",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-072-03",
+      "category": "Roads & transport",
+      "domain": "industry/contracts/litigation",
+      "issue_title": "Steel: railroad customer contracts and dispute-state reconciliation",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "QRX-REG-072-04",
+      "category": "Water & energy",
+      "domain": "economic development/public finance/energy/workforce",
+      "issue_title": "Steel: ownership, incentives, utilities, workforce and local fiscal/outcome ledger",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-002",
+      "category": "Public money",
+      "domain": "Capital projects / public finance",
+      "issue_title": "Dittmer Building additional $182,175 and $60,000 lineage",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-003",
+      "category": "Health & safety",
+      "domain": "Fund lineage / municipal assets",
+      "issue_title": "Municipal Court SUV account origin and retransfer",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-005",
+      "category": "Public money",
+      "domain": "Economic development / governance",
+      "issue_title": "Advance Pueblo authority, legal form, budget, and role",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-006",
+      "category": "Economy & jobs",
+      "domain": "Procurement / governance",
+      "issue_title": "Economic-development RFQ/RFP process and cancellation",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-009",
+      "category": "Culture & history",
+      "domain": "Culture / economic development / nonprofit governance / public finance",
+      "issue_title": "Leonardo da Vinci Museum / ED2602 public-finance, governance, related-party, tourism, and post-denial project exposure",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-010",
+      "category": "Housing & land",
+      "domain": "Planning / procurement",
+      "issue_title": "Strategic-plan inventory and duplicate-planning expenditure",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-011",
+      "category": "Public money",
+      "domain": "Urban renewal / tax increment",
+      "issue_title": "Dillon Drive URA / RRA / TIF public-value ledger",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-012",
+      "category": "Government & law",
+      "domain": "Urban renewal / ethics",
+      "issue_title": "Mayor appointment to PURA: narrow legality versus governance controls",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-013",
+      "category": "Government & law",
+      "domain": "Ethics / communications / public money",
+      "issue_title": "Mayor/City recognition and award promotion spending",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-014",
+      "category": "Government & law",
+      "domain": "Governance / administration",
+      "issue_title": "City Council direction, execution, meeting conduct, and public legibility",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-015",
+      "category": "Housing & land",
+      "domain": "County governance",
+      "issue_title": "County governance signals: land use, disclosure/recusal, HR, holidays",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-016",
+      "category": "Education & children",
+      "domain": "Property tax / household burden",
+      "issue_title": "Property-tax ability-to-pay and assessed-value education",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-017",
+      "category": "Public money",
+      "domain": "Fiscal monitoring",
+      "issue_title": "May 2026 sales-tax report and revenue trend",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-018",
+      "category": "Economy & jobs",
+      "domain": "Economic ecosystem / inclusion",
+      "issue_title": "Women-owned business ecosystem and local enterprise growth",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-019",
+      "category": "Education & children",
+      "domain": "Child welfare / privacy",
+      "issue_title": "Youth safeguarding and public-service accountability records",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-020",
+      "category": "Health & safety",
+      "domain": "Public safety / data",
+      "issue_title": "Pueblo Police statistics update and interpretation",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-021",
+      "category": "Water & energy",
+      "domain": "Water systems",
+      "issue_title": "Southern Colorado water-yield, storage, and drought resilience",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-022",
+      "category": "Water & energy",
+      "domain": "Energy transition",
+      "issue_title": "Comanche / Ray Nixon / workforce and tax-base transition",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-023",
+      "category": "Water & energy",
+      "domain": "Energy / infrastructure / industry",
+      "issue_title": "Nuclear/SMR and large-load/data-center public-value gates",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-024",
+      "category": "Environment & place",
+      "domain": "Wildfire / emergency",
+      "issue_title": "Aspen Acres live incident operations and official information",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-026",
+      "category": "Government & law",
+      "domain": "Community resilience",
+      "issue_title": "Volunteer stories, mutual aid, animal rescue, recognition, and burnout",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-027",
+      "category": "Government & law",
+      "domain": "Information integrity",
+      "issue_title": "Rumor, gossip, misinformation, and emerging-signal ledger",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-028",
+      "category": "Education & children",
+      "domain": "Community / education",
+      "issue_title": "Public proof, youth ecology, Pueblo Zoo, and community learning",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-029",
+      "category": "Government & law",
+      "domain": "Communications / adoption",
+      "issue_title": "Q governance explainer, CTA infographic, and commercial assets",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-030",
+      "category": "Culture & history",
+      "domain": "Transparency / records",
+      "issue_title": "Hart Beat / civic source-document library",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-031",
+      "category": "Environment & place",
+      "domain": "AI governance / evidence",
+      "issue_title": "AI-laundered civic claims and summary contamination",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-032",
+      "category": "Government & law",
+      "domain": "Resilience / systems",
+      "issue_title": "Regional shock continuity and threat-mapping system",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-033",
+      "category": "Culture & history",
+      "domain": "Election history / public finance",
+      "issue_title": "Half-cent extension election-history correction and 2031 funding horizon",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-034",
+      "category": "Culture & history",
+      "domain": "Asset governance / finance",
+      "issue_title": "City Annex / PBR / museum asset naming and interest-dependency theory",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-035",
+      "category": "Education & children",
+      "domain": "Public education / tax policy",
+      "issue_title": "Property-assessment public narrative and policy-option design",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-037",
+      "category": "Public money",
+      "domain": "Storage / provenance",
+      "issue_title": "Cross-system storage integrity and artifact recovery",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-038",
+      "category": "Government & law",
+      "domain": "System architecture",
+      "issue_title": "Q10 Pueblo architecture, tests, production, and official-use gates",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-039",
+      "category": "Water & energy",
+      "domain": "Water / economic development / communications",
+      "issue_title": "Water marketing and site-serviceability claim integrity",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-041",
+      "category": "Economy & jobs",
+      "domain": "Economic development / governance / trust",
+      "issue_title": "Economic-development institutional fragmentation, authority, and attribution matrix",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-042",
+      "category": "Government & law",
+      "domain": "Information integrity / civic engagement",
+      "issue_title": "Social-sentiment representativeness and evidence-upgrade control",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-043",
+      "category": "Public money",
+      "domain": "Economic development / workforce / public finance",
+      "issue_title": "Pueblo workforce decline, economic capacity, and countywide job-growth funding architecture",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-044",
+      "category": "Government & law",
+      "domain": "Information integrity / civic communications",
+      "issue_title": "Date, supersession, and reshared-post integrity control",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-045",
+      "category": "Roads & transport",
+      "domain": "Transportation / public finance / election",
+      "issue_title": "Colorado Connector tax, debt, lifecycle cost, schedule and public-value ledger",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-047",
+      "category": "Health & safety",
+      "domain": "Public safety / surveillance / data governance",
+      "issue_title": "Pueblo ALPR/RTCC inventory, vendor, privacy, sharing and outcome governance",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-048",
+      "category": "Culture & history",
+      "domain": "Library / AI governance / public finance",
+      "issue_title": "PCCLD AI procurement, privacy, literacy outcomes and value-for-money review",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-051",
+      "category": "Housing & land",
+      "domain": "Fire services / special district / public finance",
+      "issue_title": "Pueblo West Fire Department sales-tax/property-tax fund additionality and fungibility",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-052",
+      "category": "Education & children",
+      "domain": "Education / governance / litigation / public finance",
+      "issue_title": "Pueblo County D70 board governance, Open Meetings Law court order, appeal/litigation cost and policy-record integrity",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-053",
+      "category": "Culture & history",
+      "domain": "Education / culture / representation / information integrity",
+      "issue_title": "Pueblo D60 proclamation, heritage-recognition and ceremonial-governance record",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-054",
+      "category": "Government & law",
+      "domain": "System architecture / assurance / civic operations",
+      "issue_title": "Q-Pueblo real-world mechanism transfer, portable-assurance convergence, continuity repair and field validation",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-055",
+      "category": "Government & law",
+      "domain": "Continuity / provenance / registry integrity",
+      "issue_title": "Q-Pueblo continuity/index concurrency and current-state drift control",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-056",
+      "category": "Culture & history",
+      "domain": "Historic preservation / public-private grants / civic information integrity",
+      "issue_title": "McLaughlin Building preservation grant match, milestone and completion-state integrity",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-057",
+      "category": "Housing & land",
+      "domain": "Health / behavioral health / justice / housing / workforce",
+      "issue_title": "Pueblo behavioral-health continuum, CMHHIP role, crisis capacity, civil/forensic pathways and care-transition integrity",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-058",
+      "category": "Roads & transport",
+      "domain": "Airport / municipal law / public finance / procurement",
+      "issue_title": "Pueblo Memorial Airport governance, lease authority, federal litigation residue, legal spend and Council appropriation controls",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-059",
+      "category": "Health & safety",
+      "domain": "Civil rights / justice / law enforcement / county governance",
+      "issue_title": "Acacia Lyn-Darr federal civil-rights litigation and law-enforcement evidence-integrity chain",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-060",
+      "category": "Water & energy",
+      "domain": "Roads / intergovernmental governance / public finance / stormwater",
+      "issue_title": "Pueblo West roads IGA, Reverse IGA, 6C road-sales-tax accounting and MS4 responsibility",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-061",
+      "category": "Housing & land",
+      "domain": "Water / wastewater / enterprise finance / growth",
+      "issue_title": "Pueblo West water/wastewater enterprise reserves, rates, tap limits and $200M-plus infrastructure planning",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-062",
+      "category": "Public money",
+      "domain": "Parks / sports / nonprofit governance / county finance",
+      "issue_title": "Runyon Sports Complex governance, County relationship, staffing, lease/operating model and subsidy/outcome ledger",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-064",
+      "category": "Water & energy",
+      "domain": "Utilities / energy / regulation / household cost",
+      "issue_title": "Black Hills electric/gas rates, Clean Energy Plan, battery/solar recovery, merger and Pueblo ratepayer exposure",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-065",
+      "category": "Health & safety",
+      "domain": "Health / grants / rural systems / workforce",
+      "issue_title": "Colorado Rural Health Transformation funding and actual Pueblo beneficiary/allocation map",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-066",
+      "category": "Health & safety",
+      "domain": "Public safety / federal grants / civil liberties / cross-sector governance",
+      "issue_title": "DOJ Model Cities Initiative: Pueblo $100M application, partner governance, allowable uses, federal conditions and award risk",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-067",
+      "category": "Housing & land",
+      "domain": "Disaster / watershed / public finance / infrastructure / housing",
+      "issue_title": "Aspen Acres / Gold Mountain post-fire watershed protection, EWP cost share, flood risk and long-term recovery",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-070",
+      "category": "Roads & transport",
+      "domain": "Coroner / county governance / public finance / justice",
+      "issue_title": "Pueblo County Coroner independence, funding, office capacity, election transition and political-claim integrity",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-072",
+      "category": "Roads & transport",
+      "domain": "Industry / workforce / economic development / labor / infrastructure",
+      "issue_title": "Rocky Mountain Steel Mills / Orion ownership, long-rail mill, railroad customers, USW contract and industrial-transition outcomes",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    },
+    {
+      "historical_issue_id": "REG-073",
+      "category": "Health & safety",
+      "domain": "Business regulation / public health / licensing / local governance",
+      "issue_title": "City of Pueblo marijuana licensing and reported 2026 retail-license moratorium: ordinance, existing-license rights and market/tax impacts",
+      "last_reviewed": "2026-10-05",
+      "review_state": "PRIMARY_SOURCE_DISCOVERY_REQUIRED",
+      "existing_report_leads": [],
+      "required_steps": [
+        "identify controlling public document and issuing jurisdiction",
+        "check exact time/period and geography",
+        "obtain record/page/filing identifier and URL",
+        "record contrary evidence and correction history",
+        "human-review source-to-specific-claim fit before adding source ID"
+      ],
+      "publication_allowed": false
+    }
+  ]
+}
