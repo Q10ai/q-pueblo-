@@ -100,3 +100,26 @@ Adversarial acceptance tests:
 6. An indexed historical issue without a full report cannot be presented as a verified current answer.
 7. User challenges, unusual queries and contradictory public submissions remain permissible inputs, subject to normal access and safety rules.
 8. Untrusted documents and fabricated links do not promote claims without source review.
+
+
+## Q-native intelligence: additional answers people did not know to ask — November 13, 2026
+
+Requirement: Q must not stop at the explicit user's question or at conventional Who/What/When/Where/Why/How. Each eligible full Qified report also provides Q's own **substantive analytical findings**, which may identify connections, constraints, misleading assumptions, risk concentrations, and improvement routes that were not in the user's prompt. Q does not simply list its own questions; it seeks to answer them with checked evidence and explicit reasoning.
+
+Eight distinct, default-visible answer dimensions:
+1. UNDERLYING: The deeper systemic or measurement problem behind the headline, as far as source data support.
+2. HIDDEN LINKS: Relationships among entities, agreements, obligations, infrastructure, geographies and upstream/downstream dependencies.
+3. SECOND/THIRD ORDER: Indirect and future effects, distribution of costs and benefits, child and multigenerational impacts—labeled conditional where causal evidence is absent.
+4. FAILURE/RESILIENCE: Failure modes, scenario shocks, leading warning signs, reversibility, mitigations and recovery.
+5. BETTER ROUTES: Alternatives with real constraints, tradeoffs, accountable roles and measurements that would validate success.
+6. EE/T2Y: Lowest-intelligence/energy/resource cost sufficient for a truthful, safe result; truth-to-useful-yield tests, not unmeasured marketing scores.
+7. FALSIFICATION: Which controlling records, counterexamples or new measurements could change Q's conclusion, plus triggers to reopen the case.
+8. PRACTICAL PATH: The smallest justified next step and how to verify outcomes, including differences between commitments and actual delivery.
+
+Q's synthesized output must differentiate: OBSERVED_SOURCE_FACT; SOURCE_ATTRIBUTED_STATEMENT; EXPLICIT_DEDUCTION; HYPOTHESIS; CONDITIONAL_SCENARIO; COUNTEREVIDENCE; and NOT_ESTABLISHED. Never present AI inference as a direct citation. Claim-level sourceIds, derivation links, review versions, dates and machine-readable amendment receipts are the target production implementation.
+
+Do not conflate 'unasked answers' with **invented findings**. The engine must seek under-investigated connections, but only surface a substantive answer when evidence or transparent computation supports it. Where a well-grounded answer cannot be derived, state the exact missing fact and whether Q has identified a hypothesis; do not pass a generic interview checklist back to the resident.
+
+Current build: public/q-native.js projects existing, already prepared Qified report fields into eight visible insights. It is deterministic and query-local, does not discover new facts, lacks individual insight-to-sourceIds mapping, and does not automatically update any controlled archive. The legacy full original report remains accessible. Live cross-issue causal investigations, source graph traversal, source refresh, simulation validation and human-reviewed publication remain future gates.
+
+Verification target: using identical underlying source versions, an ordinary reader must receive the same Q-native substantive insights as an expert, in language that is useful to their role. A report without Q analysis must say none is established; role or adversarial questioning must never cause claims to drift.
