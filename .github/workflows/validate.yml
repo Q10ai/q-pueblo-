@@ -17,6 +17,8 @@ jobs:
         run: |
           bash -n scripts/check-live-parity.sh
           node --check public/site.js
+          node --check public/connections.js
+          node --check scripts/check-experience.mjs
           node --check public/explore.js
           node --check public/issues.js
           node --check scripts/check-topic-nav.mjs
@@ -74,6 +76,7 @@ jobs:
           node scripts/check-evidence-desk.mjs
           node scripts/check-packet-reports.mjs
           node scripts/check-launch.mjs
+          node scripts/check-experience.mjs
           node scripts/check-release-parity.mjs
           test -s public/site.css
           test -s public/_headers
