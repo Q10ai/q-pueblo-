@@ -96,3 +96,5 @@ assert(model.allTopics.every(t=>t.reviewStatus));
 assert(read('governance-topics.html').includes('Dated findings within review window'));
 assert(read('now.html').includes('November 13 unofficial results update'));
 console.log('PASS dated election/budget updates and review-window expiry; no historical lead promoted to a current fact');
+
+assert(model.updates[0].figures.some(f=>f.label==='Reported voters cast'&&f.value.includes('69,917')));assert(!model.allTopics.find(i=>i.id==='QRX-REG-071-05').updates.length);assert(model.allTopics.find(i=>i.id==='QRX-REG-071-05').relatedUpdates.length);assert(!model.allTopics.find(i=>i.id==='REG-049').updates.length);console.log('PASS scoped evidence updates, related versus directly checked topic separation');

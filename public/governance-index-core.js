@@ -17,7 +17,7 @@
   function localDate(now){const p=Object.fromEntries(new Intl.DateTimeFormat('en-US',{timeZone:'America/Denver',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(now).map(x=>[x.type,x.value]));return p.year+'-'+p.month+'-'+p.day}
   const asOf=localDate(new Date());
   function dateReview(u,today=asOf){if(!u||today<u.checkedDate)return 'REVIEW_REQUIRED';return today>=u.recheckDate?'RECHECK_DUE':'DATED_UPDATE'}
-  for(const i of topicById.values()){i.updates=latest.get(i.id)||[];i.reviewStatus=i.updates.some(u=>dateReview(u)==='DATED_UPDATE')?'DATED_UPDATE':i.updates.length?'RECHECK_DUE':i.report?(asOf>i.report.reviewDue?'RECHECK_DUE':'DATED_ANALYSIS'):'HISTORICAL_REVIEW_REQUIRED';}
+  for(const i of topicById.values()){i.updates=latest.get(i.id)||[];i.relatedUpdates=updates.filter(u=>u.relatedTopicIds?.includes(i.id));i.reviewStatus=i.updates.some(u=>dateReview(u)==='DATED_UPDATE')?'DATED_UPDATE':i.updates.length?'RECHECK_DUE':i.report?(asOf>i.report.reviewDue?'RECHECK_DUE':'DATED_ANALYSIS'):'HISTORICAL_REVIEW_REQUIRED';}
   const rank=i=>i.reviewStatus==='DATED_UPDATE'?4:i.reviewStatus==='DATED_ANALYSIS'?3:i.reviewStatus==='RECHECK_DUE'?2:i.sourceLinked?1:0;
   const featured=eligible.slice().sort((a,b)=>rank(b)-rank(a)||String(b.lastReviewed).localeCompare(String(a.lastReviewed))).slice(0,cfg.prioritySize);
   const graphIssues=new Map(graph.issues.map(i=>[i.id,i]));

@@ -493,21 +493,12 @@
         "id": "election-2026-postvote",
         "topicIds": [
           "REG-063",
-          "REG-070",
           "REG-071",
-          "QRX-REG-063-01",
-          "QRX-REG-063-04",
-          "QRX-REG-063-05",
-          "QRX-REG-070-03",
-          "QRX-REG-071-01",
-          "QRX-REG-071-02",
-          "QRX-REG-071-03",
-          "QRX-REG-071-04",
-          "QRX-REG-071-05"
+          "REG-070"
         ],
         "title": "November election: counting and certification",
-        "finding": "Pueblo County has posted the November 13 unofficial results update. Earlier election-night and November 5 returns remain historical snapshots, not final results.",
-        "meaning": "The latest published update is still unofficial. Do not switch officeholders, label a result certified, or infer the legal effect of a ballot measure until the applicable controlling records are checked.",
+        "finding": "Pueblo County has posted the November 13 unofficial results update: 69,917 voters out of 116,192 (60.17%). Selected local counts: 2A had 14,044 yes and 24,683 no; 2B had 23,671 yes and 15,392 no; library 6A had 39,173 yes and 26,654 no. Earlier returns remain historical snapshots, not final results.",
+        "meaning": "The latest published update is unofficial. More yes or no votes in this report is not a certified result or legal implementation date. Districtwide contests beyond Pueblo County require results from all applicable jurisdictions. Do not transfer officeholder authority without verifying the effective term.",
         "sourceDate": "2026-11-13",
         "checkedDate": "2026-11-14",
         "recheckDate": "2026-11-15",
@@ -519,20 +510,97 @@
             "url": "https://pueblocounty.gov/clerk-and-recorder-department/election-results-november-2026"
           },
           {
+            "title": "November 13 official-publisher unofficial results report, pp. 1, 5, 7, 16–18",
+            "url": "https://pueblocounty.gov/sites/default/files/2026-11/2026%20November%20Unofficial%20Results%20-%20Novemer%2013%2C2026%209th%20Day%20Update.pdf"
+          },
+          {
             "title": "County election timeline (published guidance; dates require current confirmation)",
             "url": "https://pueblocounty.gov/clerk-and-recorder-department/candidate-running-office"
           }
         ],
-        "milestone": "County's published timeline lists November 24 for risk-limiting audit reporting and November 25 for canvass/official abstract; verify any changes. Certification and taking office are separate events."
+        "milestone": "County's published timeline lists November 24 for risk-limiting audit reporting and November 25 for canvass/official abstract; verify any changes. Certification and taking office are separate events.",
+        "figures": [
+          {
+            "label": "Reported voters cast",
+            "value": "69,917 of 116,192 (60.17%)",
+            "locator": "p. 1"
+          },
+          {
+            "label": "County commissioner, District 3",
+            "value": "Angela Giron 34,326; Zach Swearingen 33,412",
+            "locator": "p. 5"
+          },
+          {
+            "label": "County sheriff",
+            "value": "Allen Medina 33,474; Leroy Mora 33,129",
+            "locator": "p. 7"
+          },
+          {
+            "label": "County coroner",
+            "value": "Zolanye McCulley-Bachicha 36,523; Gregory Grahek 31,312",
+            "locator": "p. 7"
+          },
+          {
+            "label": "2A",
+            "value": "14,044 yes; 24,683 no",
+            "locator": "p. 16"
+          },
+          {
+            "label": "2B",
+            "value": "23,671 yes; 15,392 no",
+            "locator": "p. 16"
+          },
+          {
+            "label": "Pueblo City-County Library District 6A",
+            "value": "39,173 yes; 26,654 no",
+            "locator": "p. 17"
+          },
+          {
+            "label": "Pueblo West 6B",
+            "value": "6,629 yes; 10,268 no",
+            "locator": "p. 17"
+          },
+          {
+            "label": "Pueblo West 6C",
+            "value": "5,900 yes; 10,632 no",
+            "locator": "p. 17"
+          },
+          {
+            "label": "Edison Fire Protection District 6D",
+            "value": "96 for inclusion; 39 against inclusion",
+            "locator": "p. 18"
+          },
+          {
+            "label": "Front Range Passenger Rail District 7A — Pueblo County portion",
+            "value": "20,599 yes; 18,114 no",
+            "locator": "p. 18"
+          },
+          {
+            "label": "Rye Fire Protection District 7B",
+            "value": "1,540 yes; 1,002 no",
+            "locator": "p. 18"
+          }
+        ],
+        "relatedTopicIds": [
+          "QRX-REG-063-01",
+          "QRX-REG-063-02",
+          "QRX-REG-063-03",
+          "QRX-REG-063-04",
+          "QRX-REG-063-05",
+          "QRX-REG-070-03",
+          "QRX-REG-071-01",
+          "QRX-REG-071-05",
+          "REG-045",
+          "REG-051",
+          "REG-048",
+          "REG-060"
+        ]
       },
       {
         "id": "county-2027-budget",
         "topicIds": [
           "REG-069",
-          "QRX-REG-069-01",
-          "QRX-REG-069-02",
-          "QRX-REG-069-03",
-          "QRX-REG-069-04"
+          "QRX-REG-069-01"
         ],
         "title": "Pueblo County: 2027 budget process",
         "finding": "The County's 2027 budget page provides a meeting calendar, preliminary proposed budget, proposed-budget presentation and financial outlook. No document was listed under its adopted budget heading in the page inspected.",
@@ -556,10 +624,7 @@
       },
       {
         "id": "city-2027-budget",
-        "topicIds": [
-          "REG-017",
-          "REG-049"
-        ],
+        "topicIds": [],
         "title": "City of Pueblo: 2027 proposed budget",
         "finding": "The City Finance page lists its 2027 proposed budget alongside the annual budget, transparency portal, financial reports and economic-development reports.",
         "meaning": "The 2026 adopted appropriation remains a historical authorization fact. The 2027 proposal is a distinct edition, not a final appropriation or a cash-spending report.",
@@ -576,6 +641,7 @@
         ],
         "milestone": "Reconcile the final ordinance and amendments separately from payment and service-delivery evidence."
       }
-    ]
+    ],
+    "note": "Topic attachments signify related dated updates, not verification of all propositions in the topic. New findings are limited to their stated scope. A source visit does not refresh every linked record."
   }
 }
