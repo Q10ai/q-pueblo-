@@ -2,7 +2,7 @@
 (async()=>{
  const root=document.getElementById('governance-results');if(!root)return;
  const $=id=>document.getElementById(id),n=(tag,txt,cls)=>{const e=document.createElement(tag);if(txt!=null)e.textContent=txt;if(cls)e.className=cls;return e},a=(txt,url)=>{const e=n('a',txt);e.href=url;return e};
- const f=['data/q-pueblo-issue-index-2026-11-09.json','data/qp-three-hop-2026-11-13.json','data/q-pueblo-qified-reports-v2-2026-11-09.json','data/qp-governance-index-input-v1.json'];
+ const f=['data/q-pueblo-issue-index-2026-11-09.json','data/qp-three-hop-2026-11-13.json','data/qp-current-reports.json','data/qp-governance-index-input-v1.json'];
  try{
  const [l,g,r,c]=await Promise.all(f.map(p=>fetch(p,{credentials:'same-origin'}).then(x=>{if(!x.ok)throw Error('load');return x.json()})));
  const m=QPGovernance.build(l,g,r.reports,c),mode=root.dataset.mode,query=$('governance-query'),scope=$('governance-scope'),status=$('governance-status');
@@ -31,6 +31,6 @@
   }
   if(!root.children.length)root.append(n('p','No matching records. Try another place, organization or topic.'));
  }
- query.addEventListener('input',render);scope?.addEventListener('change',render);render();
+ const directId=decodeURIComponent(location.hash.slice(1));if(mode==='entities'&&directId){const ent=m.entities.find(x=>x.id===directId);if(ent)query.value=ent.name;}query.addEventListener('input',render);scope?.addEventListener('change',render);render();if(directId)document.getElementById(directId)?.scrollIntoView();
  }catch{root.replaceChildren(n('p','The indexes could not load. Use the existing issue directory and report library.'));$('governance-status').textContent='Index unavailable.'}
 })();

@@ -12,7 +12,7 @@
   const bySource=new Map(cat.sources.map(s=>[s.id,s]));
   // Dated public reports are loaded once. This is not a live AI/web research service.
   let publishedBriefs=[];
-  const briefsReady=fetch('data/q-pueblo-qified-reports-v2-2026-11-09.json',{cache:'no-store'})
+  const briefsReady=fetch('data/qp-current-reports.json',{cache:'no-store'})
     .then(r=>{if(!r.ok)throw Error('Unavailable evidence ledger');return r.json();})
     .then(data=>{if(!Array.isArray(data.reports))throw Error('Invalid evidence ledger');publishedBriefs=data.reports;})
     .catch(()=>{publishedBriefs=[];});
@@ -196,7 +196,7 @@
       pieces.push(section('H. Children, families and future effects','<p>'+esc(r.child)+'</p>'));
     }else{
       pieces.push(section('A. No published source-backed answer for this exact question',
-        '<p class="wb-direct-answer">Q-Pueblo cannot substantiate a direct answer from its five dated source-attributed briefs. It will not present research prompts, inferred relationships or an issue-index title as completed findings.</p>'+
+        '<p class="wb-direct-answer">Q-Pueblo cannot substantiate a direct answer from its dated source-attributed reports. It will not present research prompts, inferred relationships or an issue-index title as completed findings.</p>'+
         '<p>This is an evidence coverage gap, not proof that an issue is unimportant or untrue.</p>'+
         '<p><a href="qify.html?q='+encodeURIComponent(p.question)+'">Check the dated Qified library</a> · <a href="mailto:Q10pueblo@gmail.com?subject='+encodeURIComponent('Pueblo original-record research request')+'">Request source-backed research and review</a></p>',true));
       pieces.push(section('B. Source leads — not proof of a claim',

@@ -368,14 +368,15 @@
     "REG-001": "half-cent-2026",
     "REG-007": null,
     "REG-016": "city-mill-levy-2026",
-    "REG-025": "aspen-recovery",
+    "REG-025": "aspen-recovery-costs",
     "REG-036": "records-request",
     "REG-049": "csac-2027",
     "REG-050": "wastewater-2026",
     "REG-046": "housing-pipeline",
     "REG-074": "permits-jurisdiction",
     "QRX-BUILD-001": "permits-jurisdiction",
-    "REG-067": "aspen-recovery"
+    "REG-067": "aspen-recovery",
+    "REG-069": "county-budget-2027"
   },
   "prioritySize": 150,
   "reportEntities": {
@@ -446,6 +447,19 @@
       "office-city-purchasing",
       "office-martinez",
       "office-cd-electric"
+    ],
+    "county-budget-2027": [
+      "ent-9fc831fd79fc",
+      "office-county-board"
+    ],
+    "food-assistance": [
+      "ent-9fc831fd79fc"
+    ],
+    "d60-preschool-2026": [
+      "ent-9583a0236568"
+    ],
+    "aspen-recovery-costs": [
+      "ent-9fc831fd79fc"
     ]
   },
   "excludeFromFeatured": [

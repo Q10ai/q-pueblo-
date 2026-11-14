@@ -73,7 +73,7 @@ const ctx={window:{},URL,Date};vm.runInNewContext(read('governance-index-core.js
 const gc=ctx.window.QPGovernance;
 const settings=JSON.parse(read('data/qp-governance-index-input-v1.json'));
 const legacy=JSON.parse(read('data/q-pueblo-issue-index-2026-11-09.json'));
-const papers=JSON.parse(read('data/q-pueblo-qified-reports-v2-2026-11-09.json')).reports;
+const papers=JSON.parse(read('data/qp-current-reports.json')).reports;
 const model=gc.build(legacy,graph,papers,settings);
 assert.equal(model.featured.length,150);assert.equal(model.allTopics.length,174);
 assert.equal(model.entities.length,graph.entities.length+settings.additions.length);

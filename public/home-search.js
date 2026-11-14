@@ -2,11 +2,11 @@
 (() => {
  const form=document.querySelector('[data-search-mode="local"]');if(!form)return;
  const $=id=>document.getElementById(id),input=$('home-q'),k=$('home-kind'),area=$('home-results'),status=$('home-result-status'),list=$('home-result-list');
- const pathSources=['data/q-pueblo-qified-reports-v2-2026-11-09.json','data/q-pueblo-issue-index-2026-11-09.json','data/qp-three-hop-2026-11-13.json','data/qp-now-2026-11-13.json','data/q-pueblo-public-case-summaries.json'];
+ const pathSources=['data/qp-current-reports.json','data/q-pueblo-issue-index-2026-11-09.json','data/qp-three-hop-2026-11-13.json','data/qp-now-2026-11-13.json','data/q-pueblo-public-case-summaries.json','data/qp-governance-index-input-v1.json'];
  const words=s=>String(s??'').toLowerCase().normalize('NFKD').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
  let loading=null;
  const row=(type,title,text,href,date='')=>({type,title:String(title),text:String(text||''),href,date:String(date||'')});
- async function load(){const [a,b,c,d,e]=await Promise.all(pathSources.map(p=>fetch(p,{credentials:'same-origin'}).then(r=>{if(!r.ok)throw Error('Read failed');return r.json()})));
+ async function load(){const results=await Promise.allSettled(pathSources.map(p=>fetch(p,{credentials:'same-origin'}).then(r=>{if(!r.ok)throw Error('Read failed');return r.json()})));const [a,b,c,d,e,f]=results.map(x=>x.status==='fulfilled'?x.value:{});if(results.every(x=>x.status==='rejected'))throw Error('No data available');
  const out=[];
  for(const r of a.reports||[])out.push(row('Analysis',r.title,[r.summary,r.topic,...(r.aliases||[]),...(r.questions||[])].join(' '),'reports.html?report='+encodeURIComponent(r.slug)+'#qified-report',r.sourceChecked));
  for(const i of b.issues||[])out.push(row('Issue',i.title,[i.domain,i.category,i.geography].join(' '),'issues.html#'+encodeURIComponent(i.id),i.lastReviewed));
@@ -15,6 +15,8 @@
  for(const ent of c.entities||[])out.push(row('Organization',ent.name,[ent.kind,ent.identity_state,...(roles.get(ent.id)||[])].join(' '),'entities.html#find='+encodeURIComponent(ent.name),''));
  for(const n of d.records||[])out.push(row('Update',n.heading,[n.agency,n.display_when,n.what].join(' '),'now.html#'+encodeURIComponent(n.id),n.last_checked));
  for(const x of e.caseSummaries||[])out.push(row('Case summary',x.title,'Public case summary','packets.html#'+encodeURIComponent(x.slug),x.captured));
+ for(const u of f.lifecycle?.updates||[])out.push(row('Update',u.title,u.finding+' '+u.meaning,'now.html#'+encodeURIComponent(u.id),u.checkedDate));
+ for(const ent of f.additions||[])out.push(row('Organization',ent.name,ent.description,'governance-entities.html#'+encodeURIComponent(ent.id),''));
  return out;
  }
  function element(tag,txt,cls){let o=document.createElement(tag);if(txt!=null)o.textContent=txt;if(cls)o.className=cls;return o}

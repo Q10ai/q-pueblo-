@@ -53,3 +53,12 @@ assert(core.coverage40(doc.reports.find(r=>r.slug==='budget-2026'))[16].answer.i
 assert(core.coverage40(doc.reports.find(r=>r.slug==='budget-2026'))[18].answer.includes('not been reconciled'));
 assert(core.researchPrompt('Pueblo water bills','resident','full report').includes('40 sections'));
 console.log('PASS: 14 dated analyses mapped to 40 reader-facing fields, missing evidence explicit, optional research prompt.');
+
+const current=JSON.parse(read('data/qp-current-reports.json'));
+assert.equal(current.reports.length,18);
+assert.deepEqual(current.reports.slice(0,14),doc.reports,'Earlier evidence edition must remain unchanged');
+assert.equal(new Set(current.reports.map(r=>r.slug)).size,18);
+for(const r of current.reports.slice(14)){assert.equal(core.coverage40(r).length,40);assert.equal((core.render(r).match(/data-coverage="/g)||[]).length,40);assert(r.sources.every(s=>s.url.startsWith('https://')));assert(r.claims.every(c=>c.sourceIds.every(id=>r.sources.some(s=>s.id===id))));assert(r.questions.every(q=>core.matchReports(q,current.reports).some(x=>x.exact&&x.report.id===r.id)));assert(core.markdown(r).includes('40-point findings'));}
+assert(core.coverage40(current.reports.find(r=>r.slug==='food-assistance'))[34].answer.includes('1-877-644-3663'));
+for(const name of ['qify.js','reports.js','workbench.js','evidence-desk.js','home-search.js','governance-index.js'])assert(read(name).includes('data/qp-current-reports.json'),name+' current edition missing');
+console.log('PASS current 18-report edition, 14 originals unchanged, four public-source additions and shared reader routes');

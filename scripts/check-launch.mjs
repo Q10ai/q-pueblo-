@@ -28,7 +28,7 @@ assert(read('launch-system.js').includes('qify.html#q='),'Home search must use b
 const featured=JSON.parse(read('data/qp-featured-reads-2026-11-14.json')).reads;
 assert.equal(featured.filter(r=>r.type==='analysis').length,reports.reports.length);
 assert(home.includes('href="packets.html"'),'Historical packet navigation must be styled and usable');
-assert(read('workbench.js').includes("fetch('data/q-pueblo-qified-reports-v2-2026-11-09.json'"),'Workbench must read current v2 evidence reports');
+assert(read('workbench.js').includes("fetch('data/qp-current-reports.json'"),'Workbench must read current v2 evidence reports');
 assert(read('workbench.html').includes('not live AI research'),'Workbench disclosure count and ledger disagree');
 
 for(const r of reports.reports){for(const k of ['id','slug','summary','who','what','when','where','why','how','money','relations','counter','options','child','ee','t2y','rx','sources','unknowns','actions'])assert(k in r,r.id+': missing '+k);assert(r.sources.some(s=>/https:\/\//.test(s.url)),r.id+': no primary source');assert(!/CERTIFIED|PROVEN GUILTY/i.test(r.stage));}
