@@ -1,7 +1,7 @@
 "use strict";
 (()=>{
  const $=id=>document.getElementById(id),all=[...document.querySelectorAll('.issue')],search=$('search'),cat=$('category'),mapped=$('mapped'),status=$('results-status'),none=$('none');
- const filter=()=>{const q=search.value.trim().toLocaleLowerCase(),c=cat.value,m=mapped.value;let n=0;for(const x of all){const show=(!q||x.dataset.search.includes(q))&&(!c||x.dataset.category===c)&&(!m||x.dataset.mapped===m);x.hidden=!show;if(show)n++}status.textContent=`Showing ${n} of ${all.length} historical public issue IDs (${all.length===174?'dated 2026-11-08 catalog':'count from the current index'}); not a complete current regional issue count.`;none.hidden=n>0};
+ const filter=()=>{const q=search.value.trim().toLocaleLowerCase(),c=cat.value,m=mapped.value;let n=0;for(const x of all){const show=(!q||x.dataset.search.includes(q))&&(!c||x.dataset.category===c)&&(!m||x.dataset.mapped===m);x.hidden=!show;if(show)n++}status.textContent=`Showing ${n} matching issue records. Check each source date.`;none.hidden=n>0};
  search.addEventListener('input',filter);cat.addEventListener('change',filter);mapped.addEventListener('change',filter);$('reset').addEventListener('click',()=>{search.value='';cat.value='';mapped.value='';filter();search.focus()});
  document.querySelectorAll('[data-filter-category]').forEach(b=>b.addEventListener('click',()=>{cat.value=b.dataset.filterCategory;filter();$('records').scrollIntoView({block:'start'})}));
  document.querySelectorAll('[data-filter-mapped]').forEach(b=>b.addEventListener('click',()=>{mapped.value=b.dataset.filterMapped;filter();$('records').scrollIntoView({block:'start'})}));

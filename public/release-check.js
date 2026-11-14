@@ -1,11 +1,16 @@
 'use strict';
 (() => {
   // Static route checks. No input, credentials, storage, analytics, publication, or external requests.
-  const releaseId = 'QP-PUBLIC-2026-11-13-EXPERIENCE-RC1';
+  const releaseId = 'QP-PUBLIC-2026-11-14-ILLUSTRATED-R2';
   const assets = [
     ['release-manifest.json', releaseId, 'json'],
-    ['index.html', 'Get to know Pueblo.', 'text'],
-    ['assets/q-pueblo-header-wide.png', null, 'image'],
+    ['index.html', 'One Network. Twelve ways to explore.', 'text'],
+    ['assets/pueblo-riverwalk-hero.webp', null, 'image'],
+    ['assets/pueblo-riverwalk-hero-mobile.webp', null, 'image'],
+    ['assets/pueblo-entry-art.webp', null, 'image'],
+    ['assets/pueblo-report-art.webp', null, 'image'],
+    ['public-experience.css', 'qp-art-card', 'text'],
+    ['home-search.js', 'data-search-mode', 'text'],
     ['assets/q-pueblo-approved-logo.jpg', null, 'image'],
     ['launch-system.css', '.qp-site-header', 'text'],
     ['launch-system.js', 'qp-menu-toggle', 'text'],
@@ -21,10 +26,10 @@
     ['es.html', 'lang="es"', 'text'],
     ['api/v1/capabilities.json', 'server_side_contribution_intake', 'json'],
     ['now.html', "What's Happening Now", 'text'],
-    ['areas.html', 'Eight Ways to Understand Pueblo', 'text'],
+    ['areas.html', 'Eight ways to understand Pueblo', 'text'],
     ['connections.html', 'Pueblo Connections: Three Hops', 'text'],
     ['connections.js', 'Public static graph exploration', 'text'],
-    ['case-library.html', '20 Q-Pueblo Research Case Entry Points', 'text'],
+    ['case-library.html', 'Explore more Pueblo issues', 'text'],
     ['discover.html', 'Discover & Play', 'text'],
     ['rumor-mill.html', 'Rumor Mill', 'text'],
     ['ai-learn.html', 'AI, QIFY', 'text'],
@@ -34,7 +39,7 @@
     ['experience.css', 'qp-exp-card', 'text'],
     ['data/qp-three-hop-2026-11-13.json', '211', 'json'],
     ['data/qp-now-2026-11-13.json', '2026-11-13', 'json'],
-    ['release-check.js', 'QP-PUBLIC-2026-11-13-EXPERIENCE-RC1', 'text']
+    ['release-check.js', 'QP-PUBLIC-2026-11-14-ILLUSTRATED-R2', 'text']
   ];
   const $=id=>document.getElementById(id);
   const btn=$('run-check'),status=$('release-status'),list=$('release-results');

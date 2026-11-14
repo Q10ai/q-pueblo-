@@ -27,7 +27,7 @@ jobs:
           node --check public/qify.js
           node --check public/report-core.js
           node --check public/reports.js
-          node --check public/packets.js
+          node --check public/home-search.js
           node --check scripts/check-qify.mjs
           node --check public/workbench.js
           node --check public/evidence-data.js

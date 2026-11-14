@@ -28,7 +28,7 @@ try{
  }
  function render(){
   const id=select.value;result.replaceChildren();
-  if(!issues.has(id)){status.textContent='Select an issue to see the three-hop association path.';result.append(node('p','You can also browse the 174 historical records in the separate standalone Q-Pueblo issue index.'));return}
+  if(!issues.has(id)){status.textContent='Select an issue to see the three-hop association path.';result.append(node('p','You can also browse the local issue directory.'));return}
   const i=issues.get(id);
   const direct=i.edges.map(x=>({...x,entity:entities.get(x.entity_id),broad:hubs.has(x.entity_id)})).filter(x=>x.entity);
   const directIds=new Set(direct.map(e=>e.entity_id));
@@ -64,6 +64,6 @@ try{
  select.addEventListener('change',()=>{if(select.value)window.location.hash='issue='+encodeURIComponent(select.value);render()});
  mode.addEventListener('change',render);
  window.addEventListener('hashchange',()=>{const id=getHash();if(id&&issues.has(id)){select.value=id;render()}});
- const fromURL=getHash();if(fromURL&&issues.has(fromURL)){select.value=fromURL;render()}else{status.textContent='Public-safe source graph loaded: '+d.coverage.issues+' issues, '+d.coverage.entity_labels+' labels. Choose an issue to trace.'}
+ const fromURL=getHash();if(fromURL&&issues.has(fromURL)){select.value=fromURL;render()}else{status.textContent='Explore '+d.coverage.issues+' issues, '+d.coverage.entity_labels+' labels. Choose an issue to trace.'}
 }catch(err){status.textContent='This local graph cannot be loaded at the moment.';result.replaceChildren(node('p','The regular issue and institution directories still work.'));result.append(link('Open the underlying Q10ASI public issue index','https://q10asi.com/projects/q-pueblo/issues/'))}
 })();

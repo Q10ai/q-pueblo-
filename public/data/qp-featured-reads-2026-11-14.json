@@ -1,0 +1,146 @@
+{
+  "schema": "qp-featured-reads-v1",
+  "artwork": "Illustrations derived from owner-supplied sample; not documentary photography.",
+  "reads": [
+    {
+      "slug": "budget-2026",
+      "title": "2026 City budget",
+      "type": "analysis",
+      "artIndex": 0,
+      "href": "reports.html?report=budget-2026#qified-report"
+    },
+    {
+      "slug": "half-cent-2026",
+      "title": "Half-Cent Jobs Fund",
+      "type": "analysis",
+      "artIndex": 1,
+      "href": "reports.html?report=half-cent-2026#qified-report"
+    },
+    {
+      "slug": "lime-road-costs",
+      "title": "Lime Road & St. Charles",
+      "type": "analysis",
+      "artIndex": 2,
+      "href": "reports.html?report=lime-road-costs#qified-report"
+    },
+    {
+      "slug": "pueblo-boulevard-agenda",
+      "title": "Pueblo Boulevard",
+      "type": "analysis",
+      "artIndex": 3,
+      "href": "reports.html?report=pueblo-boulevard-agenda#qified-report"
+    },
+    {
+      "slug": "water-budget-evidence",
+      "title": "Pueblo Water",
+      "type": "analysis",
+      "artIndex": 4,
+      "href": "reports.html?report=water-budget-evidence#qified-report"
+    },
+    {
+      "slug": "housing-pipeline",
+      "title": "Housing in Pueblo",
+      "type": "analysis",
+      "artIndex": 5,
+      "href": "reports.html?report=housing-pipeline#qified-report"
+    },
+    {
+      "slug": "wastewater-2026",
+      "title": "Arkansas River sewage incident",
+      "type": "analysis",
+      "artIndex": 6,
+      "href": "reports.html?report=wastewater-2026#qified-report"
+    },
+    {
+      "slug": "aspen-recovery",
+      "title": "Aspen Acres recovery",
+      "type": "analysis",
+      "artIndex": 7,
+      "href": "reports.html?report=aspen-recovery#qified-report"
+    },
+    {
+      "slug": "city-mill-levy-2026",
+      "title": "Property tax & mill levy",
+      "type": "analysis",
+      "artIndex": 8,
+      "href": "reports.html?report=city-mill-levy-2026#qified-report"
+    },
+    {
+      "slug": "csac-2027",
+      "title": "Nonprofit funding",
+      "type": "analysis",
+      "artIndex": 9,
+      "href": "reports.html?report=csac-2027#qified-report"
+    },
+    {
+      "slug": "county-priorities-2026",
+      "title": "County priorities",
+      "type": "analysis",
+      "artIndex": 10,
+      "href": "reports.html?report=county-priorities-2026#qified-report"
+    },
+    {
+      "slug": "permits-jurisdiction",
+      "title": "Building permits",
+      "type": "analysis",
+      "artIndex": 11,
+      "href": "reports.html?report=permits-jurisdiction#qified-report"
+    },
+    {
+      "slug": "records-request",
+      "title": "Access public records",
+      "type": "analysis",
+      "artIndex": 12,
+      "href": "reports.html?report=records-request#qified-report"
+    },
+    {
+      "slug": "pueblo-flood-history",
+      "title": "The 1921 Pueblo flood",
+      "type": "analysis",
+      "artIndex": 13,
+      "href": "reports.html?report=pueblo-flood-history#qified-report"
+    },
+    {
+      "slug": "case-rail",
+      "title": "Passenger rail",
+      "type": "case_summary",
+      "artIndex": 14,
+      "href": "packets.html#case-rail"
+    },
+    {
+      "slug": "case-fiber",
+      "title": "Fiber internet access",
+      "type": "case_summary",
+      "artIndex": 15,
+      "href": "packets.html#case-fiber"
+    },
+    {
+      "slug": "case-library-ai",
+      "title": "AI in the library",
+      "type": "case_summary",
+      "artIndex": 16,
+      "href": "packets.html#case-library-ai"
+    },
+    {
+      "slug": "case-library-finance",
+      "title": "Library finances",
+      "type": "case_summary",
+      "artIndex": 17,
+      "href": "packets.html#case-library-finance"
+    },
+    {
+      "slug": "case-school-governance",
+      "title": "School governance",
+      "type": "case_summary",
+      "artIndex": 18,
+      "href": "packets.html#case-school-governance"
+    },
+    {
+      "slug": "case-trail",
+      "title": "Connecting Communities trails",
+      "type": "case_summary",
+      "artIndex": 19,
+      "href": "packets.html#case-trail"
+    }
+  ]
+}

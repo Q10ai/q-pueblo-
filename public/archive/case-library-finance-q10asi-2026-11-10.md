@@ -1,6 +1,6 @@
-# Historical public case capture
+# Public case summary — dated reading copy
 
-Captured from https://q10asi.com/projects/q-pueblo/issues/case-library-finance/ on November 10, 2026. This captures the published case summary, not a new verification of its facts or a complete research packet. Original evidence dates and review limits remain in force.
+Captured from https://q10asi.com/projects/q-pueblo/issues/case-library-finance/ on November 10, 2026. This reading copy omits internal file locators; the original public sources and dated relationship statements are retained. It is not a new verification or complete research paper. Original evidence dates and review limits remain in force.
 
 ---
 
@@ -24,19 +24,19 @@ Which dated records establish each role, money state, dependency and outcome?
 
 | Entity or label | Recorded relationship | Evidence and time |
 | --- | --- | --- |
-| [Pueblo City-County Library District](https://q10asi.com/projects/q-pueblo/entities/ent-27b345efcd89/) <br>Named label — aliases and consequential roles need confirmation | Institution named in historical analysis<br>Historical Q interpretation — refresh required | docs/q10/q-pueblo/cases/QP\_PCCLD\_FISCAL\_FIDUCIARY\_EVIDENCE\_LEDGER\_v1.1\_2026-09-03.json<br>As of: 2026-09-03 |
+| [Pueblo City-County Library District](https://q10asi.com/projects/q-pueblo/entities/ent-27b345efcd89/)  · Named label — aliases and consequential roles need confirmation | Institution named in historical analysis · Historical Q interpretation — refresh required | Dated research record · As of: 2026-09-03 |
 
 Associations recorded for CASE-LIBRARY-FINANCE
 
 ## Evidence behind the record
 
-Origindocs/q10/q-pueblo/cases/QP\_PCCLD\_FISCAL\_FIDUCIARY\_EVIDENCE\_LEDGER\_v1.1\_2026-09-03.jsonRecord date2026-09-03Underlying source dateMissing — do not treat this as currentEarlier status labelControlled case research — source label, not a new verificationOriginal source locatorNot supplied for this public summary; primary-source recovery is required.
+Research record dated 2026-09-03. Underlying source date: Missing — do not treat this as current. Check the original public sources before relying on this case.
 
-## What would resolve it?
+## Questions still to resolve
 
 Audited financials and current budget; Certified ballot and levy records; Branch service and utility interval data
 
-**Next step:** Refresh primary records; confirm each relationship and distinguish plans from delivered results
+**Next step:** Check current primary records; distinguish plans from delivered results.
 
 ## Options to evaluate
 

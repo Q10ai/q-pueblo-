@@ -1,6 +1,6 @@
-# Historical public case capture
+# Public case summary — dated reading copy
 
-Captured from https://q10asi.com/projects/q-pueblo/issues/case-fiber/ on November 10, 2026. This captures the published case summary, not a new verification of its facts or a complete research packet. Original evidence dates and review limits remain in force.
+Captured from https://q10asi.com/projects/q-pueblo/issues/case-fiber/ on November 10, 2026. This reading copy omits internal file locators; the original public sources and dated relationship statements are retained. It is not a new verification or complete research paper. Original evidence dates and review limits remain in force.
 
 ---
 
@@ -24,21 +24,21 @@ Which dated records establish each role, money state, dependency and outcome?
 
 | Entity or label | Recorded relationship | Evidence and time |
 | --- | --- | --- |
-| [City of Pueblo](https://q10asi.com/projects/q-pueblo/entities/ent-1d07f2b59d68/) <br>Named label — aliases and consequential roles need confirmation | Right-of-way role in earlier research<br>Historical Q interpretation — refresh required | docs/pueblo/intake/PUEBLO\_FIBER\_INFRASTRUCTURE\_QRX\_v1.0.json<br>As of: 2026-09-09 |
-| [Intrepid Fiber](https://q10asi.com/projects/q-pueblo/entities/ent-d9cadcfbc036/) <br>Named label — aliases and consequential roles need confirmation | Network developer/operator in earlier research<br>Historical Q interpretation — refresh required | docs/pueblo/intake/PUEBLO\_FIBER\_INFRASTRUCTURE\_QRX\_v1.0.json<br>As of: 2026-09-09 |
-| [T-Mobile Fiber](https://q10asi.com/projects/q-pueblo/entities/ent-de5be4dffc84/) <br>Named label — aliases and consequential roles need confirmation | Retail provider in earlier research<br>Historical Q interpretation — refresh required | docs/pueblo/intake/PUEBLO\_FIBER\_INFRASTRUCTURE\_QRX\_v1.0.json<br>As of: 2026-09-09 |
+| [City of Pueblo](https://q10asi.com/projects/q-pueblo/entities/ent-1d07f2b59d68/)  · Named label — aliases and consequential roles need confirmation | Right-of-way role in earlier research · Historical Q interpretation — refresh required | docs/pueblo/intake/PUEBLO\_FIBER\_INFRASTRUCTURE\_QRX\_v1.0.json · As of: 2026-09-09 |
+| [Intrepid Fiber](https://q10asi.com/projects/q-pueblo/entities/ent-d9cadcfbc036/)  · Named label — aliases and consequential roles need confirmation | Network developer/operator in earlier research · Historical Q interpretation — refresh required | docs/pueblo/intake/PUEBLO\_FIBER\_INFRASTRUCTURE\_QRX\_v1.0.json · As of: 2026-09-09 |
+| [T-Mobile Fiber](https://q10asi.com/projects/q-pueblo/entities/ent-de5be4dffc84/)  · Named label — aliases and consequential roles need confirmation | Retail provider in earlier research · Historical Q interpretation — refresh required | docs/pueblo/intake/PUEBLO\_FIBER\_INFRASTRUCTURE\_QRX\_v1.0.json · As of: 2026-09-09 |
 
 Associations recorded for CASE-FIBER
 
 ## Evidence behind the record
 
-Origindocs/pueblo/intake/PUEBLO\_FIBER\_INFRASTRUCTURE\_QRX\_v1.0.jsonRecord date2026-09-09Underlying source dateMissing — do not treat this as currentEarlier status labelControlled case research — source label, not a new verificationOriginal source locatorNot supplied for this public summary; primary-source recovery is required.
+Research record dated 2026-09-09. Underlying source date: Missing — do not treat this as current. Check the original public sources before relying on this case.
 
-## What would resolve it?
+## Questions still to resolve
 
 City license and current permits; Current provider and contractor scope; Address-specific orderability and restoration acceptance
 
-**Next step:** Refresh primary records; confirm each relationship and distinguish plans from delivered results
+**Next step:** Check current primary records; distinguish plans from delivered results.
 
 ## Options to evaluate
 

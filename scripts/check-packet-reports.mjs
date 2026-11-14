@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 const read=p=>fs.readFileSync('public/'+p,'utf8');
 const doc=JSON.parse(read('data/q-pueblo-qified-reports-v2-2026-11-09.json'));
-const archive=JSON.parse(read('data/q-pueblo-historical-library-2026-11-10.json'));
+const archive=JSON.parse(read('data/q-pueblo-public-case-summaries.json'));
 const issues=JSON.parse(read('data/q-pueblo-issue-index-2026-11-09.json')).issues;
 const context={window:{},URL};vm.createContext(context);vm.runInContext(read('report-core.js'),context);
 const core=context.window.QPReport;
@@ -28,17 +28,17 @@ assert.equal(core.matchReports('Is the city 2027 budget approved?',doc.reports).
 assert.equal(core.matchReports('How much is the 2026 budget?',doc.reports).some(x=>x.exact),false,'related match must not become an exact answer');
 assert.equal(core.safeUrl('javascript:alert(1)'),null);
 assert(!core.render({...doc.reports[0],title:'<img src=x onerror=alert(1)>'}).includes('<img src=x'));
-assert.equal(archive.families.length,55);assert.equal(archive.families.reduce((n,f)=>n+f.variants,0),109);
-assert.equal(new Set(archive.families.map(f=>f.url)).size,55);
+assert(!('families' in archive),'Private draft inventory must not be public');
+assert(!fs.existsSync('public/data/q-pueblo-historical-library-2026-11-10.json'));
 assert.equal(archive.caseSummaries.length,8);
 for(const c of archive.caseSummaries){assert(fs.existsSync('public/'+c.localDownload));assert(read(c.localDownload).includes(c.url));}
-const page=read('packets.html');assert.equal((page.match(/data-packet-family/g)||[]).length,55);assert(page.includes('not eight newly completed'));
+const page=read('packets.html');assert.equal((page.match(/class="qp-art-card qp-paper-card"/g)||[]).length,20);assert.equal((page.match(/class="qp-case-detail"/g)||[]).length,8);for(const c of archive.caseSummaries){assert(page.includes(c.localDownload));assert(page.includes(c.slug));}
 assert(read('index.html').includes('name="q"')===false,'home question must not enter GET query');
 assert(read('launch-system.js').includes('qify.html#q='));
 for(const page of ['reports.html','qify.html'])assert(read(page).indexOf('report-core.js')<read(page).indexOf(page.replace('.html','.js')),'shared code load order');
-const publicFiles=['packets.html','data/q-pueblo-historical-library-2026-11-10.json','report-core.js','qify.js'];
+const publicFiles=['packets.html','data/q-pueblo-public-case-summaries.json','report-core.js','qify.js'];
 for(const p of publicFiles)assert(!/libfile_|docs\.google\.com|q10-core\/blob|SECRET|BEGIN PRIVATE KEY/.test(read(p)),p+': private locator leaked');
-console.log('PACKET_REPORT_CHECK=PASS; reports=14; claims=49; public draft families=55; case captures=8; private originals excluded');
+console.log('PACKET_REPORT_CHECK=PASS; reports=14; claims=49; draft inventory excluded; case captures=8; private originals excluded');
 
 const road=doc.reports.find(r=>r.slug==='pueblo-boulevard-agenda');
 assert.equal(175638340+3256160+1933200+25000000,165827700+40000000,'agenda sources/uses in integer cents');
