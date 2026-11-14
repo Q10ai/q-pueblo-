@@ -56,3 +56,9 @@ assert(mill.whatKnown.some(x=>x.includes('fiscal year 2024')&&x.includes('2026')
 assert(mill.unknowns.some(x=>x.includes('clarification')));
 assert(mill.money.some(x=>x.stage==='Expected revenues'&&x.status.includes('Disputed year')));
 console.log('PASS Evidence-first workbench: five preserved originals plus fourteen current reports, dated sources, explicit unknowns and display gates.');
+
+const currentReports=JSON.parse(readFileSync('public/data/qp-current-reports.json','utf8')).reports;
+assert.equal(currentReports.length,18);
+for(const r of currentReports.slice(14))for(const q of r.questions)assert.equal(selectReport(q,currentReports)?.report.slug,r.slug,'New reviewed question not accessible: '+q);
+assert.equal(selectReport('How much has Pueblo paid for Lime Road this week?',currentReports),null);assert.equal(selectReport('How much was paid to Project Falcon?',currentReports),null);
+console.log('PASS current report edition and newly accessible questions');
