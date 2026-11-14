@@ -1,8 +1,8 @@
 'use strict';
 (() => {
  const $=id=>document.getElementById(id),core=window.QPReport,catalog=window.QP_PUBLIC_CATALOG;
- let reports=[],packet=null;
- const briefsReady=fetch('data/q-pueblo-qified-reports-v2-2026-11-09.json').then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>{reports=d.reports;return true;}).catch(()=>false);
+ let reports=[],packet=null,renderSequence=0;
+ const briefsReady=fetch('data/qp-current-reports.json').then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>{reports=d.reports;return true;}).catch(()=>false);
  const sourceLink=s=>{const u=core.safeUrl(s.url);return u?'<a href="'+core.esc(u)+'" target="_blank" rel="noopener noreferrer">'+core.esc(s.title)+' ↗</a>':core.esc(s.title);};
  const investigation={
   'Question and scope':'Record the exact question, geography, jurisdiction and valid date. No current answer is established by a related title.',
@@ -14,7 +14,7 @@
   'Q review and reopening':'Document applicable EE/T2Y/RX/LEAP/TSLP checks actually performed, gaps, human review, freshness and correction triggers.'
  };
  async function render(question){
-  $('qify-status').textContent='Loading the dated report collection…';const loaded=await briefsReady;
+  const seq=++renderSequence;$('qify-status').textContent='Loading the dated report collection…';const loaded=await briefsReady;if(seq!==renderSequence)return;
   const terms=core.words(question), candidates=core.matchReports(question,reports);
   const gatedMatch=window.QP_QIFY_MATCH.selectReport(question,reports);
   const exact=candidates.find(x=>x.exact)?.report||gatedMatch?.report;
@@ -22,7 +22,7 @@
   const answer=exact?exact.summary:'No prepared, source-supported answer matches this exact question. Related research below may help, but it does not establish the answer to your question.';
   packet={schema:'qp-question-packet-v2',prepared:new Date().toISOString(),question,evidenceState:exact?'PREPARED_ANSWER_WITH_DATED_SOURCES':'INVESTIGATION_DRAFT_NO_CONFIRMED_ANSWER',answer,matchedReport:exact||null,relatedReports:candidates.filter(x=>!x.exact).map(x=>x.report),issues:matches,investigation,publication:'Local research draft. No external investigation, records request or publication has been performed by this page.'};
 
-  const brief=exact?'<section class="qp-answer-intro"><h2>Here is what the available evidence shows</h2><p><strong>'+core.esc(exact.summary)+'</strong></p><h3>What this means</h3><p>'+core.esc(exact.qification.assessment)+'</p><p>'+core.esc(core.coverage40(exact)[34].answer)+'</p><div class="qp-answer-options"><a class="qp-primary" href="reports.html?report='+encodeURIComponent(exact.slug)+'#qified-report">Read the 40-point report</a><a class="qp-outline" href="reports.html?report='+encodeURIComponent(exact.slug)+'#original-sources">Original sources</a></div><p>Evidence checked '+core.esc(exact.sourceChecked)+'.</p></section>':'<section class="qp-answer-intro"><h2>What we can tell you</h2><p>Q does not yet have a verified answer to this exact question. We will not substitute a related figure or guess.</p><p>Choose a related finding below or clarify the place, year, project or fact you need.</p></section>';
+  const brief=exact?'<section class="qp-answer-intro"><h2>Here is what the available evidence shows</h2><p><strong>'+core.esc(exact.summary)+'</strong></p><h3>What this means</h3><p>'+core.esc(exact.qification.assessment)+'</p><p>'+core.esc(core.coverage40(exact)[34].answer)+'</p><div class="qp-answer-options"><a class="qp-primary" href="reports.html?report='+encodeURIComponent(exact.slug)+'#qified-report">Read the 40-point report</a><a class="qp-outline" href="reports.html?report='+encodeURIComponent(exact.slug)+'#original-sources">Original sources</a></div><p>Evidence checked '+core.esc(exact.sourceChecked)+'. '+(new Date().toISOString().slice(0,10)>exact.reviewDue?'Review due — check updated original guidance before relying on these findings.':'Dated evidence, not a live check.')+'</p></section>':'<section class="qp-answer-intro"><h2>What we can tell you</h2><p>Q does not yet have a verified answer to this exact question. We will not substitute a related figure or guess.</p><p>Choose a related finding below or clarify the place, year, project or fact you need.</p></section>';
   const related=candidates.filter(x=>x.report.slug!==exact?.slug);
   packet.prompt=core.researchPrompt(question,$('qify-audience').value,$('qify-format').value);
   $('qify-output').innerHTML=brief+(!loaded?'<p>The report library could not load. Try again.</p>':'')+(related.length?'<h3>Related findings</h3><div class="qp-answer-related">'+related.slice(0,4).map(x=>'<a href="reports.html?report='+encodeURIComponent(x.report.slug)+'#qified-report"><strong>'+core.esc(x.report.title)+'</strong><span>'+core.esc(x.report.summary)+'</span><small>Related topic, not an answer to the exact question · '+core.esc(x.report.sourceChecked)+'</small></a>').join('')+'</div>':'')+
@@ -37,6 +37,7 @@
  $('qify-form').addEventListener('submit',e=>{e.preventDefault();const q=$('qify-query').value.trim();if(q.length>=3)render(q);});
  const initial=new URLSearchParams(location.hash.slice(1)).get('q')||new URLSearchParams(location.search).get('q');
  if(initial&&initial.length>=3){$('qify-query').value=initial.slice(0,180);render($('qify-query').value);}
+ window.addEventListener('hashchange',()=>{const v=new URLSearchParams(location.hash.slice(1)).get('q');if(v&&v.length>=3){$('qify-query').value=v.slice(0,180);render($('qify-query').value);}});
  const md=()=>packet?'# Q-Pueblo question\n\n'+packet.question+'\n\n'+packet.answer+'\n\n'+(packet.matchedReport?core.markdown(packet.matchedReport):'No verified answer in the dated public collection.\n\n## Optional research prompt\n\n'+packet.prompt):'';
  $('qify-download').addEventListener('click',()=>packet&&core.download('Q-Pueblo-Question-Packet.md',md(),'text/markdown;charset=utf-8'));
  $('qify-copy').addEventListener('click',async()=>{if(!packet)return;try{await navigator.clipboard.writeText(core.researchPrompt(packet.question,$('qify-audience').value,$('qify-format').value));$('qify-status').textContent='Research prompt copied. Nothing was sent.';}catch{$('qify-status').textContent='Copy unavailable; download the packet instead.';}});

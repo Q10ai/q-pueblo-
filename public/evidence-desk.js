@@ -89,7 +89,7 @@
     if(!found.length)out.append(el('p','No dated published brief matches. This does not establish that the topic or claim is false.'));
   }
   function reportLoad(){
-    return fetch('data/q-pueblo-qified-reports-v2-2026-11-09.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(x=>{
+    return fetch('data/qp-current-reports.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(x=>{
       if(!Array.isArray(x.reports)||x.reports.length<14)throw Error('Incomplete published brief library');
       reports=x.reports.filter(r=>r.id&&r.slug&&Array.isArray(r.sources));showReports();
     }).catch(()=>{byId('desk-search-count').textContent='The fourteen published analyses could not be loaded. Open Reports directly; do not treat this as an empty evidence library.'});
