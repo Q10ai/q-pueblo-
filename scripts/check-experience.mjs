@@ -67,3 +67,20 @@ assert(!/localStorage|sessionStorage|document\.cookie|sendBeacon|analytics/.test
 assert(read('twin.html').includes('not a live city control system'));
 assert(read('exit.html').includes('does not provide user accounts'));
 console.log('QP_PUB_EXPERIENCE_CHECK=PASS; '+names.length+' pages; graph 211/56/456; 20 case leads; eight weekly notices; baseline 174/14 retained');
+
+const {default:vm}=await import('node:vm');
+const ctx={window:{},URL,Date};vm.runInNewContext(read('governance-index-core.js'),ctx);
+const gc=ctx.window.QPGovernance;
+const settings=JSON.parse(read('data/qp-governance-index-input-v1.json'));
+const legacy=JSON.parse(read('data/q-pueblo-issue-index-2026-11-09.json'));
+const papers=JSON.parse(read('data/q-pueblo-qified-reports-v2-2026-11-09.json')).reports;
+const model=gc.build(legacy,graph,papers,settings);
+assert.equal(model.featured.length,150);assert.equal(model.allTopics.length,174);
+assert.equal(model.entities.length,graph.entities.length+settings.additions.length);
+assert.equal(new Set(model.entities.map(e=>e.id)).size,model.entities.length);
+assert(model.featured.every(e=>!settings.excludeFromFeatured.includes(e.id)));
+for(const e of model.entities)for(const direction of ['up','down'])for(const p of model.paths(e.id,direction,3)){assert(p.depth<=3&&p.depth>=1);assert(p.path.every(x=>x.boundary&&x.report&&x.sourceIds.length));}
+assert.equal(gc.freshness({observedAt:'2026-11-14T12:00:00Z',recheckBy:'2026-11-14T13:00:00Z'},new Date('2026-11-14T13:00:00Z')),'RECHECK_DUE');
+assert.equal(gc.freshness({observedAt:'bad',recheckBy:'2026-11-14T13:00:00Z'},new Date('2026-11-14T12:10:00Z')),'INVALID_OR_UNVERIFIED');
+assert(home.includes('href="governance-entities.html"')&&home.includes('href="governance-topics.html"'));
+console.log('PASS two governance indexes, 150 topic selection, 174 original records, evidence-linked directional paths, freshness fail-closed');

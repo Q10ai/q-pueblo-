@@ -1,0 +1,459 @@
+{
+  "schema": "qp-governance-index-input-v1",
+  "edition": "2026-11-14",
+  "selectionPolicy": "Working discovery order: source-linked scope first, then original registry order; not a severity ranking. Exclude internal platform operations from featured topics, retain original records separately. Preserve IDs and distinguish related report scope.",
+  "additions": [
+    {
+      "id": "office-city-finance",
+      "name": "City of Pueblo Finance Department",
+      "kind": "Municipal finance department",
+      "url": "https://www.pueblo.us/92/Finance",
+      "description": "Maintains City financial records; budgets and reports."
+    },
+    {
+      "id": "office-county-board",
+      "name": "Pueblo County Board of County Commissioners",
+      "kind": "County governing board",
+      "url": null,
+      "description": "Sets County priorities and reviews them with its Chief Administrative Officer, as described in the County dashboard."
+    },
+    {
+      "id": "office-socobd",
+      "name": "Southern Colorado Building Department",
+      "kind": "Building department",
+      "url": null,
+      "description": "Published permitting guidance covers City of Pueblo and Boone, subject to parcel confirmation."
+    },
+    {
+      "id": "office-county-building",
+      "name": "Pueblo County Building Division",
+      "kind": "County building department",
+      "url": null,
+      "description": "Published permitting guidance covers unincorporated county areas, including Pueblo West."
+    },
+    {
+      "id": "office-csac",
+      "name": "Community Services Advisory Commission",
+      "kind": "Advisory commission",
+      "url": null,
+      "description": "Evaluates nonprofit applications; City and County funding decisions remain separate."
+    },
+    {
+      "id": "office-state-assembly",
+      "name": "Colorado General Assembly",
+      "kind": "State legislature",
+      "url": "https://leg.colorado.gov/",
+      "description": "Publishes legislation and legislative materials."
+    },
+    {
+      "id": "office-pdphe",
+      "name": "Pueblo Department of Public Health and Environment",
+      "kind": "Public health agency",
+      "url": "https://county.pueblo.org/public-health/pueblo-department-public-health-and-environment",
+      "description": "Public and environmental health information."
+    },
+    {
+      "id": "office-city-housing",
+      "name": "City of Pueblo Housing and Citizen Services",
+      "kind": "Municipal department",
+      "url": null,
+      "description": "City housing resources and development information."
+    },
+    {
+      "id": "office-water-board",
+      "name": "Board of Water Works of Pueblo",
+      "kind": "Governing board",
+      "url": "https://pueblowater.org/our-board/",
+      "description": "Published board meeting information; decisions require their own records."
+    },
+    {
+      "id": "office-city-mayor",
+      "name": "Mayor of Pueblo",
+      "kind": "Municipal public office",
+      "url": null,
+      "description": "Executive budget proposal role as described in the dated budget analysis."
+    },
+    {
+      "id": "office-cdot",
+      "name": "Colorado Department of Transportation",
+      "kind": "State agency",
+      "url": "https://www.codot.gov/",
+      "description": "State transport planning and highway information."
+    },
+    {
+      "id": "office-city-purchasing",
+      "name": "City of Pueblo Purchasing",
+      "kind": "Municipal purchasing function",
+      "url": null,
+      "description": "Listed contract execution role in the October 26 Pueblo Boulevard agenda analysis."
+    },
+    {
+      "id": "office-martinez",
+      "name": "Martinez Property Holdings, Inc.",
+      "kind": "Named contribution counterparty",
+      "url": null,
+      "description": "Listed $250,000 contribution in October 26 agenda N12; actual receipt not established."
+    },
+    {
+      "id": "office-cd-electric",
+      "name": "C&D Electric, Inc.",
+      "kind": "Named construction counterparty",
+      "url": null,
+      "description": "Listed $1,658,277 construction contract in agenda N12; execution not established."
+    },
+    {
+      "id": "office-pearson",
+      "name": "Pearson Properties, LLC",
+      "kind": "Named agreement party",
+      "url": null,
+      "description": "Named in October 26 airport assignment/amendment agenda N10–N11; current rights not established."
+    },
+    {
+      "id": "office-tbtd",
+      "name": "TBTD Pueblo, LLC",
+      "kind": "Named agreement party",
+      "url": null,
+      "description": "Named in October 26 airport assignment/amendment agenda N10–N11; current rights not established."
+    },
+    {
+      "id": "office-airport",
+      "name": "Pueblo Memorial Airport",
+      "kind": "Municipal asset, not assumed legal entity",
+      "url": null,
+      "description": "351 Skyway was named in airport agenda items; asset and contracting parties are distinct."
+    },
+    {
+      "id": "office-csu-archives",
+      "name": "CSU Pueblo University Archives and Special Collections",
+      "kind": "Institutional archive",
+      "url": null,
+      "description": "Holds historical flood collection; reproduction rights are item-specific."
+    },
+    {
+      "id": "office-fema",
+      "name": "Federal Emergency Management Agency (FEMA)",
+      "kind": "Federal agency",
+      "url": null,
+      "description": "Program designation and eligibility must be confirmed separately from a declaration."
+    },
+    {
+      "id": "office-county-assessor",
+      "name": "Pueblo County Assessor",
+      "kind": "County public office",
+      "url": null,
+      "description": "Supplies taxable assessed value used in City levy calculations."
+    }
+  ],
+  "relationships": [
+    {
+      "from": "ent-1d07f2b59d68",
+      "to": "office-city-finance",
+      "role": "has municipal finance function",
+      "report": "budget-2026",
+      "boundary": "City Finance maintains the City financial records; this is an institutional function, not a claim of personal control.",
+      "asOf": "2026-11-09",
+      "sourceIds": [
+        "budget-ordinance",
+        "finance-page",
+        "state-2026"
+      ],
+      "kind": "institutional_or_service_role"
+    },
+    {
+      "from": "ent-1d07f2b59d68",
+      "to": "ent-eba66093d2f4",
+      "role": "has municipal legislative body",
+      "report": "budget-2026",
+      "boundary": "City Council adopts budget ordinances; authority is scoped to the City.",
+      "asOf": "2026-11-09",
+      "sourceIds": [
+        "budget-ordinance",
+        "finance-page",
+        "state-2026"
+      ],
+      "kind": "institutional_or_service_role"
+    },
+    {
+      "from": "ent-1d07f2b59d68",
+      "to": "office-city-mayor",
+      "role": "has executive office",
+      "report": "budget-2026",
+      "boundary": "Mayor submits executive budget proposal.",
+      "asOf": "2026-11-09",
+      "sourceIds": [
+        "budget-ordinance",
+        "finance-page",
+        "state-2026"
+      ],
+      "kind": "institutional_or_service_role"
+    },
+    {
+      "from": "ent-eba66093d2f4",
+      "to": "office-city-finance",
+      "role": "budget authorization to financial administration",
+      "report": "budget-2026",
+      "boundary": "Budget authority and recordkeeping are distinct; not a personnel reporting line.",
+      "asOf": "2026-11-09",
+      "sourceIds": [
+        "budget-ordinance",
+        "finance-page",
+        "state-2026"
+      ],
+      "kind": "scoped_record_role"
+    },
+    {
+      "from": "ent-9fc831fd79fc",
+      "to": "office-county-board",
+      "role": "has county governing board",
+      "report": "county-priorities-2026",
+      "boundary": "Board sets published County priorities; not control of every county office.",
+      "asOf": "2026-11-09",
+      "sourceIds": [
+        "county-dashboard"
+      ],
+      "kind": "institutional_or_service_role"
+    },
+    {
+      "from": "ent-9fc831fd79fc",
+      "to": "office-county-building",
+      "role": "has county permitting function",
+      "report": "permits-jurisdiction",
+      "boundary": "County Building Division covers unincorporated county projects.",
+      "asOf": "2026-11-09",
+      "sourceIds": [
+        "county-permits",
+        "socobd"
+      ],
+      "kind": "institutional_or_service_role"
+    },
+    {
+      "from": "ent-1d07f2b59d68",
+      "to": "office-socobd",
+      "role": "served by permitting authority",
+      "report": "permits-jurisdiction",
+      "boundary": "Published service jurisdiction includes City and Boone; not a claim of organizational ownership.",
+      "asOf": "2026-11-09",
+      "sourceIds": [
+        "county-permits",
+        "socobd"
+      ],
+      "kind": "institutional_or_service_role"
+    },
+    {
+      "from": "ent-ff89f261999c",
+      "to": "office-water-board",
+      "role": "has governing board",
+      "report": "water-budget-evidence",
+      "boundary": "Board and management have distinct financial and operational responsibilities.",
+      "asOf": "2026-11-09",
+      "sourceIds": [
+        "water-finance",
+        "water-acfr"
+      ],
+      "kind": "institutional_or_service_role"
+    },
+    {
+      "from": "ent-1d07f2b59d68",
+      "to": "office-city-housing",
+      "role": "has housing and citizen services function",
+      "report": "housing-pipeline",
+      "boundary": "City housing information and assistance; not an individual eligibility finding.",
+      "asOf": "2026-11-09",
+      "sourceIds": [
+        "city-housing",
+        "housing-help"
+      ],
+      "kind": "institutional_or_service_role"
+    },
+    {
+      "from": "ent-1d07f2b59d68",
+      "to": "ent-2bf079571fbe",
+      "role": "has wastewater function",
+      "report": "wastewater-2026",
+      "boundary": "City Wastewater provides operator account; not an independent cause finding.",
+      "asOf": "2026-11-09",
+      "sourceIds": [
+        "city-spill"
+      ],
+      "kind": "institutional_or_service_role"
+    },
+    {
+      "from": "ent-2bf079571fbe",
+      "to": "ent-c88e6d5dc564",
+      "role": "separate testing and oversight context",
+      "report": "wastewater-2026",
+      "boundary": "Separate agency testing role; not an organizational hierarchy.",
+      "asOf": "2026-11-09",
+      "sourceIds": [
+        "city-spill"
+      ],
+      "kind": "scoped_record_role"
+    },
+    {
+      "from": "ent-eba66093d2f4",
+      "to": "office-city-purchasing",
+      "role": "listed authorization and contract execution roles",
+      "report": "pueblo-boulevard-agenda",
+      "boundary": "October 26 agenda only; final vote and execution not established.",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "council-oct26"
+      ],
+      "kind": "scoped_record_role"
+    },
+    {
+      "from": "ent-1d07f2b59d68",
+      "to": "ent-49eacbe08379",
+      "role": "listed proposed reimbursement counterparty",
+      "report": "pueblo-boulevard-agenda",
+      "boundary": "N13 proposed reimbursement; no executed obligation established.",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "council-oct26"
+      ],
+      "kind": "scoped_record_role"
+    },
+    {
+      "from": "ent-1d07f2b59d68",
+      "to": "office-martinez",
+      "role": "listed proposed contribution counterparty",
+      "report": "pueblo-boulevard-agenda",
+      "boundary": "N12 proposed acceptance of contribution; receipt not established.",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "council-oct26"
+      ],
+      "kind": "scoped_record_role"
+    },
+    {
+      "from": "ent-1d07f2b59d68",
+      "to": "office-cd-electric",
+      "role": "listed proposed construction counterparty",
+      "report": "pueblo-boulevard-agenda",
+      "boundary": "N12 listed contract; payment and execution not established.",
+      "asOf": "2026-11-10",
+      "sourceIds": [
+        "council-oct26"
+      ],
+      "kind": "scoped_record_role"
+    },
+    {
+      "from": "office-county-assessor",
+      "to": "ent-eba66093d2f4",
+      "role": "assessment basis for municipal tax levy",
+      "report": "city-mill-levy-2026",
+      "boundary": "Taxable assessed value supports City rate calculation; does not imply governance control.",
+      "asOf": "2026-11-09",
+      "sourceIds": [
+        "ordinance11074"
+      ],
+      "kind": "scoped_record_role"
+    },
+    {
+      "from": "office-csac",
+      "to": "ent-eba66093d2f4",
+      "role": "advisory funding recommendation context",
+      "report": "csac-2027",
+      "boundary": "City allocation is proposed; advisory process does not itself award funds.",
+      "asOf": "2026-11-09",
+      "sourceIds": [
+        "csac-release",
+        "city-csac",
+        "finance-2027"
+      ],
+      "kind": "scoped_record_role"
+    }
+  ],
+  "reportMap": {
+    "REG-001": "half-cent-2026",
+    "REG-007": null,
+    "REG-016": "city-mill-levy-2026",
+    "REG-025": "aspen-recovery",
+    "REG-036": "records-request",
+    "REG-049": "csac-2027",
+    "REG-050": "wastewater-2026",
+    "REG-046": "housing-pipeline",
+    "REG-074": "permits-jurisdiction",
+    "QRX-BUILD-001": "permits-jurisdiction",
+    "REG-067": "aspen-recovery"
+  },
+  "prioritySize": 150,
+  "reportEntities": {
+    "budget-2026": [
+      "ent-1d07f2b59d68",
+      "ent-eba66093d2f4",
+      "office-city-finance",
+      "office-city-mayor"
+    ],
+    "half-cent-2026": [
+      "ent-1d07f2b59d68",
+      "ent-eba66093d2f4",
+      "office-city-finance"
+    ],
+    "csac-2027": [
+      "ent-1d07f2b59d68",
+      "ent-9fc831fd79fc",
+      "ent-eba66093d2f4",
+      "office-csac",
+      "office-county-board"
+    ],
+    "county-priorities-2026": [
+      "ent-9fc831fd79fc",
+      "office-county-board"
+    ],
+    "city-mill-levy-2026": [
+      "ent-1d07f2b59d68",
+      "ent-eba66093d2f4",
+      "office-county-assessor"
+    ],
+    "permits-jurisdiction": [
+      "ent-1d07f2b59d68",
+      "ent-9fc831fd79fc",
+      "office-socobd",
+      "office-county-building"
+    ],
+    "wastewater-2026": [
+      "ent-1d07f2b59d68",
+      "ent-2bf079571fbe",
+      "ent-c88e6d5dc564"
+    ],
+    "housing-pipeline": [
+      "ent-1d07f2b59d68",
+      "office-city-housing"
+    ],
+    "aspen-recovery": [
+      "ent-9fc831fd79fc",
+      "office-fema"
+    ],
+    "lime-road-costs": [
+      "ent-1d07f2b59d68",
+      "ent-9fc831fd79fc",
+      "office-city-finance"
+    ],
+    "water-budget-evidence": [
+      "ent-ff89f261999c",
+      "office-water-board"
+    ],
+    "records-request": [],
+    "pueblo-flood-history": [
+      "office-csu-archives"
+    ],
+    "pueblo-boulevard-agenda": [
+      "ent-1d07f2b59d68",
+      "ent-eba66093d2f4",
+      "ent-49eacbe08379",
+      "office-city-finance",
+      "office-city-purchasing",
+      "office-martinez",
+      "office-cd-electric"
+    ]
+  },
+  "excludeFromFeatured": [
+    "REG-029",
+    "REG-037",
+    "REG-038",
+    "REG-054",
+    "REG-055",
+    "QRX-QP-CONVERGENCE-001"
+  ]
+}

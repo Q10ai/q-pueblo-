@@ -17,5 +17,9 @@
   "review_gate":"human_required",
   "limitations":"Read-only status declaration for static deployment, not an operational backend API.",
   "public_report_coverage_sections":40,
-  "public_research_prompt_builder":true
+  "public_research_prompt_builder":true,
+  "entity_index":true,
+  "featured_topic_count":150,
+  "scoped_directed_relationship_paths":3,
+  "instant_shock_event_monitoring":false
 }
