@@ -1,7 +1,7 @@
 {
   "schema": "qp-governance-index-input-v1",
   "edition": "2026-11-14",
-  "selectionPolicy": "Working discovery order: source-linked scope first, then original registry order; not a severity ranking. Exclude internal platform operations from featured topics, retain original records separately. Preserve IDs and distinguish related report scope.",
+  "selectionPolicy": "Current source-checked updates first, then dated report coverage, then dated discovery records. Historical and overdue records are explicitly labeled; no old source URL makes a record current. This is a working 150-topic discovery selection, not a severity ranking. Internal platform operations are omitted from featured topics, not deleted.",
   "additions": [
     {
       "id": "office-city-finance",
@@ -455,5 +455,127 @@
     "REG-054",
     "REG-055",
     "QRX-QP-CONVERGENCE-001"
-  ]
+  ],
+  "lifecycle": {
+    "edition": "2026-11-14",
+    "profiles": {
+      "shock": {
+        "targetHours": 1,
+        "activation": "event-specific, verified official notice and authorized monitoring; no live monitor enabled"
+      },
+      "election": {
+        "targetHours": 24,
+        "activation": "counting, certification, recount and office transition"
+      },
+      "budget": {
+        "targetHours": 24,
+        "activation": "budget adoption window, then monthly actuals and annual audit"
+      },
+      "meeting": {
+        "targetHours": 24,
+        "activation": "agenda changes, votes and day-of-event checks"
+      },
+      "active": {
+        "targetHours": 168,
+        "activation": "active issues, projects and service changes"
+      },
+      "stable": {
+        "targetHours": 720,
+        "activation": "institutions, standing rules and service directories"
+      },
+      "history": {
+        "targetHours": 2160,
+        "activation": "historical materials; recheck corrections and relevance"
+      }
+    },
+    "updates": [
+      {
+        "id": "election-2026-postvote",
+        "topicIds": [
+          "REG-063",
+          "REG-070",
+          "REG-071",
+          "QRX-REG-063-01",
+          "QRX-REG-063-04",
+          "QRX-REG-063-05",
+          "QRX-REG-070-03",
+          "QRX-REG-071-01",
+          "QRX-REG-071-02",
+          "QRX-REG-071-03",
+          "QRX-REG-071-04",
+          "QRX-REG-071-05"
+        ],
+        "title": "November election: counting and certification",
+        "finding": "Pueblo County has posted the November 13 unofficial results update. Earlier election-night and November 5 returns remain historical snapshots, not final results.",
+        "meaning": "The latest published update is still unofficial. Do not switch officeholders, label a result certified, or infer the legal effect of a ballot measure until the applicable controlling records are checked.",
+        "sourceDate": "2026-11-13",
+        "checkedDate": "2026-11-14",
+        "recheckDate": "2026-11-15",
+        "profile": "election",
+        "status": "UNOFFICIAL_UPDATE",
+        "sources": [
+          {
+            "title": "County November 2026 election results",
+            "url": "https://pueblocounty.gov/clerk-and-recorder-department/election-results-november-2026"
+          },
+          {
+            "title": "County election timeline (published guidance; dates require current confirmation)",
+            "url": "https://pueblocounty.gov/clerk-and-recorder-department/candidate-running-office"
+          }
+        ],
+        "milestone": "County's published timeline lists November 24 for risk-limiting audit reporting and November 25 for canvass/official abstract; verify any changes. Certification and taking office are separate events."
+      },
+      {
+        "id": "county-2027-budget",
+        "topicIds": [
+          "REG-069",
+          "QRX-REG-069-01",
+          "QRX-REG-069-02",
+          "QRX-REG-069-03",
+          "QRX-REG-069-04"
+        ],
+        "title": "Pueblo County: 2027 budget process",
+        "finding": "The County's 2027 budget page provides a meeting calendar, preliminary proposed budget, proposed-budget presentation and financial outlook. No document was listed under its adopted budget heading in the page inspected.",
+        "meaning": "The preliminary proposal is not evidence of final spending authority, final staffing or an actual expense. The next decision may change amounts.",
+        "sourceDate": null,
+        "checkedDate": "2026-11-14",
+        "recheckDate": "2026-11-15",
+        "profile": "budget",
+        "status": "PROPOSAL_LISTED",
+        "sources": [
+          {
+            "title": "County 2027 budget",
+            "url": "https://www.pueblocounty.gov/budget-and-finance-department/2027-budget"
+          },
+          {
+            "title": "County annual budgets and historical adopted budgets",
+            "url": "https://www.pueblocounty.gov/budget-and-finance-department/county-budget"
+          }
+        ],
+        "milestone": "Track adoption, amendments and subsequent actuals; no document listing alone demonstrates a final Council or Board decision."
+      },
+      {
+        "id": "city-2027-budget",
+        "topicIds": [
+          "REG-017",
+          "REG-049"
+        ],
+        "title": "City of Pueblo: 2027 proposed budget",
+        "finding": "The City Finance page lists its 2027 proposed budget alongside the annual budget, transparency portal, financial reports and economic-development reports.",
+        "meaning": "The 2026 adopted appropriation remains a historical authorization fact. The 2027 proposal is a distinct edition, not a final appropriation or a cash-spending report.",
+        "sourceDate": null,
+        "checkedDate": "2026-11-14",
+        "recheckDate": "2026-11-15",
+        "profile": "budget",
+        "status": "PROPOSAL_LISTED",
+        "sources": [
+          {
+            "title": "City Finance Department",
+            "url": "https://www.pueblo.us/92/Finance"
+          }
+        ],
+        "milestone": "Reconcile the final ordinance and amendments separately from payment and service-delivery evidence."
+      }
+    ]
+  }
 }

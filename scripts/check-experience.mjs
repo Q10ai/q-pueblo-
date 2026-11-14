@@ -84,3 +84,15 @@ assert.equal(gc.freshness({observedAt:'2026-11-14T12:00:00Z',recheckBy:'2026-11-
 assert.equal(gc.freshness({observedAt:'bad',recheckBy:'2026-11-14T13:00:00Z'},new Date('2026-11-14T12:10:00Z')),'INVALID_OR_UNVERIFIED');
 assert(home.includes('href="governance-entities.html"')&&home.includes('href="governance-topics.html"'));
 console.log('PASS two governance indexes, 150 topic selection, 174 original records, evidence-linked directional paths, freshness fail-closed');
+
+assert.equal(model.updates.length,3);
+assert(model.updates.every(u=>u.sources.every(s=>/^https:\/\//.test(s.url))));
+assert.equal(model.dateReview(model.updates[0],'2026-11-14'),'DATED_UPDATE');
+assert.equal(model.dateReview(model.updates[0],'2026-11-15'),'RECHECK_DUE');
+assert.equal(model.dateReview(model.updates[0],'2026-11-13'),'REVIEW_REQUIRED');
+assert(model.allTopics.find(t=>t.id==='REG-071').updates.some(u=>u.status==='UNOFFICIAL_UPDATE'));
+assert(model.allTopics.find(t=>t.id==='REG-069').updates.some(u=>u.status==='PROPOSAL_LISTED'));
+assert(model.allTopics.every(t=>t.reviewStatus));
+assert(read('governance-topics.html').includes('Dated findings within review window'));
+assert(read('now.html').includes('November 13 unofficial results update'));
+console.log('PASS dated election/budget updates and review-window expiry; no historical lead promoted to a current fact');
