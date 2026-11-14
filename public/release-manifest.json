@@ -1,11 +1,11 @@
 {
   "schema": "qp-public-release-manifest-v1",
-  "releaseId": "QP-PUBLIC-2026-11-10-HANDOVER-R1",
+  "releaseId": "QP-PUBLIC-2026-11-13-EXPERIENCE-RC1",
   "sourceRepository": "Q10ai/q-pueblo-",
   "productionBranch": "main",
   "baseSourceCommit": "19d8114e42d52e99f1c586ed9f5797d86e323343",
-  "sourceDate": "2026-11-10",
-  "classification": "PUBLIC_BETA_STATIC_RELEASE_CANDIDATE",
+  "sourceDate": "2026-11-13",
+  "classification": "PUBLIC_BETA_HUMAN_REVIEW_RELEASE_CANDIDATE",
   "publicationAuthority": "human_required",
   "capabilityClaims": {
     "historicalIssueLibrary": true,
@@ -18,5 +18,45 @@
     "officialCivicDigitalTwin": false
   },
   "deploymentRule": "A manifest on GitHub or in a ZIP does not prove production deployment. Require live host route readback plus functional checks and authorized human approval.",
-  "previousZip": "Q-Pueblo-NEW-SITE-Cloudflare-Upload-2026-11-09.zip is superseded for live deployment because it omits later GitHub pages, reports and corrections."
+  "previousZip": "Q-Pueblo-NEW-SITE-Cloudflare-Upload-2026-11-09.zip is superseded for live deployment because it omits later GitHub pages, reports and corrections.",
+  "previousReleaseId": "QP-PUBLIC-2026-11-10-HANDOVER-R1",
+  "expansion": {
+    "scope": "Add source-safe educational and civic discovery to existing standalone Q-Pueblo without replacing 174 historical issue records, 14 dated reports, current assets or Q tools",
+    "publicPages": [
+      "now.html",
+      "areas.html",
+      "connections.html",
+      "case-library.html",
+      "discover.html",
+      "rumor-mill.html",
+      "ai-learn.html",
+      "rx.html",
+      "twin.html",
+      "exit.html"
+    ],
+    "homepageExtension": true,
+    "graph": {
+      "origin": "Q10ASI public-index projection",
+      "issueRecords": 211,
+      "entityLabels": 56,
+      "associations": 456,
+      "unresolvedGroups": 15,
+      "unmappedIssues": 26,
+      "distinctFromStandaloneHistoricalIssues": 174
+    },
+    "weeklyEdition": "2026-11-13",
+    "weeklyStatus": "DATED_SOURCE_SNAPSHOT_NOT_LIVE",
+    "newCompletedPeerReviewedPapers": 0,
+    "caseEntries": 20,
+    "ageTracks": [
+      "kids",
+      "teens",
+      "adults",
+      "experts"
+    ],
+    "rumorIntake": "optional email client; no secure web form or auto publication",
+    "safety": "no autonomous agents, analytics, accounts, private record import, causal inference from association or digital twin claim",
+    "verification": "PR tests and independent Cloudflare live readback required",
+    "productionDeploymentObserved": false
+  }
 }
