@@ -123,3 +123,32 @@ Do not conflate 'unasked answers' with **invented findings**. The engine must se
 Current build: public/q-native.js projects existing, already prepared Qified report fields into eight visible insights. It is deterministic and query-local, does not discover new facts, lacks individual insight-to-sourceIds mapping, and does not automatically update any controlled archive. The legacy full original report remains accessible. Live cross-issue causal investigations, source graph traversal, source refresh, simulation validation and human-reviewed publication remain future gates.
 
 Verification target: using identical underlying source versions, an ordinary reader must receive the same Q-native substantive insights as an expert, in language that is useful to their role. A report without Q analysis must say none is established; role or adversarial questioning must never cause claims to drift.
+
+
+## Amendment 2026-11-13: Universal Qification across scale — a streetlight through a data center
+
+Trigger: EVERY question initiates Qification; it does not automatically produce a completed Q10 execution or human-approved published report. Every search receives available evidence first, then the relevant Q-native findings and the final crossover synthesis. A user does not have to name suites, governance terms or ask subquestions to obtain the established answers.
+
+The same assurance obligations apply to a one-pole streetlight problem and to a large industrial site: source integrity; identity/jurisdiction; relevant history; complete Who/What/When/Where/Why/How; Child Zero and future generations; rights, consent, power and fairness; safety, foreseeable harms, and actionable mitigation; Event Horizons; EE_INTEL; T2Y; counterevidence/RX; alternatives; and full cross-system synthesis. A dimension may be 'not relevant after documented analysis' or 'not established'—never silently omitted. Unknown or negative findings are substantive outputs when evidenced.
+
+### Scale changes depth, NOT obligations
+A. **Streetlight**: identify asset owner and operator (not automatically the same entity), service/repair status and dates, electricity and contract responsibility, who can authorize repair, pedestrian/nighttime and accessibility safety, vulnerable road users/nearby children, planning and roadwork dependencies, maintenance cost, response standards, escalation thresholds, safe near-term measures, and documented repair/outcome verification.
+B. **Data center**: establish applicant, corporate entities, land rights, zoning and permitted scope; electricity capacity and grid interconnection; water source and demand; cooling and environmental commitments; tax and incentive stages; physical infrastructure and durable maintenance; construction and operations workforce; jobs/benefits versus measurable outcomes; neighborhood, school/child, rights and health impacts; cross-jurisdiction obligations; Event Horizons such as infrastructure lock-in or capacity cliffs; and contractual, regulatory and design alternatives with verification.
+C. **Neither topic creates automatic conclusions** from its label. A streetlight near a school with credible immediate hazard may merit heightened review or emergency-service referral. A large data center with no verified risk details begins with baseline coverage and source verification rather than presumed harm.
+
+### Universal processing stages and ranges
+Initial risk indicators are *intake signals* only. Evidence Health/source admission must validate risk claims before consequence, likelihood, severity, exposure, reversibility, distribution, time horizon and decision authority are graded. Calibrated quantitative thresholds require the specific domain and controlling standards. There is no invented universal score or fabricated emergency status. Scale classes (asset / site / network / region) are descriptive; they cannot substitute for the risk and governance assessment.
+
+The minimum intelligence workflow is: exact scope and provenance -> best bounded answer -> core assurance floors -> source/risk triage -> specialized Q10 suite activation only when warranted and permitted -> Q-level findings -> crossovers -> alternatives, consequence horizons, outcomes -> human publication decision -> versioned amendment and continuous review. Small questions can terminate expensive branching after a sufficient truthful answer without skipping mandatory safety/rights/child/temporal checks; high-risk questions must not be artificially capped by a low budget.
+
+### Mechanically testable acceptance
+1. A streetlight question and a data-center question initiate Qification and expose the identical set of required baseline assurance gates.
+2. Both receive specialized evidence dimensions relevant to their physical/organizational scope.
+3. Their size alone cannot set risk, certainty, legal authority or Q10 maturity.
+4. Elevated verified child/life-safety consequences can cause heightened review at any scale.
+5. Human-reported or user-supplied risk is not independently verified until source admission and applicable safety review.
+6. The final report includes Q-native findings and its synthesis, stating which layers ran, which supplied only dated prior narrative, and which were not evaluated.
+7. A no-record query returns dated index sources and exact limits, without fabrication.
+8. A state must never claim 'full Qified verified' until source-level, applicability, qualified module-execution and human-publication receipts exist.
+
+Current implementation: public/q-universal-scope.js provides a read-only browser intake and scope framework with mandatory gates; qify.js shows it as an expandable explanation and exports the obligations. It does not connect any private runtime, collect source-verified risk, compute qualified thresholds, perform live source refresh, or independently validate any project.
