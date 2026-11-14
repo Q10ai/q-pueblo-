@@ -23,7 +23,7 @@
     ['now.html', "What's Happening Now", 'text'],
     ['areas.html', 'Eight Ways to Understand Pueblo', 'text'],
     ['connections.html', 'Pueblo Connections: Three Hops', 'text'],
-    ['connections.js', 'PUBLIC', 'text'],
+    ['connections.js', 'Public static graph exploration', 'text'],
     ['case-library.html', '20 Q-Pueblo Research Case Entry Points', 'text'],
     ['discover.html', 'Discover & Play', 'text'],
     ['rumor-mill.html', 'Rumor Mill', 'text'],
