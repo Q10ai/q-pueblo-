@@ -107,3 +107,51 @@ assert.equal(eh.engineRan,false);
 assert(ehealth.label.includes('Evidence Health'));
 assert.equal(trace.coreEnginesExecuted,false);
 console.log('PASS EH Event Horizons and EH_EVID separated; no Q10 runtime execution asserted.');
+
+
+vm.runInNewContext(readFileSync('public/q-suite-registry.js','utf8'),context,{timeout:3000});
+vm.runInNewContext(readFileSync('public/q-crossovers.js','utf8'),context,{timeout:3000});
+const SR=context.window.QPSuiteRegistry, X=context.window.QPCrossovers;
+assert(SR.catalog.length>=23,'Q10 suite catalog too narrow');
+assert.equal(SR.catalog.filter(x=>x.id==='Q10-EVENT-HORIZON').length,1);
+const coverageSet=new Set();
+for(const r of reports){
+ const roleRoute=SR.route({topic:r.topic,question:r.title,report:r});
+ const e=Q.derive(r);
+ const layer=traceCtx.window.QPProcessingTrace.trace(r,'2026-11-13T10:00:00Z');
+ const cross=X.synthesize(r,layer,e);
+ assert.equal(cross.reportId,r.id);
+ assert.equal(cross.fullQifiedVerified,false,'Partial static analysis cannot claim full Q10 maturity');
+ assert.equal(cross.reportStatus,'QIFIED_DATED_ANALYSIS_CANDIDATE_NOT_FULL_RUNTIME_CERTIFICATION');
+ assert(cross.crossoverCount>=4,'Crossover analysis should draw from existing report evidence: '+r.id);
+ assert.equal(cross.crossoverCount,cross.crossovers.length);
+ assert.equal(cross.sourceChecked,r.sourceChecked);
+ assert.equal(cross.criticalLimits.length,4);
+ for(const y of cross.crossovers){
+   coverageSet.add(y.key);
+   assert.equal(y.reportId,r.id);
+   assert.equal(y.claimLevelProvenanceVerified,false);
+   assert.equal(y.newExternalSourcesChecked,false);
+   assert(y.supportingPassages.length>=2);
+   assert(y.supportingPassages.every(z=>z.field && z.text),'Crossover must contain report passage evidence: '+r.id);
+ }
+ assert(roleRoute.modules.length>0);
+ assert(roleRoute.modules.every(m=>m.executed===false&&m.authority===false));
+ assert.equal(roleRoute.runtimeExecuted,false);
+}
+assert(coverageSet.has('authority_resource_delivery'));
+assert(coverageSet.has('time_horizon'));
+assert(coverageSet.has('option_validation'));
+const noEvidence=X.synthesize(null,traceCtx.window.QPProcessingTrace.trace(null,'2026-11-13T10:00:00Z'),Q.derive(null));
+assert.equal(noEvidence.crossoverCount,0);
+assert.equal(noEvidence.fullQifiedVerified,false);
+assert.equal(noEvidence.freshnessState,'NO_PREPARED_REPORT');
+const page=readFileSync('public/qify.js','utf8');
+const htmlPage=readFileSync('public/qify.html','utf8');
+assert(page.includes('window.QPSuiteRegistry.route'));
+assert(page.includes('window.QPCrossovers.synthesize'));
+assert(page.includes('Final Qified crossover synthesis — full-scope connections'));
+assert(page.indexOf('crossoverPanel+\x27<p><a href=')>page.indexOf('Related dated issue records'));
+assert(page.includes('packet.crossovers.crossovers.map'));
+assert(htmlPage.indexOf('src="q-crossovers.js"')<htmlPage.indexOf('src="qify.js"'));
+console.log('PASS Qified full-scope crossovers and 23 suite pointer records across all prepared reports.');
