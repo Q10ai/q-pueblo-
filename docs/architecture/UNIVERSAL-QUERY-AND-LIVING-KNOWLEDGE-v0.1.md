@@ -152,3 +152,45 @@ The minimum intelligence workflow is: exact scope and provenance -> best bounded
 8. A state must never claim 'full Qified verified' until source-level, applicability, qualified module-execution and human-publication receipts exist.
 
 Current implementation: public/q-universal-scope.js provides a read-only browser intake and scope framework with mandatory gates; qify.js shows it as an expandable explanation and exports the obligations. It does not connect any private runtime, collect source-verified risk, compute qualified thresholds, perform live source refresh, or independently validate any project.
+
+
+## Qification assurance amendment — all-scale product stages, Child Zero, LEAP and explainable public processing
+
+**Qification is automatic on intake.** The citizen does not request individual engines and must never receive a questionnaire instead of the useful answer already available. The system exposes its external source records, methods, stage results, qualifying conditions, review decisions, alternatives, caveats, and downstream linkages. It does not expose private model chain-of-thought or represent model-generated rationalizations as an audit trail.
+
+### Required outputs / products per process step
+| Stage | Immediate usable product | Why Q developed this stage | Evidence / approval boundary |
+|---|---|---|---|
+| 1. Ask/ANSWER | Plain-language current answer with dated certainty | People need answers immediately | Available public baseline; unknowns explicit |
+| 2. EVIDENCE | Source and claim register, dates, contradictions, freshness | Repeated or stale accounts are not independent truth | Source admission and provenance checks |
+| 3. AUTHORITY | Who/what/when/where/how, money and public obligation breakdown | Official responsibility differs from ownership, contracts, payment or delivery | Legal/governance claims source and jurisdiction bounded |
+| 4. CHILD_ZERO | Children, dependents and intergenerational impact assessment | Unrepresented affected parties are too easily omitted | Always included; measured/unknown/conditional distinguished |
+| 5. GOVERNANCE | Safety, human rights, privacy, authority and consequence gates | Capability and information never grant official or human authority | High-risk issue escalates; no automated coercive action |
+| 6. Q_NATIVE | Overlooked actors, burdens, contradictions, incentives and pathways | Conventional question-answering does not expose systemic blind spots | Q's conclusions separated from source statements |
+| 7. EVENT_HORIZONS | Deadline windows, option loss, cascades, irreversibility and recovery | Delayed decisions can eliminate safer alternatives | Conditional unless domain thresholds calibrated and sourced |
+| 8. OPTIONS_FIXES | Alternatives, tradeoffs, rights, resource demands, repair paths and validation tests | People need usable alternatives, not just a problem statement | Proposals are not official decisions or verified benefits |
+| 9. LEAP | What to do now, changes to watch, conditional future, fallback choices | Anticipatory intelligence helps prepare ahead of events | A plan is not live monitoring, a forecast or authorized action |
+| 10. EE_INTEL/T2Y | Least-cost safe analytical route and benefit-verification criteria | Intelligence, energy, attention, time, money and trust are scarce | Do not fabricate measured performance or scores |
+| 11. OUTCOME | How to verify delivery, corrections, reopening and versioning | Commitments and announcements differ from real-world results | No completion without actual observation/receipt |
+| 12. CROSSOVERS | Integrated full-scope relationships, second/third-order impacts, options and remaining gaps | Q's differentiator is the recombined system picture | Every material connection retains its evidence status and causal limits |
+
+### Non-negotiable Child Zero
+Every query and report includes a Child Zero result, even where it is "no child-specific outcomes documented" or "no impact evidence identified after bounded search." No measured effect is NEVER interpreted as proof of no effect. Coverage considers direct child safety, services, unequal exposure, school routes, economic opportunity, household stability, resource inheritance, long-term maintenance and future generations where applicable. Avoid inventing individual child or family data. Where children could face immediate harm, qualify urgency only from verified risk; provide the appropriate public safety route without misrepresenting verified jurisdiction or dispatch authority.
+
+### LEAP anticipatory work products
+A Qified issue produces four distinct LEAP summaries where evidence allows: (i) NOW: next verifiable action; (ii) CHANGE: source/event triggers and exact evidence that would revise the finding; (iii) FUTURE: conditional horizons, threshold/option loss and resilience; (iv) ALTERNATIVES: fallback designs and tradeoffs. The target production service eventually provides real, consent-based review subscriptions, scheduled monitoring and source receipts. The current static Qify prototype DOES NOT monitor continuously or perform new source checks; it labels these as *previous report proposals*.
+
+### Transparency without fabricated thinking
+Q publishes a **work/evidence trail**: sources, report version, query time vs. source-checked time, admission/rejection decisions, method and test identifiers, what was measured, stage outputs, alternative explanations, qualification and human-review receipts, amendment history, and scope limits. Internal unrecorded model reasoning, hidden deliberation, intermediate speculation or purported 'thought transcripts' must never be manufactured or released as a trustworthy source of truth. For reproducibility provide explicit *independent calculations, cited evidence and decision rules* rather than a model's private intermediate thought.
+
+### Acceptance conditions
+- Each user question initiates Qification. Partial evidence does not stop an answer.
+- Every stage yields a substantive dated output or an explicit evidence gap, plus its purpose and execution status.
+- Child Zero cannot be omitted at any scale or role, and child-harm absence cannot be inferred from missing data.
+- LEAP provides proactive options and review triggers without promising monitoring that is not running.
+- The final crossover synthesis appears at the end of the report, cross-referencing prior evidence; no inferred causality is elevated by colocation.
+- No engine is claimed to have executed merely because a previous Qified report includes a related narrative.
+- Public roles alter presentation and tool access only, never source facts or rights.
+- Human approval remains mandatory for Qified publication gates where required; edits remain versioned and reversible.
+
+**Implemented in the development review branch:** public/q-stage-products.js, q-universal-scope.js, q-crossovers.js, q-suite-registry.js and Qify presentation/exports. These are deterministic projections over previously prepared public reports only. The complete Q10 governed runtime, real-time source retrieval, automated child-specific outcome evaluation, approved LEAP monitoring, and full suite audit receipts are NOT connected or deployed.
