@@ -1,0 +1,40 @@
+schema: qp-regional-watch-candidates-v1
+packet_id: QP-REGION-2026-ENTITY-SYSTEM-001
+version: 0.1.0
+as_of: 2026-11-11
+activation: false
+auto_publish: false
+uses_paid_api: false
+requires_human_review: true
+candidate_sources:
+  - id: county-financial-progress
+    url: https://county.pueblo.org/board-county-commissioners-office/what-we-are-working
+    issue: QP-FIN-2026-AUDIT-001
+    check_event: new audit completion or board vote
+  - id: county-audits
+    url: https://pueblocounty.gov/budget-and-finance-department/annual-comprehensive-financial-report-acfr
+    issue: QP-FIN-2026-AUDIT-001
+    check_event: posted fiscal report
+  - id: county-single-audits
+    url: https://county.pueblo.org/budget-and-finance-department/single-audit-reports
+    issue: QP-FIN-2026-AUDIT-001
+    check_event: posted federal compliance report
+  - id: pueblo-west-financials
+    url: https://www.pueblowestmetro.us/548/Budget-and-Annual-Financial-Reports
+    issue: QP-REGION-2026-ENTITY-SYSTEM-001
+    check_event: audit or adopted budget
+  - id: pacog-transportation
+    url: https://www.pacog.net/mpodocs
+    issue: QP-REGION-2026-ENTITY-SYSTEM-001
+    check_event: TIP amendment or obligated list
+  - id: state-audit-local-government
+    url: https://content.leg.colorado.gov/agencies/office-state-auditor/local-government
+    issue: QP-REGION-2026-ENTITY-SYSTEM-001
+    check_event: local filing status update
+safeguards:
+  - source_change_not_fact
+  - no_unreviewed_legal_conclusions
+  - never_merge_auditees
+  - no_private_data
+  - no_automatic_site_publication
+  - zero_network_activity_until_operator_activation

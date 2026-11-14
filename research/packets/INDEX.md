@@ -8,6 +8,9 @@ This index registers **research candidates**, not live website content or operat
 
 | QP-ECON-2026-ECOASIS-001 | 2026-11-10 | 2026-11-10 | [Ecoasis research packet](QP-ECON-2026-ECOASIS-001.md), [dormant signal](../signals/QP-ECON-2026-ECOASIS-001.yaml) | NEW CANDIDATE — event / entity / jobs / funds unverified; no twin activation |
 
+| QP-FIN-2026-AUDIT-001 | 2026-11-11 | 2026-11-11 | [City/County audit accountability packet](QP-FIN-2026-AUDIT-001.md) | RESEARCH DRAFT — jurisdiction-separated findings and allegation triage; no wrongdoing determination | 
+| QP-REGION-2026-ENTITY-SYSTEM-001 | 2026-11-11 | 2026-11-11 | [Regional entity/issue architecture](QP-REGION-2026-ENTITY-SYSTEM-001.md), [dormant watch candidates](../signals/QP-REGION-2026-ENTITY-SYSTEM-001.yaml) | RESEARCH DRAFT — no live model or auto-monitoring activation |
+
 ## Integration contract
 
 - **Control-plane:** existing QPueblo master evidence ledger / index registry / QIFY-QRX workbook; this page does not declare which historical artifact is canonical.
