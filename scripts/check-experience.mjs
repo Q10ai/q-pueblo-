@@ -49,7 +49,7 @@ assert(home.includes('assets/q-pueblo-header-wide.png'));
 assert.equal((read('case-library.html').match(/class="qp-exp-card"/g)||[]).length,20);
 for(const token of ['Kids','Teens','Adults','Experts'])assert(read('discover.html').includes(token));
 assert.equal((read('discover.html').match(/Question \d+ · /g)||[]).length,8);
-for(const phrase of ['not anonymous','private human consideration','not automatically'])assert(read('rumor-mill.html').toLowerCase().includes(phrase.toLowerCase()),'rumor privacy '+phrase);
+for(const phrase of ['not anonymous','private human consideration','No submission is published automatically'])assert(read('rumor-mill.html').toLowerCase().includes(phrase.toLowerCase()),'rumor privacy '+phrase);
 assert(read('rumor-mill.html').includes('mailto:Q10pueblo@gmail.com'));
 assert(read('rumor-mill.html').includes('no submission is published automatically') || read('rumor-mill.html').includes('No submission is published automatically'));
 assert(read('connections.js').includes('credentials:\'same-origin\''));
