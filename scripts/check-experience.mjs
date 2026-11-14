@@ -30,7 +30,7 @@ for(const name of names){
  assert(/<html\s+lang="en"/.test(html),name+' lang');
  assert(/<main\s+id="main"/.test(html),name+' main');
  assert(html.includes('class="skip-to"'),name+' skip');
- assert(html.includes('assets/q-pueblo-header-wide.png'),name+' brand preservation');
+ assert(html.includes('assets/pueblo-mark.webp'),name+' brand preservation');
  assert(html.includes('href="launch-system.css"') && (name==='index.html'||html.includes('href="experience.css"')),name+' styles');
  assert(!/\/docs\/q10\//.test(html),name+' private docs route');
  assert(!/API_KEY|sk-proj-|-----BEGIN PRIVATE KEY-----/.test(html),name+' secrets');
@@ -44,9 +44,16 @@ for(const name of names){
 const home=read('index.html');
 for(const p of ['now.html','discover.html','rumor-mill.html','ai-learn.html','areas.html','connections.html','rx.html','twin.html','exit.html','case-library.html'])assert(home.includes('href="'+p+'"'),'home missing '+p);
 for(const old of ['reports.html','issues.html','packets.html','qify.html','q-tools.html','participate.html'])assert(home.includes('href="'+old+'"'),'old site feature lost '+old);
-assert(home.includes('174')&&home.includes('14')&&home.includes('141'),'original baseline changed');
-assert(home.includes('assets/q-pueblo-header-wide.png'));
-assert.equal((read('case-library.html').match(/class="qp-exp-card"/g)||[]).length,20);
+assert.equal(JSON.parse(read('data/q-pueblo-issue-index-2026-11-09.json')).issues.length,174);
+const featured=JSON.parse(read('data/qp-featured-reads-2026-11-14.json')).reads;
+assert.equal(featured.length,20);assert.equal(featured.filter(r=>r.type==='analysis').length,14);assert.equal(featured.filter(r=>r.type==='case_summary').length,6);assert.equal(new Set(featured.map(r=>r.artIndex)).size,20);
+assert.equal((home.match(/class="qp-art-card qp-entry-card"/g)||[]).length,12);assert.equal((home.match(/data-featured-topic=/g)||[]).length,20);
+let prev=-1;for(const id of ['what-is-q','what-is-qpueblo','entryways','search-pueblo','featured-papers','updates-and-future']){const at=home.indexOf('id="'+id+'"');assert(at>prev,'Homepage order: '+id);prev=at;}
+const rslugs=new Set(JSON.parse(read('data/q-pueblo-qified-reports-v2-2026-11-09.json')).reports.map(r=>r.slug));const cslugs=new Set(JSON.parse(read('data/q-pueblo-public-case-summaries.json')).caseSummaries.map(r=>r.slug));for(const r of featured){assert((r.type==='analysis'?rslugs:cslugs).has(r.slug),'Featured read not grounded: '+r.slug);assert(home.includes('data-featured-topic="'+r.slug+'"'));}
+for(const f of ['pueblo-riverwalk-hero.webp','pueblo-riverwalk-hero-mobile.webp','pueblo-mark.webp','pueblo-entry-art.webp','pueblo-report-art.webp']){const b=fs.readFileSync(path.join(base,'assets',f));assert(b.length>1000&&b.toString('ascii',0,4)==='RIFF'&&b.toString('ascii',8,12)==='WEBP',f);}
+function checkPublic(dir){for(const ent of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,ent.name);if(ent.isDirectory())checkPublic(p);else if(/\.(html|js|json|md)$/i.test(p)){const s=fs.readFileSync(p,'utf8');assert(!/gamma\.app\/docs\/|docs\/q10\/|research\/pueblo\/|projects\/pueblo\/|Q10\/Public_Web_Fabric\/|(?:docs|drive)\.google\.com|q10-core\/(?:blob|tree)\/|-----BEGIN (?:RSA |EC )?PRIVATE KEY-----/i.test(s),'Private locator: '+p);}}}checkPublic(base);
+assert(home.includes('assets/pueblo-riverwalk-hero.webp'));
+assert.equal((read('case-library.html').match(/class="qp-art-card qp-case-lead"/g)||[]).length,20);
 for(const token of ['Kids','Teens','Adults','Experts'])assert(read('discover.html').includes(token));
 assert.equal((read('discover.html').match(/Question \d+ · /g)||[]).length,8);
 for(const phrase of ['not anonymous','private human consideration','No submission is published automatically'])assert(read('rumor-mill.html').toLowerCase().includes(phrase.toLowerCase()),'rumor privacy '+phrase);

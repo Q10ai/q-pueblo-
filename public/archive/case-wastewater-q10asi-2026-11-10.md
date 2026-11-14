@@ -1,6 +1,6 @@
-# Historical public case capture
+# Public case summary — dated reading copy
 
-Captured from https://q10asi.com/projects/q-pueblo/issues/case-wastewater/ on November 10, 2026. This captures the published case summary, not a new verification of its facts or a complete research packet. Original evidence dates and review limits remain in force.
+Captured from https://q10asi.com/projects/q-pueblo/issues/case-wastewater/ on November 10, 2026. This reading copy omits internal file locators; the original public sources and dated relationship statements are retained. It is not a new verification or complete research paper. Original evidence dates and review limits remain in force.
 
 ---
 
@@ -24,20 +24,20 @@ Which dated records establish each role, money state, dependency and outcome?
 
 | Entity or label | Recorded relationship | Evidence and time |
 | --- | --- | --- |
-| [City of Pueblo](https://q10asi.com/projects/q-pueblo/entities/ent-1d07f2b59d68/) <br>Named label — aliases and consequential roles need confirmation | Municipal system research<br>Historical Q interpretation — refresh required | docs/q10/q-pueblo/forensics/2026-09-03/pueblo-sewage/QPUEBLO\_ARKANSAS\_SEWAGE\_EVIDENCE\_LEDGER\_v1.0.json<br>As of: 2026-09-03 |
-| [City of Pueblo Wastewater Department](https://q10asi.com/projects/q-pueblo/entities/ent-2bf079571fbe/) <br>Named label — aliases and consequential roles need confirmation | Operator role to confirm<br>Historical Q interpretation — refresh required | docs/q10/q-pueblo/forensics/2026-09-03/pueblo-sewage/QPUEBLO\_ARKANSAS\_SEWAGE\_EVIDENCE\_LEDGER\_v1.0.json<br>As of: 2026-09-03 |
-| [City of Pueblo Stormwater Utility](https://q10asi.com/projects/q-pueblo/entities/ent-9ffdc1de3253/) <br>Named label — aliases and consequential roles need confirmation | Conveyance role to confirm<br>Historical Q interpretation — refresh required | docs/q10/q-pueblo/forensics/2026-09-03/pueblo-sewage/QPUEBLO\_ARKANSAS\_SEWAGE\_EVIDENCE\_LEDGER\_v1.0.json<br>As of: 2026-09-03 |
-| [Colorado Department of Public Health and Environment](https://q10asi.com/projects/q-pueblo/entities/ent-c88e6d5dc564/) <br>Named label — aliases and consequential roles need confirmation | Regulatory/public-health role to confirm<br>Historical Q interpretation — refresh required | docs/q10/q-pueblo/forensics/2026-09-03/pueblo-sewage/QPUEBLO\_ARKANSAS\_SEWAGE\_EVIDENCE\_LEDGER\_v1.0.json<br>As of: 2026-09-03 |
+| [City of Pueblo](https://q10asi.com/projects/q-pueblo/entities/ent-1d07f2b59d68/)  · Named label — aliases and consequential roles need confirmation | Municipal system research · Historical Q interpretation — refresh required | Dated research record · As of: 2026-09-03 |
+| [City of Pueblo Wastewater Department](https://q10asi.com/projects/q-pueblo/entities/ent-2bf079571fbe/)  · Named label — aliases and consequential roles need confirmation | Operator role to confirm · Historical Q interpretation — refresh required | Dated research record · As of: 2026-09-03 |
+| [City of Pueblo Stormwater Utility](https://q10asi.com/projects/q-pueblo/entities/ent-9ffdc1de3253/)  · Named label — aliases and consequential roles need confirmation | Conveyance role to confirm · Historical Q interpretation — refresh required | Dated research record · As of: 2026-09-03 |
+| [Colorado Department of Public Health and Environment](https://q10asi.com/projects/q-pueblo/entities/ent-c88e6d5dc564/)  · Named label — aliases and consequential roles need confirmation | Regulatory/public-health role to confirm · Historical Q interpretation — refresh required | Dated research record · As of: 2026-09-03 |
 
 Associations recorded for CASE-WASTEWATER
 
 ## Evidence behind the record
 
-Origindocs/q10/q-pueblo/forensics/2026-09-03/pueblo-sewage/QPUEBLO\_ARKANSAS\_SEWAGE\_EVIDENCE\_LEDGER\_v1.0.jsonRecord date2026-09-03Underlying source dateMissing — do not treat this as currentEarlier status labelControlled case research — source label, not a new verificationOriginal source locatorNot supplied for this public summary; primary-source recovery is required.
+Research record dated 2026-09-03. Underlying source date: Missing — do not treat this as current. Check the original public sources before relying on this case.
 
-### Earlier case source shelf
+### Original public source links
 
-These are locators preserved in the historical case file, not a new verification.
+These are the public sources associated with the dated case. Check their latest versions.
 
 - [Inspect case source 1](https://www.pueblo.us/m/newsflash/home/detail/4990)
 - [Inspect case source 2](https://www.pueblo.us/m/newsflash/home/detail/4960)
@@ -46,11 +46,11 @@ These are locators preserved in the historical case file, not a new verification
 - [Inspect case source 5](https://echo.epa.gov/)
 - [Inspect case source 6](https://theprowersjournal.com/2026/09/from-prowers-county-public-health-and-environment-update-regarding-the-recent-pueblo-wastewater-spill/)
 
-## What would resolve it?
+## Questions still to resolve
 
 Operator and asset records; Incident logs and validated samples; Current public-health guidance and corrective-action closeout
 
-**Next step:** Refresh primary records; confirm each relationship and distinguish plans from delivered results
+**Next step:** Check current primary records; distinguish plans from delivered results.
 
 ## Options to evaluate
 

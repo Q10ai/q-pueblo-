@@ -1,0 +1,62 @@
+{
+  "schema": "qp-public-case-summaries-v1",
+  "asOf": "2026-11-10",
+  "caseSummaries": [
+    {
+      "slug": "case-fiber",
+      "title": "Fiber access: ownership, permits and service",
+      "url": "https://q10asi.com/projects/q-pueblo/issues/case-fiber/",
+      "captured": "2026-11-10",
+      "localDownload": "archive/case-fiber-q10asi-2026-11-10.md"
+    },
+    {
+      "slug": "case-library-ai",
+      "title": "Library AI: contracts, privacy, costs and useful outcomes",
+      "url": "https://q10asi.com/projects/q-pueblo/issues/case-library-ai/",
+      "captured": "2026-11-10",
+      "localDownload": "archive/case-library-ai-q10asi-2026-11-10.md"
+    },
+    {
+      "slug": "case-library-finance",
+      "title": "Library finance: audited records, services and facility use",
+      "url": "https://q10asi.com/projects/q-pueblo/issues/case-library-finance/",
+      "captured": "2026-11-10",
+      "localDownload": "archive/case-library-finance-q10asi-2026-11-10.md"
+    },
+    {
+      "slug": "case-rail",
+      "title": "Passenger rail: station plans, owners and service commitments",
+      "url": "https://q10asi.com/projects/q-pueblo/issues/case-rail/",
+      "captured": "2026-11-10",
+      "localDownload": "archive/case-rail-q10asi-2026-11-10.md"
+    },
+    {
+      "slug": "case-rail-fire",
+      "title": "Railroad-tie fire: evidence, material and jurisdiction questions",
+      "url": "https://q10asi.com/projects/q-pueblo/issues/case-rail-fire/",
+      "captured": "2026-11-10",
+      "localDownload": "archive/case-rail-fire-q10asi-2026-11-10.md"
+    },
+    {
+      "slug": "case-school-governance",
+      "title": "School authorization and governance: roles and public records",
+      "url": "https://q10asi.com/projects/q-pueblo/issues/case-school-governance/",
+      "captured": "2026-11-10",
+      "localDownload": "archive/case-school-governance-q10asi-2026-11-10.md"
+    },
+    {
+      "slug": "case-trail",
+      "title": "Connecting Communities: trail funding and delivery",
+      "url": "https://q10asi.com/projects/q-pueblo/issues/case-trail/",
+      "captured": "2026-11-10",
+      "localDownload": "archive/case-trail-q10asi-2026-11-10.md"
+    },
+    {
+      "slug": "case-wastewater",
+      "title": "Wastewater: incident, repair and public-health clearance",
+      "url": "https://q10asi.com/projects/q-pueblo/issues/case-wastewater/",
+      "captured": "2026-11-10",
+      "localDownload": "archive/case-wastewater-q10asi-2026-11-10.md"
+    }
+  ]
+}

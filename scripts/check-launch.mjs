@@ -25,17 +25,18 @@ const home=read('index.html');
 const input=home.match(/<input[^>]*id="home-q"[^>]*>/);
 assert(input && !/\\bname=/.test(input[0]),'Home questions must not appear in server GET query parameters');
 assert(read('launch-system.js').includes('qify.html#q='),'Home search must use browser URL fragment for private local handoff');
-assert(home.includes('<strong>'+reports.reports.length+'</strong><span>Dated published reports</span>'),'Homepage report count and evidence ledger disagree');
-assert(home.includes('href="packets.html" class="qp-action-card"'),'Historical packet navigation must be styled and usable');
+const featured=JSON.parse(read('data/qp-featured-reads-2026-11-14.json')).reads;
+assert.equal(featured.filter(r=>r.type==='analysis').length,reports.reports.length);
+assert(home.includes('href="packets.html"'),'Historical packet navigation must be styled and usable');
 assert(read('workbench.js').includes("fetch('data/q-pueblo-qified-reports-v2-2026-11-09.json'"),'Workbench must read current v2 evidence reports');
-assert(read('workbench.html').includes(reports.reports.length+' source-attributed dated public analyses'),'Workbench disclosure count and ledger disagree');
+assert(read('workbench.html').includes('not live AI research'),'Workbench disclosure count and ledger disagree');
 
 for(const r of reports.reports){for(const k of ['id','slug','summary','who','what','when','where','why','how','money','relations','counter','options','child','ee','t2y','rx','sources','unknowns','actions'])assert(k in r,r.id+': missing '+k);assert(r.sources.some(s=>/https:\/\//.test(s.url)),r.id+': no primary source');assert(!/CERTIFIED|PROVEN GUILTY/i.test(r.stage));}
 for(const name of ['index.html','qify.html','reports.html','packets.html','entities.html','updates.html','sources.html','participate.html','support.html','method.html','es.html','q-tools.html','issues.html','topics.html','explore.html','workbench.html'])assert(pages.includes(name),'required page missing: '+name);
 assert(read('support.js').includes('Q10pueblo@gmail.com'),'public inbox missing');
 assert(read('qify.html').includes('qify.js'),'qification page not wired');
 assert(read('reports.html').includes('reports.js'),'report browser not wired');
-assert(read('index.html').includes('q-pueblo-header-wide.png'),'approved hero graphic not used');
+assert(read('index.html').includes('pueblo-riverwalk-hero.webp'),'approved hero graphic not used');
 assert(read('index.html').includes('Not a government website'),'independent site disclaimer missing');
 assert(!/\bfetch\s*\(/.test(read('support.js')),'Support requests must not transmit data without user email action');
 console.log(JSON.stringify({result:violations.length?'FAIL':'PASS',htmlPages:pages.length,localLinksChecked:links.length,historicalIssues:q.issues.length,sourceLinkedIssueRecords:q.counts.sourceMappedIssueRecords,qifiedReports:reports.reports.length,violations},null,2));

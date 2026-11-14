@@ -12,7 +12,7 @@ assert.equal(json.issues.filter(x=>x.sourceIds.length).length,json.counts.source
 assert.equal(json.issues.filter(x=>!x.sourceIds.length).length,json.counts.unmappedIssueRecords);
 assert.equal(json.issues.length,174,'Snapshot denominator changed; reconcile provenance and regen page before proceeding');
 assert.equal(json.coverageCandidates.length,12);
-assert.equal((html.match(/class="issue" id="/g)||[]).length,json.issues.length,'Static issue details incomplete');
+assert.equal((html.match(/<details\b[^>]*class="issue"[^>]*\bid="/g)||[]).length,json.issues.length,'Static issue details incomplete');
 assert.equal(csv.split(/\r?\n/).filter(Boolean).length,json.issues.length+1,'CSV row count mismatch');
 for(const i of json.issues){
  assert(html.includes(`id="${i.id}"`),'No deep link for '+i.id);
@@ -22,5 +22,5 @@ for(const i of json.issues){
 assert(home.includes('href="issues.html"'),'Missing homepage issue-index link');
 assert(explorer.includes('href="issues.html"'),'Missing explorer index link');
 assert(html.includes('not a verified current finding'),'No provisional status label');
-assert(html.includes('not</strong> added to the 174'),'No candidate exclusion disclaimer');
+assert(html.includes('Suggested coverage topics are not separate verified issues.'),'No candidate exclusion disclaimer');
 console.log('Q Pueblo issues index: PASS; source mapped '+json.counts.sourceMappedIssueRecords+'; unmapped '+json.counts.unmappedIssueRecords+'; candidate staging '+json.coverageCandidates.length);

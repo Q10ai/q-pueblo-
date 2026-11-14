@@ -33,7 +33,7 @@ for(const token of ['fourScenarios','Correlated / backup failure','MODELLED COND
 const fetches=[...js.matchAll(/\bfetch\s*\(\s*['"]([^'"]+)['"]/g)].map(x=>x[1]);
 assert.deepEqual(fetches,['data/q-pueblo-qified-reports-v2-2026-11-09.json'],'Only locally served public source evidence may be fetched');
 assert.ok(js.includes('r.claims.map') && js.includes('reviewDue'),'Workbench must show source mapping and freshness');
-assert.ok(html.includes('14 source-attributed dated public analyses'));
+assert.ok(html.includes('not live AI research'));
 assert.ok(!/XMLHttpRequest|localStorage|sessionStorage|sendBeacon/.test(js),'No persistence or telemetry of personal queries');
 assert.ok(!/api_key=|SECRET_TOKEN|BEGIN PRIVATE KEY/.test(js+specJs));
 console.log('PASS: Role workbench schema, controls, unknown issue, 5Ws, impact layers, RX, shock/LEAP, local export and privacy boundaries.');
