@@ -11,7 +11,7 @@
   {id:'RX',label:'RX challenge and counterevidence',owner:'RX Council',fields:['counter','rx']},
   {id:'EE_INTEL',label:'Minimum-sufficient intelligence/resource analysis',owner:'EE_INTEL',fields:['ee']},
   {id:'EH_EVID',label:'Evidence Health',owner:'EH_EVID',fields:['sourceChecked','reviewDue']},
-  {id:'EH_CONS',label:'Consequence/authority gate',owner:'EH_CONS',fields:[]},
+  {id:'EH_CONS',label:'Event Horizons — thresholds, consequences, irreversible decisions and cascading effects',owner:'EH_CONS',fields:['qification.temporal.future','qification.shock','rx']},
   {id:'T2Y',label:'Truth-to-Yield assessment',owner:'T2Y',fields:['t2y']},
   {id:'LEAP',label:'Alternative options and future branches',owner:'LEAP',fields:['options','qification.alternatives']},
   {id:'TSLP',label:'Simulation, red-team and learning receipts',owner:'TSLP',fields:[]},
@@ -39,7 +39,8 @@
     if(l.id==='T2Y'&&found.length)state='PREPARED_NARRATIVE_NO_SCORE_VALIDATION';
     if(l.id==='SUPRA'&&found.length)state='PREPARED_POSSIBILITY_ANALYSIS_NOT_ENGINE_EXECUTION';
     if(l.id==='LEAP'&&found.length)state='PREPARED_OPTIONS_NOT_SIMULATED';
-    if(l.id==='EH_CONS'||l.id==='TSLP'||l.id==='HUMAN_GATE')state='NOT_EVALUATED_HERE';
+    if(l.id==='EH_CONS')state=found.length?'PREPARED_EVENT_HORIZONS_NARRATIVE_NO_GATE_EXECUTION':'NOT_EVALUATED_HERE';
+    if(l.id==='TSLP'||l.id==='HUMAN_GATE')state='NOT_EVALUATED_HERE';
     return {id:l.id,label:l.label,owner:l.owner,state,availableFields:found,engineRan:false};
    }),
    limitations:[
