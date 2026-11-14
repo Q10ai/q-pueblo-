@@ -92,7 +92,7 @@ assert(unknownQ.insights.every(x=>x.state==='NOT_YET_EVIDENCED'&&x.answer.length
 const clientQ=readFileSync('public/qify.js','utf8');
 assert(clientQ.includes('window.QPNative.derive(exact)'));
 assert(clientQ.includes('What Q found beyond the question'));
-assert(clientQ.includes('qPanel+sectionsPanel'));
+assert(clientQ.includes('qPanel+methodPanel+suitePanel+sectionsPanel'),'Q-native, method, suite and detailed evidence sections remain visible');
 assert(clientQ.includes('packet.qNative.insights'));
 assert(readFileSync('public/qify.html','utf8').includes('src="q-native.js"'));
 console.log('PASS Q-native: nine extra substantive answer dimensions including Event Horizons, uncertainty and export boundaries.');
