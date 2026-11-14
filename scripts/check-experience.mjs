@@ -42,6 +42,9 @@ for(const name of names){
  }
 }
 const home=read('index.html');
+assert(home.includes('<h2>Get to Know Pueblo</h2>'),'Approved public entryway heading missing');
+assert(!home.includes('One Network. Twelve ways to explore.'),'Retired entryway wording');
+assert(home.includes('As Pueblo evolves in the age of AI'),'Future-oriented invitation missing');
 for(const p of ['now.html','discover.html','rumor-mill.html','ai-learn.html','areas.html','connections.html','rx.html','twin.html','exit.html','case-library.html'])assert(home.includes('href="'+p+'"'),'home missing '+p);
 for(const old of ['reports.html','issues.html','packets.html','qify.html','q-tools.html','participate.html'])assert(home.includes('href="'+old+'"'),'old site feature lost '+old);
 assert.equal(JSON.parse(read('data/q-pueblo-issue-index-2026-11-09.json')).issues.length,174);
