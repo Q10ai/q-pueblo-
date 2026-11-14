@@ -25,6 +25,8 @@ jobs:
           node --check public/legacy-shell.js
           node --check public/q-tools-view.js
           node --check scripts/civic-source-watch.mjs
+          node --check public/connections.js
+          node scripts/check-experience.mjs
           node scripts/check-launch.mjs
           node scripts/check-release-parity.mjs
           node --check scripts/check-legacy-navigation.mjs
