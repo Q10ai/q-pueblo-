@@ -17,6 +17,7 @@
   $('report-links').innerHTML=reports.map(r=>{const a=artwork[r.slug];return '<button type="button" class="qp-art-card qp-paper-card" data-report="'+core.esc(r.slug)+'" aria-pressed="false">'+(a?'<div class="qp-report-art art-report-'+a.n+'" aria-hidden="true"></div>':'')+'<div class="qp-art-caption"><strong>'+core.esc(a?.t||r.title)+'</strong><span>'+core.esc(a?.d||r.topic)+'</span></div></button>'}).join('');
   $('report-links').addEventListener('click',e=>{const b=e.target.closest('[data-report]');if(b)render(reports.find(r=>r.slug===b.dataset.report),true);});
   render(reports.find(r=>r.slug===new URLSearchParams(location.search).get('report'))||reports[0]);
+  if(location.hash==='#original-sources')document.getElementById('original-sources')?.scrollIntoView({block:'start'});
   $('report-download').addEventListener('click',()=>core.download('q-pueblo-'+current.slug+'.md',core.markdown(current),'text/markdown;charset=utf-8'));
   $('report-json').addEventListener('click',()=>core.download('q-pueblo-'+current.slug+'.json',JSON.stringify({schema:data.schema,report:current},null,2),'application/json;charset=utf-8'));
   $('report-records').addEventListener('click',()=>core.download('q-pueblo-'+current.slug+'-records-draft.txt',core.requestDraft(current),'text/plain;charset=utf-8'));
