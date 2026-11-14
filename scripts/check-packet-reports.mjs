@@ -62,3 +62,9 @@ for(const r of current.reports.slice(14)){assert.equal(core.coverage40(r).length
 assert(core.coverage40(current.reports.find(r=>r.slug==='food-assistance'))[34].answer.includes('1-877-644-3663'));
 for(const name of ['qify.js','reports.js','workbench.js','evidence-desk.js','home-search.js','governance-index.js'])assert(read(name).includes('data/qp-current-reports.json'),name+' current edition missing');
 console.log('PASS current 18-report edition, 14 originals unchanged, four public-source additions and shared reader routes');
+
+for(const r of current.reports){const out=core.render(r);assert(core.story(r).length>=3,r.slug+' missing authored story');assert(out.includes('class="qp-story"'));assert(out.indexOf('class="qp-story"')<out.indexOf('id="coverage-40"'));assert(out.includes('<details class="qp40 qp-report-popout" id="coverage-40">'));assert(!out.includes('LOW SPECIFICITY GROUP/HUB'));assert(core.markdown(r).includes(core.story(r)[0][1]));}
+assert(read('public-experience.css').includes('.qp-v3 .qp-report-detail .qp-report-popout{background:#edf3f3;color:#142b3d'));
+assert(!read('connections.js').includes('Next: obtain actual governing instrument'));
+assert(!read('connections.js').includes('https://q10asi.com/projects/q-pueblo/issues/'));
+console.log('PASS 18 authored narratives, collapsed 40-point coverage, explicit readable report theme, local connection navigation');

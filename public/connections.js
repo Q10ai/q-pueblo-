@@ -18,12 +18,12 @@ try{
  const hubs=new Set([...byEntity].filter(([id,ids])=>ids.size>25||entities.get(id)?.identity_state.startsWith('Unresolved group')).map(([id])=>id));
  select.replaceChildren(node('option','Choose one of '+d.coverage.issues+' public issue records'));
  select.firstChild.value='';
- for(const i of d.issues.slice().sort((a,b)=>a.title.localeCompare(b.title))){const option=node('option',i.title+' ['+i.id+']');option.value=i.id;select.append(option)}
+ for(const i of d.issues.slice().sort((a,b)=>a.title.localeCompare(b.title))){const option=node('option',i.title);option.value=i.id;select.append(option)}
  const getHash=()=>{const m=window.location.hash.match(/^#issue=(.+)$/);if(m)return decodeURIComponent(m[1]);return new URLSearchParams(window.location.search).get('issue')};
  function section(title,subtitle,rows,format){
-  const s=node('section');s.append(node('h3',title),node('p',subtitle));
-  if(!rows.length){s.append(node('p','No source-associated records for this step. An evidence gap is not proof of absence.'));return s}
-  const details=node('details'),sum=node('summary',rows.length+' paths · open complete list');details.append(sum);
+  const s=node('section');s.append(node('h3',title));if(subtitle)s.append(node('p',subtitle));
+  if(!rows.length)return null;
+  const details=node('details'),sum=node('summary',rows.length+' related records');details.append(sum);
   const ul=node('ul');for(const x of rows){const li=node('li');format(li,x);ul.append(li)}details.append(ul);s.append(details);return s;
  }
  function render(){
@@ -41,29 +41,30 @@ try{
   const activePeers=peer.filter(x=>broad||x.specific).sort((a,b)=>a.record.title.localeCompare(b.record.title));
   const activeThird=[...third.values()].filter(x=>x.entity&&(broad||x.specific)).sort((a,b)=>a.entity.name.localeCompare(b.entity.name));
   result.append(node('h2',i.title));
-  result.append(node('p','Source classification: '+i.kind+' · '+i.state+' · Date: '+(i.source_date||'not confirmed')));
-  result.append(node('p','Questions to resolve: '+(i.needed||'Source date, authority and material role require rechecking.')));
-  status.textContent=direct.length+' direct labels; '+peer.length+' two-hop issue associations ('+activePeers.length+' displayed); '+third.size+' third-hop entity labels ('+activeThird.length+' displayed). Common institutional hubs are context, not authority.';
-  if(i.source_url){result.append(link('Original source lead ↗',i.source_url))}
-  result.append(section('1 · Direct entity labels','A recorded name or role is not evidence of funding, control, culpability or an executed agreement.',direct,(li,x)=>{
-    li.append(node('strong',x.entity.name+' · '));
-    li.append(node('span',x.entity.identity_state+(x.broad?' · LOW SPECIFICITY GROUP/HUB':'')));
-    li.append(node('p',x.role+' · '+x.state));
-  }));
-  result.append(section('2 · Other issues sharing a label','Specific paths first; the broad government/group option may connect otherwise unrelated topics.',activePeers,(li,x)=>{
-    li.append(link(x.record.title,'https://q10asi.com/projects/q-pueblo/issues/'+encodeURIComponent(x.record.id)+'/'));
-    li.append(node('p','Via: '+x.via.map(e=>e.entity.name+(e.broad?' [hub]':'')).join('; ')));
-  }));
-  result.append(section('3 · Additional entities appearing on those issues','These are discovery candidates only, not a causal supply-chain or responsibility map.',activeThird,(li,x)=>{
+  const recordDate=i.source_date?'Source date: '+i.source_date+'. ':'';
+  result.append(node('p',recordDate+'These names appear in the dated research index. Their appearance does not establish responsibility or control.'));
+  status.textContent=direct.length?direct.length+' recorded names for this topic.':'No documented organization links for this topic yet.';
+  if(i.source_url)result.append(link('Original source',i.source_url));
+  const push=s=>{if(s)result.append(s)};
+  push(section('Organizations named in the records','',direct,(li,x)=>{
     li.append(node('strong',x.entity.name));
-    li.append(node('p',x.entity.identity_state+' · Found via '+x.via.size+' related issue(s)'));
+    li.append(node('p',x.entity.identity_state.startsWith('Unresolved group')?'Grouped name; individual organization not identified.':'Named in the dated index.'));
+    li.append(link('Explore organization','governance-entities.html#'+encodeURIComponent(x.entity_id)));
   }));
-  const footer=node('p','Next: obtain actual governing instrument, contract, funding ledger, permits, operator records and dated before/after impacts to establish directed roles.');
-  result.append(footer);
+  push(section('Related topics','These topics share named organizations; that does not establish a direct cause.',activePeers,(li,x)=>{
+    li.append(link(x.record.title,'connections.html?issue='+encodeURIComponent(x.record.id)));
+    li.append(node('p','Shared names: '+x.via.map(e=>e.entity.name).join('; ')));
+  }));
+  push(section('Other named organizations','Indirect associations, not a finding of authority.',activeThird,(li,x)=>{
+    li.append(link(x.entity.name,'governance-entities.html#'+encodeURIComponent(x.entity.id)));
+  }));
+  if(!direct.length)result.append(node('p','We do not yet have enough verified information to explain who is involved in this exact issue.'));
+  result.append(link('Read the available research stories','reports.html'),node('p','For documented roles and relationships, use the entity index.'),link('Explore the entity index','governance-entities.html'));
+
  }
  select.addEventListener('change',()=>{if(select.value)window.location.hash='issue='+encodeURIComponent(select.value);render()});
  mode.addEventListener('change',render);
  window.addEventListener('hashchange',()=>{const id=getHash();if(id&&issues.has(id)){select.value=id;render()}});
  const fromURL=getHash();if(fromURL&&issues.has(fromURL)){select.value=fromURL;render()}else{status.textContent='Explore '+d.coverage.issues+' issues, '+d.coverage.entity_labels+' labels. Choose an issue to trace.'}
-}catch(err){status.textContent='This local graph cannot be loaded at the moment.';result.replaceChildren(node('p','The regular issue and institution directories still work.'));result.append(link('Open the underlying Q10ASI public issue index','https://q10asi.com/projects/q-pueblo/issues/'))}
+}catch(err){status.textContent='This local graph cannot be loaded at the moment.';result.replaceChildren(node('p','The regular issue and institution directories still work.'));result.append(link('Browse Pueblo topics','governance-topics.html'))}
 })();
