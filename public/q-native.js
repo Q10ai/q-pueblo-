@@ -32,6 +32,10 @@
    r?.child, q.childImpact&&typeof q.childImpact==='object'?q.childImpact.present:null,
    q.childImpact&&typeof q.childImpact==='object'?q.childImpact.future:null
   ],'PREPARED_CONDITIONAL_IMPACT');
+  add('event_horizons','What Event Horizons could change the options or create points of no return?',[
+   q.temporal&&typeof q.temporal==='object'?q.temporal.future:null,
+   q.shock, r?.rx
+  ],'PREPARED_CONDITIONAL_EVENT_HORIZONS_ANALYSIS');
   add('failure','How might this fail under stress or produce an unintended effect?',[
    q.shock,r?.rx
   ],'CONDITIONAL_STRESS_AND_REVERSIBILITY');
