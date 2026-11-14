@@ -1,0 +1,297 @@
+{
+  "schema_version": "1.0.0",
+  "artifact": "QP-WHATS-HAPPENING-001",
+  "edition": "2026-11-13",
+  "timezone": "America/Denver",
+  "state": "PRIVATE_REVIEW_CANDIDATE_NOT_PUBLISHED",
+  "as_of": "2026-11-13",
+  "next_weekly_editorial_target": "2026-11-20",
+  "verified_custody": "Primary official public sites checked for listed facts; decisions, agendas and outcome completeness NOT independently verified",
+  "controls": {
+    "human_release_required": true,
+    "never_infer_vote_from_agenda": true,
+    "never_infer_disbursement_from_budget": true,
+    "expired_is_stale_not_deleted": true,
+    "no_auto_publish": true,
+    "meeting_details_must_be_rechecked": true,
+    "community_safety_notices_do_not_wait_for_weekly_cycle": true,
+    "action_links_are_official_sources_not_automated_submissions": true
+  },
+  "ttl_profiles": {
+    "meeting_notice": {
+      "rule": "same-day recheck through meeting, followed by minute/record reconciliation",
+      "source_contract": "Q-PUEBLO-TEMPORAL-EVIDENCE-001"
+    },
+    "budget_active": {
+      "rule": "7 days during budget/appropriation cycles; verify at every material decision"
+    },
+    "incident": {
+      "rule": "5-60 minutes while active; 6-24 hours post stabilization (this edition has no live emergency feed)"
+    },
+    "election": {
+      "rule": "24 hours near votes/deadlines"
+    },
+    "historical": {
+      "rule": "retain permanently with provenance, check metadata annually"
+    },
+    "weekly_digest": {
+      "rule": "editorial refresh targeted every Friday; TTLs for individual items override newsletter cadence"
+    }
+  },
+  "records": [
+    {
+      "id": "council-nov23",
+      "lane": "upcoming",
+      "status": "MEETING_LISTED_AGENDA_ITEMS_NOT_VERIFIED",
+      "heading": "City Council regular meeting",
+      "agency": "City of Pueblo",
+      "event_date": "2026-11-23",
+      "display_when": "Monday, November 23, 2026 · check official page for start and participation details",
+      "what": "The City lists a November 23 Council meeting; its official on-demand portal also lists a regular session. This record does not confirm the final agenda, any proposed ordinance, or a vote.",
+      "why": "Residents can check the posted packet, agenda revisions, livestream and subsequent minutes before interpreting a decision.",
+      "before": "Read the official agenda when posted, identify agenda item IDs, ask about public-comment procedures and submit questions by any posted deadline.",
+      "after": "Reconcile the video, final minutes, voting record, ordinance versions, contracts and implementation updates. Do not count first readings as final passage.",
+      "source": [
+        {
+          "title": "City of Pueblo official calendar",
+          "url": "https://www.pueblo.us/",
+          "tier": "A2"
+        },
+        {
+          "title": "Official Council on-demand meeting archive",
+          "url": "https://pueblo.granicus.com/ViewPublisher.php?view_id=4",
+          "tier": "A1"
+        }
+      ],
+      "issue_ids": [
+        "reg-014"
+      ],
+      "entities": [
+        "City Council",
+        "City of Pueblo"
+      ],
+      "last_checked": "2026-11-13",
+      "recheck_by": "2026-11-20",
+      "ttl": "MEETING_SAME_DAY",
+      "uncertainty": "Detailed agenda, exact start time, public comment procedure and votes not verified by this brief."
+    },
+    {
+      "id": "water-board-nov17",
+      "lane": "upcoming",
+      "status": "OFFICIAL_MEETING_NOTICE",
+      "heading": "Pueblo Water Board meeting",
+      "agency": "Board of Water Works of Pueblo",
+      "event_date": "2026-11-17",
+      "display_when": "Tuesday, November 17, 2026 · 2:00 p.m.",
+      "what": "Pueblo Water’s official board page lists a monthly meeting at the Alan Hamel Administration Building, 319 W. 4th Street, third floor.",
+      "why": "Water supply, infrastructure and governance decisions can affect households, rates, projects and long-term capacity, but this notice does not establish an agenda item.",
+      "before": "Check for the specific agenda and meeting participation details. Prepare a source-backed question about a water issue that affects you.",
+      "after": "Look for minutes and adopted decisions; follow up on any documented utility project and its implementation stage.",
+      "source": [
+        {
+          "title": "Pueblo Water — Our Board",
+          "url": "https://pueblowater.org/our-board/",
+          "tier": "A2"
+        }
+      ],
+      "issue_ids": [
+        "infr-002",
+        "env-001"
+      ],
+      "entities": [
+        "Pueblo Water"
+      ],
+      "last_checked": "2026-11-13",
+      "recheck_by": "2026-11-16",
+      "ttl": "MEETING_SAME_DAY",
+      "uncertainty": "Agenda topics and decisions not verified. Linked issue records are contextual, not confirmed meeting items."
+    },
+    {
+      "id": "crime-victim-board-nov17",
+      "lane": "upcoming",
+      "status": "OFFICIAL_MEETING_NOTICE",
+      "heading": "10th Judicial District Crime Victim Compensation Board",
+      "agency": "Pueblo County calendar / 10th Judicial District",
+      "event_date": "2026-11-17",
+      "display_when": "Tuesday, November 17, 2026 · 9:30 a.m.",
+      "what": "The Pueblo County events calendar lists a meeting at 701 Court Street, Gus Sandstrom Conference Room.",
+      "why": "Provides a way to find official public meeting information; do not infer that any individual case or private victim record is public.",
+      "before": "Use the public notice and agenda for the exact scope; do not submit private victim details to Q Pueblo.",
+      "after": "Check only released public governance materials, keeping protected cases and individuals out of the index.",
+      "source": [
+        {
+          "title": "Pueblo County official events calendar",
+          "url": "https://pueblocounty.gov/view/calendar_events",
+          "tier": "A2"
+        }
+      ],
+      "issue_ids": [],
+      "entities": [
+        "Pueblo County"
+      ],
+      "last_checked": "2026-11-13",
+      "recheck_by": "2026-11-16",
+      "ttl": "MEETING_SAME_DAY",
+      "uncertainty": "This digest does not certify meeting outcome or access to confidential case information."
+    },
+    {
+      "id": "county-hearing-cancelled",
+      "lane": "change",
+      "status": "CANCELLED_OFFICIAL_NOTICE",
+      "heading": "County hearing officer meeting cancelled",
+      "agency": "Pueblo County",
+      "event_date": "2026-11-18",
+      "display_when": "Wednesday, November 18, 2026 · previously listed at 6:00 p.m.",
+      "what": "The County’s official calendar marks the liquor and marijuana hearing officer meeting CANCELLED. This is a cancellation notice, not a meeting invitation.",
+      "why": "A changed schedule matters when people plan travel, comments or evidence submissions.",
+      "before": "Do not rely on an older listing. Check the County calendar for a replacement date and relevant licensing process.",
+      "after": "Follow the official page for any rescheduling; don't invent a new hearing date.",
+      "source": [
+        {
+          "title": "Pueblo County official events calendar (cancellation)",
+          "url": "https://pueblocounty.gov/view/calendar_events",
+          "tier": "A2"
+        }
+      ],
+      "issue_ids": [],
+      "entities": [
+        "Pueblo County"
+      ],
+      "last_checked": "2026-11-13",
+      "recheck_by": "2026-11-17",
+      "ttl": "MEETING_SAME_DAY",
+      "uncertainty": "Any rescheduled date is unknown."
+    },
+    {
+      "id": "city-budget-2027",
+      "lane": "research_watch",
+      "status": "PROPOSED_DOCUMENT_LISTED_OUTCOME_OPEN",
+      "heading": "2027 City budget: follow proposal versus adoption",
+      "agency": "City of Pueblo Finance Department",
+      "event_date": null,
+      "display_when": "Active budget watch · next official document check by November 20, 2026",
+      "what": "The City Finance Department lists its 2027 Proposed Budget. This is an official document source for studying the proposal; this digest does not certify an adopted 2027 budget or changed line items.",
+      "why": "Residents can compare proposed spending, restricted funding, revenue assumptions, staffing, reserves and any subsequent adopted revisions.",
+      "before": "Retrieve the actual proposed tables and amendments; identify public hearing and comment procedures from current official meeting notices.",
+      "after": "Compare legally adopted final amounts, amendments, implementation and reconciled payments. Preserve different fiscal years.",
+      "source": [
+        {
+          "title": "City Finance Department — 2027 Proposed Budget",
+          "url": "https://www.pueblo.us/92/Finance",
+          "tier": "A2"
+        }
+      ],
+      "issue_ids": [
+        "fisc-002"
+      ],
+      "entities": [
+        "City of Pueblo"
+      ],
+      "last_checked": "2026-11-13",
+      "recheck_by": "2026-11-20",
+      "ttl": "BUDGET_ACTIVE_7_DAYS",
+      "uncertainty": "The linked FISC-002 index concerns 2026 fiscal pressures and is contextual, not identical to the 2027 proposal."
+    },
+    {
+      "id": "council-nov9-follow-up",
+      "lane": "follow_up",
+      "status": "MEETING_ARCHIVE_AVAILABLE_OUTCOMES_REQUIRE_REVIEW",
+      "heading": "November 9 Council meeting: reconcile the record",
+      "agency": "City of Pueblo",
+      "event_date": "2026-11-09",
+      "display_when": "Follow-up on November 9, 2026 Council session",
+      "what": "The City's official on-demand archive lists an agenda and a recorded November 9 regular session. The digest has not independently extracted or adjudicated every vote.",
+      "why": "This is the point to compare published agenda items with actual votes, final instruments and implementation responsibility.",
+      "before": "Use item IDs and original agenda language rather than a paraphrase alone.",
+      "after": "Check the recording, signed final instruments, updated minutes, amendments and future re-reads. Mark still-pending items accordingly.",
+      "source": [
+        {
+          "title": "Official Pueblo Council on-demand archive",
+          "url": "https://pueblo.granicus.com/ViewPublisher.php?view_id=4",
+          "tier": "A1"
+        }
+      ],
+      "issue_ids": [
+        "reg-014",
+        "reg-001"
+      ],
+      "entities": [
+        "City Council"
+      ],
+      "last_checked": "2026-11-13",
+      "recheck_by": "2026-11-20",
+      "ttl": "DECISION_SAME_DAY_UNTIL_RECONCILED",
+      "uncertainty": "Not a vote ledger. All claimed outcomes require item-level verification."
+    },
+    {
+      "id": "pura-nov10-follow-up",
+      "lane": "follow_up",
+      "status": "AGENDA_AVAILABLE_MINUTES_NOT_RECONCILED",
+      "heading": "PURA November 10 meeting: look for actions and minutes",
+      "agency": "Pueblo Urban Renewal Authority",
+      "event_date": "2026-11-10",
+      "display_when": "Follow-up on November 10, 2026 board meeting",
+      "what": "PURA's official minutes-and-agendas page lists the November 10, 2026 board meeting book and agenda-setting materials.",
+      "why": "Urban renewal agreements, projects and financial commitments require documentation of what was considered and what was actually adopted.",
+      "before": "Read the meeting book and identify agenda references; distinguish presentations from authorizations.",
+      "after": "Look for posted minutes, recorded votes, executed agreements, and funding milestones; do not presume an outcome from the meeting book.",
+      "source": [
+        {
+          "title": "PURA official minutes and agendas",
+          "url": "https://puebloura.org/about/minutes-agendas/",
+          "tier": "A1"
+        }
+      ],
+      "issue_ids": [
+        "reg-014"
+      ],
+      "entities": [
+        "Pueblo Urban Renewal Authority"
+      ],
+      "last_checked": "2026-11-13",
+      "recheck_by": "2026-11-20",
+      "ttl": "DECISION_SAME_DAY_UNTIL_RECONCILED",
+      "uncertainty": "Vote results and current project state not confirmed by this specific official-source check."
+    },
+    {
+      "id": "county-next-schedule",
+      "lane": "research_watch",
+      "status": "NEXT_SCHEDULE_REQUIRES_SOURCE",
+      "heading": "Next Pueblo County commissioners schedule",
+      "agency": "Pueblo County",
+      "event_date": null,
+      "display_when": "Weekly schedule and agendas · check the latest official posting",
+      "what": "The County publishes commissioner schedules and links to an official civic agenda portal. The last sourced weekly schedule in this edition covers November 9–13, not the following week.",
+      "why": "Meetings, land use sessions and public participation details can change by week.",
+      "before": "Obtain the new weekly schedule from the County and the controlling item agenda before making travel or comment plans.",
+      "after": "Compare posted actions and minutes with any funding, permitting or land-use decisions.",
+      "source": [
+        {
+          "title": "County official events and meeting notices",
+          "url": "https://pueblocounty.gov/view/calendar_events",
+          "tier": "A2"
+        },
+        {
+          "title": "Pueblo County official CivicClerk agenda portal",
+          "url": "https://pueblococo.portal.civicclerk.com/",
+          "tier": "A1"
+        }
+      ],
+      "issue_ids": [],
+      "entities": [
+        "Pueblo County"
+      ],
+      "last_checked": "2026-11-13",
+      "recheck_by": "2026-11-16",
+      "ttl": "WEEKLY_SCHEDULE",
+      "uncertainty": "No following-week calendar times are asserted by this source snapshot."
+    }
+  ],
+  "publication_policy": {
+    "allowed": "source-linked and human-approved public review edition only",
+    "not_allowed": "automated public posting, auto-commenting, representing agendas as votes, sending notifications without consent or asserting unverified attendance/decision deadlines"
+  },
+  "source_role_policy": "A1 original agendas/recordings, A2 official notice or department page, C independent reporting as discovery lead only",
+  "issued_by": "Q Pueblo independent research candidate, not affiliated with governing entities",
+  "project_scope": "Standalone Q-Pueblo public beta cross-reference; no fresh re-verification beyond dated edition"
+}
