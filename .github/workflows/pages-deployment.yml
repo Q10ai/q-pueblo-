@@ -1,0 +1,136 @@
+name: Q-Pueblo Cloudflare Pages deployment
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/**'
+      - '.github/workflows/pages-deployment.yml'
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'public/**'
+      - '.github/workflows/pages-deployment.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate the public static release
+        shell: bash
+        run: |
+          set -euo pipefail
+          bash -n scripts/check-live-parity.sh
+          for f in public/*.js public/data/*.js scripts/check-*.mjs; do node --check "$f"; done
+          for check in public-release public-catalog issue-index topic-nav support-inquiries workbench q-tools qify evidence-desk packet-reports launch experience release-parity legacy-navigation; do
+            node "scripts/check-$check.mjs"
+          done
+          grep -q '"autonomous_public_research_agents":false' public/api/v1/capabilities.json
+          grep -q '"server_side_contribution_intake":false' public/api/v1/capabilities.json
+          grep -q 'contributions_enabled: false' functions/api/v1/config.js
+          grep -q 'Content-Security-Policy' public/_headers
+          test ! -e .env && test ! -e .dev.vars
+          # No symlinks, executable Workers, credentials or private folders in the deployed tree.
+          test -z "$(find public -type l -print)"
+          test -z "$(find public \( -name '.env*' -o -name '.dev.vars*' -o -name '.git' -o -name '_worker.js' -o -name 'functions' -o -name '*.pem' -o -name '*.key' -o -name 'wrangler.toml' -o -name 'wrangler.json*' \) -print)"
+      - name: Stage approved public assets
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/qpueblo-release"
+          cp -a public/. "$RUNNER_TEMP/qpueblo-release/"
+          python - <<'PY'
+          import os,json,pathlib
+          root=pathlib.Path(os.environ['RUNNER_TEMP'])/'qpueblo-release'
+          manifest=json.loads((root/'release-manifest.json').read_text())
+          (root/'deployment-revision.json').write_text(json.dumps({'repository':'Q10ai/q-pueblo-','commit':os.environ['GITHUB_SHA'],'releaseId':manifest['releaseId'],'target':'qpueblo'},indent=2)+'\n')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        with:
+          name: qpueblo-validated-pages
+          path: ${{ runner.temp }}/qpueblo-release/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 14
+  deploy:
+    if: github.repository == 'Q10ai/q-pueblo-' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    concurrency:
+      group: qpueblo-pages-production
+      cancel-in-progress: false
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/download-artifact@v4
+        with:
+          name: qpueblo-validated-pages
+          path: ${{ runner.temp }}/qpueblo-publish/site
+      - name: Install pinned Cloudflare Wrangler without deployment secrets
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm install --prefix "$RUNNER_TEMP/qpueblo-wrangler" --no-audit --no-fund wrangler@4.160.1
+          "$RUNNER_TEMP/qpueblo-wrangler/node_modules/.bin/wrangler" --version
+      - name: Confirm exact approved revision and static-only deployment boundary
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP/qpueblo-publish"
+          test -s site/index.html
+          test -s site/_headers
+          test ! -e functions
+          test ! -e site/_worker.js
+          python - <<'PY'
+          import os,json,urllib.request
+          receipt=json.load(open('site/deployment-revision.json'))
+          assert receipt['commit']==os.environ['GITHUB_SHA']
+          assert receipt['target']=='qpueblo'
+          req=urllib.request.Request('https://api.github.com/repos/Q10ai/q-pueblo-/branches/main',headers={'User-Agent':'qpueblo-release-guard'})
+          with urllib.request.urlopen(req,timeout=20) as response:
+              assert json.load(response)['commit']['sha']==receipt['commit'], 'A newer main revision exists; refusing stale deployment'
+          PY
+      - name: Deploy only to existing qpueblo Pages project
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          WRANGLER_SEND_METRICS: 'false'
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "$CLOUDFLARE_API_TOKEN" || -z "$CLOUDFLARE_ACCOUNT_ID" ]]; then
+            echo "::error::Required Cloudflare repository secrets are missing (values never printed)."
+            exit 1
+          fi
+          cd "$RUNNER_TEMP/qpueblo-publish"
+          "$RUNNER_TEMP/qpueblo-wrangler/node_modules/.bin/wrangler" pages deploy site --project-name=qpueblo --branch=main --commit-hash="$GITHUB_SHA"
+      - name: Confirm exact production revision and new routes
+        shell: bash
+        run: |
+          set -euo pipefail
+          base=https://qpueblo.pages.dev
+          for attempt in 1 2 3 4 5 6; do
+            if curl -fsSL --max-time 15 -H 'Cache-Control: no-cache' "$base/deployment-revision.json?sha=$GITHUB_SHA" -o "$RUNNER_TEMP/qpueblo-revision.json" && python -c 'import json,os; d=json.load(open(os.path.join(os.environ["RUNNER_TEMP"],"qpueblo-revision.json"))); assert d["commit"]==os.environ["GITHUB_SHA"] and d["target"]=="qpueblo"' 2>/dev/null; then
+              break
+            fi
+            if [[ "$attempt" == 6 ]]; then echo "::error::Production revision not confirmed"; exit 1; fi
+            sleep 5
+          done
+          for route in index.html now.html connections.html discover.html rumor-mill.html ai-learn.html reports.html q-tools.html release-check.html; do
+            curl -fsSL --max-time 20 "$base/$route?sha=$GITHUB_SHA" -o "$RUNNER_TEMP/qpueblo-route.html"
+            test -s "$RUNNER_TEMP/qpueblo-route.html"
+            ! grep -qi '<title>Page not found' "$RUNNER_TEMP/qpueblo-route.html" || exit 1
+            echo "PASS: $route"
+          done
+          echo "Production revision confirmed: $GITHUB_SHA"
