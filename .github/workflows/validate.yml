@@ -29,6 +29,7 @@ jobs:
           node --check public/q-processing-trace.js
           node --check public/q-suite-registry.js
           node --check public/q-crossovers.js
+          node --check public/q-universal-scope.js
           node --check scripts/check-universal-query.mjs
           node --check public/report-core.js
           node --check public/reports.js
