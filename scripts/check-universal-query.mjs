@@ -155,3 +155,34 @@ assert(page.indexOf('crossoverPanel+\x27<p><a href=')>page.indexOf('Related date
 assert(page.includes('packet.crossovers.crossovers.map'));
 assert(htmlPage.indexOf('src="q-crossovers.js"')<htmlPage.indexOf('src="qify.js"'));
 console.log('PASS Qified full-scope crossovers and 23 suite pointer records across all prepared reports.');
+
+
+vm.runInNewContext(readFileSync('public/q-universal-scope.js','utf8'),context,{timeout:3000});
+const U=context.window.QPUniversalScope;
+const street=U.create({question:'Who maintains the streetlight on my block?'});
+const dc=U.create({question:'What impacts could a proposed data center have?'});
+assert.equal(street.assetKind,'streetlight');
+assert.equal(dc.assetKind,'data_center');
+assert.equal(street.qificationStarted,true);assert.equal(dc.qificationStarted,true);
+assert.equal(street.fullQifiedVerified,false);assert.equal(dc.fullQifiedVerified,false);
+assert.equal(street.liveResearchPerformed,false);assert.equal(dc.liveResearchPerformed,false);
+assert.equal(street.recommendedDepth,'BASELINE_PENDING_RISK_ASSESSMENT');
+assert.equal(dc.recommendedDepth,'BASELINE_PENDING_RISK_ASSESSMENT');
+assert(street.dimensions.some(s=>s.includes('Children')));
+assert(dc.dimensions.some(s=>s.includes('Children')));
+assert.equal(JSON.stringify(street.alwaysRequired),JSON.stringify(dc.alwaysRequired),'Safety/Child Zero/T2Y/EH/crossovers obligations cannot be omitted by asset size');
+assert(street.alwaysRequired.some(x=>x.id==='EVENT_HORIZONS'));
+assert(street.alwaysRequired.some(x=>x.id==='CHILD_ZERO'));
+assert(dc.alwaysRequired.some(x=>x.id==='EE_INTEL_T2Y'));
+const hazardousStreet=U.create({question:'Streetlight by a school with a documented electrical hazard',assetKind:'streetlight',riskEvidence:['life_safety','child_or_dependent_impact']});
+assert.equal(hazardousStreet.recommendedDepth,'HEIGHTENED_REVIEW_CANDIDATE');
+assert.equal(hazardousStreet.sourceVerifiedRisk,false,'Even supplied risk evidence has not passed intake verification');
+const questionedDataCenter=U.create({question:'data center in an environmental controversy',reportedRisk:['unrecoverable_environmental_harm']});
+assert.equal(questionedDataCenter.riskStatus,'UNVERIFIED_RISK_SIGNAL');
+assert.equal(questionedDataCenter.sourceVerifiedRisk,false);
+assert.equal(U.create({question:'what is being repaired?'}).assetKind,'GENERAL_UNRESOLVED_SCOPE');
+const finalQify=readFileSync('public/qify.js','utf8');
+assert(finalQify.includes('window.QPUniversalScope.create({question})'));
+assert(finalQify.includes('packet.scope.alwaysRequired.map'));
+assert(readFileSync('public/qify.html','utf8').includes('src="q-universal-scope.js"'));
+console.log('PASS Qification by default: streetlight/data center symmetry, elevated hazard review, no fabricated risk verification.');
