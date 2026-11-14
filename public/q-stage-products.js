@@ -44,7 +44,7 @@
   const actions=flatten(r?.actions);
   const cross=Array.isArray(crossovers?.crossovers)?crossovers.crossovers:[];
   const preparation=[
-   {id:'NOW',label:'What can be done with today's evidence',items:actions.slice(0,3),basis:'Prior report suggestions, not completed actions'},
+   {id:'NOW',label:"What can be done with today\'s evidence",items:actions.slice(0,3),basis:'Prior report suggestions, not completed actions'},
    {id:'CHANGE',label:'Developments to watch and verify',items:reopen.slice(0,5),basis:'Existing report recheck triggers; no monitoring is active'},
    {id:'FUTURE',label:'Conditional future and resilience',items:flatten([q?.temporal?.future,q?.shock]),basis:'Scenarios, not calibrated predictions or probabilities'},
    {id:'ALTERNATIVES',label:'Fallback choices and tradeoffs',items:alternatives.slice(0,3),basis:'Prepared options, not authorization or economic superiority'}
