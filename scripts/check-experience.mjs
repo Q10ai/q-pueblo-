@@ -67,3 +67,34 @@ assert(!/localStorage|sessionStorage|document\.cookie|sendBeacon|analytics/.test
 assert(read('twin.html').includes('not a live city control system'));
 assert(read('exit.html').includes('does not provide user accounts'));
 console.log('QP_PUB_EXPERIENCE_CHECK=PASS; '+names.length+' pages; graph 211/56/456; 20 case leads; eight weekly notices; baseline 174/14 retained');
+
+const {default:vm}=await import('node:vm');
+const ctx={window:{},URL,Date};vm.runInNewContext(read('governance-index-core.js'),ctx);
+const gc=ctx.window.QPGovernance;
+const settings=JSON.parse(read('data/qp-governance-index-input-v1.json'));
+const legacy=JSON.parse(read('data/q-pueblo-issue-index-2026-11-09.json'));
+const papers=JSON.parse(read('data/q-pueblo-qified-reports-v2-2026-11-09.json')).reports;
+const model=gc.build(legacy,graph,papers,settings);
+assert.equal(model.featured.length,150);assert.equal(model.allTopics.length,174);
+assert.equal(model.entities.length,graph.entities.length+settings.additions.length);
+assert.equal(new Set(model.entities.map(e=>e.id)).size,model.entities.length);
+assert(model.featured.every(e=>!settings.excludeFromFeatured.includes(e.id)));
+for(const e of model.entities)for(const direction of ['up','down'])for(const p of model.paths(e.id,direction,3)){assert(p.depth<=3&&p.depth>=1);assert(p.path.every(x=>x.boundary&&x.report&&x.sourceIds.length));}
+assert.equal(gc.freshness({observedAt:'2026-11-14T12:00:00Z',recheckBy:'2026-11-14T13:00:00Z'},new Date('2026-11-14T13:00:00Z')),'RECHECK_DUE');
+assert.equal(gc.freshness({observedAt:'bad',recheckBy:'2026-11-14T13:00:00Z'},new Date('2026-11-14T12:10:00Z')),'INVALID_OR_UNVERIFIED');
+assert(home.includes('href="governance-entities.html"')&&home.includes('href="governance-topics.html"'));
+console.log('PASS two governance indexes, 150 topic selection, 174 original records, evidence-linked directional paths, freshness fail-closed');
+
+assert.equal(model.updates.length,3);
+assert(model.updates.every(u=>u.sources.every(s=>/^https:\/\//.test(s.url))));
+assert.equal(model.dateReview(model.updates[0],'2026-11-14'),'DATED_UPDATE');
+assert.equal(model.dateReview(model.updates[0],'2026-11-15'),'RECHECK_DUE');
+assert.equal(model.dateReview(model.updates[0],'2026-11-13'),'REVIEW_REQUIRED');
+assert(model.allTopics.find(t=>t.id==='REG-071').updates.some(u=>u.status==='UNOFFICIAL_UPDATE'));
+assert(model.allTopics.find(t=>t.id==='REG-069').updates.some(u=>u.status==='PROPOSAL_LISTED'));
+assert(model.allTopics.every(t=>t.reviewStatus));
+assert(read('governance-topics.html').includes('Dated findings within review window'));
+assert(read('now.html').includes('November 13 unofficial results update'));
+console.log('PASS dated election/budget updates and review-window expiry; no historical lead promoted to a current fact');
+
+assert(model.updates[0].figures.some(f=>f.label==='Reported voters cast'&&f.value.includes('69,917')));assert(!model.allTopics.find(i=>i.id==='QRX-REG-071-05').updates.length);assert(model.allTopics.find(i=>i.id==='QRX-REG-071-05').relatedUpdates.length);assert(!model.allTopics.find(i=>i.id==='REG-049').updates.length);console.log('PASS scoped evidence updates, related versus directly checked topic separation');
