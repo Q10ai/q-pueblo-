@@ -26,6 +26,7 @@ jobs:
           node --check public/knowledge-query.js
           node --check public/answer-coverage.js
           node --check public/q-native.js
+          node --check public/q-processing-trace.js
           node --check scripts/check-universal-query.mjs
           node --check public/report-core.js
           node --check public/reports.js
