@@ -1,0 +1,89 @@
+name: Q-Pueblo controlled Cloudflare Pages release
+
+# Intentionally no push, pull_request, or schedule triggers.
+# Must be merged/reviewed and manually dispatched from main.
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: "Preview first; production requires additional owner approval."
+        type: choice
+        options:
+          - preview
+          - production
+        required: true
+      expected_sha:
+        description: "Full 40-character reviewed main commit SHA to deploy (must match HEAD)."
+        required: true
+        type: string
+      confirmation:
+        description: "Enter QP_PREVIEW or QP_PRODUCTION exactly for the selected target."
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: qpueblo-${{ inputs.target }}
+      url: ${{ steps.publish.outputs.deployment-url }}
+    concurrency:
+      group: qpueblo-pages-${{ inputs.target }}
+      cancel-in-progress: false
+    steps:
+      - name: Checkout reviewed main
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Validate explicit release scope and source assets
+        id: guard
+        shell: bash
+        env:
+          EXPECTED_SHA: ${{ inputs.expected_sha }}
+          CONFIRMATION: ${{ inputs.confirmation }}
+          TARGET: ${{ inputs.target }}
+        run: |
+          set -euo pipefail
+          ACTUAL_SHA="$(git rev-parse HEAD)"
+          [[ "$EXPECTED_SHA" =~ ^[0-9a-f]{40}$ ]] || { echo "::error::Expected a full lowercase commit SHA"; exit 1; }
+          [[ "$ACTUAL_SHA" == "$EXPECTED_SHA" ]] || { echo "::error::Current main differs from the explicitly reviewed commit; abort"; exit 1; }
+          case "$TARGET" in
+            preview)
+              [[ "$CONFIRMATION" == "QP_PREVIEW" ]] || { echo "::error::Preview confirmation missing"; exit 1; }
+              DEPLOY_BRANCH="qp-controlled-review"
+              ;;
+            production)
+              [[ "$CONFIRMATION" == "QP_PRODUCTION" ]] || { echo "::error::Production confirmation missing"; exit 1; }
+              DEPLOY_BRANCH="main"
+              ;;
+            *) exit 1 ;;
+          esac
+          for asset in index.html explore.html q-tools.html reports.html release-check.html; do
+            test -s "public/$asset" || { echo "::error::Missing or empty required public/$asset"; exit 1; }
+          done
+          # This workflow is only for vetted static assets, NOT any runtime/agent activation.
+          test ! -e "public/_worker.js" || { echo "::error::Worker runtime found; separate security review required"; exit 1; }
+          test ! -d "functions" || { echo "::error::Pages Functions found; separate security review required"; exit 1; }
+          echo "deploy_branch=$DEPLOY_BRANCH" >> "$GITHUB_OUTPUT"
+          echo "Reviewed source SHA: $ACTUAL_SHA"
+          echo "Target: $TARGET; project: qpueblo; assets: public/"
+
+      - name: Upload controlled static asset release to existing qpueblo Pages project
+        id: publish
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy public --project-name=qpueblo --branch=${{ steps.guard.outputs.deploy_branch }} --commit-hash=${{ github.sha }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Record deployment for mandatory external HTTP parity review
+        run: |
+          echo "Pages release was requested for qpueblo; successful upload is not a passed site audit." >> "$GITHUB_STEP_SUMMARY"
+          echo "Compare exact deployed URL, expected SHA, required page routes, assets, content, mobile accessibility and rollback target before publishing a release receipt." >> "$GITHUB_STEP_SUMMARY"
