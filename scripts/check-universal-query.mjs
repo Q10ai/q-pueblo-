@@ -1,0 +1,235 @@
+import assert from 'node:assert/strict';
+import vm from 'node:vm';
+import {readFileSync} from 'node:fs';
+const context={window:{},Date,Map,Object,Array,String};
+vm.runInNewContext(readFileSync('public/knowledge-query.js','utf8'),context,{timeout:3000});
+const K=context.window.QPKnowledge;
+const source={title:'Public record',url:'https://example.org/record'};
+const report={id:'RP-001',sourceChecked:'2026-11-01',reviewDue:'2026-11-10',sources:[source]};
+let item=K.compose({question:'Roads?',role:'engineer',matchedReport:report,relatedReports:[],issues:[{id:'REG-001'}],searchedAt:'2026-11-13T12:00:00Z'});
+assert.equal(item.role,'engineer');assert.equal(item.coverage,'DATED_PREPARED_ANSWER');
+assert.equal(item.freshness.state,'REVIEW_DUE');
+assert.equal(item.liveCheck.attempted,false);assert.equal(item.freshness.recheckedDuringSearch,false);
+assert.equal(item.sourceCount,1);assert.equal(item.historicalIssueIds[0],'REG-001');
+let unknown=K.compose({question:'Unindexed topic',role:'invalid',searchedAt:'2026-11-13T12:00:00Z'});
+assert.equal(unknown.role,'citizen');assert.equal(unknown.coverage,'AVAILABLE_LEADS_NO_PREPARED_ANSWER');assert.equal(unknown.freshness.state,'NO_PREPARED_MATCH');
+let diff=K.compareClaims([{id:'A',claim:'Earlier statement'}],[{id:'A',claim:'Updated statement',sources:[source]},{id:'B',claim:'New claim',sources:[{url:'javascript:alert(1)'}]}]);
+assert.equal(diff.length,2);assert.equal(diff[0].kind,'CONFLICT_OR_CORRECTION');assert.equal(diff[0].publishable,false);assert.equal(diff[0].sourced,true);
+assert.equal(diff[1].sourced,false);assert.equal(diff[1].status,'PENDING_HUMAN_REVIEW');
+assert.deepEqual(Array.from(K.compareClaims([{id:'A',claim:'Same'}],[{id:'A',claim:'Same'}])),[]);
+const html=readFileSync('public/qify.html','utf8'),client=readFileSync('public/qify.js','utf8');
+assert(html.includes('src="knowledge-query.js"')&&html.indexOf('src="knowledge-query.js"')<html.indexOf('src="qify.js"'));
+assert(html.includes('id="qify-role"'));
+assert(client.includes('QP Knowledge')||client.includes('QP Knowledge'.replace(' ','K')));
+assert(client.includes('window.QPKnowledge.compose'));
+assert(client.includes('No live source check was performed'));
+console.log('PASS universal read-only query, role view, revision gate and no false source freshness.');
+
+
+const answerScript=readFileSync('public/answer-coverage.js','utf8');
+vm.runInNewContext(answerScript,context,{timeout:3000});
+const A=context.window.QPAnswerCoverage;
+const reports=JSON.parse(readFileSync('public/data/q-pueblo-qified-reports-v2-2026-11-09.json','utf8')).reports;
+assert.equal(reports.length,14);
+for (const report of reports){
+  const resident=A.create(report,[], 'citizen');
+  const technical=A.create(report,[], 'engineer');
+  const journalism=A.create(report,[], 'journalist');
+  const sectionIds=resident.sections.map(s=>s.id);
+  for(const field of ['short','facts','who','what','when','where','why','how','money','history','entities','effects','alternatives','risks','counter','conclusions','next','unknowns','source']) assert(sectionIds.includes(field), 'Missing answer field '+report.id+': '+field);
+  assert.equal(resident.answeredCount+resident.missingCount,resident.sections.length);
+  assert(resident.answeredCount>=14,'Too few answered report facets: '+report.id);
+  assert.equal(resident.reportId,report.id);
+  assert.equal(technical.reportId,resident.reportId);
+  assert.equal(journalism.reportId,resident.reportId);
+  for(const section of resident.sections){
+    assert(section.answers.length,'Blank answer '+report.id+': '+section.id);
+    assert.equal(section.state,'ANSWERED_IN_DATED_REPORT','Missing report field '+report.id+': '+section.id);
+    const other=technical.sections.find(x=>x.id===section.id);
+    assert.equal(JSON.stringify(other.answers),JSON.stringify(section.answers),'Role changes answer content '+report.id+': '+section.id);
+  }
+  assert.equal(resident.sections.find(s=>s.id==='money').answers.length,report.money.length,'All finance stages must be shown');
+}
+const unidentified=A.create(null,[{id:'REG-001',title:'Existing historical issue',date:'2026-10-05',sources:[source]}]);
+assert.equal(unidentified.reportId,null);
+assert.equal(unidentified.sections.find(s=>s.id==='what').state,'NOT_ESTABLISHED_IN_AVAILABLE_PUBLIC_EVIDENCE');
+assert(unidentified.sections.find(s=>s.id==='facts').answers[0].includes('REG-001'));
+const changed=A.create(reports[0],[], 'engineer');
+assert.equal(changed.sections.length,A.create(reports[0],[], 'citizen').sections.length);
+assert.notEqual(changed.sections.map(x=>x.id).join(','),A.create(reports[0],[], 'citizen').sections.map(x=>x.id).join(','));
+const qify=readFileSync('public/qify.js','utf8');
+assert(qify.includes('window.QPAnswerCoverage.create'));
+assert(qify.includes('Full Qified answers by subject'));
+assert(!qify.includes('Investigation packet requirements'));
+assert(!qify.includes('Useful angles to check'));
+assert(!qify.includes('Object.entries(packet.investigation).map'));
+console.log('PASS answer-first reports: 14 records, all dimensions, financial stages, missing evidence, equal facts across roles.');
+
+
+vm.runInNewContext(readFileSync('public/q-native.js','utf8'),context,{timeout:3000});
+const Q=context.window.QPNative;
+for(const report of reports){
+ const insight=Q.derive(report);
+ assert.equal(insight.reportId,report.id);
+ assert.equal(insight.sourceChecked,report.sourceChecked);
+ assert.equal(insight.derivedNow,false,'Never falsely imply a new insight discovery');
+ assert.equal(insight.claimsIndividuallyMapped,false,'Report provenance alone is not claim-level provenance');
+ assert.equal(insight.insights.length,9,'Every report should answer Q-native extra dimensions including Event Horizons');
+ for(const x of insight.insights){
+  assert.equal(x.state,'PREVIOUSLY_PREPARED_Q_ANALYSIS', 'Missing Q-native answer on '+report.id+' '+x.id);
+  assert(x.answer.length,'No Q-native answer content');
+  assert(x.evidenceClass!== 'UNKNOWN','Missing analytical evidence class');
+  assert.equal(x.sourceScope,report.id);
+ }
+ assert(insight.insights.some(x=>x.id==='underlying'&&x.answer.some(v=>v.includes(report.qification.assessment))));
+ assert(insight.insights.some(x=>x.id==='falsification'&&x.answer.length));
+ assert(insight.insights.some(x=>x.id==='event_horizons'&&x.answer.length&&x.evidenceClass==='PREPARED_CONDITIONAL_EVENT_HORIZONS_ANALYSIS'), 'EH Event Horizons must receive substantive conditional answers');
+}
+const unknownQ=Q.derive(null);
+assert.equal(unknownQ.reportId,null);
+assert.equal(unknownQ.insights.length,9);
+assert(unknownQ.insights.every(x=>x.state==='NOT_YET_EVIDENCED'&&x.answer.length===0));
+const clientQ=readFileSync('public/qify.js','utf8');
+assert(clientQ.includes('window.QPNative.derive(exact)'));
+assert(clientQ.includes('What Q found beyond the question'));
+assert(clientQ.includes('childPanel+qPanel+leapPanel+scopePanel+methodPanel+suitePanel+sectionsPanel+processProductsPanel'),'Child Zero, Q-native, LEAP and step products are visible');
+assert(clientQ.includes('packet.qNative.insights'));
+assert(readFileSync('public/qify.html','utf8').includes('src="q-native.js"'));
+console.log('PASS Q-native: nine extra substantive answer dimensions including Event Horizons, uncertainty and export boundaries.');
+
+const traceCtx={window:{},Date,Set,Object,Array,String,Map};
+vm.runInNewContext(readFileSync('public/q-processing-trace.js','utf8'),traceCtx,{timeout:3000});
+const trace=traceCtx.window.QPProcessingTrace.trace(reports[0],'2026-11-13T10:00:00Z');
+const eh=trace.layers.find(x=>x.id==='EH_CONS'), ehealth=trace.layers.find(x=>x.id==='EH_EVID');
+assert(eh.label.includes('Event Horizons'));
+assert.equal(eh.state,'PREPARED_EVENT_HORIZONS_NARRATIVE_NO_GATE_EXECUTION');
+assert.equal(eh.engineRan,false);
+assert(ehealth.label.includes('Evidence Health'));
+assert.equal(trace.coreEnginesExecuted,false);
+console.log('PASS EH Event Horizons and EH_EVID separated; no Q10 runtime execution asserted.');
+
+
+vm.runInNewContext(readFileSync('public/q-suite-registry.js','utf8'),context,{timeout:3000});
+vm.runInNewContext(readFileSync('public/q-crossovers.js','utf8'),context,{timeout:3000});
+const SR=context.window.QPSuiteRegistry, X=context.window.QPCrossovers;
+assert(SR.catalog.length>=23,'Q10 suite catalog too narrow');
+assert.equal(SR.catalog.filter(x=>x.id==='Q10-EVENT-HORIZON').length,1);
+const coverageSet=new Set();
+for(const r of reports){
+ const roleRoute=SR.route({topic:r.topic,question:r.title,report:r});
+ const e=Q.derive(r);
+ const layer=traceCtx.window.QPProcessingTrace.trace(r,'2026-11-13T10:00:00Z');
+ const cross=X.synthesize(r,layer,e);
+ assert.equal(cross.reportId,r.id);
+ assert.equal(cross.fullQifiedVerified,false,'Partial static analysis cannot claim full Q10 maturity');
+ assert.equal(cross.reportStatus,'QIFIED_DATED_ANALYSIS_CANDIDATE_NOT_FULL_RUNTIME_CERTIFICATION');
+ assert(cross.crossoverCount>=4,'Crossover analysis should draw from existing report evidence: '+r.id);
+ assert.equal(cross.crossoverCount,cross.crossovers.length);
+ assert.equal(cross.sourceChecked,r.sourceChecked);
+ assert.equal(cross.criticalLimits.length,4);
+ for(const y of cross.crossovers){
+   coverageSet.add(y.key);
+   assert.equal(y.reportId,r.id);
+   assert.equal(y.claimLevelProvenanceVerified,false);
+   assert.equal(y.newExternalSourcesChecked,false);
+   assert(y.supportingPassages.length>=2);
+   assert(y.supportingPassages.every(z=>z.field && z.text),'Crossover must contain report passage evidence: '+r.id);
+ }
+ assert(roleRoute.modules.length>0);
+ assert(roleRoute.modules.every(m=>m.executed===false&&m.authority===false));
+ assert.equal(roleRoute.runtimeExecuted,false);
+}
+assert(coverageSet.has('authority_resource_delivery'));
+assert(coverageSet.has('time_horizon'));
+assert(coverageSet.has('option_validation'));
+const noEvidence=X.synthesize(null,traceCtx.window.QPProcessingTrace.trace(null,'2026-11-13T10:00:00Z'),Q.derive(null));
+assert.equal(noEvidence.crossoverCount,0);
+assert.equal(noEvidence.fullQifiedVerified,false);
+assert.equal(noEvidence.freshnessState,'NO_PREPARED_REPORT');
+const page=readFileSync('public/qify.js','utf8');
+const htmlPage=readFileSync('public/qify.html','utf8');
+assert(page.includes('window.QPSuiteRegistry.route'));
+assert(page.includes('window.QPCrossovers.synthesize'));
+assert(page.includes('Final Qified crossover synthesis — full-scope connections'));
+assert(page.indexOf('crossoverPanel+\x27<p><a href=')>page.indexOf('Related dated issue records'));
+assert(page.includes('packet.crossovers.crossovers.map'));
+assert(htmlPage.indexOf('src="q-crossovers.js"')<htmlPage.indexOf('src="qify.js"'));
+console.log('PASS Qified full-scope crossovers and 23 suite pointer records across all prepared reports.');
+
+
+vm.runInNewContext(readFileSync('public/q-universal-scope.js','utf8'),context,{timeout:3000});
+const U=context.window.QPUniversalScope;
+const street=U.create({question:'Who maintains the streetlight on my block?'});
+const dc=U.create({question:'What impacts could a proposed data center have?'});
+assert.equal(street.assetKind,'streetlight');
+assert.equal(dc.assetKind,'data_center');
+assert.equal(street.qificationStarted,true);assert.equal(dc.qificationStarted,true);
+assert.equal(street.fullQifiedVerified,false);assert.equal(dc.fullQifiedVerified,false);
+assert.equal(street.liveResearchPerformed,false);assert.equal(dc.liveResearchPerformed,false);
+assert.equal(street.recommendedDepth,'BASELINE_PENDING_RISK_ASSESSMENT');
+assert.equal(dc.recommendedDepth,'BASELINE_PENDING_RISK_ASSESSMENT');
+assert(street.dimensions.some(s=>s.includes('Children')));
+assert(dc.dimensions.some(s=>s.includes('Children')));
+assert.equal(JSON.stringify(street.alwaysRequired),JSON.stringify(dc.alwaysRequired),'Safety/Child Zero/T2Y/EH/crossovers obligations cannot be omitted by asset size');
+assert(street.alwaysRequired.some(x=>x.id==='EVENT_HORIZONS'));
+assert(street.alwaysRequired.some(x=>x.id==='CHILD_ZERO'));
+assert(dc.alwaysRequired.some(x=>x.id==='EE_INTEL_T2Y'));
+const hazardousStreet=U.create({question:'Streetlight by a school with a documented electrical hazard',assetKind:'streetlight',riskEvidence:['life_safety','child_or_dependent_impact']});
+assert.equal(hazardousStreet.recommendedDepth,'HEIGHTENED_REVIEW_CANDIDATE');
+assert.equal(hazardousStreet.sourceVerifiedRisk,false,'Even supplied risk evidence has not passed intake verification');
+const questionedDataCenter=U.create({question:'data center in an environmental controversy',reportedRisk:['unrecoverable_environmental_harm']});
+assert.equal(questionedDataCenter.riskStatus,'UNVERIFIED_RISK_SIGNAL');
+assert.equal(questionedDataCenter.sourceVerifiedRisk,false);
+assert.equal(U.create({question:'what is being repaired?'}).assetKind,'GENERAL_UNRESOLVED_SCOPE');
+const finalQify=readFileSync('public/qify.js','utf8');
+assert(finalQify.includes('window.QPUniversalScope.create({question})'));
+assert(finalQify.includes('packet.scope.alwaysRequired.map'));
+assert(readFileSync('public/qify.html','utf8').includes('src="q-universal-scope.js"'));
+console.log('PASS Qification by default: streetlight/data center symmetry, elevated hazard review, no fabricated risk verification.');
+
+
+vm.runInNewContext(readFileSync('public/q-stage-products.js','utf8'),context,{timeout:3000});
+const S=context.window.QPStageProducts;
+assert.equal(S.stages.length,12);
+const named=S.stages.map(x=>x.id);
+assert.equal(named[0],'ANSWER');assert.equal(named.at(-1),'CROSSOVERS');
+assert(named.includes('CHILD_ZERO')&&named.includes('LEAP')&&named.includes('EVENT_HORIZONS'));
+assert(named.includes('EE_T2Y')&&named.includes('GOVERNANCE'));
+for(const report of reports){
+ const scope=U.create({question:report.title});
+ const native=Q.derive(report);
+ const trace=traceCtx.window.QPProcessingTrace.trace(report,'2026-11-13T10:00:00Z');
+ const crossover=X.synthesize(report,trace,native);
+ const product=S.build({question:report.title,report,scope,qNative:native,crossovers:crossover,asOf:'2026-11-13T10:00:00Z'});
+ assert.equal(product.reportId,report.id);
+ assert.equal(product.productCount,12);
+ assert.equal(product.childAssurance.mandatory,true);
+ assert.equal(product.childAssurance.futureGenerationCoverage,true,'Child Zero future generations absent '+report.id);
+ assert.equal(product.childAssurance.state,'PREPARED_DATED_REPORT_CONTENT','Child Zero cannot be omitted: '+report.id);
+ assert.equal(product.leapPlan.activeMonitoring,false);
+ assert.equal(product.leapPlan.futureForecastVerified,false);
+ assert.equal(product.leapPlan.preparation.length,4);
+ assert.equal(product.fullQifiedVerified,false);
+ assert.equal(product.finalCrossover.causalityEstablished,false);
+ assert(product.stages.every(s=>s.answer.length>0),'An empty stage must say precisely what is unknown');
+ assert(product.stages.every(s=>s.executedNow===false),'Do not misrepresent prior report summaries as new core execution');
+ assert.equal(product.stages.at(-1).id,'CROSSOVERS');
+ assert(product.stages.find(s=>s.id==='LEAP').answer.some(s=>s.startsWith('CHANGE:')),'LEAP watch triggers missing '+report.id);
+}
+const emptyProduct=S.build({question:'A previously unknown streetlight question'});
+assert.equal(emptyProduct.reportId,null);
+assert.equal(emptyProduct.productCount,12);
+assert.equal(emptyProduct.childAssurance.mandatory,true);
+assert.equal(emptyProduct.childAssurance.state,'NO_EVIDENCED_ANSWER_IN_PREPARED_REPORT');
+assert.equal(emptyProduct.fullQifiedVerified,false);
+assert(emptyProduct.stages.every(s=>s.executedNow===false));
+const clientStage=readFileSync('public/qify.js','utf8');
+const htmlStage=readFileSync('public/qify.html','utf8');
+assert(clientStage.includes('window.QPStageProducts.build'));
+assert(clientStage.includes('Child Zero — children and future generations'));
+assert(clientStage.includes('LEAP — get ahead, prepare and verify'));
+assert(clientStage.includes('Qification work products — evidence, methods and outcomes at each stage'));
+assert(clientStage.includes('packet.stageProducts.stages.map'));
+assert(htmlStage.indexOf('src="q-stage-products.js"')<htmlStage.indexOf('src="qify.js"'));
+assert(clientStage.indexOf('processProductsPanel+(!loaded?')<clientStage.indexOf('crossoverPanel+\x27<p><a href='));
+console.log('PASS full Qified stage products: 12 stages, Child Zero required, LEAP prepared, crossover last, all 14 reports and unknown query.');
