@@ -19,7 +19,7 @@ try{
  select.replaceChildren(node('option','Choose one of '+d.coverage.issues+' public issue records'));
  select.firstChild.value='';
  for(const i of d.issues.slice().sort((a,b)=>a.title.localeCompare(b.title))){const option=node('option',i.title+' ['+i.id+']');option.value=i.id;select.append(option)}
- const getHash=()=>{const m=window.location.hash.match(/^#issue=(.+)$/);return m?decodeURIComponent(m[1]):null};
+ const getHash=()=>{const m=window.location.hash.match(/^#issue=(.+)$/);if(m)return decodeURIComponent(m[1]);return new URLSearchParams(window.location.search).get('issue')};
  function section(title,subtitle,rows,format){
   const s=node('section');s.append(node('h3',title),node('p',subtitle));
   if(!rows.length){s.append(node('p','No source-associated records for this step. An evidence gap is not proof of absence.'));return s}
