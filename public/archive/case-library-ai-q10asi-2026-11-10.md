@@ -14,11 +14,20 @@ CASE-LIBRARY-AI · Case research · AI governance
 
 Historical research — current evidence and independent review open
 
-## The question
+## The story
 
-Which dated records establish each role, money state, dependency and outcome?
+Pueblo City-County Library District announced a partnership with BoodleBox in its September 2026 program guide, with library staff training first and a September 22 public launch program. This is a real local example of AI literacy moving into a public institution. It does not establish that every patron receives an account or that a particular paid subscription is included.
 
-**For everyday use:** find the source, see which organizations the record names, and ask what is still unknown before sharing a claim or supporting a decision.
+BoodleBox's free Basic tier is a separate consumer option with usage limits. The library's partnership raises practical questions about training, accessibility, student and patron privacy, contract cost, retention and exit. The institution's announcement is evidence of the partnership, not independent proof of the vendor's reported resource savings or an executed contract's terms.
+
+The useful measure is whether staff and patrons can learn more safely and achieve better results with less time, energy and expense. Contract invoices, actual energy use and measured learning outcomes remain unverified.
+
+Evidence: 2026-11-14
+
+- [Library September program guide](https://www.pueblolibrary.org/sites/default/files/2026-08/2026_septembser_program_guide_20_pages.pdf)
+- [BoodleBox plans](https://boodlebox.ai/pricing)
+- [Library 2027 preliminary budget](https://www.pueblolibrary.org/sites/default/files/2026-11/2027_preliminary_budget_-_november_update.pdf)
+- [Learn and use AI in Pueblo](ai-learn.html#ai-practice)
 
 ## Who is connected to this issue?
 
@@ -51,16 +60,6 @@ These are the public sources associated with the dated case. Check their latest 
 ## Questions still to resolve
 
 Executed contract and actual invoices; Data processing, retention and exit terms; Measured staff/patron benefit, accessibility and resource use
-
-**Next step:** Check current primary records; distinguish plans from delivered results.
-
-## Options to evaluate
-
-1. Obtain the dated primary record and preserve its version.
-2. Compare what it says with the earlier record; keep contradictions visible.
-3. Ask the responsible human institution to review the evidence, alternatives and measurable outcome.
-
-These are evidence-review options, not policy, procurement or enforcement recommendations. Costs, energy demand, legal authority and implementation feasibility remain to be established.
 
 Historical role descriptions are Q research interpretations, not current legal findings or verified responsibility. No live emergency guidance, private case data or packet content is released.
 

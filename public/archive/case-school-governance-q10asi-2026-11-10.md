@@ -14,11 +14,16 @@ CASE-SCHOOL-GOVERNANCE · Case research · Education
 
 Historical research — current evidence and independent review open
 
-## The question
+## The story
 
-Which dated records establish each role, money state, dependency and outcome?
+School governance determines who authorizes a school, administers its operations, receives funds and is accountable for student services. An online school authorization can differ from a local district's responsibilities. Earlier Pueblo research identifies Riverstone Academy, Education reEnvisioned BOCES, District 70 and state education records as distinct leads.
 
-**For everyday use:** find the source, see which organizations the record names, and ask what is still unknown before sharing a claim or supporting a decision.
+The archived sources include a state announcement about transfer of online-school authorization to District 49. That announcement is not proof of a particular Pueblo school's current authorization or a finding of wrongdoing. Families need the applicable enrollment and authorizer records for the relevant school year. This case needs a fresh school-specific source review.
+
+Evidence: Historical September 2026 sources; not reverified
+
+- [Colorado Department of Education authorization announcement](https://ed.cde.state.co.us/newsbureau/newsrelease/transfer-online-schools-to-d49)
+- [Pueblo preschool enrollment story](reports.html?report=d60-preschool-2026)
 
 ## Who is connected to this issue?
 
@@ -46,16 +51,6 @@ These are the public sources associated with the dated case. Check their latest 
 ## Questions still to resolve
 
 Current authorization and governance records; Dated board actions and public filings; Qualified review of disputed questions
-
-**Next step:** Check current primary records; distinguish plans from delivered results.
-
-## Options to evaluate
-
-1. Obtain the dated primary record and preserve its version.
-2. Compare what it says with the earlier record; keep contradictions visible.
-3. Ask the responsible human institution to review the evidence, alternatives and measurable outcome.
-
-These are evidence-review options, not policy, procurement or enforcement recommendations. Costs, energy demand, legal authority and implementation feasibility remain to be established.
 
 Historical role descriptions are Q research interpretations, not current legal findings or verified responsibility. No live emergency guidance, private case data or packet content is released.
 

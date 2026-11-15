@@ -14,11 +14,16 @@ CASE-TRAIL · Case research · Transportation
 
 Historical research — current evidence and independent review open
 
-## The question
+## The story
 
-Which dated records establish each role, money state, dependency and outcome?
+Connecting Communities trail planning concerns how people might travel between neighborhoods and public destinations. The archived research identifies regional planning, City and County participation, a transportation funding record and an April 2026 design solicitation.
 
-**For everyday use:** find the source, see which organizations the record names, and ask what is still unknown before sharing a claim or supporting a decision.
+Funding announcements, design procurement and completed accessible trails are different stages. A trail can improve access to jobs, recreation and services, but actual benefits depend on the route, access points, safety, maintenance and completion. This archive does not establish final construction cost, accepted trail mileage or opening dates.
+
+Evidence: Historical September 2026 sources; not reverified
+
+- [County design solicitation (April 2026)](https://county.pueblo.org/sites/default/files/2026-04/RFQ%20No%2026-14%20-%20Design-Connecting%20Comm.%20Trails%20P-%20publish_0.pdf)
+- [Regional planning notices](https://www.pacog.net/publicnotice)
 
 ## Who is connected to this issue?
 
@@ -48,16 +53,6 @@ These are the public sources associated with the dated case. Check their latest 
 ## Questions still to resolve
 
 Award scope, match and agreements; Permits and ownership boundaries; Construction acceptance and accessibility evidence
-
-**Next step:** Check current primary records; distinguish plans from delivered results.
-
-## Options to evaluate
-
-1. Obtain the dated primary record and preserve its version.
-2. Compare what it says with the earlier record; keep contradictions visible.
-3. Ask the responsible human institution to review the evidence, alternatives and measurable outcome.
-
-These are evidence-review options, not policy, procurement or enforcement recommendations. Costs, energy demand, legal authority and implementation feasibility remain to be established.
 
 Historical role descriptions are Q research interpretations, not current legal findings or verified responsibility. No live emergency guidance, private case data or packet content is released.
 

@@ -17,10 +17,10 @@
   function localDate(now){const p=Object.fromEntries(new Intl.DateTimeFormat('en-US',{timeZone:'America/Denver',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(now).map(x=>[x.type,x.value]));return p.year+'-'+p.month+'-'+p.day}
   const asOf=localDate(new Date());
   function dateReview(u,today=asOf){if(!u||today<u.checkedDate)return 'REVIEW_REQUIRED';return today>=u.recheckDate?'RECHECK_DUE':'DATED_UPDATE'}
-  for(const i of topicById.values()){i.updates=latest.get(i.id)||[];i.relatedUpdates=updates.filter(u=>u.relatedTopicIds?.includes(i.id));i.reviewStatus=i.updates.some(u=>dateReview(u)==='DATED_UPDATE')?'DATED_UPDATE':i.updates.length?'RECHECK_DUE':i.report?(asOf>i.report.reviewDue?'RECHECK_DUE':'DATED_ANALYSIS'):'HISTORICAL_REVIEW_REQUIRED';}
+  for(const i of topicById.values()){i.updates=latest.get(i.id)||[];i.relatedUpdates=updates.filter(u=>u.relatedTopicIds?.includes(i.id));i.reviewStatus=i.updates.some(u=>dateReview(u)==='DATED_UPDATE')?'DATED_UPDATE':i.updates.length?'RECHECK_DUE':i.report?(asOf>=i.report.reviewDue?'RECHECK_DUE':'DATED_ANALYSIS'):'HISTORICAL_REVIEW_REQUIRED';}
   const rank=i=>i.reviewStatus==='DATED_UPDATE'?4:i.reviewStatus==='DATED_ANALYSIS'?3:i.reviewStatus==='RECHECK_DUE'?2:i.sourceLinked?1:0;
   const featured=eligible.slice().sort((a,b)=>rank(b)-rank(a)||String(b.lastReviewed).localeCompare(String(a.lastReviewed))).slice(0,cfg.prioritySize);
-  const graphIssues=new Map(graph.issues.map(i=>[i.id,i]));
+  const graphIssues=new Map(graph.issues.map(i=>[i.id,i]));const graphByNormalized=new Map(graph.issues.map(i=>[i.id.toLowerCase(),i]));const graphTopics=graph.issues.map(i=>({id:i.id,title:i.title,category:i.category,origin:'Dated graph record',sourceLinked:!!i.source_url,links:i.source_url?[i.source_url]:[],href:'connections.html?issue='+encodeURIComponent(i.id),reviewStatus:'HISTORICAL_REVIEW_REQUIRED',updates:[],relatedUpdates:[],entities:i.edges.map(e=>e.entity_id),reports:reports.filter(r=>r.issueIds.some(x=>x.toLowerCase()===i.id.toLowerCase()))}));for(const t of topicById.values()){const g=graphByNormalized.get(t.id.toLowerCase());t.entities=g?g.edges.map(e=>e.entity_id):[];t.reports=[...new Map([...(t.report?[t.report]:[]),...reports.filter(r=>r.issueIds.some(x=>x.toLowerCase()===t.id.toLowerCase()))].map(r=>[r.slug,r])).values()];}for(const t of [...topicById.values(),...graphTopics]){for(const r of t.reports){for(const id of cfg.reportEntities[r.slug]||[])if(!t.entities.includes(id))t.entities.push(id);}t.entities=t.entities.map(id=>byId.get(id)).filter(Boolean);}
   for(const i of graph.issues)for(const edge of i.edges){const e=byId.get(edge.entity_id);if(!e)throw Error('Unknown entity');e.issues.push({id:i.id,title:i.title,role:edge.role,state:edge.state})}
   for(const [slug,ids] of Object.entries(cfg.reportEntities)){if(!rMap.has(slug))throw Error('Unknown report');for(const id of ids){const e=byId.get(id);if(!e)throw Error('Unknown report entity');e.reports.push(rMap.get(slug))}}
   const edges=cfg.relationships;for(const e of edges){if(!byId.has(e.from)||!byId.has(e.to)||!rMap.has(e.report)||!e.boundary||!e.asOf||!e.sourceIds.length||!e.sourceIds.every(id=>rMap.get(e.report).sources.some(s=>s.id===id)))throw Error('Invalid relationship');}
@@ -35,7 +35,7 @@
    const linked=new Map();for(const i of e.issues){for(const edge of graphIssues.get(i.id)?.edges||[]){if(edge.entity_id===id)continue;if(!linked.has(edge.entity_id))linked.set(edge.entity_id,[]);linked.get(edge.entity_id).push(i.title)}}
    return [...linked].map(([k,v])=>({id:k,name:byId.get(k).name,via:[...new Set(v)]})).sort((a,b)=>a.name.localeCompare(b.name))
   }
-  return {entities:all,featured,allTopics:[...topicById.values()],graphIssues:graph.issues,paths,associations,reportBySlug:rMap,updates,dateReview};
+  return {entities:all,featured,allTopics:[...topicById.values()],graphIssues:graph.issues,graphTopics,paths,associations,reportBySlug:rMap,updates,dateReview};
  }
  function freshness(record,now=new Date()){
   const observed=Date.parse(record.observedAt),until=Date.parse(record.recheckBy);

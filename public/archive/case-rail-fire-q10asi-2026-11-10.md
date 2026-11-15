@@ -14,11 +14,16 @@ CASE-RAIL-FIRE · Case research · Environment & Water
 
 Historical research — current evidence and independent review open
 
-## The question
+## The story
 
-Which dated records establish each role, money state, dependency and outcome?
+The archived case concerns a reported September 5 railroad-tie fire in Pueblo's Midtown area. The earlier research names municipal fire and code functions along with environmental agencies. The linked September news accounts describe the incident; federal reference material explains creosote generally, not the specific materials or exposure at this site.
 
-**For everyday use:** find the source, see which organizations the record names, and ask what is still unknown before sharing a claim or supporting a decision.
+An incident, the actual composition of burning material, possible exposure, cleanup and site responsibility are different questions. The archived evidence does not establish current conditions, measured exposure, a legal violation or a responsible party. For immediate hazards, follow current official emergency and public-health notices.
+
+Evidence: Historical September 2026 sources; not reverified
+
+- [September 5 KRDO report (historical)](https://krdo.com/news/2026/09/05/large-fire-burns-railroad-ties-in-midtown-pueblo/)
+- [EPA creosote background](https://www.epa.gov/ingredients-used-pesticide-products/creosote)
 
 ## Who is connected to this issue?
 
@@ -49,16 +54,6 @@ These are the public sources associated with the dated case. Check their latest 
 ## Questions still to resolve
 
 Incident and property/custody records; Applicable material and site classifications; Validated sampling and cleanup records
-
-**Next step:** Check current primary records; distinguish plans from delivered results.
-
-## Options to evaluate
-
-1. Obtain the dated primary record and preserve its version.
-2. Compare what it says with the earlier record; keep contradictions visible.
-3. Ask the responsible human institution to review the evidence, alternatives and measurable outcome.
-
-These are evidence-review options, not policy, procurement or enforcement recommendations. Costs, energy demand, legal authority and implementation feasibility remain to be established.
 
 Historical role descriptions are Q research interpretations, not current legal findings or verified responsibility. No live emergency guidance, private case data or packet content is released.
 
