@@ -4,3 +4,19 @@ assert(m.story('REG-025').reports.some(x=>x.report.slug==='aspen-recovery-costs'
 for(const mode of ['newest','priority','evidence','indexed','title']){const result=api.order(legacy,mode);assert.equal(result.length,174);assert.equal(new Set(result.map(x=>x.id)).size,174);}
 const sorted=api.order(legacy,'newest');for(let i=1;i<sorted.length;i++)assert((sorted[i-1].evidenceDate||'')>=(sorted[i].evidenceDate||''));
 const p=api.order(legacy,'priority');assert(p[0].priority);const v=read('issue-story-view.js');assert(v.includes('No factual narrative for this exact issue'));assert(read('issue-story-core.js').includes('not proof'));assert(!/innerHTML|localStorage|sendBeacon/.test(v));for(const f of ['issues.html','governance-topics.html'])assert(read(f).includes('issue-story-sort')&&read(f).includes('issue-story-core.js'));console.log('PASS story projection coverage: '+legacy.length+' historical and '+graph.length+' graph rows; exact ID crosswalk, companion boundary, sorting and research-gap handling. No factual certification.');
+
+const issueHtml=read('issues.html');for(const id of ['issue-choice','issue-other-panel','issue-other-form','issue-other-question'])assert(issueHtml.includes('id="'+id+'"'));
+assert(issueHtml.includes('value="__other__"'));assert(issueHtml.includes('href="participate.html"'));
+class Element{constructor(){this.value='';this.hidden=false;this.children=[];this.listeners={};this.dataset={};this.textContent='';this.classList={contains:()=>false};}append(...items){this.children.push(...items)}addEventListener(k,f){this.listeners[k]=f}fire(k){this.listeners[k]?.({preventDefault(){}})}focus(){this.focused=true}querySelector(){return null}get options(){return this.children.flatMap(x=>x.children.length?x.children:[x])}}
+const elements=new Map();for(const id of ['search','category','mapped','results-status','none','issue-story-sort','issue-choice','issue-other-panel','issue-other-question','issue-other-form','reset','records','issue-story-status'])elements.set(id,new Element());
+const el=id=>elements.get(id);el('issue-other-panel').hidden=true;
+const records=l.issues.map(i=>{const e=new Element(),title=new Element(),summary=new Element();title.textContent=i.title;e.id=i.id;e.dataset={category:i.category,search:(i.id+' '+i.title).toLowerCase(),mapped:i.availableSourceUrls.length?'yes':'no'};e.classList={contains:k=>k==='issue'};e.querySelector=s=>s==='.issue-title'?title:s==='summary'?summary:null;elements.set(e.id,e);return e;});
+const location={search:'',hash:'',href:''};const fakeDoc={getElementById:id=>elements.get(id),querySelectorAll:s=>s==='.issue'?records:[],createElement:()=>new Element(),addEventListener(){}};
+vm.runInNewContext(read('issues.js'),{document:fakeDoc,window:{location,addEventListener(){}},location,URLSearchParams,fetch:()=>new Promise(()=>{}),encodeURIComponent});
+assert.equal(el('issue-choice').options.length,174);
+el('issue-choice').value='REG-025';el('issue-choice').fire('change');assert.equal(records.filter(e=>!e.hidden).length,1);assert(el('REG-025').open);
+el('issue-choice').value='__other__';el('issue-choice').fire('change');assert(!el('issue-other-panel').hidden&&el('issue-other-question').focused);
+el('issue-other-question').value='A new Pueblo issue?';el('issue-other-form').fire('submit');assert.equal(location.href,'qify.html#q=A%20new%20Pueblo%20issue%3F');
+el('reset').fire('click');assert(el('issue-other-panel').hidden);
+el('search').value='nonexistent-issue-xyz';el('search').fire('input');assert(!el('issue-other-panel').hidden);assert.equal(el('issue-other-question').value,'nonexistent-issue-xyz');
+assert(read('qify.js').includes("URLSearchParams(location.hash.slice(1)).get('q')"));console.log('PASS simulated issue chooser: 174 entries, exact selection, Other, local hash handoff, reset and no-match path.');
