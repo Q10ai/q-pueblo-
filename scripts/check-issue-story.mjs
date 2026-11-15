@@ -36,3 +36,14 @@ const hv=is.visual(r.reports.find(x=>x.slug==='half-cent-2026'));assert.equal(hv
 const broken=JSON.parse(JSON.stringify(r.reports.find(x=>x.slug==='half-cent-2026')));broken.keyFacts[0].value='$22,085,741';assert.equal(is.visual(broken),null);
 const wrongSource=JSON.parse(JSON.stringify(r.reports.find(x=>x.slug==='county-priorities-2026')));wrongSource.keyFacts[1].source='other';assert.equal(is.visual(wrongSource),null);
 assert.equal(is.visual(r.reports.find(x=>x.slug==='aspen-recovery-costs')),null);assert(read('issue-story.css').includes('prefers-reduced-motion'));assert(read('investigative-story-view.js').includes("meter.setAttribute('aria-label'"));console.log('PASS two bounded visualizations; sums, source compatibility, no automatic unrelated chart.');
+
+const financeCtx={window:{}};vm.runInNewContext(read('finance-visual-core.js'),financeCtx);const finance=financeCtx.window.QPFinanceVisual;const fv=finance.build(r.reports);assert.equal(fv.length,4);
+assert.equal(fv.find(x=>x.slug==='budget-2026').rows[2].cents,5466339900);
+assert.equal(fv.find(x=>x.slug==='half-cent-2026').total,8872721400);
+assert.equal(fv.find(x=>x.slug==='pueblo-boulevard-agenda').total,205827700);
+assert.equal(fv.find(x=>x.slug==='county-budget-2027').rows[0].cents-fv.find(x=>x.slug==='county-budget-2027').rows[1].cents,3855000000);
+const badFin=JSON.parse(JSON.stringify(r.reports));badFin.find(x=>x.slug==='pueblo-boulevard-agenda').keyFacts[0].value='$1,756,383.41';assert(!finance.build(badFin).some(x=>x.slug==='pueblo-boulevard-agenda'));
+assert.equal(finance.cents('Not established'),null);assert.equal(finance.cents('$3.25 million'),325000000);
+assert(read('index.html').includes('href="follow-money.html"><div class="qp-entry-art art-entry-2"'));
+assert(read('topics.html').includes('href="follow-money.html"'));assert(read('follow-money.html').includes('Unknown')||read('follow-money.html').includes('unknown'));assert(read('finance-visual.js').includes('aria-label'));assert(!/localStorage|sendBeacon|innerHTML/.test(read('finance-visual.js')));
+console.log('PASS financial chart recipes, exact cents, scoped sums, invalid evidence suppression and navigation.');
