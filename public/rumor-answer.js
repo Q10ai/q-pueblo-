@@ -10,7 +10,7 @@
  const bullet=(p,values)=>{const ul=add(p,'ul');for(const v of values||[])add(ul,'li',v);return ul;};
  const section=(p,title,values)=>{if(!values?.length)return;const d=add(p,'details');add(d,'summary',title);bullet(d,values);};
  const option=(parent,q,label)=>{const e=add(parent,'option',label||q);e.value=q;};
- for(const g of engine.guidance)option(preset,g.q);
+ for(const g of engine.guidance)option(preset,g.q);for(const s of window.QPStoryEditions?.edition?.stories||[])for(const q of s.questions)option(preset,q);
  const load=fetch('data/qp-current-reports.json',{cache:'no-cache',credentials:'same-origin'}).then(r=>{if(!r.ok)throw Error('library');return r.json();}).then(d=>{if(!Array.isArray(d.reports))throw Error('library');reports=d.reports;const group=add(preset,'optgroup');group.label='Dated questions from the Q research library';for(const r of reports)for(const q of r.questions||[])option(group,q);return true;}).catch(()=>false);
  preset.addEventListener('change',()=>{if(preset.value){question.value=preset.value;question.focus();}});
  question.addEventListener('input',()=>{preset.value='';});
@@ -21,7 +21,8 @@
  if(!loaded)add(result,'p','The dated report library could not load. General guidance is still available; retry to search reports.');
  add(result,'h4',a.lensTitle);add(result,'p',a.lensBoundary);
  const r=a.report;
- if(r){
+ if(a.storyEdition){result.append(window.QPIssueStoryView.narrative(a.storyEdition));}
+ else if(r){const story=window.QPInvestigativeStoryView?.render(window.QPInvestigativeStory?.project(r));if(story)result.append(story);
  add(result,'p','Dated evidence checked '+r.sourceChecked+' · Review by '+r.reviewDue+' · '+(a.freshness==='REVIEW_DUE'?'Review overdue; verify before relying on the result.':'Not a live check.'));
  add(result,'h4','What Q finds');add(result,'p',r.qification.assessment);
  section(result,'Facts and figures',(r.keyFacts||[]).map(f=>f.label+': '+f.value+' ('+f.stage+')'));
@@ -41,7 +42,7 @@
  status.textContent=a.state==='DATED_Q_ANSWER'?'Dated Q answer ready.':a.state==='GENERAL_Q_GUIDANCE'?'General Q guidance ready.':'No direct answer verified in the dated library.';
  result.focus();
  }
- async function run(){const seq=++sequence;const q=question.value.trim(),category=$('mill-category').value,lens=$('mill-lens').value;if(q.length<3||q.length>600){status.textContent='Enter a question from 3 to 600 characters.';return;}result.hidden=true;status.textContent='Checking the Q knowledge library…';const loaded=await load;if(seq!==sequence)return;try{const a=engine.assess(q,category,lens,reports,core,matcher);if(a.state==='INVALID')throw Error('input');render(a,loaded);}catch{result.replaceChildren();status.textContent='The review could not be completed. The original research library is still available.';}}
+ async function run(){const seq=++sequence;const q=question.value.trim(),category=$('mill-category').value,lens=$('mill-lens').value;if(q.length<3||q.length>600){status.textContent='Enter a question from 3 to 600 characters.';return;}result.hidden=true;status.textContent='Checking the Q knowledge library…';const loaded=await load;if(seq!==sequence)return;try{const a=engine.assess(q,category,lens,reports,core,matcher);const edition=window.QPStoryEditions?.exact(q);if(edition&&window.QPIssueStoryView&&a.state!=='INVALID'){a.state='DATED_Q_ANSWER';a.summary=edition.summary;a.storyEdition=edition;a.report=null;a.related=[];}if(a.state==='INVALID')throw Error('input');render(a,loaded);}catch{result.replaceChildren();status.textContent='The review could not be completed. The original research library is still available.';}}
  form.addEventListener('submit',e=>{e.preventDefault();run();});
  $('mill-clear').addEventListener('click',()=>{sequence++;form.reset();result.replaceChildren();result.hidden=true;status.textContent='Cleared on this page.';question.focus();});
 })();
