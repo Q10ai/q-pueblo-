@@ -1,3 +1,5 @@
+import './check-report-inventory.mjs';
+import './check-public-exposure.mjs';
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
 const root='public/';
