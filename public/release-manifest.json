@@ -32,7 +32,7 @@
     "countBoundary": "18 dated source-attributed analyses; 20 featured cards comprise 14 analyses and six separate case summaries. Not 20 completed full papers or independent audits.",
     "integratedReviewCandidate": {
       "storyFirstReportCount": 18,
-      "additionalStoryEditions": 7,
+      "additionalStoryEditions": 9,
       "heritageIntroductoryEntries": 26,
       "governanceProfiles": 11,
       "roleRows": 50,
@@ -49,7 +49,8 @@
       "toolVisuals": "Authorization/payment bars, evidence stage timeline, scenario, resource, lifecycle and EE comparisons.",
       "favicon": "Current existing header mark (assets/pueblo-mark.webp), used across all 39 public HTML pages",
       "introductorySubjectLessons": 12,
-      "learningBoundary": "Subject-first mini lessons, shared source-linked local studies, optional exercises, external provider collections; not an accredited curriculum."
+      "learningBoundary": "Subject-first mini lessons, shared source-linked local studies, optional exercises, external provider collections; not an accredited curriculum.",
+      "mobileHero": "Intrinsic artwork ratio, aligned mobile content gutters; device verification pending"
     }
   },
   "presentationUpdated": "2026-11-14"
