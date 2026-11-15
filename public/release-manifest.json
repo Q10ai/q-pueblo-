@@ -32,7 +32,7 @@
     "countBoundary": "18 dated source-attributed analyses; 20 featured cards comprise 14 analyses and six separate case summaries. Not 20 completed full papers or independent audits.",
     "integratedReviewCandidate": {
       "storyFirstReportCount": 18,
-      "additionalStoryEditions": 5,
+      "additionalStoryEditions": 7,
       "heritageIntroductoryEntries": 26,
       "governanceProfiles": 11,
       "roleRows": 50,
@@ -40,7 +40,7 @@
       "scope": "Local dated evidence and public source directories only; full archive reconciliation and human review pending",
       "naturalHeritageIntroductoryCards": 5,
       "historicalStoryEditions": 7,
-      "resourceProviderCollections": 31,
+      "resourceProviderCollections": 35,
       "resourceBoundary": "Linked public resource collections; topic associations are not claim evidence; no embedded tracking or automatic intake.",
       "derivedDiscoveries": 2,
       "additionalLearningTools": 2,
@@ -48,7 +48,7 @@
       "guidedToolBoundary": "Local goal selection, dated public examples, source and missing-data guidance, practice and professional detail; no live conversational AI.",
       "toolVisuals": "Authorization/payment bars, evidence stage timeline, scenario, resource, lifecycle and EE comparisons.",
       "favicon": "Current existing header mark (assets/pueblo-mark.webp), used across all 39 public HTML pages",
-      "introductorySubjectLessons": 11,
+      "introductorySubjectLessons": 12,
       "learningBoundary": "Subject-first mini lessons, shared source-linked local studies, optional exercises, external provider collections; not an accredited curriculum."
     }
   },
