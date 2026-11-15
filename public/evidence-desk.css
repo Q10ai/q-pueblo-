@@ -54,3 +54,6 @@ body{background:#f2f6f8;color:var(--desk-ink);font-family:system-ui,-apple-syste
 .desk-footer a{color:#c4eaff}.desk-footer p{margin:6px auto;line-height:1.5}.desk-footer small{color:#b8d0dd}
 @media(max-width:640px){.desk-hero{padding:23px 17px}.desk-section{padding:17px 15px}.desk-inputrow{grid-template-columns:1fr;gap:8px}.county-list{grid-template-columns:1fr}.desk-shortcuts a{font-size:.8rem}.budget-row-label{flex-direction:column;gap:3px}.budget-row-label span{white-space:normal}.desk-wrap{padding:12px 10px 45px}}
 @media print{.desk-shortcuts,.desk-nav,.desk-inputrow,#desk-download{display:none!important}.desk-wrap{max-width:none}.desk-section,.desk-hero{box-shadow:none;break-inside:avoid;color:#111;background:#fff;border:1px solid #999}.desk-hero h1,.desk-hero h1 em{color:#111}.desk-footer{color:#111;background:#fff}}
+
+/* Pair foregrounds with light cards independently of shared styles. */
+.desk-section{color-scheme:light;color:#152d3c}.desk-result{color:#153d54}.county-entry strong,.desk-inputrow label,.desk-section>label{color:#152d3c}.county-entry a{min-height:44px;display:inline-flex;align-items:center}.desk-section #county-match,.desk-section #county-totals{color:#152d3c}.desk-next{font-size:.85rem}
