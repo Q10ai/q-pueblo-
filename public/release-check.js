@@ -34,6 +34,8 @@
     ['rumor-mill.html', 'Rumor Mill', 'text'],
     ['learn-pueblo.html', 'Learn Pueblo', 'text'],
     ['resource-library.html', 'Resource Library', 'text'],
+    ['learning-library.html', 'Learning Library &amp; Classrooms', 'text'],
+    ['subject-learning.js', 'subject-choice', 'text'],
     ['data/qp-resource-registry.js', 'QPResource', 'text'],
     ['hot-topics.html', 'Hot Topics &amp; Continuing Stories', 'text'],
     ['who-governs.html', 'Who governs?', 'text'],
