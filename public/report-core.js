@@ -1,7 +1,7 @@
 'use strict';
 (() => {
  const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- const safeUrl = value => { try { const u = new URL(String(value)); return u.protocol === 'https:' ? u.href : null; } catch { return null; } };
+ const safeUrl = value => { const s=String(value??''); return /^https:\/\/[a-z0-9.-]+(?::[0-9]{1,5})?(?:[/?#][^\s<>"'\\\x00-\x1f\x7f]*)?$/i.test(s)?s:null; };
  const norm = value => String(value ?? '').toLowerCase().normalize('NFKD').replace(/[’']/g,'').replace(/[^a-z0-9]+/g,' ').trim();
  const stop=new Set(['the','what','does','pueblo','about','how','who','why','with','from','and','can','for','are','was','this','that','has','have','get']);
  const words = value => [...new Set(norm(value).split(' ').filter(w => w.length > 2 && !stop.has(w)))];
