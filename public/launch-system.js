@@ -4,6 +4,7 @@
  for(const logo of document.querySelectorAll('.qp-v3-wordmark img'))logo.src='assets/pueblo-emblem.svg';
  for(const favicon of document.querySelectorAll('link[rel="icon"]')){favicon.href='assets/pueblo-emblem.svg';favicon.type='image/svg+xml';}
 
+ const header=document.querySelector('.qp-v3-header');if(header&&!document.querySelector('.qp-op-notice')&&!document.querySelector('.qp-welcome-note')){const p=document.createElement('div');p.className='qp-op-notice';p.textContent='Independent research beta · Not a government service · ';const a=document.createElement('a');a.href='about.html';a.textContent='About and corrections';p.append(a);header.after(p);}
  const homeForm=document.querySelector('.qp-searchstrip form');
  if(homeForm && !homeForm.hasAttribute('data-search-mode'))homeForm.addEventListener('submit',e=>{e.preventDefault();const query=document.getElementById('home-q').value.trim();if(query)location.href='qify.html#q='+encodeURIComponent(query)});
  const caseOpen=()=>{if(!location.pathname.endsWith('packets.html'))return;try{let target=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(target?.classList.contains('qp-case-detail')){let d=target.querySelector('details');if(d)d.open=true}}catch{}};caseOpen();window.addEventListener('hashchange',caseOpen);
