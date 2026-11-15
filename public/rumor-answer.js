@@ -4,6 +4,7 @@
  const form=$('mill-form'),question=$('mill-question'),preset=$('mill-example'),result=$('mill-result'),status=$('mill-status');
  if(!form||!engine||!core||!matcher)return;
  let reports=[],sequence=0;
+ $('mill-submit').disabled=false;status.textContent='Ready. Enter your own question or select a dated example.';
  const add=(parent,tag,txt)=>{const e=document.createElement(tag);if(txt!==undefined)e.textContent=String(txt);parent.append(e);return e;};
  const link=(parent,label,url)=>{const a=add(parent,'a',label);a.href=url;return a;};
  const bullet=(p,values)=>{const ul=add(p,'ul');for(const v of values||[])add(ul,'li',v);return ul;};
