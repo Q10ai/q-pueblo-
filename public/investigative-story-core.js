@@ -25,7 +25,7 @@
  {heading:'What the options are',paragraphs:lines(q.assessment,r.rx,r.options),reasoning:lines(q.reasoning),options:(q.alternatives||[]).map(a=>({option:a.option,tradeoff:a.tradeoff,verification:a.verification,owner:a.owner}))},
  {heading:'What to watch next',paragraphs:lines(t.present,t.future,q.shock,r.actions),unknowns:lines(r.unknowns,r.recordsNeeded)}
  ];
- return {id:r.id,slug:r.slug,title,originalTitle:r.title,answer:r.summary,checked:r.sourceChecked,reviewBy:r.reviewDue,version:r.version,visual:visual(r),parts,sources:r.sources||[],boundary:'Story presentation of the existing dated analysis; not a new investigation or complete origin history.'};
+ return {id:r.id,slug:r.slug,title,originalTitle:r.title,answer:r.summary,checked:r.sourceChecked,reviewBy:r.reviewDue,version:r.version,visual:visual(r),parts,discoveries:root?.QPDiscovery?.derive(r)||[],sources:r.sources||[],boundary:'Story presentation of the existing dated analysis; not a new investigation or complete origin history.'};
  }
  function select(question,reports,matcher){
  const hit=matcher.selectReport(question,reports);

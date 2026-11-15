@@ -80,6 +80,7 @@
  function markdown(r){const lines=['# '+r.title,'',r.id+' | '+r.version+' | '+status(r),'Source check: '+r.sourceChecked+' | Review due: '+r.reviewDue,'',r.summary];
   const add=(h,v)=>lines.push('','## '+h,...(Array.isArray(v)?v.map(x=>'- '+x):[v]));
   story(r).forEach(([h,p])=>add(h,p));if(r.slug==='csac-2027'){add('All 46 published requests (not awards)',csacEvidence.rows.map(([n,v,k])=>n+' | '+k+' | '+moneyFormat(v)));add('Supplemental source check: November 14',[csacEvidence.url,csacEvidence.statementUrl,csacEvidence.countyNoticeUrl]);}
+  add('Discoveries & insights',window.QPDiscovery?.markdown(r)||'No additional derived discovery has been admitted.');
   add('40-point findings',coverage40(r).map(x=>x.n+'. '+x.title+' — '+x.answer+' ['+x.classification+']'));add('Summary',[r.summary,r.qification.assessment,(r.readerNotes||readerNotes[r.slug])?.[35]||r.actions[0]]);
   add('Source-attributed figures',r.keyFacts.map(f=>f.label+': '+f.value+' | '+f.stage+' | Source '+f.source));
   sections(r).forEach(([h,v])=>add(h,v));
