@@ -1,3 +1,4 @@
+import './check-report-inventory.mjs';
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
 const root='public/';
