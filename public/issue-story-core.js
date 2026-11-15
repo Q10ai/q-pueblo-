@@ -31,12 +31,17 @@
  const byReport=new Map(reports.map(r=>[r.slug,r])),byLegacy=new Map(legacy.issues.map(i=>[key(i.id),i])),byGraph=new Map(graph.issues.map(i=>[key(i.id),i]));
  const lookup=new Map();for(const r of reports)for(const id of r.issueIds||[]){const k=key(id);if(!lookup.has(k))lookup.set(k,[]);lookup.get(k).push(r);}
  const updates=new Map();for(const u of cfg.lifecycle?.updates||[])for(const id of u.topicIds||[]){const k=key(id);if(!updates.has(k))updates.set(k,[]);updates.get(k).push(u);}
+ // Associations are discovery links only; evidence status remains attached to the exact issue.
+ const entityNames=new Map((graph.entities||[]).map(e=>[e.id,e.name]));
+ const byEntity=new Map();for(const i of graph.issues)for(const e of i.edges||[]){if(!entityNames.has(e.entity_id))continue;if(!byEntity.has(e.entity_id))byEntity.set(e.entity_id,new Set());byEntity.get(e.entity_id).add(i.id);}
+ function sharedIssues(g){const shared=new Map();for(const e of g?.edges||[]){for(const id of byEntity.get(e.entity_id)||[]){if(id===g.id)continue;if(!shared.has(id))shared.set(id,new Set());shared.get(id).add(e.entity_id);}}
+ return [...shared].map(([id,ids])=>{const i=byGraph.get(key(id)),direct=lookup.get(key(id))||[],n=typeof window!=='undefined'?window.QPStoryEditions?.byId(id):null;return {id,title:i.title,sharedLabels:[...ids].map(e=>entityNames.get(e)),datedStory:!!n,reportCount:direct.length};}).sort((a,b)=>Number(b.datedStory||b.reportCount>0)-Number(a.datedStory||a.reportCount>0)||b.sharedLabels.length-a.sharedLabels.length||a.title.localeCompare(b.title));}
  function story(id){
  const k=key(id),l=byLegacy.get(k),g=byGraph.get(k);if(!l&&!g)return null;
  const direct=lookup.get(k)||[],mapped=byReport.get(cfg.reportMap?.[l?.id??id]),rs=[...new Map([...direct,...(mapped?[mapped]:[])].map(r=>[r.slug,r])).values()];
  const narrative=typeof window!=='undefined'?window.QPStoryEditions?.byId(k):null;
  const us=updates.get(k)||[],recheck=[date(narrative?.checked),...rs.map(r=>date(r.sourceChecked)),...us.map(u=>date(u.checkedDate))].filter(Boolean).sort().at(-1)||'';
- return {id:l?.id||g.id,title:l?.title||g.title,category:l?.category||g.category,scope:l?.domain||g.category,historyDate:date(l?.lastReviewed)||date(g?.source_date),evidenceDate:recheck,priority:priority[k]||'',narrative,reports:rs.map(r=>({report:r,relation:direct.includes(r)?'Issue-linked dated analysis — scope may be narrower':'Editorially cross-linked companion — not proof of this issue'})),updates:us,sourceLeads:[...new Set([...(l?.availableSourceUrls||[]),g?.source_url].filter(Boolean))],graphId:g?.id||null,state:narrative||direct.length||us.length?'DATED_EVIDENCE':rs.length?'COMPANION_ONLY':'RESEARCH_GAP'};
+ return {id:l?.id||g.id,title:l?.title||g.title,category:l?.category||g.category,scope:l?.domain||g.category,historyDate:date(l?.lastReviewed)||date(g?.source_date),evidenceDate:recheck,priority:priority[k]||'',narrative,reports:rs.map(r=>({report:r,relation:direct.includes(r)?'Issue-linked dated analysis — scope may be narrower':'Editorially cross-linked companion — not proof of this issue'})),updates:us,sourceLeads:[...new Set([...(l?.availableSourceUrls||[]),g?.source_url].filter(Boolean))],graphId:g?.id||null,relatedIssues:sharedIssues(g),state:narrative||direct.length||us.length?'DATED_EVIDENCE':rs.length?'COMPANION_ONLY':'RESEARCH_GAP'};
  }
  return {story};
  }
