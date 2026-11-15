@@ -42,7 +42,7 @@ try{
   const activePeers=peer.filter(x=>broad||x.specific).sort((a,b)=>a.record.title.localeCompare(b.record.title));
   const activeThird=[...third.values()].filter(x=>x.entity&&(broad||x.specific)).sort((a,b)=>a.entity.name.localeCompare(b.entity.name));
   result.append(node('h2',i.title));
-  const story=window.QPStoryEditions?.byId(i.id);if(story&&window.QPIssueStoryView)result.append(window.QPIssueStoryView.narrative(story));else {const linked=reportList.filter(r=>(r.issueIds||[]).some(x=>String(x).toUpperCase()===String(id).toUpperCase()));let shown=0;for(const report of linked){const article=window.QPInvestigativeStoryView?.render(window.QPInvestigativeStory?.project(report));if(article){result.append(node('p','Dated issue-linked account; scope may be narrower than the selected issue.'),article,link('Full supporting report','reports.html?report='+encodeURIComponent(report.slug)+'#qified-report'));shown++;}}if(!shown)result.append(node('p','The exact issue story has not yet been recovered into this edition. The relationships below are discovery leads, not an answer.'));}
+  const story=window.QPStoryEditions?.byId(i.id);if(story&&window.QPIssueStoryView)result.append(window.QPIssueStoryView.narrative(story));{const linked=reportList.filter(r=>(r.issueIds||[]).some(x=>String(x).toUpperCase()===String(id).toUpperCase()));let shown=0;for(const report of linked){const article=window.QPInvestigativeStoryView?.render(window.QPInvestigativeStory?.project(report));if(article){result.append(node('p','Dated issue-linked account; scope may be narrower than the selected issue.'),article,link('Full supporting report','reports.html?report='+encodeURIComponent(report.slug)+'#qified-report'));shown++;}}if(!shown&&!story)result.append(node('p','The exact issue story has not yet been recovered into this edition. The relationships below are discovery leads, not an answer.'));}
   result.append(node('h3','Explore the connections'));
   const recordDate=i.source_date?'Source date: '+i.source_date+'. ':'';
   result.append(node('p',recordDate+'These names appear in the dated research index. Their appearance does not establish responsibility or control.'));
@@ -56,7 +56,7 @@ try{
   }));
   push(section('Related issues — shared organizations','These are discovery leads, not answers about the selected issue.',activePeers,(li,x)=>{
     li.append(link(x.record.title,'connections.html?issue='+encodeURIComponent(x.record.id)));
-    li.append(node('p','Shared names: '+x.via.map(e=>e.entity.name).join('; ')));
+    li.append(node('p','Shared names: '+x.via.map(e=>e.entity.name).join('; ')));if(window.QPStoryEditions?.byId(x.record.id)||reportList.some(r=>(r.issueIds||[]).some(id=>String(id).toLowerCase()===x.record.id.toLowerCase())))li.append(node('p','A dated account is available on this related issue.'));
   }));
   push(section('Other named organizations','Indirect associations, not a finding of authority.',activeThird,(li,x)=>{
     li.append(link(x.entity.name,'governance-entities.html#'+encodeURIComponent(x.entity.id)));
