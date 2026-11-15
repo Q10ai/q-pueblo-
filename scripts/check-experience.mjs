@@ -129,3 +129,6 @@ const heroCss=read('public-experience.css');assert(heroCss.includes('.qp-v3-home
  const styles=read('public-experience.css');assert(styles.includes('.qp-v3 .qp-qify-output .qp-answer-intro{background:#edf3f3;color:#10263b}'));
  console.log('PASS all 18 report next-step maps, '+links+' local destination checks, question chooser, foreground rules and emblem wiring; not device visual acceptance.');
 }
+
+// User-facing Falcon discoverability and theme contract (actual render checked separately).
+{const falcon=read('project-falcon.html');assert(falcon.includes('id="timeline"')&&falcon.includes('January 31, 2027'));assert.equal((falcon.match(/class="qp-falcon-event"/g)||[]).length,8);assert(falcon.includes('Proposal ≠ Approval')&&falcon.includes('not established'));for(const file of ['index.html','reports.html','hot-topics.html','case-library.html','now.html'])assert(read(file).includes('href="project-falcon.html"'),file);assert(read('home-search.js').includes("'project-falcon.html'"));assert(read('public-experience.css').includes('background-color:#101a36')&&read('public-experience.css').includes('--reading-ink:#152d3c'));console.log('PASS Falcon eight dated milestones and six discovery paths; explicit foreground theme contract.');}
