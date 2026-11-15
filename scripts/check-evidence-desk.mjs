@@ -51,3 +51,5 @@ assert(method.includes('Ownership, funding and accountability — open disclosur
 assert(method.includes('A staffed public submission queue')&&method.includes('not in operation'),'Non-operational corrections workflow must be disclosed');
 assert(method.includes('evidence-desk.html#challenge'),'Known documentary contradiction must remain navigable');
 console.log('PASS evidence desk: 7 reconciled budget groups, actual math, 26 county priorities, 18 dated reports, correction docket, source boundaries, privacy and mobile UI.');
+
+assert(css.includes('.desk-result{color:#153d54}'));const shared=read('public/public-experience.css');assert(shared.includes('.qp-v3 .desk-section :is(p,li,label,strong,span,small,output,summary){color:#152d3c}'));assert(code.includes('initiativeRoutes')&&code.includes('What this means and what to check next'));assert(!page.includes('Search the 14 curated'));console.log('PASS explicit light-card contrast contract and initiative detail routes; device rendering still requires acceptance.');

@@ -1,3 +1,11 @@
+import './check-learning-library.mjs';
+import './check-guided-tools.mjs';
+import './check-discoveries-tools.mjs';
+import './check-resource-library.mjs';
+import './check-rumor-answer.mjs';
+import './check-learn-pueblo.mjs';
+import './check-who-governs.mjs';
+import './check-issue-story.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -104,3 +112,20 @@ const learn=read('ai-learn.html'),guide=read('ask-guide.html'),twinPage=read('tw
 assert.equal(model.graphTopics.length,211);assert(model.graphTopics.some(t=>t.id==='heal-010'&&t.reports.some(r=>r.slug==='food-assistance')));assert(model.graphTopics.some(t=>t.id==='edu-006'&&t.reports.some(r=>r.slug==='d60-preschool-2026')));assert(model.allTopics.every(t=>Array.isArray(t.entities)&&Array.isArray(t.reports)));assert(read('governance-topics.html').includes('211 dated graph topics'));assert(!read('packets.html').includes('docs/pueblo/intake/'));assert.equal((read('packets.html').match(/class="qp-case-story"/g)||[]).length,8);console.log('PASS exact-ID topic crosswalk and eight bounded case stories; original registers remain separate');
 
 const decisionCtx={module:{exports:{}}};vm.runInNewContext(read('decision-tools.js'),decisionCtx);const dt=decisionCtx.module.exports;assert.equal(dt.kinds.length,24);assert.equal(dt.kinds.filter(k=>k[2]==='existing').length,13);assert.equal(dt.horizon(5,[{upfront:100000,cost:40000,benefit:60000}])[0].net,0);assert.equal(dt.resource(1000,800).delta,200);assert.equal(dt.resource(1000,800).percent,20);assert.equal(dt.resource(0,10).percent,null);assert.equal(dt.review([4,4],[true,false]).disposition,'Hold: required safeguards missing');assert(dt.review([4,0],[true,true]).disposition.includes('Review needed'));assert(dt.review([], [true]).disposition.includes('No applicable'));assert(!/\bfetch\s*\(|localStorage|sendBeacon|XMLHttpRequest/.test(read('decision-tools.js')));assert(read('decision-tools.html').includes('no publication authority'));console.log('PASS four local decision tools, reference calculations, unknown/zero distinction and non-compensatory evidence gates');
+
+const heroCss=read('public-experience.css');assert(heroCss.includes('.qp-v3-home .qp-v3-hero,.qp-v3-home .qp-v3-nav,.qp-v3-home .qp-v3-main'));assert(heroCss.includes('height:auto;aspect-ratio:auto;object-fit:contain'));assert(heroCss.includes('max-height:none;line-height:0;border:0'));assert(heroCss.includes('@media(max-width:340px){.qp-v3-home .qp-v3-hero'));console.log('PASS responsive hero CSS contract; rendered device test still required.');
+
+{
+ const askPage=read('qify.html'),askCode=read('qify.js'),reportCode=read('report-core.js');
+ assert(askPage.includes('id="qify-topic"')&&askPage.includes('value="__other__"')&&askPage.includes('<textarea id="qify-query"'));
+ assert(askCode.includes('Dated reports')&&askCode.includes("chooser.value==='__other__'"));
+ assert(askCode.includes('Useful next steps')&&askCode.includes('No exact answer is established'));
+ const scope={window:{}};vm.runInNewContext(reportCode,scope);const core=scope.window.QPReport;
+ const reports=JSON.parse(read('data/qp-current-reports.json')).reports,slugs=new Set(reports.map(r=>r.slug));
+ const graphIds=new Set(graph.issues.map(i=>i.id));
+ let links=0;for(const report of reports){const routes=core.usefulLinks(report);assert(routes.length>0,report.slug);for(const [label,route] of routes){assert(label.length>10);const url=new URL(route,'https://example.invalid/');const file=url.pathname.slice(1);assert(fs.existsSync(path.join(base,file)),route);if(url.searchParams.has('report'))assert(slugs.has(url.searchParams.get('report')),route);if(url.searchParams.has('issue'))assert(graphIds.has(url.searchParams.get('issue')),route);if(url.hash&&file!=='reports.html')assert(read(file).includes('id="'+url.hash.slice(1)+'"'),route);links++;}assert(core.render(report).includes('class="qp-next-steps"'),report.slug);}
+ assert(core.usefulLinks(reports.find(r=>r.slug==='half-cent-2026')).some(x=>x[1].includes('report=lime-road-costs')));
+ assert(read('launch-system.js').includes('assets/pueblo-emblem.svg'));const emblem=read('assets/pueblo-emblem.svg');assert(emblem.includes('clipPath')&&emblem.includes('preserveAspectRatio="xMidYMid meet"')&&!emblem.includes('<rect'));
+ const styles=read('public-experience.css');assert(styles.includes('.qp-v3 .qp-qify-output .qp-answer-intro{background:#edf3f3;color:#10263b}'));
+ console.log('PASS all 18 report next-step maps, '+links+' local destination checks, question chooser, foreground rules and emblem wiring; not device visual acceptance.');
+}

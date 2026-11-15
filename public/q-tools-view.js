@@ -14,5 +14,6 @@
     const lines=s.split('\n').filter(x=>/T2Y score:|Absolute cost difference:|EE score:|Eligibility:|Lowest nominal total:|Least cost among eligible/i.test(x)).slice(0,7);
     meta.textContent=lines.join(' · ').replace(/\*\*/g,'')||'See detailed calculation for scores, constraints and evidence gates.';
   }
+  const graphic=document.createElement('div');panel.append(graphic);document.addEventListener('qp-tool-result',e=>{graphic.replaceChildren();const d=e.detail,v=window.QPToolVisual;if(!d||!v)return;const fmt=x=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(x);if(d.kind==='lifecycle')v.bar(graphic,'Total nominal cost',d.data.options.map(x=>({label:x.name,value:x.total,display:fmt(x.total)})),'Same time horizon; user inputs, not a procurement recommendation.');if(d.kind==='ee')v.bar(graphic,'Relative effort scores',d.data.routes.map(x=>({label:x.name+(x.eligible?' — gates affirmed':' — on hold'),value:x.total})), 'Subjective normalized index, not measured dollars or energy.');});
   new MutationObserver(update).observe(pre,{childList:true,characterData:true,subtree:true});update();
 })();

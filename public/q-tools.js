@@ -48,11 +48,12 @@
   const report=(kind,title,text,data)=>{
     last={schema:'qp-qtools-report-v1',kind,title,generatedAt:new Date().toISOString(),methodVersion:'q-tools-v0.1',evidenceClass:'USER_SUPPLIED_OR_SIMULATED_UNVERIFIED',releaseAuthority:false,limitations:'Browser-only reference calculation. Inputs and source claims not independently verified. Human approval required.',data,markdown:'# '+title+'\n\n'+text+'\n\nMethod: Q-Pueblo Q Tools v0.1. Evidence class: USER_SUPPLIED_OR_SIMULATED_UNVERIFIED. No public-release authority. Human review required.\n'};
     $('qt-report').textContent=last.markdown;
+    document.dispatchEvent(new CustomEvent('qp-tool-result',{detail:{kind,data}}));
     $('qt-status').textContent=title+' created locally. Verify inputs and provenance before use.';
     ['qt-md','qt-json','qt-copy','qt-print'].forEach(id=>$(id).disabled=false);
     $('deliverables').scrollIntoView({behavior:'smooth',block:'start'});
   };
-  const safeRun=fn=>{try{fn()}catch(e){$('qt-status').textContent='Input error: '+e.message;$('qt-report').textContent='Correct the highlighted tool inputs and run again.';last=null;['qt-md','qt-json','qt-copy','qt-print'].forEach(id=>$(id).disabled=true);$('deliverables').scrollIntoView({block:'start'});}};
+  const safeRun=fn=>{try{fn()}catch(e){$('qt-status').textContent='Input error: '+e.message;$('qt-report').textContent='Correct the highlighted tool inputs and run again.';last=null;document.dispatchEvent(new CustomEvent('qp-tool-result',{detail:null}));['qt-md','qt-json','qt-copy','qt-print'].forEach(id=>$(id).disabled=true);$('deliverables').scrollIntoView({block:'start'});}};
   const routeInput=p=>{
     const o={name:clean(val(p+'-name'),70),yield:val(p+'-yield'),safe:flag(p+'-safe'),evidence:flag(p+'-evidence'),authority:flag(p+'-authority')};
     names.forEach(n=>{o[n]=val(p+'-'+n);});

@@ -6,6 +6,7 @@
   current=report;
   for(const b of document.querySelectorAll('[data-report]'))b.setAttribute('aria-pressed',String(b.dataset.report===report.slug));
   $('qified-report').innerHTML=core.render(report);
+  const story=window.QPInvestigativeStoryView?.render(window.QPInvestigativeStory?.project(report));if(story){$('qified-report').prepend(story);const d=story.querySelector('.qp-discoveries');if(d)d.id='q-discoveries';}
   $('report-message').textContent='Selected: '+report.title+'.';
   for(const id of ['report-download','report-json','report-print','report-records'])$(id).disabled=false;
   const url=new URL(location.href);url.searchParams.set('report',report.slug);history.replaceState(null,'',url);
@@ -17,10 +18,10 @@
   $('report-links').innerHTML=reports.map(r=>{const a=artwork[r.slug];return '<button type="button" class="qp-art-card qp-paper-card" data-report="'+core.esc(r.slug)+'" aria-pressed="false">'+(a?'<div class="qp-report-art art-report-'+a.n+'" aria-hidden="true"></div>':'')+'<div class="qp-art-caption"><strong>'+core.esc(a?.t||r.title)+'</strong><span>'+core.esc(a?.d||r.topic)+'</span></div></button>'}).join('');
   $('report-links').addEventListener('click',e=>{const b=e.target.closest('[data-report]');if(b)render(reports.find(r=>r.slug===b.dataset.report),true);});
   render(reports.find(r=>r.slug===new URLSearchParams(location.search).get('report'))||reports[0]);
-  if(location.hash==='#original-sources')document.getElementById('original-sources')?.scrollIntoView({block:'start'});else if(location.hash==='#coverage-40'){const d=document.getElementById('coverage-40');if(d){d.open=true;d.scrollIntoView({block:'start'})}}
+  if(location.hash==='#q-discoveries')document.getElementById('q-discoveries')?.scrollIntoView({block:'start'});else if(location.hash==='#original-sources')document.getElementById('original-sources')?.scrollIntoView({block:'start'});else if(location.hash==='#coverage-40'){const d=document.getElementById('coverage-40');if(d){d.open=true;d.scrollIntoView({block:'start'})}}
   $('qified-report').addEventListener('click',e=>{const a=e.target.closest('a[href="#coverage-40"]');if(a){const d=document.getElementById('coverage-40');if(d)d.open=true;}});
   $('report-download').addEventListener('click',()=>core.download('q-pueblo-'+current.slug+'.md',core.markdown(current),'text/markdown;charset=utf-8'));
-  $('report-json').addEventListener('click',()=>core.download('q-pueblo-'+current.slug+'.json',JSON.stringify({schema:data.schema,report:current},null,2),'application/json;charset=utf-8'));
+  $('report-json').addEventListener('click',()=>core.download('q-pueblo-'+current.slug+'.json',JSON.stringify({schema:data.schema,report:current,derivedDiscoveries:window.QPDiscovery?.derive(current)||[]},null,2),'application/json;charset=utf-8'));
   $('report-records').addEventListener('click',()=>core.download('q-pueblo-'+current.slug+'-records-draft.txt',core.requestDraft(current),'text/plain;charset=utf-8'));
   let oldDetails=[];window.addEventListener('beforeprint',()=>{oldDetails=[...document.querySelectorAll('#qified-report details')].map(d=>[d,d.open]);for(const [d] of oldDetails)d.open=true;});window.addEventListener('afterprint',()=>{for(const [d,o] of oldDetails)d.open=o;oldDetails=[]});$('report-print').addEventListener('click',()=>window.print());
  }).catch(()=>{$('report-message').textContent='Reports could not load. Try again or browse the research library.';});
