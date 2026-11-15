@@ -9,9 +9,9 @@
  {heading:'Where the issue begins',paragraphs:[context,...lines(r.where)]},
  {heading:'How events developed',paragraphs:lines(r.when,t.past),note:'Dates are those recorded in the source collection; a complete origin timeline may not have been recovered.'},
  {heading:'Who is involved and what is documented',paragraphs:lines(r.who,r.whatKnown)},
- {heading:'What the numbers and records mean',paragraphs:lines(r.how),facts:(r.keyFacts||[]).map(f=>({label:f.label,value:f.value,stage:f.stage,source:f.source})),stages:(r.money||[]).map(x=>x.stage+' — '+x.detail+' ('+x.status+')')},
- {heading:'Why this matters to people',paragraphs:lines(r.why,r.child,r.counter)},
- {heading:'What the options are',paragraphs:lines(q.assessment,r.rx,r.options),options:(q.alternatives||[]).map(a=>({option:a.option,tradeoff:a.tradeoff,verification:a.verification,owner:a.owner}))},
+ {heading:'What the numbers and records mean',paragraphs:lines(r.how),analysis:lines(r.ee,r.t2y),facts:(r.keyFacts||[]).map(f=>({label:f.label,value:f.value,stage:f.stage,source:f.source})),stages:(r.money||[]).map(x=>x.stage+' — '+x.detail+' ('+x.status+')')},
+ {heading:'Why this matters to people',paragraphs:lines(r.why,r.child,r.counter),impact:lines(r.relations)},
+ {heading:'What the options are',paragraphs:lines(q.assessment,r.rx,r.options),reasoning:lines(q.reasoning),options:(q.alternatives||[]).map(a=>({option:a.option,tradeoff:a.tradeoff,verification:a.verification,owner:a.owner}))},
  {heading:'What to watch next',paragraphs:lines(t.present,t.future,q.shock,r.actions),unknowns:lines(r.unknowns,r.recordsNeeded)}
  ];
  return {id:r.id,slug:r.slug,title,originalTitle:r.title,answer:r.summary,checked:r.sourceChecked,reviewBy:r.reviewDue,version:r.version,parts,sources:r.sources||[],boundary:'Story presentation of the existing dated analysis; not a new investigation or complete origin history.'};
