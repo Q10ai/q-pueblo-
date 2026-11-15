@@ -13,6 +13,7 @@ try{
  const response=await fetch(base,{credentials:'same-origin',cache:'default'});
  if(!response.ok)throw Error('Snapshot not available, HTTP '+response.status);
  const d=await response.json();
+ let reportList=[];try{const rr=await fetch('data/qp-current-reports.json',{credentials:'same-origin'});if(rr.ok)reportList=(await rr.json()).reports||[];}catch{}
  const issues=new Map(d.issues.map(i=>[i.id,i])),entities=new Map(d.entities.map(e=>[e.id,e])),byEntity=new Map(d.entities.map(e=>[e.id,new Set()]));
  for(const issue of d.issues)for(const edge of issue.edges){const s=byEntity.get(edge.entity_id);if(s)s.add(issue.id)}
  const hubs=new Set([...byEntity].filter(([id,ids])=>ids.size>25||entities.get(id)?.identity_state.startsWith('Unresolved group')).map(([id])=>id));
@@ -41,7 +42,7 @@ try{
   const activePeers=peer.filter(x=>broad||x.specific).sort((a,b)=>a.record.title.localeCompare(b.record.title));
   const activeThird=[...third.values()].filter(x=>x.entity&&(broad||x.specific)).sort((a,b)=>a.entity.name.localeCompare(b.entity.name));
   result.append(node('h2',i.title));
-  const story=window.QPStoryEditions?.byId(i.id);if(story&&window.QPIssueStoryView)result.append(window.QPIssueStoryView.narrative(story));else {const p=node('p','The exact issue story has not yet been recovered into this edition. The relationships below are discovery leads, not an answer.');result.append(p);}
+  const story=window.QPStoryEditions?.byId(i.id);if(story&&window.QPIssueStoryView)result.append(window.QPIssueStoryView.narrative(story));else {const linked=reportList.filter(r=>(r.issueIds||[]).some(x=>String(x).toUpperCase()===String(id).toUpperCase()));let shown=0;for(const report of linked){const article=window.QPInvestigativeStoryView?.render(window.QPInvestigativeStory?.project(report));if(article){result.append(node('p','Dated issue-linked account; scope may be narrower than the selected issue.'),article,link('Full supporting report','reports.html?report='+encodeURIComponent(report.slug)+'#qified-report'));shown++;}}if(!shown)result.append(node('p','The exact issue story has not yet been recovered into this edition. The relationships below are discovery leads, not an answer.'));}
   result.append(node('h3','Explore the connections'));
   const recordDate=i.source_date?'Source date: '+i.source_date+'. ':'';
   result.append(node('p',recordDate+'These names appear in the dated research index. Their appearance does not establish responsibility or control.'));
