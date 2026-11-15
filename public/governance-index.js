@@ -31,6 +31,6 @@
   }
   if(!root.children.length)root.append(n('p','No matching records. Try another place, organization or topic.'));
  }
- const directId=decodeURIComponent(location.hash.slice(1));if(mode==='entities'&&directId){const ent=m.entities.find(x=>x.id===directId);if(ent)query.value=ent.name;}query.addEventListener('input',render);scope?.addEventListener('change',render);render();if(directId)document.getElementById(directId)?.scrollIntoView();
+ const directId=decodeURIComponent(location.hash.slice(1))||new URLSearchParams(location.search).get('entity')||'';if(mode==='entities'&&directId){const ent=m.entities.find(x=>x.id===directId);if(ent)query.value=ent.name;}query.addEventListener('input',render);scope?.addEventListener('change',render);render();if(directId)document.getElementById(directId)?.scrollIntoView();
  }catch{root.replaceChildren(n('p','The indexes could not load. Use the existing issue directory and report library.'));$('governance-status').textContent='Index unavailable.'}
 })();
