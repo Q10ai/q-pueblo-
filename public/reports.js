@@ -6,6 +6,7 @@
   current=report;
   for(const b of document.querySelectorAll('[data-report]'))b.setAttribute('aria-pressed',String(b.dataset.report===report.slug));
   $('qified-report').innerHTML=core.render(report);
+  const story=window.QPInvestigativeStoryView?.render(window.QPInvestigativeStory?.project(report));if(story)$('qified-report').prepend(story);
   $('report-message').textContent='Selected: '+report.title+'.';
   for(const id of ['report-download','report-json','report-print','report-records'])$(id).disabled=false;
   const url=new URL(location.href);url.searchParams.set('report',report.slug);history.replaceState(null,'',url);
