@@ -53,6 +53,8 @@
     };
     a.addEventListener('change',show);b.addEventListener('change',show);show();
   }
+  const initiativeRoutes={'Old detention center mothballing':['Courts and detention study','connections.html?issue=safe-005'],'New detention center, first year':['Courts and detention study','connections.html?issue=safe-005'],'Community corrections FY27 allocation':['Court and detention context','connections.html?issue=safe-005'],'Detention center solar PPA':['Detention and energy-cost context','connections.html?issue=safe-005'],'Housing trust project checks':['Housing project stages','reports.html?report=housing-pipeline#qified-report'],'Short-term rental sheltering':['Housing assistance context','connections.html?issue=heal-007'],'Debris removal program':['Dated Aspen recovery costs','reports.html?report=aspen-recovery-costs#qified-report'],'Assistance-center operations':['Aspen assistance pathway','reports.html?report=aspen-recovery#qified-report']};
+  const nextByStatus={Underway:'Check the later dated status, accountable office, approved scope and milestone evidence; underway does not mean paid or completed.',Waiting:'Identify the pending approval, dependency, responsible office and revised date; waiting does not mean canceled.',Complete:'Look for the acceptance record, actual costs and measured result; this is a County-reported status.'};
   function countyDisplay(){
     const stats=countyStats(county.initiatives);
     byId('county-totals').textContent=stats.total+' priorities · '+stats.complete+' complete · '+stats.underway+' underway · '+stats.waiting+' waiting · snapshot August 8, 2026';
@@ -65,7 +67,7 @@
       selected.forEach(x=>{
         const li=el('li',null,'county-entry');
         li.append(heading('strong',x[0]),el('span',x[1]+' · '+x[2]+' (County-reported August 2026)'));
-        list.append(li);
+        const d=el('details');d.append(el('summary','What this means and what to check next'),el('p',nextByStatus[x[2]]||'Check the original record.','desk-next'),link('Original County dashboard — check later editions',county.source));const route=initiativeRoutes[x[0]];const a=el('a',route?route[0]:'How to obtain this initiative’s actual records');a.href=route?route[1]:'reports.html?report=records-request#qified-report';d.append(a);if(route)d.append(el('p','Related context only; not evidence of this initiative’s outcome.','desk-next'));li.append(d);list.append(li);
       });
       byId('county-match').textContent=selected.length+' of 26 published initiatives match these filters. This is not proof of completion or expenditure.';
     };
@@ -81,7 +83,7 @@
       const h=heading('h3',r.title);
       const p=el('p',r.summary);
       const jump=el('a','Open complete dated evidence packet');
-      jump.href='reports.html?report='+encodeURIComponent(r.slug);
+      jump.href='reports.html?report='+encodeURIComponent(r.slug)+'#qified-report';
       const foot=el('p','Checked '+(r.sourceChecked||r.date)+' · review due '+(r.reviewDue||'unassigned')+' · '+r.sources.length+' originating source link(s). Not a current independent audit.','desk-meta');
       card.append(status,h,p,foot,jump);out.append(card);
     });
@@ -92,7 +94,7 @@
     return fetch('data/qp-current-reports.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(x=>{
       if(!Array.isArray(x.reports)||x.reports.length<14)throw Error('Incomplete published brief library');
       reports=x.reports.filter(r=>r.id&&r.slug&&Array.isArray(r.sources));showReports();
-    }).catch(()=>{byId('desk-search-count').textContent='The fourteen published analyses could not be loaded. Open Reports directly; do not treat this as an empty evidence library.'});
+    }).catch(()=>{byId('desk-search-count').textContent='The published analyses could not be loaded. Open Reports directly; do not treat this as an empty evidence library.'});
   }
   function docket(){
     const list=byId('desk-docket');list.replaceChildren();
