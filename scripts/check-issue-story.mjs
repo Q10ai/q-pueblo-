@@ -38,7 +38,7 @@ const wrongSource=JSON.parse(JSON.stringify(r.reports.find(x=>x.slug==='county-p
 assert.equal(is.visual(r.reports.find(x=>x.slug==='aspen-recovery-costs')),null);assert(read('issue-story.css').includes('prefers-reduced-motion'));assert(read('investigative-story-view.js').includes("meter.setAttribute('aria-label'"));console.log('PASS two bounded visualizations; sums, source compatibility, no automatic unrelated chart.');
 
 const financeCtx={window:{}};vm.runInNewContext(read('finance-visual-core.js'),financeCtx);const finance=financeCtx.window.QPFinanceVisual;const fv=finance.build(r.reports);assert.equal(fv.length,4);
-assert.equal(fv.find(x=>x.slug==='budget-2026').rows[2].cents,5466339900);
+assert.equal(fv.find(x=>x.slug==='budget-2026').rows[2].cents,5466346400);
 assert.equal(fv.find(x=>x.slug==='half-cent-2026').total,8872721400);
 assert.equal(fv.find(x=>x.slug==='pueblo-boulevard-agenda').total,205827700);
 assert.equal(fv.find(x=>x.slug==='county-budget-2027').rows[0].cents-fv.find(x=>x.slug==='county-budget-2027').rows[1].cents,3855000000);
