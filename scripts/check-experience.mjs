@@ -1,3 +1,6 @@
+import './check-rumor-answer.mjs';
+import './check-learn-pueblo.mjs';
+import './check-who-governs.mjs';
 import './check-issue-story.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
