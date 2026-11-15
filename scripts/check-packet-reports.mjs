@@ -68,3 +68,5 @@ assert(read('public-experience.css').includes('.qp-v3 .qp-report-detail .qp-repo
 assert(!read('connections.js').includes('Next: obtain actual governing instrument'));
 assert(!read('connections.js').includes('https://q10asi.com/projects/q-pueblo/issues/'));
 console.log('PASS 18 authored narratives, collapsed 40-point coverage, explicit readable report theme, local connection navigation');
+
+assert.equal(core.csacEvidence.rows.length,46);assert.equal(core.csacEvidence.rows.reduce((s,x)=>s+x[1],0),2203865);assert.equal(Object.values(core.csacEvidence.totals).reduce((s,x)=>s+x,0),2203865);const csac=current.reports.find(r=>r.slug==='csac-2027');assert(core.render(csac).includes('All 46 applicants'));assert(core.coverage40(csac)[16].answer.includes('22.23%'));assert(core.markdown(csac).includes('2,203,865'));console.log('PASS 46 source-attributed CSAC request rows reconcile exactly; source dates and financial stages preserved');
