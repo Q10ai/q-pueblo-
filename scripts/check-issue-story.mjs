@@ -20,3 +20,13 @@ el('issue-other-question').value='A new Pueblo issue?';el('issue-other-form').fi
 el('reset').fire('click');assert(el('issue-other-panel').hidden);
 el('search').value='nonexistent-issue-xyz';el('search').fire('input');assert(!el('issue-other-panel').hidden);assert.equal(el('issue-other-question').value,'nonexistent-issue-xyz');
 assert(read('qify.js').includes("URLSearchParams(location.hash.slice(1)).get('q')"));console.log('PASS simulated issue chooser: 174 entries, exact selection, Other, local hash handoff, reset and no-match path.');
+
+
+const storyCtx={window:{}};for(const file of ['qify-match.js','investigative-story-core.js','data/qp-story-editions.js'])vm.runInNewContext(read(file),storyCtx);
+const is=storyCtx.window.QPInvestigativeStory,match=storyCtx.window.QP_QIFY_MATCH,ed=storyCtx.window.QPStoryEditions;
+const projected=r.reports.map(x=>is.project(x));assert.equal(projected.length,18);assert.equal(new Set(projected.map(x=>x.title)).size,18);
+for(let i=0;i<projected.length;i++){const a=projected[i],b=r.reports[i];assert.equal(a.id,b.id);assert.equal(a.answer,b.summary);assert.equal(a.checked,b.sourceChecked);assert.equal(a.sources.length,b.sources.length);assert.equal(a.parts.length,7);assert(a.parts.every(p=>p.paragraphs.length));assert(a.parts[0].paragraphs[0].length>50);assert.equal(a.parts[3].facts.length,b.keyFacts.length);assert.equal(a.parts[3].stages.length,b.money.length);assert(a.parts[6].unknowns.length);for(const q of b.questions)assert.equal(is.select(q,r.reports,match)?.slug,b.slug);}
+for(const q of ['24th Street bridge construction cost','Has the city paid for Project Falcon?','What is the total spent on Lime Road?','Pueblo budget road bridge latest','How many jail inmates today?'])assert.equal(is.select(q,r.reports,match),null);
+assert.equal(ed.byId('infr-005').id,'infr-005');assert.equal(ed.exact('Why is Pueblo planning a 24th Street bridge?').id,'infr-005');assert.equal(ed.exact('24th Street bridge construction cost'),null);
+for(const page of ['qify.html','reports.html','issues.html','governance-topics.html','connections.html'])assert(read(page).includes('investigative-story-core.js')&&read(page).includes('investigative-story-view.js'));
+console.log('PASS investigative story projection: 18 dated analyses, original IDs, dates, finance stages, source counts, unique openings, exact question and false-substitute checks. Not an independent evidence or browser audit.');
