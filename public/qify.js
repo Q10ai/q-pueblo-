@@ -18,7 +18,7 @@
   const terms=core.words(question), candidates=core.matchReports(question,reports);
   const gatedMatch=window.QP_QIFY_MATCH.selectReport(question,reports);
   const narrative=window.QPStoryEditions?.exact(question)||null, storyRelated=window.QPStoryEditions?.related(question)||[];
-  const exact=narrative||storyRelated.length?null:window.QPInvestigativeStory.select(question,reports,window.QP_QIFY_MATCH);
+  const exact=narrative?null:window.QPInvestigativeStory.select(question,reports,window.QP_QIFY_MATCH);
   const matches=(catalog?.issues||[]).map(i=>{const tokens=new Set(core.words(i.title+' '+i.category+' '+i.domain));return {i,score:terms.filter(w=>tokens.has(w)).length};}).filter(x=>x.score>=2||core.norm(question)===core.norm(x.i.id)).sort((a,b)=>b.score-a.score).slice(0,8).map(({i})=>({id:i.id,title:i.title,date:i.lastReviewed,sources:(i.sourceIds||[]).map(id=>catalog.sources.find(s=>s.id===id)).filter(Boolean)}));
   const answer=narrative?narrative.summary:exact?exact.summary:'No prepared, source-supported answer matches this exact question. Related research below may help, but it does not establish the answer to your question.';
   packet={schema:'qp-question-packet-v2',prepared:new Date().toISOString(),question,evidenceState:narrative?'DATED_STORY_EDITION':exact?'PREPARED_ANSWER_WITH_DATED_SOURCES':'INVESTIGATION_DRAFT_NO_CONFIRMED_ANSWER',answer,matchedReport:exact||null,storyEdition:narrative,relatedReports:candidates.filter(x=>!x.exact).map(x=>x.report),issues:matches,investigation,publication:'Local research draft. No external investigation, records request or publication has been performed by this page.'};
