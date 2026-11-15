@@ -21,3 +21,11 @@ const cap=JSON.parse(read('api/v1/capabilities.json'));
 assert.equal(cap.server_side_contribution_intake,false);
 assert.equal(cap.autonomous_public_research_agents,false);
 console.log('PASS public release-manifest/checker, human deployment gate, links, conservative backend configuration and script policy');
+
+const probe=read('release-check.js');
+for(const m of probe.matchAll(/\['([^']+)', (?:'([^']*)'|"([^"]*)"|null), '(text|json|image)'\]/g)){const [,p,a,b,kind]=m;assert(existsSync(root+p),'Missing release probe: '+p);const marker=a||b;if(kind!=='image'&&marker)assert(read(p).includes(marker),'Stale release marker: '+p+' expected '+marker);if(kind==='json')JSON.parse(read(p));}
+for(const p of ['follow-money.html','learn-pueblo.html','who-governs.html'])assert(probe.includes(p));
+assert(read('es.html').includes('<html lang="es">'));
+assert(read('home-search.js').includes('qp-governance-profiles-2026-11-14.json'));assert(read('home-search.js').includes('QPStoryEditions'));
+assert(read('rumor-mill.html').includes('investigative-story-view.js'));assert(read('rumor-answer.js').includes('QPStoryEditions?.exact(q)'));
+console.log('PASS static release probe markers, Spanish language, shared search and Rumor Mill story routes.');
