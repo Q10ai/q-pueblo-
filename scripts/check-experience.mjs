@@ -1,3 +1,4 @@
+import './check-resource-library.mjs';
 import './check-rumor-answer.mjs';
 import './check-learn-pueblo.mjs';
 import './check-who-governs.mjs';

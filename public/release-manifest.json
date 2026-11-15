@@ -39,7 +39,9 @@
       "financeGraphics": 4,
       "scope": "Local dated evidence and public source directories only; full archive reconciliation and human review pending",
       "naturalHeritageIntroductoryCards": 5,
-      "historicalStoryEditions": 7
+      "historicalStoryEditions": 7,
+      "resourceProviderCollections": 23,
+      "resourceBoundary": "Linked public resource collections; topic associations are not claim evidence; no embedded tracking or automatic intake."
     }
   },
   "presentationUpdated": "2026-11-14"
