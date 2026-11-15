@@ -14,11 +14,16 @@ CASE-WASTEWATER · Case research · Environment & Water
 
 Historical research — current evidence and independent review open
 
-## The question
+## The story
 
-Which dated records establish each role, money state, dependency and outcome?
+Pueblo's September 14 statement describes its account of an August wastewater release into the Arkansas River, detection and bypass repair. The event connects utility operations with downstream public health and environmental oversight.
 
-**For everyday use:** find the source, see which organizations the record names, and ask what is still unknown before sharing a claim or supporting a decision.
+Repair does not independently establish current river safety, cause or costs. The complete dated wastewater analysis explains the evidence and the distinction between operator reporting and public-health testing. Use current official guidance for any water-use decision.
+
+Evidence: 2026-11-09 underlying report
+
+- [Read the wastewater story and its 40 perspectives](reports.html?report=wastewater-2026)
+- [City September 14 statement](https://www.pueblo.us/m/newsflash/home/detail/5002)
 
 ## Who is connected to this issue?
 
@@ -49,16 +54,6 @@ These are the public sources associated with the dated case. Check their latest 
 ## Questions still to resolve
 
 Operator and asset records; Incident logs and validated samples; Current public-health guidance and corrective-action closeout
-
-**Next step:** Check current primary records; distinguish plans from delivered results.
-
-## Options to evaluate
-
-1. Obtain the dated primary record and preserve its version.
-2. Compare what it says with the earlier record; keep contradictions visible.
-3. Ask the responsible human institution to review the evidence, alternatives and measurable outcome.
-
-These are evidence-review options, not policy, procurement or enforcement recommendations. Costs, energy demand, legal authority and implementation feasibility remain to be established.
 
 Historical role descriptions are Q research interpretations, not current legal findings or verified responsibility. No live emergency guidance, private case data or packet content is released.
 

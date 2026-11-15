@@ -14,11 +14,16 @@ CASE-RAIL · Case research · Transportation
 
 Historical research — current evidence and independent review open
 
-## The question
+## The story
 
-Which dated records establish each role, money state, dependency and outcome?
+Passenger rail planning connects a proposed service with local station access, host railroads, district governance and funding. The Front Range Passenger Rail District describes its delivery plan and a November 3 ballot question. It specifically directs readers to aggregated results across all twelve participating counties.
 
-**For everyday use:** find the source, see which organizations the record names, and ask what is still unknown before sharing a claim or supporting a decision.
+Pueblo County's November 13 unofficial result for 7A was 20,599 yes and 18,114 no. That is the Pueblo County portion only, not the districtwide result. Even a certified ballot result would not by itself establish a train timetable, executed host agreement or station opening date. For travelers, those operating details are the outcomes that matter.
+
+Evidence: 2026-11-14
+
+- [Rail district delivery plan and election information](https://www.frprdistrict.com/)
+- [Pueblo County election snapshot](now.html#election-2026-postvote)
 
 ## Who is connected to this issue?
 
@@ -58,16 +63,6 @@ These are the public sources associated with the dated case. Check their latest 
 ## Questions still to resolve
 
 Current district plans and funding instruments; Executed operator and host agreements; Station property and acceptance records
-
-**Next step:** Check current primary records; distinguish plans from delivered results.
-
-## Options to evaluate
-
-1. Obtain the dated primary record and preserve its version.
-2. Compare what it says with the earlier record; keep contradictions visible.
-3. Ask the responsible human institution to review the evidence, alternatives and measurable outcome.
-
-These are evidence-review options, not policy, procurement or enforcement recommendations. Costs, energy demand, legal authority and implementation feasibility remain to be established.
 
 Historical role descriptions are Q research interpretations, not current legal findings or verified responsibility. No live emergency guidance, private case data or packet content is released.
 

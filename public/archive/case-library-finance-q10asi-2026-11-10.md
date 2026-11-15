@@ -14,11 +14,19 @@ CASE-LIBRARY-FINANCE · Case research · Public finance
 
 Historical research — current evidence and independent review open
 
-## The question
+## The story
 
-Which dated records establish each role, money state, dependency and outcome?
+The library's November 10 preliminary 2027 budget projects General Fund revenue of $17.44 million, spending of $16.00 million, and a $2.15 million transfer to its capital project fund. Its projected General Fund balance declines from an estimated $5.64 million at the end of 2026 to $4.93 million at the end of 2027—a decrease of roughly $705,000. The capital fund balance moves in the opposite direction, so these figures must not be added as independent spending.
 
-**For everyday use:** find the source, see which organizations the record names, and ask what is still unknown before sharing a claim or supporting a decision.
+The district's two funds together project approximately $17.72 million of revenue, $17.48 million of expenditures and $10.39 million of ending fund balance. The preliminary budget lists $678,080 for General Fund IT and $481,000 in capital IT. Those broad categories do not reveal the cost of BoodleBox or other individual contracts.
+
+The 2027 estimated levy of 6.4726 mills is not certification. The November 13 county election snapshot lists 6A as 39,173 yes and 26,654 no, unofficially; later controlling records determine the outcome and effective levy. Budget projections, ballot results and actual service delivery are distinct.
+
+Evidence: 2026-11-14
+
+- [November 10 preliminary budget, narrative and fund tables](https://www.pueblolibrary.org/sites/default/files/2026-11/2027_preliminary_budget_-_november_update.pdf)
+- [November election update](now.html#election-2026-postvote)
+- [Library AI story](packets.html#case-library-ai)
 
 ## Who is connected to this issue?
 
@@ -35,16 +43,6 @@ Research record dated 2026-09-03. Underlying source date: Missing — do not tre
 ## Questions still to resolve
 
 Audited financials and current budget; Certified ballot and levy records; Branch service and utility interval data
-
-**Next step:** Check current primary records; distinguish plans from delivered results.
-
-## Options to evaluate
-
-1. Obtain the dated primary record and preserve its version.
-2. Compare what it says with the earlier record; keep contradictions visible.
-3. Ask the responsible human institution to review the evidence, alternatives and measurable outcome.
-
-These are evidence-review options, not policy, procurement or enforcement recommendations. Costs, energy demand, legal authority and implementation feasibility remain to be established.
 
 Historical role descriptions are Q research interpretations, not current legal findings or verified responsibility. No live emergency guidance, private case data or packet content is released.
 
