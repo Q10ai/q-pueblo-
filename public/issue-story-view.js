@@ -17,7 +17,7 @@
  if(!s.narrative&&!s.updates.length&&!s.reports.length){para(card,'This issue is recorded under '+s.category+'. The existing public index establishes a research topic, but not its outcome. No factual narrative for this exact issue has been approved in the linked collection. Earlier research may exist and needs reconciliation.');}
  if(s.sourceLeads.length){const d=node('details');d.append(node('summary','Original index source leads — not verified findings'));for(const u of s.sourceLeads){const url=safe(u);if(url){const p=node('p');p.append(link('Open original record',url));d.append(p);}}card.append(d);}
  if(s.graphId){const p=node('p');p.append(link('People, organizations and issue connections','connections.html?issue='+encodeURIComponent(s.graphId)));card.append(p);}
- const p=node('p');p.append(link('Ask Q using existing research','qify.html?q='+encodeURIComponent(s.title)),document.createTextNode(' · '),link('Request missing research or offer a public record','participate.html'));card.append(p);
+ const p=node('p');p.append(link('Ask Q using existing research','qify.html#q='+encodeURIComponent(s.narrative?.questions?.[0]||s.title)),document.createTextNode(' · '),link('Request missing research or offer a public record','participate.html'));card.append(p);
  return card;
  }
  root.QPIssueStoryView={render,narrative};

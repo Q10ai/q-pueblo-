@@ -18,7 +18,7 @@
  for(const u of f.lifecycle?.updates||[])out.push(row('Update',u.title,u.finding+' '+u.meaning,'now.html#'+encodeURIComponent(u.id),u.checkedDate));
  for(const ent of f.additions||[])out.push(row('Organization',ent.name,ent.description,'governance-entities.html#'+encodeURIComponent(ent.id),''));
  for(const p of g.profiles||[]){out.push(row('Organization',p.name,[p.work,p.scope,...p.topics].join(' '),'who-governs.html#'+encodeURIComponent(p.id),g.checked));for(const [name,role] of p.members||[])out.push(row('Organization',name,role+' · '+p.name,'who-governs.html#'+encodeURIComponent(p.id),g.checked));}
- for(const s of window.QPStoryEditions?.edition?.stories||[])out.push(row('Analysis',s.title,[s.summary,...s.questions].join(' '),'connections.html?issue='+encodeURIComponent(s.id),s.checked));
+ for(const s of window.QPStoryEditions?.edition?.stories||[])out.push(row('Analysis',s.title,[s.summary,...s.questions].join(' '),s.route,s.checked));
  return out;
  }
  function element(tag,txt,cls){let o=document.createElement(tag);if(txt!=null)o.textContent=txt;if(cls)o.className=cls;return o}

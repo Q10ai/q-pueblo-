@@ -3,6 +3,9 @@
  const key=x=>String(x??'').trim().toUpperCase();
  const date=x=>/^\d{4}-\d{2}-\d{2}$/.test(String(x??''))?x:'';
  const priority={
+ 'REG-023':'Data centers and regional resource capacity',
+ 'REG-009':'Museum funding and public value',
+ 'REG-028':'Zoo funding, learning and conservation',
  'REG-069':'Public budgets and service continuity',
  'REG-063':'Election-linked funding and authority',
  'REG-071':'Election and governance transition',
