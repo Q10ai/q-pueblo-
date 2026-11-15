@@ -27,3 +27,20 @@ Scenario: assumptions, calculation, ranges, limits, alternatives and fallback; n
 Exact-identity relevance, claim/source coverage, dated freshness, no unsupported causal bridge, financial stage integrity, no invented human story, plain language, actionable answer, accessible display, contradiction/uncertainty, privacy, reproducible citation. Test task comprehension, source finding, calibrated confidence, and response time with real audiences; not engagement alone. No user testing or causal performance claim in this candidate.
 ## Adapter
 Bridge pilot uses canonical graph ID infr-005, story edition separate from 18 full-report inventory; link exact queries and existing issue/connection views. Original graph source is retained as a historical context lead. Do not label as independent audit or full paper. Remaining pages and private archive require migration and review. No automatic publication.
+
+## v0.2 — longitudinal investigative case contract
+For substantial issues, treat the answer as a living beat report, not a one-time paraphrase. Recover the earliest supported record, triggering problem, historical baseline, jurisdiction, decisions, implementation, observed consequences, amendments, current status and next milestones. A missing origin or causal link is an explicit research gap, not inferred history.
+
+Maintain a canonical event ledger: event_id, case_id, event_date and precision, publication_date, retrieval_date, actor_id and role_at_event, action, stated_reason (attributed), documented_evidence_ids and locator, claim_class, financial_stage and amount/unit if applicable, affected populations, outcome_class (observed/intended/conditional/unknown), previous_event_ids with typed relationship, outstanding questions, review_due, version, supersession, visibility and reviewer. Distinguish narrative sequence from causation and actor intent. No invented scene, composite person, attributed motive or unverified accusation. Append new verified events and retain earlier editions and corrections.
+
+Q capabilities apply at the relevant point in the story:
+- Origin and evidence: LL, GLEAN, DBL, provenance, date and jurisdiction comparison.
+- Decision and authority: QIFY, SUPRA and factual role/authority checks; link vote, instrument and counterevidence.
+- Resources: FFF, EE and T2Y; separate funding authorization, commitments, actuals and measured results, and disclose assumptions.
+- Effects: Child Core and cross-system impacts; distinguish observed conditions from conditional hypotheses.
+- Failure, alternatives and future: EH, SHOCK, RX, ABLE, BACKUP, SYN Time and LEAP; show actual options, constraints and test evidence only where available.
+- Continuing coverage: TSLP and human review, correction and re-opening triggers.
+
+Internal analysis records may identify the applied check and source IDs. Public prose communicates its result, not an engine name checklist; never mark a Q feature performed unless there is an analysis or test receipt. A short practical answer leads with the action; educational and historical answers use natural chronology. Protect emergency, legal and privacy boundaries.
+
+Existing report adapter adds 18 subject-specific openings and investigative sections projected from public report fields. This is not a completed event-level research recovery. Event ledgers, source locators, prior historical files, richer data, additional subjects and review are outstanding. Use exact authored question selection for direct answers; lexical matches are labeled related reading. Preserve all 40 technical perspectives and original evidence. No independent factual certification, runtime research or production release implied.
