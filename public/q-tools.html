@@ -9,7 +9,7 @@
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="site.css" rel="stylesheet"/><link href="q-tools.css" rel="stylesheet"/>
 <script defer="" src="q-tools.js"></script><script defer="" src="q-tools-view.js"></script>
-<link href="public-experience.css" rel="stylesheet"/><script defer="" src="launch-system.js"></script></head>
+<link href="public-experience.css" rel="stylesheet"/><script defer="" src="launch-system.js"></script><link rel="stylesheet" href="guided-tools.css"><script defer src="guided-tools-core.js"></script><script defer src="guided-tools.js"></script></head>
 <body class="qp-v3">
 <a class="skip-link" href="#q-main">Skip to tools</a>
 <div class="topline"><span>Q-PUEBLO <b>•</b> Q TOOLS WORKBENCH</span><span>INDEPENDENT <b>•</b> HUMAN-GOVERNED</span></div>
@@ -18,9 +18,9 @@
 <section class="qt-hero"><p class="qt-kicker">CALCULATORS &amp; DECISION GUIDES</p><h1>Do the work. <em>Show the reasoning.</em></h1>
 <p>Run real calculations, compare alternatives, test whether evidence supports a useful claim, and produce a report you can keep. Inputs stay in your browser until you explicitly download or copy them.</p>
 <div class="qt-callout"><strong>Method boundary:</strong> EE_INTEL and T2Y here are transparent reference calculations using your inputs—not measured civic facts, independent verification, or authorization to publish. No live AI, account, automatic data intake, or server-side analysis runs on this page.</div>
-</section>
+</section><section class="qp-guide qp-container"><h2>Let Q guide you</h2><p>Start with an everyday question. Choose help, a real dated Pueblo example, practice or professional detail. This interactive guide uses existing public knowledge, not a live AI chat. No information is automatically sent or saved.</p><div data-qp-guide-hub="main"></div><noscript><p><a href="qify.html">Ask Q</a> · <a href="reports.html">Read documented stories</a> · <a href="sources.html">Find official records</a></p></noscript></section>
 <section class="qp-gov-card qp-container"><h2>Try the decision and truth tools</h2><p>Compare scenarios, work through a conflict, measure resource savings and explore 24 evidence perspectives.</p><p><a href="decision-tools.html#scenarios">Scenarios</a> · <a href="decision-tools.html#conflict">Conflict resolution</a> · <a href="decision-tools.html#energy">Energy savings</a> · <a href="decision-tools.html#truth">Truth Suite</a></p></section><nav aria-label="Q tools" class="qt-jump"><a href="#ee">EE / route costs</a><a href="#t2y">T2Y / evidence</a><a href="#lifecycle">Compare costs</a><a href="#challenge">Challenge a finding</a><a href="#deliverables">Reports</a></nav>
-<section aria-labelledby="ee-title" class="qt-tool" id="ee"><div class="qt-section-head"><div><p class="qt-kicker">01 / EE_INTEL</p><h2 id="ee-title">Compare intelligence routes</h2></div><span class="qt-state">Normalized simulation</span></div>
+<section aria-labelledby="ee-title" class="qt-tool" id="ee"><div class="qp-guide" data-qp-guide="ee"></div><div class="qt-section-head"><div><p class="qt-kicker">01 / EE_INTEL</p><h2 id="ee-title">Compare intelligence routes</h2></div><span class="qt-state">Normalized simulation</span></div>
 <p>Enter comparable 0–10 cost weights per route. Costs represent relative computing, energy, latency, error, human review, rework, trust and public burden—not measured dollars, kWh or time. Only routes clearing all three eligibility gates can be ranked. Lowest eligible cost wins.</p>
 <div class="qt-two">
 <fieldset class="qt-card"><legend>Route A</legend><label for="ea-name">Route name</label><input id="ea-name" maxlength="70" value="Source-first human review"/>
@@ -51,7 +51,7 @@
 <div class="qt-checks"><label><input id="eb-safe" type="checkbox"/> Meets safety floor</label><label><input id="eb-evidence" type="checkbox"/> Evidence adequate</label><label><input id="eb-authority" type="checkbox"/> Authorized human route</label></div></fieldset>
 </div>
 <button class="qt-run" id="run-ee" type="button">Compare qualified routes</button><p class="qt-formula">Q10 reference: C = compute + energy + latency + error + review + rework + trust + public burden; relative EE score = yield / (1 + C). Eligibility before optimization.</p></section>
-<section aria-labelledby="t2y-title" class="qt-tool" id="t2y"><div class="qt-section-head"><div><p class="qt-kicker">02 / T2Y</p><h2 id="t2y-title">Test Truth-to-Yield</h2></div><span class="qt-state">Reference instrument</span></div>
+<section aria-labelledby="t2y-title" class="qt-tool" id="t2y"><div class="qp-guide" data-qp-guide="t2y"></div><div class="qt-section-head"><div><p class="qt-kicker">02 / T2Y</p><h2 id="t2y-title">Test Truth-to-Yield</h2></div><span class="qt-state">Reference instrument</span></div>
 <p>Score each factor 0–1. T2Y does not substitute for evidence checks; results are provisional and must never authorize release. Values are user estimates.</p>
 <div class="qt-fields qt-five"><label>Truth support <input id="t-truth" max="1" min="0" step=".05" type="number" value=".8"/></label>
 <label>Realized useful yield <input id="t-yield" max="1" min="0" step=".05" type="number" value=".8"/></label>
@@ -60,7 +60,7 @@
 <label>Harm probability/severity proxy <input id="t-harm" max="1" min="0" step=".05" type="number" value=".1"/></label></div>
 <div class="qt-checks"><label><input id="t-provenance" type="checkbox"/> Source/provenance independently checked</label><label><input id="t-approval" type="checkbox"/> Appropriate human review available</label><label><input id="t-rollback" type="checkbox"/> Correction / rollback path documented</label></div>
 <button class="qt-run" id="run-t2y" type="button">Evaluate evidence gates</button><p class="qt-formula">T2Y = truth × realized yield × agency × reversibility × (1 − harm); reference thresholds: truth ≥ 0.80, harm ≤ 0.20, T2Y ≥ 0.35. All gates conjunctive; no score creates public-release authority.</p></section>
-<section aria-labelledby="life-title" class="qt-tool" id="lifecycle"><div class="qt-section-head"><div><p class="qt-kicker">03 / COST COMPARISON</p><h2 id="life-title">Compare lifecycle costs</h2></div><span class="qt-state">User-supplied numbers</span></div>
+<section aria-labelledby="life-title" class="qt-tool" id="lifecycle"><div class="qp-guide" data-qp-guide="lifecycle"></div><div class="qt-section-head"><div><p class="qt-kicker">03 / COST COMPARISON</p><h2 id="life-title">Compare lifecycle costs</h2></div><span class="qt-state">User-supplied numbers</span></div>
 <p>Compare two alternatives over the same time horizon. Figures are nominal USD, not inflation-adjusted, discounted, validated project budgets, benefits or appropriations. Do not add appropriated and paid totals as though they were separate costs.</p>
 <div class="qt-fields qt-five"><label>Years (same for both) <input id="lc-years" max="100" min="1" step="1" type="number" value="10"/></label></div>
 <div class="qt-two">
@@ -69,7 +69,7 @@
 <fieldset class="qt-card"><legend>Option B</legend><label for="lb-name">Name</label><input id="lb-name" maxlength="70" value="Option B"/>
 <label>One-time cost, USD <input id="lb-upfront" min="0" step=".01" type="number" value="150000"/></label><label>Annual cost, USD <input id="lb-annual" min="0" step=".01" type="number" value="9000"/></label><label>One-time risk reserve, USD <input id="lb-reserve" min="0" step=".01" type="number" value="30000"/></label></fieldset>
 </div><button class="qt-run" id="run-lifecycle" type="button">Calculate comparison</button><p class="qt-formula">Total = one-time cost + (annual cost × years) + one-time risk reserve. Lower nominal cost is not necessarily the better public outcome.</p></section>
-<section aria-labelledby="challenge-title" class="qt-tool" id="challenge"><div class="qt-section-head"><div><p class="qt-kicker">04 / RX CHALLENGE &amp; EVIDENCE</p><h2 id="challenge-title">Challenge or contribute evidence</h2></div><span class="qt-state">Local packet only</span></div>
+<section aria-labelledby="challenge-title" class="qt-tool" id="challenge"><div class="qp-guide" data-qp-guide="challenge"></div><div class="qt-section-head"><div><p class="qt-kicker">04 / RX CHALLENGE &amp; EVIDENCE</p><h2 id="challenge-title">Challenge or contribute evidence</h2></div><span class="qt-state">Local packet only</span></div>
 <p>Create a source-linked correction or research-lead packet. This page does not transmit submissions. Cite original documents and separate claims from counterevidence. Do not enter private personal information or information about children.</p>
 <div class="qt-fields qt-evidence"><label>Claim or observation <textarea id="c-claim" maxlength="1400" placeholder="Quote or clearly describe a dated public claim" rows="3"></textarea></label>
 <label>Original source URL (https only) <input id="c-source" maxlength="1000" placeholder="https://example.gov/document" type="url"/></label>
