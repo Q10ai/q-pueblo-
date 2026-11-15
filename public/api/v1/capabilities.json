@@ -29,5 +29,10 @@
   "ai_learning_sector_guides":true,
   "local_scenario_calculator":true,
   "twin_dated_evidence_layer":true,
-  "external_education_provider_connected":false
+  "external_education_provider_connected":false,
+  "local_scenario_comparison":true,
+  "local_remedy_review":true,
+  "local_resource_comparison":true,
+  "truth_evidence_perspectives":24,
+  "truth_perspective_authority":"13 recovered kinds plus 11 provisional lenses; no independent truth determination"
 }
