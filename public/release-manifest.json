@@ -32,12 +32,13 @@
     "countBoundary": "18 dated source-attributed analyses; 20 featured cards comprise 14 analyses and six separate case summaries. Not 20 completed full papers or independent audits.",
     "integratedReviewCandidate": {
       "storyFirstReportCount": 18,
-      "additionalStoryEditions": 1,
+      "additionalStoryEditions": 5,
       "heritageIntroductoryEntries": 26,
       "governanceProfiles": 11,
       "roleRows": 50,
       "financeGraphics": 4,
-      "scope": "Local dated evidence and public source directories only; full archive reconciliation and human review pending"
+      "scope": "Local dated evidence and public source directories only; full archive reconciliation and human review pending",
+      "naturalHeritageIntroductoryCards": 5
     }
   },
   "presentationUpdated": "2026-11-14"

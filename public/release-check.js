@@ -33,6 +33,7 @@
     ['discover.html', 'Discover &amp; Play', 'text'],
     ['rumor-mill.html', 'Rumor Mill', 'text'],
     ['learn-pueblo.html', 'Learn Pueblo', 'text'],
+    ['hot-topics.html', 'Hot Topics &amp; Continuing Stories', 'text'],
     ['who-governs.html', 'Who governs?', 'text'],
     ['follow-money.html', 'Follow the Money', 'text'],
     ['investigative-story-core.js', 'QPInvestigativeStory', 'text'],
