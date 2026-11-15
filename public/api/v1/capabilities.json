@@ -23,5 +23,11 @@
   "scoped_directed_relationship_paths":3,
   "instant_shock_event_monitoring":false,
   "previous_report_snapshot_count":14,
-  "public_report_edition":"2026-11-14"
+  "public_report_edition":"2026-11-14",
+  "regional_prompt_composer":true,
+  "local_interactive_civic_game":true,
+  "ai_learning_sector_guides":true,
+  "local_scenario_calculator":true,
+  "twin_dated_evidence_layer":true,
+  "external_education_provider_connected":false
 }
