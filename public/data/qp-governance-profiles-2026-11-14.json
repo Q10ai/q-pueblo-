@@ -1,0 +1,486 @@
+{
+  "schema": "qp-governance-profile-overlay-v1",
+  "checked": "2026-11-14",
+  "reviewBy": "2026-12-01",
+  "coverage": "Selected dated public rosters. Not exhaustive; no popularity or influence score.",
+  "profiles": [
+    {
+      "id": "office-city-mayor",
+      "name": "Office of the Mayor",
+      "tier": "government",
+      "scope": "City of Pueblo",
+      "work": "Municipal executive; prepares budget, administers city operations and enforces municipal laws within charter authority.",
+      "members": [
+        [
+          "Heather Graham",
+          "Mayor"
+        ]
+      ],
+      "phone": "719-553-2655",
+      "email": "cityadmin@pueblo.us",
+      "address": "1 City Hall Place, Pueblo, CO 81003",
+      "source": "https://www.pueblo.us/89/Office-of-the-Mayor",
+      "topics": [
+        "City budget",
+        "City services",
+        "Public safety",
+        "Economic development"
+      ]
+    },
+    {
+      "id": "ent-eba66093d2f4",
+      "name": "Pueblo City Council",
+      "tier": "government",
+      "scope": "City of Pueblo",
+      "work": "Municipal legislative and policy-making body; considers ordinances, budgets and contracts. Individual votes and final actions require meeting records.",
+      "members": [
+        [
+          "Brett Boston",
+          "Council member"
+        ],
+        [
+          "Roger Gomez",
+          "Council member"
+        ],
+        [
+          "Joseph Latino",
+          "Council member"
+        ],
+        [
+          "Dianne Danti",
+          "District 1 representative"
+        ],
+        [
+          "Ted Hernandez",
+          "District 3 representative"
+        ],
+        [
+          "Mark Aliff",
+          "Council member"
+        ],
+        [
+          "Selena Ruiz-Gomez",
+          "At-large representative"
+        ]
+      ],
+      "phone": "719-553-2489",
+      "contactNote": "City Hall general contact; verify individual contacts in official council pages.",
+      "source": "https://www.pacog.net/whoispacog",
+      "contact": "https://www.pueblo.us/83/City-Council",
+      "note": "Names listed as City Council representatives by PACOG's 2026 roster. Direct council directory was unavailable in this research pass; current positions and terms need direct confirmation.",
+      "topics": [
+        "Ordinances",
+        "Budgets",
+        "Public contracts",
+        "Regional planning"
+      ]
+    },
+    {
+      "id": "office-county-board",
+      "name": "Board of County Commissioners",
+      "tier": "government",
+      "scope": "Pueblo County",
+      "work": "County policy, administration, budget, land use and county services. The board acts collectively.",
+      "members": [
+        [
+          "Miles Lucero",
+          "District 1"
+        ],
+        [
+          "Paula McPheeters",
+          "District 2"
+        ],
+        [
+          "Zach Swearingen",
+          "District 3; listed as chair on County homepage"
+        ]
+      ],
+      "phone": "719-583-6000",
+      "address": "215 W. 10th Street, Pueblo, CO 81003",
+      "source": "https://pueblocounty.gov/",
+      "contact": "https://www.pueblocounty.gov/board-county-commissioners/board-county-commissioners",
+      "topics": [
+        "County budget",
+        "Roads",
+        "Human services",
+        "Land use",
+        "Recovery"
+      ]
+    },
+    {
+      "id": "ent-9fc831fd79fc",
+      "name": "Other elected County and district offices",
+      "tier": "government",
+      "scope": "County and judicial district",
+      "work": "Separate elected offices administer their own statutory functions; the district attorney serves the judicial district rather than acting as a County department.",
+      "members": [
+        [
+          "Frank Beltran",
+          "Assessor"
+        ],
+        [
+          "Candace Rivera",
+          "Clerk & Recorder"
+        ],
+        [
+          "Kala Beauvais",
+          "10th Judicial District Attorney"
+        ],
+        [
+          "David J. Lucero",
+          "Sheriff"
+        ],
+        [
+          "Kimberly Archuletta",
+          "Treasurer & Public Trustee"
+        ],
+        [
+          "Randy Reeves",
+          "Surveyor"
+        ],
+        [
+          "Dr. Gregory Grahek",
+          "Coroner"
+        ]
+      ],
+      "phone": "719-583-6000",
+      "contactNote": "County general office; use linked official directory for the relevant office.",
+      "source": "https://pueblocounty.gov/",
+      "topics": [
+        "Elections",
+        "Property assessment",
+        "Law enforcement",
+        "Prosecution",
+        "Public finances",
+        "County records"
+      ]
+    },
+    {
+      "id": "ent-9583a0236568",
+      "name": "Pueblo School District 60",
+      "tier": "government",
+      "scope": "School district",
+      "work": "Board sets district policy; superintendent oversees instruction, staff and administration.",
+      "members": [
+        [
+          "William Thiebaut, Jr.",
+          "Board president"
+        ],
+        [
+          "Thomas Farrell",
+          "Vice president"
+        ],
+        [
+          "Dr. Derion Ibarra",
+          "Board member"
+        ],
+        [
+          "Dennis Maes",
+          "Board member"
+        ],
+        [
+          "Susan L. Pannunzio",
+          "Board member"
+        ],
+        [
+          "Dr. Barbara Kimzey",
+          "Superintendent"
+        ]
+      ],
+      "phone": "719-549-7103",
+      "email": "geri.patrone@pueblod60.org",
+      "contactNote": "Board secretary contact",
+      "source": "https://www.pueblod60.org/boe",
+      "extra": [
+        "https://www.pueblod60.org/administration/superintendents-office",
+        "https://www.pueblod60.org/about-us/our-district/contact-us"
+      ],
+      "topics": [
+        "Education",
+        "School funding",
+        "Children",
+        "Workforce preparation"
+      ]
+    },
+    {
+      "id": "ent-36144c80645b",
+      "name": "Pueblo County School District 70",
+      "tier": "government",
+      "scope": "School district",
+      "work": "District-wide educational governance and administration.",
+      "members": [
+        [
+          "Ann Bennett",
+          "Board president, District V"
+        ],
+        [
+          "Dr. A.J. Wilson",
+          "Vice president, District I"
+        ],
+        [
+          "Mark Emery",
+          "District IV"
+        ],
+        [
+          "Michelle Erickson",
+          "District III"
+        ],
+        [
+          "Jonathan Lewis",
+          "District II (members page)"
+        ],
+        [
+          "Rhonda Rein",
+          "Superintendent (contacts page)"
+        ]
+      ],
+      "phone": "719-542-0220",
+      "source": "https://www.district70.org/district-information/directory-of-staff/members",
+      "extra": [
+        "https://www.district70.org/district-information/superintendents-message/contacts",
+        "https://www.district70.org/district-information/directory-of-staff/email-all-members"
+      ],
+      "note": "Member page names Lewis; email-all-members page has a different address for the fifth member. Reconcile with Board records before relying on membership or direct email. Superintendent spelling differs on staff and contact pages.",
+      "topics": [
+        "Education",
+        "Rural schools",
+        "Budget",
+        "Student services"
+      ]
+    },
+    {
+      "id": "ent-b9c587474e10",
+      "name": "Pueblo Area Council of Governments (PACOG)",
+      "tier": "regional",
+      "scope": "Intergovernmental regional body",
+      "work": "Coordinates land use, water quality and regional transportation planning. Membership and funding authority have defined scope.",
+      "members": [
+        [
+          "Carmen Howard",
+          "Manager"
+        ],
+        [
+          "Wendy Pettit",
+          "Regional planning coordinator"
+        ]
+      ],
+      "phone": "719-583-6100",
+      "email": "pettitw@pueblocounty.us",
+      "address": "201 W 8th Street Suite 110, Pueblo, CO 81003",
+      "source": "https://www.pacog.net/whoispacog",
+      "contact": "https://www.pacog.net/contact",
+      "topics": [
+        "Regional plans",
+        "Transportation",
+        "Water quality",
+        "Federal and state planning funds"
+      ]
+    },
+    {
+      "id": "ent-b093130ce0eb",
+      "name": "Pueblo Economic Development Corporation (PEDCO)",
+      "tier": "regional",
+      "scope": "Economic development organization; not a government",
+      "work": "Business recruitment, business development assistance and workforce coordination; individual incentive decisions require controlling public records.",
+      "members": [
+        [
+          "Jeffery C. Shaw",
+          "President & CEO"
+        ],
+        [
+          "Joe O’Brien",
+          "Vice president"
+        ],
+        [
+          "Margaret Gaillard",
+          "VP of operations"
+        ],
+        [
+          "Shannon Baker",
+          "Marketing & prospect coordinator"
+        ]
+      ],
+      "phone": "719-544-2000",
+      "email": "sbaker@pedco.org",
+      "address": "301 N Main St Suite 200, Pueblo, CO 81003",
+      "source": "https://www.pedco.org/contact/",
+      "extra": [
+        "https://www.pedco.org/about-pedco/"
+      ],
+      "topics": [
+        "Jobs",
+        "Industrial recruitment",
+        "Incentives",
+        "Workforce"
+      ]
+    },
+    {
+      "id": "directory-chamber",
+      "name": "Greater Pueblo Chamber of Commerce",
+      "tier": "regional",
+      "scope": "Business membership organization; not a government",
+      "work": "Business community representation, tourism and events. Board membership records identify affiliations, not control of public decisions.",
+      "members": [
+        [
+          "Derrick Martinez",
+          "2026 chair — Express Employment Professionals"
+        ],
+        [
+          "Victoria Krage",
+          "Chair-elect — Krage Manufacturing LLC"
+        ],
+        [
+          "Louis Nazario",
+          "Secretary/treasurer — H.W. Houston Construction"
+        ],
+        [
+          "Ray Swerdfeger",
+          "Vice chair — Miller Pipeline"
+        ],
+        [
+          "Jeff Shaw",
+          "Ex officio — PEDCO"
+        ],
+        [
+          "Zach Swearingen",
+          "Ex officio — County Commissioner"
+        ],
+        [
+          "Andrew Hayes",
+          "Ex officio — City of Pueblo"
+        ],
+        [
+          "Christian Heyn",
+          "Ex officio — Pueblo West Metro District"
+        ]
+      ],
+      "source": "https://pueblochamber.org/about/staff-board/",
+      "note": "Selected roles from published 2026 board list; not the full board. Open source for complete roster and office contacts.",
+      "topics": [
+        "Business",
+        "Tourism",
+        "Workforce",
+        "Regional collaboration"
+      ]
+    },
+    {
+      "id": "directory-pacog-advisory",
+      "name": "PACOG advisory committees",
+      "tier": "regional",
+      "scope": "Advisory and stakeholder representation",
+      "work": "Participate in regional transportation and citizen advisory processes. Advisory representation does not itself authorize expenditure or policy.",
+      "members": [
+        [
+          "Richard Arko",
+          "County Planning & Zoning Commission representative"
+        ],
+        [
+          "Cheryl Spinuzzi",
+          "City Planning & Zoning Commission representative"
+        ],
+        [
+          "Laura Leyba",
+          "ADA advisory representative"
+        ],
+        [
+          "John Chrisman",
+          "PuebloPlex representative"
+        ],
+        [
+          "Don Bruestle",
+          "Citizen-at-large"
+        ]
+      ],
+      "source": "https://www.pacog.net/tac",
+      "contact": "https://www.pacog.net/contact",
+      "note": "Selected published representatives; full list and alternate members at source.",
+      "topics": [
+        "Accessibility",
+        "Transportation",
+        "Land use",
+        "Regional development"
+      ]
+    },
+    {
+      "id": "directory-city-depts",
+      "name": "City departments and service offices",
+      "tier": "government",
+      "scope": "City of Pueblo",
+      "work": "Find service office contacts and departmental responsibilities in the City directory. Roles and contact details must be rechecked as staff change.",
+      "members": [
+        [
+          "Clyde Bishop",
+          "City Clerk, listed in staff directory"
+        ]
+      ],
+      "phone": "719-553-2669",
+      "email": "clerk@pueblo.us",
+      "source": "https://www.pueblo.us/m/directory",
+      "extra": [
+        "https://www.pueblo.us/2173/City-Departments"
+      ],
+      "topics": [
+        "Records",
+        "Licenses",
+        "Police",
+        "Public works",
+        "Planning",
+        "Purchasing",
+        "Utilities"
+      ]
+    }
+  ],
+  "pacogMembership": {
+    "source": "https://www.pacog.net/whoispacog",
+    "checked": "2026-11-14",
+    "relation": "listed member government",
+    "members": [
+      {
+        "name": "City of Pueblo",
+        "entityId": "ent-1d07f2b59d68"
+      },
+      {
+        "name": "Pueblo County",
+        "entityId": "ent-9fc831fd79fc"
+      },
+      {
+        "name": "Board of Water Works",
+        "entityId": "office-water-board"
+      },
+      {
+        "name": "School District 60",
+        "entityId": "ent-9583a0236568"
+      },
+      {
+        "name": "School District 70",
+        "entityId": "ent-36144c80645b"
+      },
+      {
+        "name": "Pueblo West Metropolitan District",
+        "entityId": "ent-9528c16c953c"
+      },
+      {
+        "name": "Colorado City Metropolitan District",
+        "entityId": null
+      },
+      {
+        "name": "Salt Creek Sanitation District",
+        "entityId": null
+      }
+    ]
+  },
+  "gaps": [
+    "Full city council individual term/contact verification",
+    "County departments, elected office-specific contacts",
+    "State and federal representatives and transition dates",
+    "Special districts, boards, commissions, water, fire and libraries",
+    "PURA, PuebloPlex, utilities, hospitals, universities, chambers, nonprofit and community organizations",
+    "Contractors, regulated businesses and documented project-specific actions",
+    "Individual role transitions, source conflicts, source-backed issue and money links"
+  ],
+  "intake": {
+    "mode": "LOCAL_DRAFT_EMAIL_ONLY",
+    "automaticKnowledgeAdmission": false,
+    "automaticPublication": false
+  }
+}
