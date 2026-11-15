@@ -41,6 +41,8 @@
     ['investigative-story-core.js', 'QPInvestigativeStory', 'text'],
     ['finance-visual-core.js', 'QPFinanceVisual', 'text'],
     ['data/qp-story-editions.js', 'infr-005', 'text'],
+    ['data/qp-discoveries.js', 'QPDiscovery', 'text'],
+    ['decision-tools.html', 'Evidence time machine', 'text'],
     ['ai-learn.html', 'AI, QIFY', 'text'],
     ['rx.html', 'Q-RX', 'text'],
     ['twin.html', 'Twin Pueblo', 'text'],
