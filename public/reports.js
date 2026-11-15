@@ -3,11 +3,11 @@
  const $=id=>document.getElementById(id), core=window.QPReport;
  let current=null;
  function render(report,userAction=false){
-  current=report;
+  current=report;document.title=report.title+' | Q-Pueblo';
   for(const b of document.querySelectorAll('[data-report]'))b.setAttribute('aria-pressed',String(b.dataset.report===report.slug));
   $('qified-report').innerHTML=core.render(report);
-  const story=window.QPInvestigativeStoryView?.render(window.QPInvestigativeStory?.project(report));if(story){$('qified-report').prepend(story);const d=story.querySelector('.qp-discoveries');if(d)d.id='q-discoveries';}
-  $('report-message').textContent='Selected: '+report.title+'.';
+  const story=window.QPInvestigativeStoryView?.render(window.QPInvestigativeStory?.project(report));if(story){const wrapper=document.createElement('details');wrapper.className='qp-report-popout';const summary=document.createElement('summary');summary.textContent='More detailed investigation and connected evidence';wrapper.append(summary,story);$('qified-report').append(wrapper);const d=story.querySelector('.qp-discoveries');if(d)d.id='q-discoveries';}
+  $('report-message').textContent='Selected: '+report.title+'.';const staticLink=document.createElement('a');staticLink.href='report-'+encodeURIComponent(report.slug)+'.html';staticLink.textContent='Read or share this permanent report page';const p=document.createElement('p');p.append(staticLink);$('qified-report').prepend(p);
   for(const id of ['report-download','report-json','report-print','report-records'])$(id).disabled=false;
   const url=new URL(location.href);url.searchParams.set('report',report.slug);history.replaceState(null,'',url);
   if(userAction)$('qified-report').scrollIntoView({block:'start',behavior:'smooth'});
