@@ -28,7 +28,7 @@ try{
  }
  function render(){
   const id=select.value;result.replaceChildren();
-  if(!issues.has(id)){status.textContent='Select an issue to see the three-hop association path.';result.append(node('p','You can also browse the local issue directory.'));return}
+  if(!issues.has(id)){status.textContent='Select an issue to read its story and explore its connections.';result.append(node('p','You can also browse the local issue directory.'));return}
   const i=issues.get(id);
   const direct=i.edges.map(x=>({...x,entity:entities.get(x.entity_id),broad:hubs.has(x.entity_id)})).filter(x=>x.entity);
   const directIds=new Set(direct.map(e=>e.entity_id));
@@ -41,6 +41,8 @@ try{
   const activePeers=peer.filter(x=>broad||x.specific).sort((a,b)=>a.record.title.localeCompare(b.record.title));
   const activeThird=[...third.values()].filter(x=>x.entity&&(broad||x.specific)).sort((a,b)=>a.entity.name.localeCompare(b.entity.name));
   result.append(node('h2',i.title));
+  const story=window.QPStoryEditions?.byId(i.id);if(story&&window.QPIssueStoryView)result.append(window.QPIssueStoryView.narrative(story));else {const p=node('p','The exact issue story has not yet been recovered into this edition. The relationships below are discovery leads, not an answer.');result.append(p);}
+  result.append(node('h3','Explore the connections'));
   const recordDate=i.source_date?'Source date: '+i.source_date+'. ':'';
   result.append(node('p',recordDate+'These names appear in the dated research index. Their appearance does not establish responsibility or control.'));
   status.textContent=direct.length?direct.length+' recorded names for this topic.':'No documented organization links for this topic yet.';
@@ -51,7 +53,7 @@ try{
     li.append(node('p',x.entity.identity_state.startsWith('Unresolved group')?'Grouped name; individual organization not identified.':'Named in the dated index.'));
     li.append(link('Explore organization','governance-entities.html#'+encodeURIComponent(x.entity_id)));
   }));
-  push(section('Related topics','These topics share named organizations; that does not establish a direct cause.',activePeers,(li,x)=>{
+  push(section('Related issues — shared organizations','These are discovery leads, not answers about the selected issue.',activePeers,(li,x)=>{
     li.append(link(x.record.title,'connections.html?issue='+encodeURIComponent(x.record.id)));
     li.append(node('p','Shared names: '+x.via.map(e=>e.entity.name).join('; ')));
   }));
