@@ -30,3 +30,9 @@ for(const q of ['24th Street bridge construction cost','Has the city paid for Pr
 assert.equal(ed.byId('infr-005').id,'infr-005');assert.equal(ed.exact('Why is Pueblo planning a 24th Street bridge?').id,'infr-005');assert.equal(ed.exact('24th Street bridge construction cost'),null);
 for(const page of ['qify.html','reports.html','issues.html','governance-topics.html','connections.html'])assert(read(page).includes('investigative-story-core.js')&&read(page).includes('investigative-story-view.js'));
 console.log('PASS investigative story projection: 18 dated analyses, original IDs, dates, finance stages, source counts, unique openings, exact question and false-substitute checks. Not an independent evidence or browser audit.');
+
+const cv=is.visual(r.reports.find(x=>x.slug==='county-priorities-2026'));assert.equal(cv.total,26);assert.equal(cv.items.map(x=>x.value).join(','),'1,22,3');
+const hv=is.visual(r.reports.find(x=>x.slug==='half-cent-2026'));assert.equal(hv.total,88727214);assert.equal(hv.items.map(x=>x.value).join(','),'22085740,66641474');
+const broken=JSON.parse(JSON.stringify(r.reports.find(x=>x.slug==='half-cent-2026')));broken.keyFacts[0].value='$22,085,741';assert.equal(is.visual(broken),null);
+const wrongSource=JSON.parse(JSON.stringify(r.reports.find(x=>x.slug==='county-priorities-2026')));wrongSource.keyFacts[1].source='other';assert.equal(is.visual(wrongSource),null);
+assert.equal(is.visual(r.reports.find(x=>x.slug==='aspen-recovery-costs')),null);assert(read('issue-story.css').includes('prefers-reduced-motion'));assert(read('investigative-story-view.js').includes("meter.setAttribute('aria-label'"));console.log('PASS two bounded visualizations; sums, source compatibility, no automatic unrelated chart.');
