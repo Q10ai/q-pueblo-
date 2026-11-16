@@ -1,6 +1,6 @@
 {
   "schema": "qp-public-release-manifest-v1",
-  "releaseId": "QP-PUBLIC-2026-11-14-ILLUSTRATED-R2",
+  "releaseId": "QP-PUBLIC-2026-11-16-CONSOLIDATED-RC1",
   "sourceRepository": "Q10ai/q-pueblo-",
   "productionBranch": "main",
   "sourceDate": "2026-11-13",
@@ -16,7 +16,7 @@
     "realTimeMeetingIngestion": false,
     "officialCivicDigitalTwin": false
   },
-  "previousReleaseId": "QP-PUBLIC-2026-11-13-EXPERIENCE-RC1",
+  "previousReleaseId": "QP-PUBLIC-2026-11-14-ILLUSTRATED-R2",
   "presentation": {
     "edition": "illustrated-public-first-v3",
     "entryways": 12,
@@ -53,7 +53,10 @@
       "mobileHero": "Intrinsic artwork ratio, aligned mobile content gutters; device verification pending",
       "additionalFortyPerspectiveStories": 2,
       "additionalFortyPerspectiveBoundary": "Two story studies with 40 classified perspectives each; not added to canonical 18-report inventory; unresolved evidence is explicit"
-    }
+    },
+    "publicSourceFindings": 7,
+    "livingResearchCollections": 18,
+    "newFindingsBoundary": "Seven dated public-source summaries, separate from the existing 18 analyses; no new full 40-section completion claim. 18 collections group existing research, not additional canonical issue identities."
   },
-  "presentationUpdated": "2026-11-14"
+  "presentationUpdated": "2026-11-16"
 }
