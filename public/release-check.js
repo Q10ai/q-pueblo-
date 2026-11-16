@@ -1,10 +1,12 @@
 'use strict';
 (() => {
   // Static route checks. No input, credentials, storage, analytics, publication, or external requests.
-  const releaseId = 'QP-PUBLIC-2026-11-14-ILLUSTRATED-R2';
+  const releaseId = 'QP-PUBLIC-2026-11-16-CONSOLIDATED-RC1';
   const assets = [
     ['release-manifest.json', releaseId, 'json'],
     ['index.html', 'Get to Know Pueblo', 'text'],
+    ['packets.html', 'recent-source-findings', 'text'],
+    ['report-budget-2026.html', 'Additional research coverage and unanswered questions', 'text'],
     ['assets/pueblo-riverwalk-hero.webp', null, 'image'],
     ['assets/pueblo-riverwalk-hero-mobile.webp', null, 'image'],
     ['assets/pueblo-entry-art.webp', null, 'image'],
@@ -59,7 +61,7 @@
     ['experience.css', 'qp-exp-card', 'text'],
     ['data/qp-three-hop-2026-11-13.json', '211', 'json'],
     ['data/qp-now-2026-11-13.json', '2026-11-13', 'json'],
-    ['release-check.js', 'QP-PUBLIC-2026-11-14-ILLUSTRATED-R2', 'text']
+    ['release-check.js', 'QP-PUBLIC-2026-11-16-CONSOLIDATED-RC1', 'text']
   ];
   const $=id=>document.getElementById(id);
   const btn=$('run-check'),status=$('release-status'),list=$('release-results');
