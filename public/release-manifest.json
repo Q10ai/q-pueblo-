@@ -52,7 +52,16 @@
       "learningBoundary": "Subject-first mini lessons, shared source-linked local studies, optional exercises, external provider collections; not an accredited curriculum.",
       "mobileHero": "Intrinsic artwork ratio, aligned mobile content gutters; device verification pending",
       "additionalFortyPerspectiveStories": 2,
-      "additionalFortyPerspectiveBoundary": "Two story studies with 40 classified perspectives each; not added to canonical 18-report inventory; unresolved evidence is explicit"
+      "additionalFortyPerspectiveBoundary": "Two story studies with 40 classified perspectives each; not added to canonical 18-report inventory; unresolved evidence is explicit",
+      "externalModelReferences": 36,
+      "modelGovernanceDimensions": 14,
+      "modelLibraryBoundary": "Educational links and Q interpretation; no active adapters, provider subscriptions, validated model ratings, or operational twin. External interactive access and licensing require independent verification.",
+      "modelGovernancePages": [
+        "twin.html",
+        "method.html",
+        "ai-learn.html",
+        "q-tools.html"
+      ]
     },
     "publicSourceFindings": 7,
     "livingResearchCollections": 18,
