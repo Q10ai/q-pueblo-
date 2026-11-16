@@ -5,7 +5,14 @@ const read=p=>fs.readFileSync('public/'+p,'utf8');
 const ctx={window:{},URL};for(const p of ['qify-match.js','report-core.js','rumor-core.js'])vm.runInNewContext(read(p),ctx,{timeout:3000});
 const {QPReport:core,QP_QIFY_MATCH:matcher,QPRumor:mill}=ctx.window;
 const reports=JSON.parse(read('data/qp-current-reports.json')).reports;
-const run=(q,l='all',r=reports,t='2026-11-14',c='Other')=>mill.assess(q,c,l,r,core,matcher,t);
+// Fixed release-date fixture, not the runner's clock. A refreshed report must still be held before its source date.
+const RELEASE_AS_OF='2026-11-15';
+assert(reports.every(r=>r.sourceChecked<=RELEASE_AS_OF),'Evidence dated after the candidate release fixture');
+const run=(q,l='all',r=reports,t=RELEASE_AS_OF,c='Other')=>mill.assess(q,c,l,r,core,matcher,t);
+const food=reports.find(r=>r.slug==='food-assistance');
+assert(food&&food.sourceChecked==='2026-11-15','Updated food report date');
+assert.equal(run(food.questions[0],'all',reports,'2026-11-14').state,'UNRESOLVED','Keep pre-observation hold');
+assert.equal(run(food.questions[0],'all',reports,RELEASE_AS_OF).state,'DATED_Q_ANSWER','Allow dated answer on observation date');
 let checked=0;
 for(const r of reports){for(const q of r.questions){const a=run(q);assert.equal(a.state,'DATED_Q_ANSWER',q);assert.equal(a.report.slug,r.slug);assert.equal(a.summary,r.summary);checked++;}}
 for(const q of ['How much cash was paid to Project Falcon?','Pueblo housing is all corrupt','Did they steal the budget?','Is the 2027 adopted city budget $128,202,143?','Has the half-cent money actually been spent?','Is the Arkansas River safe right now?','<img src=x onerror=alert(1)>']){const a=run(q);assert.equal(a.state,'UNRESOLVED',q);assert.equal(a.report,null);}

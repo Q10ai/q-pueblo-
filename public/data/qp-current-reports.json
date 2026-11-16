@@ -3091,13 +3091,13 @@
       "slug": "food-assistance",
       "title": "Where can Pueblo households get help with food?",
       "topic": "Food & family services",
-      "summary": "Pueblo County lists emergency food assistance at no cost for qualifying households. Text FOOD to 1-877-644-3663 to receive an intake survey link. Seniors age 60 or older may also qualify for Everyday Eats; SNAP is a separate application and EBT benefit.",
-      "what": "Local food assistance, eligibility routes and application access.",
-      "who": "Pueblo County Human Services publishes TEFAP, Everyday Eats and SNAP guidance; program administrators determine eligibility.",
-      "where": "Pueblo County service routes; individual pickup locations and availability need confirmation.",
-      "when": "County program pages checked November 14, 2026; TEFAP intake instructions reference a February 2021 process change.",
+      "summary": "Pueblo has several ways to get food: free prepared meals at Pueblo Community Soup Kitchen, grocery sacks at Cooperative Care, appointment-based grocery pickup at the By Grace Sunny Side Market, pantry and mobile-market locators, school meals, senior meal and delivery programs, WIC, TEFAP and SNAP. Start with the provider directory below; for an urgent or changing need, call 211 to find alternatives. Confirm schedules before travel.",
+      "what": "Regional practical food access, including nonprofit, community, educational and public-benefit routes.",
+      "who": "Local food providers, school nutrition programs, senior services, Pueblo County and regional referral networks each have distinct responsibilities.",
+      "where": "Pueblo city and county; see named provider locations and regional locators.",
+      "when": "Provider and directory pages retrieved November 15; original County program sources checked November 14. Schedules are published guidance, not live openings.",
       "why": "A household needing food benefits from a direct access route rather than a general eligibility discussion.",
-      "how": "Use the published text intake for TEFAP/Everyday Eats. Apply separately for SNAP online through Colorado PEAK or through County DHS.",
+      "how": "Choose a prepared meal, grocery pickup, mobile market, school meal, senior delivery or ongoing benefits according to need and eligibility.",
       "sources": [
         {
           "id": "tefap",
@@ -3131,6 +3131,138 @@
           "role": "A1",
           "locator": "Benefits and how to apply",
           "scope": "Supports only the stated observations; not a live service or outcome guarantee."
+        },
+        {
+          "id": "pcsk",
+          "title": "Pueblo Community Soup Kitchen — published access",
+          "url": "https://www.pcsk.org/",
+          "kind": "Provider or public organization page",
+          "asOf": "Published service guidance",
+          "checked": "2026-11-15",
+          "role": "A1",
+          "locator": "Service, contact, access or calendar information",
+          "scope": "Published route, not live availability or guaranteed acceptance"
+        },
+        {
+          "id": "coop",
+          "title": "Pueblo Cooperative Care Center — published access",
+          "url": "https://cooperativecare.org/",
+          "kind": "Provider or public organization page",
+          "asOf": "Published service guidance",
+          "checked": "2026-11-15",
+          "role": "A1",
+          "locator": "Service, contact, access or calendar information",
+          "scope": "Published route, not live availability or guaranteed acceptance"
+        },
+        {
+          "id": "bgcc",
+          "title": "By Grace Community Center / Pueblo Sunny Side Market — published access",
+          "url": "https://sunnysidemarket.org/",
+          "kind": "Provider or public organization page",
+          "asOf": "Published service guidance",
+          "checked": "2026-11-15",
+          "role": "A1",
+          "locator": "Service, contact, access or calendar information",
+          "scope": "Published route, not live availability or guaranteed acceptance"
+        },
+        {
+          "id": "care",
+          "title": "Care and Share Food Bank — published access",
+          "url": "https://careandshare.org/FindFood/",
+          "kind": "Provider or public organization page",
+          "asOf": "Published service guidance",
+          "checked": "2026-11-15",
+          "role": "A1",
+          "locator": "Service, contact, access or calendar information",
+          "scope": "Published route, not live availability or guaranteed acceptance"
+        },
+        {
+          "id": "pfp",
+          "title": "Pueblo Food Project — published access",
+          "url": "https://pueblofoodproject.org/foodpantries/",
+          "kind": "Provider or public organization page",
+          "asOf": "Published service guidance",
+          "checked": "2026-11-15",
+          "role": "A1",
+          "locator": "Service, contact, access or calendar information",
+          "scope": "Published route, not live availability or guaranteed acceptance"
+        },
+        {
+          "id": "pmap",
+          "title": "Pueblo Food Map — published access",
+          "url": "https://pueblofoodmap.com/venues",
+          "kind": "Attributed resource directory",
+          "asOf": "Published service guidance",
+          "checked": "2026-11-15",
+          "role": "A1",
+          "locator": "Service, contact, access or calendar information",
+          "scope": "Published route, not live availability or guaranteed acceptance"
+        },
+        {
+          "id": "twooneone",
+          "title": "2-1-1 Colorado resource navigation — published access",
+          "url": "https://pueblofoodproject.org/foodpantries/",
+          "kind": "Attributed resource directory",
+          "asOf": "Published service guidance",
+          "checked": "2026-11-15",
+          "role": "A1",
+          "locator": "Service, contact, access or calendar information",
+          "scope": "Published route, not live availability or guaranteed acceptance"
+        },
+        {
+          "id": "srda",
+          "title": "SRDA senior nutrition — published access",
+          "url": "https://srda.org/84/Nutrition-Services",
+          "kind": "Provider or public organization page",
+          "asOf": "Published service guidance",
+          "checked": "2026-11-15",
+          "role": "A1",
+          "locator": "Service, contact, access or calendar information",
+          "scope": "Published route, not live availability or guaranteed acceptance"
+        },
+        {
+          "id": "now",
+          "title": "Cooperative Care Nutrition on Wheels — published access",
+          "url": "https://cooperativecare.org/",
+          "kind": "Provider or public organization page",
+          "asOf": "Published service guidance",
+          "checked": "2026-11-15",
+          "role": "A1",
+          "locator": "Service, contact, access or calendar information",
+          "scope": "Published route, not live availability or guaranteed acceptance"
+        },
+        {
+          "id": "d60",
+          "title": "Pueblo School District 60 — published access",
+          "url": "https://www.pueblod60.org/departments/nutrition-services",
+          "kind": "Provider or public organization page",
+          "asOf": "Published service guidance",
+          "checked": "2026-11-15",
+          "role": "A1",
+          "locator": "Service, contact, access or calendar information",
+          "scope": "Published route, not live availability or guaranteed acceptance"
+        },
+        {
+          "id": "agape",
+          "title": "Agape Fellowship — published access",
+          "url": "https://www.pueblod60.org/parent-and-family-resources/helpful-resources-for-families/community-resources",
+          "kind": "Attributed resource directory",
+          "asOf": "Published service guidance",
+          "checked": "2026-11-15",
+          "role": "A1",
+          "locator": "Service, contact, access or calendar information",
+          "scope": "Published route, not live availability or guaranteed acceptance"
+        },
+        {
+          "id": "countyfood",
+          "title": "Pueblo County Public Health food resources — published access",
+          "url": "https://county.pueblo.org/public-health-department/food-assistance",
+          "kind": "Provider or public organization page",
+          "asOf": "Published service guidance",
+          "checked": "2026-11-15",
+          "role": "A1",
+          "locator": "Service, contact, access or calendar information",
+          "scope": "Published route, not live availability or guaranteed acceptance"
         }
       ],
       "keyFacts": [
@@ -3157,30 +3289,111 @@
           "value": "Colorado PEAK or County DHS",
           "stage": "Separate application",
           "source": "snap"
+        },
+        {
+          "label": "Pueblo Community Soup Kitchen",
+          "value": "422 W. 7th St., Pueblo",
+          "stage": "Free prepared meals · Mon–Sat, 8 a.m.–noon per provider; confirm holiday changes",
+          "source": "pcsk"
+        },
+        {
+          "label": "Pueblo Cooperative Care Center",
+          "value": "326 W. 8th St., Pueblo · 719-543-7484",
+          "stage": "Grocery sacks and other emergency assistance · Mon–Thu, 9 a.m.–1 p.m. per provider; closed holidays",
+          "source": "coop"
+        },
+        {
+          "label": "By Grace Community Center / Pueblo Sunny Side Market",
+          "value": "1230 E. 8th St., Pueblo · 719-470-1004",
+          "stage": "Grocery pantry · Schedule through Plentiful under BGCC Pueblo Pantry",
+          "source": "bgcc"
+        },
+        {
+          "label": "Care and Share Food Bank",
+          "value": "Find Food locator; SNAP help 719-666-3849",
+          "stage": "Pantry locator, mobile markets and SNAP help · Use current-month event calendar and location search",
+          "source": "care"
+        },
+        {
+          "label": "Pueblo Food Project",
+          "value": "Use Find Food link on provider page",
+          "stage": "Local pantry calendar and food-network directory · Monthly dates, times and locations via linked calendar",
+          "source": "pfp"
+        },
+        {
+          "label": "Pueblo Food Map",
+          "value": "Search all venues by service/location",
+          "stage": "Regional food-site directory · Check each listing with the provider; hours may be missing or outdated",
+          "source": "pmap"
+        },
+        {
+          "label": "2-1-1 Colorado resource navigation",
+          "value": "Dial 211 or 866-760-6489",
+          "stage": "Phone referral for food and related help · Contact for current referrals; no opening hours independently established",
+          "source": "twooneone"
+        },
+        {
+          "label": "SRDA senior nutrition",
+          "value": "SRDA · 719-543-0100 (D60 community directory)",
+          "stage": "Congregate lunch and Meals on Wheels · Contact SRDA for sites, meal reservations and delivery screening",
+          "source": "srda"
+        },
+        {
+          "label": "Cooperative Care Nutrition on Wheels",
+          "value": "719-543-7484",
+          "stage": "Homebound older-adult nutrition · Call about enrollment",
+          "source": "now"
+        },
+        {
+          "label": "Pueblo School District 60",
+          "value": "D60 Foodworks · 719-549-7205",
+          "stage": "School breakfast and lunch · District instructional calendar",
+          "source": "d60"
+        },
+        {
+          "label": "Agape Fellowship",
+          "value": "719-542-1411",
+          "stage": "Community food giveaway · Second and fourth Tuesdays listed by D60; confirm with church",
+          "source": "agape"
+        },
+        {
+          "label": "Pueblo County Public Health food resources",
+          "value": "County food-resource page",
+          "stage": "WIC, blessing boxes, pantry locator and transit links · Follow current program or transit links",
+          "source": "countyfood"
         }
       ],
       "whatKnown": [
         "TEFAP recognizes eligibility through specified assistance programs, including SNAP and Medicaid, or a household gross-income route.",
         "Everyday Eats offers qualifying older adults monthly food assistance; the County describes a six-month recertification requirement.",
-        "SNAP applications can be made through PEAK or County application channels; the County lists 719-583-6160 for requesting a mailed application."
+        "SNAP applications can be made through PEAK or County application channels; the County lists 719-583-6160 for requesting a mailed application.",
+        "PFP reports supplying 43 pantries; this is cumulative partner reach, not a count of currently open food sites.",
+        "D60 lists Agape, Care and Share, Cooperative Care and Meals on Wheels as resource routes; see the provider-specific sources.",
+        "County Public Health publishes food and transportation resource links; access is broader than the DHS intake."
       ],
       "unknowns": [
-        "Current household-size income thresholds and intake availability were not independently verified.",
-        "Actual inventory, pickup time, acceptance and individual eligibility are not established."
+        "Individual eligibility, live stock, today’s actual hours, transport accommodations, current wait times and provider-specific capacity require direct confirmation.",
+        "Current complete funding, payments, locally measured outcomes and unduplicated household counts were not reconciled.",
+        "The directory is not exhaustive; rural, D70, college, faith and informal providers require continued expansion and verification."
       ],
-      "counter": "A published route is not a guarantee of immediate food, a particular benefit amount, or enrollment.",
+      "counter": "Provider and directory listings can disagree or lag; do not confuse cumulative partner count with current open sites. A referral is not a completed food pickup.",
       "options": [
-        "Use the emergency food intake",
-        "Apply for SNAP or Everyday Eats when applicable"
+        "Prepared meal now",
+        "Grocery pantry or mobile distribution",
+        "School nutrition",
+        "Senior congregate or home delivery",
+        "WIC, TEFAP, SNAP and Everyday Eats"
       ],
       "child": "Reliable food access may support family stability; no individual outcome predicted.",
       "ee": "No measured efficiency score. Compare actual resources, access and outcomes before claiming efficiency.",
       "t2y": "Separate observed evidence from actual delivery. A stated plan or process is not an observed outcome.",
-      "rx": "Preserve dated original evidence and amend when controlling records change.",
+      "rx": "If the first provider is unavailable, use an alternative provider or 211; improve cross-referrals and verify service details before travel.",
       "actions": [
-        "Text FOOD to 1-877-644-3663 for the County-described food intake survey.",
-        "For SNAP, visit the County page and use PEAK or the County's application options.",
-        "For Everyday Eats, consult its age and income eligibility requirements."
+        "For a prepared meal, check Pueblo Community Soup Kitchen at 422 W. 7th St. (published Mon–Sat, 8 a.m.–noon).",
+        "For groceries, call Cooperative Care at 719-543-7484 or By Grace at 719-470-1004; use the Care and Share/PFP locators for more sites.",
+        "If the first service cannot help, call 211 for food and related referrals. Ask about transport and accessible pickup.",
+        "For enrolled D60 students use school meals; for older or homebound people check SRDA and Cooperative Care Nutrition on Wheels.",
+        "For ongoing benefits use County TEFAP (text FOOD to 1-877-644-3663), SNAP or Everyday Eats as applicable."
       ],
       "money": [
         {
@@ -3195,9 +3408,10 @@
         }
       ],
       "relations": [
-        "Food access connects household income, transportation, health and school/work attendance; effects are not measured in this review."
+        "Food access connects transport, household income, housing, school attendance, disability and senior-care resources.",
+        "Community providers and public assistance complement each other; measure actual service handoffs separately."
       ],
-      "version": "1.0.0",
+      "version": "1.1.0",
       "aliases": [
         "food assistance",
         "emergency food",
@@ -3210,14 +3424,17 @@
       "questions": [
         "Where can I get food assistance in Pueblo?",
         "How do I apply for emergency food assistance in Pueblo?",
-        "Where can I get free food in Pueblo?"
+        "Where can I get free food in Pueblo?",
+        "Where can I find a food pantry in Pueblo?",
+        "Where can I get a free meal in Pueblo?",
+        "What food services are available in Pueblo?"
       ],
       "issueIds": [
         "heal-010"
       ],
-      "sourceChecked": "2026-11-14",
-      "date": "2026-11-14",
-      "reviewDue": "2026-11-21",
+      "sourceChecked": "2026-11-15",
+      "date": "2026-11-15",
+      "reviewDue": "2026-11-22",
       "stage": "DATED SOURCE-ATTRIBUTED EXPLANATORY ANALYSIS",
       "review": "Bounded public-source review; actual outcomes not independently audited.",
       "publicationClass": "PUBLIC_EXPLANATORY_ANALYSIS",
@@ -3258,35 +3475,151 @@
             "snap"
           ],
           "boundary": "Separate application"
+        },
+        {
+          "id": "QP-food-assistance-pcsk",
+          "claim": "Pueblo Community Soup Kitchen: Free prepared meals; 422 W. 7th St., Pueblo. Mon–Sat, 8 a.m.–noon per provider; confirm holiday changes. Anyone needing a meal; no questions asked per provider",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "pcsk"
+          ],
+          "boundary": "Provider or directory published guidance; no live availability demonstrated."
+        },
+        {
+          "id": "QP-food-assistance-coop",
+          "claim": "Pueblo Cooperative Care Center: Grocery sacks and other emergency assistance; 326 W. 8th St., Pueblo · 719-543-7484. Mon–Thu, 9 a.m.–1 p.m. per provider; closed holidays. Contact center about food access; also offers registration-based support",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "coop"
+          ],
+          "boundary": "Provider or directory published guidance; no live availability demonstrated."
+        },
+        {
+          "id": "QP-food-assistance-bgcc",
+          "claim": "By Grace Community Center / Pueblo Sunny Side Market: Grocery pantry; 1230 E. 8th St., Pueblo · 719-470-1004. Schedule through Plentiful under BGCC Pueblo Pantry. Appointment route published by market; check current slots",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "bgcc"
+          ],
+          "boundary": "Provider or directory published guidance; no live availability demonstrated."
+        },
+        {
+          "id": "QP-food-assistance-care",
+          "claim": "Care and Share Food Bank: Pantry locator, mobile markets and SNAP help; Find Food locator; SNAP help 719-666-3849. Use current-month event calendar and location search. Different distribution sites have different conditions",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "care"
+          ],
+          "boundary": "Provider or directory published guidance; no live availability demonstrated."
+        },
+        {
+          "id": "QP-food-assistance-pfp",
+          "claim": "Pueblo Food Project: Local pantry calendar and food-network directory; Use Find Food link on provider page. Monthly dates, times and locations via linked calendar. PFP pantry supplies partner organizations; do not assume its warehouse is a walk-in pantry",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "pfp"
+          ],
+          "boundary": "Provider or directory published guidance; no live availability demonstrated."
+        },
+        {
+          "id": "QP-food-assistance-pmap",
+          "claim": "Pueblo Food Map: Regional food-site directory; Search all venues by service/location. Check each listing with the provider; hours may be missing or outdated. Includes pantry sites, community resources and program options",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "pmap"
+          ],
+          "boundary": "Provider or directory published guidance; no live availability demonstrated."
+        },
+        {
+          "id": "QP-food-assistance-twooneone",
+          "claim": "2-1-1 Colorado resource navigation: Phone referral for food and related help; Dial 211 or 866-760-6489. Contact for current referrals; no opening hours independently established. Pueblo Food Project lists English/Spanish resource assistance",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "twooneone"
+          ],
+          "boundary": "Provider or directory published guidance; no live availability demonstrated."
+        },
+        {
+          "id": "QP-food-assistance-srda",
+          "claim": "SRDA senior nutrition: Congregate lunch and Meals on Wheels; SRDA · 719-543-0100 (D60 community directory). Contact SRDA for sites, meal reservations and delivery screening. Congregate eligibility includes people 60+ and listed exceptions; delivery has separate conditions",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "srda"
+          ],
+          "boundary": "Provider or directory published guidance; no live availability demonstrated."
+        },
+        {
+          "id": "QP-food-assistance-now",
+          "claim": "Cooperative Care Nutrition on Wheels: Homebound older-adult nutrition; 719-543-7484. Call about enrollment. Provider describes ages 60+ in Pueblo County without consistent access to community resources; separate from SRDA",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "now"
+          ],
+          "boundary": "Provider or directory published guidance; no live availability demonstrated."
+        },
+        {
+          "id": "QP-food-assistance-d60",
+          "claim": "Pueblo School District 60: School breakfast and lunch; D60 Foodworks · 719-549-7205. District instructional calendar. No-charge breakfast and lunch for enrolled students per district; add-ons may cost extra",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "d60"
+          ],
+          "boundary": "Provider or directory published guidance; no live availability demonstrated."
+        },
+        {
+          "id": "QP-food-assistance-agape",
+          "claim": "Agape Fellowship: Community food giveaway; 719-542-1411. Second and fourth Tuesdays listed by D60; confirm with church. D60 directory listing, not direct provider confirmation",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "agape"
+          ],
+          "boundary": "Provider or directory published guidance; no live availability demonstrated."
+        },
+        {
+          "id": "QP-food-assistance-countyfood",
+          "claim": "Pueblo County Public Health food resources: WIC, blessing boxes, pantry locator and transit links; County food-resource page. Follow current program or transit links. WIC and other programs have separate eligibility; blessing box stock is not guaranteed",
+          "classification": "SOURCE_ATTRIBUTED",
+          "sourceIds": [
+            "countyfood"
+          ],
+          "boundary": "Provider or directory published guidance; no live availability demonstrated."
         }
       ],
       "recordsNeeded": [
-        "Current household-size income thresholds and intake availability were not independently verified.",
-        "Actual inventory, pickup time, acceptance and individual eligibility are not established."
+        "Individual eligibility, live stock, today’s actual hours, transport accommodations, current wait times and provider-specific capacity require direct confirmation.",
+        "Current complete funding, payments, locally measured outcomes and unduplicated household counts were not reconciled.",
+        "The directory is not exhaustive; rural, D70, college, faith and informal providers require continued expansion and verification."
       ],
       "qification": {
-        "assessment": "Use the direct food intake route for emergency assistance, and keep longer-term SNAP and senior program eligibility separate. Q can explain routes, not enroll or determine eligibility.",
+        "assessment": "Use the network, not one government program. Immediate meals, grocery distribution, children’s meals, senior delivery and recurring benefits serve different needs; a fallback referral matters if a site is closed or unsuitable.",
         "reasoning": [
-          "Being eligible, applying, receiving approval and picking up food are distinct stages.",
-          "The same household may benefit from more than one program, subject to each program's rules."
+          "Match type of food, access constraints and geography before choosing a provider.",
+          "School meals, pantries and SNAP are not substitutes in all situations.",
+          "Separate published hours from live availability and financial commitments from delivered food."
         ],
         "alternatives": [
           {
-            "option": "Use the emergency food intake",
-            "tradeoff": "Quick access path; stock and pickup still depend on the provider.",
-            "owner": "County Human Services",
-            "verification": "Receive intake reply and confirm pickup."
+            "option": "Walk-in prepared meal",
+            "tradeoff": "No cooking required; published service window is limited.",
+            "owner": "Pueblo Community Soup Kitchen",
+            "verification": "Check provider schedule."
           },
           {
-            "option": "Apply for SNAP or Everyday Eats when applicable",
-            "tradeoff": "Longer-term support; individual eligibility is determined by the administrator.",
-            "owner": "County Human Services",
-            "verification": "Confirm application receipt and program decision."
+            "option": "Groceries through pantries or mobile sites",
+            "tradeoff": "Can serve households over multiple meals; appointment, stock and transport vary.",
+            "owner": "Cooperative Care, By Grace and regional food networks",
+            "verification": "Check current locator or call provider."
+          },
+          {
+            "option": "Ongoing school, senior or benefit programs",
+            "tradeoff": "May provide repeated support; eligibility and program calendars differ.",
+            "owner": "District, SRDA and County programs",
+            "verification": "Use provider-specific route."
           }
         ],
         "temporal": {
           "past": "County describes changes to the food intake process effective February 1, 2021.",
-          "present": "Published routes were accessible in the November 14 review.",
+          "present": "November 15 provider directory includes meals, groceries, school nutrition, senior services and benefit routes; no live availability established.",
           "future": "Eligibility and pickup instructions may change; check the program directly."
         },
         "childImpact": {
@@ -3294,22 +3627,208 @@
           "present": "Food resources may help households with children; no personal child information is needed by Q.",
           "future": "Reliable food access may support family stability; no individual outcome predicted."
         },
-        "shock": "In urgent need, confirm local provider availability; Q does not guarantee emergency delivery.",
+        "shock": "A closure or supply disruption requires an alternate provider, transport or referral; no actual closure inferred.",
         "reopen": [
-          "Current household-size income thresholds and intake availability were not independently verified.",
-          "Actual inventory, pickup time, acceptance and individual eligibility are not established."
+          "Individual eligibility, live stock, today’s actual hours, transport accommodations, current wait times and provider-specific capacity require direct confirmation.",
+          "Current complete funding, payments, locally measured outcomes and unduplicated household counts were not reconciled.",
+          "The directory is not exhaustive; rural, D70, college, faith and informal providers require continued expansion and verification."
         ]
       },
       "readerNotes": {
-        "6": "Households needing food, especially those qualifying through assistance or low income.",
-        "8": "The text intake route avoids an unnecessary in-person first step for people who have texting access.",
-        "10": "A household without one of the listed assistance programs may still qualify through income; confirm the current threshold.",
-        "13": "Eligibility follows the program's rules; receiving SNAP or Medicaid is among the County's listed TEFAP routes.",
-        "17": "Eligible TEFAP food is provided at no cost; transport and household eligibility costs were not measured.",
-        "21": "Text FOOD, receive intake survey link, follow provider instructions; SNAP has its own application.",
-        "22": "Current pickup slots and food supply have not been established.",
-        "35": "Text FOOD to 1-877-644-3663, or use the official resource links below. Do not send personal documentation to Q."
-      }
+        "1": "Regional practical food access, including nonprofit, community, educational and public-benefit routes.",
+        "2": "Pueblo has several ways to get food: free prepared meals at Pueblo Community Soup Kitchen, grocery sacks at Cooperative Care, appointment-based grocery pickup at the By Grace Sunny Side Market, pantry and mobile-market locators, school meals, senior meal and delivery programs, WIC, TEFAP and SNAP. Start with the provider directory below; for an urgent or changing need, call 211 to find alternatives. Confirm schedules before travel.",
+        "6": "Residents needing prepared meals or groceries, enrolled students, older adults, homebound residents and households eligible for benefits.",
+        "7": "D60 offers enrolled students breakfast and lunch without charge on the district calendar; see WIC routes for infants and eligible families.",
+        "8": "Pantry groceries, school meals and recurring benefits offer different household options; homebound delivery may reduce travel.",
+        "9": "Named physical sites include 422 W. 7th, 326 W. 8th and 1230 E. 8th. Regional locators cover additional sites; rural service gaps are not fully mapped.",
+        "10": "Prepared meals have no screening per soup kitchen; some grocery programs use intake or reservations. 211 offers referral and language options; accessibility and transport need provider confirmation.",
+        "11": "Soup kitchen, Cooperative Care, By Grace, SRDA, D60, food banks and County programs operate different services.",
+        "12": "Providers control local intake and schedules; County/state program administrators determine public benefit eligibility.",
+        "13": "Soup kitchen welcomes anyone seeking food per operator; market uses scheduling; school meals are for enrolled D60 students; senior and benefit programs have separate rules.",
+        "16": "D60 attributes school meals to CEP and Healthy School Meals for All; Cooperative Care solicits donations; PFP supplies partners as funds become available. No unified regional funding ledger.",
+        "17": "Soup kitchen meals and D60 basic school meals are no-charge per providers; travel and optional school purchases may cost money.",
+        "21": "Choose a meal, grocery pickup, delivery or benefit route; use the directory contact or schedule and confirm access.",
+        "22": "Provider directory gives specific published windows; PFP reports 43 pantries supplied, not current capacity or open-site count.",
+        "24": "School meals follow instructional calendar; pantry calendars and appointment availability change; use 211 or a second provider as a backup.",
+        "25": "Some routes require texting, online reservations or screening; provider wait times are not established.",
+        "26": "Food access connects transport, household income, housing, school attendance, disability and senior-care resources. Community providers and public assistance complement each other; measure actual service handoffs separately.",
+        "31": "Prepared meal now; Grocery pantry or mobile distribution; School nutrition; Senior congregate or home delivery; WIC, TEFAP, SNAP and Everyday Eats",
+        "32": "Prepared meals avoid cooking; grocery pickup needs storage/preparation; delivery has eligibility; benefits require application. Use the route that fits the household.",
+        "34": "Keep provider schedules and access conditions synchronized and use cross-referrals to reduce unsuccessful trips.",
+        "35": "Text FOOD to 1-877-644-3663 for TEFAP if applicable; use the named provider directory first for practical choices and 211 if a site cannot serve you.",
+        "36": "Direct provider pages support many routes; Agape is a district directory listing and 211 is described by PFP. No provider was telephoned or visited.",
+        "37": "Provider and directory listings can disagree or lag; do not confuse cumulative partner count with current open sites. A referral is not a completed food pickup.",
+        "38": "Individual eligibility, live stock, today’s actual hours, transport accommodations, current wait times and provider-specific capacity require direct confirmation. Current complete funding, payments, locally measured outcomes and unduplicated household counts were not reconciled. The directory is not exhaustive; rural, D70, college, faith and informal providers require continued expansion and verification.",
+        "39": "Recheck provider calendars, appointments, contacts and eligibility; add new resource records when independently located.",
+        "40": "Use the network, not one government program. Immediate meals, grocery distribution, children’s meals, senior delivery and recurring benefits serve different needs; a fallback referral matters if a site is closed or unsuitable."
+      },
+      "serviceResources": [
+        {
+          "id": "pcsk",
+          "name": "Pueblo Community Soup Kitchen",
+          "type": "Free prepared meals",
+          "access": "422 W. 7th St., Pueblo",
+          "schedule": "Mon–Sat, 8 a.m.–noon per provider; confirm holiday changes",
+          "eligibility": "Anyone needing a meal; no questions asked per provider",
+          "url": "https://www.pcsk.org/",
+          "checked": "2026-11-15",
+          "reviewDue": "2026-11-22"
+        },
+        {
+          "id": "coop",
+          "name": "Pueblo Cooperative Care Center",
+          "type": "Grocery sacks and other emergency assistance",
+          "access": "326 W. 8th St., Pueblo · 719-543-7484",
+          "schedule": "Mon–Thu, 9 a.m.–1 p.m. per provider; closed holidays",
+          "eligibility": "Contact center about food access; also offers registration-based support",
+          "url": "https://cooperativecare.org/",
+          "checked": "2026-11-15",
+          "reviewDue": "2026-11-22"
+        },
+        {
+          "id": "bgcc",
+          "name": "By Grace Community Center / Pueblo Sunny Side Market",
+          "type": "Grocery pantry",
+          "access": "1230 E. 8th St., Pueblo · 719-470-1004",
+          "schedule": "Schedule through Plentiful under BGCC Pueblo Pantry",
+          "eligibility": "Appointment route published by market; check current slots",
+          "url": "https://sunnysidemarket.org/",
+          "checked": "2026-11-15",
+          "reviewDue": "2026-11-22"
+        },
+        {
+          "id": "care",
+          "name": "Care and Share Food Bank",
+          "type": "Pantry locator, mobile markets and SNAP help",
+          "access": "Find Food locator; SNAP help 719-666-3849",
+          "schedule": "Use current-month event calendar and location search",
+          "eligibility": "Different distribution sites have different conditions",
+          "url": "https://careandshare.org/FindFood/",
+          "checked": "2026-11-15",
+          "reviewDue": "2026-11-22"
+        },
+        {
+          "id": "pfp",
+          "name": "Pueblo Food Project",
+          "type": "Local pantry calendar and food-network directory",
+          "access": "Use Find Food link on provider page",
+          "schedule": "Monthly dates, times and locations via linked calendar",
+          "eligibility": "PFP pantry supplies partner organizations; do not assume its warehouse is a walk-in pantry",
+          "url": "https://pueblofoodproject.org/foodpantries/",
+          "checked": "2026-11-15",
+          "reviewDue": "2026-11-22"
+        },
+        {
+          "id": "pmap",
+          "name": "Pueblo Food Map",
+          "type": "Regional food-site directory",
+          "access": "Search all venues by service/location",
+          "schedule": "Check each listing with the provider; hours may be missing or outdated",
+          "eligibility": "Includes pantry sites, community resources and program options",
+          "url": "https://pueblofoodmap.com/venues",
+          "checked": "2026-11-15",
+          "reviewDue": "2026-11-22"
+        },
+        {
+          "id": "twooneone",
+          "name": "2-1-1 Colorado resource navigation",
+          "type": "Phone referral for food and related help",
+          "access": "Dial 211 or 866-760-6489",
+          "schedule": "Contact for current referrals; no opening hours independently established",
+          "eligibility": "Pueblo Food Project lists English/Spanish resource assistance",
+          "url": "https://pueblofoodproject.org/foodpantries/",
+          "checked": "2026-11-15",
+          "reviewDue": "2026-11-22"
+        },
+        {
+          "id": "srda",
+          "name": "SRDA senior nutrition",
+          "type": "Congregate lunch and Meals on Wheels",
+          "access": "SRDA · 719-543-0100 (D60 community directory)",
+          "schedule": "Contact SRDA for sites, meal reservations and delivery screening",
+          "eligibility": "Congregate eligibility includes people 60+ and listed exceptions; delivery has separate conditions",
+          "url": "https://srda.org/84/Nutrition-Services",
+          "checked": "2026-11-15",
+          "reviewDue": "2026-11-22"
+        },
+        {
+          "id": "now",
+          "name": "Cooperative Care Nutrition on Wheels",
+          "type": "Homebound older-adult nutrition",
+          "access": "719-543-7484",
+          "schedule": "Call about enrollment",
+          "eligibility": "Provider describes ages 60+ in Pueblo County without consistent access to community resources; separate from SRDA",
+          "url": "https://cooperativecare.org/",
+          "checked": "2026-11-15",
+          "reviewDue": "2026-11-22"
+        },
+        {
+          "id": "d60",
+          "name": "Pueblo School District 60",
+          "type": "School breakfast and lunch",
+          "access": "D60 Foodworks · 719-549-7205",
+          "schedule": "District instructional calendar",
+          "eligibility": "No-charge breakfast and lunch for enrolled students per district; add-ons may cost extra",
+          "url": "https://www.pueblod60.org/departments/nutrition-services",
+          "checked": "2026-11-15",
+          "reviewDue": "2026-11-22"
+        },
+        {
+          "id": "agape",
+          "name": "Agape Fellowship",
+          "type": "Community food giveaway",
+          "access": "719-542-1411",
+          "schedule": "Second and fourth Tuesdays listed by D60; confirm with church",
+          "eligibility": "D60 directory listing, not direct provider confirmation",
+          "url": "https://www.pueblod60.org/parent-and-family-resources/helpful-resources-for-families/community-resources",
+          "checked": "2026-11-15",
+          "reviewDue": "2026-11-22"
+        },
+        {
+          "id": "countyfood",
+          "name": "Pueblo County Public Health food resources",
+          "type": "WIC, blessing boxes, pantry locator and transit links",
+          "access": "County food-resource page",
+          "schedule": "Follow current program or transit links",
+          "eligibility": "WIC and other programs have separate eligibility; blessing box stock is not guaranteed",
+          "url": "https://county.pueblo.org/public-health-department/food-assistance",
+          "checked": "2026-11-15",
+          "reviewDue": "2026-11-22"
+        },
+        {
+          "id": "tefap",
+          "name": "Pueblo County TEFAP",
+          "type": "Emergency groceries program",
+          "access": "Text FOOD to 1-877-644-3663",
+          "schedule": "Published survey intake; confirm pickup",
+          "eligibility": "County program qualifications apply",
+          "url": "https://pueblocounty.gov/human-services-department/emergency-food-assistance-program-tefap",
+          "checked": "2026-11-14",
+          "reviewDue": "2026-11-22"
+        },
+        {
+          "id": "eats",
+          "name": "Pueblo County Everyday Eats",
+          "type": "Monthly senior food assistance",
+          "access": "County intake guidance",
+          "schedule": "Check current distribution instructions",
+          "eligibility": "Age 60+ and income rules",
+          "url": "https://www.pueblocounty.gov/human-services-department/everyday-eats",
+          "checked": "2026-11-14",
+          "reviewDue": "2026-11-22"
+        },
+        {
+          "id": "snap",
+          "name": "Pueblo County SNAP",
+          "type": "Ongoing grocery benefits",
+          "access": "Colorado PEAK or County DHS · 719-583-6160 for mailed application",
+          "schedule": "Application and eligibility decision, not same-day meal",
+          "eligibility": "Separate EBT benefit",
+          "url": "https://www.pueblocounty.gov/human-services-department/supplemental-nutrition-assistance-program",
+          "checked": "2026-11-14",
+          "reviewDue": "2026-11-22"
+        }
+      ]
     },
     {
       "id": "QP-20261114-D60-PRESCHOOL-2026",
