@@ -17,7 +17,7 @@
   "previousReleaseId": "QP-PUBLIC-2026-11-14-ILLUSTRATED-R2",
   "presentation": {
     "edition": "illustrated-public-first-v3",
-    "entryways": 5,
+    "entryways": 8,
     "featuredPublicReads": 20,
     "analyses": 18,
     "caseSummariesFeatured": 6,
@@ -27,7 +27,7 @@
     "humanDecisionAuthority": true,
     "featuredAnalyses": 14,
     "additionalAnalyses": 4,
-    "countBoundary": "Homepage highlights four dated analyses. The research archive retains 20 featured cards (14 analyses and six case summaries); the canonical report inventory contains 18 analyses. These groups overlap.",
+    "countBoundary": "Homepage links six canonical dated reports within ten editorial issue themes; themes are not independent reports or measured public priorities. The archive retains 20 featured reads and 18 canonical analyses.",
     "integratedReviewCandidate": {
       "storyFirstReportCount": 18,
       "additionalStoryEditions": 9,
@@ -64,8 +64,8 @@
     "publicSourceFindings": 7,
     "livingResearchCollections": 18,
     "newFindingsBoundary": "Seven dated public-source summaries, separate from the existing 18 analyses; no new full 40-section completion claim. 18 collections group existing research, not additional canonical issue identities.",
-    "homeAudit": "Five primary entryways; dated findings; static report links; existing deeper resources remain accessible.",
-    "homeHighlights": 4
+    "homeAudit": "Eight regional system entryways above search; major issues before tools, learning and resources.",
+    "homeHighlights": 6
   },
   "presentationUpdated": "2026-11-16"
 }
