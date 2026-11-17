@@ -29,7 +29,7 @@ jobs:
           set -euo pipefail
           bash -n scripts/check-live-parity.sh
           for f in public/*.js public/data/*.js scripts/check-*.mjs; do node --check "$f"; done
-          for check in public-release public-catalog issue-index topic-nav support-inquiries workbench q-tools qify evidence-desk packet-reports launch experience release-parity legacy-navigation; do
+          for check in public-exposure public-release public-catalog issue-index topic-nav support-inquiries workbench q-tools qify evidence-desk packet-reports launch experience release-parity legacy-navigation; do
             node "scripts/check-$check.mjs"
           done
           grep -q '"autonomous_public_research_agents":false' public/api/v1/capabilities.json
@@ -51,7 +51,7 @@ jobs:
           import os,json,pathlib
           root=pathlib.Path(os.environ['RUNNER_TEMP'])/'qpueblo-release'
           manifest=json.loads((root/'release-manifest.json').read_text())
-          (root/'deployment-revision.json').write_text(json.dumps({'repository':'Q10ai/q-pueblo-','commit':os.environ['GITHUB_SHA'],'releaseId':manifest['releaseId'],'target':'qpueblo'},indent=2)+'\n')
+          (root/'deployment-revision.json').write_text(json.dumps({'commit':os.environ['GITHUB_SHA'],'releaseId':manifest['releaseId'],'target':'qpueblo'},indent=2)+'\n')
           PY
       - uses: actions/upload-artifact@v4
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'

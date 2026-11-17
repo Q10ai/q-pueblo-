@@ -1,8 +1,6 @@
 {
   "schema": "qp-public-release-manifest-v1",
   "releaseId": "QP-PUBLIC-2026-11-16-CONSOLIDATED-RC1",
-  "sourceRepository": "Q10ai/q-pueblo-",
-  "productionBranch": "main",
   "sourceDate": "2026-11-13",
   "classification": "PUBLIC_SOURCE_LINKED_RESEARCH",
   "publicationAuthority": "human_required",

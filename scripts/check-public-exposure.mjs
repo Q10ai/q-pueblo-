@@ -3,6 +3,7 @@ const root=path.resolve('public');
 const textExt=new Set(['.html','.htm','.js','.mjs','.cjs','.json','.jsonl','.csv','.tsv','.txt','.md','.css','.svg','.xml','.yaml','.yml','.toml','.ini','.map','.webmanifest']);
 const forbiddenName=/(?:^|\/)(?:\.git|\.env(?:\.[^/]+)?|\.dev\.vars|id_rsa|id_ed25519|credentials\.json|secrets\.json)(?:\/|$)/i;
 const secretRules=[
+['internal-account-locator',/\bQ10ai\b|\bq10-core\b|\bq10agi@gmail\.com\b/i],
 ['pem-private-key',/-----BEGIN (?:RSA |EC |DSA |OPENSSH |ENCRYPTED )?PRIVATE KEY-----/],
 ['github-token',/\bgh[pousr]_[A-Za-z0-9]{30,}\b|\bgithub_pat_[A-Za-z0-9_]{35,}\b/],
 ['aws-access-key',/\b(?:AKIA|ASIA)[A-Z0-9]{16}\b/],
