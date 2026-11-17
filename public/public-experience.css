@@ -354,3 +354,47 @@
 @media print{
  .qp-v3 .qp-issue-more{display:block}
 }
+
+/* Final mobile artwork normalization: preserve one 3:2 image geometry even for legacy atlas art. */
+@media screen and (max-width:760px){
+ .qp-v3 main :is(.qp-entry-art,.qp-report-art){aspect-ratio:var(--qp-tile-ratio);height:auto}
+ .qp-v3 main .qp-subject-icon[data-qp-art]{aspect-ratio:var(--qp-tile-ratio);height:auto}
+ .qp-v3 main :is(.qp-entry-art,.qp-report-art)[data-qp-art]{background-size:cover;background-position:center}
+ .qp-v3 :is(#governance-intelligence,#new-findings)>.qp-gov-grid{align-items:stretch}
+ .qp-v3 :is(#governance-intelligence,#new-findings) .qp-gov-card>.qp-major-tile{flex:1 0 auto}
+ .qp-v3 :is(#governance-intelligence,#new-findings) .qp-major-tile>h3{height:100%;min-height:0}
+ .qp-v3 .qp-issue-more>summary{min-height:52px}
+ .qp-v3 .qp-exp-section[id] h2>.qp-subject-icon{vertical-align:middle}
+ .qp-v3 main .qp-entry-art.art-entry-0:not([data-qp-art]){background-size:645.1612903% 300%;background-position:5.6213018% 0%}
+ .qp-v3 main .qp-entry-art.art-entry-1:not([data-qp-art]){background-image:url('assets/subject-icons/government.webp');background-size:cover;background-position:center}
+ .qp-v3 main .qp-entry-art.art-entry-2:not([data-qp-art]){background-image:url('assets/subject-icons/economy.webp');background-size:cover;background-position:center}
+ .qp-v3 main .qp-entry-art.art-entry-3:not([data-qp-art]){background-image:url('assets/subject-icons/transport.webp');background-size:cover;background-position:center}
+ .qp-v3 main .qp-entry-art.art-entry-4:not([data-qp-art]){background-size:645.1612903% 300%;background-position:5.6213018% 50%}
+ .qp-v3 main .qp-entry-art.art-entry-5:not([data-qp-art]){background-image:url('assets/subject-icons/water-energy.webp');background-size:cover;background-position:center}
+ .qp-v3 main .qp-entry-art.art-entry-6:not([data-qp-art]){background-image:url('assets/subject-icons/housing.webp');background-size:cover;background-position:center}
+ .qp-v3 main .qp-entry-art.art-entry-7:not([data-qp-art]){background-image:url('assets/subject-icons/safety.webp');background-size:cover;background-position:center}
+ .qp-v3 main .qp-entry-art.art-entry-8:not([data-qp-art]){background-size:645.1612903% 300%;background-position:5.6213018% 100%}
+ .qp-v3 main .qp-entry-art.art-entry-9:not([data-qp-art]){background-size:645.1612903% 300%;background-position:35.2071006% 100%}
+ .qp-v3 main .qp-entry-art.art-entry-10:not([data-qp-art]){background-image:url('assets/subject-icons/education-health.webp');background-size:cover;background-position:center}
+ .qp-v3 main .qp-entry-art.art-entry-11:not([data-qp-art]){background-image:url('assets/subject-icons/future.webp');background-size:cover;background-position:center}
+ .qp-v3 main .qp-report-art.art-report-0:not([data-qp-art]){background-size:684.9315068% 400%;background-position:3.1615925% 0.0000000%}
+ .qp-v3 main .qp-report-art.art-report-1:not([data-qp-art]){background-size:684.9315068% 400%;background-position:26.5807963% 0.0000000%}
+ .qp-v3 main .qp-report-art.art-report-2:not([data-qp-art]){background-size:684.9315068% 400%;background-position:50.0000000% 0.0000000%}
+ .qp-v3 main .qp-report-art.art-report-3:not([data-qp-art]){background-size:684.9315068% 400%;background-position:73.4192037% 0.0000000%}
+ .qp-v3 main .qp-report-art.art-report-4:not([data-qp-art]){background-size:684.9315068% 400%;background-position:96.8384075% 0.0000000%}
+ .qp-v3 main .qp-report-art.art-report-5:not([data-qp-art]){background-size:684.9315068% 400%;background-position:3.1615925% 33.3333333%}
+ .qp-v3 main .qp-report-art.art-report-6:not([data-qp-art]){background-size:684.9315068% 400%;background-position:26.5807963% 33.3333333%}
+ .qp-v3 main .qp-report-art.art-report-7:not([data-qp-art]){background-size:684.9315068% 400%;background-position:50.0000000% 33.3333333%}
+ .qp-v3 main .qp-report-art.art-report-8:not([data-qp-art]){background-size:684.9315068% 400%;background-position:73.4192037% 33.3333333%}
+ .qp-v3 main .qp-report-art.art-report-9:not([data-qp-art]){background-size:684.9315068% 400%;background-position:96.8384075% 33.3333333%}
+ .qp-v3 main .qp-report-art.art-report-10:not([data-qp-art]){background-size:684.9315068% 400%;background-position:3.1615925% 66.6666667%}
+ .qp-v3 main .qp-report-art.art-report-11:not([data-qp-art]){background-size:684.9315068% 400%;background-position:26.5807963% 66.6666667%}
+ .qp-v3 main .qp-report-art.art-report-12:not([data-qp-art]){background-size:684.9315068% 400%;background-position:50.0000000% 66.6666667%}
+ .qp-v3 main .qp-report-art.art-report-13:not([data-qp-art]){background-size:684.9315068% 400%;background-position:73.4192037% 66.6666667%}
+ .qp-v3 main .qp-report-art.art-report-14:not([data-qp-art]){background-size:684.9315068% 400%;background-position:96.8384075% 66.6666667%}
+ .qp-v3 main .qp-report-art.art-report-15:not([data-qp-art]){background-size:684.9315068% 400%;background-position:3.1615925% 100.0000000%}
+ .qp-v3 main .qp-report-art.art-report-16:not([data-qp-art]){background-size:684.9315068% 400%;background-position:26.5807963% 100.0000000%}
+ .qp-v3 main .qp-report-art.art-report-17:not([data-qp-art]){background-size:684.9315068% 400%;background-position:50.0000000% 100.0000000%}
+ .qp-v3 main .qp-report-art.art-report-18:not([data-qp-art]){background-size:684.9315068% 400%;background-position:73.4192037% 100.0000000%}
+ .qp-v3 main .qp-report-art.art-report-19:not([data-qp-art]){background-size:684.9315068% 400%;background-position:96.8384075% 100.0000000%}
+}
