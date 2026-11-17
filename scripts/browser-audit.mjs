@@ -5,7 +5,7 @@ const require=createRequire(path.join(process.env.AUDIT_TOOLS,'package.json'));
 const {chromium}=require('playwright');
 const axe=require('axe-core');
 const browser=await chromium.launch({headless:true});
-const routes=['/','/qify.html','/reports-static.html','/report-food-assistance.html','/now.html','/q-tools.html','/es.html','/method.html','/learn-pueblo.html','/twin.html','/participate.html'];
+const routes=['/','/governance.html','/qify.html','/reports-static.html','/report-food-assistance.html','/now.html','/q-tools.html','/es.html','/method.html','/learn-pueblo.html','/twin.html','/participate.html'];
 const rows=[];
 const failures=[];
 try{
