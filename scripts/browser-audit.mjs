@@ -34,7 +34,7 @@ try{
       return {columns:getComputedStyle(grid).gridTemplateColumns.split(' ').length,cards:cards.length,entryDistinct:new Set(entries.map(e=>getComputedStyle(e).backgroundImage)).size,fullWidth:entries.every(e=>Math.abs(e.getBoundingClientRect().width-e.parentElement.clientWidth)<=2),major:major.length,majorDistinct:new Set(major.map(e=>e.dataset.qpArt)).size,images:(await Promise.all([...entries,...major].map(checkImage))).every(Boolean)};
      });
      console.log('HOME_ART',width,JSON.stringify(art));
-     assert.equal(art.columns,4);assert.equal(art.cards,8);assert.equal(art.entryDistinct,8);assert(art.fullWidth,'Artwork spans full card width');assert.equal(art.major,10);assert.equal(art.majorDistinct,10);assert(art.images,'Original wide artwork geometry and local image loading');
+     assert.equal(art.columns,4);assert.equal(art.cards,8);assert.equal(art.entryDistinct,8);assert(art.fullWidth,'Artwork spans full card width');assert.equal(art.major,10);assert.equal(art.majorDistinct,10);const connected=await page.locator('#governance-intelligence .qp-issue-connections').evaluateAll(groups=>groups.map(g=>({links:g.querySelectorAll('a.qp-issue-link[href]').length,art:g.querySelectorAll('a.qp-issue-link > [data-qp-art]').length})));assert.equal(connected.length,10);assert.equal(connected.reduce((n,g)=>n+g.links,0),35);assert(connected.every(g=>g.links===g.art&&g.links>=3));assert(art.images,'Original wide artwork geometry and local image loading');
     }
     if(route==='/now.html'){
      const ids=await page.locator('#new-findings article[id^="novdec-priority-"] h3 > [data-qp-art]').evaluateAll(es=>es.map(e=>e.dataset.qpArt));
