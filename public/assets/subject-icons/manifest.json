@@ -1,0 +1,79 @@
+{
+  "version": "2026-11-17",
+  "kind": "Generated conceptual illustrations, not documentary photographs",
+  "reuse": "Same subject or issue only; use separate issue-specific artwork when available; do not imply actual local incident imagery.",
+  "assets": [
+    {
+      "id": "government",
+      "path": "assets/subject-icons/government.webp",
+      "gitBlob": "4708e76fbc823a7386abd08b5e5eb7860fed5dc9",
+      "bytes": 25160,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "economy",
+      "path": "assets/subject-icons/economy.webp",
+      "gitBlob": "77dbad034a0f0c780a844acf1714baf18f115c63",
+      "bytes": 27100,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "water-energy",
+      "path": "assets/subject-icons/water-energy.webp",
+      "gitBlob": "b45224c5da9797f35e8ec10edbb562edea4ed841",
+      "bytes": 30616,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "transport",
+      "path": "assets/subject-icons/transport.webp",
+      "gitBlob": "e037b0162eae6c1e229de2e4fe50b8bb2ca66319",
+      "bytes": 26546,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "housing",
+      "path": "assets/subject-icons/housing.webp",
+      "gitBlob": "836d8dffca7104c74351ead2dfd1cd2a573ac539",
+      "bytes": 27754,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "education-health",
+      "path": "assets/subject-icons/education-health.webp",
+      "gitBlob": "8410b3c437576e9cb54e5732b99a5232ea9d1e75",
+      "bytes": 27090,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "safety",
+      "path": "assets/subject-icons/safety.webp",
+      "gitBlob": "d050dd95ac66bb080aa38a116b8748e7cca03da4",
+      "bytes": 27750,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "future",
+      "path": "assets/subject-icons/future.webp",
+      "gitBlob": "dab79b13855c1941a52215a3f3c9ae86a8194917",
+      "bytes": 27548,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "id": "twin",
+      "path": "assets/subject-icons/twin.webp",
+      "gitBlob": "53f38bb1eced0fa597ad9990005765fcf7767ae8",
+      "bytes": 27458,
+      "width": 256,
+      "height": 256
+    }
+  ]
+}

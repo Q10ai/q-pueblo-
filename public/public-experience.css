@@ -192,3 +192,17 @@
   .qp-v3 .qp-gov-card>h3>.qp-subject-icon,.qp-v3-home #governance-intelligence .qp-gov-card>h3>.qp-subject-icon{width:3.25rem;height:3.25rem;flex-basis:3.25rem}
   .qp-v3 .qp-subject-icon{width:2.4rem}
 }
+
+/* 2026-11-17 original square Pueblo illustrations, local optimized WebP. */
+@media screen {
+.qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art).art-entry-1{background-image:url('assets/subject-icons/government.webp');background-size:cover;background-position:center}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art).art-entry-2{background-image:url('assets/subject-icons/economy.webp');background-size:cover;background-position:center}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art).art-entry-3{background-image:url('assets/subject-icons/transport.webp');background-size:cover;background-position:center}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art).art-entry-5{background-image:url('assets/subject-icons/water-energy.webp');background-size:cover;background-position:center}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art).art-entry-6{background-image:url('assets/subject-icons/housing.webp');background-size:cover;background-position:center}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art).art-entry-7{background-image:url('assets/subject-icons/safety.webp');background-size:cover;background-position:center}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art).art-entry-10{background-image:url('assets/subject-icons/education-health.webp');background-size:cover;background-position:center}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art).art-entry-11{background-image:url('assets/subject-icons/future.webp');background-size:cover;background-position:center}
+.qp-v3 .qp-entry-card>.qp-entry-art,.qp-v3 .qp-eight-grid .qp-exp-card>.qp-entry-art{aspect-ratio:1/1}
+.qp-v3 a[href="twin.html"] .qp-entry-art,.qp-v3 .qp-subject-icon.qp-art-twin{background-image:url('assets/subject-icons/twin.webp');background-size:cover;background-position:center;aspect-ratio:1/1}
+}
