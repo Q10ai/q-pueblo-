@@ -32,37 +32,61 @@
  const caseOpen=()=>{if(!location.pathname.endsWith('packets.html'))return;try{let target=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(target?.classList.contains('qp-case-detail')){let d=target.querySelector('details');if(d)d.open=true}}catch{}};caseOpen();window.addEventListener('hashchange',caseOpen);
  const menu=document.getElementById('qp-menu-toggle'),nav=document.getElementById('qp-global-nav');
  if(menu&&nav){if(document.documentElement.lang==='en'&&!nav.querySelector('a[href="es.html"], a[href="/es"]')){const a=document.createElement('a');a.href='es.html';a.lang='es';a.textContent='Español';nav.append(a);}nav.classList.add('qp-js-nav');menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('is-open',open)});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menu.getAttribute('aria-expanded')==='true'){menu.setAttribute('aria-expanded','false');nav.classList.remove('is-open');menu.focus();}});nav.addEventListener('click',e=>{if(e.target.closest('a')){menu.setAttribute('aria-expanded','false');nav.classList.remove('is-open')}})}
-  // Decorative subject thumbnails: existing artwork only; never change findings or evidence status.
-  if(document.body.classList.contains('qp-v3')&&document.querySelector('link[href="public-experience.css"]')){
+  // Public visual language: the original local Pueblo illustration atlas, no new icon library.
+  if(document.body.classList.contains('qp-v3')&&document.querySelector('link[href*="public-experience.css"]')){
     const areas={authority:1,money:2,water:5,infrastructure:3,homes:6,people:10,safety:9,future:11};
-    const categories={'public money':2,'health & safety':9,'roads & transport':3,'water & energy':5,'government & law':1,'housing & land':6,'culture & history':0,'economy & jobs':2,'education & children':10,'technology & information':11,'environment & place':5};
+    const categories={'public money':2,'health & safety':9,'roads & transport':3,'water & energy':5,'government & law':1,'housing & land':6,'culture & history':0,'economy & jobs':2,'education & children':10,'environment & place':5,'technology & information':11};
     const rules=[
-      [9,/\b(surveillance|flock|crime|police|fire|disaster|emergency|safety|hazards?|resilience|detention|aspen acres)\b/i],
-      [5,/\b(water|wastewater|sewage|energy|electric|watershed|environment|conduit|utilities)\b/i],
-      [6,/\b(housing|homelessness|homeless|rent|rental|neighborhoods?|habitability|land use|community|food assistance)\b/i],
-      [3,/\b(roads?|rail|airport|aviation|transportation|transport|infrastructure|fiber|boulevard|transit|bridges?)\b/i],
-      [10,/\b(education|schools?|preschool|children|families|health|healthcare|workforce development)\b/i],
-      [11,/\b(ai|artificial intelligence|technology|digital|future systems|privacy|information systems)\b/i],
-      [2,/\b(budgets?|debt|funds?|funding|tax|levy|finance|financial|money|business|jobs|economy|economic|incentives?|investment|contracts?|wages|industry|half.cent|falcon|pedco)\b/i],
-      [1,/\b(government|governance|council|commissioners|law|lawsuits?|elections?|authority|jurisdiction|accountability|ordinance|public records|decisions?)\b/i]
+      [9,/\b(surveillance|flock|crime|police|fire|disaster|emergency|safety|hazards?|resilience|detention|aspen acres|seguridad|incendio)\b/i],
+      [5,/\b(water|wastewater|sewage|energy|electric|watershed|environment|conduit|utilities|agua|energía|ambiente)\b/i],
+      [6,/\b(housing|homelessness|homeless|rent|rental|neighborhoods?|habitability|land use|community|food assistance|vivienda|comunidad|familias)\b/i],
+      [3,/\b(roads?|rail|airport|aviation|transportation|transport|infrastructure|fiber|boulevard|transit|bridges?|transporte|carreteras)\b/i],
+      [10,/\b(education|schools?|preschool|children|families|health|healthcare|workforce development|learn|learning|students?|kids|teens|educación|salud|escuelas)\b/i],
+      [11,/\b(ai|artificial intelligence|technology|digital|future|privacy|information systems|models?|scenario|simulation|inteligencia artificial|futuro|tecnología)\b/i],
+      [2,/\b(budgets?|debt|funds?|funding|tax|levy|finance|financial|money|business|jobs|economy|economic|incentives?|investment|contracts?|wages|industry|half.cent|falcon|pedco|dinero|impuestos|presupuesto|empleo)\b/i],
+      [1,/\b(government|governance|council|commissioners|law|lawsuits?|elections?|authority|jurisdiction|accountability|ordinance|public records|decisions?|gobierno|ley|elecciones)\b/i],
+      [7,/\b(compare|calculate|calculator|tools?|options?|solutions?|remedies|costs?|truth|evidence|sources?|research|verify|check|audit|answers?|findings?|limitations?|herramientas|fuentes|respuestas|investigación)\b/i],
+      [0,/\b(history|historical|museum|culture|archives?|library|trivia|play|places?|historia|biblioteca|cultura)\b/i]
     ];
-    const selector='.qp-gov-card > h3,.topic-card > h2,.qp-exp-card > h2,.qp-exp-card > h3,.qp-issue-story h3,.qp-issue-story h4,.qp-report-detail h1,.qp-report-detail h2,.qp-report-detail h3,.qp-report-popout h3,.qp-case-detail > h2,main details > summary,main dialog h2,main dialog h3,#qp-static-report-list > li > a,#entryways ~ section > h2,.qp-exp-section[id] > h2';
+    const emojiMap={'💰':2,'💵':2,'💧':5,'🌊':5,'⚡':5,'🏗':3,'🚆':3,'🏘':6,'🏠':6,'🎓':10,'🎈':10,'🛡':9,'🔥':9,'🏛':1,'⚖':1,'🔭':11,'🌐':11,'🤖':11,'🧠':11,'🔗':11,'🔬':7,'🔍':7,'📚':0,'🪶':0,'🎡':0,'⚙':2,'🧭':0,'🎉':0};
+    const emojiOnly=/^(?:[\p{Extended_Pictographic}\p{Regional_Indicator}\uFE0F\u200D\u20E3]\s*)+$/u;
+    const leadingEmoji=/^\s*((?:[\p{Extended_Pictographic}\uFE0F\u200D])+)\s*/u;
+    const cardSelector='.qp-gov-card,.qp-exp-card,.qp-action-card,.qp-art-card,.topic-card,.qp-report-card,.qp-feature-report,.qp-resource-card,.qp-task-card,.learn-record';
+    const selector='main h2,main h3,main h4,main details > summary,main dialog h2,main dialog h3,main [role="dialog"] h2,main [role="dialog"] h3,#qp-static-report-list > li > a,.qp-report-directory a,.qp-exp-card > strong,.qp-action-card > strong,.qp-resource-card > strong,.qp-feature-report > strong,.qp-card-icon,.qp-exp-icon';
+    function classify(title,context){
+      const match=rules.find(([,re])=>re.test(title));if(match)return match[0];
+      const fallback=rules.find(([,re])=>re.test(context||''));return fallback?fallback[0]:0;
+    }
+    function makeIcon(n){const icon=document.createElement('span');icon.className='qp-subject-icon art-entry-'+n;icon.setAttribute('aria-hidden','true');return icon;}
     function decorate(e){
+      const isLegacy=e.matches('.qp-card-icon,.qp-exp-icon');
       const slot=e.matches('summary')&&e.querySelector('.issue-title')||e;
-      if(slot.querySelector(':scope > .qp-subject-icon, :scope > .qp-card-icon, :scope > .qp-exp-icon, :scope > svg, :scope > img'))return;
-      const card=e.closest('.qp-gov-card,.qp-exp-card,.qp-art-card');
-      if(card&&card.querySelector(':scope > .qp-entry-art,:scope > .qp-report-art,:scope > .qp-exp-icon'))return;
-      const record=e.closest('[data-category]');
-      const category=record?.dataset.category?.toLowerCase().trim();
+      const card=e.closest(cardSelector);
+      if(isLegacy){
+        if(e.classList.contains('qp-subject-icon')||!emojiOnly.test(e.textContent.trim())||e.children.length)return;
+        // Replace only a decorative standalone pictogram, not meaningful status text.
+        if(card?.querySelector(':scope > .qp-entry-art,:scope > .qp-report-art')){e.hidden=true;return;}
+        const title=card?.querySelector('h2,h3,h4,strong')?.textContent||'';
+        const symbol=e.textContent.trim().replace(/\uFE0F/g,'');
+        const n=Object.prototype.hasOwnProperty.call(emojiMap,symbol)?emojiMap[symbol]:classify(title,'');
+        e.textContent='';e.classList.add('qp-subject-icon','art-entry-'+n);e.setAttribute('aria-hidden','true');return;
+      }
+      if(slot.querySelector(':scope > .qp-subject-icon,:scope > svg,:scope > img'))return;
+      // A card's artwork already identifies its main title; its inner pop-outs still receive icons.
+      const cardTitle=card&&e.parentElement===card&&!e.matches('summary');
+      if(cardTitle&&card.querySelector(':scope > .qp-entry-art,:scope > .qp-report-art,:scope > .qp-exp-icon,:scope > .qp-card-icon'))return;
+      if(e.closest('.qp-art-caption,.qp-eight-grid,.qp-entry-grid'))return;
+      const title=slot.textContent.trim();if(!title)return;
+      const record=e.closest('[data-category]');const category=record?.dataset.category?.toLowerCase().trim();
       const section=e.closest('.qp-exp-section[id]');
-      const title=slot.textContent.trim();
-      if(!title)return;
+      const symbol=title.match(leadingEmoji)?.[1]?.replace(/\uFE0F/g,'');
       let n=category&&Object.prototype.hasOwnProperty.call(categories,category)?categories[category]:section&&Object.prototype.hasOwnProperty.call(areas,section.id)?areas[section.id]:undefined;
-      if(n===undefined){const match=rules.find(([,re])=>re.test(title));n=match?match[0]:0;}
-      const icon=document.createElement('span');
-      icon.className='qp-subject-icon art-entry-'+n;
-      icon.setAttribute('aria-hidden','true');
-      slot.prepend(icon);
+      if(n===undefined&&symbol&&Object.prototype.hasOwnProperty.call(emojiMap,symbol))n=emojiMap[symbol];
+      if(n===undefined)n=classify(title,card?.querySelector('h2,h3,h4,strong')?.textContent||document.title);
+      // Do not rewrite headings or claim/status labels; only remove recognized decorative prefixes.
+      const first=slot.firstChild;
+      if(symbol&&Object.prototype.hasOwnProperty.call(emojiMap,symbol)&&first?.nodeType===3)first.nodeValue=first.nodeValue.replace(leadingEmoji,'');
+      slot.prepend(makeIcon(n));
     }
     function scan(node){
       if(node.nodeType!==1)return;
@@ -72,7 +96,7 @@
     const root=document.querySelector('main');
     if(root){
       scan(root);
-      // Pop-outs and report records may be rendered after page load. Observe only appended subtrees.
+      // Dynamic search results, research cards and dialogs inherit the same artwork.
       const observer=new MutationObserver(records=>{for(const r of records)for(const node of r.addedNodes)scan(node);});
       observer.observe(root,{childList:true,subtree:true});
     }
