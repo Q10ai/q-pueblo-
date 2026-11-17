@@ -1,0 +1,387 @@
+{
+  "id": "qp-fin-council-53001",
+  "title": "Does Pueblo City Council really have $100,000 for independent legal advice?",
+  "checked": "2026-11-17",
+  "reviewBy": "2026-11-23",
+  "route": "council-attorney-funding.html",
+  "questions": [
+    "Does Pueblo City Council have $100,000 for an attorney?",
+    "Pueblo City Council attorney funding",
+    "What is in Council account 53001?"
+  ],
+  "keywords": [
+    "council attorney",
+    "independent counsel",
+    "53001",
+    "professional services"
+  ],
+  "summary": "Pueblo's adopted 2026 budget lists $221,000 for Council professional services, not a separately identified $100,000 attorney line on page D-5. A 2019 procurement sought independent legal advice. The submitted $100,000 claim, current account balance, audit and lobbying charges and availability of counsel funds still need ledger-level confirmation. [S1,S2]",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "City of Pueblo 2026 adopted budget, printed D-5 (PDF page 34)",
+      "url": "https://www.pueblo.us/ArchiveCenter/ViewFile/Item/5351"
+    },
+    {
+      "id": "S2",
+      "title": "City RFQ 19-016 — part-time independent legal advice (2019)",
+      "url": "https://www.pueblo.us/bids.aspx?PRINT=YES&bidID=683"
+    },
+    {
+      "id": "S3",
+      "title": "Pueblo Ledger — November 14, 2026 proposed city and county budgets and hearings",
+      "url": "https://puebloledger.com/government-watch/pueblo-2027-budgets-city-county/"
+    },
+    {
+      "id": "S4",
+      "title": "City Finance Department — budget and financial reporting",
+      "url": "https://www.pueblo.us/92/Finance"
+    },
+    {
+      "id": "S5",
+      "title": "City Purchasing — procurement",
+      "url": "https://www.pueblo.us/105/Purchasing"
+    }
+  ],
+  "chapters": [
+    {
+      "kind": "context",
+      "heading": "A line in a budget is not money in reserve",
+      "text": "Imagine setting aside money for a lawyer in a household account that also pays an accountant. The balance alone cannot tell you what is available once existing bills come due. Council's $100,000 claim raises the same accounting question; it is not proof of missing funds."
+    },
+    {
+      "kind": "money",
+      "heading": "What the official table shows",
+      "text": "Account 53001 totals $181,000 in 2023 actuals, $185,183 in 2024 actuals, $184,661 in 2025 projected actuals, and $221,000 in the 2026 adopted budget. Total FY2026 Council expenses budgeted: $503,082. An adopted budget is not a payment ledger. [S1]"
+    },
+    {
+      "kind": "chronology",
+      "heading": "A longstanding need",
+      "text": "In February 2019 the City sought qualifications for independent Council legal advice in cases of an actual or perceived conflict involving the City Attorney. The closed solicitation does not establish an award, an ongoing engagement or current funding. [S2]"
+    },
+    {
+      "kind": "people",
+      "heading": "Who can resolve it",
+      "text": "Council can ask for a reconciled schedule; Finance holds accounting records, Purchasing holds procurement records, and the Clerk holds legislative records. Ask the Mayor and Finance Director for the precise budget and transaction reconciliation, not assumptions about intent. [S4,S5]"
+    },
+    {
+      "kind": "options",
+      "heading": "Three ways to improve oversight",
+      "text": "Separate audit, lobbying and counsel in a public purpose-level schedule; compare an on-call agreement with dedicated counsel; require a monthly adopted-to-amended-to-actual-to-committed reconciliation. An illustrative $100,000 cap buys 400 hours at $250 per hour before other costs, not a local quote."
+    },
+    {
+      "kind": "future",
+      "heading": "Before the next budget vote",
+      "text": "The Pueblo Ledger reports a November 23, 2026 city budget hearing at 5:30 p.m. Verify the official agenda before attending. Ask for the FY2026 account roll-forward and FY2027 purpose-specific allocation. [S3]"
+    },
+    {
+      "kind": "meaning",
+      "heading": "Qified: public oversight is a capacity, not just a line item",
+      "text": "Budget clarity, independent legal advice, financial review and transparent AI procurement reinforce one another. Preserve lawful human authority, protect privileged records, and track consequences for services and future generations."
+    }
+  ],
+  "unknowns": [
+    "Current amended appropriation, expenditures, commitments and genuinely available amount.",
+    "Whether audit and lobbying are charged to this account, and the amount of each.",
+    "The original $100,000 allocation record and latest meeting transcript; no finding of unlawful diversion or misconduct.",
+    "FY2027 final allocation and procurement outcome."
+  ],
+  "coverage40": [
+    {
+      "n": 1,
+      "title": "Scope",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "City of Pueblo Council professional services, not county or all city legal spending."
+    },
+    {
+      "n": 2,
+      "title": "Central question",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Determine whether Council can actually retain independent counsel within lawful available resources."
+    },
+    {
+      "n": 3,
+      "title": "Submitted claim",
+      "classification": "Not established",
+      "sourceIds": [],
+      "answer": "The assertion of a recurring $100,000 allocation and nothing remaining is not yet substantiated by a reconciled ledger."
+    },
+    {
+      "n": 4,
+      "title": "2023 actual",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S1"
+      ],
+      "answer": "The adopted 2026 book lists $181,000 actual professional services in 2023."
+    },
+    {
+      "n": 5,
+      "title": "2024 actual",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S1"
+      ],
+      "answer": "The same table lists $185,183 actual professional services in 2024."
+    },
+    {
+      "n": 6,
+      "title": "2025 projection",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S1"
+      ],
+      "answer": "The table lists $184,661 as projected actuals, not audited final expenditures."
+    },
+    {
+      "n": 7,
+      "title": "2026 authority",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S1"
+      ],
+      "answer": "The adopted budget lists $221,000 under Council account 53001."
+    },
+    {
+      "n": 8,
+      "title": "Council total",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S1"
+      ],
+      "answer": "The adopted FY2026 total for Council expenses is $503,082."
+    },
+    {
+      "n": 9,
+      "title": "Historical procurement",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S2"
+      ],
+      "answer": "The February 2019 RFQ sought independent legal advice where a conflict was perceived or actual."
+    },
+    {
+      "n": 10,
+      "title": "Award history",
+      "classification": "Not established",
+      "sourceIds": [],
+      "answer": "An award, later engagement or cancellation has not been confirmed."
+    },
+    {
+      "n": 11,
+      "title": "Funding purpose",
+      "classification": "Not established",
+      "sourceIds": [],
+      "answer": "The original instrument establishing the reported attorney allocation is needed."
+    },
+    {
+      "n": 12,
+      "title": "Audit charges",
+      "classification": "Not established",
+      "sourceIds": [],
+      "answer": "No vendor-by-vendor allocation to Council's audit costs verified in this review."
+    },
+    {
+      "n": 13,
+      "title": "Lobbying charges",
+      "classification": "Not established",
+      "sourceIds": [],
+      "answer": "No contract or ledger confirming the claimed lobbying account charges reviewed."
+    },
+    {
+      "n": 14,
+      "title": "Current balance",
+      "classification": "Not established",
+      "sourceIds": [],
+      "answer": "Current amended appropriation and transaction detail have not been obtained."
+    },
+    {
+      "n": 15,
+      "title": "Commitments",
+      "classification": "Not established",
+      "sourceIds": [],
+      "answer": "Open purchase orders and contractual obligations remain unverified."
+    },
+    {
+      "n": 16,
+      "title": "Discretionary funds",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Subtract non-overlapping recognized expenditures, open commitments and necessary remaining obligations from legally usable authority."
+    },
+    {
+      "n": 17,
+      "title": "Budget stage",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Separate requested, proposed, adopted, amended, committed, expended and cash-paid states."
+    },
+    {
+      "n": 18,
+      "title": "Reserve use",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Determine whether recurring expenditures depend on one-time reserves; a reserve draw alone does not prove illegality."
+    },
+    {
+      "n": 19,
+      "title": "Financial scenario",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "If $221,000 were amended authority and $180,000 were committed or spent, only $41,000 would remain before other obligations; illustrative only."
+    },
+    {
+      "n": 20,
+      "title": "Authority",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Confirm charter, ordinances, delegation and conflicts with legal counsel before assigning decision rights."
+    },
+    {
+      "n": 21,
+      "title": "Finance role",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S4"
+      ],
+      "answer": "The city's Finance Department provides the official financial reporting and budget source hub."
+    },
+    {
+      "n": 22,
+      "title": "Procurement role",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S5"
+      ],
+      "answer": "The city identifies its electronic procurement system as the route for solicitations and vendor management."
+    },
+    {
+      "n": 23,
+      "title": "Administrative explanation",
+      "classification": "Not established",
+      "sourceIds": [],
+      "answer": "Review the complete meeting recording and written answers before characterizing officials' explanations."
+    },
+    {
+      "n": 24,
+      "title": "Counterevidence",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "A broad account may legitimately include several services; a shared code does not prove diversion."
+    },
+    {
+      "n": 25,
+      "title": "Independent audit",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "An audit opinion and a decision-ready current budget reconciliation answer different questions."
+    },
+    {
+      "n": 26,
+      "title": "Residents",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Make the same account crosswalk accessible to taxpayers and elected officials."
+    },
+    {
+      "n": 27,
+      "title": "Child impact",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Trace any service reductions to verified program decisions; no direct child harm established."
+    },
+    {
+      "n": 28,
+      "title": "Equity",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Use plain-language, accessible public tables rather than requiring specialized accounting knowledge."
+    },
+    {
+      "n": 29,
+      "title": "Worker impact",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Do not count vacant positions as sustainable savings without testing effects on workload and services."
+    },
+    {
+      "n": 30,
+      "title": "Option A",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Publish a purpose-level reconciliation using existing accounting exports before buying software."
+    },
+    {
+      "n": 31,
+      "title": "Option B",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Separate legal, audit and lobbying reporting codes while preserving lawful procurement."
+    },
+    {
+      "n": 32,
+      "title": "Option C",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Compare part-time or on-call legal counsel with dedicated capacity and conflict procedures."
+    },
+    {
+      "n": 33,
+      "title": "Cost example",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "A $100,000 illustrative cap at $250 per hour provides 400 hours before other costs; obtain actual bids."
+    },
+    {
+      "n": 34,
+      "title": "EE",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Measure staff reconciliation time, external review costs and decision error avoided against a manual baseline."
+    },
+    {
+      "n": 35,
+      "title": "T2Y",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Truth requires the appropriation and ledger; useful yield is an understandable decision-ready schedule."
+    },
+    {
+      "n": 36,
+      "title": "Digital twin and shadow",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Represent only verified finance states; simulate potential obligations separately without silently overwriting the ledger."
+    },
+    {
+      "n": 37,
+      "title": "Event horizons",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Before FY2027 adoption seek the reconciliation; quarterly monitor obligations; over five years assess structural oversight capacity."
+    },
+    {
+      "n": 38,
+      "title": "Records request",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Request account 53001 detail, contracts, purchase orders, amendments and attorney procurement records for 2019 through present; protect exempt material."
+    },
+    {
+      "n": 39,
+      "title": "Reopen conditions",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Recheck on new ledger, meeting transcript, final budget, procurement award or correction; historical figures remain intact."
+    },
+    {
+      "n": 40,
+      "title": "Qified synthesis",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Independent oversight needs understandable finance, legally available resources and human decision authority; link to AI governance and all major public spending reviews."
+    }
+  ]
+}
