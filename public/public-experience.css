@@ -164,36 +164,7 @@
  .qp-v3 .qp-entry-short{overflow-wrap:normal}
 }
 
-/* Q Pueblo square icon specification v1: no aspect distortion, original local artwork only. */
-@media screen{
-  .qp-v3 .qp-subject-icon,.qp-v3 :is(.qp-card-icon,.qp-exp-icon).qp-subject-icon{width:3rem;height:auto;aspect-ratio:1/1;border-radius:.48rem;line-height:0;vertical-align:middle;background-size:967.741935% 300%;background-origin:border-box;background-clip:padding-box;flex-shrink:0}
-  .qp-v3 :is(.qp-entry-card,.qp-eight-grid .qp-exp-card,.qp-support-grid .qp-art-card,.qp-task-card)>.qp-entry-art{width:min(100%,8rem);aspect-ratio:1/1;align-self:center;margin:.4rem auto 0;border:1px solid #a68c59;border-radius:.5rem;box-sizing:border-box;background-size:967.741935% 300%;background-origin:border-box;background-clip:padding-box}
-  .qp-v3 .qp-gov-card>h3:has(>.qp-subject-icon){display:flex;align-items:center;gap:.55rem;min-width:0}
-  .qp-v3 .qp-gov-card>h3>.qp-subject-icon{width:4rem;height:4rem;flex:0 0 4rem;margin:0}
-  .qp-v3-home #governance-intelligence .qp-gov-card>h3>.qp-subject-icon{width:4rem;height:4rem;flex-basis:4rem}
-  .qp-v3 summary .qp-subject-icon,.qp-v3 .issue-title .qp-subject-icon{width:2rem;height:2rem}
-  .qp-v3 .qp-subject-icon.art-report-7{background-image:url('assets/pueblo-report-art.webp');background-size:1027.397260% 400%;background-position:50% 33.333333%}
-  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-0{background-position:8.178439% 0%}
-  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-1{background-position:36.059480% 0%}
-  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-2{background-position:63.940520% 0%}
-  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-3{background-position:91.821561% 0%}
-  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-4{background-position:8.178439% 50%}
-  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-5{background-position:36.059480% 50%}
-  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-6{background-position:63.940520% 50%}
-  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-7{background-position:91.821561% 50%}
-  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-8{background-position:8.178439% 100%}
-  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-9{background-position:36.059480% 100%}
-  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-10{background-position:63.940520% 100%}
-  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-11{background-position:91.821561% 100%}
-}
-@media screen and (max-width:760px){
-  .qp-v3-home #entryways .qp-entry-grid,.qp-v3 main .qp-eight-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:.35rem}
-  .qp-v3 :is(.qp-entry-card,.qp-eight-grid .qp-exp-card)>.qp-entry-art{width:min(calc(100% - .3rem),5.5rem);margin:.15rem auto 0}
-  .qp-v3 .qp-gov-card>h3>.qp-subject-icon,.qp-v3-home #governance-intelligence .qp-gov-card>h3>.qp-subject-icon{width:3.25rem;height:3.25rem;flex-basis:3.25rem}
-  .qp-v3 .qp-subject-icon{width:2.4rem}
-}
-
-/* 2026-11-17 original square Pueblo illustrations, local optimized WebP. */
+/* Pueblo illustrations: locally hosted artwork in original wide card geometry. */
 @media screen {
 .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art).art-entry-1{background-image:url('assets/subject-icons/government.webp');background-size:cover;background-position:center}
 .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art).art-entry-2{background-image:url('assets/subject-icons/economy.webp');background-size:cover;background-position:center}
@@ -203,13 +174,13 @@
 .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art).art-entry-7{background-image:url('assets/subject-icons/safety.webp');background-size:cover;background-position:center}
 .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art).art-entry-10{background-image:url('assets/subject-icons/education-health.webp');background-size:cover;background-position:center}
 .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art).art-entry-11{background-image:url('assets/subject-icons/future.webp');background-size:cover;background-position:center}
-.qp-v3 .qp-entry-card>.qp-entry-art,.qp-v3 .qp-eight-grid .qp-exp-card>.qp-entry-art{aspect-ratio:1/1}
-.qp-v3 a[href="twin.html"] .qp-entry-art,.qp-v3 .qp-subject-icon.qp-art-twin{background-image:url('assets/subject-icons/twin.webp');background-size:cover;background-position:center;aspect-ratio:1/1}
+.qp-v3 .qp-entry-card>.qp-entry-art,.qp-v3 .qp-eight-grid .qp-exp-card>.qp-entry-art{aspect-ratio:300/124}
+.qp-v3 a[href="twin.html"] .qp-entry-art,.qp-v3 .qp-subject-icon.qp-art-twin{background-image:url('assets/subject-icons/twin.webp');background-size:cover;background-position:center;aspect-ratio:300/124}
 }
 
-/* Named square artwork registry: no arbitrary atlas reuse between unrelated subjects. */
+/* Named artwork registry: preserve related subject assignments. */
 @media screen {
-.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art]{background-size:cover;background-position:center;aspect-ratio:1/1;background-repeat:no-repeat}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art]{background-size:cover;background-position:center;aspect-ratio:300/124;background-repeat:no-repeat}
 .qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="government"]{background-image:url('assets/subject-icons/government.webp')}
 .qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="economy"]{background-image:url('assets/subject-icons/economy.webp')}
 .qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="water-energy"]{background-image:url('assets/subject-icons/water-energy.webp')}
@@ -235,6 +206,20 @@
 .qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="learning"]{background-image:url('assets/subject-icons/learning.webp')}
 .qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="research-tools"]{background-image:url('assets/subject-icons/research-tools.webp')}
 .qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="healthcare"]{background-image:url('assets/subject-icons/healthcare.webp')}
-.qp-v3 .qp-support-grid .qp-entry-art[data-qp-art],.qp-v3 .qp-task-card .qp-entry-art[data-qp-art]{width:min(100%,8rem);margin:.4rem auto 0;align-self:center}
-.qp-v3 main h1>.qp-subject-icon{width:3rem;height:3rem;vertical-align:middle}
+.qp-v3 .qp-support-grid .qp-entry-art[data-qp-art],.qp-v3 .qp-task-card .qp-entry-art[data-qp-art]{width:100%;margin:0;align-self:stretch}
+.qp-v3 main h1>.qp-subject-icon{width:3rem;height:auto;vertical-align:middle}
+}
+
+/* Restore original full-width rectangular illustrations; keep four entries per row. */
+@media screen {
+ .qp-v3 .qp-entry-art{width:100%;aspect-ratio:300/124}
+ .qp-v3 :is(.qp-entry-card,.qp-eight-grid .qp-exp-card,.qp-support-grid .qp-art-card,.qp-task-card)>.qp-entry-art{width:100%;aspect-ratio:300/124;margin:0;align-self:stretch;border-radius:0}
+ .qp-v3 .qp-gov-card>h3:has(>.qp-subject-icon){display:flex;align-items:center;gap:.55rem;min-width:0}
+ .qp-v3 .qp-gov-card>h3>.qp-subject-icon{width:3.5rem;aspect-ratio:300/124;height:auto;flex:0 0 3.5rem;margin:0}
+ .qp-v3 .qp-subject-icon[data-qp-art]{aspect-ratio:300/124;height:auto;background-size:cover;background-position:center}
+ .qp-v3 .qp-report-art[data-qp-art]{aspect-ratio:300/146}
+}
+@media screen and (max-width:760px){
+ .qp-v3-home #entryways .qp-entry-grid,.qp-v3 main .qp-eight-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:.35rem}
+ .qp-v3 .qp-gov-card>h3>.qp-subject-icon,.qp-v3-home #governance-intelligence h3>.qp-subject-icon{width:3rem;flex-basis:3rem;height:auto}
 }
