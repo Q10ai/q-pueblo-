@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Q10ai/q-pueblo-/blob/main/public/packet-schema.json",
+  "$id": "https://qpueblo.pages.dev/packet-schema.json",
   "title": "Q Pueblo Public Research Packet Contract",
   "description": "A client-generated research starter, not a verified finding. Semantic fields remain explicitly provisional until source-by-source human review.",
   "type": "object",

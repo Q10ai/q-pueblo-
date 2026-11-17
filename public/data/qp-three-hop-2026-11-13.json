@@ -2,7 +2,7 @@
   "schema_version": "0.1.0",
   "created": "2026-11-13",
   "artifact": "Q-PUEBLO-PUBLIC-THREE-HOP",
-  "origin": "Q10ai/q10-core public-index.json via audited Q10ASI civic projection",
+  "origin": "Published civic research index; provenance retained in the controlled source record",
   "upstream_public_link": "https://q10asi.com/projects/q-pueblo/public-index.json",
   "separate_from_standalone_historical_issue_index": true,
   "state": "PUBLIC_SAFE_SOURCE_PROJECTION_NOT_AUTHORITY_GRAPH",

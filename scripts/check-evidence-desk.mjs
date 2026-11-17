@@ -47,8 +47,8 @@ assert(home.includes('href="evidence-desk.html"'),'Desk must be discoverable on 
 assert(home.includes('id="home-q"') && !home.includes('name="q"'),'Private home question must not become query parameter');
 assert(css.includes('@media(max-width:640px)'));
 const method=read('public/method.html');
-assert(method.includes('Ownership, funding and accountability — open disclosures'),'No unsupported operator identity or funded editorial claim');
-assert(method.includes('A staffed public submission queue')&&method.includes('not in operation'),'Non-operational corrections workflow must be disclosed');
+assert(method.includes('Ownership and funding disclosures')&&method.includes('Formal operator, ownership, funding, conflicts and staffing disclosures remain to be published'),'No unsupported operator identity or funded editorial claim');
+assert(method.includes('A staffed submissions queue, guaranteed response time and independent editorial audit are not operating'),'Non-operational corrections workflow must be disclosed');
 assert(method.includes('evidence-desk.html#challenge'),'Known documentary contradiction must remain navigable');
 console.log('PASS evidence desk: 7 reconciled budget groups, actual math, 26 county priorities, 18 dated reports, correction docket, source boundaries, privacy and mobile UI.');
 
