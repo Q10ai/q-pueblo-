@@ -34,10 +34,10 @@
  if(menu&&nav){if(document.documentElement.lang==='en'&&!nav.querySelector('a[href="es.html"], a[href="/es"]')){const a=document.createElement('a');a.href='es.html';a.lang='es';a.textContent='Español';nav.append(a);}nav.classList.add('qp-js-nav');menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('is-open',open)});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menu.getAttribute('aria-expanded')==='true'){menu.setAttribute('aria-expanded','false');nav.classList.remove('is-open');menu.focus();}});nav.addEventListener('click',e=>{if(e.target.closest('a')){menu.setAttribute('aria-expanded','false');nav.classList.remove('is-open')}})}
   // Public visual language: the original local Pueblo illustration atlas, no new icon library.
   if(document.body.classList.contains('qp-v3')&&document.querySelector('link[href*="public-experience.css"]')){
-    const areas={authority:1,money:2,water:5,infrastructure:3,homes:6,people:10,safety:9,future:11};
-    const categories={'public money':2,'health & safety':9,'roads & transport':3,'water & energy':5,'government & law':1,'housing & land':6,'culture & history':0,'economy & jobs':2,'education & children':10,'environment & place':5,'technology & information':11};
+    const areas={authority:1,money:2,water:5,infrastructure:3,homes:6,people:10,safety:7,future:11};
+    const categories={'public money':2,'health & safety':7,'roads & transport':3,'water & energy':5,'government & law':1,'housing & land':6,'culture & history':0,'economy & jobs':2,'education & children':10,'environment & place':5,'technology & information':11};
     const rules=[
-      [9,/\b(surveillance|flock|crime|police|fire|disaster|emergency|safety|hazards?|resilience|detention|aspen acres|seguridad|incendio)\b/i],
+      [7,/\b(surveillance|flock|crime|police|fire|disaster|emergency|safety|hazards?|resilience|detention|aspen acres|seguridad|incendio)\b/i],
       [5,/\b(water|wastewater|sewage|energy|electric|watershed|environment|conduit|utilities|agua|energía|ambiente)\b/i],
       [6,/\b(housing|homelessness|homeless|rent|rental|neighborhoods?|habitability|land use|community|food assistance|vivienda|comunidad|familias)\b/i],
       [3,/\b(roads?|rail|airport|aviation|transportation|transport|infrastructure|fiber|boulevard|transit|bridges?|transporte|carreteras)\b/i],
@@ -48,7 +48,7 @@
       [7,/\b(compare|calculate|calculator|tools?|options?|solutions?|remedies|costs?|truth|evidence|sources?|research|verify|check|audit|answers?|findings?|limitations?|herramientas|fuentes|respuestas|investigación)\b/i],
       [0,/\b(history|historical|museum|culture|archives?|library|trivia|play|places?|historia|biblioteca|cultura)\b/i]
     ];
-    const emojiMap={'💰':2,'💵':2,'💧':5,'🌊':5,'⚡':5,'🏗':3,'🚆':3,'🏘':6,'🏠':6,'🎓':10,'🎈':10,'🛡':9,'🔥':9,'🏛':1,'⚖':1,'🔭':11,'🌐':11,'🤖':11,'🧠':11,'🔗':11,'🔬':7,'🔍':7,'📚':0,'🪶':0,'🎡':0,'⚙':2,'🧭':0,'🎉':0};
+    const emojiMap={'💰':2,'💵':2,'💧':5,'🌊':5,'⚡':5,'🏗':3,'🚆':3,'🏘':6,'🏠':6,'🎓':10,'🎈':10,'🛡':7,'🔥':7,'🏛':1,'⚖':1,'🔭':11,'🌐':11,'🤖':11,'🧠':11,'🔗':11,'🔬':7,'🔍':7,'📚':0,'🪶':0,'🎡':0,'⚙':2,'🧭':0,'🎉':0};
     const emojiOnly=/^(?:[\p{Extended_Pictographic}\p{Regional_Indicator}\uFE0F\u200D\u20E3]\s*)+$/u;
     const leadingEmoji=/^\s*((?:[\p{Extended_Pictographic}\uFE0F\u200D])+)\s*/u;
     const cardSelector='.qp-gov-card,.qp-exp-card,.qp-action-card,.qp-art-card,.topic-card,.qp-report-card,.qp-feature-report,.qp-resource-card,.qp-task-card,.learn-record';
