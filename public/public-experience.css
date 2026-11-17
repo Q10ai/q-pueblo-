@@ -149,3 +149,7 @@
   .qp-v3 main .qp-eight-grid .qp-exp-card{position:relative}
 }
 @media print{.qp-subject-icon,.qp-entry-short{display:none!important}}
+
+/* Homepage major-issue icons: keep art beside the heading, not as a large banner. */
+@media screen{.qp-v3-home #governance-intelligence .qp-gov-card h3{display:flex;align-items:center;gap:.55rem;min-width:0}.qp-v3-home #governance-intelligence h3>.qp-subject-icon{width:3.5rem;margin:0;flex:0 0 3.5rem}.qp-v3 .issue-title>.qp-subject-icon{margin-inline-end:.4rem}}
+@media screen and (max-width:760px){.qp-v3-home #governance-intelligence h3>.qp-subject-icon{width:3rem;flex-basis:3rem}}
