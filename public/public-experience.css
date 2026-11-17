@@ -163,3 +163,32 @@
  .qp-v3 main :is(dialog,[role="dialog"]) .qp-subject-icon{max-width:2.8rem}
  .qp-v3 .qp-entry-short{overflow-wrap:normal}
 }
+
+/* Q Pueblo square icon specification v1: no aspect distortion, original local artwork only. */
+@media screen{
+  .qp-v3 .qp-subject-icon,.qp-v3 :is(.qp-card-icon,.qp-exp-icon).qp-subject-icon{width:3rem;height:auto;aspect-ratio:1/1;border-radius:.48rem;line-height:0;vertical-align:middle;background-size:967.741935% 300%;background-origin:border-box;background-clip:padding-box;flex-shrink:0}
+  .qp-v3 :is(.qp-entry-card,.qp-eight-grid .qp-exp-card,.qp-support-grid .qp-art-card,.qp-task-card)>.qp-entry-art{width:min(100%,8rem);aspect-ratio:1/1;align-self:center;margin:.4rem auto 0;border:1px solid #a68c59;border-radius:.5rem;box-sizing:border-box;background-size:967.741935% 300%;background-origin:border-box;background-clip:padding-box}
+  .qp-v3 .qp-gov-card>h3:has(>.qp-subject-icon){display:flex;align-items:center;gap:.55rem;min-width:0}
+  .qp-v3 .qp-gov-card>h3>.qp-subject-icon{width:4rem;height:4rem;flex:0 0 4rem;margin:0}
+  .qp-v3-home #governance-intelligence .qp-gov-card>h3>.qp-subject-icon{width:4rem;height:4rem;flex-basis:4rem}
+  .qp-v3 summary .qp-subject-icon,.qp-v3 .issue-title .qp-subject-icon{width:2rem;height:2rem}
+  .qp-v3 .qp-subject-icon.art-report-7{background-image:url('assets/pueblo-report-art.webp');background-size:1027.397260% 400%;background-position:50% 33.333333%}
+  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-0{background-position:8.178439% 0%}
+  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-1{background-position:36.059480% 0%}
+  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-2{background-position:63.940520% 0%}
+  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-3{background-position:91.821561% 0%}
+  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-4{background-position:8.178439% 50%}
+  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-5{background-position:36.059480% 50%}
+  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-6{background-position:63.940520% 50%}
+  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-7{background-position:91.821561% 50%}
+  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-8{background-position:8.178439% 100%}
+  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-9{background-position:36.059480% 100%}
+  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-10{background-position:63.940520% 100%}
+  .qp-v3 :is(.qp-subject-icon,.qp-entry-card>.qp-entry-art,.qp-eight-grid .qp-exp-card>.qp-entry-art,.qp-support-grid .qp-art-card>.qp-entry-art,.qp-task-card>.qp-entry-art).art-entry-11{background-position:91.821561% 100%}
+}
+@media screen and (max-width:760px){
+  .qp-v3-home #entryways .qp-entry-grid,.qp-v3 main .qp-eight-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:.35rem}
+  .qp-v3 :is(.qp-entry-card,.qp-eight-grid .qp-exp-card)>.qp-entry-art{width:min(calc(100% - .3rem),5.5rem);margin:.15rem auto 0}
+  .qp-v3 .qp-gov-card>h3>.qp-subject-icon,.qp-v3-home #governance-intelligence .qp-gov-card>h3>.qp-subject-icon{width:3.25rem;height:3.25rem;flex-basis:3.25rem}
+  .qp-v3 .qp-subject-icon{width:2.4rem}
+}
