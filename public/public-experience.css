@@ -486,3 +486,26 @@
  .qp-v3-home #search-pueblo .qp-searchline{grid-template-columns:minmax(0,1fr)}
  .qp-v3-home #search-pueblo .qp-searchline button{width:100%}
 }
+
+/* Supporting illustrated navigation: identical dimensions and meaningful artwork. */
+@media screen{
+ .qp-v3-home .qp-bottom-tile-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem;max-width:36rem;margin:.7rem 0}
+ .qp-v3-home .qp-bottom-library{min-width:0;margin:0;padding:0;border:0;background:none}
+ .qp-v3-home .qp-bottom-tile{display:flex;flex-direction:column;align-items:stretch;gap:0;min-width:0;overflow:hidden;border:1px solid #d5a862;border-radius:12px;background:linear-gradient(145deg,#153a54,#091e38);color:#fff1ca;text-decoration:none;cursor:pointer}
+ .qp-v3-home .qp-bottom-tile::-webkit-details-marker{display:none}
+ .qp-v3-home .qp-bottom-tile::marker{content:''}
+ .qp-v3-home .qp-bottom-tile>.qp-subject-icon[data-qp-art]{display:block;width:100%;height:auto;aspect-ratio:3/2;flex:none;margin:0;border:0;border-radius:0;border-bottom:1px solid #d5a862;background-size:cover;background-position:center}
+ .qp-v3-home .qp-bottom-label{display:flex;align-items:center;justify-content:center;gap:.25rem;min-height:64px;padding:.45rem;line-height:1.25;font:750 .95rem/1.25 system-ui,sans-serif;text-align:center;overflow-wrap:anywhere}
+ .qp-v3-home .qp-bottom-library[open]{grid-column:1/-1}
+ .qp-v3-home .qp-bottom-library[open]>.qp-bottom-tile{max-width:17rem}
+ .qp-v3-home .qp-bottom-detail,.qp-v3-home .qp-bottom-contact{min-width:0;max-width:100%;overflow-wrap:anywhere}
+ .qp-v3-home .qp-bottom-detail{margin:.65rem 0;padding:.65rem;border:1px solid #7898ad;border-radius:8px}
+ .qp-v3-home .qp-bottom-tile:hover,.qp-v3-home .qp-bottom-tile:focus-visible{border-color:#fff1c4}
+}
+@media screen and (max-width:760px){
+ .qp-v3-home .qp-bottom-tile-grid{max-width:17rem;margin:.65rem auto}
+ .qp-v3-home .qp-bottom-tile>.qp-subject-icon[data-qp-art]{width:100%;aspect-ratio:3/2;margin:0}
+ .qp-v3-home .qp-bottom-label{font-size:.88rem}
+ .qp-v3-home .qp-bottom-library[open]>.qp-bottom-tile{max-width:8.2rem}
+ .qp-v3-home .qp-bottom-detail{font-size:.96rem;line-height:1.55}
+}

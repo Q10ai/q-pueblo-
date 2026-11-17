@@ -1,0 +1,440 @@
+{
+  "id": "qp-reg-ai-readiness",
+  "title": "Is Pueblo ready for the AI era? A regional plan for people, jobs and public services",
+  "checked": "2026-11-17",
+  "reviewBy": "2026-12-17",
+  "route": "pueblo-ai-readiness.html",
+  "questions": [
+    "Is Pueblo ready for the AI era?",
+    "Is the Pueblo region ready for AI?",
+    "Pueblo AI readiness",
+    "How can Pueblo prepare for AI?"
+  ],
+  "keywords": [
+    "ai readiness",
+    "ai era",
+    "artificial intelligence",
+    "regional ai",
+    "ai workforce"
+  ],
+  "summary": "Pueblo has credible starting assets: college AI and technical education, public library technology assistance, workforce services and 89.1% household broadband subscription in Pueblo County (2020–2024). These do not establish region-wide operational readiness. A coordinated, fiscally bounded, human-governed transition is the recommended next step. [S1–S6]",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "US Census QuickFacts — Pueblo County, 2020–2024 broadband and computer subscriptions",
+      "url": "https://www.census.gov/quickfacts/fact/table/pueblocountycolorado/INT100224"
+    },
+    {
+      "id": "S2",
+      "title": "Pueblo Community College — AI-enhanced education and Southern Colorado AI event",
+      "url": "https://pueblocc.edu/SoCO-AI"
+    },
+    {
+      "id": "S3",
+      "title": "CSU Pueblo — CIS concentrations including data analytics and AI",
+      "url": "https://www.csupueblo.edu/computer-information-systems/concentration-areas.html"
+    },
+    {
+      "id": "S4",
+      "title": "Pueblo City-County Library — technology assistance and makerspaces",
+      "url": "https://www.pueblolibrary.org/"
+    },
+    {
+      "id": "S5",
+      "title": "Pueblo Workforce Center — job seeker and employer services",
+      "url": "https://county.pueblo.org/human-services-department/colorado-workforce-center"
+    },
+    {
+      "id": "S6",
+      "title": "PCC cybersecurity program",
+      "url": "https://pueblocc.edu/Programs/CSE"
+    },
+    {
+      "id": "S7",
+      "title": "Colorado Attorney General — ADMT and chatbot safety law and rulemaking",
+      "url": "https://coag.gov/ai/"
+    },
+    {
+      "id": "S8",
+      "title": "NIST AI Risk Management Framework Core",
+      "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/"
+    },
+    {
+      "id": "S9",
+      "title": "Colorado OIT — statewide GenAI strategy and reported results",
+      "url": "https://oit.nxt-dev.colorado.gov/standards-policies-guides/guide-to-artificial-intelligence/explore-colorados-statewide-genai"
+    },
+    {
+      "id": "S10",
+      "title": "San José AI policy and guidelines",
+      "url": "https://www.sanjoseca.gov/your-government/departments-offices/information-technology/itd-generative-ai-guideline"
+    },
+    {
+      "id": "S11",
+      "title": "Government AI Coalition — reusable templates and resources",
+      "url": "https://www.sanjoseca.gov/your-government/departments-offices/information-technology/artificial-intelligence-inventory/govai-coalition/templates-resources"
+    },
+    {
+      "id": "S12",
+      "title": "Colorado OEDIT — Pueblo regional industry clusters",
+      "url": "https://choosecolorado.com/regional-profile/pueblo-region/"
+    }
+  ],
+  "chapters": [
+    {
+      "kind": "context",
+      "heading": "The next industrial transition is already here",
+      "text": "AI is software that identifies patterns, generates content or assists decisions. It can help a machinist interpret a manual, a clerk locate a public record, or a small business draft a quote. It can also fabricate a fact, leak a record or exclude residents. AI readiness is the ability to use it well and say no when it is not appropriate. It is not the same as building a data center."
+    },
+    {
+      "kind": "people",
+      "heading": "Pueblo is not starting from zero",
+      "text": "In 2020–2024, 89.1% of Pueblo County households subscribed to broadband, and 94.9% had a computer. PCC advertised a no-cost Southern Colorado AI event, CSU Pueblo teaches data analytics and AI-related topics, PCC offers cybersecurity, the library offers technology help and the Workforce Center offers job and employer services. These are assets, not proof every resident is ready. [S1–S6]"
+    },
+    {
+      "kind": "meaning",
+      "heading": "What this means for everyday Pueblo",
+      "text": "A family can use a library workshop to learn how to spot scams; a shop can compare AI-assisted quotes with actual costs; a public works crew can test maintenance summaries without allowing AI to control machinery; a resident can locate a dated ordinance with its source. These are proposed local pilots, not claims of existing deployment. Manufacturing, health, transport and infrastructure are documented regional industry clusters. [S12]"
+    },
+    {
+      "kind": "context",
+      "heading": "What real governments are doing",
+      "text": "Colorado OIT reports 6,447 trained state users of Gemini as of May 2026, alongside risk review and human supervision. San José requires privacy and fairness review, staff accountability and approval before acquisition; its coalition provides reusable templates. These examples demonstrate a route to learn from, not a promise of equal savings in Pueblo. [S9–S11]"
+    },
+    {
+      "kind": "money",
+      "heading": "What might it cost?",
+      "text": "Illustrative year-one regional scenarios, not bids or appropriations: $50,000 lean discovery and pilot (coordination $15k, training $10k, security/legal $10k, tools $5k, evaluation $5k, contingency $5k); $250,000 shared pilot (staff $100k, training $40k, tools/data $35k, cybersecurity/legal $35k, access support $20k, evaluation $10k, contingency $10k); $750,000 regional scale (staff $300k, training $140k, access $75k, data/tools $90k, security/legal $70k, evaluation $35k, contingency $40k). Recurring costs and local procurement quotes must be developed before funding; no data-center capital included."
+    },
+    {
+      "kind": "options",
+      "heading": "How to proceed without sacrificing services",
+      "text": "Within 30 days, convene voluntary partners and inventory systems, skills and contracts. By 90 days, adopt a policy and select low-risk pilots with measured manual baselines. In 6–12 months, publish evaluated benefits, defects and costs before scaling. Do not redirect restricted funds or assume staff time saved is cash recovered."
+    },
+    {
+      "kind": "future",
+      "heading": "Who, where and when",
+      "text": "Suggested conveners are City and County leadership, PCC, CSU Pueblo, library, workforce center, school districts, employers, utilities, residents and independent counsel. Start in existing facilities, including libraries and classrooms; cover Pueblo West, rural communities and residents without home broadband. Colorado's new ADMT and chatbot safety provisions generally take effect January 1, 2027; determine specific applicability with counsel and follow the rulemaking. [S7]"
+    },
+    {
+      "kind": "meaning",
+      "heading": "Qified: a region ready for AI is ready to govern it",
+      "text": "Use the NIST govern/map/measure/manage process, public accountability, independent review, child safeguards, manual alternatives, incident response and shutdown. Connect literacy, economic transition, public finance, cyber resilience, accessibility, energy, water and democratic oversight. [S8]"
+    }
+  ],
+  "unknowns": [
+    "No comprehensive regional AI asset, spending, vendor or risk inventory reviewed.",
+    "No verified workforce adoption, job displacement forecast, school policies, local procurement bids or measured local productivity outcomes.",
+    "No confirmed multi-entity governance commitment, broadband affordability breakdown or engineering capacity for new compute facilities.",
+    "No local program or funding in the scenarios has been approved."
+  ],
+  "coverage40": [
+    {
+      "n": 1,
+      "title": "Scope",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Pueblo County is the quantitative baseline; nearby Southern Colorado partners may join voluntarily, with boundaries explicit."
+    },
+    {
+      "n": 2,
+      "title": "What AI means",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Models can generate, classify, predict or recommend; they are not reliable authorities and can produce confident errors."
+    },
+    {
+      "n": 3,
+      "title": "Readiness conclusion",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Starting assets exist but operational readiness across institutions is not established; readiness must be measured by capability."
+    },
+    {
+      "n": 4,
+      "title": "Population",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S1"
+      ],
+      "answer": "Census QuickFacts estimates 169,277 Pueblo County residents on July 1, 2025."
+    },
+    {
+      "n": 5,
+      "title": "Internet access",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S1"
+      ],
+      "answer": "89.1 percent of county households subscribed to broadband in 2020–2024; 10.9 percent did not."
+    },
+    {
+      "n": 6,
+      "title": "Device access",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S1"
+      ],
+      "answer": "94.9 percent of county households had a computer in 2020–2024; this does not measure AI literacy."
+    },
+    {
+      "n": 7,
+      "title": "PCC",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S2"
+      ],
+      "answer": "PCC advertised a free Southern Colorado AI event with ethics, applied tools and AI-at-work sessions."
+    },
+    {
+      "n": 8,
+      "title": "CSU Pueblo",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S3"
+      ],
+      "answer": "The CIS data analytics concentration includes AI, cloud computing and deep learning."
+    },
+    {
+      "n": 9,
+      "title": "Cyber education",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S6"
+      ],
+      "answer": "PCC advertises dedicated cybersecurity labs and certificates in defense and networking."
+    },
+    {
+      "n": 10,
+      "title": "Library",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S4"
+      ],
+      "answer": "The public library advertises free technology assistance and makerspaces."
+    },
+    {
+      "n": 11,
+      "title": "Workforce services",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S5"
+      ],
+      "answer": "The local Workforce Center provides training, skills assessments and employer services."
+    },
+    {
+      "n": 12,
+      "title": "Local economy",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S12"
+      ],
+      "answer": "The state regional profile identifies health, advanced manufacturing, infrastructure and logistics clusters."
+    },
+    {
+      "n": 13,
+      "title": "Jobs and tasks",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Inventory tasks likely to change; train workers in checking output, domain knowledge and safe methods; do not equate task exposure with job loss."
+    },
+    {
+      "n": 14,
+      "title": "Small business",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Pilot quotes, inventory summaries and marketing drafts using redacted data; verify prices and actual profit margins."
+    },
+    {
+      "n": 15,
+      "title": "Manufacturing",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Test document retrieval and maintenance triage offline; qualified staff retain equipment control and safety approvals."
+    },
+    {
+      "n": 16,
+      "title": "Healthcare",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Start with nonclinical administrative material; protect health information and require professional review; no automated diagnoses."
+    },
+    {
+      "n": 17,
+      "title": "Agriculture",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Evaluate greenhouse and irrigation monitoring against conventional sensors; never infer local water savings without measurement."
+    },
+    {
+      "n": 18,
+      "title": "Government",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Start with public-record search and draft summaries, not automated policing, benefits, permits or hiring decisions."
+    },
+    {
+      "n": 19,
+      "title": "Education",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Teach verification, citation, bias, privacy and when not to use AI; keep assessments developmentally appropriate."
+    },
+    {
+      "n": 20,
+      "title": "Child protection",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "No child profiling, undisclosed chatbot use or dependence design; establish adult support, reporting and non-AI access."
+    },
+    {
+      "n": 21,
+      "title": "Senior and disability access",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Provide accessible in-person help, plain language, Spanish options and telephone alternatives; test with users."
+    },
+    {
+      "n": 22,
+      "title": "Rural inclusion",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Map connectivity, affordability and travel barriers before selecting sites; include Pueblo West and outlying communities."
+    },
+    {
+      "n": 23,
+      "title": "Colorado law",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S7"
+      ],
+      "answer": "The Attorney General describes SB 26-189 and HB 26-1263 as effective January 1, 2027; confirm applicability and final rules."
+    },
+    {
+      "n": 24,
+      "title": "Risk framework",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S8"
+      ],
+      "answer": "NIST organizes risk work around govern, map, measure and manage, continuously across the lifecycle."
+    },
+    {
+      "n": 25,
+      "title": "Real-life Colorado example",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S9"
+      ],
+      "answer": "OIT reports 6,447 trained Gemini users by May 2026 and a risk-based approach with human oversight."
+    },
+    {
+      "n": 26,
+      "title": "Real-life San José example",
+      "classification": "Dated source finding",
+      "sourceIds": [
+        "S10",
+        "S11"
+      ],
+      "answer": "San José publishes AI purchasing and safety guidelines; its coalition shares implementation templates."
+    },
+    {
+      "n": 27,
+      "title": "Funding model",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Seek lawful partner contributions and eligible grants, verify matching requirements and prohibit reliance on uncertain awards."
+    },
+    {
+      "n": 28,
+      "title": "Lean pilot cost",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Illustrative $50k first year: coordination 15k, training 10k, security/legal 10k, tools 5k, evaluation 5k, contingency 5k."
+    },
+    {
+      "n": 29,
+      "title": "Shared pilot cost",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Illustrative $250k: staff 100k, training 40k, tools/data 35k, security/legal 35k, access 20k, evaluation 10k, contingency 10k."
+    },
+    {
+      "n": 30,
+      "title": "Scale cost",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Illustrative $750k: staff 300k, training 140k, access 75k, data/tools 90k, security/legal 70k, evaluation 35k, contingency 40k."
+    },
+    {
+      "n": 31,
+      "title": "Energy and water",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Use existing hosted services first if appropriate; any local compute build requires verified grid, water, cooling, emissions and lifecycle analysis."
+    },
+    {
+      "n": 32,
+      "title": "Data governance",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Inventory datasets, permissions, provenance, retention, accessibility and vendor training restrictions; never enter protected records into unapproved tools."
+    },
+    {
+      "n": 33,
+      "title": "Procedure and procurement",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Define need, compare non-AI baseline, risk tier, legal review, security test, competitive purchasing, pilot, human approval and rollback."
+    },
+    {
+      "n": 34,
+      "title": "Evaluation and EE",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Measure quality-adjusted hours and cost per accepted outcome, including training, review, errors, cybersecurity and compute; no savings asserted."
+    },
+    {
+      "n": 35,
+      "title": "T2Y",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Measure source accuracy, public usefulness and correct referrals; return unknowns rather than inventing answers."
+    },
+    {
+      "n": 36,
+      "title": "Twin and shadow",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Map verified institutions and resource states in the twin; maintain reversible scenarios in the shadow model, not a live control system."
+    },
+    {
+      "n": 37,
+      "title": "Event horizons and LEAP",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "30 days inventory; 90 days pilot; 6–12 months evaluation; two years scale only if justified; five years monitor job and infrastructure transitions."
+    },
+    {
+      "n": 38,
+      "title": "Accountability and RX",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Publish inventory, owners, limitations and incidents; enable human appeals, corrections, exit and fallback; version evidence and revalidate."
+    },
+    {
+      "n": 39,
+      "title": "Evidence gaps",
+      "classification": "Not established",
+      "sourceIds": [],
+      "answer": "No complete regional readiness inventory, adoption survey, cost quotes, outcome tests or approved joint program is established."
+    },
+    {
+      "n": 40,
+      "title": "Qified synthesis",
+      "classification": "Q analysis or practical guidance",
+      "sourceIds": [],
+      "answer": "Make AI a regional literacy, workforce, governance and resilience initiative rather than a hardware purchase; connect public finance, child safety, industrial transition, water, energy and access."
+    }
+  ]
+}
