@@ -19,7 +19,7 @@
  for(const u of f.lifecycle?.updates||[])out.push(row('Update',u.title,u.finding+' '+u.meaning,'now.html#'+encodeURIComponent(u.id),u.checkedDate));
  for(const ent of f.additions||[])out.push(row('Organization',ent.name,ent.description,'governance-entities.html#'+encodeURIComponent(ent.id),''));
  for(const p of g.profiles||[]){out.push(row('Organization',p.name,[p.work,p.scope,...p.topics].join(' '),'who-governs.html#'+encodeURIComponent(p.id),g.checked));for(const [name,role] of p.members||[])out.push(row('Organization',name,role+' · '+p.name,'who-governs.html#'+encodeURIComponent(p.id),g.checked));}
- for(const s of window.QPStoryEditions?.edition?.stories||[])out.push(row('Analysis',s.title,[s.summary,...s.questions].join(' '),s.route,s.checked));
+ for(const s of window.QPStoryEditions?.allStories||[])out.push(row('Analysis',s.title,[s.summary,...s.questions].join(' '),s.route,s.checked));
  for(const v of window.QPResource?.items||[])out.push(row('Resource',v.title,[v.publisher,v.description,v.format,...v.tags].join(' '),'resource-library.html#'+encodeURIComponent(v.id),v.checked));
  return {rows:out, failed:results.filter(x=>x.status==='rejected').length};
  }
