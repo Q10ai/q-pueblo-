@@ -32,4 +32,50 @@
  const caseOpen=()=>{if(!location.pathname.endsWith('packets.html'))return;try{let target=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(target?.classList.contains('qp-case-detail')){let d=target.querySelector('details');if(d)d.open=true}}catch{}};caseOpen();window.addEventListener('hashchange',caseOpen);
  const menu=document.getElementById('qp-menu-toggle'),nav=document.getElementById('qp-global-nav');
  if(menu&&nav){if(document.documentElement.lang==='en'&&!nav.querySelector('a[href="es.html"], a[href="/es"]')){const a=document.createElement('a');a.href='es.html';a.lang='es';a.textContent='Español';nav.append(a);}nav.classList.add('qp-js-nav');menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('is-open',open)});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menu.getAttribute('aria-expanded')==='true'){menu.setAttribute('aria-expanded','false');nav.classList.remove('is-open');menu.focus();}});nav.addEventListener('click',e=>{if(e.target.closest('a')){menu.setAttribute('aria-expanded','false');nav.classList.remove('is-open')}})}
+}
+  // Decorative subject thumbnails: existing artwork only; never change findings or evidence status.
+  if(document.body.classList.contains('qp-v3')&&document.querySelector('link[href="public-experience.css"]')){
+    const areas={authority:1,money:2,water:5,infrastructure:3,homes:6,people:10,safety:9,future:11};
+    const categories={'public money':2,'health & safety':9,'roads & transport':3,'water & energy':5,'government & law':1,'housing & land':6,'culture & history':0,'economy & jobs':2,'education & children':10,'technology & information':11};
+    const rules=[
+      [9,/\b(surveillance|flock|crime|police|fire|disaster|emergency|safety|hazards?|resilience|detention|aspen acres)\b/i],
+      [5,/\b(water|wastewater|sewage|energy|electric|watershed|environment|conduit|utilities)\b/i],
+      [6,/\b(housing|homelessness|homeless|rent|rental|neighborhoods?|habitability|land use|community|food assistance)\b/i],
+      [3,/\b(roads?|rail|airport|aviation|transportation|transport|infrastructure|fiber|boulevard|transit|bridges?)\b/i],
+      [10,/\b(education|schools?|preschool|children|families|health|healthcare|workforce development)\b/i],
+      [11,/\b(ai|artificial intelligence|technology|digital|future systems|privacy|information systems)\b/i],
+      [2,/\b(budgets?|debt|funds?|funding|tax|levy|finance|financial|money|business|jobs|economy|economic|incentives?|investment|contracts?|wages|industry|half.cent|falcon|pedco)\b/i],
+      [1,/\b(government|governance|council|commissioners|law|lawsuits?|elections?|authority|jurisdiction|accountability|ordinance|public records|decisions?)\b/i]
+    ];
+    const selector='.qp-gov-card > h3,.topic-card > h2,.qp-exp-card > h2,.qp-exp-card > h3,.qp-issue-story h3,.qp-issue-story h4,.qp-report-detail h1,.qp-report-detail h2,.qp-report-detail h3,.qp-report-popout h3,.qp-case-detail > h2,main details > summary,main dialog h2,main dialog h3,#qp-static-report-list > li > a,#entryways ~ section > h2,.qp-exp-section[id] > h2';
+    function decorate(e){
+      const slot=e.matches('summary')&&e.querySelector('.issue-title')||e;
+      if(slot.querySelector(':scope > .qp-subject-icon, :scope > .qp-card-icon, :scope > .qp-exp-icon, :scope > svg, :scope > img'))return;
+      const card=e.closest('.qp-gov-card,.qp-exp-card,.qp-art-card');
+      if(card&&card.querySelector(':scope > .qp-entry-art,:scope > .qp-report-art,:scope > .qp-exp-icon'))return;
+      const record=e.closest('[data-category]');
+      const category=record?.dataset.category?.toLowerCase().trim();
+      const section=e.closest('.qp-exp-section[id]');
+      const title=slot.textContent.trim();
+      if(!title)return;
+      let n=category&&Object.prototype.hasOwnProperty.call(categories,category)?categories[category]:section&&Object.prototype.hasOwnProperty.call(areas,section.id)?areas[section.id]:undefined;
+      if(n===undefined){const match=rules.find(([,re])=>re.test(title));n=match?match[0]:0;}
+      const icon=document.createElement('span');
+      icon.className='qp-subject-icon art-entry-'+n;
+      icon.setAttribute('aria-hidden','true');
+      slot.prepend(icon);
+    }
+    function scan(node){
+      if(node.nodeType!==1)return;
+      if(node.matches(selector))decorate(node);
+      for(const e of node.querySelectorAll(selector))decorate(e);
+    }
+    const root=document.querySelector('main');
+    if(root){
+      scan(root);
+      // Pop-outs and report records may be rendered after page load. Observe only appended subtrees.
+      const observer=new MutationObserver(records=>{for(const r of records)for(const node of r.addedNodes)scan(node);});
+      observer.observe(root,{childList:true,subtree:true});
+    }
+  }
 })();
