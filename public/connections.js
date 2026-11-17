@@ -17,7 +17,7 @@ try{
  const issues=new Map(d.issues.map(i=>[i.id,i])),entities=new Map(d.entities.map(e=>[e.id,e])),byEntity=new Map(d.entities.map(e=>[e.id,new Set()]));
  for(const issue of d.issues)for(const edge of issue.edges){const s=byEntity.get(edge.entity_id);if(s)s.add(issue.id)}
  const hubs=new Set([...byEntity].filter(([id,ids])=>ids.size>25||entities.get(id)?.identity_state.startsWith('Unresolved group')).map(([id])=>id));
- select.replaceChildren(node('option','Choose one of '+d.coverage.issues+' public issue records'));
+ select.replaceChildren(node('option','Choose an issue ('+d.coverage.issues+')'));
  select.firstChild.value='';
  for(const i of d.issues.slice().sort((a,b)=>a.title.localeCompare(b.title))){const option=node('option',i.title);option.value=i.id;select.append(option)}
  const getHash=()=>{const m=window.location.hash.match(/^#issue=(.+)$/);if(m)return decodeURIComponent(m[1]);return new URLSearchParams(window.location.search).get('issue')};
