@@ -1,0 +1,4 @@
+Contact: mailto:Q10pueblo@gmail.com
+Expires: 2027-11-16T00:00:00Z
+Preferred-Languages: en, es
+Canonical: https://qpueblo.pages.dev/.well-known/security.txt

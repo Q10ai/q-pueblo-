@@ -9,7 +9,7 @@
  async function load(){const results=await Promise.allSettled(pathSources.map(p=>fetch(p,{credentials:'same-origin'}).then(r=>{if(!r.ok)throw Error('Read failed');return r.json()})));const [a,b,c,d,e,f,g]=results.map(x=>x.status==='fulfilled'?x.value:{});if(results.every(x=>x.status==='rejected'))throw Error('No data available');
  const out=[];
  out.push(row('Analysis','Project Falcon — civic decision timeline','project falcon land option manufacturing incentives water jobs lime road st charles county public decision timeline','project-falcon.html','2026-11-15'));
- for(const r of a.reports||[])out.push(row('Analysis',r.title,[r.summary,r.topic,...(r.aliases||[]),...(r.questions||[])].join(' '),'reports.html?report='+encodeURIComponent(r.slug)+'#qified-report',r.sourceChecked));
+ for(const r of a.reports||[])out.push(row('Analysis',r.title,[r.summary,r.topic,...(r.aliases||[]),...(r.questions||[])].join(' '),'report-'+encodeURIComponent(r.slug)+'.html',r.sourceChecked));
  for(const i of b.issues||[])out.push(row('Issue',i.title,[i.domain,i.category,i.geography].join(' '),'issues.html#'+encodeURIComponent(i.id),i.lastReviewed));
  for(const i of c.issues||[])out.push(row('Issue',i.title,[i.category,i.kind].join(' '),'connections.html?issue='+encodeURIComponent(i.id),i.source_date));
  const roles=new Map();for(const issue of c.issues||[])for(const edge of issue.edges||[]){if(!roles.has(edge.entity_id))roles.set(edge.entity_id,new Set());roles.get(edge.entity_id).add(edge.role)}

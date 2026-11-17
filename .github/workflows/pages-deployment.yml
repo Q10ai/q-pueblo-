@@ -127,10 +127,15 @@ jobs:
             if [[ "$attempt" == 6 ]]; then echo "::error::Production revision not confirmed"; exit 1; fi
             sleep 5
           done
-          for route in index.html now.html connections.html discover.html rumor-mill.html ai-learn.html reports.html q-tools.html release-check.html; do
+          for route in .well-known/security.txt index.html now.html connections.html discover.html rumor-mill.html ai-learn.html reports.html q-tools.html release-check.html; do
             curl -fsSL --max-time 20 "$base/$route?sha=$GITHUB_SHA" -o "$RUNNER_TEMP/qpueblo-route.html"
             test -s "$RUNNER_TEMP/qpueblo-route.html"
             ! grep -qi '<title>Page not found' "$RUNNER_TEMP/qpueblo-route.html" || exit 1
             echo "PASS: $route"
           done
+          curl -fsSL --max-time 20 -D "$RUNNER_TEMP/qpueblo-live-headers" -o /dev/null "$base/?sha=$GITHUB_SHA"
+          for header in content-security-policy x-frame-options referrer-policy strict-transport-security x-content-type-options; do
+            grep -qi "^$header:" "$RUNNER_TEMP/qpueblo-live-headers" || { echo "::error::Missing live security header: $header"; exit 1; }
+          done
+          curl -fsSL --max-time 20 "$base/.well-known/security.txt" | grep -q "^Contact: mailto:"
           echo "Production revision confirmed: $GITHUB_SHA"

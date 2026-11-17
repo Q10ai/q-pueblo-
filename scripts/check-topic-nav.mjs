@@ -18,4 +18,4 @@ assert(topicPage.includes('Counts describe a dated index'),'Missing scope limit'
 assert(topicPage.includes('independent ID'),'No deduplication boundary');
 console.log('Q Pueblo topic navigation: PASS; '+names.length+' public categories; '+json.issues.length+' dated issue records');
 
-assert.equal((home.match(/class="qp-art-card qp-entry-card"/g)||[]).length,12,'Illustrated entryways missing');
+assert.equal((home.match(/class="qp-art-card qp-entry-card"/g)||[]).length,5,'Five primary entryways required');

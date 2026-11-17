@@ -17,17 +17,17 @@
   "previousReleaseId": "QP-PUBLIC-2026-11-14-ILLUSTRATED-R2",
   "presentation": {
     "edition": "illustrated-public-first-v3",
-    "entryways": 12,
-    "featuredPublicReads": 20,
+    "entryways": 5,
+    "featuredPublicReads": 4,
     "analyses": 18,
-    "caseSummariesFeatured": 6,
+    "caseSummariesFeatured": 0,
     "historicalDraftLocatorsPublished": false,
     "publicSearch": "local data only",
     "artwork": "owner-provided illustrative reference, cropped and recomposed",
     "humanDecisionAuthority": true,
-    "featuredAnalyses": 14,
+    "featuredAnalyses": 4,
     "additionalAnalyses": 4,
-    "countBoundary": "18 dated source-attributed analyses; 20 featured cards comprise 14 analyses and six separate case summaries. Not 20 completed full papers or independent audits.",
+    "countBoundary": "Homepage features four dated findings; the existing 18 dated reports and separate case summaries remain in the research library. Historical issue and graph identities may overlap.",
     "integratedReviewCandidate": {
       "storyFirstReportCount": 18,
       "additionalStoryEditions": 9,
@@ -63,7 +63,8 @@
     },
     "publicSourceFindings": 7,
     "livingResearchCollections": 18,
-    "newFindingsBoundary": "Seven dated public-source summaries, separate from the existing 18 analyses; no new full 40-section completion claim. 18 collections group existing research, not additional canonical issue identities."
+    "newFindingsBoundary": "Seven dated public-source summaries, separate from the existing 18 analyses; no new full 40-section completion claim. 18 collections group existing research, not additional canonical issue identities.",
+    "homeAudit": "Five primary entryways; dated findings; static report links; existing deeper resources remain accessible."
   },
   "presentationUpdated": "2026-11-16"
 }
