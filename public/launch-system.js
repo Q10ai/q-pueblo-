@@ -32,47 +32,61 @@
  const caseOpen=()=>{if(!location.pathname.endsWith('packets.html'))return;try{let target=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(target?.classList.contains('qp-case-detail')){let d=target.querySelector('details');if(d)d.open=true}}catch{}};caseOpen();window.addEventListener('hashchange',caseOpen);
  const menu=document.getElementById('qp-menu-toggle'),nav=document.getElementById('qp-global-nav');
  if(menu&&nav){if(document.documentElement.lang==='en'&&!nav.querySelector('a[href="es.html"], a[href="/es"]')){const a=document.createElement('a');a.href='es.html';a.lang='es';a.textContent='Español';nav.append(a);}nav.classList.add('qp-js-nav');menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('is-open',open)});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menu.getAttribute('aria-expanded')==='true'){menu.setAttribute('aria-expanded','false');nav.classList.remove('is-open');menu.focus();}});nav.addEventListener('click',e=>{if(e.target.closest('a')){menu.setAttribute('aria-expanded','false');nav.classList.remove('is-open')}})}
-  // Public visual language: the original local Pueblo illustration atlas, no new icon library.
+  // One locally hosted square illustration per semantic subject family; no generic random art.
   if(document.body.classList.contains('qp-v3')&&document.querySelector('link[href*="public-experience.css"]')){
-    const areas={authority:1,money:2,water:5,infrastructure:3,homes:6,people:10,safety:7,future:11};
-    const categories={'public money':2,'health & safety':7,'roads & transport':3,'water & energy':5,'government & law':1,'housing & land':6,'culture & history':0,'economy & jobs':2,'education & children':10,'environment & place':5,'technology & information':11};
+    const areas={authority:'government',money:'economy',water:'water-energy',infrastructure:'transport',homes:'housing',people:'education-health',safety:'safety',future:'future'};
+    const categories={'public money':'budgets','health & safety':'safety','roads & transport':'transport','water & energy':'water-energy','government & law':'legal-accountability','housing & land':'housing','culture & history':'heritage','economy & jobs':'economy','education & children':'learning','environment & place':'water-energy','technology & information':'future'};
     const rules=[
-      [7,/\b(surveillance|flock|crime|police|fire|disaster|emergency|safety|hazards?|resilience|detention|aspen acres|seguridad|incendio)\b/i],
-      [5,/\b(water|wastewater|sewage|energy|electric|watershed|environment|conduit|utilities|agua|energía|ambiente)\b/i],
-      [6,/\b(housing|homelessness|homeless|rent|rental|neighborhoods?|habitability|land use|community|food assistance|vivienda|comunidad|familias)\b/i],
-      [3,/\b(roads?|rail|airport|aviation|transportation|transport|infrastructure|fiber|boulevard|transit|bridges?|transporte|carreteras)\b/i],
-      [10,/\b(education|schools?|preschool|children|families|health|healthcare|workforce development|learn|learning|students?|kids|teens|educación|salud|escuelas)\b/i],
-      [11,/\b(ai|artificial intelligence|technology|digital|future|privacy|information systems|models?|scenario|simulation|inteligencia artificial|futuro|tecnología)\b/i],
-      [2,/\b(budgets?|debt|funds?|funding|tax|levy|finance|financial|money|business|jobs|economy|economic|incentives?|investment|contracts?|wages|industry|half.cent|falcon|pedco|dinero|impuestos|presupuesto|empleo)\b/i],
-      [1,/\b(government|governance|council|commissioners|law|lawsuits?|elections?|authority|jurisdiction|accountability|ordinance|public records|decisions?|gobierno|ley|elecciones)\b/i],
-      [7,/\b(compare|calculate|calculator|tools?|options?|solutions?|remedies|costs?|truth|evidence|sources?|research|verify|check|audit|answers?|findings?|limitations?|herramientas|fuentes|respuestas|investigación)\b/i],
-      [0,/\b(history|historical|museum|culture|archives?|library|trivia|play|places?|historia|biblioteca|cultura)\b/i]
+      ['wildfire-recovery',/\b(aspen acres|wildfire|fire recovery|burn scar|watershed recovery|rebuilding after fire)\b/i],
+      ['surveillance',/\b(surveillance|flock|cameras?|license.plate|speed enforcement|crime center|police technology)\b/i],
+      ['winter-housing',/\b(homelessness|homeless|shelters?|winter housing|winter response|habitability)\b/i],
+      ['industrial-investment',/\b(half.cent|falcon|pedco|pura|little leaf|incentives?|industrial|economic development|investment agreement|steel mill)\b/i],
+      ['elections',/\b(elections?|ballot|canvass|voters?|voting|certification|officeholders?|elecciones)\b/i],
+      ['legal-accountability',/\b(lawsuits?|litigation|courts?|legal|ordinance|accountability|law|jurisdiction|records request|ley)\b/i],
+      ['state-federal',/\b(state and federal|federal and state|state government|federal government|statewide|congress|legislature)\b/i],
+      ['utility-rates',/\b(utility rates?|water rates?|electric rates?|sewer rates?|electricity bills?|utility costs?|black hills|water budget|utilities|tariffs?|rate hearing)\b/i],
+      ['passenger-rail',/\b(passenger rail|rail district|train service|station|commuter rail|railway)\b/i],
+      ['community-action',/\b(community movements?|civic voices|community priorities|community action|neighborhood groups?|volunteering|participation|public comment|collaborat|community resources|everyday resources|food assistance|comunidad)\b/i],
+      ['agriculture',/\b(agriculture|agricultural|farms?|farming|chiles?|food systems|irrigation)\b/i],
+      ['healthcare',/\b(healthcare|health care|hospitals?|clinics?|medicine|behavioral health|medical|salud)\b/i],
+      ['budgets',/\b(budgets?|debt|funds?|funding|tax|levy|finance|financial|money|appropriation|spending|cost comparisons?|dinero|impuestos|presupuesto)\b/i],
+      ['water-energy',/\b(water|wastewater|sewage|energy|electric|watershed|environment|conduit|agua|energía|ambiente)\b/i],
+      ['housing',/\b(housing|rent|rental|neighborhoods?|land use|families|vivienda|familias)\b/i],
+      ['transport',/\b(roads?|rail|airport|aviation|transportation|transport|infrastructure|fiber|boulevard|transit|bridges?|transporte|carreteras)\b/i],
+      ['learning',/\b(education|schools?|preschool|children|learn|learning|students?|kids|teens|education|trivia|play|educación|escuelas)\b/i],
+      ['twin',/\b(twin pueblo|regional model|digital twin|regional relationships|regional future lab)\b/i],
+      ['future',/\b(ai|artificial intelligence|technology|digital|future|privacy|information systems|models?|scenario|simulation|inteligencia artificial|futuro|tecnología)\b/i],
+      ['economy',/\b(business|jobs|economy|economic|investment|contracts?|wages|industry|empleo|workforce|employment)\b/i],
+      ['safety',/\b(crime|police|fire|disaster|emergency|safety|hazards?|resilience|detention|seguridad|incendio)\b/i],
+      ['government',/\b(government|governance|council|commissioners|authority|decisions?|gobierno)\b/i],
+      ['heritage',/\b(history|historical|museum|culture|archives?|library|places?|heritage|historia|biblioteca|cultura)\b/i],
+      ['research-tools',/\b(compare|calculate|calculator|tools?|options?|solutions?|remedies|truth|evidence|sources?|research|verify|check|audit|answers?|findings?|limitations?|supporting information|technical|explanation|timeline|summary|herramientas|fuentes|respuestas|investigación)\b/i]
     ];
-    const emojiMap={'💰':2,'💵':2,'💧':5,'🌊':5,'⚡':5,'🏗':3,'🚆':3,'🏘':6,'🏠':6,'🎓':10,'🎈':10,'🛡':7,'🔥':7,'🏛':1,'⚖':1,'🔭':11,'🌐':11,'🤖':11,'🧠':11,'🔗':11,'🔬':7,'🔍':7,'📚':0,'🪶':0,'🎡':0,'⚙':2,'🧭':0,'🎉':0};
+    const emojiMap={'💰':'budgets','💵':'budgets','💧':'water-energy','🌊':'water-energy','⚡':'water-energy','🏗':'transport','🚆':'passenger-rail','🏘':'housing','🏠':'housing','🎓':'learning','🎈':'learning','🛡':'safety','🔥':'wildfire-recovery','🏛':'government','⚖':'legal-accountability','🔭':'future','🌐':'future','🤖':'future','🧠':'future','🔗':'twin','🔬':'research-tools','🔍':'research-tools','📚':'heritage','🪶':'heritage','🎡':'learning','⚙':'economy','🧭':'heritage','🎉':'learning'};
     const emojiOnly=/^(?:[\p{Extended_Pictographic}\p{Regional_Indicator}\uFE0F\u200D\u20E3]\s*)+$/u;
     const leadingEmoji=/^\s*((?:[\p{Extended_Pictographic}\uFE0F\u200D])+)\s*/u;
     const cardSelector='.qp-gov-card,.qp-exp-card,.qp-action-card,.qp-art-card,.topic-card,.qp-report-card,.qp-feature-report,.qp-resource-card,.qp-task-card,.learn-record';
-    const selector='main h2,main h3,main h4,main details > summary,main dialog h2,main dialog h3,main [role="dialog"] h2,main [role="dialog"] h3,#qp-static-report-list > li > a,.qp-report-directory a,.qp-exp-card > strong,.qp-action-card > strong,.qp-resource-card > strong,.qp-feature-report > strong,.qp-card-icon,.qp-exp-icon';
-    function classify(title,context){
-      const match=rules.find(([,re])=>re.test(title));if(match)return match[0];
-      const fallback=rules.find(([,re])=>re.test(context||''));return fallback?fallback[0]:0;
-    }
-    function makeIcon(n){const icon=document.createElement('span');icon.className='qp-subject-icon art-entry-'+n;icon.setAttribute('aria-hidden','true');return icon;}
+    const selector='main h2,main h3,main h4,body:not(.qp-v3-home) main h1,main details > summary,dialog h2,dialog h3,[role="dialog"] h2,[role="dialog"] h3,#qp-static-report-list > li > a,.qp-report-directory a,.qp-exp-card > strong,.qp-action-card > strong,.qp-resource-card > strong,.qp-feature-report > strong,.qp-card-icon,.qp-exp-icon,.qp-task-card > .qp-entry-art';
+    const classify=(title)=>rules.find(([,re])=>re.test(title||''))?.[0];
+    const keyFor=(o,k)=>k&&Object.prototype.hasOwnProperty.call(o,k)?o[k]:undefined;
+    function makeIcon(id){const icon=document.createElement('span');icon.className='qp-subject-icon';icon.dataset.qpArt=id;icon.setAttribute('aria-hidden','true');return icon;}
     function decorate(e){
       const isLegacy=e.matches('.qp-card-icon,.qp-exp-icon');
       const slot=e.matches('summary')&&e.querySelector('.issue-title')||e;
       const card=e.closest(cardSelector);
+      const cardTitleText=card?.querySelector('.qp-art-caption strong,h2,h3,h4,strong')?.textContent||'';
+      if(e.matches('.qp-task-card > .qp-entry-art')){
+        if(e.dataset.qpArt)return;
+        const id=classify(cardTitleText);if(id){for(const k of [...e.classList])if(/^art-entry-\d+$/.test(k))e.classList.remove(k);e.dataset.qpArt=id;}return;
+      }
       if(isLegacy){
         if(e.classList.contains('qp-subject-icon')||!emojiOnly.test(e.textContent.trim())||e.children.length)return;
-        // Replace only a decorative standalone pictogram, not meaningful status text.
         if(card?.querySelector(':scope > .qp-entry-art,:scope > .qp-report-art')){e.hidden=true;return;}
-        const title=card?.querySelector('h2,h3,h4,strong')?.textContent||'';
         const symbol=e.textContent.trim().replace(/\uFE0F/g,'');
-        const n=Object.prototype.hasOwnProperty.call(emojiMap,symbol)?emojiMap[symbol]:classify(title,'');
-        e.textContent='';e.classList.add('qp-subject-icon','art-entry-'+n);e.setAttribute('aria-hidden','true');return;
+        const id=classify(cardTitleText)||keyFor(emojiMap,symbol);
+        if(id){e.textContent='';e.classList.add('qp-subject-icon');e.dataset.qpArt=id;e.setAttribute('aria-hidden','true');}return;
       }
       if(slot.querySelector(':scope > .qp-subject-icon,:scope > svg,:scope > img'))return;
-      // A card's artwork already identifies its main title; its inner pop-outs still receive icons.
       const cardTitle=card&&e.parentElement===card&&!e.matches('summary');
       if(cardTitle&&card.querySelector(':scope > .qp-entry-art,:scope > .qp-report-art,:scope > .qp-exp-icon,:scope > .qp-card-icon'))return;
       if(e.closest('.qp-art-caption,.qp-eight-grid,.qp-entry-grid'))return;
@@ -80,25 +94,16 @@
       const record=e.closest('[data-category]');const category=record?.dataset.category?.toLowerCase().trim();
       const section=e.closest('.qp-exp-section[id]');
       const symbol=title.match(leadingEmoji)?.[1]?.replace(/\uFE0F/g,'');
-      let n=category&&Object.prototype.hasOwnProperty.call(categories,category)?categories[category]:section&&Object.prototype.hasOwnProperty.call(areas,section.id)?areas[section.id]:undefined;
-      if(n===undefined&&symbol&&Object.prototype.hasOwnProperty.call(emojiMap,symbol))n=emojiMap[symbol];
-      if(n===undefined)n=classify(title,card?.querySelector('h2,h3,h4,strong')?.textContent||document.title);
-      // Do not rewrite headings or claim/status labels; only remove recognized decorative prefixes.
+      const id=classify(title)||keyFor(categories,category)||keyFor(areas,section?.id)||keyFor(emojiMap,symbol)||classify(cardTitleText);
+      if(!id)return; // Unclassified subject: leave text alone until a related icon exists.
       const first=slot.firstChild;
-      if(symbol&&Object.prototype.hasOwnProperty.call(emojiMap,symbol)&&first?.nodeType===3)first.nodeValue=first.nodeValue.replace(leadingEmoji,'');
-      slot.prepend(makeIcon(n));
+      if(keyFor(emojiMap,symbol)&&first?.nodeType===3)first.nodeValue=first.nodeValue.replace(leadingEmoji,'');
+      slot.prepend(makeIcon(id));
     }
-    function scan(node){
-      if(node.nodeType!==1)return;
-      if(node.matches(selector))decorate(node);
-      for(const e of node.querySelectorAll(selector))decorate(e);
-    }
-    const root=document.querySelector('main');
-    if(root){
-      scan(root);
-      // Dynamic search results, research cards and dialogs inherit the same artwork.
-      const observer=new MutationObserver(records=>{for(const r of records)for(const node of r.addedNodes)scan(node);});
-      observer.observe(root,{childList:true,subtree:true});
-    }
+    function scan(node){if(node.nodeType!==1)return;if(node.matches(selector))decorate(node);for(const e of node.querySelectorAll(selector))decorate(e);}
+    const root=document.body;
+    scan(root);
+    const observer=new MutationObserver(records=>{for(const r of records)for(const node of r.addedNodes)if(!node.classList?.contains('qp-subject-icon'))scan(node);});
+    observer.observe(root,{childList:true,subtree:true});
   }
 })();

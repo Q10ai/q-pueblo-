@@ -206,3 +206,35 @@
 .qp-v3 .qp-entry-card>.qp-entry-art,.qp-v3 .qp-eight-grid .qp-exp-card>.qp-entry-art{aspect-ratio:1/1}
 .qp-v3 a[href="twin.html"] .qp-entry-art,.qp-v3 .qp-subject-icon.qp-art-twin{background-image:url('assets/subject-icons/twin.webp');background-size:cover;background-position:center;aspect-ratio:1/1}
 }
+
+/* Named square artwork registry: no arbitrary atlas reuse between unrelated subjects. */
+@media screen {
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art]{background-size:cover;background-position:center;aspect-ratio:1/1;background-repeat:no-repeat}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="government"]{background-image:url('assets/subject-icons/government.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="economy"]{background-image:url('assets/subject-icons/economy.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="water-energy"]{background-image:url('assets/subject-icons/water-energy.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="transport"]{background-image:url('assets/subject-icons/transport.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="housing"]{background-image:url('assets/subject-icons/housing.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="education-health"]{background-image:url('assets/subject-icons/education-health.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="safety"]{background-image:url('assets/subject-icons/safety.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="future"]{background-image:url('assets/subject-icons/future.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="twin"]{background-image:url('assets/subject-icons/twin.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="budgets"]{background-image:url('assets/subject-icons/budgets.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="utility-rates"]{background-image:url('assets/subject-icons/utility-rates.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="industrial-investment"]{background-image:url('assets/subject-icons/industrial-investment.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="elections"]{background-image:url('assets/subject-icons/elections.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="surveillance"]{background-image:url('assets/subject-icons/surveillance.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="winter-housing"]{background-image:url('assets/subject-icons/winter-housing.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="wildfire-recovery"]{background-image:url('assets/subject-icons/wildfire-recovery.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="passenger-rail"]{background-image:url('assets/subject-icons/passenger-rail.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="legal-accountability"]{background-image:url('assets/subject-icons/legal-accountability.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="state-federal"]{background-image:url('assets/subject-icons/state-federal.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="community-action"]{background-image:url('assets/subject-icons/community-action.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="agriculture"]{background-image:url('assets/subject-icons/agriculture.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="heritage"]{background-image:url('assets/subject-icons/heritage.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="learning"]{background-image:url('assets/subject-icons/learning.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="research-tools"]{background-image:url('assets/subject-icons/research-tools.webp')}
+.qp-v3 :is(.qp-subject-icon,.qp-entry-art,.qp-report-art)[data-qp-art="healthcare"]{background-image:url('assets/subject-icons/healthcare.webp')}
+.qp-v3 .qp-support-grid .qp-entry-art[data-qp-art],.qp-v3 .qp-task-card .qp-entry-art[data-qp-art]{width:min(100%,8rem);margin:.4rem auto 0;align-self:center}
+.qp-v3 main h1>.qp-subject-icon{width:3rem;height:3rem;vertical-align:middle}
+}

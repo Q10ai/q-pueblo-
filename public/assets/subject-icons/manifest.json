@@ -74,6 +74,163 @@
       "bytes": 27458,
       "width": 256,
       "height": 256
+    },
+    {
+      "id": "budgets",
+      "path": "assets/subject-icons/budgets.webp",
+      "gitBlob": "c6efb5936d2685932c7fe816348646c2580d79cc",
+      "bytes": 15354,
+      "width": 192,
+      "height": 192
+    },
+    {
+      "id": "utility-rates",
+      "path": "assets/subject-icons/utility-rates.webp",
+      "gitBlob": "0c092df77cf986c3fda6c886baf5ab612262a48d",
+      "bytes": 14124,
+      "width": 192,
+      "height": 192
+    },
+    {
+      "id": "industrial-investment",
+      "path": "assets/subject-icons/industrial-investment.webp",
+      "gitBlob": "ccc07d386329523ae08581ab2ee3afebe1785076",
+      "bytes": 14518,
+      "width": 192,
+      "height": 192
+    },
+    {
+      "id": "elections",
+      "path": "assets/subject-icons/elections.webp",
+      "gitBlob": "f78afe071c2cdc983222f2842220ebdbe3d6dec3",
+      "bytes": 13538,
+      "width": 192,
+      "height": 192
+    },
+    {
+      "id": "surveillance",
+      "path": "assets/subject-icons/surveillance.webp",
+      "gitBlob": "c54569cc9f73525d47e0ca1928c06d721310f784",
+      "bytes": 12836,
+      "width": 192,
+      "height": 192
+    },
+    {
+      "id": "winter-housing",
+      "path": "assets/subject-icons/winter-housing.webp",
+      "gitBlob": "4084ccce481a8c47c31d6effcf10fd3271405a71",
+      "bytes": 15874,
+      "width": 192,
+      "height": 192
+    },
+    {
+      "id": "wildfire-recovery",
+      "path": "assets/subject-icons/wildfire-recovery.webp",
+      "gitBlob": "ea9096f5062338f152a910c4452dadd76223e6ea",
+      "bytes": 16788,
+      "width": 192,
+      "height": 192
+    },
+    {
+      "id": "passenger-rail",
+      "path": "assets/subject-icons/passenger-rail.webp",
+      "gitBlob": "a91938f4432b7bd7a050e6f307afe3b06c829fd0",
+      "bytes": 13398,
+      "width": 192,
+      "height": 192
+    },
+    {
+      "id": "legal-accountability",
+      "path": "assets/subject-icons/legal-accountability.webp",
+      "gitBlob": "7bb0961130557f01f92cb993ff9189d146e014fe",
+      "bytes": 14312,
+      "width": 192,
+      "height": 192
+    },
+    {
+      "id": "state-federal",
+      "path": "assets/subject-icons/state-federal.webp",
+      "gitBlob": "782be1bdcaf8c2cb80c25218bf19300d07da92ec",
+      "bytes": 14950,
+      "width": 192,
+      "height": 192
+    },
+    {
+      "id": "community-action",
+      "path": "assets/subject-icons/community-action.webp",
+      "gitBlob": "09714d478264e154dd7b005f39da6932295dd37a",
+      "bytes": 16382,
+      "width": 192,
+      "height": 192
+    },
+    {
+      "id": "agriculture",
+      "path": "assets/subject-icons/agriculture.webp",
+      "gitBlob": "2c3ca76256cebd0c1810fe8387535c7c10741986",
+      "bytes": 17444,
+      "width": 192,
+      "height": 192
+    },
+    {
+      "id": "heritage",
+      "path": "assets/subject-icons/heritage.webp",
+      "gitBlob": "b9c65a1695addc53f6a7f25c529db25c3290ddfc",
+      "bytes": 16712,
+      "width": 192,
+      "height": 192
+    },
+    {
+      "id": "learning",
+      "path": "assets/subject-icons/learning.webp",
+      "gitBlob": "e48741343eca3fddb66f2216d03fb08564df0387",
+      "bytes": 11600,
+      "width": 192,
+      "height": 192
+    },
+    {
+      "id": "research-tools",
+      "path": "assets/subject-icons/research-tools.webp",
+      "gitBlob": "188ef815742a28f47d7e502bdae2065937096ce6",
+      "bytes": 13788,
+      "width": 192,
+      "height": 192
+    },
+    {
+      "id": "healthcare",
+      "path": "assets/subject-icons/healthcare.webp",
+      "gitBlob": "fe50bbad4c0ec75f607856a2c9c92f3b225bf6d7",
+      "bytes": 13388,
+      "width": 192,
+      "height": 192
     }
-  ]
+  ],
+  "majorIssues": [
+    "legal-accountability",
+    "budgets",
+    "utility-rates",
+    "industrial-investment",
+    "surveillance",
+    "winter-housing",
+    "wildfire-recovery",
+    "passenger-rail",
+    "state-federal",
+    "community-action"
+  ],
+  "currentFindings": [
+    "budgets",
+    "utility-rates",
+    "industrial-investment",
+    "elections",
+    "surveillance",
+    "winter-housing",
+    "wildfire-recovery",
+    "passenger-rail"
+  ],
+  "supporting": {
+    "tools": "research-tools",
+    "learning": "learning",
+    "resources": "community-action",
+    "twin": "twin"
+  },
+  "notes": "One distinct image per major issue card and current-priority card; repeat only when the same subject recurs elsewhere. New artwork is a conceptual illustration, not evidence."
 }
