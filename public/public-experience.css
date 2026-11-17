@@ -398,3 +398,54 @@
  .qp-v3 main .qp-report-art.art-report-18:not([data-qp-art]){background-size:684.9315068% 400%;background-position:73.4192037% 100.0000000%}
  .qp-v3 main .qp-report-art.art-report-19:not([data-qp-art]){background-size:684.9315068% 400%;background-position:96.8384075% 100.0000000%}
 }
+
+/* Visual hierarchy contract: primary regional doorways > issue tiles > related navigation.
+   Phone uses two primary columns for legible artwork; desktop retains four. */
+@media screen {
+ .qp-v3{--qp-primary-art-ratio:4/3;--qp-issue-art-ratio:3/2;--qp-secondary-art-ratio:3/2;--qp-tile-radius:12px}
+ .qp-v3 .topic-card{min-width:0}
+ .qp-v3 .qp-topic-tile{display:block;overflow:hidden;min-width:0;border:1px solid #d5a862;border-radius:var(--qp-tile-radius);background:linear-gradient(145deg,#153a54,#091e38);text-decoration:none}
+ .qp-v3 .qp-topic-tile>h2{display:flex;flex-direction:column;align-items:stretch;gap:0;margin:0;font:750 1rem/1.25 system-ui,sans-serif;color:#ffe0a1;text-align:center}
+ .qp-v3 .qp-topic-tile>h2>.qp-subject-icon[data-qp-art]{display:block;width:100%;height:auto;aspect-ratio:var(--qp-secondary-art-ratio);margin:0;border:0;border-bottom:1px solid #d5a862;border-radius:0;background-size:cover;background-position:center;flex:none}
+ .qp-v3 .qp-topic-title{display:block;padding:.55rem .35rem;color:#fff1ca;overflow-wrap:anywhere}
+ .qp-v3 .qp-topic-tile:hover,.qp-v3 .qp-topic-tile:focus-visible{border-color:#fff1c4;box-shadow:0 0 12px #efb66a44}
+}
+@media screen and (max-width:760px){
+ .qp-v3{--qp-heading-art:4.25rem;--qp-tile-gap:.55rem}
+ /* Level 1: the eight primary navigation choices, bigger than every closed issue tile. */
+ .qp-v3-home #entryways .qp-entry-grid,.qp-v3 main .qp-eight-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem;align-items:stretch}
+ .qp-v3-home #entryways .qp-entry-card,.qp-v3 main .qp-eight-grid .qp-exp-card{border-radius:var(--qp-tile-radius);overflow:hidden}
+ .qp-v3-home #entryways .qp-entry-card>.qp-entry-art,.qp-v3 main .qp-eight-grid .qp-exp-card>.qp-entry-art{
+  width:100%;height:auto;aspect-ratio:var(--qp-primary-art-ratio);min-height:0;margin:0;background-size:cover;background-position:center;
+ }
+ .qp-v3-home #entryways .qp-entry-card .qp-art-caption,.qp-v3 main .qp-eight-grid .qp-exp-card>.qp-entry-short{min-height:52px;padding:.45rem .3rem;margin-inline:0;align-items:center;justify-content:center}
+ .qp-v3-home #entryways .qp-art-caption .qp-entry-short,.qp-v3 main .qp-eight-grid .qp-exp-card>.qp-entry-short{font-size:clamp(.92rem,4.2vw,1.04rem);font-weight:800;line-height:1.2;text-align:center}
+ /* Level 2: compact, equal aligned issue tiles. No oversized single issue banners. */
+ .qp-v3 :is(#governance-intelligence,#new-findings)>.qp-gov-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem;align-items:stretch}
+ .qp-v3 :is(#governance-intelligence,#new-findings) .qp-gov-card{padding:.45rem;border-radius:var(--qp-tile-radius);gap:.45rem}
+ .qp-v3 :is(#governance-intelligence,#new-findings) .qp-major-tile>h3{font:750 .94rem/1.24 system-ui,sans-serif;padding-bottom:.45rem}
+ .qp-v3 :is(#governance-intelligence,#new-findings) .qp-major-tile>h3>.qp-subject-icon[data-qp-art]{width:100%;height:auto;aspect-ratio:var(--qp-issue-art-ratio);margin:0 0 .4rem}
+ .qp-v3 :is(#governance-intelligence,#new-findings) .qp-issue-more>summary{min-height:48px;font-size:.83rem;line-height:1.25;padding:.4rem}
+ .qp-v3 :is(#governance-intelligence,#new-findings) .qp-gov-card:has(>.qp-issue-more[open])>.qp-major-tile{max-width:12rem}
+ /* Level 3: related links and research topics, still clearly illustrated. */
+ .qp-v3-home .qp-issue-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem;width:100%;max-width:17rem;margin-inline:auto}
+ .qp-v3-home .qp-issue-link .qp-linked-art{aspect-ratio:var(--qp-secondary-art-ratio)}
+ .qp-v3-home .qp-issue-link .qp-linked-label{font-size:.84rem;padding:.4rem .3rem}
+ .qp-v3.topic-page .topic-page-main{width:calc(100% - 1.25rem);padding:1rem 0;margin-inline:auto}
+ .qp-v3.topic-page .topic-page-main>.qp-container{width:100%}
+ .qp-v3.topic-page .topic-page-main h1{font-size:1.75rem;line-height:1.2}
+ .qp-v3.topic-page .topic-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.55rem;margin:.8rem 0 1.4rem}
+ .qp-v3.topic-page .topic-card{padding:.4rem;gap:.45rem;min-height:0;border-radius:var(--qp-tile-radius)}
+ .qp-v3.topic-page .topic-card p{font-size:.83rem;line-height:1.4;padding-inline:.18rem}
+ .qp-v3.topic-page .topic-count{font-size:.73rem;line-height:1.25;padding-inline:.18rem}
+ .qp-v3.topic-page .qp-topic-tile>h2>.qp-subject-icon[data-qp-art]{width:100%;height:auto;aspect-ratio:var(--qp-secondary-art-ratio);margin:0}
+ .qp-v3.topic-page .qp-topic-title{font-size:.94rem}
+ /* Consistent visible headings; never turn inline art into giant cards or stretch it. */
+ .qp-v3 main :is(h1,h2,h3):not(.qp-major-tile h3,.qp-topic-tile h2)>.qp-subject-icon[data-qp-art]{
+  width:var(--qp-heading-art);height:auto;aspect-ratio:var(--qp-secondary-art-ratio);margin-inline-end:.55rem;vertical-align:middle;background-size:cover;background-position:center;
+ }
+ .qp-v3-home #search-pueblo h2>.qp-subject-icon[data-qp-art]{width:var(--qp-heading-art);height:auto;aspect-ratio:var(--qp-secondary-art-ratio)}
+ .qp-v3 .qp-exp-section[id]>h2>.qp-subject-icon[data-qp-art]{width:var(--qp-heading-art)}
+ .qp-v3 main :is(h4,summary)>.qp-subject-icon[data-qp-art]{width:3rem;aspect-ratio:var(--qp-secondary-art-ratio)}
+ .qp-v3 .qp-exp-links>a{min-height:44px;font-size:.9rem;line-height:1.25}
+}
