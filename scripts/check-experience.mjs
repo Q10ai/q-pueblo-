@@ -1,3 +1,4 @@
+import './check-priority-issues.mjs';
 import './check-learning-library.mjs';
 import './check-guided-tools.mjs';
 import './check-discoveries-tools.mjs';
