@@ -1,13 +1,5 @@
 name: Q Pueblo GitHub Pages Public-Beta Release (optional mirror)
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'public/**'
-      - 'scripts/check-public-catalog.mjs'
-      - 'scripts/check-workbench.mjs'
-      - 'scripts/check-public-release.mjs'
-      - '.github/workflows/publish-pages.yml'
   workflow_dispatch:
 permissions:
   contents: read

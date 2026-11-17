@@ -1,0 +1,33 @@
+name: Public browser and accessibility audit
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'public/**'
+      - 'scripts/browser-audit.mjs'
+      - '.github/workflows/browser-audit.yml'
+permissions:
+  contents: read
+jobs:
+  browser-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned audit tools (no production credentials)
+        run: |
+          npm install --prefix "$RUNNER_TEMP/qp-audit" --no-audit --no-fund --ignore-scripts --save-exact playwright@1.56.1 axe-core@4.10.3
+          "$RUNNER_TEMP/qp-audit/node_modules/.bin/playwright" install chromium
+      - name: Test public static files on a local browser
+        env:
+          AUDIT_TOOLS: ${{ runner.temp }}/qp-audit
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 --directory public > "$RUNNER_TEMP/qp-server.log" 2>&1 &
+          for n in 1 2 3 4 5; do curl -fsS http://127.0.0.1:8765/ -o /dev/null && break || sleep 1; done
+          node scripts/browser-audit.mjs
