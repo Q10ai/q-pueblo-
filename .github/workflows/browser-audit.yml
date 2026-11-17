@@ -1,6 +1,11 @@
 name: Public browser and accessibility audit
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+      - 'public/**'
+      - 'scripts/browser-audit.mjs'
+      - '.github/workflows/browser-audit.yml'
   push:
     branches: [main]
     paths:
@@ -11,7 +16,7 @@ permissions:
   contents: read
 jobs:
   browser-audit:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
