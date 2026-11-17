@@ -32,11 +32,10 @@
  const caseOpen=()=>{if(!location.pathname.endsWith('packets.html'))return;try{let target=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(target?.classList.contains('qp-case-detail')){let d=target.querySelector('details');if(d)d.open=true}}catch{}};caseOpen();window.addEventListener('hashchange',caseOpen);
  const menu=document.getElementById('qp-menu-toggle'),nav=document.getElementById('qp-global-nav');
  if(menu&&nav){if(document.documentElement.lang==='en'&&!nav.querySelector('a[href="es.html"], a[href="/es"]')){const a=document.createElement('a');a.href='es.html';a.lang='es';a.textContent='Español';nav.append(a);}nav.classList.add('qp-js-nav');menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('is-open',open)});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menu.getAttribute('aria-expanded')==='true'){menu.setAttribute('aria-expanded','false');nav.classList.remove('is-open');menu.focus();}});nav.addEventListener('click',e=>{if(e.target.closest('a')){menu.setAttribute('aria-expanded','false');nav.classList.remove('is-open')}})}
-}
   // Decorative subject thumbnails: existing artwork only; never change findings or evidence status.
   if(document.body.classList.contains('qp-v3')&&document.querySelector('link[href="public-experience.css"]')){
     const areas={authority:1,money:2,water:5,infrastructure:3,homes:6,people:10,safety:9,future:11};
-    const categories={'public money':2,'health & safety':9,'roads & transport':3,'water & energy':5,'government & law':1,'housing & land':6,'culture & history':0,'economy & jobs':2,'education & children':10,'technology & information':11};
+    const categories={'public money':2,'health & safety':9,'roads & transport':3,'water & energy':5,'government & law':1,'housing & land':6,'culture & history':0,'economy & jobs':2,'education & children':10,'technology & information':11,'environment & place':5};
     const rules=[
       [9,/\b(surveillance|flock|crime|police|fire|disaster|emergency|safety|hazards?|resilience|detention|aspen acres)\b/i],
       [5,/\b(water|wastewater|sewage|energy|electric|watershed|environment|conduit|utilities)\b/i],
