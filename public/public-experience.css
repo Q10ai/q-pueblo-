@@ -97,3 +97,16 @@
 .qp-v3-home .qp-home-intro{padding-top:1rem;padding-bottom:0}
 .qp-v3-home .qp-home-intro h1{margin:0 0 .5rem;font-size:clamp(1.7rem,3vw,2.65rem);line-height:1.15;color:#eef5fc}
 .qp-v3-home .qp-home-intro p+p{margin-top:.45rem}
+
+/* Mobile-first landing: no full-screen introduction or pre-search CTA stack. */
+.qp-v3-home .qp-v3-hero{margin:.5rem auto 0}
+.qp-v3-home .qp-home-intro{padding:.55rem .8rem;margin:.65rem 0 .75rem}
+.qp-v3-home .qp-home-intro h1{font-size:clamp(1.35rem,2vw,2rem);margin:0 0 .2rem;line-height:1.18}
+.qp-v3-home .qp-home-intro p{font-size:1rem;line-height:1.4;margin:0}
+.qp-v3-home .qp-home-intro small{display:block;font-size:.8rem;line-height:1.35;color:#d0ddee;margin-top:.2rem}
+.qp-v3-home .qp-v3-search{margin:0 0 1rem;padding:.8rem 1rem}
+.qp-v3-home .qp-v3-search h2{font-size:clamp(1.35rem,2vw,1.8rem);margin:0 0 .3rem;line-height:1.2}
+.qp-v3-home .qp-search-description{font-size:.9rem;line-height:1.4;margin:.2rem 0 .65rem}
+.qp-v3-home .qp-v3-search-hint{font-size:.84rem;line-height:1.45;margin:.5rem 0 0}
+.qp-v3-home .qp-entry-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+@media(max-width:760px){.qp-v3-home .qp-v3-hero,.qp-v3-home .qp-v3-main{width:calc(100% - 1.45rem)}.qp-v3-home .qp-v3-hero img{width:100%;height:auto;object-fit:contain;aspect-ratio:auto}.qp-v3-home .qp-v3-main{padding-top:0}.qp-v3-home .qp-home-intro{margin:.55rem 0;padding:.5rem .65rem}.qp-v3-home .qp-v3-search{padding:.65rem .7rem}.qp-v3-home .qp-entry-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.qp-v3-home .qp-searchline{display:flex;flex-wrap:nowrap}.qp-v3-home .qp-searchline input{min-width:0;flex:1}.qp-v3-home .qp-searchline button{flex:none}.qp-v3-home .qp-v3-search select{margin-top:.35rem}}
