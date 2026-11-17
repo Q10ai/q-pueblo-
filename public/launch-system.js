@@ -1,8 +1,9 @@
 'use strict';
 (() => {
  // Original raster remains a fallback; normal navigation uses the isolated emblem.
- for(const logo of document.querySelectorAll('.qp-v3-wordmark img'))logo.src='assets/pueblo-emblem.svg';
- for(const favicon of document.querySelectorAll('link[rel="icon"]')){favicon.href='assets/pueblo-emblem.svg';favicon.type='image/svg+xml';}
+ // Keep the lightweight raster logo on initial load; do not replace it with a larger SVG.
+ // The existing vector emblem remains available as a public artwork asset: assets/pueblo-emblem.svg.
+ for(const link of document.querySelectorAll('.qp-v3-wordmark[href="index.html"], #qp-global-nav a[href="index.html"]'))link.setAttribute('href','/');
 
  const header=document.querySelector('.qp-v3-header');if(header&&!document.querySelector('.qp-op-notice')&&!document.querySelector('.qp-welcome-note')){const p=document.createElement('div');p.className='qp-op-notice';p.textContent='Independent research beta · Not a government service · ';const a=document.createElement('a');a.href='about.html';a.textContent='About and corrections';p.append(a);header.after(p);}
 
