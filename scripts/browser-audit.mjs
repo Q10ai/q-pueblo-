@@ -24,6 +24,22 @@ try{
     const issues=a.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.length}));
     const row={route,width,layout,errors,issues};rows.push(row);console.log(JSON.stringify(row));
     if(layout.scrollWidth>layout.width+2||!layout.h1||errors.length||issues.some(v=>['critical','serious'].includes(v.impact)))failures.push(route+' @'+width);
+    if(route==='/'){
+     const art=await page.evaluate(async()=>{
+      const grid=document.querySelector('#entryways .qp-entry-grid');
+      const cards=[...grid.querySelectorAll('.qp-entry-card')];
+      const entries=[...grid.querySelectorAll('.qp-entry-art')];
+      const major=[...document.querySelectorAll('#governance-intelligence h3 > .qp-subject-icon[data-qp-art]')];
+      const checkImage=async(e)=>{const c=getComputedStyle(e),b=e.getBoundingClientRect(),u=c.backgroundImage.match(/url\(["']?(.*?)["']?\)/)?.[1];if(!u)return false;try{const im=new Image();im.src=u;await im.decode();return Math.abs(b.width-b.height)<=2&&im.naturalWidth===im.naturalHeight&&im.naturalWidth>=192;}catch{return false;}};
+      return {columns:getComputedStyle(grid).gridTemplateColumns.split(' ').length,cards:cards.length,entryDistinct:new Set(entries.map(e=>getComputedStyle(e).backgroundImage)).size,major:major.length,majorDistinct:new Set(major.map(e=>e.dataset.qpArt)).size,images:(await Promise.all([...entries,...major].map(checkImage))).every(Boolean)};
+     });
+     console.log('HOME_ART',width,JSON.stringify(art));
+     assert.equal(art.columns,4);assert.equal(art.cards,8);assert.equal(art.entryDistinct,8);assert.equal(art.major,10);assert.equal(art.majorDistinct,10);assert(art.images,'Square images load from local assets');
+    }
+    if(route==='/now.html'){
+     const ids=await page.locator('#new-findings article[id^="novdec-priority-"] h3 > [data-qp-art]').evaluateAll(es=>es.map(e=>e.dataset.qpArt));
+     assert.equal(ids.length,8);assert.equal(new Set(ids).size,8);
+    }
     if(route==='/'&&width===360){const positions=await page.evaluate(()=>{const rect=s=>document.querySelector(s).getBoundingClientRect();return {heroTop:rect('.qp-v3-hero').top,heroBottom:rect('.qp-v3-hero').bottom,introTop:rect('.qp-home-intro').top,introHeight:rect('.qp-home-intro').height,entryTop:rect('#entryways').top,entryBottom:rect('#entryways').bottom,searchTop:rect('#home-q').top,searchBottom:rect('#home-q').bottom}});console.log('HOME_LAYOUT',JSON.stringify(positions));assert(positions.heroTop<positions.introTop&&positions.heroBottom<=positions.introTop,'Banner first');assert(positions.introHeight<=180,'Compact intro');assert(positions.introTop<positions.entryTop&&positions.entryBottom<positions.searchTop,'Eight entryways before search');const menu=page.locator('#qp-menu-toggle');if(await menu.isVisible()){await menu.focus();await page.keyboard.press('Enter');assert.equal(await menu.getAttribute('aria-expanded'),'true');await page.keyboard.press('Escape');assert.equal(await menu.getAttribute('aria-expanded'),'false');}}
    }catch(e){failures.push(route+' @'+width);console.error('BROWSER CHECK',route,width,e.message);}finally{await page.close();}
   }
