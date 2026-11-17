@@ -30,11 +30,11 @@ try{
       const cards=[...grid.querySelectorAll('.qp-entry-card')];
       const entries=[...grid.querySelectorAll('.qp-entry-art')];
       const major=[...document.querySelectorAll('#governance-intelligence h3 > .qp-subject-icon[data-qp-art]')];
-      const checkImage=async(e)=>{const c=getComputedStyle(e),b=e.getBoundingClientRect(),u=c.backgroundImage.match(/url\(["']?(.*?)["']?\)/)?.[1];if(!u)return false;try{const im=new Image();im.src=u;await im.decode();return Math.abs(b.width-b.height)<=2&&im.naturalWidth===im.naturalHeight&&im.naturalWidth>=192;}catch{return false;}};
-      return {columns:getComputedStyle(grid).gridTemplateColumns.split(' ').length,cards:cards.length,entryDistinct:new Set(entries.map(e=>getComputedStyle(e).backgroundImage)).size,major:major.length,majorDistinct:new Set(major.map(e=>e.dataset.qpArt)).size,images:(await Promise.all([...entries,...major].map(checkImage))).every(Boolean)};
+      const checkImage=async(e)=>{const c=getComputedStyle(e),b=e.getBoundingClientRect(),u=c.backgroundImage.match(/url\(["']?(.*?)["']?\)/)?.[1];if(!u)return false;try{const im=new Image();im.src=u;await im.decode();return b.width>0&&b.height>0&&Math.abs(b.height-b.width*124/300)<=2&&im.naturalWidth>=192&&im.naturalHeight>=192;}catch{return false;}};
+      return {columns:getComputedStyle(grid).gridTemplateColumns.split(' ').length,cards:cards.length,entryDistinct:new Set(entries.map(e=>getComputedStyle(e).backgroundImage)).size,fullWidth:entries.every(e=>Math.abs(e.getBoundingClientRect().width-e.parentElement.clientWidth)<=2),major:major.length,majorDistinct:new Set(major.map(e=>e.dataset.qpArt)).size,images:(await Promise.all([...entries,...major].map(checkImage))).every(Boolean)};
      });
      console.log('HOME_ART',width,JSON.stringify(art));
-     assert.equal(art.columns,4);assert.equal(art.cards,8);assert.equal(art.entryDistinct,8);assert.equal(art.major,10);assert.equal(art.majorDistinct,10);assert(art.images,'Square images load from local assets');
+     assert.equal(art.columns,4);assert.equal(art.cards,8);assert.equal(art.entryDistinct,8);assert(art.fullWidth,'Artwork spans full card width');assert.equal(art.major,10);assert.equal(art.majorDistinct,10);assert(art.images,'Original wide artwork geometry and local image loading');
     }
     if(route==='/now.html'){
      const ids=await page.locator('#new-findings article[id^="novdec-priority-"] h3 > [data-qp-art]').evaluateAll(es=>es.map(e=>e.dataset.qpArt));
