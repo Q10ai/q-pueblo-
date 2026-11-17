@@ -18,16 +18,16 @@
   "presentation": {
     "edition": "illustrated-public-first-v3",
     "entryways": 5,
-    "featuredPublicReads": 4,
+    "featuredPublicReads": 20,
     "analyses": 18,
-    "caseSummariesFeatured": 0,
+    "caseSummariesFeatured": 6,
     "historicalDraftLocatorsPublished": false,
     "publicSearch": "local data only",
     "artwork": "owner-provided illustrative reference, cropped and recomposed",
     "humanDecisionAuthority": true,
-    "featuredAnalyses": 4,
+    "featuredAnalyses": 14,
     "additionalAnalyses": 4,
-    "countBoundary": "Homepage features four dated findings; the existing 18 dated reports and separate case summaries remain in the research library. Historical issue and graph identities may overlap.",
+    "countBoundary": "Homepage highlights four dated analyses. The research archive retains 20 featured cards (14 analyses and six case summaries); the canonical report inventory contains 18 analyses. These groups overlap.",
     "integratedReviewCandidate": {
       "storyFirstReportCount": 18,
       "additionalStoryEditions": 9,
@@ -64,7 +64,8 @@
     "publicSourceFindings": 7,
     "livingResearchCollections": 18,
     "newFindingsBoundary": "Seven dated public-source summaries, separate from the existing 18 analyses; no new full 40-section completion claim. 18 collections group existing research, not additional canonical issue identities.",
-    "homeAudit": "Five primary entryways; dated findings; static report links; existing deeper resources remain accessible."
+    "homeAudit": "Five primary entryways; dated findings; static report links; existing deeper resources remain accessible.",
+    "homeHighlights": 4
   },
   "presentationUpdated": "2026-11-16"
 }

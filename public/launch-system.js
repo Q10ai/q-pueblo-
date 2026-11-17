@@ -5,7 +5,7 @@
  // The existing vector emblem remains available as a public artwork asset: assets/pueblo-emblem.svg.
  for(const link of document.querySelectorAll('.qp-v3-wordmark[href="index.html"], #qp-global-nav a[href="index.html"]'))link.setAttribute('href','/');
 
- const header=document.querySelector('.qp-v3-header');if(header&&!document.querySelector('.qp-op-notice')&&!document.querySelector('.qp-welcome-note')){const p=document.createElement('div');p.className='qp-op-notice';p.textContent='Independent research beta · Not a government service · ';const a=document.createElement('a');a.href='about.html';a.textContent='About and corrections';p.append(a);header.after(p);}
+ const header=document.querySelector('.qp-v3-header');if(header&&!document.querySelector('.qp-op-notice')&&!document.querySelector('.qp-welcome-note')){const p=document.createElement('div');p.className='qp-op-notice';p.textContent=document.documentElement.lang==='es'?'Investigación independiente · No es un servicio gubernamental · ':'Independent research · Not a government service · ';const a=document.createElement('a');a.href='about.html';a.textContent=document.documentElement.lang==='es'?'Información y correcciones (inglés)':'About and corrections';p.append(a);header.after(p);}
 
  // Inventory numbers are derived from the current public records; review expiry never deletes history.
  const countNodes=[...document.querySelectorAll('[data-qp-count]')];
