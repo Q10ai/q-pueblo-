@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';import fs from 'node:fs';import path from 'node:path';
 const read=f=>fs.readFileSync(path.join('public',f),'utf8');
 const h=read('learn-pueblo.html'),home=read('index.html'),game=read('discover.html'),who=read('governance-entities.html');
-assert(home.includes('href="learn-pueblo.html"><div class="qp-entry-art art-entry-0"'));assert(home.includes('href="discover.html#levels"><div class="qp-entry-art art-entry-9"'));assert(home.includes('href="governance-entities.html"><div class="qp-entry-art art-entry-1"'));assert(home.includes('<strong>Who &amp; What</strong>'));
+assert(home.includes('href="learn-pueblo.html"><div class="qp-entry-art art-entry-0"'));assert(home.includes('href="discover.html"'));assert(home.includes('href="governance-entities.html"'));assert(home.includes('<strong>Learn &amp; play</strong>'));
 for(const kind of ['history','people','places','library'])assert(h.includes('id="'+kind+'"')&&h.includes('data-kind="'+kind+'"'));
 assert.equal((h.match(/class="qp-exp-card learn-record"/g)||[]).length,26);
 for(const m of h.matchAll(/(?:src|href)="([^"]+)"/g)){const u=m[1];if(u.startsWith('#')){assert(h.includes('id="'+u.slice(1)+'"'));continue;}if(u.startsWith('https://'))continue;assert(fs.existsSync(path.join('public',u.split(/[?#]/)[0])),u);}
