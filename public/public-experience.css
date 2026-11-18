@@ -509,3 +509,17 @@
  .qp-v3-home .qp-bottom-library[open]>.qp-bottom-tile{max-width:8.2rem}
  .qp-v3-home .qp-bottom-detail{font-size:.96rem;line-height:1.55}
 }
+
+/* Desktop only: the previous panoramic bitmap has a permanently clipped Q.
+   Reuse complete approved logo at its natural 4:3 aspect, with scenic wings.
+   The mobile masthead and its breakpoints remain unchanged. */
+@media screen and (min-width:761px){
+ .qp-v3-home .qp-v3-hero{width:min(1320px,calc(100% - 2.8rem));max-width:100%;margin:.65rem auto 0;border:1px solid #d5a862;border-radius:12px;background:#101b37;box-sizing:border-box;overflow:hidden}
+ .qp-v3-home .qp-v3-hero picture{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);align-items:stretch;width:100%;height:auto}
+ .qp-v3-home .qp-v3-hero picture::before,.qp-v3-home .qp-v3-hero picture::after{content:"";display:block;grid-row:1;min-width:0;background-repeat:no-repeat;background-size:100% 100%,auto 140%}
+ .qp-v3-home .qp-v3-hero picture::before{grid-column:1;background-image:linear-gradient(90deg,transparent 72%,#101b37 100%),url("assets/pueblo-riverwalk-hero.webp");background-position:center,left bottom}
+ .qp-v3-home .qp-v3-hero picture::after{grid-column:3;background-image:linear-gradient(270deg,transparent 72%,#101b37 100%),url("assets/pueblo-riverwalk-hero.webp");background-position:center,right bottom}
+ .qp-v3-home .qp-v3-hero picture>img{grid-column:2;grid-row:1;display:block;width:100%;height:auto;max-width:100%;max-height:none;aspect-ratio:4/3;object-fit:contain;object-position:center;align-self:center}
+ .qp-v3-home .qp-mobile-hero-caption{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:.3rem 1rem;margin:0;padding:.4rem .75rem .5rem;color:#ffe0a1;font:750 .95rem/1.4 system-ui,sans-serif;text-align:center}
+ .qp-v3-home .qp-mobile-hero-caption span{font-size:.86rem;font-weight:650;color:#e7eef8;overflow-wrap:anywhere}
+}
