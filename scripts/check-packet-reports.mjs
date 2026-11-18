@@ -48,22 +48,22 @@ assert(road.unknowns.some(x=>x.includes('executed contract')));
 assert(read('entities.html').includes('An asset or address is not automatically'));
 assert(read('entities.html').includes('TBTD Pueblo, LLC'));
 
-for(const r of doc.reports){const items=core.coverage40(r);assert.equal(items.length,40,r.slug);assert.equal(new Set(items.map(x=>x.n)).size,40);assert(items.every(x=>typeof x.answer==='string'&&x.answer.trim().length>5&&x.classification));assert.equal((core.render(r).match(/data-coverage="/g)||[]).length,40);assert(core.render(r).indexOf('class="qp40-summary"')<core.render(r).indexOf('id="original-sources"'));assert(core.markdown(r).includes('40-point findings'))}
+for(const r of doc.reports){const items=core.coverage40(r);assert.equal(items.length,40,r.slug);assert.equal(new Set(items.map(x=>x.n)).size,40);assert(items.every(x=>typeof x.answer==='string'&&x.answer.trim().length>5&&x.classification));assert.equal((core.render(r).match(/data-coverage="/g)||[]).length,40);assert(core.render(r).indexOf('class="qp40-summary"')<core.render(r).indexOf('id="original-sources"'));assert(core.markdown(r).includes('Technical appendix — 40 research perspectives'))}
 assert(core.coverage40(doc.reports.find(r=>r.slug==='budget-2026'))[16].answer.includes('57.4%'));
 assert(core.coverage40(doc.reports.find(r=>r.slug==='budget-2026'))[18].answer.includes('not been reconciled'));
-assert(core.researchPrompt('Pueblo water bills','resident','full report').includes('40 sections'));
+{const prompt=core.researchPrompt('Pueblo water bills','resident','full report');assert(prompt.includes('40 dimensions as internal coverage'));assert.equal(prompt.split('\n').filter(x=>/^\d+\. /.test(x)).length,40);}
 console.log('PASS: 14 dated analyses mapped to 40 reader-facing fields, missing evidence explicit, optional research prompt.');
 
 const current=JSON.parse(read('data/qp-current-reports.json'));
 assert.equal(current.reports.length,18);
 assert.deepEqual(current.reports.slice(0,14),doc.reports,'Earlier evidence edition must remain unchanged');
 assert.equal(new Set(current.reports.map(r=>r.slug)).size,18);
-for(const r of current.reports.slice(14)){assert.equal(core.coverage40(r).length,40);assert.equal((core.render(r).match(/data-coverage="/g)||[]).length,40);assert(r.sources.every(s=>s.url.startsWith('https://')));assert(r.claims.every(c=>c.sourceIds.every(id=>r.sources.some(s=>s.id===id))));assert(r.questions.every(q=>core.matchReports(q,current.reports).some(x=>x.exact&&x.report.id===r.id)));assert(core.markdown(r).includes('40-point findings'));}
+for(const r of current.reports.slice(14)){assert.equal(core.coverage40(r).length,40);assert.equal((core.render(r).match(/data-coverage="/g)||[]).length,40);assert(r.sources.every(s=>s.url.startsWith('https://')));assert(r.claims.every(c=>c.sourceIds.every(id=>r.sources.some(s=>s.id===id))));assert(r.questions.every(q=>core.matchReports(q,current.reports).some(x=>x.exact&&x.report.id===r.id)));assert(core.markdown(r).includes('Technical appendix — 40 research perspectives'));}
 assert(core.coverage40(current.reports.find(r=>r.slug==='food-assistance'))[34].answer.includes('1-877-644-3663'));
 for(const name of ['qify.js','reports.js','workbench.js','evidence-desk.js','home-search.js','governance-index.js'])assert(read(name).includes('data/qp-current-reports.json'),name+' current edition missing');
 console.log('PASS current 18-report edition, 14 originals unchanged, four public-source additions and shared reader routes');
 
-for(const r of current.reports){const out=core.render(r);assert(core.story(r).length>=3,r.slug+' missing authored story');assert(out.includes('class="qp-story"'));assert(out.indexOf('class="qp-story"')<out.indexOf('id="coverage-40"'));assert(out.includes('<details open class="qp40 qp-report-popout" id="coverage-40">'));assert(!out.includes('LOW SPECIFICITY GROUP/HUB'));assert(core.markdown(r).includes(core.story(r)[0][1]));}
+for(const r of current.reports){const out=core.render(r);assert(core.story(r).length>=3,r.slug+' missing authored story');assert(out.includes('class="qp-story"'));assert(out.indexOf('class="qp-story"')<out.indexOf('id="coverage-40"'));assert(out.includes('<details class="qp40 qp-report-popout" id="coverage-40">'));assert(out.indexOf('aria-label="The story"')<out.indexOf('id="coverage-40"'));assert(!out.includes('LOW SPECIFICITY GROUP/HUB'));assert(core.markdown(r).includes(core.story(r)[0][1]));}
 assert(read('public-experience.css').includes('.qp-v3 .qp-report-detail .qp-report-popout{background:#edf3f3;color:#142b3d'));
 assert(!read('connections.js').includes('Next: obtain actual governing instrument'));
 assert(!read('connections.js').includes('https://q10asi.com/projects/q-pueblo/issues/'));

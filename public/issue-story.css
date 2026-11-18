@@ -14,3 +14,6 @@
 @media(max-width:360px){.qp-data-row{grid-template-columns:1fr}.qp-data-row strong{text-align:left}}
 @media(prefers-reduced-motion:reduce){.qp-data-visual,.qp-data-visual *{animation:none!important;transition:none!important}}
 @media print{.qp-data-visual{background:white;color:black;border:1px solid black}.qp-data-visual figcaption,.qp-data-visual p,.qp-data-visual a,.qp-data-row,.qp-data-row strong{color:black}}
+
+/* Story-first evidence limits: visible, readable, and not an internal checklist. */
+.qp-material-limits{margin:1rem 0;padding:.85rem 1rem;border-inline-start:4px solid #b88743;overflow-wrap:anywhere}.qp-material-limits ul{padding-inline-start:1.25rem}.qp-material-limits li+li{margin-top:.4rem}.qp-story[aria-label="The story"]{line-height:1.65}.qp-story[aria-label="The story"] section{margin-block:1rem}.qp40>summary{min-height:44px;align-content:center}
