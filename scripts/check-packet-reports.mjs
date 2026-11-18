@@ -51,7 +51,7 @@ assert(read('entities.html').includes('TBTD Pueblo, LLC'));
 for(const r of doc.reports){const items=core.coverage40(r);assert.equal(items.length,40,r.slug);assert.equal(new Set(items.map(x=>x.n)).size,40);assert(items.every(x=>typeof x.answer==='string'&&x.answer.trim().length>5&&x.classification));assert.equal((core.render(r).match(/data-coverage="/g)||[]).length,40);assert(core.render(r).indexOf('class="qp40-summary"')<core.render(r).indexOf('id="original-sources"'));assert(core.markdown(r).includes('Technical appendix — 40 research perspectives'))}
 assert(core.coverage40(doc.reports.find(r=>r.slug==='budget-2026'))[16].answer.includes('57.4%'));
 assert(core.coverage40(doc.reports.find(r=>r.slug==='budget-2026'))[18].answer.includes('not been reconciled'));
-assert(core.researchPrompt('Pueblo water bills','resident','full report').includes('40 sections'));
+{const prompt=core.researchPrompt('Pueblo water bills','resident','full report');assert(prompt.includes('40 dimensions as internal coverage'));assert.equal(prompt.split('\n').filter(x=>/^\d+\. /.test(x)).length,40);}
 console.log('PASS: 14 dated analyses mapped to 40 reader-facing fields, missing evidence explicit, optional research prompt.');
 
 const current=JSON.parse(read('data/qp-current-reports.json'));
