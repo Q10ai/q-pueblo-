@@ -1,7 +1,7 @@
 'use strict';
 (() => {
   // Static route checks. No input, credentials, storage, analytics, publication, or external requests.
-  const releaseId = 'QP-PUBLIC-2026-11-16-CONSOLIDATED-RC1';
+  const releaseId = 'QP-PUBLIC-2026-11-18-AI-EDUCATION-RC1';
   const assets = [
     ['release-manifest.json', releaseId, 'json'],
     ['index.html', 'Get to Know Pueblo', 'text'],
@@ -55,13 +55,20 @@
     ['tool-visuals.js', 'QPToolVisual', 'text'],
     ['assets/pueblo-mark.webp', null, 'image'],
     ['ai-learn.html', 'AI, QIFY', 'text'],
+    ['ai-world.html', 'AI &amp; Our World', 'text'],
+    ['ai-citizen-learning.html', 'AI Education for Everyone', 'text'],
+    ['ai-education.html', 'AI in Education', 'text'],
+    ['digital-twins.html', 'Digital Twins', 'text'],
+    ['ai-readiness.html', 'Is Pueblo ready for the AI era?', 'text'],
+    ['edu-review.html', 'Practice an AI education review', 'text'],
+    ['ai-readiness-worksheet.txt', 'AI ERA PREPAREDNESS', 'text'],
     ['rx.html', 'Q-RX', 'text'],
     ['twin.html', 'Twin Pueblo', 'text'],
     ['exit.html', 'Your Work', 'text'],
     ['experience.css', 'qp-exp-card', 'text'],
     ['data/qp-three-hop-2026-11-13.json', '211', 'json'],
     ['data/qp-now-2026-11-13.json', '2026-11-13', 'json'],
-    ['release-check.js', 'QP-PUBLIC-2026-11-16-CONSOLIDATED-RC1', 'text']
+    ['release-check.js', 'QP-PUBLIC-2026-11-18-AI-EDUCATION-RC1', 'text']
   ];
   const $=id=>document.getElementById(id);
   const btn=$('run-check'),status=$('release-status'),list=$('release-results');

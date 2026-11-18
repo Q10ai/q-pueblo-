@@ -1,6 +1,6 @@
 {
   "schema": "qp-public-release-manifest-v1",
-  "releaseId": "QP-PUBLIC-2026-11-16-CONSOLIDATED-RC1",
+  "releaseId": "QP-PUBLIC-2026-11-18-AI-EDUCATION-RC1",
   "sourceDate": "2026-11-13",
   "classification": "PUBLIC_SOURCE_LINKED_RESEARCH",
   "publicationAuthority": "human_required",
@@ -14,7 +14,7 @@
     "realTimeMeetingIngestion": false,
     "officialCivicDigitalTwin": false
   },
-  "previousReleaseId": "QP-PUBLIC-2026-11-14-ILLUSTRATED-R2",
+  "previousReleaseId": "QP-PUBLIC-2026-11-16-CONSOLIDATED-RC1",
   "presentation": {
     "edition": "illustrated-public-first-v3",
     "entryways": 8,
@@ -65,7 +65,14 @@
     "livingResearchCollections": 18,
     "newFindingsBoundary": "Seven dated public-source summaries, separate from the existing 18 analyses; no new full 40-section completion claim. 18 collections group existing research, not additional canonical issue identities.",
     "homeAudit": "Eight regional system entryways above search; major issues before tools, learning and resources.",
-    "homeHighlights": 6
+    "homeHighlights": 6,
+    "aiEducationExtension": {
+      "hub": "ai-world.html",
+      "entries": 16,
+      "newPages": 6,
+      "readyForDeployment": false,
+      "boundary": "Source-linked static education and practice; no private drafts or new runtime AI capabilities; full review and live host confirmation pending"
+    }
   },
-  "presentationUpdated": "2026-11-16"
+  "presentationUpdated": "2026-11-18"
 }
