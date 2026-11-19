@@ -1,0 +1,537 @@
+{
+  "schema": "qp-regional-transition-calendar-v1",
+  "edition": "2026-11-18",
+  "horizon": "2027-01-15",
+  "lifecycle": "living",
+  "canonicalCountDelta": 0,
+  "monitoring": false,
+  "route": "pueblo-2027-transition.html",
+  "chapters": [
+    {
+      "number": 1,
+      "heading": "The transition at a glance",
+      "text": "Separate confirmed changes, unofficial election results, proposed decisions and Q review milestones. The next 58 days (Nov 18 to Jan 15) bring budget and leadership transitions alongside household enrollment deadlines. No future outcomes are claimed."
+    },
+    {
+      "number": 2,
+      "heading": "Scope and geography",
+      "text": "City of Pueblo, Pueblo County, Pueblo West and other county communities, school and special districts, and state/federal changes affecting residents. Regional connections do not combine legal authority or funds."
+    },
+    {
+      "number": 3,
+      "heading": "County government now",
+      "text": "The county directory lists commissioners Miles Lucero, Paula McPheeters and Zach Swearingen, Sheriff David Lucero, assessor Frank Beltran, coroner Gregory Grahek, clerk Candace Rivera, treasurer Kimberly Archuletta, surveyor Randy Reeves and DA Kala Beauvais. Directory is a dated observation. [O]"
+    },
+    {
+      "number": 4,
+      "heading": "Sheriff succession",
+      "text": "Nov 13 unofficial results show Allen Medina 33,474; Leroy Mora 33,129. Margin 345; no certified result retrieved. Current sheriff remains in office until lawful succession. [E,P]"
+    },
+    {
+      "number": 5,
+      "heading": "Commissioner succession",
+      "text": "District 3 unofficial: Angela Giron 34,326; Zach Swearingen 33,412. Margin 914. Do not change the verified officeholder record until certified result and commencement. [E,P]"
+    },
+    {
+      "number": 6,
+      "heading": "Assessor and coroner",
+      "text": "Tammi Pando leads assessor 34,238 to 33,384; Zolanye McCulley-Bachicha leads coroner 36,523 to 31,312, in the Nov 13 county report. These are unofficial. [P]"
+    },
+    {
+      "number": 7,
+      "heading": "Continuing county offices",
+      "text": "Candace Rivera and Kim Archuletta lead clerk and treasurer; Randy Reeves is the sole listed surveyor candidate in the Nov 13 report. Confirm certification before recording new terms. [P,O]"
+    },
+    {
+      "number": 8,
+      "heading": "State legislators",
+      "text": "Secondary race calls list Aaron Gutierrez (SD3), Tisha Mauro (HD46), Ty Winter (HD47), Matt Alexander (HD60), Matthew Martinez (HD62). Districtwide outcomes, not just county subtotals, govern representation. Certification pending verification. [N,E]"
+    },
+    {
+      "number": 9,
+      "heading": "State executive and federal",
+      "text": "Secondary results identify Phil Weiser for governor, Amanda Gonzalez for secretary of state, Jeff Bridges for treasurer, Jena Griswold for attorney general, John Hickenlooper for US Senate and Jeff Hurd for US House CD3. Verify certified statewide or district results and address-specific representation. [N]"
+    },
+    {
+      "number": 10,
+      "heading": "Terms and session",
+      "text": "The 76th General Assembly convenes Jan 11; §1-1-201 generally sets county/state term commencement for the second Tuesday in January (Jan 12), subject to exceptions. Federal congressional terms begin Jan 3 under the Twentieth Amendment. [L,T]"
+    },
+    {
+      "number": 11,
+      "heading": "City 2027 budget",
+      "text": "November 14 secondary comparison reports proposed General Fund spending about $125m, projected ending balance $2.2m, zero pay raise and frozen positions. Pending final vote, not audited actuals. [B,C]"
+    },
+    {
+      "number": 12,
+      "heading": "County 2027 budget",
+      "text": "Published proposal and dashboard: $9.81m proposed reductions, 15% eligible General Fund personnel base rather than every entire department. Assess unrestricted cash independently. [D,F,B]"
+    },
+    {
+      "number": 13,
+      "heading": "Audit and disclosures",
+      "text": "County dashboard reports corrective accounting work; final audit and payroll liquidity require original records. Preserve separate disclosure, compensation and audit investigations. [F]"
+    },
+    {
+      "number": 14,
+      "heading": "Council attorney funding",
+      "text": "Professional services appropriation is not spendable cash. Obtain a purpose-level amendment/commitment reconciliation before relying on independent counsel funding. See dedicated article. [C]"
+    },
+    {
+      "number": 15,
+      "heading": "Sheriff labor and staffing",
+      "text": "No verified final layoff count. Obtain executed collective agreement, funded/filled positions and safe service floors; compare net savings after backfill, overtime and separation."
+    },
+    {
+      "number": 16,
+      "heading": "Jail and municipal policy",
+      "text": "November 23 detention vote is reported in the earlier investigation. Require final ordinance, signed city/county agreement, safely staffed capacity, actual incremental costs and applicable sentencing limits before implementation. [G,D]"
+    },
+    {
+      "number": 17,
+      "heading": "Schools and child safety",
+      "text": "Preserve separate District 70 SRO investigation. No verified program cut; request joint funding and continuity plan and aggregate outcomes. Never disclose school-specific vulnerabilities."
+    },
+    {
+      "number": 18,
+      "heading": "Health marketplace",
+      "text": "Enrollment through Jan 15; select by Dec 15 for Jan 1 coverage, Dec 16–Jan 15 for Feb 1 coverage. Use certified assistance and confirm plan networks and net premiums. [I]"
+    },
+    {
+      "number": 19,
+      "heading": "Medicaid changes",
+      "text": "Jan 1 applicable work requirements and more frequent eligibility checks are scheduled; affected March renewal members receive notices in January. Official guidance includes 80 hours approved activities or $580 earnings for covered persons, and exemptions. Do not assume all members are affected. [M,H,Q]"
+    },
+    {
+      "number": 20,
+      "heading": "Medicare and Social Security",
+      "text": "SSA announces 3.6% COLA; increased SSI paid Dec 31, other benefits starting January. Gross increase is not net deposit after deductions. Check individual notice and Medicare plan information. [S,MED]"
+    },
+    {
+      "number": 21,
+      "heading": "Employment and wages",
+      "text": "Colorado employers should verify 2027 minimum wage and applicable local/federal requirements before first payroll. Exact new wage not established in this review; do not invent a rate. [LAB]"
+    },
+    {
+      "number": 22,
+      "heading": "FAMLI payroll",
+      "text": "State employer bulletin sets total 2027 FAMLI premium at 0.86% of wages, down from 0.88%, effective Jan 1 for covered employers. October briefing identifies new tax obligations for certain medical leave benefits and employers with ten or more staff. Check employer scope. [W,Y]"
+    },
+    {
+      "number": 23,
+      "heading": "Food, housing and heating",
+      "text": "LEAP heating assistance season runs Nov 1–Apr 30; eligibility and benefits vary. Refer households to official benefits and 211 resources, not a promise of awards. [Z,HUM,HELP]"
+    },
+    {
+      "number": 24,
+      "heading": "Electricity rate proposals",
+      "text": "Black Hills June filing proposes average $10.90/month (8.8%) residential base-rate increase, March 2027 if approved. Separate DSMCA filing proposes Jan 1 $0.28/month average residential increase. These are proposals, not final tariffs; do not add to individual bill as certainty. [U,J,AG]"
+    },
+    {
+      "number": 25,
+      "heading": "Water, sewer and solid waste",
+      "text": "Verify utility-specific 2027 rate resolutions, service areas and billing schedules. No verified 2027 local water/sewer tariff or universal change found in this pass. Do not apply city rates to other districts."
+    },
+    {
+      "number": 26,
+      "heading": "Roads and infrastructure",
+      "text": "Nov 16 reporting describes about $1.75m half-cent funding for south Pueblo Boulevard/Mirror improvements, temporary to permanent signal, and CDOT projects by I-25. Distinguish project approval from awarded construction, completion and reimbursement. [V]"
+    },
+    {
+      "number": 27,
+      "heading": "TIF and neighborhood investment",
+      "text": "Track half-cent reimbursement, certified increment, agreement, project milestones and maintenance. North Elizabeth parcel plan is not corridor-wide approval. See independent TIF and Elizabeth reports."
+    },
+    {
+      "number": 28,
+      "heading": "Economic development and Ecoasis",
+      "text": "Nov 16 public meeting described proposed greenhouse campus and integrated data center; developers project 1,000+ jobs and food production. Neither permits, hiring nor power/water capacity established. Obtain land-use application, contracts, resource budgets and development conditions. [X]"
+    },
+    {
+      "number": 29,
+      "heading": "Disaster recovery",
+      "text": "County dashboard lists 453 households receiving temporary lodging, 36 dumpsters, 81 state requests, $321,833.63 identified county costs (not comprehensive incident cost). County reports Nov 5 declaration renewal. Rebuilding guidance updated Oct 19; verify current individual assistance/appeal status before advising. [R,K,F]"
+    },
+    {
+      "number": 30,
+      "heading": "Rail and special districts",
+      "text": "Nov 13 Pueblo County unofficial 7A results: 20,599 yes/18,114 no; Rye 7B 1,540 yes/1,002 no; Edison 6D 96 for/39 against. Rail district totals and certification govern districtwide outcome. 7A ballot text proposes 0.333% sales/use tax; effective date and service opening not verified. [P,RR]"
+    },
+    {
+      "number": 31,
+      "heading": "New state ballot measures",
+      "text": "Secondary reports list passed/failing measures; final statutory text, certification, implementation dates and applicable scope require separate review before treating any rule as operative. [N]"
+    },
+    {
+      "number": 32,
+      "heading": "AI governance",
+      "text": "Attorney General states SB26-189 and HB26-1263 effective Jan 1. Review consequential decision uses, data correction rights, scope and final rules; prohibit automatic Q decisions about rights, employment, benefits or policing. [A]"
+    },
+    {
+      "number": 33,
+      "heading": "Resident actions now",
+      "text": "Check insurance deadlines, benefit notices, heat assistance, public agendas and official source links; affected fire households should use current rebuilding guidance. No personal information should be submitted to Q. [I,H,Z,K,G]"
+    },
+    {
+      "number": 34,
+      "heading": "LL — lessons from real practice",
+      "text": "GFOA rolling cash flow forecasts give incoming teams a common cash baseline; Colorado's marketplace enrollment schedule demonstrates action-specific deadlines; the county fire dashboard provides a local recovery ledger pattern. Adapt, do not equate status reports with audited outcomes. [LL,I,R]"
+    },
+    {
+      "number": 35,
+      "heading": "RX — leadership handover",
+      "text": "Propose a joint written handover: adopted budgets, unencumbered cash, contracts, debt, open litigation, grants, staffing/service floors, overdue records, capital obligations and unresolved public questions. Each accountable office signs its factual scope, not a collective political judgment."
+    },
+    {
+      "number": 36,
+      "heading": "RX — everyday service continuity",
+      "text": "Maintain accessible public notices and referrals; compare changes in wait times, coverage, school support and adverse outcomes. Preserve alternatives in separate reports; never recommend an unsupported layoff or service shutdown."
+    },
+    {
+      "number": 37,
+      "heading": "EE and T2Y",
+      "text": "Reuse existing public exports and established data definitions. Track actual cost, staff time, coverage and outcomes over 30/90 days and one year. No speculative AI savings are included as funding."
+    },
+    {
+      "number": 38,
+      "heading": "Twin and Shadow",
+      "text": "Store source date, observation date, authority, status and next review separately. Community comments remain observation signals; model conditional budget or service shocks without overwriting official state. Protect identities, case details and operational security."
+    },
+    {
+      "number": 39,
+      "heading": "Event horizons and LEAP",
+      "text": "Review after Nov 23/Dec 10 votes, Jan 1 legal/tariff changes, Jan 11/12 transitions and Jan 15 checkpoint. Later watch March rate/Medicaid implementation, April 30 LEAP season end, October Medicaid funding changes. No automated monitor currently enabled. [B,A,H,U,Q,Z]"
+    },
+    {
+      "number": 40,
+      "heading": "Qified synthesis and outstanding work",
+      "text": "Priority is verified authority and continuity through handover, not a prediction of political behavior. Obtain certified election results, adopted budgets, final state ballot provisions, tariffs, departmental staffing plans, project approvals, current benefit guidance and local school/special district calendars. This is a broad dated first edition, not an exhaustive inventory of every local change."
+    }
+  ],
+  "events": [
+    {
+      "id": "transition-2027-1",
+      "date": "2026-11-23",
+      "title": "City 2027 budget hearing; check municipal-detention agenda",
+      "status": "scheduled, verify agenda",
+      "sourceIds": [
+        "B"
+      ],
+      "action": "Review proposals and official agenda",
+      "observed": "2026-11-18"
+    },
+    {
+      "id": "transition-2027-2",
+      "date": "2026-12-10",
+      "title": "County budget adoption hearing",
+      "status": "reported scheduled",
+      "sourceIds": [
+        "B"
+      ],
+      "action": "Recheck agenda; review appropriations",
+      "observed": "2026-11-18"
+    },
+    {
+      "id": "transition-2027-3",
+      "date": "2026-12-15",
+      "title": "Marketplace enrollment cutoff for Jan 1 coverage",
+      "status": "confirmed program deadline",
+      "sourceIds": [
+        "I"
+      ],
+      "action": "Enroll or obtain certified help",
+      "observed": "2026-11-18"
+    },
+    {
+      "id": "transition-2027-4",
+      "date": "2026-12-31",
+      "title": "Increased SSI payment",
+      "status": "confirmed federal adjustment",
+      "sourceIds": [
+        "S"
+      ],
+      "action": "Check personal notice",
+      "observed": "2026-11-18"
+    },
+    {
+      "id": "transition-2027-5",
+      "date": "2027-01-01",
+      "title": "Medicaid changes for affected groups",
+      "status": "scheduled law/program change",
+      "sourceIds": [
+        "H"
+      ],
+      "action": "Check notice and exemptions",
+      "observed": "2026-11-18"
+    },
+    {
+      "id": "transition-2027-6",
+      "date": "2027-01-01",
+      "title": "FAMLI 0.86% total premium",
+      "status": "confirmed state bulletin",
+      "sourceIds": [
+        "W"
+      ],
+      "action": "Update applicable payroll",
+      "observed": "2026-11-18"
+    },
+    {
+      "id": "transition-2027-7",
+      "date": "2027-01-01",
+      "title": "ADMT and chatbot safety laws",
+      "status": "scheduled legal effective date",
+      "sourceIds": [
+        "A"
+      ],
+      "action": "Review applicability and final rules",
+      "observed": "2026-11-18"
+    },
+    {
+      "id": "transition-2027-8",
+      "date": "2027-01-01",
+      "title": "DSMCA electricity adjustment",
+      "status": "proposed, not final",
+      "sourceIds": [
+        "J"
+      ],
+      "action": "Verify approved tariff",
+      "observed": "2026-11-18"
+    },
+    {
+      "id": "transition-2027-9",
+      "date": "2027-01-03",
+      "title": "New federal congressional term",
+      "status": "constitutional term date",
+      "sourceIds": [
+        "N"
+      ],
+      "action": "Confirm certified results and official directory",
+      "observed": "2026-11-18"
+    },
+    {
+      "id": "transition-2027-10",
+      "date": "2027-01-11",
+      "title": "Colorado legislative session opens",
+      "status": "confirmed calendar",
+      "sourceIds": [
+        "L"
+      ],
+      "action": "Track bills and committees",
+      "observed": "2026-11-18"
+    },
+    {
+      "id": "transition-2027-11",
+      "date": "2027-01-12",
+      "title": "Regular county/state term commencement",
+      "status": "statutory date, subject to exceptions",
+      "sourceIds": [
+        "T"
+      ],
+      "action": "Verify certification and oath",
+      "observed": "2026-11-18"
+    },
+    {
+      "id": "transition-2027-12",
+      "date": "2027-01-15",
+      "title": "Marketplace enrollment closes; Feb 1 coverage for late enrollment",
+      "status": "confirmed program deadline",
+      "sourceIds": [
+        "I"
+      ],
+      "action": "Enroll or check special eligibility",
+      "observed": "2026-11-18"
+    },
+    {
+      "id": "transition-2027-13",
+      "date": "2027-01-15",
+      "title": "Q-Pueblo transition review checkpoint",
+      "status": "proposed review, not official event",
+      "sourceIds": [
+        "L"
+      ],
+      "action": "Compare actual outcomes with baseline; source L only supports legislative calendar",
+      "observed": "2026-11-18"
+    },
+    {
+      "id": "transition-2027-14",
+      "date": "2027-03",
+      "title": "Base electric rates proposed; first affected Medicaid renewal cohort",
+      "status": "conditional / program timeline",
+      "sourceIds": [
+        "U",
+        "Q"
+      ],
+      "action": "Check PUC order and member notices",
+      "observed": "2026-11-18"
+    },
+    {
+      "id": "transition-2027-15",
+      "date": "2027-04-30",
+      "title": "LEAP season ends",
+      "status": "published program timeline",
+      "sourceIds": [
+        "Z"
+      ],
+      "action": "Verify eligibility and application deadline",
+      "observed": "2026-11-18"
+    },
+    {
+      "id": "transition-2027-16",
+      "date": "2027-10",
+      "title": "Medicaid provider assessment funding changes",
+      "status": "scheduled program timeline",
+      "sourceIds": [
+        "Q"
+      ],
+      "action": "Review current state guidance",
+      "observed": "2026-11-18"
+    }
+  ],
+  "sources": {
+    "E": [
+      "Pueblo County election results — November 13 unofficial",
+      "https://pueblocounty.gov/clerk-and-recorder-department/election-results-november-2026"
+    ],
+    "P": [
+      "November 13 county results PDF, pp. 4–7, 18",
+      "https://pueblocounty.gov/sites/default/files/2026-11/2026%20November%20Unofficial%20Results%20-%20Novemer%2013,2026%209th%20Day%20Update.pdf"
+    ],
+    "N": [
+      "Decision Desk HQ election results — secondary",
+      "https://votes.decisiondeskhq.com/elections/2026-11-03/colorado/pueblo"
+    ],
+    "L": [
+      "Colorado General Assembly session calendar",
+      "https://www.leg.colorado.gov/"
+    ],
+    "T": [
+      "Colorado statutes, Title 1 §1-1-201",
+      "https://olls.info/crs/crs2026-title-01.htm"
+    ],
+    "B": [
+      "City and county budget hearing comparison — November 14",
+      "https://puebloledger.com/government-watch/pueblo-2027-budgets-city-county/"
+    ],
+    "C": [
+      "City Finance",
+      "https://www.pueblo.us/92/Finance"
+    ],
+    "D": [
+      "Pueblo County 2027 budget",
+      "https://county.pueblo.org/budget-and-finance-department/2027-budget"
+    ],
+    "F": [
+      "County November progress dashboard",
+      "https://county.pueblo.org/board-county-commissioners-office/what-we-are-working"
+    ],
+    "G": [
+      "City council agendas",
+      "https://pueblo.granicus.com/ViewPublisher.php?view_id=4"
+    ],
+    "M": [
+      "Health First Colorado work requirements",
+      "https://www.healthfirstcolorado.gov/what-are-the-new-work-requirements-for-health-first-colorado-colorados-medicaid-program-and-who-needs-to-meet-them/"
+    ],
+    "H": [
+      "Health First Colorado start dates",
+      "https://www.healthfirstcolorado.gov/when-do-the-work-requirements-start/"
+    ],
+    "I": [
+      "Connect for Health Colorado enrollment dates",
+      "https://connectforhealthco.com/new-customers/when-can-i-buy-insurance/"
+    ],
+    "S": [
+      "Social Security 2027 COLA fact sheet",
+      "https://www.ssa.gov/news/en/cola/factsheets/2027.html"
+    ],
+    "A": [
+      "Colorado Attorney General ADMT and chatbot safety rulemaking",
+      "https://coag.gov/ai/"
+    ],
+    "W": [
+      "Colorado FAMLI September employer briefing",
+      "https://content.govdelivery.com/accounts/CODLE/bulletins/42d3518"
+    ],
+    "Y": [
+      "Colorado FAMLI October employer briefing",
+      "https://content.govdelivery.com/accounts/CODLE/bulletins/42ffc1a"
+    ],
+    "U": [
+      "Black Hills electric base-rate proposal",
+      "https://blackhillsenergy.com/billing-and-payments/rates-and-regulatory-information/2026-colorado-electric-regulatory-rate-review"
+    ],
+    "J": [
+      "Black Hills regulatory filings — advice letter 916",
+      "https://www.blackhillsenergy.com/billing-and-payments/rates-and-regulatory-information/colorado-rates-and-regulatory-information"
+    ],
+    "R": [
+      "County Aspen Acres recovery dashboard",
+      "https://www.pueblocounty.gov/aspen-acres-fire-recovery-assistance"
+    ],
+    "K": [
+      "County rebuilding and assistance guidance",
+      "https://pueblopermits.com/aspen-acres-fire-recovery-resources/"
+    ],
+    "X": [
+      "KRDO November 16 Ecoasis public meeting",
+      "https://krdo.com/news/2026/11/16/greenhouse-development-could-bring-jobs-south-of-pueblo-people-still-unsure-because-of-included-data-center/"
+    ],
+    "V": [
+      "KRDO November 16 south Pueblo traffic projects",
+      "https://krdo.com/news/top-stories/2026/11/16/city-cdot-traffic-projects-in-south-pueblo-reflect-economic-growth-safety-needs/"
+    ],
+    "Z": [
+      "Colorado heating assistance LEAP",
+      "https://cdhs.nxt-dev.colorado.gov/leap"
+    ],
+    "Q": [
+      "Colorado Access October 8 Medicaid transition timeline",
+      "https://www.coaccess.com/changes/"
+    ],
+    "O": [
+      "County official directory",
+      "https://pueblocounty.gov/"
+    ],
+    "RR": [
+      "Districtwide rail measure — ballot text and unofficial aggregation",
+      "https://spectrumvote.com/co/front-range-passenger-rail-district-ballot-issue-7a"
+    ],
+    "LL": [
+      "GFOA cash flow forecasting",
+      "https://www.gfoa.org/cash-flow-forecasting"
+    ],
+    "MED": [
+      "Medicare official plan information",
+      "https://www.medicare.gov/"
+    ],
+    "LAB": [
+      "Colorado labor and employment",
+      "https://cdle.colorado.gov/"
+    ],
+    "HELP": [
+      "211 Colorado",
+      "https://www.211colorado.org/"
+    ],
+    "HUM": [
+      "County Human Services",
+      "https://county.pueblo.org/human-services"
+    ],
+    "AG": [
+      "Colorado Public Utilities Commission",
+      "https://puc.colorado.gov/"
+    ]
+  },
+  "related": [
+    "regional-transition-and-leap.html",
+    "regional-financial-transition.html",
+    "nov18-county-fiscal-recovery.html",
+    "nov18-jail-lifecycle.html",
+    "nov18-municipal-enforcement.html",
+    "nov18-sheriff-workforce.html",
+    "nov18-school-safety.html",
+    "nov18-tif-accountability.html",
+    "nov18-north-elizabeth-renewal.html",
+    "council-attorney-funding.html",
+    "pueblo-ai-readiness.html"
+  ]
+}
