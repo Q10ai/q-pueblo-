@@ -1,0 +1,302 @@
+{
+  "schema": "qp-public-research-progress-v1",
+  "title": "How much of Q-Pueblo’s research is backed by evidence?",
+  "edition": "2026-11-18",
+  "checkpointDate": "2026-11-16T01:32:00Z",
+  "reviewBy": "2026-12-02",
+  "status": "dated internal process summary; not independent factual certification or live coverage",
+  "summary": "The November 15–16 controlled research checkpoint cleared the original 107-item evidence-amendment queue. Across 144 canonical reports, 846 of 5,760 section slots have partial source attribution; 4,914 still have explicit evidence gaps. This measures a dated private research build, not live public report completion.",
+  "metrics": {
+    "originalAssignments": 107,
+    "acceptedBoundedAmendments": 107,
+    "originalQueueRemaining": 0,
+    "canonicalReports": 144,
+    "packetViews": 160,
+    "preservedIdentifiers": 211,
+    "entityLabels": 56,
+    "navigationEdges": 363,
+    "sectionSlots": 5760,
+    "partiallyAttributedSlots": 846,
+    "gapSlots": 4914,
+    "requiredBuildCommandsPassed": 48,
+    "contextTestsPassed": 37,
+    "contextTestsTotal": 37,
+    "sqliteIntegrity": "passed",
+    "archiveIntegrity": "passed",
+    "fullIndependentRegression": "timed out; no full pass claimed"
+  },
+  "progressHistory": [
+    107,
+    82,
+    66,
+    54,
+    31,
+    23,
+    11,
+    0
+  ],
+  "sources": [
+    {
+      "title": "Q-Pueblo original 107-item completion receipt",
+      "type": "internal process record summarized here",
+      "date": "2026-11-16",
+      "access": "aggregate summary only; private source archive excluded"
+    }
+  ],
+  "sections": [
+    {
+      "number": 1,
+      "heading": "What this is about",
+      "text": "Q-Pueblo is an independent regional research service. This is an accountability report about its own research process, what the original backlog accomplished, and what evidence remains missing. It does not claim to measure Pueblo’s performance as a community."
+    },
+    {
+      "number": 2,
+      "heading": "Main finding",
+      "text": "All 107 original backlog assignments received accepted, bounded evidence amendments by the November 16 UTC checkpoint. Zero original assignments remained in that queue. That is a workflow milestone, not 107 finished investigations or a factual certification of all 40 perspectives."
+    },
+    {
+      "number": 3,
+      "heading": "How it developed",
+      "text": "The reconciled sequence was 107, 82, 66, 54, 31, 23, 11 and zero outstanding items. Published progress must compare like-for-like identifiers from the same original cohort rather than add independent parallel build counts."
+    },
+    {
+      "number": 4,
+      "heading": "Current state and date",
+      "text": "Snapshot: November 15, 2026, 6:32 p.m. Mountain time (November 16, 01:32 UTC). Editorial edition: November 18, 2026. Later public articles and later private research may change the inventory; these figures are not a live count."
+    },
+    {
+      "number": 5,
+      "heading": "Important dates",
+      "text": "November 15–16: original backlog reconciled and six final guarded build transactions recorded. November 18: this public-safe progress edition prepared. Suggested review December 2, 2026, or sooner if a corrected checkpoint is available."
+    },
+    {
+      "number": 6,
+      "heading": "Who is affected",
+      "text": "Residents, researchers, local journalists, students, public employees, nonprofit service providers and decision-makers benefit from clearer source trails. The system does not speak for them or determine eligibility or public policy."
+    },
+    {
+      "number": 7,
+      "heading": "Children and future generations",
+      "text": "A child-impact perspective asks about school access, safe movement, air and water quality, housing stability and future obligations. Missing data must remain visible; public packets must not identify individual children or disclose protected education records."
+    },
+    {
+      "number": 8,
+      "heading": "Families and workers",
+      "text": "A useful answer connects evidence to a household or worker’s next action, including eligibility, cost, opening hours where verified and a direct human point of contact. Families should not need to interpret a research backlog to seek help."
+    },
+    {
+      "number": 9,
+      "heading": "Neighborhoods and region",
+      "text": "Use jurisdiction and geography to distinguish Pueblo City, Pueblo County, Pueblo West, districts and regional authorities. A city decision is not automatically a county decision, and a citywide statistic is not a neighborhood-level measurement."
+    },
+    {
+      "number": 10,
+      "heading": "Fairness and access",
+      "text": "Use readable static pages, plain-language summaries, clear dates, source links and human referral options. Do not assume broadband, a smartphone, time, legal expertise or paid AI access. Unknown information is not evidence of exclusion or wrongdoing."
+    },
+    {
+      "number": 11,
+      "heading": "Responsibility",
+      "text": "Q maintains its research and correction process; the originating public institution remains responsible for its original records and services. Q is not an official government source or an independent financial auditor."
+    },
+    {
+      "number": 12,
+      "heading": "Decision-makers",
+      "text": "Editors decide whether a source-backed claim can be presented. Human reviewers govern public release and correction. Official boards, agencies, courts and other legally responsible actors retain their actual statutory roles."
+    },
+    {
+      "number": 13,
+      "heading": "Rules and requirements",
+      "text": "Keep a stable identifier, exact source locator, scope, observed date, attribution, claim classification, revision history and review date. Do not publish protected material. Check the original legal or financial record before relying on an interpretation."
+    },
+    {
+      "number": 14,
+      "heading": "Promises and commitments",
+      "text": "The living-packet commitment is to provide available, appropriately scoped findings without disguising what remains unknown. A blank or expired section must never be converted into a definitive answer merely to improve a completion statistic."
+    },
+    {
+      "number": 15,
+      "heading": "Oversight and accountability",
+      "text": "The checkpoint receipt records acceptance, tests and limitations separately. Public correction submissions require human review. For the public correction route, see Participate; for the method, see the evidence and research pages."
+    },
+    {
+      "number": 16,
+      "heading": "Where money comes from",
+      "text": "This report does not establish Q’s funding, operating budget or revenue model. Public fiscal reports must identify the actual fund, jurisdiction and financial instrument; a research count does not demonstrate a funded service."
+    },
+    {
+      "number": 17,
+      "heading": "Costs to the public and households",
+      "text": "No measured local fiscal savings, project costs or taxpayer burden are established by this research milestone. Research efficiency must be measured using actual time, compute, review and correction costs; unpaid family time is not free."
+    },
+    {
+      "number": 18,
+      "heading": "What has been approved",
+      "text": "The controlled checkpoint accepted source-bounded amendments for the original cohort. That acceptance is not approval of government spending, independent factual certification or authorization to release the private research archive."
+    },
+    {
+      "number": 19,
+      "heading": "What has actually been paid",
+      "text": "The checkpoint does not establish public or private cash disbursements. In each civic issue distinguish requested, proposed, authorized, appropriated, awarded, contracted, invoiced, disbursed and measured outcomes. These fields answer different questions."
+    },
+    {
+      "number": 20,
+      "heading": "Benefits and value",
+      "text": "The value of the work is reusable context: fewer duplicate searches, explicit unresolved facts, a better route to source records, and clearer resident options. These are intended benefits; measured efficiency or social outcomes remain unverified."
+    },
+    {
+      "number": 21,
+      "heading": "How research works",
+      "text": "Recover previous research (LL), obtain relevant sources (GLEAN), reconcile contradictions and duplicate claims (DBL), map evidence to applicable QIFY perspectives, validate exact editions and retain the audit trail. Parallel workers submit candidates; controlled integration advances a single checkpoint."
+    },
+    {
+      "number": 22,
+      "heading": "Capacity and inventory",
+      "text": "The dated checkpoint records 211 preserved identifiers, 144 canonical reports, 160 packet views, 56 entity labels and 363 navigation edges. Those are different objects, not additive totals. A packet view may share a report and a label is not a resolved legal identity."
+    },
+    {
+      "number": 23,
+      "heading": "Quality and actual results",
+      "text": "Of 5,760 section slots (144 × 40), 846 were partially source-attributed and 4,914 were gaps. Partial attribution does not mean a whole section is complete, accurate in every sentence or independently reviewed. The original 107-item queue measures something different."
+    },
+    {
+      "number": 24,
+      "heading": "Reliability and maintenance",
+      "text": "The final increment recorded 48 required build commands passed, 37 context regression tests passed and successful database and archive integrity checks. The separate full regression suite timed out: no full-suite pass or production parity claim follows."
+    },
+    {
+      "number": 25,
+      "heading": "Delays and obstacles",
+      "text": "The unresolved work includes source gaps, conflicting editions, incomplete entity resolution, the older 174-record discrepancy, independent testing and deployment checks. An empty original queue is not evidence those tasks are finished."
+    },
+    {
+      "number": 26,
+      "heading": "Connections across Pueblo",
+      "text": "Link related questions without conflating their evidence. For example, county fiscal choices connect to nonprofit services and staffing, transportation to housing access and school safety, and wildfire recovery to water and health. Follow the linked reports for their actual source dates and limitations."
+    },
+    {
+      "number": 27,
+      "heading": "Energy and resource efficiency — EE",
+      "text": "Prefer source reuse, deterministic arithmetic and cached structured records to redundant extraction. Measure energy and compute only when instrumentation supports it; this checkpoint has no verified energy budget or quantified savings."
+    },
+    {
+      "number": 28,
+      "heading": "Environment and lifecycle — T2Y",
+      "text": "Preserve the original record and its date over time. A corrected version should supersede, not silently erase, history. For infrastructure, compare construction, maintenance, replacement and end-of-life stages using relevant dates and units."
+    },
+    {
+      "number": 29,
+      "heading": "Risks and failure modes — RX",
+      "text": "Watch for duplicated IDs, future-dated or stale records, unsupported causation, conflicting versions, false completion metrics, unverified links, unsafe disclosure and incorrect financial stages. Correct or quarantine the affected claim without suppressing unrelated supported content."
+    },
+    {
+      "number": 30,
+      "heading": "Long-term consequences — event horizons",
+      "text": "Evidence changes when contracts are signed, grants expire, services close, elections are certified, or inspections and audits appear. Keep dated editions accessible and review before consequential decisions; an expired observation is historical rather than automatically false."
+    },
+    {
+      "number": 31,
+      "heading": "Alternatives",
+      "text": "A static topic index is cheap and accessible but shallow. A living evidence ledger offers deeper provenance at a higher review burden. Live autonomous answers introduce new security, reliability and accountability risks; this checkpoint does not establish their safe operation."
+    },
+    {
+      "number": 32,
+      "heading": "Tradeoffs",
+      "text": "Increase useful coverage without relaxing evidence gates. More claims can increase review cost. Conservative partial answers may be less convenient but are preferable to invented certainty. Where a source is unavailable, identify the exact missing record and useful alternatives."
+    },
+    {
+      "number": 33,
+      "heading": "Lessons learned",
+      "text": "Reconciliation across research lanes must use exact sets, not arithmetic on competing completion totals. A validated amendment is not a complete report. A source linked to a topic does not automatically support every claim in its 40 sections."
+    },
+    {
+      "number": 34,
+      "heading": "Improvements — LEAP",
+      "text": "Complete high-impact missing facts first: actual public payments, service availability and access, children’s safety, project delivery and legal authority. Use small reversible edits, measured quality checks and named review owners rather than a speculative mass release."
+    },
+    {
+      "number": 35,
+      "heading": "What residents can do — ABLE",
+      "text": "Start from the report library or issue search, read the source and its date, separate what the record says from what Q infers, and follow the institution’s official contact route. Submit a correction or source through Participate; do not include confidential or personal information."
+    },
+    {
+      "number": 36,
+      "heading": "Evidence strength",
+      "text": "The aggregate counts come from a dated Q-Pueblo internal build receipt; they are self-reported process metrics, not independent validation. Local claims need their own dated controlling records. See the public aggregate summary for definitions and the linked public studies for source trails."
+    },
+    {
+      "number": 37,
+      "heading": "Conflicts and DBL",
+      "text": "Earlier reports contained competing counts and mismatched stages. Preserve, compare and resolve with exact identifiers, dates, denominators and scope. Historical 174-record counts cannot be equated to the 211 identifiers, 160 views or 144 canonical reports without a crosswalk."
+    },
+    {
+      "number": 38,
+      "heading": "What is still unknown",
+      "text": "The 4,914 gap slots include unresolved substantive evidence, not 4,914 new issues. The receipt does not establish how many full reports have been independently certified, current live site coverage, all alternative editions’ accuracy or the cost of completion."
+    },
+    {
+      "number": 39,
+      "heading": "What would change the conclusion",
+      "text": "A later validated checkpoint with additional attributed sections, an adjudicated historical crosswalk, resolved entity identities, independent full regression results or verified deployed revision would change these measures. Report those changes as new dated editions with their own evidence."
+    },
+    {
+      "number": 40,
+      "heading": "Qified synthesis — SUPRA",
+      "text": "The 107-item cohort is no longer waiting for a first bounded evidence amendment. The remaining work is depth, cross-issue usefulness, factual review and release assurance. Q’s output must serve residents with actual supported answers, practical options and honest gaps, not a claim of universal knowledge."
+    }
+  ],
+  "related": [
+    {
+      "title": "Research report library",
+      "href": "reports-static.html"
+    },
+    {
+      "title": "Issue directory",
+      "href": "issues.html"
+    },
+    {
+      "title": "Evidence desk",
+      "href": "evidence-desk.html"
+    },
+    {
+      "title": "Guided answers",
+      "href": "qify.html"
+    },
+    {
+      "title": "Public source directory",
+      "href": "sources.html"
+    },
+    {
+      "title": "Correction and source submissions",
+      "href": "participate.html"
+    },
+    {
+      "title": "Living packet transition",
+      "href": "regional-ai-compatible-packets.html"
+    },
+    {
+      "title": "Regional transition and leap plan",
+      "href": "regional-transition-and-leap.html"
+    },
+    {
+      "title": "County 2027 budget proposal",
+      "href": "report-county-budget-2027.html"
+    },
+    {
+      "title": "Nonprofit funding",
+      "href": "report-csac-2027.html"
+    },
+    {
+      "title": "Aspen recovery",
+      "href": "report-aspen-recovery-costs.html"
+    },
+    {
+      "title": "Housing pipeline",
+      "href": "report-housing-pipeline.html"
+    },
+    {
+      "title": "Water budget evidence",
+      "href": "report-water-budget-evidence.html"
+    }
+  ]
+}
