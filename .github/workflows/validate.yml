@@ -76,6 +76,8 @@ jobs:
           node scripts/check-evidence-desk.mjs
           node scripts/check-packet-reports.mjs
           node scripts/check-launch.mjs
+          node --check public/resilience-tools.js
+          node scripts/check-resilience.mjs
           node scripts/check-experience.mjs
           node scripts/check-release-parity.mjs
           test -s public/site.css
