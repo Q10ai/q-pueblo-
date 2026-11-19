@@ -27,3 +27,6 @@ The first ZIP archive (v0.3.0) retains an *outdated* filing manifest because its
 Verification: seven original files were uploaded individually to controlled Google Drive, a full ZIP copy was uploaded, a separate Drive Doc contains four embedded screenshot objects, and the QPueblo registry recorded additions A-077 through A-083, LC-024, RH-027 through RH-036. The corrected ZIP was locally CRC-tested, and source-file hashes matched; **a remote byte-for-byte SHA-256 verification of Drive's uploaded files was not performed**. The current ZIP filename is `QP_TWIN_PUEBLO_ECONOMIC_RENEWAL_ARCHIVE_v0.3.1_2026-11-08.zip`.
 
 This correction improves archive continuity only: it does not certify all-year or all-account completeness, promote claims to canonical facts, connect a live twin, start recurring monitoring, or publish any site changes.
+
+
+- [County fiscal recovery and essential-service continuity, Nov. 19 candidate](QP-FISCAL-COUNTY-2027-20261119.md) — additive supplement; review pending.
