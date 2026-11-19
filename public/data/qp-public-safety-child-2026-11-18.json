@@ -1,0 +1,512 @@
+{
+  "schema": "qp-living-research-v1",
+  "edition": "2026-11-18",
+  "story": {
+    "id": "qp-county-public-safety-child-2026",
+    "title": "What could Pueblo County’s proposed budget cuts mean for deputies, detention and school safety?",
+    "route": "county-public-safety-school-resource-officers.html",
+    "checked": "2026-11-18",
+    "reviewBy": "2026-11-24",
+    "questions": [
+      "Are Pueblo County school resource officers being cut?",
+      "How could Pueblo County budget cuts affect public safety?",
+      "What does the $4.89 million Sheriff budget reduction mean?"
+    ],
+    "keywords": [
+      "school resource officer",
+      "school resource officers",
+      "SRO",
+      "deputy staffing",
+      "sheriff budget",
+      "school safety",
+      "detention staffing",
+      "child safety"
+    ],
+    "summary": "The proposed Sheriff reduction is $4.89M, or 10.55% of its preliminary budget. Frontline testimony raises concern about patrol, detention and District 70 SRO continuity. Final staffing decisions and current program costs are not established. [S1,S3,S4,S7]",
+    "sources": [
+      {
+        "id": "S1",
+        "title": "County — October 15 proposed budget presentation, slide 6",
+        "url": "https://county.pueblo.org/sites/default/files/2026-10/2027%20Proposed%20Budget%20SB.pdf"
+      },
+      {
+        "id": "S2",
+        "title": "County — 2027 budget portal and calendar",
+        "url": "https://county.pueblo.org/budget-and-finance-department/2027-budget"
+      },
+      {
+        "id": "S3",
+        "title": "County — November financial progress and budget targets",
+        "url": "https://www.pueblocounty.gov/board-county-commissioners-office/what-we-are-working"
+      },
+      {
+        "id": "S4",
+        "title": "Citizen Portal — November 3 meeting transcript summary; secondary source",
+        "url": "https://citizenportal.ai/source/11869934/board-of-county-commissioners-meeting"
+      },
+      {
+        "id": "S5",
+        "title": "Zonewire — November 17 work session summary; secondary source",
+        "url": "https://www.zonewire.co/meetings/pueblo-county/11097"
+      },
+      {
+        "id": "S6",
+        "title": "Sheriff — 2024 accountability report, Patrol, SRO and Judicial Intake sections",
+        "url": "https://www.pueblosheriff.com/Archive/ViewFile/Item/5493"
+      },
+      {
+        "id": "S7",
+        "title": "District 70 — Student Services and SRO program",
+        "url": "https://www.district70.org/district-information/district-departments/student-services"
+      },
+      {
+        "id": "S8",
+        "title": "C.R.S. 30-11-107(2) — budget authority, 2025 statutory reproduction",
+        "url": "https://law.justia.com/codes/colorado/title-30/county-powers-and-functions/general/article-11/part-1/section-30-11-107/"
+      },
+      {
+        "id": "S9",
+        "title": "C.R.S. 30-10-511 — jail custody, 2025 statutory reproduction",
+        "url": "https://law.justia.com/codes/colorado/title-30/county-officers/article-10/part-5/section-30-10-511/"
+      },
+      {
+        "id": "S10",
+        "title": "Colorado Supreme Court — Tihonovich v. Williams (1978)",
+        "url": "https://law.justia.com/cases/colorado/supreme-court/1978/27500.html"
+      },
+      {
+        "id": "S11",
+        "title": "Colorado — mandated child abuse reporting guidance",
+        "url": "https://co4kids.org/child-abuse-prevention/mandatory-reporters/"
+      },
+      {
+        "id": "S12",
+        "title": "Safe2Tell — anonymous student safety reporting",
+        "url": "https://safe2tell.org/"
+      },
+      {
+        "id": "S13",
+        "title": "2023 quasi-experimental national SRO study",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/pam.22498"
+      },
+      {
+        "id": "S14",
+        "title": "2023 systematic review of school-based policing",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38024781/"
+      },
+      {
+        "id": "S15",
+        "title": "Colorado Department of Education — multidisciplinary school violence prevention",
+        "url": "https://ed.cde.state.co.us/mtss/psv"
+      },
+      {
+        "id": "S16",
+        "title": "County meeting agenda and records portal",
+        "url": "https://pueblococo.portal.civicclerk.com/"
+      },
+      {
+        "id": "S17",
+        "title": "County — official planning calendar PDF",
+        "url": "https://county.pueblo.org/sites/default/files/2026-10/2027%20Budget%20Meeting%20Calendar.pdf"
+      },
+      {
+        "id": "S18",
+        "title": "Pueblo Ledger — November 14 budget explanation; secondary source",
+        "url": "https://puebloledger.com/government-watch/pueblo-2027-budgets-city-county/"
+      }
+    ],
+    "chapters": [
+      {
+        "kind": "context",
+        "heading": "A budget target and a frontline warning",
+        "text": "A supplied open letter, signed Eloysa Trujillo, raises concerns about service capacity and the continuity of trusted relationships between officers and children. Treat this as firsthand testimony, not verified conclusions about officials’ motives or the precise meeting record."
+      },
+      {
+        "kind": "money",
+        "heading": "Follow the $4.89 million",
+        "text": "The official October budget presentation shows $46.33M before, $4.89M reduction and $41.44M after proposed reductions. The Sheriff's share is 49.85% of $9.81M planned General Fund reductions. Dollar targets are not layoffs. [S1,S3]"
+      },
+      {
+        "kind": "people",
+        "heading": "Who decides?",
+        "text": "The board adopts the budget, the sheriff recommends and administers its operations, and District 70 governs its school environment and agreements. Colorado law preserves statutory responsibilities and budget discretion. [S7–S10]"
+      },
+      {
+        "kind": "chronology",
+        "heading": "A documented record, not just a social post",
+        "text": "November 3 union and patrol testimony reportedly warned of shortages; November 17 work session reporting describes seeking legal advice. The 2024 Sheriff report records 33,232 patrol calls versus 36,378 in 2023 and reports an SRO program serving more than 20 schools. Current trends and proposed position changes need verification. [S4–S6]"
+      },
+      {
+        "kind": "meaning",
+        "heading": "Children, deputies and detention residents",
+        "text": "Public safety means effective response, humane custody, trusted reporting, staff wellbeing and equitable student outcomes. Observe potential harm before changing services and avoid disclosing sensitive assignments or identifiable child records. National research on SRO effects is mixed, including discipline concerns. [S11–S15]"
+      },
+      {
+        "kind": "options",
+        "heading": "Alternatives and net savings",
+        "text": "Review legally available recurring spending, actual vacancies, grant restrictions, district partnership and service redesign. Compare net avoidable costs with overtime, implementation and transition costs; protect statutory duties and continuity. The $4.89M target is not an established achievable alternative saving."
+      },
+      {
+        "kind": "future",
+        "heading": "Decision gates",
+        "text": "Official schedule: December 4 adjustment deadline and December 10 public hearing, subject to change. Before adoption, publish aggregate service-impact scenarios, options, accounting basis and responsible roles; after adoption, track actual costs, service outcomes and corrections. [S17]"
+      }
+    ],
+    "unknowns": [
+      "Exact original date and full recording of the supplied testimony; no official finding on the author's allegations.",
+      "Current budgeted versus filled posts, verified vacancies, SRO agreement and approved staffing changes.",
+      "Current aggregate workload, response and service continuity metrics; no operational vulnerabilities published.",
+      "Local child protection outcomes and costed alternatives; no causal estimate or forecast.",
+      "Unable to retrieve full preliminary budget book due to file size; sheriff report text accessible but page screenshots unavailable."
+    ],
+    "coverage40": [
+      {
+        "n": 1,
+        "title": "Scope",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [],
+        "answer": "The proposed 2027 county General Fund budget, patrol and detention service capacity, and District 70 school safety. County and city police budgets are different."
+      },
+      {
+        "n": 2,
+        "title": "Frontline testimony",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [],
+        "answer": "The supplied open letter, signed Eloysa Trujillo, describes the writer's experience as a deputy and school resource officer and expresses concern about cuts. It is retained as a testimonial signal; the original public post and exact meeting date were not independently verified. The full letter and child case details are not reproduced."
+      },
+      {
+        "n": 3,
+        "title": "Proposed Sheriff budget",
+        "classification": "Dated source finding",
+        "sourceIds": [
+          "S1"
+        ],
+        "answer": "The October presentation lists $46.33M preliminary, $4.89M reduction and $41.44M after reduction."
+      },
+      {
+        "n": 4,
+        "title": "Reduction rate",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [
+          "S1"
+        ],
+        "answer": "4.89 / 46.33 × 100 = 10.55% of the preliminary Sheriff budget. The county's 15% target applies to eligible personnel costs, not all departmental spending."
+      },
+      {
+        "n": 5,
+        "title": "Share of county reductions",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [
+          "S1",
+          "S3"
+        ],
+        "answer": "4.89 / 9.81 × 100 = 49.85%. This is a share of planned dollar reductions, not a share of workers losing jobs."
+      },
+      {
+        "n": 6,
+        "title": "County's fiscal rationale",
+        "classification": "Dated source finding",
+        "sourceIds": [
+          "S3",
+          "S18"
+        ],
+        "answer": "County describes a need to balance spending and revenue. Local reporting identifies reduced marijuana tax receipts, higher insurance, health and jail medical costs, and earlier capital obligations. A complete cause-by-cause reconciled ledger is not established."
+      },
+      {
+        "n": 7,
+        "title": "Final budget status",
+        "classification": "Not established",
+        "sourceIds": [],
+        "answer": "No final adopted 2027 budget, implementation roster or enacted SRO elimination was established in this review."
+      },
+      {
+        "n": 8,
+        "title": "County discretion",
+        "classification": "Dated source finding",
+        "sourceIds": [
+          "S1",
+          "S3"
+        ],
+        "answer": "The county states elected offices can meet dollar targets through various spending categories; not every reduction must be a layoff."
+      },
+      {
+        "n": 9,
+        "title": "Board authority",
+        "classification": "Dated source finding",
+        "sourceIds": [
+          "S8"
+        ],
+        "answer": "Section 30-11-107(2) assigns the board final annual budget adoption authority, with department and elected-office budget recommendations."
+      },
+      {
+        "n": 10,
+        "title": "Sheriff duty",
+        "classification": "Dated source finding",
+        "sourceIds": [
+          "S9"
+        ],
+        "answer": "Section 30-10-511 places county jail custody and supervision with the sheriff, subject to the legal exception stated in the statute."
+      },
+      {
+        "n": 11,
+        "title": "Legal balancing",
+        "classification": "Dated source finding",
+        "sourceIds": [
+          "S10"
+        ],
+        "answer": "Tihonovich v. Williams discusses county budget discretion in light of revenue, taxpayer capacity, other services and department needs. This is not a ruling on Pueblo's 2027 proposal."
+      },
+      {
+        "n": 12,
+        "title": "November 3 testimony",
+        "classification": "Dated source finding",
+        "sourceIds": [
+          "S4"
+        ],
+        "answer": "A secondary meeting summary attributes staffing and safety warnings to a patrol sergeant and union representative. Watch the original recording before treating the transcript as authoritative."
+      },
+      {
+        "n": 13,
+        "title": "Vacancy claims",
+        "classification": "Dated source finding",
+        "sourceIds": [
+          "S4"
+        ],
+        "answer": "The union representative reportedly cited 58 vacancies. This is a reported statement, not independently verified active headcount or the number of employees facing termination."
+      },
+      {
+        "n": 14,
+        "title": "November 17 meeting",
+        "classification": "Dated source finding",
+        "sourceIds": [
+          "S5"
+        ],
+        "answer": "Secondary reporting describes a unanimous motion to seek confidential legal advice about proposed budget reductions. No conclusion about private deliberations follows."
+      },
+      {
+        "n": 15,
+        "title": "Patrol demand baseline",
+        "classification": "Dated source finding",
+        "sourceIds": [
+          "S6"
+        ],
+        "answer": "The Sheriff reports about 36,378 calls in 2023 and 33,232 in 2024, a 3,146-call decline. This does not verify a 2026 increase or decrease."
+      },
+      {
+        "n": 16,
+        "title": "Workload measure",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [],
+        "answer": "Track aggregate call volume, priority mix, service duration, response-time distribution, overdue cases and mutual aid together. Volume alone is not demand intensity."
+      },
+      {
+        "n": 17,
+        "title": "Detention workload",
+        "classification": "Dated source finding",
+        "sourceIds": [
+          "S6"
+        ],
+        "answer": "The 2024 report records 5,383 Judicial Intake bookings. Bookings are not daily custody population or proof of today's staffing requirements."
+      },
+      {
+        "n": 18,
+        "title": "SRO historical baseline",
+        "classification": "Dated source finding",
+        "sourceIds": [
+          "S6"
+        ],
+        "answer": "The 2024 report describes a seven-person SRO team, serving over 20 schools; 757 students received DARE instruction that year. Historical program scale is not current deployment or evidence of effectiveness."
+      },
+      {
+        "n": 19,
+        "title": "District partnership",
+        "classification": "Dated source finding",
+        "sourceIds": [
+          "S7"
+        ],
+        "answer": "District 70 describes SRO work alongside school personnel in prevention, law enforcement and safety planning."
+      },
+      {
+        "n": 20,
+        "title": "Current SRO contract and positions",
+        "classification": "Not established",
+        "sourceIds": [],
+        "answer": "Current agreement, cost sharing, actual staffed positions, proposed reductions, school-specific status and final decision remain unverified. Do not publish operational coverage gaps."
+      },
+      {
+        "n": 21,
+        "title": "Child disclosure and trust",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [],
+        "answer": "The supplied testimony describes trust-based disclosures of abuse and family hardship. Plausible continuity risk warrants review, but local counts, outcomes and counterfactuals are unknown."
+      },
+      {
+        "n": 22,
+        "title": "Other reporting pathways",
+        "classification": "Dated source finding",
+        "sourceIds": [
+          "S11",
+          "S12"
+        ],
+        "answer": "School employees and peace officers have reporting responsibilities. Colorado's child abuse hotline and Safe2Tell provide distinct channels; the latter is not a substitute for required abuse reporting or emergencies."
+      },
+      {
+        "n": 23,
+        "title": "Immediate safety resources",
+        "classification": "Dated source finding",
+        "sourceIds": [
+          "S11",
+          "S12"
+        ],
+        "answer": "For immediate danger call 911; suspected child abuse or neglect can be reported to 844-264-5437 or local authorities. Safe2Tell: 877-542-7233, safe2tell.org or text S2TCO to 738477."
+      },
+      {
+        "n": 24,
+        "title": "Poverty is not abuse",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [
+          "S11"
+        ],
+        "answer": "Family homelessness or financial insecurity alone does not establish abuse. Preserve access to appropriate housing, food and supportive resources without treating hardship as culpability."
+      },
+      {
+        "n": 25,
+        "title": "Evidence for SROs",
+        "classification": "Dated source finding",
+        "sourceIds": [
+          "S13"
+        ],
+        "answer": "A 2023 national study estimated reductions in some kinds of school violence, no demonstrated prevention of gun-related incidents, and increased disciplinary actions, with disparities."
+      },
+      {
+        "n": 26,
+        "title": "Counterevidence",
+        "classification": "Dated source finding",
+        "sourceIds": [
+          "S14"
+        ],
+        "answer": "A 2023 systematic review did not establish a safety-promoting effect overall and identified concerns about exclusionary discipline. Underlying study limitations weaken causal certainty."
+      },
+      {
+        "n": 27,
+        "title": "Child-impact gate",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [],
+        "answer": "Before changing the program, assess trust and access to reporting, emergency response, student wellbeing, equitable discipline, disability accommodations, referral continuity and education outcomes. Never publish identifiable student information."
+      },
+      {
+        "n": 28,
+        "title": "Worker wellbeing",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [],
+        "answer": "Measure aggregate overtime, injuries, absences, turnover, training and recruitment. Do not interpret employee health records or personal circumstances as public data."
+      },
+      {
+        "n": 29,
+        "title": "Capacity shock",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [],
+        "answer": "When demand is variable and response capacity declines, waiting time can increase disproportionately. A hypothetical demand-to-capacity ratio of 0.80 becomes 0.889 after a 10% capacity loss. A budget percentage is not a capacity percentage; no local capacity estimate is made."
+      },
+      {
+        "n": 30,
+        "title": "Net savings formula",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [],
+        "answer": "Gross avoided expenditure minus offsets: overtime, replacement training, separation costs, contract changes, lost reimbursements, and other incremental costs. Do not assign a financial price to a child's safety or treat uncertain liabilities as zero."
+      },
+      {
+        "n": 31,
+        "title": "Funding alternative A",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [],
+        "answer": "Reallocate legally available recurring expenditure after verifying actual commitments. Protect mandatory duties and compare consequences for every service. No identified $4.89M offset is established."
+      },
+      {
+        "n": 32,
+        "title": "Funding alternative B",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [
+          "S7"
+        ],
+        "answer": "Explore a district-county cost-share agreement, eligible recurring reimbursements and voluntary partnership. Verify existing agreement, authority and affordability before counting funds."
+      },
+      {
+        "n": 33,
+        "title": "Operational alternative",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [
+          "S15"
+        ],
+        "answer": "Evaluate multidisciplinary school safety, counselors, trusted-adult continuity, reporting and non-police prevention alongside trained SRO capacity. No universal staffing recommendation follows."
+      },
+      {
+        "n": 34,
+        "title": "Transition and fallback",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [],
+        "answer": "Use human-approved continuity plans before changes take effect. Pilot administrative efficiencies on noncritical tasks, preserve a manual fallback and evaluate actual results before expanding."
+      },
+      {
+        "n": 35,
+        "title": "Financial crossover",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [],
+        "answer": "Connect county budget, jail debt, compensation, pension funding and audit costs. Distinguish capital from recurring funding, restricted from unrestricted dollars, and authorized from paid. See companion investigations."
+      },
+      {
+        "n": 36,
+        "title": "LL and EE",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [],
+        "answer": "Reuse dated financial and service baselines; measure avoidable reporting and administrative effort. Do not label staff time recovered as cash saved without evidence."
+      },
+      {
+        "n": 37,
+        "title": "T2Y and shadow",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [],
+        "answer": "Record testimony as attributed, official metrics as dated, future effects as scenarios, and missing records as unknown. Append corrections; no citizen or student profiles."
+      },
+      {
+        "n": 38,
+        "title": "Twin and RX",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [],
+        "answer": "Connect agency-level responsibilities, funding and service outcomes, not live dispatch, facility weaknesses, school routes or deployment positions. Pause and correct unsupported data, preserve human decision authority."
+      },
+      {
+        "n": 39,
+        "title": "Event horizons and LEAP",
+        "classification": "Dated source finding",
+        "sourceIds": [
+          "S17"
+        ],
+        "answer": "Official calendar lists December 4 for final Workday adjustments and December 10 for the public adoption hearing. Check official agendas for changes. Q proposes monthly follow-up after adoption, annual evaluation and multi-year workforce and safety review."
+      },
+      {
+        "n": 40,
+        "title": "Qified conclusion",
+        "classification": "Q analysis or practical guidance",
+        "sourceIds": [],
+        "answer": "A fiscal target needs an accountable service-continuity assessment. Compare practical alternatives and funding sources against lawful balanced budgets and measurable safety, dignity and equitable child outcomes. Neither assumed savings nor assumed harm should be presented as verified."
+      }
+    ],
+    "packet": {
+      "schemaVersion": "1.0",
+      "lifecycle": "active",
+      "publicationStatus": "partial",
+      "evidenceStatus": "Dated public-source review and attributed supplied testimony",
+      "reviewDue": "2026-11-24",
+      "related": [
+        "qp-county-fiscal-review-2026",
+        "qp-county-pension-2026",
+        "qp-county-audit-cost-2026",
+        "qp-regional-fragmentation-2026",
+        "qp-regional-packets-2026"
+      ],
+      "build": "Service continuity evaluation, financial savings model, child impact gate, reporting pathways and versioned public packet. No live safety operations.",
+      "privacy": "No child case records, school-specific gaps or deployment details. Testimonials separated from verified data."
+    }
+  }
+}
