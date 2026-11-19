@@ -1,0 +1,15 @@
+# Q-Pueblo: never commit operator credentials, service keys or local data
+.env
+.env.*
+.dev.vars
+.dev.vars.*
+*.pem
+*.p12
+*.pfx
+*.key
+*.secret
+secrets/
+local-private/
+node_modules/
+watch-artifacts/
+q-pueblo-cloudflare-pages.zip
