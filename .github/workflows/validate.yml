@@ -78,6 +78,7 @@ jobs:
           node scripts/check-launch.mjs
           node scripts/check-experience.mjs
           node scripts/check-release-parity.mjs
+          node scripts/check-regional-transition.mjs
           test -s public/site.css
           test -s public/_headers
           grep -q 'Q-PUEBLO' public/index.html
