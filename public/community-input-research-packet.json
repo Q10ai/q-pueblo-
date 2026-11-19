@@ -1,0 +1,1358 @@
+{
+  "schema": "qp-editorial-research-packet/1.0",
+  "id": "qp-community-input-to-action-2026",
+  "edition": "2026-11-19-v1.1",
+  "type": "living_editorial_synthesis",
+  "canonicalNewIssue": false,
+  "reviewDue": "2026-12-02",
+  "title": "From community signals to civic solutions",
+  "scope": "historical nonrepresentative qualitative synthesis, no private input records",
+  "counts": {
+    "historicalClusters": 11,
+    "linkedCollections": 14,
+    "availableCollections": 18,
+    "perspectives": 40
+  },
+  "clusters": [
+    {
+      "ordinal": 1,
+      "title": "Museum, Half-Cent and PURA",
+      "paragraphs": [
+        "Historical cluster 1",
+        "Question: Cultural access, public dollars, tourism, ownership.",
+        "Research and buildout: Investment and lease reconciliation, visitor additionality and jobs model. Differentiate grant, operator and asset owner.",
+        "Next evidence: Executed agreement, votes, payment and admission records; no eligibility or wrongdoing finding. [S4]",
+        "Related collections: 01 · 07 · 13",
+        "Contribute a public source or idea"
+      ],
+      "links": [
+        {
+          "url": "packets.html#story-priority-01",
+          "label": "01"
+        },
+        {
+          "url": "packets.html#story-priority-07",
+          "label": "07"
+        },
+        {
+          "url": "packets.html#story-priority-13",
+          "label": "13"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-01",
+          "label": "Contribute a public source or idea"
+        }
+      ]
+    },
+    {
+      "ordinal": 2,
+      "title": "Sales tax and public priorities",
+      "paragraphs": [
+        "Historical cluster 2",
+        "Question: Revenue trends, business conditions, roads and safety.",
+        "Research and buildout: Earlier work identified 13 issue lanes and eight designed components including revenue trend, outcomes and expenditure verification.",
+        "Next evidence: Monthly original actuals, comparable period and service results; no reconciled May figures in this report. [S1,S10]",
+        "Related collections: 01 · 03 · 04 · 06 · 12 · 13 · 14",
+        "Contribute a public source or idea"
+      ],
+      "links": [
+        {
+          "url": "packets.html#story-priority-01",
+          "label": "01"
+        },
+        {
+          "url": "packets.html#story-priority-03",
+          "label": "03"
+        },
+        {
+          "url": "packets.html#story-priority-04",
+          "label": "04"
+        },
+        {
+          "url": "packets.html#story-priority-06",
+          "label": "06"
+        },
+        {
+          "url": "packets.html#story-priority-12",
+          "label": "12"
+        },
+        {
+          "url": "packets.html#story-priority-13",
+          "label": "13"
+        },
+        {
+          "url": "packets.html#story-priority-14",
+          "label": "14"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-01",
+          "label": "Contribute a public source or idea"
+        }
+      ]
+    },
+    {
+      "ordinal": 3,
+      "title": "Economic renewal",
+      "paragraphs": [
+        "Historical cluster 3",
+        "Question: Careers, tourism, Eastside rehabilitation, civic trust.",
+        "Research and buildout: Prior career access audit, visitor scenario, neighborhood pilot. CPW reported 3,009,507 visits against 3,144,017 in FY24–25 comparison, down 4.3%; not unique people. [S9]",
+        "Next evidence: Measure incremental purchases, training certifications and access barriers.",
+        "Related collections: 03 · 06 · 13 · 15 · 17",
+        "Contribute a public source or idea"
+      ],
+      "links": [
+        {
+          "url": "packets.html#story-priority-03",
+          "label": "03"
+        },
+        {
+          "url": "packets.html#story-priority-06",
+          "label": "06"
+        },
+        {
+          "url": "packets.html#story-priority-13",
+          "label": "13"
+        },
+        {
+          "url": "packets.html#story-priority-15",
+          "label": "15"
+        },
+        {
+          "url": "packets.html#story-priority-17",
+          "label": "17"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-03",
+          "label": "Contribute a public source or idea"
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "title": "City and county governance",
+      "paragraphs": [
+        "Historical cluster 4",
+        "Question: Procurement, competing plans, decision delivery.",
+        "Research and buildout: Separate jurisdictions and signed direction from procurement and implementation. Use official records archives. [S1–S3]",
+        "Next evidence: Original solicitation, evaluation, cancellation and implementation; no finding of motive or misconduct.",
+        "Related collections: 01 · 02 · 03 · 06 · 17",
+        "Contribute a public source or idea"
+      ],
+      "links": [
+        {
+          "url": "packets.html#story-priority-01",
+          "label": "01"
+        },
+        {
+          "url": "packets.html#story-priority-02",
+          "label": "02"
+        },
+        {
+          "url": "packets.html#story-priority-03",
+          "label": "03"
+        },
+        {
+          "url": "packets.html#story-priority-06",
+          "label": "06"
+        },
+        {
+          "url": "packets.html#story-priority-17",
+          "label": "17"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-01",
+          "label": "Contribute a public source or idea"
+        }
+      ]
+    },
+    {
+      "ordinal": 5,
+      "title": "Pueblo West roads and 6C",
+      "paragraphs": [
+        "Historical cluster 5",
+        "Question: Road quality, restricted taxes and authority.",
+        "Research and buildout: District Sept 28 update reports rejecting proposal involving $1.3–1.6m annual HUTF against its estimate of $8m routine maintenance; evaluation of repeal is not repeal. [S5] Earlier Q work separates variances and cash loss.",
+        "Next evidence: Executed IGA, transactions, drainage and pavement condition; estimates exclude rehabilitation.",
+        "Related collections: 03 · 05 · 14",
+        "Contribute a public source or idea"
+      ],
+      "links": [
+        {
+          "url": "packets.html#story-priority-03",
+          "label": "03"
+        },
+        {
+          "url": "packets.html#story-priority-05",
+          "label": "05"
+        },
+        {
+          "url": "packets.html#story-priority-14",
+          "label": "14"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-03",
+          "label": "Contribute a public source or idea"
+        }
+      ]
+    },
+    {
+      "ordinal": 6,
+      "title": "Heritage Center and public assets",
+      "paragraphs": [
+        "Historical cluster 6",
+        "Question: Preservation, appraisal, cultural service.",
+        "Research and buildout: Prior dossier separates listing, reported offer and appraisal, council deliberation and actual sale. Compare leases, sale protections, reuse and continued ownership. [S11]",
+        "Next evidence: Actual appraisal, public action, agreement, conditions and access terms; no completed sale established here.",
+        "Related collections: 07 · 13",
+        "Contribute a public source or idea"
+      ],
+      "links": [
+        {
+          "url": "packets.html#story-priority-07",
+          "label": "07"
+        },
+        {
+          "url": "packets.html#story-priority-13",
+          "label": "13"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-07",
+          "label": "Contribute a public source or idea"
+        }
+      ]
+    },
+    {
+      "ordinal": 7,
+      "title": "Industrial development, wages and zoo",
+      "paragraphs": [
+        "Historical cluster 7",
+        "Question: Public infrastructure, local jobs and service tradeoffs.",
+        "Research and buildout: Prior analysis distinguishes historical road needs and new project demand; separate wage, resident hires, retention and training from projections, zoo funding from project finance.",
+        "Next evidence: Signed incentives, engineering scope, employment certification, restrictions; no inferred service cut.",
+        "Related collections: 01 · 02 · 03 · 06 · 17",
+        "Contribute a public source or idea"
+      ],
+      "links": [
+        {
+          "url": "packets.html#story-priority-01",
+          "label": "01"
+        },
+        {
+          "url": "packets.html#story-priority-02",
+          "label": "02"
+        },
+        {
+          "url": "packets.html#story-priority-03",
+          "label": "03"
+        },
+        {
+          "url": "packets.html#story-priority-06",
+          "label": "06"
+        },
+        {
+          "url": "packets.html#story-priority-17",
+          "label": "17"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-01",
+          "label": "Contribute a public source or idea"
+        }
+      ]
+    },
+    {
+      "ordinal": 8,
+      "title": "Housing and environmental history",
+      "paragraphs": [
+        "Historical cluster 8",
+        "Question: Housing access, neighborhood conditions and industrial legacy.",
+        "Research and buildout: Connect public planning, remediation and housing evidence at neighborhood scale; omit personal testimony and identifying details.",
+        "Next evidence: Sampling, redevelopment, housing eligibility and actual repairs; no inference of individual exposure.",
+        "Related collections: 09 · 15 · 17",
+        "Contribute a public source or idea"
+      ],
+      "links": [
+        {
+          "url": "packets.html#story-priority-09",
+          "label": "09"
+        },
+        {
+          "url": "packets.html#story-priority-15",
+          "label": "15"
+        },
+        {
+          "url": "packets.html#story-priority-17",
+          "label": "17"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-09",
+          "label": "Contribute a public source or idea"
+        }
+      ]
+    },
+    {
+      "ordinal": 9,
+      "title": "Nonprofit services and CSAC",
+      "paragraphs": [
+        "Historical cluster 9",
+        "Question: Eligibility, fairness and continuity.",
+        "Research and buildout: City Sept 1 release reports 46 requests totaling $2,203,865 for 2027. [S8] Existing nonprofit research examines service burden and funding scenarios.",
+        "Next evidence: Awards, payment, service units and access; applications are not awards and service loss is not established.",
+        "Related collections: 03 · 10 · 17",
+        "Contribute a public source or idea"
+      ],
+      "links": [
+        {
+          "url": "packets.html#story-priority-03",
+          "label": "03"
+        },
+        {
+          "url": "packets.html#story-priority-10",
+          "label": "10"
+        },
+        {
+          "url": "packets.html#story-priority-17",
+          "label": "17"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-03",
+          "label": "Contribute a public source or idea"
+        }
+      ]
+    },
+    {
+      "ordinal": 10,
+      "title": "Colorado Smelter participation",
+      "paragraphs": [
+        "Historical cluster 10",
+        "Question: Cleanup scope, access and agency response.",
+        "Research and buildout: EPA proposed Sept 1 changing residential soil from 350 to 240 ppm and dust from 275 to 110 ppm; 30-day public comment period. [S6]",
+        "Next evidence: Final decision and response to comments; historic window not a live invitation; actual submissions not recovered. [S7]",
+        "Related collections: 09 · 15 · 17",
+        "Contribute a public source or idea"
+      ],
+      "links": [
+        {
+          "url": "packets.html#story-priority-09",
+          "label": "09"
+        },
+        {
+          "url": "packets.html#story-priority-15",
+          "label": "15"
+        },
+        {
+          "url": "packets.html#story-priority-17",
+          "label": "17"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-09",
+          "label": "Contribute a public source or idea"
+        }
+      ]
+    },
+    {
+      "ordinal": 11,
+      "title": "Traffic safety and privacy",
+      "paragraphs": [
+        "Historical cluster 11",
+        "Question: Fines, cameras, injury prevention and appeals.",
+        "Research and buildout: Prior analysis separates speed enforcement from plate recognition, City from State, citation from conviction.",
+        "Next evidence: Controlling rules, active sites, retention, appeal and matched safety outcomes; no specific live camera claim.",
+        "Related collections: 12 · 14 · 17",
+        "Contribute a public source or idea"
+      ],
+      "links": [
+        {
+          "url": "packets.html#story-priority-12",
+          "label": "12"
+        },
+        {
+          "url": "packets.html#story-priority-14",
+          "label": "14"
+        },
+        {
+          "url": "packets.html#story-priority-17",
+          "label": "17"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-12",
+          "label": "Contribute a public source or idea"
+        }
+      ]
+    }
+  ],
+  "perspectives": [
+    {
+      "ordinal": 1,
+      "title": "1. Purpose",
+      "paragraphs": [
+        "Convert concerns into source-bounded questions, not votes or findings by popularity."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 2,
+      "title": "2. Scope",
+      "paragraphs": [
+        "Eleven historical clusters, fourteen linked collections; not exhaustive community input."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 3,
+      "title": "3. Coverage",
+      "paragraphs": [
+        "Screenshots, prompts, media, testimony and formal agency processes differ; originals not exhaustively recovered."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 4,
+      "title": "4. Provenance",
+      "paragraphs": [
+        "Retain event/capture date, publisher, locator and exact edition; raw material stays controlled."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 5,
+      "title": "5. Classification",
+      "paragraphs": [
+        "Separate experience, opinion, allegation, official statement, adopted action, reporting and inference."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 6,
+      "title": "6. Deduplication",
+      "paragraphs": [
+        "Overlaps and repeated summaries do not add independent evidence."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 7,
+      "title": "7. Representation",
+      "paragraphs": [
+        "No representative polling denominator or authenticated contributor count exists."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 8,
+      "title": "8. Freshness",
+      "paragraphs": [
+        "Reopen when records, decisions or corrections arrive; preserve original snapshots; editorial recheck December 2."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 9,
+      "title": "9. Jurisdiction",
+      "paragraphs": [
+        "City, County, district, state and federal authorities differ; cooperation does not confer control."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 10,
+      "title": "10. Delivery",
+      "paragraphs": [
+        "Trace adopted vote, assigned administration, funding and completed work via S1–S3."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 11,
+      "title": "11. Finance",
+      "paragraphs": [
+        "Distinguish request, appropriation, commitment, cash, reimbursement and audit; eliminate duplicate transfers."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 12,
+      "title": "12. Procurement",
+      "paragraphs": [
+        "Seek solicitation, addenda, evaluation, award, change orders and acceptance; missing records do not prove misconduct."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 13,
+      "title": "13. Half-Cent",
+      "paragraphs": [
+        "Trace eligibility, remaining cash, restricted funds, commitments and additional economic outcomes."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 14,
+      "title": "14. Infrastructure",
+      "paragraphs": [
+        "Split pre-existing maintenance and incremental demand; assess lifecycle cost and asset condition."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 15,
+      "title": "15. Urban renewal",
+      "paragraphs": [
+        "Follow adopted plan, adjusted base, increment, reimbursements and public benefit. [S4]"
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 16,
+      "title": "16. Jobs and training",
+      "paragraphs": [
+        "Measure filled positions, actual resident hires, wage bands, credentials and retention."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 17,
+      "title": "17. Local business",
+      "paragraphs": [
+        "Assess permitting time, access and cost without exposing confidential firm records."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 18,
+      "title": "18. Tourism scenario",
+      "paragraphs": [
+        "3,009,507 visits × 5% × $25 ≈ $3.76m; 15% × $40 ≈ $18.06m; 30% × $60 ≈ $54.17m illustrative gross added purchases. Excludes displacement, leakage and cost; not tax revenue or forecast."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 19,
+      "title": "19. Preservation",
+      "paragraphs": [
+        "Compare operating costs, condition, cultural access and alternative uses; one appraisal cannot decide public value."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 20,
+      "title": "20. Housing",
+      "paragraphs": [
+        "Track completed and occupied homes, affordability, transport and repairs; planned unit is not occupancy."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 21,
+      "title": "21. Environment",
+      "paragraphs": [
+        "Separate hazard, possible and measured exposure, and health outcomes. No personal exposure claims."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 22,
+      "title": "22. Water and drainage",
+      "paragraphs": [
+        "Test runoff, maintenance and capacity against engineered requirements and measurements."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 23,
+      "title": "23. Health and services",
+      "paragraphs": [
+        "Verify actual geography, eligibility, availability and waitlists; funding announcements are not service confirmation."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 24,
+      "title": "24. Public safety",
+      "paragraphs": [
+        "Compare injury, incident, staffing and response measures; distinguish testimony and actual recorded events."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 25,
+      "title": "25. Child and family impacts",
+      "paragraphs": [
+        "Assess access to school, safe routes, care, family time and intergenerational burden; no child identifiers."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 26,
+      "title": "26. Equity and accessibility",
+      "paragraphs": [
+        "Use accessible documents and offline options, measure barriers without inferring sensitive traits."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 27,
+      "title": "27. Workforce continuity",
+      "paragraphs": [
+        "Preserve institution-owned obligations, project files and access authority through transitions; never publish credentials."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 28,
+      "title": "28. Claim integrity",
+      "paragraphs": [
+        "AI summaries are leads; correct exact dated propositions with originals rather than attack speakers."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 29,
+      "title": "29. LL / GLEAN",
+      "paragraphs": [
+        "Recover and reuse earlier research, preserve contradictory editions before opening a new case."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 30,
+      "title": "30. DBL",
+      "paragraphs": [
+        "Seek alternative explanations and independent contrary records; ask what would disprove the favored view."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 31,
+      "title": "31. QIFY / SUPRA",
+      "paragraphs": [
+        "Cross-check material finance, authority, engineering, social and future effects with explicit limits."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 32,
+      "title": "32. EE",
+      "paragraphs": [
+        "Prioritize high-impact originals and avoid duplicated retrieval or records requests."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 33,
+      "title": "33. EH",
+      "paragraphs": [
+        "Watch actual deadlines, irreversible costs and delay risks; monitoring design is not active monitoring."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 34,
+      "title": "34. ABLE",
+      "paragraphs": [
+        "Give residents usable records routes and participation choices, not institutional obligations."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 35,
+      "title": "35. RX",
+      "paragraphs": [
+        "Proportionate remedies: recover a record, correct wording, reconcile funds, remove an access barrier or evaluate independently."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 36,
+      "title": "36. LEAP",
+      "paragraphs": [
+        "Illustrative 2027 baseline/pilot, 2029 cost/outcomes review, 2031 durability audit; not commitments."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 37,
+      "title": "37. T2Y",
+      "paragraphs": [
+        "Compare short/long cost, rights, family impacts, alternatives, reversibility and opportunity cost."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 38,
+      "title": "38. Twin and Shadow",
+      "paragraphs": [
+        "Link issue-level evidence, institutions, decisions and outcomes; separate observed state and scenarios. No live import or person-level graph."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 39,
+      "title": "39. Products and QA",
+      "paragraphs": [
+        "Private registry and routing reference passed 15 synthetic checks; 18 manual collection contribution routes previously checked. No automatic publishing or real-world outcome certification."
+      ],
+      "links": []
+    },
+    {
+      "ordinal": 40,
+      "title": "40. Correction and next evidence",
+      "paragraphs": [
+        "Refresh agency decisions, recover missing authorized originals and verify canonical links; publish dated amendments after review."
+      ],
+      "links": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "locator": "S1 — City archive. Budgets, capital plans, cash recap and meeting records. Directory, not transaction proof.",
+      "url": "https://www.pueblo.us/Archive.aspx",
+      "label": "S1 — City archive"
+    },
+    {
+      "id": "S2",
+      "locator": "S2 — Council recordings. Dated video, agenda and minutes; not implementation proof.",
+      "url": "https://www.pueblo.us/623/Regular-Meetings",
+      "label": "S2 — Council recordings"
+    },
+    {
+      "id": "S3",
+      "locator": "S3 — City public records. General and subject-specific request pathways; disclosure not guaranteed.",
+      "url": "https://www.pueblo.us/169/Open-Records-Request-CORA",
+      "label": "S3 — City public records"
+    },
+    {
+      "id": "S4",
+      "locator": "S4 — PURA minutes and agendas. Board books and minutes; distinguish proposals and action.",
+      "url": "https://puebloura.org/about/minutes-agendas/",
+      "label": "S4 — PURA minutes and agendas"
+    },
+    {
+      "id": "S5",
+      "locator": "S5 — Pueblo West road funding transparency. District September 28 account and estimates; not independent audit.",
+      "url": "https://pueblowestmetro.us/1838/Pueblo-West-Road-Funding-Transparency",
+      "label": "S5 — Pueblo West road funding transparency"
+    },
+    {
+      "id": "S6",
+      "locator": "S6 — EPA September 1 proposal. Historical proposal; does not establish a final remedy.",
+      "url": "https://www.epa.gov/newsreleases/epa-proposes-lower-cleanup-level-pueblo-homes",
+      "label": "S6 — EPA September 1 proposal"
+    },
+    {
+      "id": "S7",
+      "locator": "S7 — EPA Colorado Smelter site. Property status, announcements and agency contact.",
+      "url": "https://www.epa.gov/co-smelter",
+      "label": "S7 — EPA Colorado Smelter site"
+    },
+    {
+      "id": "S8",
+      "locator": "S8 — City September 1 CSAC release. Requests, not awards.",
+      "url": "https://www.pueblo.us/m/newsflash/home/detail/4996",
+      "label": "S8 — City September 1 CSAC release"
+    },
+    {
+      "id": "S9",
+      "locator": "S9 — CPW fiscal year 2024–25 report p.11, August 14, 2025. Retrieved table text reports both comparator headers as SFYTD 24; visual recheck November 19 unavailable. Not unique visitors.",
+      "url": "https://cpw.state.co.us/sites/default/files/dam/rrtrdzzzvx/item.9_financial-report-fy25-monthly.pdf",
+      "label": "S9 — CPW fiscal year 2024–25 report p.11, August 14, 2025"
+    },
+    {
+      "id": "S10",
+      "locator": "S10 — City Sales Tax Division. Tax administration, not monthly actual revenue.",
+      "url": "https://www.pueblo.us/180/Sales-Tax-Division",
+      "label": "S10 — City Sales Tax Division"
+    },
+    {
+      "id": "S11",
+      "locator": "S11 — CPR/KRCC Heritage Center, November 11. Reporting refreshed November 19; obtain actual appraisal and public action.",
+      "url": "https://www.cpr.org/2026/11/11/pueblo-heritage-center-building-future-unclear/",
+      "label": "S11 — CPR/KRCC Heritage Center, November 11"
+    }
+  ],
+  "sourceRefresh": [
+    {
+      "date": "2026-11-19",
+      "url": "https://www.pueblo.us/m/newsflash/Home/Detail/5027",
+      "scope": "City's historical Nov 3 statement; proposed appropriation and then-reported reimbursement, not current balances"
+    },
+    {
+      "date": "2026-11-19",
+      "url": "https://www.epa.gov/co-smelter/site-documents-maps",
+      "scope": "Index, not final signed instrument"
+    },
+    {
+      "date": "2026-11-19",
+      "url": "https://www.epa.gov/co-smelter/cleanup-schedule-operable-unit",
+      "scope": "Estimated milestone, no final approval inferred"
+    }
+  ],
+  "sections": [
+    {
+      "id": "findings",
+      "title": "What the recovered work establishes",
+      "text": [
+        "These are inventory counts, not a poll, unique people or verified case count. Four collections are not mapped by this subset; other work may exist. No raw personal testimony, names, screenshots or identifying details are published.",
+        "Three directions follow the archive: council direction to delivery, verifying and correcting civic claims, and government knowledge continuity. Reuse the original research rather than duplicate it."
+      ],
+      "links": []
+    },
+    {
+      "id": "clusters",
+      "title": "Eleven clusters: signal → research → evidence needed",
+      "text": [
+        "Historical cluster 1",
+        "Question: Cultural access, public dollars, tourism, ownership.",
+        "Research and buildout: Investment and lease reconciliation, visitor additionality and jobs model. Differentiate grant, operator and asset owner.",
+        "Next evidence: Executed agreement, votes, payment and admission records; no eligibility or wrongdoing finding. [S4]",
+        "Related collections: 01 · 07 · 13",
+        "Contribute a public source or idea",
+        "Historical cluster 2",
+        "Question: Revenue trends, business conditions, roads and safety.",
+        "Research and buildout: Earlier work identified 13 issue lanes and eight designed components including revenue trend, outcomes and expenditure verification.",
+        "Next evidence: Monthly original actuals, comparable period and service results; no reconciled May figures in this report. [S1,S10]",
+        "Related collections: 01 · 03 · 04 · 06 · 12 · 13 · 14",
+        "Contribute a public source or idea",
+        "Historical cluster 3",
+        "Question: Careers, tourism, Eastside rehabilitation, civic trust.",
+        "Research and buildout: Prior career access audit, visitor scenario, neighborhood pilot. CPW reported 3,009,507 visits against 3,144,017 in FY24–25 comparison, down 4.3%; not unique people. [S9]",
+        "Next evidence: Measure incremental purchases, training certifications and access barriers.",
+        "Related collections: 03 · 06 · 13 · 15 · 17",
+        "Contribute a public source or idea",
+        "Historical cluster 4",
+        "Question: Procurement, competing plans, decision delivery.",
+        "Research and buildout: Separate jurisdictions and signed direction from procurement and implementation. Use official records archives. [S1–S3]",
+        "Next evidence: Original solicitation, evaluation, cancellation and implementation; no finding of motive or misconduct.",
+        "Related collections: 01 · 02 · 03 · 06 · 17",
+        "Contribute a public source or idea",
+        "Historical cluster 5",
+        "Question: Road quality, restricted taxes and authority.",
+        "Research and buildout: District Sept 28 update reports rejecting proposal involving $1.3–1.6m annual HUTF against its estimate of $8m routine maintenance; evaluation of repeal is not repeal. [S5] Earlier Q work separates variances and cash loss.",
+        "Next evidence: Executed IGA, transactions, drainage and pavement condition; estimates exclude rehabilitation.",
+        "Related collections: 03 · 05 · 14",
+        "Contribute a public source or idea",
+        "Historical cluster 6",
+        "Question: Preservation, appraisal, cultural service.",
+        "Research and buildout: Prior dossier separates listing, reported offer and appraisal, council deliberation and actual sale. Compare leases, sale protections, reuse and continued ownership. [S11]",
+        "Next evidence: Actual appraisal, public action, agreement, conditions and access terms; no completed sale established here.",
+        "Related collections: 07 · 13",
+        "Contribute a public source or idea",
+        "Historical cluster 7",
+        "Question: Public infrastructure, local jobs and service tradeoffs.",
+        "Research and buildout: Prior analysis distinguishes historical road needs and new project demand; separate wage, resident hires, retention and training from projections, zoo funding from project finance.",
+        "Next evidence: Signed incentives, engineering scope, employment certification, restrictions; no inferred service cut.",
+        "Related collections: 01 · 02 · 03 · 06 · 17",
+        "Contribute a public source or idea",
+        "Historical cluster 8",
+        "Question: Housing access, neighborhood conditions and industrial legacy.",
+        "Research and buildout: Connect public planning, remediation and housing evidence at neighborhood scale; omit personal testimony and identifying details.",
+        "Next evidence: Sampling, redevelopment, housing eligibility and actual repairs; no inference of individual exposure.",
+        "Related collections: 09 · 15 · 17",
+        "Contribute a public source or idea",
+        "Historical cluster 9",
+        "Question: Eligibility, fairness and continuity.",
+        "Research and buildout: City Sept 1 release reports 46 requests totaling $2,203,865 for 2027. [S8] Existing nonprofit research examines service burden and funding scenarios.",
+        "Next evidence: Awards, payment, service units and access; applications are not awards and service loss is not established.",
+        "Related collections: 03 · 10 · 17",
+        "Contribute a public source or idea",
+        "Historical cluster 10",
+        "Question: Cleanup scope, access and agency response.",
+        "Research and buildout: EPA proposed Sept 1 changing residential soil from 350 to 240 ppm and dust from 275 to 110 ppm; 30-day public comment period. [S6]",
+        "Next evidence: Final decision and response to comments; historic window not a live invitation; actual submissions not recovered. [S7]",
+        "Related collections: 09 · 15 · 17",
+        "Contribute a public source or idea",
+        "Historical cluster 11",
+        "Question: Fines, cameras, injury prevention and appeals.",
+        "Research and buildout: Prior analysis separates speed enforcement from plate recognition, City from State, citation from conviction.",
+        "Next evidence: Controlling rules, active sites, retention, appeal and matched safety outcomes; no specific live camera claim.",
+        "Related collections: 12 · 14 · 17",
+        "Contribute a public source or idea"
+      ],
+      "links": [
+        {
+          "url": "packets.html#story-priority-01",
+          "label": "01"
+        },
+        {
+          "url": "packets.html#story-priority-07",
+          "label": "07"
+        },
+        {
+          "url": "packets.html#story-priority-13",
+          "label": "13"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-01",
+          "label": "Contribute a public source or idea"
+        },
+        {
+          "url": "packets.html#story-priority-01",
+          "label": "01"
+        },
+        {
+          "url": "packets.html#story-priority-03",
+          "label": "03"
+        },
+        {
+          "url": "packets.html#story-priority-04",
+          "label": "04"
+        },
+        {
+          "url": "packets.html#story-priority-06",
+          "label": "06"
+        },
+        {
+          "url": "packets.html#story-priority-12",
+          "label": "12"
+        },
+        {
+          "url": "packets.html#story-priority-13",
+          "label": "13"
+        },
+        {
+          "url": "packets.html#story-priority-14",
+          "label": "14"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-01",
+          "label": "Contribute a public source or idea"
+        },
+        {
+          "url": "packets.html#story-priority-03",
+          "label": "03"
+        },
+        {
+          "url": "packets.html#story-priority-06",
+          "label": "06"
+        },
+        {
+          "url": "packets.html#story-priority-13",
+          "label": "13"
+        },
+        {
+          "url": "packets.html#story-priority-15",
+          "label": "15"
+        },
+        {
+          "url": "packets.html#story-priority-17",
+          "label": "17"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-03",
+          "label": "Contribute a public source or idea"
+        },
+        {
+          "url": "packets.html#story-priority-01",
+          "label": "01"
+        },
+        {
+          "url": "packets.html#story-priority-02",
+          "label": "02"
+        },
+        {
+          "url": "packets.html#story-priority-03",
+          "label": "03"
+        },
+        {
+          "url": "packets.html#story-priority-06",
+          "label": "06"
+        },
+        {
+          "url": "packets.html#story-priority-17",
+          "label": "17"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-01",
+          "label": "Contribute a public source or idea"
+        },
+        {
+          "url": "packets.html#story-priority-03",
+          "label": "03"
+        },
+        {
+          "url": "packets.html#story-priority-05",
+          "label": "05"
+        },
+        {
+          "url": "packets.html#story-priority-14",
+          "label": "14"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-03",
+          "label": "Contribute a public source or idea"
+        },
+        {
+          "url": "packets.html#story-priority-07",
+          "label": "07"
+        },
+        {
+          "url": "packets.html#story-priority-13",
+          "label": "13"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-07",
+          "label": "Contribute a public source or idea"
+        },
+        {
+          "url": "packets.html#story-priority-01",
+          "label": "01"
+        },
+        {
+          "url": "packets.html#story-priority-02",
+          "label": "02"
+        },
+        {
+          "url": "packets.html#story-priority-03",
+          "label": "03"
+        },
+        {
+          "url": "packets.html#story-priority-06",
+          "label": "06"
+        },
+        {
+          "url": "packets.html#story-priority-17",
+          "label": "17"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-01",
+          "label": "Contribute a public source or idea"
+        },
+        {
+          "url": "packets.html#story-priority-09",
+          "label": "09"
+        },
+        {
+          "url": "packets.html#story-priority-15",
+          "label": "15"
+        },
+        {
+          "url": "packets.html#story-priority-17",
+          "label": "17"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-09",
+          "label": "Contribute a public source or idea"
+        },
+        {
+          "url": "packets.html#story-priority-03",
+          "label": "03"
+        },
+        {
+          "url": "packets.html#story-priority-10",
+          "label": "10"
+        },
+        {
+          "url": "packets.html#story-priority-17",
+          "label": "17"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-03",
+          "label": "Contribute a public source or idea"
+        },
+        {
+          "url": "packets.html#story-priority-09",
+          "label": "09"
+        },
+        {
+          "url": "packets.html#story-priority-15",
+          "label": "15"
+        },
+        {
+          "url": "packets.html#story-priority-17",
+          "label": "17"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-09",
+          "label": "Contribute a public source or idea"
+        },
+        {
+          "url": "packets.html#story-priority-12",
+          "label": "12"
+        },
+        {
+          "url": "packets.html#story-priority-14",
+          "label": "14"
+        },
+        {
+          "url": "packets.html#story-priority-17",
+          "label": "17"
+        },
+        {
+          "url": "participate.html?issue=PRIORITY-12",
+          "label": "Contribute a public source or idea"
+        }
+      ]
+    },
+    {
+      "id": "worked-scenarios",
+      "title": "Worked decision scenarios",
+      "text": [
+        "$8m estimated routine maintenance minus $1.3–1.6m rejected HUTF offer = $6.4–6.7m difference. This is a comparison, not a measured annual shortfall; other funds and obligations must be reconciled. [S5]",
+        "Historical visits × additional conversion × additional spending. Test purchases and displacement; do not treat scenario output as forecast or tax revenue. [S9]",
+        "Trace request, award, payment and delivered units separately; compare replacement cost and household access. [S8] Detailed nonprofit report."
+      ],
+      "links": [
+        {
+          "url": "nonprofit-funding-continuity.html",
+          "label": "Detailed nonprofit report"
+        }
+      ]
+    },
+    {
+      "id": "coverage-40",
+      "title": "40 research perspectives",
+      "text": [
+        "Qified editorial analysis; not forty independently certified answers for each underlying investigation.",
+        "Convert concerns into source-bounded questions, not votes or findings by popularity.",
+        "Eleven historical clusters, fourteen linked collections; not exhaustive community input.",
+        "Screenshots, prompts, media, testimony and formal agency processes differ; originals not exhaustively recovered.",
+        "Retain event/capture date, publisher, locator and exact edition; raw material stays controlled.",
+        "Separate experience, opinion, allegation, official statement, adopted action, reporting and inference.",
+        "Overlaps and repeated summaries do not add independent evidence.",
+        "No representative polling denominator or authenticated contributor count exists.",
+        "Reopen when records, decisions or corrections arrive; preserve original snapshots; editorial recheck December 2.",
+        "City, County, district, state and federal authorities differ; cooperation does not confer control.",
+        "Trace adopted vote, assigned administration, funding and completed work via S1–S3.",
+        "Distinguish request, appropriation, commitment, cash, reimbursement and audit; eliminate duplicate transfers.",
+        "Seek solicitation, addenda, evaluation, award, change orders and acceptance; missing records do not prove misconduct.",
+        "Trace eligibility, remaining cash, restricted funds, commitments and additional economic outcomes.",
+        "Split pre-existing maintenance and incremental demand; assess lifecycle cost and asset condition.",
+        "Follow adopted plan, adjusted base, increment, reimbursements and public benefit. [S4]",
+        "Measure filled positions, actual resident hires, wage bands, credentials and retention.",
+        "Assess permitting time, access and cost without exposing confidential firm records.",
+        "3,009,507 visits × 5% × $25 ≈ $3.76m; 15% × $40 ≈ $18.06m; 30% × $60 ≈ $54.17m illustrative gross added purchases. Excludes displacement, leakage and cost; not tax revenue or forecast.",
+        "Compare operating costs, condition, cultural access and alternative uses; one appraisal cannot decide public value.",
+        "Track completed and occupied homes, affordability, transport and repairs; planned unit is not occupancy.",
+        "Separate hazard, possible and measured exposure, and health outcomes. No personal exposure claims.",
+        "Test runoff, maintenance and capacity against engineered requirements and measurements.",
+        "Verify actual geography, eligibility, availability and waitlists; funding announcements are not service confirmation.",
+        "Compare injury, incident, staffing and response measures; distinguish testimony and actual recorded events.",
+        "Assess access to school, safe routes, care, family time and intergenerational burden; no child identifiers.",
+        "Use accessible documents and offline options, measure barriers without inferring sensitive traits.",
+        "Preserve institution-owned obligations, project files and access authority through transitions; never publish credentials.",
+        "AI summaries are leads; correct exact dated propositions with originals rather than attack speakers.",
+        "Recover and reuse earlier research, preserve contradictory editions before opening a new case.",
+        "Seek alternative explanations and independent contrary records; ask what would disprove the favored view.",
+        "Cross-check material finance, authority, engineering, social and future effects with explicit limits.",
+        "Prioritize high-impact originals and avoid duplicated retrieval or records requests.",
+        "Watch actual deadlines, irreversible costs and delay risks; monitoring design is not active monitoring.",
+        "Give residents usable records routes and participation choices, not institutional obligations.",
+        "Proportionate remedies: recover a record, correct wording, reconcile funds, remove an access barrier or evaluate independently.",
+        "Illustrative 2027 baseline/pilot, 2029 cost/outcomes review, 2031 durability audit; not commitments.",
+        "Compare short/long cost, rights, family impacts, alternatives, reversibility and opportunity cost.",
+        "Link issue-level evidence, institutions, decisions and outcomes; separate observed state and scenarios. No live import or person-level graph.",
+        "Private registry and routing reference passed 15 synthetic checks; 18 manual collection contribution routes previously checked. No automatic publishing or real-world outcome certification.",
+        "Refresh agency decisions, recover missing authorized originals and verify canonical links; publish dated amendments after review."
+      ],
+      "links": []
+    },
+    {
+      "id": "builds",
+      "title": "Products, options and future buildouts",
+      "text": [
+        "18 investigation packets, signal lineage and JSON registry, offline routing reference and tests, three bounded candidate amendments on decision delivery, information integrity and knowledge continuity. Controlled review products, not live services.",
+        "Living investigations · Dated reports · Twin Pueblo · Contribute. Form prepares a local email draft; you decide whether to send. Not anonymous or confidential; no guaranteed response.",
+        "Public-money outcome tracking, decision-to-delivery evidence, claim corrections, neighborhood/service access and scenario evaluation. Establish denominators, authority, cost and independent outcomes before promotion. Reuse existing intake.",
+        "Start with an approved baseline; compare outcomes, preserve contrary evidence and reopen with new records. No automated collection, scoring, official decisions or personal profiles. Urgent needs belong with competent services, not a research queue.",
+        "Reader action: choose a related collection, describe a dated public question or proposed solution, include original public evidence and state what would change your interpretation. Do not submit private or child information."
+      ],
+      "links": [
+        {
+          "url": "packets.html#follow-the-story",
+          "label": "Living investigations"
+        },
+        {
+          "url": "reports-static.html",
+          "label": "Dated reports"
+        },
+        {
+          "url": "twin.html",
+          "label": "Twin Pueblo"
+        },
+        {
+          "url": "participate.html",
+          "label": "Contribute"
+        }
+      ]
+    },
+    {
+      "id": "research-method",
+      "title": "Research paper: method, findings and limitations",
+      "text": [
+        "Abstract. This longitudinal, qualitative case synthesis evaluates how public questions can generate accountable research without equating online visibility with prevalence. Eleven previously recovered clusters are compared across fourteen existing editorial collections. The observational material is non-random, incomplete and sometimes duplicated. No statistical inference about Pueblo residents is warranted.",
+        "Research question. Can an evidence-controlled workflow convert a concern into a specific, independently checkable proposition, an accountable action option, and an outcome measure without compromising privacy or duplicating work? The evidence supports feasibility of the workflow at a design and offline reference level; it does not establish improvements in public outcomes.",
+        "Method. Unit of analysis: issue-level question, not individual or social account. Recover earlier artifacts; classify source family and claim type; preserve contrary editions; compare against relevant official records; route to existing issue IDs; retain unresolved questions. Treat dates of event, publication, retrieval and legal effect separately. Qualitative clustering is editorial, not a coded random sample. Original screenshots and formal submissions were not completely recovered, so intercoder reliability, prevalence and response rates cannot be calculated.",
+        "Result. The recovered crosswalk joins 11 clusters to 14 collections, retaining 4 collections with no mapping in this subset. Common structural gaps concern actual payments versus authorization, adopted action versus implementation, announcement versus delivered service, and attribution versus proof. These are recurring evidence problems, not estimates of institutional misconduct.",
+        "Counterfactual. A single unverified claim can generate multiple duplicate reports. A source return and versioned correction can avoid that duplication. Conversely, overly aggressive matching could erase genuinely independent observations or suppress adverse evidence. Keep separate original editions, review contested mappings and allow correction or appeal.",
+        "Limits. No original-byte certification, full chat census, current service outcome study or population-level poll. This paper is an editorial synthesis, not a claim of causal improvement. Published records may change; future readers should verify the controlling document."
+      ],
+      "links": []
+    },
+    {
+      "id": "nov19-evidence",
+      "title": "November 19 source refresh and decision checkpoints",
+      "text": [
+        "The City reported on November 3 that its proposed 2027 amount was $490,000 and that $465,500 in 2026 County reimbursement remained outstanding at that time. The $2,203,865 application total exceeds the proposed amount by $1,713,865; the proposed amount covers about 22.2% of requests if applied wholly to that total. This is not a certified grant shortfall or paid amount. Whether reimbursement and fourth-quarter payments occurred remains unresolved. Check recommendations and adopted budget in December–January. City November 3 release.",
+        "The District's September 28 statement confirms the rejected proposal's estimated HUTF range and the routine maintenance estimate. This is the District's account, not an audit of actual expenses or a current IGA balance. Confirm latest board actions and actual work. District update.",
+        "November 11 CPR reporting describes public objections to the listing, a reported $300,000 offer and an appraisal above $1.9 million attributed to City leadership. Neither source is the deed, appraisal or executed sale contract. No final sale verified. Dated news reporting.",
+        "The EPA September 1 proposal and agency document index were checked again. The comment window stated in the announcement ended October 1. The schedule gives an estimated August–November 2026 milestone for an explanation of significant differences; an estimate does not establish issuance. No final revised level verified here. Decision document directory · Agency schedule."
+      ],
+      "links": [
+        {
+          "url": "https://www.pueblo.us/m/newsflash/Home/Detail/5027",
+          "label": "City November 3 release"
+        },
+        {
+          "url": "https://pueblowestmetro.us/1838/Pueblo-West-Road-Funding-Transparency",
+          "label": "District update"
+        },
+        {
+          "url": "https://www.cpr.org/2026/11/11/pueblo-heritage-center-building-future-unclear/",
+          "label": "Dated news reporting"
+        },
+        {
+          "url": "https://www.epa.gov/co-smelter/site-documents-maps",
+          "label": "Decision document directory"
+        },
+        {
+          "url": "https://www.epa.gov/co-smelter/cleanup-schedule-operable-unit",
+          "label": "Agency schedule"
+        }
+      ]
+    },
+    {
+      "id": "evaluation",
+      "title": "Evaluation and implementation packet",
+      "text": [
+        "Measure the process before claiming improvements: percentage of material propositions linked to originals, independent source-family count, percentage of changed claims with correction history, unresolved high-impact issues, time from first identified gap to verified response, and repeated record requests avoided. Set the denominator before each review. A missing denominator is unknown, not zero.",
+        "Compare three options: retain the current manual evidence review; use the existing offline deduplication and routing reference under human review; or integrate a controlled workflow only after privacy, access, review, rollback and outcome tests. No automated public verdict or live intake is proposed for activation here. Costs require actual staff time, infrastructure and maintenance records; no estimated savings are presented as realized savings.",
+        "Review triggers: new budget or payment evidence, board or Council action, source correction, revised agency decision, or a change in permission. Target December 2, 2026 for the next editorial check, not a scheduled monitoring promise. 2027 baseline and approved pilots, 2029 independent outcome comparison, 2031 longevity and discontinuation review are scenario milestones.",
+        "Download structured research packet (JSON) · Download complete research paper (Markdown)"
+      ],
+      "links": [
+        {
+          "url": "community-input-research-packet.json",
+          "label": "Download structured research packet (JSON)"
+        },
+        {
+          "url": "community-input-research-paper.md",
+          "label": "Download complete research paper (Markdown)"
+        }
+      ]
+    },
+    {
+      "id": "sources",
+      "title": "Public original-source routes",
+      "text": [
+        "Selected source routes checked November 18; S2, S5, S6, S8, S9 text and S11 refreshed November 19. Directories support retrieval; not proof of all cases. Private inventory described only in aggregate.",
+        "Back to research library · Propose evidence or correction"
+      ],
+      "links": [
+        {
+          "url": "https://www.pueblo.us/Archive.aspx",
+          "label": "S1 — City archive"
+        },
+        {
+          "url": "https://www.pueblo.us/623/Regular-Meetings",
+          "label": "S2 — Council recordings"
+        },
+        {
+          "url": "https://www.pueblo.us/169/Open-Records-Request-CORA",
+          "label": "S3 — City public records"
+        },
+        {
+          "url": "https://puebloura.org/about/minutes-agendas/",
+          "label": "S4 — PURA minutes and agendas"
+        },
+        {
+          "url": "https://pueblowestmetro.us/1838/Pueblo-West-Road-Funding-Transparency",
+          "label": "S5 — Pueblo West road funding transparency"
+        },
+        {
+          "url": "https://www.epa.gov/newsreleases/epa-proposes-lower-cleanup-level-pueblo-homes",
+          "label": "S6 — EPA September 1 proposal"
+        },
+        {
+          "url": "https://www.epa.gov/co-smelter",
+          "label": "S7 — EPA Colorado Smelter site"
+        },
+        {
+          "url": "https://www.pueblo.us/m/newsflash/home/detail/4996",
+          "label": "S8 — City September 1 CSAC release"
+        },
+        {
+          "url": "https://cpw.state.co.us/sites/default/files/dam/rrtrdzzzvx/item.9_financial-report-fy25-monthly.pdf",
+          "label": "S9 — CPW fiscal year 2024–25 report p.11, August 14, 2025"
+        },
+        {
+          "url": "https://www.pueblo.us/180/Sales-Tax-Division",
+          "label": "S10 — City Sales Tax Division"
+        },
+        {
+          "url": "https://www.cpr.org/2026/11/11/pueblo-heritage-center-building-future-unclear/",
+          "label": "S11 — CPR/KRCC Heritage Center, November 11"
+        },
+        {
+          "url": "packets.html",
+          "label": "Back to research library"
+        },
+        {
+          "url": "participate.html",
+          "label": "Propose evidence or correction"
+        }
+      ]
+    }
+  ],
+  "scenarioModels": {
+    "tourism": {
+      "baseReportedVisits": 3009507,
+      "scenarios": [
+        {
+          "conversion": 0.05,
+          "spend": 25,
+          "grossPurchases": 3761883.75
+        },
+        {
+          "conversion": 0.15,
+          "spend": 40,
+          "grossPurchases": 18057042
+        },
+        {
+          "conversion": 0.3,
+          "spend": 60,
+          "grossPurchases": 54171126
+        }
+      ],
+      "limit": "illustrative gross purchases, not forecast or tax"
+    },
+    "csac": {
+      "requests": 2203865,
+      "proposal": 490000,
+      "difference": 1713865,
+      "proposalRatio": 0.22233666762710058,
+      "limit": "requests versus proposed amount, not actual awards"
+    },
+    "roads": {
+      "routineEstimate": 8000000,
+      "rejectedOfferLow": 1300000,
+      "rejectedOfferHigh": 1600000,
+      "differenceLow": 6400000,
+      "differenceHigh": 6700000,
+      "limit": "comparison of stated amounts, not established deficit"
+    }
+  },
+  "limitations": [
+    "No population inference, full original evidence census or independently measured outcomes.",
+    "Historical source dates retained; CPW PDF visual recheck unavailable November 19.",
+    "No automatic intake, live Twin sync, or canonical issue creation."
+  ],
+  "releaseState": "review_candidate",
+  "reviewTriggers": [
+    "new signed decisions",
+    "budget or reimbursement changes",
+    "source corrections",
+    "final remedy",
+    "privacy or rights changes"
+  ]
+}
