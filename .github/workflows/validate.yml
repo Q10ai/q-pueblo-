@@ -76,6 +76,7 @@ jobs:
           node scripts/check-evidence-desk.mjs
           node scripts/check-packet-reports.mjs
           node scripts/check-nov18-research.mjs
+          node scripts/check-2027-transition.mjs
           node scripts/check-launch.mjs
           node scripts/check-experience.mjs
           node scripts/check-release-parity.mjs
