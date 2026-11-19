@@ -1,0 +1,347 @@
+{
+  "schema": "qp-living-investigation-v1",
+  "id": "qp-pueblo-boulevard-pura-2026",
+  "title": "Pueblo Boulevard’s $1.76 million investment: who repays the public fund?",
+  "slug": "pueblo-boulevard-pura-repayment",
+  "route": "pueblo-boulevard-pura-repayment.html",
+  "as_of": "2026-11-18",
+  "review_due": "2026-12-02",
+  "status": "open",
+  "summary": "Council’s November 9 funding approval is reported as 6–1. PURA’s 2025 audit records $14.284 million due to the City, including $14.084 million in two 2017 notes. The new reimbursement agreement’s enforceable terms remain to be established.",
+  "coverage": [
+    {
+      "number": 1,
+      "heading": "What happened",
+      "finding": "The announcement describes a permanent traffic signal at Mirror Avenue and supporting roadway, medians, sidewalks, curbs, gutters, markings and drainage. Local reporting and a meeting summary support the funding approval on November 9. [S1–S3]"
+    },
+    {
+      "number": 2,
+      "heading": "What the public money does",
+      "finding": "The announced half-cent allocation is $1,756,383.40. It is an authorization, not a verified cash disbursement or final construction cost. [S1–S3]"
+    },
+    {
+      "number": 3,
+      "heading": "The two decisions",
+      "finding": "The secondary meeting summary reports S9 (funding) and S10 (reimbursement agreement) each passing 6–1. The recorded dissent on S10 concerned uncertainty about yearly repayment; signed instruments and official roll calls remain requested. [S2,S11]"
+    },
+    {
+      "number": 4,
+      "heading": "October versus November",
+      "finding": "The earlier October 26 agenda snapshot is preserved: $1,756,383.40 half-cent, $32,561.60 Acero signal deposit, $19,332 Laredo signal deposit and $250,000 Martinez contribution total $2,058,277. Do not assume the November amendments retained every line. [S6]"
+    },
+    {
+      "number": 5,
+      "heading": "Construction and contingency",
+      "finding": "The October proposed C&D Electric contract of $1,658,277 and $400,000 contingency sum to $2,058,277. The November meeting recap also names the $1,658,277 contract. Request final award, change orders and invoices rather than adding a reimbursement agreement as another construction cost. [S2,S6]"
+    },
+    {
+      "number": 6,
+      "heading": "What PURA is",
+      "finding": "PURA is a City component unit with redevelopment functions. The City and authority are related, but their budget and cash obligations are not interchangeable. [S4,S7]"
+    },
+    {
+      "number": 7,
+      "heading": "How TIF works",
+      "finding": "Tax increment financing allocates qualifying tax revenue above a defined baseline under a district plan and agreements. Future revenue is uncertain, can be restricted and may already secure other obligations. [S4,S7]"
+    },
+    {
+      "number": 8,
+      "heading": "Who bears the initial risk",
+      "finding": "The announced City-first financing uses public capital now. If reimbursement arrives later, the fund loses access to that capital in the interim. If it is conditional and forecast revenue falls short, an unrecovered balance may remain; the contract determines actual risk allocation. [S1,S4]"
+    },
+    {
+      "number": 9,
+      "heading": "Is repayment guaranteed?",
+      "finding": "No verified minimum annual payment, maturity, collateral, priority, guarantor, deficiency remedy or interest term is available for the new agreement. Absence of retrieved terms does not establish absence of protections. [S11]"
+    },
+    {
+      "number": 10,
+      "heading": "The $14 million question",
+      "finding": "Note 6 of PURA’s 2025 audit shows $12,200,000 Convention Center expansion, $1,884,307 Gateway Plaza and $200,000 HARP Boathouse due to the City, totaling $14,284,307. This is a dated accounting balance, not a declaration of default. [S4]"
+    },
+    {
+      "number": 11,
+      "heading": "Convention Center historical note",
+      "finding": "The 2017 $12.2 million note matures December 31, 2027, with an extension right to December 31, 2037. The audit describes 3% annual interest from 2023 and pledged convention center property. Actual interest receipts, lien priority and realizable collateral value require separate records. [S4]"
+    },
+    {
+      "number": 12,
+      "heading": "Gateway Plaza historical note",
+      "finding": "The second 2017 note authorized $2.2 million; the outstanding recorded balance at year-end 2025 is $1,884,307. It is noninterest-bearing and has the same stated maturity and extension provision. [S4]"
+    },
+    {
+      "number": 13,
+      "heading": "Principal versus interest",
+      "finding": "The two 2017 principal balances remained unchanged during 2025. That does not establish no interest was paid, no payments ever occurred, or that either note was then past due. [S4]"
+    },
+    {
+      "number": 14,
+      "heading": "Boathouse and separate uncertainty",
+      "finding": "A $200,000 Boathouse reimbursement was added in 2025. The audit also describes a separate $112,800 2019 note not recorded because repayment was uncertain. Do not add that amount to the audited total without separate labeling. [S4]"
+    },
+    {
+      "number": 15,
+      "heading": "PURA financial picture",
+      "finding": "2025 total liabilities: $141,436,006; revenues: $21,875,389; expenses: $26,713,450; net position: −$71,918,294. These are accrual-accounting figures and do not establish insolvency. District cash, pledged revenues and debt schedules are the relevant payment tests. [S4]"
+    },
+    {
+      "number": 16,
+      "heading": "District boundaries matter",
+      "finding": "The audit reports district-specific restrictions. Identify the parcels, applicable urban renewal plan, captured tax types, termination date and legally available net increment for the new project before assuming any authority-wide revenue is available. [S4,S11]"
+    },
+    {
+      "number": 17,
+      "heading": "What changed in February",
+      "finding": "Ordinance 11125 extends eligibility through economic catalyst, leakage prevention and placemaking provisions; it also expands the definition of primary job to employment resulting from economic catalyst projects. The legal definition is broader than the traditional export-oriented meaning. [S5]"
+    },
+    {
+      "number": 18,
+      "heading": "The 15% limit",
+      "finding": "The aggregate annual expenditure ceiling for those three categories is 15% of January 1 uncommitted fund balance, not 15% of annual collections. Request the certified opening balance, classification of this project and running expenditure totals. [S5]"
+    },
+    {
+      "number": 19,
+      "heading": "What is a primary job?",
+      "finding": "Traditional export-oriented work can bring outside income into Pueblo; the amended legal category also includes qualifying catalyst-project employment. Evaluate wages, full-time equivalents, benefits, local hiring and net external income instead of treating a job label as a benefit. [S5]"
+    },
+    {
+      "number": 20,
+      "heading": "Community signal: South Side",
+      "finding": "Visible comments support improving South Side business access, raise North Side location advantages and express interest in additional retail. These comments are selectively visible, not representative polling or evidence of signed tenants. [S12]"
+    },
+    {
+      "number": 21,
+      "heading": "Community signal: repayment",
+      "finding": "A comment asks whether new money will be repaid in light of older receivables. That question is supported by audited outstanding balances; the claim that PURA cannot repay the entire amount is not established by the screenshots or the balance alone. [S4,S12]"
+    },
+    {
+      "number": 22,
+      "heading": "St. Charles comparison",
+      "finding": "Residents ask why industrial infrastructure should not receive similar attention. The existing Lime Road/St. Charles research is a relevant comparator, not proof that the same funding or district terms apply. Obtain current infrastructure designs, parcels, capacity and industrial commitments. [S8,S10]"
+    },
+    {
+      "number": 23,
+      "heading": "North versus South",
+      "finding": "Compare measured traffic counts, roadway access and capacity, household travel times, existing retail and available land. Do not infer superior return from an intersection name or unsupported traffic claims. [S12; proposed analysis]"
+    },
+    {
+      "number": 24,
+      "heading": "A different financing model",
+      "finding": "PURA describes Dillon Drive as developer-fronted qualifying public improvements followed by increment-based reimbursement. That model shifts upfront capital exposure differently from a City advance. Contracts and projects differ, so compare lifecycle costs and required incentives before selecting either. [S9]"
+    },
+    {
+      "number": 25,
+      "heading": "Opportunity cost",
+      "finding": "A dollar committed to road work cannot simultaneously fund another mutually exclusive project. Compare benefits from road safety, retail access, industrial readiness and retaining capital. Do not assume the restricted half-cent fund can freely cover unrelated General Fund expenses. [S5; analysis]"
+    },
+    {
+      "number": 26,
+      "heading": "Child and family impact",
+      "finding": "Potential gains include safer walking routes, less travel and better household income; construction disruption and unsafe crossings could create temporary burdens. Measure school routes, ADA crossings, crash exposure, travel times and household impacts; none are quantified yet. [Q assessment]"
+    },
+    {
+      "number": 27,
+      "heading": "Taxing entities and schools",
+      "finding": "Evaluate district tax allocation and revenue-sharing agreements with affected taxing entities. Do not infer an exact school budget loss or assume taxes otherwise generated would be identical without development. [S4; Q assessment]"
+    },
+    {
+      "number": 28,
+      "heading": "EE: lifecycle engineering",
+      "finding": "Track stormwater capacity, accessible sidewalk grades, traffic signal uptime, snow clearance, pavement condition, energy use and maintenance owner. Cost approval is not commissioning or lifecycle performance. [Q proposed metrics]"
+    },
+    {
+      "number": 29,
+      "heading": "T2Y: household exposure",
+      "finding": "Measure access to essential retail, travel cost, wages, transit and pedestrian access separately from City revenue. A successful tax recovery does not automatically mean every neighborhood gained. [Q proposed metrics]"
+    },
+    {
+      "number": 30,
+      "heading": "Digital twin",
+      "finding": "Add georeferenced project limits, parcel IDs, road network, traffic counts, utility capacity, tax district boundaries and construction milestones when official datasets arrive. Do not substitute approximate boundaries for a legal district. [Q design]"
+    },
+    {
+      "number": 31,
+      "heading": "Shadow model",
+      "finding": "Compare baseline no-build, City-fronted TIF repayment, developer-fronted reimbursement and phased industrial works; use matched assumptions for traffic and demand. Outputs are scenarios, not forecasts or a finding of misconduct. [Q design]"
+    },
+    {
+      "number": 32,
+      "heading": "Event horizons",
+      "finding": "Track 2026 approval and execution, 2027 historical note maturity, 2031 tax authorization horizon in Ordinance 11125 and potential 2037 historical note extension. Verify the new agreement’s own expiration; never reuse old-note maturity for new obligations. [S4,S5]"
+    },
+    {
+      "number": 33,
+      "heading": "Stress test",
+      "finding": "Model annual eligible repayment after senior obligations, with a shortfall and delayed start. Illustrative recovery = min(advance, annual payment × (1 − shortfall) × years); the tool below excludes interest, inflation and maintenance. [Q model]"
+    },
+    {
+      "number": 34,
+      "heading": "Break-even test",
+      "finding": "At zero interest and six equal annual payments, $1,756,383.40 requires about $292,730.57 per year. If the assumed annual payment is $150,000 and shortfall is 20%, six years recover $720,000 and leave $1,036,383.40. Neither is a PURA forecast. [Q calculation]"
+    },
+    {
+      "number": 35,
+      "heading": "Risk absorption and safeguards",
+      "finding": "Consider a verified repayment waterfall, annual reporting, appropriated reserve where lawful, lien/security where appropriate, staged draws and explicit remedies. Evaluate enforceability and cost before adopting; no claim these already exist. [Q options]"
+    },
+    {
+      "number": 36,
+      "heading": "Future industrial leap",
+      "finding": "Compare power, water, wastewater, freight, fiber, workforce training and automation readiness for industrial sites. Build shared infrastructure only against credible demand, capacity and maintenance estimates; small phased investment preserves flexibility. [Q options]"
+    },
+    {
+      "number": 37,
+      "heading": "Who should provide evidence",
+      "finding": "City Clerk: enacted S9/S10 and exhibits; City Finance: fund opening balance and cash ledger; Public Works: award, changes, acceptance and maintenance; PURA: district plan, pledged increment and repayment schedule; affected taxing entities: allocation agreements. [S7,S11; Q workflow]"
+    },
+    {
+      "number": 38,
+      "heading": "Public scorecard",
+      "finding": "Track authorized, contracted, invoiced, disbursed, eligible for reimbursement, collected, outstanding and written-off independently. Track net new jobs, wage bands, safety outcomes and private investment with baseline and date. [Q design]"
+    },
+    {
+      "number": 39,
+      "heading": "Correction, TTL and record handling",
+      "finding": "This edition is dated November 18, 2026; review due December 2, 2026, or sooner on new signed records. Retain the October snapshot; append revisions with evidence dates. Public comments are signals and no private profiles or images are republished. [Q editorial protocol]"
+    },
+    {
+      "number": 40,
+      "heading": "Q determination and crossovers",
+      "finding": "The public improvement case and repayment case are separate. Keep the issue open until expenditure, agreement and outcomes are reconciled. Link to half-cent eligibility, industrial readiness, budget exposure, digital twin and public records pathways. No conclusion of default, wrongdoing or guaranteed recovery is supported. [S1–S13; Q synthesis]"
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "City announcement reproduced by a resident, November 2026",
+      "scope": "User-supplied text; public announcement claims, not an executed instrument",
+      "url": null
+    },
+    {
+      "id": "S2",
+      "title": "November 9 City Council meeting summary",
+      "scope": "Secondary meeting summary: S9 and S10 each passed 6–1",
+      "url": "https://www.openpublica.com/meetings/pueblo-colorado-city-council-2026-11-09-6af3b4ac9ae107d1630ccc90"
+    },
+    {
+      "id": "S3",
+      "title": "November 14 local reporting, syndicated",
+      "scope": "Funding amount and vote; cites City",
+      "url": "https://www.aol.com/articles/pueblo-boulevard-roadway-project-gets-033151000.html"
+    },
+    {
+      "id": "S4",
+      "title": "PURA financial statements, year ended December 31, 2025",
+      "scope": "Primary audited balances: Note 6, printed pp. 28–30; MD&A pp. iii–v",
+      "url": "https://puebloura.org/wp-content/uploads/2026/07/2025-financial-statements-pueblo-urban-renewal-authority-final.pdf"
+    },
+    {
+      "id": "S5",
+      "title": "Ordinance 11125, adopted February 23, 2026",
+      "scope": "Primary adopted ordinance; sections 1–3",
+      "url": "https://mcclibraryfunctions.azurewebsites.us/api/ordinanceDownload/15335/1409892/pdf"
+    },
+    {
+      "id": "S6",
+      "title": "October 26 agenda research snapshot",
+      "scope": "Existing Q Pueblo dated analysis; retains proposed sources and uses",
+      "url": "report-pueblo-boulevard-agenda.html"
+    },
+    {
+      "id": "S7",
+      "title": "PURA financial information and board materials",
+      "scope": "Primary issuer directory, contact and meeting materials",
+      "url": "https://puebloura.org/about/"
+    },
+    {
+      "id": "S8",
+      "title": "St. Charles and Lime Road research",
+      "scope": "Existing dated Q Pueblo report; not proof of a new commitment",
+      "url": "report-lime-road-costs.html"
+    },
+    {
+      "id": "S9",
+      "title": "Dillon Drive redevelopment description",
+      "scope": "PURA issuer description of developer-fronted infrastructure model",
+      "url": "https://puebloura.org/projects/dillon-drive/"
+    },
+    {
+      "id": "S10",
+      "title": "PURA board minutes and agendas",
+      "scope": "Primary document discovery; exact St. Charles Phase 2 agreement not verified in this edition",
+      "url": "https://puebloura.org/about/minutes-agendas/"
+    },
+    {
+      "id": "S11",
+      "title": "City Council meeting archive",
+      "scope": "Controlling records to request; executed November agreement not retrieved",
+      "url": "https://pueblo.granicus.com/ViewPublisher.php?view_id=4"
+    },
+    {
+      "id": "S12",
+      "title": "Citizen discussion screenshots",
+      "scope": "Three supplied images, overlapping comments; filtered qualitative signals only; names and images withheld",
+      "url": null
+    },
+    {
+      "id": "S13",
+      "title": "Half-cent historical research",
+      "scope": "Existing dated Q Pueblo report",
+      "url": "report-half-cent-2026.html"
+    }
+  ],
+  "amounts": {
+    "authorization_reported": 1756383.4,
+    "construction_contract_reported": 1658277,
+    "october_proposed_total": 2058277,
+    "october_proposed_contingency": 400000,
+    "city_due_2025_12_31": 14284307,
+    "convention_center": 12200000,
+    "gateway_plaza": 1884307,
+    "boathouse": 200000
+  },
+  "open_records": [
+    "Executed S9 and S10 with all exhibits, final roll call and staff redline",
+    "Dollar amount eligible for reimbursement, payment schedule, final maturity, interest, security, priority and shortfall remedies",
+    "District plan, tax base and increment forecast, current pledge commitments and remaining capture period",
+    "Certified January 1 uncommitted fund balance and 2026 category-specific expenditure ledger",
+    "Contract award, contributions received, invoices, change orders, construction acceptance and maintenance owner",
+    "2026 principal and interest receipts, loan extension or collateral actions for the historical notes",
+    "St. Charles/Lime Road project costs, utility capacity, private commitments, wage and job projections",
+    "Traffic counts, crashes, pedestrian accessibility baseline and post-construction outcomes",
+    "Affected taxing-entity agreements, including any school revenue-sharing terms"
+  ],
+  "links": [
+    "report-pueblo-boulevard-agenda.html",
+    "report-half-cent-2026.html",
+    "report-lime-road-costs.html",
+    "report-budget-2026.html",
+    "twin.html",
+    "follow-money.html"
+  ],
+  "model": {
+    "formula": "min(advance, annual_payment * (1-shortfall_percent/100) * years)",
+    "assumptions": "Illustrative; excludes interest, inflation, lifecycle costs and timing variations",
+    "example": {
+      "annual_payment": 150000,
+      "shortfall_percent": 20,
+      "years": 6,
+      "recovered": 720000,
+      "unrecovered": 1036383.4
+    }
+  },
+  "amendments": [
+    {
+      "date": "2026-11-18",
+      "reason": "New living edition; preserve October agenda snapshot",
+      "evidence": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S12"
+      ]
+    }
+  ]
+}
