@@ -1,0 +1,370 @@
+{
+  "schema": "qp-priority-navigation-v1",
+  "asOf": "2026-11-19",
+  "status": "editorial candidate; association navigation, not new factual findings",
+  "sources": [
+    "data/qp-current-reports.json",
+    "data/qp-three-hop-2026-11-13.json",
+    "index.html",
+    "reports-static.html"
+  ],
+  "method": "Editorial impact order; research depth separately sorted by source entries then claim entries; unknown living-paper depth not scored.",
+  "groups": [
+    {
+      "id": "fiscal",
+      "title": "1 · Budgets, debt & essential services",
+      "reason": "Highest cross-system exposure: public obligations, service continuity, staffing and financial oversight.",
+      "routes": [
+        "report-county-budget-2027.html",
+        "report-budget-2026.html",
+        "report-city-mill-levy-2026.html",
+        "report-county-priorities-2026.html",
+        "council-attorney-funding.html",
+        "county-financial-transparency.html",
+        "county-public-financial-review.html",
+        "county-audit-cost-and-delay.html",
+        "county-commissioner-compensation.html",
+        "county-pension-and-workforce.html",
+        "nonprofit-funding-continuity.html",
+        "report-csac-2027.html",
+        "pueblo-boulevard-pura-repayment.html",
+        "report-pueblo-boulevard-agenda.html",
+        "follow-money.html"
+      ],
+      "issues": [
+        "fisc-001",
+        "fisc-002"
+      ],
+      "entities": [
+        "ent-9fc831fd79fc",
+        "ent-eba66093d2f4",
+        "ent-1d07f2b59d68",
+        "ent-49eacbe08379"
+      ]
+    },
+    {
+      "id": "safety",
+      "title": "2 · Public safety, jail, health & recovery",
+      "reason": "Life safety, detention and treatment capacity, emergency preparedness and recovery costs.",
+      "routes": [
+        "surveillance-accountability.html",
+        "report-aspen-recovery.html",
+        "report-aspen-recovery-costs.html",
+        "regional-assurance.html",
+        "report-pueblo-flood-history.html"
+      ],
+      "issues": [
+        "safe-005",
+        "safe-006",
+        "safe-007",
+        "reg-025"
+      ],
+      "entities": [
+        "ent-9fc831fd79fc",
+        "ent-0f4ec945e91d",
+        "ent-715e2dc6a40e",
+        "ent-d95e5fcc8803"
+      ]
+    },
+    {
+      "id": "utilities",
+      "title": "3 · Energy, water & household affordability",
+      "reason": "Utility costs, water and sanitation capacity; proposed rate decisions are separate from approved rates.",
+      "routes": [
+        "report-black-hills-rate-case-2026.html",
+        "energy-research-paper-2026.html",
+        "report-water-budget-evidence.html",
+        "report-wastewater-2026.html"
+      ],
+      "issues": [
+        "hous-001",
+        "env-002",
+        "env-003",
+        "reg-021",
+        "case-wastewater"
+      ],
+      "entities": [
+        "ent-e9982e089c2a",
+        "ent-ff89f261999c",
+        "ent-9528c16c953c",
+        "ent-2bf079571fbe",
+        "ent-c88e6d5dc564"
+      ]
+    },
+    {
+      "id": "economy",
+      "title": "4 · Jobs, industry & public investment",
+      "reason": "Regional employment, incentives, project milestones and realized public value.",
+      "routes": [
+        "report-half-cent-2026.html",
+        "project-falcon.html",
+        "report-lime-road-costs.html"
+      ],
+      "issues": [
+        "reg-005",
+        "reg-007",
+        "econ-003",
+        "econ-005"
+      ],
+      "entities": [
+        "ent-58363d81e2d8",
+        "ent-b093130ce0eb",
+        "ent-e3a406d99dc5",
+        "ent-eba66093d2f4"
+      ]
+    },
+    {
+      "id": "housing",
+      "title": "5 · Housing, poverty & family stability",
+      "reason": "Access to housing and basic needs, permits, affordability and actual service delivery.",
+      "routes": [
+        "report-housing-pipeline.html",
+        "report-permits-jurisdiction.html",
+        "report-food-assistance.html"
+      ],
+      "issues": [
+        "hous-002",
+        "hous-003",
+        "hous-005",
+        "hous-006"
+      ],
+      "entities": [
+        "ent-7866992fbe98",
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ]
+    },
+    {
+      "id": "governance",
+      "title": "6 · Governance, authority & public records",
+      "reason": "Decision rights, independent review, legal boundaries, transparency and 2027 office transitions.",
+      "routes": [
+        "governance.html",
+        "who-governs.html",
+        "report-records-request.html",
+        "regional-fragmentation.html"
+      ],
+      "issues": [
+        "reg-005",
+        "gov-003"
+      ],
+      "entities": [
+        "ent-eba66093d2f4",
+        "ent-e61ec276ed94",
+        "ent-9fc831fd79fc",
+        "ent-b9c587474e10"
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "title": "7 · Infrastructure & transportation",
+      "reason": "Capital obligations, roads, rail, airport and intergovernmental service dependencies.",
+      "routes": [
+        "report-pueblo-boulevard-agenda.html",
+        "pueblo-boulevard-pura-repayment.html",
+        "report-lime-road-costs.html"
+      ],
+      "issues": [
+        "infr-009"
+      ],
+      "entities": [
+        "ent-6a552f625383",
+        "ent-33459c0d6f2f",
+        "ent-49eacbe08379",
+        "ent-9528c16c953c"
+      ]
+    },
+    {
+      "id": "education",
+      "title": "8 · Education, children & community services",
+      "reason": "School access, workforce preparation, child effects and institutional oversight.",
+      "routes": [
+        "report-d60-preschool-2026.html",
+        "learn-pueblo.html"
+      ],
+      "issues": [
+        "reg-028"
+      ],
+      "entities": [
+        "ent-9583a0236568",
+        "ent-36144c80645b",
+        "ent-fb819af4fdb7",
+        "ent-27b345efcd89"
+      ]
+    },
+    {
+      "id": "culture",
+      "title": "9 · Museums, arts, heritage & community life",
+      "reason": "Preservation, funding, ownership, education and long-term cultural options.",
+      "routes": [
+        "museums-culture.html",
+        "museums-culture-research.html",
+        "museums-culture-tools.html"
+      ],
+      "issues": [
+        "reg-009"
+      ],
+      "entities": [
+        "ent-1d07f2b59d68",
+        "ent-eba66093d2f4",
+        "ent-df5480d2516f"
+      ]
+    },
+    {
+      "id": "future",
+      "title": "10 · AI readiness, digital twin & regional transition",
+      "reason": "Build literacy, regional coordination and human-governed decision tools; no live twin implied.",
+      "routes": [
+        "pueblo-ai-readiness.html",
+        "regional-financial-transition.html",
+        "regional-ai-compatible-packets.html",
+        "regional-transition-and-leap.html",
+        "regional-transition-tools.html",
+        "twin.html"
+      ],
+      "issues": [
+        "work-012"
+      ],
+      "entities": [
+        "ent-b9c587474e10",
+        "ent-27b345efcd89",
+        "ent-805487266d4d"
+      ]
+    }
+  ],
+  "structuredReports": [
+    {
+      "id": "QP-20261114-FOOD-ASSISTANCE",
+      "slug": "food-assistance",
+      "sourceEntries": 15,
+      "claimEntries": 16,
+      "sourceChecked": "2026-11-15"
+    },
+    {
+      "id": "QP-SOC-2027-003",
+      "slug": "csac-2027",
+      "sourceEntries": 3,
+      "claimEntries": 4,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-FIN-2026-001",
+      "slug": "budget-2026",
+      "sourceEntries": 3,
+      "claimEntries": 4,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-20261114-COUNTY-BUDGET-2027",
+      "slug": "county-budget-2027",
+      "sourceEntries": 2,
+      "claimEntries": 6,
+      "sourceChecked": "2026-11-14"
+    },
+    {
+      "id": "QP-20261114-D60-PRESCHOOL-2026",
+      "slug": "d60-preschool-2026",
+      "sourceEntries": 2,
+      "claimEntries": 5,
+      "sourceChecked": "2026-11-14"
+    },
+    {
+      "id": "QP-MONEY-2026-002",
+      "slug": "half-cent-2026",
+      "sourceEntries": 2,
+      "claimEntries": 4,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-QIFY-2026-007",
+      "slug": "aspen-recovery",
+      "sourceEntries": 2,
+      "claimEntries": 3,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-QIFY-2026-004",
+      "slug": "permits-jurisdiction",
+      "sourceEntries": 2,
+      "claimEntries": 3,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-QIFY-2026-006",
+      "slug": "housing-pipeline",
+      "sourceEntries": 2,
+      "claimEntries": 3,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-QIFY-2026-009",
+      "slug": "water-budget-evidence",
+      "sourceEntries": 2,
+      "claimEntries": 3,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-QIFY-2026-012",
+      "slug": "pueblo-boulevard-agenda",
+      "sourceEntries": 1,
+      "claimEntries": 5,
+      "sourceChecked": "2026-11-10"
+    },
+    {
+      "id": "QP-20261114-ASPEN-RECOVERY-COSTS",
+      "slug": "aspen-recovery-costs",
+      "sourceEntries": 1,
+      "claimEntries": 5,
+      "sourceChecked": "2026-11-14"
+    },
+    {
+      "id": "QP-CITY-TAX-2026-005",
+      "slug": "city-mill-levy-2026",
+      "sourceEntries": 1,
+      "claimEntries": 4,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-COUNTY-2026-004",
+      "slug": "county-priorities-2026",
+      "sourceEntries": 1,
+      "claimEntries": 4,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-QIFY-2026-005",
+      "slug": "wastewater-2026",
+      "sourceEntries": 1,
+      "claimEntries": 3,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-QIFY-2026-010",
+      "slug": "records-request",
+      "sourceEntries": 1,
+      "claimEntries": 3,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-QIFY-2026-008",
+      "slug": "lime-road-costs",
+      "sourceEntries": 1,
+      "claimEntries": 3,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-QIFY-2026-011",
+      "slug": "pueblo-flood-history",
+      "sourceEntries": 1,
+      "claimEntries": 3,
+      "sourceChecked": "2026-11-09"
+    }
+  ],
+  "coverage": {
+    "issues": 211,
+    "entity_labels": 56,
+    "associations": 456,
+    "unresolved_groups": 15,
+    "unmapped_issues": 26
+  }
+}
