@@ -20,6 +20,7 @@ jobs:
           node --check scripts/check-live-ai-security.mjs
           node --test scripts/check-live-ai-security.mjs
           node scripts/check-live-ai-public-boundary.mjs
+          python3 scripts/check-qp-approval-quota.py
           node -e "const r=require('./public/_routes.json'); if(r.version!==1||r.include.length!==2||r.include.includes('/*')) process.exit(1)"
       - name: Reject accidental environment secrets
         run: |
