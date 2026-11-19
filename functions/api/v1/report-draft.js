@@ -10,21 +10,20 @@ const RESPONSE_HEADERS = Object.freeze({
 });
 const json = (status, value) => new Response(JSON.stringify(value), { status, headers: RESPONSE_HEADERS });
 const MAX_BODY = 12000;
+const MAX_UPSTREAM = 65536;
+const MAX_APPROVAL_MS = 24 * 60 * 60 * 1000;
 const MAX_SOURCES = 4;
 const MAX_DAILY = 8;
 const MAX_MONTHLY = 60;
 const MODEL = "gpt-4.1-mini"; // Cost/model change requires reviewed code amendment.
+// Single SQLite write: a receipt is consumed even when the provider fails.
 const QUOTA_SQL = `
-INSERT INTO qp_api_quota (id, day_utc, month_utc, day_attempts, month_attempts)
-VALUES ('operator_drafts', ?1, ?2, 1, 1)
-ON CONFLICT(id) DO UPDATE SET
-  day_utc = excluded.day_utc,
-  month_utc = excluded.month_utc,
-  day_attempts = CASE WHEN qp_api_quota.day_utc = excluded.day_utc THEN qp_api_quota.day_attempts + 1 ELSE 1 END,
-  month_attempts = CASE WHEN qp_api_quota.month_utc = excluded.month_utc THEN qp_api_quota.month_attempts + 1 ELSE 1 END
-WHERE (qp_api_quota.day_utc != excluded.day_utc OR qp_api_quota.day_attempts < ?3)
-  AND (qp_api_quota.month_utc != excluded.month_utc OR qp_api_quota.month_attempts < ?4)
-RETURNING day_attempts, month_attempts
+INSERT INTO qp_api_attempts (approval_digest, day_utc, month_utc)
+SELECT ?1, date('now'), strftime('%Y-%m','now')
+WHERE (SELECT COUNT(*) FROM qp_api_attempts WHERE day_utc = date('now')) < ?2
+ AND (SELECT COUNT(*) FROM qp_api_attempts WHERE month_utc = strftime('%Y-%m','now')) < ?3
+ON CONFLICT(approval_digest) DO NOTHING
+RETURNING approval_digest
 `;
 function safeText(value, max) {
   return typeof value === "string" && value.length > 0 && value.length <= max
@@ -45,6 +44,8 @@ async function constantTimeTokenMatch(candidate, expected) {
 function acceptedPayload(body) {
   if (!body || typeof body !== "object" || Array.isArray(body)
     || body.public_only !== true || body.human_source_approval !== true) return null;
+  if (Object.keys(body).some(k => !["public_only","human_source_approval","question","sources","approval_id"].includes(k))) return null;
+  if (typeof body.approval_id !== "string" || !/^[A-Za-z0-9_-]{16,80}$/.test(body.approval_id)) return null;
   const question = safeText(body.question, 500);
   if (!question || !Array.isArray(body.sources) || body.sources.length < 1
     || body.sources.length > MAX_SOURCES) return null;
@@ -52,6 +53,7 @@ function acceptedPayload(body) {
   const ids = new Set();
   for (const source of body.sources) {
     if (!source || typeof source !== "object" || Array.isArray(source)) return null;
+    if (Object.keys(source).some(k => !["id","title","excerpt","url"].includes(k))) return null;
     const id = safeText(source.id, 45);
     const title = safeText(source.title, 140);
     const excerpt = safeText(source.excerpt, 1800);
@@ -69,7 +71,7 @@ function acceptedPayload(body) {
   }
   return { question, sources };
 }
-async function readLimitedBody(request) {
+async function readLimitedBody(request, max = MAX_BODY) {
   if (!request.body) return "";
   const reader = request.body.getReader();
   const chunks = [];
@@ -79,7 +81,7 @@ async function readLimitedBody(request) {
       const part = await reader.read();
       if (part.done) break;
       size += part.value.byteLength;
-      if (size > MAX_BODY) {
+      if (size > max) {
         await reader.cancel();
         return null;
       }
@@ -114,6 +116,18 @@ export async function onRequestPost({ request, env }) {
     || !env.QP_USAGE_DB || typeof env.QP_USAGE_DB.prepare !== "function") {
     return json(503, { status: "CONFIG_INCOMPLETE", ai_agents_live: false });
   }
+  // Operator calls are server-to-server. No browser origin/cookie is accepted.
+  if (request.headers.has("Origin") || request.headers.has("Cookie") || request.headers.has("Sec-Fetch-Site")) {
+    return json(403, { status: "BROWSER_REQUEST_DENIED" });
+  }
+  const approvalDigest = env.QP_APPROVED_PAYLOAD_SHA256;
+  const expiryRaw = env.QP_APPROVED_PAYLOAD_EXPIRES_UTC;
+  const expiry = typeof expiryRaw === "string" && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/.test(expiryRaw)
+    ? Date.parse(expiryRaw) : NaN;
+  if (typeof approvalDigest !== "string" || !/^[a-f0-9]{64}$/.test(approvalDigest)
+    || !Number.isFinite(expiry) || expiry <= Date.now() || expiry - Date.now() > MAX_APPROVAL_MS) {
+    return json(503, { status: "APPROVAL_NOT_CONFIGURED_OR_EXPIRED" });
+  }
   const auth = request.headers.get("Authorization") || "";
   const candidate = auth.startsWith("Bearer ") ? auth.slice(7) : "";
   // No cookies, browser-based admin tokens, or cross-origin calls.
@@ -136,14 +150,20 @@ export async function onRequestPost({ request, env }) {
   const payload = acceptedPayload(value);
   if (!payload) return json(422, { status: "PUBLIC_EVIDENCE_REQUIRED" });
 
-  const now = new Date();
-  const day = now.toISOString().slice(0, 10);
-  const month = day.slice(0, 7);
-  // Atomic D1 write; no D1 or failed quota write => no OpenAI call.
+  // Approval must originate outside the request, covering its exact UTF-8 bytes.
+  // Changing any question, evidence, or approval ID invalidates authorization.
+  const hash = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(raw));
+  const digest = Array.from(new Uint8Array(hash), b => b.toString(16).padStart(2,"0")).join("");
+  if (digest !== approvalDigest || expiry <= Date.now()) {
+    return json(403, { status: "PAYLOAD_NOT_APPROVED" });
+  }
+  // SQLite calculates UTC bucket at reservation time; never reset a shared counter.
+  // Missing DB or failed reservation means no provider call.
   try {
     const receipt = await env.QP_USAGE_DB.prepare(QUOTA_SQL)
-      .bind(day, month, MAX_DAILY, MAX_MONTHLY).first();
-    if (!receipt) return json(429, { status: "DAILY_OR_MONTHLY_QUOTA_REACHED" });
+      .bind(digest, MAX_DAILY, MAX_MONTHLY).first();
+    if (!receipt) return json(429, { status: "QUOTA_OR_APPROVAL_ALREADY_USED" });
+    if (receipt.approval_digest !== digest) return json(503, { status: "USAGE_GATE_UNAVAILABLE" });
   } catch {
     return json(503, { status: "USAGE_GATE_UNAVAILABLE" });
   }
@@ -166,6 +186,7 @@ export async function onRequestPost({ request, env }) {
   try {
     const upstream = await fetch("https://api.openai.com/v1/responses", {
       method: "POST",
+      redirect: "error",
       headers: {
         "Authorization": "Bearer " + env.OPENAI_API_KEY,
         "Content-Type": "application/json"
@@ -174,7 +195,9 @@ export async function onRequestPost({ request, env }) {
       signal: controller.signal
     });
     if (!upstream.ok) return json(502, { status: "MODEL_UNAVAILABLE", billable_attempt_reserved: true });
-    const data = await upstream.json();
+    const rawOutput = await readLimitedBody(upstream, MAX_UPSTREAM);
+    if (rawOutput === null) return json(502, { status: "INVALID_MODEL_OUTPUT", billable_attempt_reserved: true });
+    const data = JSON.parse(rawOutput);
     const answer = extractOutput(data);
     if (!answer) return json(502, { status: "INVALID_MODEL_OUTPUT", billable_attempt_reserved: true });
     return json(200, {
