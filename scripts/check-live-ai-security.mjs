@@ -1,8 +1,10 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { onRequestGet, onRequestOptions, onRequestPost } from "../functions/api/v1/report-draft.js";
 
 const payload = {
+  approval_id: "synthetic_approval_001",
   public_only: true,
   human_source_approval: true,
   question: "What does the adopted source state about the Pueblo General Fund?",
@@ -10,12 +12,15 @@ const payload = {
     excerpt: "Adopted appropriation is a budget authorization, not a verified payment." }]
 };
 const operator = "a".repeat(64);
+const digest = body => createHash("sha256").update(JSON.stringify(body)).digest("hex");
 const env = {
   QP_LIVE_DRAFTS_ENABLED: "true", QP_API_BILLING_APPROVED: "true",
+  QP_APPROVED_PAYLOAD_SHA256: digest(payload),
+  QP_APPROVED_PAYLOAD_EXPIRES_UTC: new Date(Date.now()+3600000).toISOString().replace(/\.\d{3}Z$/, "Z"),
   QP_OPERATOR_TOKEN: operator, OPENAI_API_KEY: "test-key-not-real-00000000",
   QP_USAGE_DB: { prepare: sql => ({
     bind: (...args) => ({
-      first: async () => ({ day_attempts: 1, month_attempts: 1 })
+      first: async () => ({ approval_digest: args[0] })
     })
   }) }
 };
@@ -62,7 +67,7 @@ test("rate-limit refusal does not contact the model", async () => {
   globalThis.fetch = async () => { called = true; throw Error("should not call"); };
   try {
     const limited = { ...env, QP_USAGE_DB: { prepare: () => ({ bind: () => ({ first: async () => null }) }) } };
-    await checkStatus(await onRequestPost({ request: request(), env: limited }), 429, "DAILY_OR_MONTHLY_QUOTA_REACHED");
+    await checkStatus(await onRequestPost({ request: request(), env: limited }), 429, "QUOTA_OR_APPROVAL_ALREADY_USED");
     const broken = { ...env, QP_USAGE_DB: { prepare: () => { throw Error("D1 unreachable"); } } };
     await checkStatus(await onRequestPost({ request: request(), env: broken }), 503, "USAGE_GATE_UNAVAILABLE");
     assert.equal(called, false);
@@ -108,4 +113,42 @@ test("bounded streaming rejects oversized bodies without model contact", async (
     await checkStatus(response, 413, "REQUEST_TOO_LARGE");
     assert.equal(called, false);
   } finally { globalThis.fetch = old; }
+});
+
+test("approval cannot be self-issued, changed, extended, or browser-submitted", async () => {
+  const old = globalThis.fetch;
+  let calls = 0;
+  globalThis.fetch = async () => { calls++; throw Error("not allowed"); };
+  try {
+    for (const overrides of [
+      {QP_APPROVED_PAYLOAD_SHA256: undefined},
+      {QP_APPROVED_PAYLOAD_EXPIRES_UTC: "2000-01-01T00:00:00Z"},
+      {QP_APPROVED_PAYLOAD_EXPIRES_UTC: "2099-01-01T00:00:00Z"}
+    ]) await checkStatus(await onRequestPost({request:request(),env:{...env,...overrides}}),503,"APPROVAL_NOT_CONFIGURED_OR_EXPIRED");
+    await checkStatus(await onRequestPost({request:request({...payload,question:"changed"}),env}),403,"PAYLOAD_NOT_APPROVED");
+    await checkStatus(await onRequestPost({request:request({...payload,extra:"not allowed"}),env}),422,"PUBLIC_EVIDENCE_REQUIRED");
+    const browser=request(); browser.headers.set("Origin","https://example.org");
+    await checkStatus(await onRequestPost({request:browser,env}),403,"BROWSER_REQUEST_DENIED");
+    assert.equal(calls,0);
+  } finally { globalThis.fetch=old; }
+});
+test("consumed approval remains consumed after provider failure; no automatic retry", async () => {
+  const old = globalThis.fetch;
+  let calls=0, used=false;
+  const once={...env, QP_USAGE_DB:{prepare:()=>({bind:(d)=>({first:async()=>{
+    if(used)return null;
+    used=true;return {approval_digest:d};
+  }})})}};
+  globalThis.fetch=async (url,opts)=>{calls++;assert.equal(opts.redirect,"error");return new Response("",{status:503});};
+  try {
+    await checkStatus(await onRequestPost({request:request(),env:once}),502,"MODEL_UNAVAILABLE");
+    await checkStatus(await onRequestPost({request:request(),env:once}),429,"QUOTA_OR_APPROVAL_ALREADY_USED");
+    assert.equal(calls,1);
+  } finally { globalThis.fetch=old; }
+});
+test("oversize provider response cannot become a draft",async()=>{
+  const old=globalThis.fetch;
+  globalThis.fetch=async()=>new Response("x".repeat(70000),{status:200});
+  try {await checkStatus(await onRequestPost({request:request(),env}),502,"INVALID_MODEL_OUTPUT");}
+  finally{globalThis.fetch=old;}
 });
