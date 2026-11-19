@@ -1,6 +1,6 @@
 {
   "schema": "qp-year-end-editorial-v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "edition": "2026-11-18",
   "featureThrough": "2026-12-31",
   "rollover": "2027-01-01",
@@ -357,6 +357,31 @@
         "water rate or lease"
       ],
       "ttl": "7–14 days during active review; immediately on material event",
+      "checked": "2026-11-18",
+      "featureThrough": "2026-12-31",
+      "status": "dated_review_candidate",
+      "anchors": [
+        "findings",
+        "processing",
+        "builds",
+        "actions"
+      ]
+    },
+    {
+      "alias": "16-community-signals",
+      "title": "Pueblo speaks: crime, victim safety, services and public accountability",
+      "summary": "Community concerns meet verified records: repeat offenses, jail and staffing capacity, child prevention, nonprofit funding, road maintenance, TIF and elected compensation. Includes costs, options, resources and proposed builds.",
+      "href": "community-signals-2026-11-18.html",
+      "section": "Community signals and accountability",
+      "reviewBy": "2026-11-23",
+      "trigger": [
+        "ordinance or IGA release",
+        "city or county vote",
+        "staffing or service change",
+        "budget amendment",
+        "new verified community evidence"
+      ],
+      "ttl": "Historical signals preserved; review policy evidence before decisions and on material changes",
       "checked": "2026-11-18",
       "featureThrough": "2026-12-31",
       "status": "dated_review_candidate",
