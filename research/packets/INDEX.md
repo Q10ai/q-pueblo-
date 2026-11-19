@@ -8,6 +8,8 @@ This index registers **research candidates**, not live website content or operat
 
 | QP-ECON-2026-ECOASIS-001 | 2026-11-10 | 2026-11-10 | [Ecoasis research packet](QP-ECON-2026-ECOASIS-001.md), [dormant signal](../signals/QP-ECON-2026-ECOASIS-001.yaml) | NEW CANDIDATE — event / entity / jobs / funds unverified; no twin activation |
 
+| QP-ENERGY-2026-0232E | 2026-06-12 to 2026-11-19 | 2026-11-25 (due) | [Research paper](../../public/energy-research-paper-2026.md), [structured evidence packet](../../public/data/qp-energy-packet-2026-11-19.json), [November 18 baseline](../../public/data/qp-black-hills-rate-case-2026-11-18.json) | DATED PUBLIC EXPLANATORY RESEARCH — no independent audit or operational activation |
+
 ## Integration contract
 
 - **Control-plane:** existing QPueblo master evidence ledger / index registry / QIFY-QRX workbook; this page does not declare which historical artifact is canonical.
