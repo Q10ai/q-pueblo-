@@ -326,7 +326,7 @@
  .qp-v3-home #entryways .qp-entry-grid,.qp-v3 main .qp-eight-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--qp-tile-gap)}
  .qp-v3-home #entryways .qp-entry-card .qp-art-caption,.qp-v3 main .qp-eight-grid .qp-exp-card>.qp-entry-short{min-height:44px}
  .qp-v3 main :is(.qp-art-card,.qp-exp-card,.qp-task-card)>.qp-entry-art[data-qp-art],.qp-v3 main .qp-report-art[data-qp-art]{aspect-ratio:var(--qp-tile-ratio)}
- .qp-v3 :is(#governance-intelligence,#new-findings)>.qp-gov-grid{
+ .qp-v3 :is(#governance-intelligence,#new-findings)>.qp-gov-grid,.qp-v3 #governance-intelligence>details>.qp-gov-grid{
   grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--qp-tile-gap);align-items:start;margin:.65rem 0;
  }
  .qp-v3 :is(#governance-intelligence,#new-findings) .qp-gov-card{padding:.35rem;gap:.4rem;border-radius:var(--qp-tile-radius)}
@@ -360,7 +360,7 @@
  .qp-v3 main :is(.qp-entry-art,.qp-report-art){aspect-ratio:var(--qp-tile-ratio);height:auto}
  .qp-v3 main .qp-subject-icon[data-qp-art]{aspect-ratio:var(--qp-tile-ratio);height:auto}
  .qp-v3 main :is(.qp-entry-art,.qp-report-art)[data-qp-art]{background-size:cover;background-position:center}
- .qp-v3 :is(#governance-intelligence,#new-findings)>.qp-gov-grid{align-items:stretch}
+ .qp-v3 :is(#governance-intelligence,#new-findings)>.qp-gov-grid,.qp-v3 #governance-intelligence>details>.qp-gov-grid{align-items:stretch}
  .qp-v3 :is(#governance-intelligence,#new-findings) .qp-gov-card>.qp-major-tile{flex:1 0 auto}
  .qp-v3 :is(#governance-intelligence,#new-findings) .qp-major-tile>h3{height:100%;min-height:0}
  .qp-v3 .qp-issue-more>summary{min-height:52px}
@@ -421,7 +421,7 @@
  .qp-v3-home #entryways .qp-entry-card .qp-art-caption,.qp-v3 main .qp-eight-grid .qp-exp-card>.qp-entry-short{min-height:52px;padding:.45rem .3rem;margin-inline:0;align-items:center;justify-content:center}
  .qp-v3-home #entryways .qp-art-caption .qp-entry-short,.qp-v3 main .qp-eight-grid .qp-exp-card>.qp-entry-short{font-size:clamp(.92rem,4.2vw,1.04rem);font-weight:800;line-height:1.2;text-align:center}
  /* Level 2: compact, equal aligned issue tiles. No oversized single issue banners. */
- .qp-v3 :is(#governance-intelligence,#new-findings)>.qp-gov-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem;align-items:stretch}
+ .qp-v3 :is(#governance-intelligence,#new-findings)>.qp-gov-grid,.qp-v3 #governance-intelligence>details>.qp-gov-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem;align-items:stretch}
  .qp-v3 :is(#governance-intelligence,#new-findings) .qp-gov-card{padding:.45rem;border-radius:var(--qp-tile-radius);gap:.45rem}
  .qp-v3 :is(#governance-intelligence,#new-findings) .qp-major-tile>h3{font:750 .94rem/1.24 system-ui,sans-serif;padding-bottom:.45rem}
  .qp-v3 :is(#governance-intelligence,#new-findings) .qp-major-tile>h3>.qp-subject-icon[data-qp-art]{width:100%;height:auto;aspect-ratio:var(--qp-issue-art-ratio);margin:0 0 .4rem}
