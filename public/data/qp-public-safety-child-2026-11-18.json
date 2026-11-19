@@ -113,6 +113,21 @@
         "id": "S18",
         "title": "Pueblo Ledger — November 14 budget explanation; secondary source",
         "url": "https://puebloledger.com/government-watch/pueblo-2027-budgets-city-county/"
+      },
+      {
+        "id": "S19",
+        "title": "KRDO — January 31, 2026 furlough discussion and projected holiday savings",
+        "url": "https://krdo.com/news/top-stories/2026/01/31/pueblo-county-discusses-furloughing-workers-to-address-10-million-budget-shortfall/"
+      },
+      {
+        "id": "S20",
+        "title": "KRDO — November 17, 2026 proposed municipal-offense jail agreement",
+        "url": "https://krdo.com/news/2026/11/17/pueblo-considers-jail-time-for-low-level-offenders-ordinance-to-be-voted-on-monday/"
+      },
+      {
+        "id": "S21",
+        "title": "Pueblo Municipal Court — existing jurisdiction and penalty authority",
+        "url": "https://www.pueblo.us/99/Municipal-Court"
       }
     ],
     "chapters": [
@@ -150,6 +165,16 @@
         "kind": "future",
         "heading": "Decision gates",
         "text": "Official schedule: December 4 adjustment deadline and December 10 public hearing, subject to change. Before adoption, publish aggregate service-impact scenarios, options, accounting basis and responsible roles; after adoption, track actual costs, service outcomes and corrections. [S17]"
+      },
+      {
+        "kind": "chronology",
+        "heading": "November 18 media lead and earlier warning signs",
+        "text": "A supplied KRDO13 screenshot links to a November 18 report about a sheriff layoff warning (L1). The article could not be retrieved, so no layoff count or quotation is attributed to it. Independently, KRDO reported January 31 that the county was considering employee furloughs in response to a roughly $10M shortfall and anticipated $1.5M savings from unpaid holidays. The stated savings are not verified actuals. [S19]"
+      },
+      {
+        "kind": "meaning",
+        "heading": "City jail policy and county staffing: a regional crossover",
+        "text": "KRDO reported November 17 that the City was pursuing a city–county agreement concerning custody and sentencing for specified municipal offenses; City Council consideration was scheduled November 23 and county approval would also be needed. The mayor said additional housing costs would fit the police budget; the agreement, rate, additional bed-days and actual impact remain unverified. Existing Municipal Court authority should not be confused with the proposed change. [S20,S21] Q proposes reconciling incremental bookings, bed-days, marginal medical and staffing costs, city reimbursements, due process, alternative sanctions and family effects before assuming the two policies are financially compatible."
       }
     ],
     "unknowns": [
@@ -157,7 +182,9 @@
       "Current budgeted versus filled posts, verified vacancies, SRO agreement and approved staffing changes.",
       "Current aggregate workload, response and service continuity metrics; no operational vulnerabilities published.",
       "Local child protection outcomes and costed alternatives; no causal estimate or forecast.",
-      "Unable to retrieve full preliminary budget book due to file size; sheriff report text accessible but page screenshots unavailable."
+      "Unable to retrieve full preliminary budget book due to file size; sheriff report text accessible but page screenshots unavailable.",
+      "November 18 KRDO article body, attributed layoff estimates and exact timing have not been retrieved; screenshot is a lead only.",
+      "Proposed municipal jail agreement text, reimbursement formula, forecast bed-days and final approvals not verified."
     ],
     "coverage40": [
       {
@@ -451,8 +478,11 @@
         "n": 35,
         "title": "Financial crossover",
         "classification": "Q analysis or practical guidance",
-        "sourceIds": [],
-        "answer": "Connect county budget, jail debt, compensation, pension funding and audit costs. Distinguish capital from recurring funding, restricted from unrestricted dollars, and authorized from paid. See companion investigations."
+        "sourceIds": [
+          "S20",
+          "S21"
+        ],
+        "answer": "Connect county budget, jail debt, compensation, pension funding and audit costs. Distinguish capital from recurring funding, restricted from unrestricted dollars, and authorized from paid. See companion investigations. KRDO's November 17 municipal-offense jail agreement report creates a separate demand-side review: compare any additional custody days, incremental costs and intergovernmental reimbursement against the county's proposed service reductions. [S20,S21]"
       },
       {
         "n": 36,
@@ -480,9 +510,10 @@
         "title": "Event horizons and LEAP",
         "classification": "Dated source finding",
         "sourceIds": [
-          "S17"
+          "S17",
+          "S20"
         ],
-        "answer": "Official calendar lists December 4 for final Workday adjustments and December 10 for the public adoption hearing. Check official agendas for changes. Q proposes monthly follow-up after adoption, annual evaluation and multi-year workforce and safety review."
+        "answer": "Official calendar lists December 4 for final Workday adjustments and December 10 for the public adoption hearing. Check official agendas for changes. Q proposes monthly follow-up after adoption, annual evaluation and multi-year workforce and safety review. Track November 23 City Council consideration of the proposed jail agreement separately from county budget adoption; county approval is also needed as reported by KRDO. [S20]"
       },
       {
         "n": 40,
@@ -507,6 +538,16 @@
       ],
       "build": "Service continuity evaluation, financial savings model, child impact gate, reporting pathways and versioned public packet. No live safety operations.",
       "privacy": "No child case records, school-specific gaps or deployment details. Testimonials separated from verified data."
-    }
+    },
+    "evidenceLeads": [
+      {
+        "id": "L1",
+        "title": "KRDO13 social-media link to November 18 sheriff layoff report",
+        "url": "https://krdo.com/news/2026/11/18/pueblo-sheriff-warns-layoffs/",
+        "observed": "2026-11-18",
+        "status": "supplied screenshot; article inaccessible on attempted read; specific figures and statements not verified",
+        "communitySignal": "Two short visible comments express unsurprised reactions; the third entry is a partially visible image. Relevance-ranked sample, not representative or additional claim evidence. No commenter names or screenshot published."
+      }
+    ]
   }
 }
