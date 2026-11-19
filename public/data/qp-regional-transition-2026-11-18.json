@@ -1,0 +1,1136 @@
+{
+  "schema": "qp-regional-living-research-v1",
+  "edition": "2026-11-18",
+  "boundary": "Independent public-source research; no confidential records; dated editions, not a claim of full 40-perspective coverage.",
+  "stories": [
+    {
+      "id": "qp-county-disclosure-2026",
+      "title": "Where are Pueblo County’s 2025 financial records?",
+      "route": "county-financial-transparency.html",
+      "checked": "2026-11-18",
+      "reviewBy": "2026-12-02",
+      "questions": [
+        "Where is Pueblo County's 2025 ACFR?",
+        "Where are Pueblo County's 2025 salary records?",
+        "Is Pueblo County financially transparent?"
+      ],
+      "keywords": [
+        "county transparency",
+        "2025 salary disclosure",
+        "financial reporting",
+        "missing acfr"
+      ],
+      "summary": "The county salary and ACFR archives both end in 2024 on November 18. Missing web publications are documented accessibility gaps, not proof that salary notices were never published or that the state never received an audit. [S1,S2]",
+      "chapters": [
+        {
+          "heading": "Dated public observation",
+          "text": "The financial archive lists 2012–2024 (13 annual reports); salary archive lists 2017–2024 (eight). The salary page retains an introductory notice referring to 2020. Neither archive shows its 2025 annual document. The user supplied six screenshots consistent with these observations. [S1,S2]",
+          "kind": "context"
+        },
+        {
+          "heading": "Public accessibility versus legal compliance",
+          "text": "C.R.S. 30-25-111 requires salary information in February for the previous calendar year and August for the previous June. The publication mechanism is normally a legal newspaper. It also covers monthly paid claims and contracts and semiannual treasurer statements. A missing website link does not prove nonpublication in a newspaper. [S3]",
+          "kind": "context"
+        },
+        {
+          "heading": "Audit deadline",
+          "text": "For December year-end governments, the audit normally reaches the entity by June 30 and the state by July 31, or a filing-extension request is due by July 31. The state has delinquency and potential tax-withholding processes. Do not infer an extension or enforcement outcome from a website gap. [S4]",
+          "kind": "context"
+        },
+        {
+          "heading": "County's own explanation",
+          "text": "The county reports additional accounting work approved September 29, draft statements in the second half of October and audit fieldwork the week of October 26. A dashboard status is not a signed audit opinion or a state filing receipt. [S5]",
+          "kind": "context"
+        },
+        {
+          "heading": "Community signal",
+          "text": "A supplied social-media post questioned the missing files and commissioner pay during proposed workforce cuts. Four subsequent images show six distinct visible comments, one partial. Themes include distrust, pay equity, deputy staffing, hiring barriers and retirement eligibility. Nine shares were visible; comments were filtered. This is a qualitative signal, not representative sentiment. No names, profile images or insulting claims are republished.",
+          "kind": "context"
+        },
+        {
+          "heading": "Comparison and alternatives",
+          "text": "Douglas County offers year-end 2025 and June 2026 disclosures on its payroll page. Use the comparable disclosure cadence as a practical benchmark, not a rank of all counties. [S6]",
+          "kind": "context"
+        },
+        {
+          "heading": "Audit processing",
+          "text": "Inventory each statutory record by entity, fiscal period, due date, channel, original URL, retrieval date and evidence status. Compare archived versions and search state repositories, public newspaper notices and meeting packets before filing requests. Record absent on checked page separately from not published anywhere.",
+          "kind": "options"
+        },
+        {
+          "heading": "Accountability",
+          "text": "Commissioners set oversight expectations; finance prepares accounting information; the treasurer maintains fund information; the state auditor oversees filing. The independent CPA evaluates evidence; duties must not be assigned to individuals solely because of their job titles.",
+          "kind": "context"
+        },
+        {
+          "heading": "Impact and child lens",
+          "text": "Late public information limits independent review of workforce and service decisions. Housing insecurity, family finances and emergency response effects are possible downstream risks, not outcomes demonstrated by these records.",
+          "kind": "context"
+        },
+        {
+          "heading": "EE / LL / T2Y",
+          "text": "Reuse archives and law links across all financial investigations; retain the first recorded absence and later publication dates. Calculate repeated search time and rework instead of assuming savings. Preserve the difference between document date, as-of date and date observed.",
+          "kind": "options"
+        },
+        {
+          "heading": "RX and leap gate",
+          "text": "Publish a dated disclosure calendar plus human-readable and CSV/JSON exports. For each item show not due, found, late against normal date, extension verified or not located. Never silently overwrite a past observation. Human review is required before changing a status to violation.",
+          "kind": "options"
+        },
+        {
+          "heading": "Event horizons",
+          "text": "Recheck during December 2026 budget deliberations, in February 2027 for 2026 annual payroll, and August 2027 for June payroll. Follow the next annual audit cycle, then compare on-time performance in 2029 and 2031. These are Q review milestones, not county commitments.",
+          "kind": "options"
+        }
+      ],
+      "unknowns": [
+        "Legal newspaper publication dates and copies not located in this review.",
+        "2025 independent opinion and state filing/extension status not verified.",
+        "Complete monthly claims and semiannual publication series not reconciled."
+      ],
+      "sources": [
+        {
+          "id": "S1",
+          "title": "County annual financial reports — archive",
+          "url": "https://county.pueblo.org/budget-and-finance-department/annual-comprehensive-financial-report-acfr"
+        },
+        {
+          "id": "S2",
+          "title": "County salary disclosures — archive",
+          "url": "https://county.pueblo.org/budget-and-finance-department/pueblo-county-salaries"
+        },
+        {
+          "id": "S3",
+          "title": "Colorado statutory text §30-25-111 (public law reproduction)",
+          "url": "https://colorado.public.law/statutes/crs_30-25-111"
+        },
+        {
+          "id": "S4",
+          "title": "Office of State Auditor filing calendar",
+          "url": "https://content.leg.colorado.gov/agencies/office-state-auditor/calendars-and-due-dates"
+        },
+        {
+          "id": "S5",
+          "title": "County priorities dashboard — November 2026",
+          "url": "https://county.pueblo.org/board-county-commissioners-office/what-we-are-working"
+        },
+        {
+          "id": "S6",
+          "title": "Douglas County payroll disclosure example",
+          "url": "https://www.douglasco.gov/finance/payroll/"
+        }
+      ],
+      "packet": {
+        "schemaVersion": "1.0",
+        "lifecycle": "active",
+        "publicationStatus": "partial",
+        "evidenceStatus": "dated public-source review; some analysis and secondary reports",
+        "reviewDue": "2026-12-02",
+        "related": [
+          "qp-county-compensation-2026",
+          "qp-county-audit-cost-2026",
+          "qp-regional-fragmentation-2026"
+        ],
+        "build": "Disclosure calendar; status vocabulary; public-source intake; archived observations. No automated monitoring is enabled.",
+        "privacy": "No commenter names or screenshots reproduced",
+        "validation": "Public-source arithmetic and source attribution; no certified audit"
+      }
+    },
+    {
+      "id": "qp-county-compensation-2026",
+      "title": "Who sets commissioner pay — and how does it compare with county workers?",
+      "route": "county-commissioner-compensation.html",
+      "checked": "2026-11-18",
+      "reviewBy": "2026-12-02",
+      "questions": [
+        "Who sets Pueblo County commissioner salaries?",
+        "Are all Pueblo County commissioners paid $158,669?",
+        "How much do Pueblo County commissioners make?"
+      ],
+      "keywords": [
+        "commissioner salary",
+        "county salaries",
+        "pay increases",
+        "compensation equity",
+        "county worker"
+      ],
+      "summary": "The 2024 publication lists $131,700, $125,916 and $131,700. The state schedule assigns Pueblo Category I-A, with $158,669 annually for new terms starting in 2026–27, not every incumbent’s verified payroll. [S1,S2]",
+      "chapters": [
+        {
+          "heading": "What the original payroll publication says",
+          "text": "The three listed commissioner rows total $389,316. The same page lists county manager $221,460, county attorney $180,000 and several different administrator rates. These are published salary entries, not independently reconciled payroll or benefits. [S1]",
+          "kind": "context"
+        },
+        {
+          "heading": "Who establishes the rate",
+          "text": "Colorado's elected county official salary framework under C.R.S. 30-2-102 applies category and term-specific schedules. The September 2026 state memo includes Pueblo in I-A and sets $158,669 for commissioners whose terms begin in 2026 or 2027. Generally compensation cannot change during an elected term, subject to applicable legal provisions. [S2]",
+          "kind": "context"
+        },
+        {
+          "heading": "Recalculate the social-media claim",
+          "text": "$158,669 minus $131,700 equals $26,969 (20.48%); compared with $125,916 the difference is $32,753 (26.01%). These compare different published rates/periods; neither proves that all three current commissioners received the same raise or personally voted for it. [S1,S2]",
+          "kind": "context"
+        },
+        {
+          "heading": "Comparable state rates",
+          "text": "Table 1 also lists Category I-A sheriff $201,926 and treasurer, assessor and clerk $158,669 for the relevant new terms. Avoid treating all officials as already being paid the new rate. [S2]",
+          "kind": "context"
+        },
+        {
+          "heading": "Household comparison",
+          "text": "$158,669 is 3.17 times a hypothetical $50,000 annual wage. Three such commissioner salaries would total $476,007 before benefits, a scenario not current payroll. Compared with the 2024 listed total, the difference would be $86,691, not a measure of lawful savings. [S1,S2]",
+          "kind": "context"
+        },
+        {
+          "heading": "Compensation versus funding",
+          "text": "The preliminary budget identifies department reduction targets, not individual wage reductions. The elected office may meet its target in different spending categories. Compare authorized compensation, funded position, actual salary, overtime, employer benefit and vacancy separately. [S5]",
+          "kind": "context"
+        },
+        {
+          "heading": "Counterpoint",
+          "text": "Local affordability is a valid public-policy question even when the statutory rate is set by the state. The compensation mechanism, board's local budget decisions and actual employee treatment are different questions.",
+          "kind": "context"
+        },
+        {
+          "heading": "Community signal",
+          "text": "Visible responses include concerns about executive compensation, deputy safety, ability to afford taxes and a self-reported difficulty obtaining county employment. The hiring account is unverified; no conclusion about discrimination, intent or personal enrichment follows.",
+          "kind": "context"
+        },
+        {
+          "heading": "Hiring and benefits",
+          "text": "Analyze public job postings, pay bands, eligibility, vacancies, selection rules and aggregate retention before judging hiring fairness. Compare pension participation using plan documents and aggregate contributions; never infer individual enrollment or disclose protected records.",
+          "kind": "context"
+        },
+        {
+          "heading": "Child and economic impacts",
+          "text": "Model changes in household income, childcare affordability and spending at local businesses if workforce reductions occur; distinguish positions from people and authorized from actual reductions.",
+          "kind": "context"
+        },
+        {
+          "heading": "Q processing and build",
+          "text": "Use year, title, appointment/term start, salary basis, benefit basis, fund, source and confidence. Make term schedules a separate dataset joined to office positions only when effective-date evidence is known. Public view must not identify private employees beyond authorized disclosures.",
+          "kind": "options"
+        },
+        {
+          "heading": "EE / T2Y / LL",
+          "text": "Calculate changes once from preserved source rows; compare similarly scoped compensation across years and institutions. Avoid repeating the viral claim as verified. Retain the original concern as a public-signal record.",
+          "kind": "options"
+        },
+        {
+          "heading": "RX and horizons",
+          "text": "Verify 2025/2026 public disclosures, the applicable effective rate for each office and February 2027 reporting. For 2029 and 2031 assess affordability against comparable workloads and local wage distributions, not arbitrary executive-pay ceilings.",
+          "kind": "options"
+        }
+      ],
+      "unknowns": [
+        "Individual 2025 and 2026 payroll and effective term dates not reconciled.",
+        "Individual pension participation and fringe benefit amounts unresolved.",
+        "Hiring allegation not independently investigated."
+      ],
+      "sources": [
+        {
+          "id": "S1",
+          "title": "2024 county salary publication — PDF page 1",
+          "url": "https://county.pueblo.org/sites/default/files/2025-01/DEC%202024%20to%20Newspaper.pdf"
+        },
+        {
+          "id": "S2",
+          "title": "Legislative Council Staff — September 14, 2026 memo, table 1 page 4",
+          "url": "https://content.leg.colorado.gov/publications/2026-and-2027-salaries-elected-county-officials"
+        },
+        {
+          "id": "S3",
+          "title": "County salary archive",
+          "url": "https://county.pueblo.org/budget-and-finance-department/pueblo-county-salaries"
+        },
+        {
+          "id": "S4",
+          "title": "Colorado salary publication statute",
+          "url": "https://colorado.public.law/statutes/crs_30-25-111"
+        },
+        {
+          "id": "S5",
+          "title": "County's proposed 2027 budget presentation",
+          "url": "https://county.pueblo.org/sites/default/files/2026-10/2027%20Proposed%20Budget%20SB.pdf"
+        }
+      ],
+      "packet": {
+        "schemaVersion": "1.0",
+        "lifecycle": "active",
+        "publicationStatus": "partial",
+        "evidenceStatus": "dated public-source review; some analysis and secondary reports",
+        "reviewDue": "2026-12-02",
+        "related": [
+          "qp-county-disclosure-2026",
+          "qp-county-pension-2026",
+          "qp-county-fiscal-review-2026"
+        ],
+        "build": "Versioned salary schedule and payroll comparison data; compensation ratio scenario; no employee-level personal profiling.",
+        "privacy": "No commenter names or screenshots reproduced",
+        "validation": "Public-source arithmetic and source attribution; no certified audit"
+      }
+    },
+    {
+      "id": "qp-county-audit-cost-2026",
+      "title": "What audit is Pueblo County paying for — and why is it taking so long?",
+      "route": "county-audit-cost-and-delay.html",
+      "checked": "2026-11-18",
+      "reviewBy": "2026-12-02",
+      "questions": [
+        "Why is Pueblo County's audit taking so long?",
+        "What is Pueblo County paying Eide Bailly?",
+        "Can AI speed up the county audit?"
+      ],
+      "keywords": [
+        "audit cost",
+        "eide bailly",
+        "county audit delay",
+        "accounting consultant",
+        "continuous audit"
+      ],
+      "summary": "County reports accounting-close support September 29 and independent fieldwork starting the week of October 26. A separate October 1 financial management engagement has a reported $170,950 ceiling; that is not the independent audit fee. [S1,S2]",
+      "chapters": [
+        {
+          "heading": "Three distinct consulting scopes",
+          "text": "County reports August 18 budget preparation support, September 29 closing/reconciliation and statement compilation support, and October 1 executive/controller support. None is automatically the independent financial statement audit. [S1]",
+          "kind": "options"
+        },
+        {
+          "heading": "What is known about price",
+          "text": "Secondary reporting describes 13 weeks at $7,900 for approximately 24 hours/week and 13 weeks at $5,250 for approximately 16 hours/week. Calculated total: $102,700 + $68,250 = $170,950 over 520 approximate hours, or $328.75 per nominal hour. This is a schedule/ceiling, not an invoice or actual cost. [S2,S3]",
+          "kind": "context"
+        },
+        {
+          "heading": "Timeline and bottleneck",
+          "text": "The normal audit delivery deadline was June 30; July 31 is the normal state filing or extension-request deadline. A controller joined August 24; closing support was authorized September 29; drafts reached auditors in late October. The county's stated fieldwork start implies preparation was delayed, not that the independent auditor had been working on fieldwork all year. [S1,S4]",
+          "kind": "context"
+        },
+        {
+          "heading": "October governance event",
+          "text": "October 2 reporting describes the October 1 CFO demotion, temporary finance supervision and a commissioner saying monthly reports remained unavailable. Attribute this to reporting, not an independent finding of individual culpability. [S2]",
+          "kind": "context"
+        },
+        {
+          "heading": "Audit versus compilation versus forensic review",
+          "text": "A compilation helps assemble data; a financial statement audit tests evidence and expresses an opinion; a forensic investigation examines defined allegations or transactions. A grant Single Audit addresses applicable federal awards and compliance. These scopes and fees must stay separate.",
+          "kind": "context"
+        },
+        {
+          "heading": "What public evidence can do now",
+          "text": "A desk review can reconstruct authorizations, compare years, recalculate totals, flag late reporting and inspect debt disclosures. It cannot confirm bank balances, completeness of liabilities or authorized signatures without underlying evidence. No CORA request is needed to publish the desk-review findings.",
+          "kind": "context"
+        },
+        {
+          "heading": "Why the system should change",
+          "text": "A public-facing status labelled achieved can reflect an intermediate milestone. Track books closed, bank reconciled, schedules compiled, draft delivered, fieldwork started, opinion signed, state accepted and public report published separately. [S1]",
+          "kind": "context"
+        },
+        {
+          "heading": "Continuous assurance pilot",
+          "text": "Use export-only financial data, deterministic bank-to-ledger matching and duplicate invoice checks, period-close calendar, exception register and monthly approval. AI can extract or explain, but cannot approve payments or certify financial statements.",
+          "kind": "context"
+        },
+        {
+          "heading": "Audit independence and controls",
+          "text": "Separate preparation from independent assurance. Require named accountable owners, auditor independence review, sampling and materiality policy, evidence retention, read-only access and documented exception disposition. Retain a manual fallback.",
+          "kind": "context"
+        },
+        {
+          "heading": "Public cost packet",
+          "text": "For each SOW store resolution, vendor, scope, ceiling, amendments, invoices, paid amounts, deliverables, dates, dependencies and acceptance sign-off. No cost summation until overlap and contract identity are reconciled.",
+          "kind": "context"
+        },
+        {
+          "heading": "Workforce and children",
+          "text": "Repeated reconciliation consumes staff capacity while budget cuts threaten service continuity. Test whether staff training and process redesign reduce errors without shifting burdens to families or eliminating human review.",
+          "kind": "context"
+        },
+        {
+          "heading": "EE / LL / T2Y",
+          "text": "Measure time to close, age of unmatched transactions, corrections per period, nonduplicated consultant costs and staff hours saved after review. Maintain lessons across administrations. Compare the actual monthly close with the target, not the stated intent.",
+          "kind": "options"
+        },
+        {
+          "heading": "RX and leap",
+          "text": "Pilot one completed month in parallel using approved local exports. Test totals to source, role segregation, restore/rollback and exception detection. Expand only after finance leaders and independent reviewers accept the results.",
+          "kind": "options"
+        },
+        {
+          "heading": "Event horizons",
+          "text": "In December 2026 check completion and actual procurement status. In 2027 track monthly close cadence and the next audit; in 2029 compare recurrence of findings, costs and staff workload. The five-year gate is sustained controls, not merely software purchased.",
+          "kind": "options"
+        }
+      ],
+      "unknowns": [
+        "2025 independent audit firm, fee, final opinion and filing not verified.",
+        "August and September SOW prices, amendments and payments not reconciled.",
+        "Full internal ledgers and reconciliation workpapers are not publicly established."
+      ],
+      "sources": [
+        {
+          "id": "S1",
+          "title": "County priorities dashboard — November 2026",
+          "url": "https://county.pueblo.org/board-county-commissioners-office/what-we-are-working"
+        },
+        {
+          "id": "S2",
+          "title": "Pueblo Chieftain reporting, October 2, syndicated by AOL",
+          "url": "https://www.aol.com/articles/pueblo-county-removes-cfo-hires-090821000.html"
+        },
+        {
+          "id": "S3",
+          "title": "Contract extraction — October 1 agenda, secondary source",
+          "url": "https://civiciq.com/public-contract/pueblo-area-cog-mpo-and-tpr-co-eide-bailly-advisory-llc-consulting-2026-10-01"
+        },
+        {
+          "id": "S4",
+          "title": "State Auditor filing calendar",
+          "url": "https://content.leg.colorado.gov/agencies/office-state-auditor/calendars-and-due-dates"
+        },
+        {
+          "id": "S5",
+          "title": "2024 ACFR — independent audit report",
+          "url": "https://county.pueblo.org/sites/default/files/2025-11/Pueblo%20County%20Annual%20Comprehensive%20Financial%20Report%202024.pdf"
+        },
+        {
+          "id": "S6",
+          "title": "County proposed 2027 budget",
+          "url": "https://county.pueblo.org/sites/default/files/2026-10/2027%20Proposed%20Budget%20SB.pdf"
+        }
+      ],
+      "packet": {
+        "schemaVersion": "1.0",
+        "lifecycle": "active",
+        "publicationStatus": "partial",
+        "evidenceStatus": "dated public-source review; some analysis and secondary reports",
+        "reviewDue": "2026-12-02",
+        "related": [
+          "qp-county-disclosure-2026",
+          "qp-county-fiscal-review-2026",
+          "qp-regional-packets-2026"
+        ],
+        "build": "Milestone tracker, contract cost registry, read-only continuous-assurance pilot design. No live ledger access.",
+        "privacy": "No commenter names or screenshots reproduced",
+        "validation": "Public-source arithmetic and source attribution; no certified audit"
+      }
+    },
+    {
+      "id": "qp-county-fiscal-review-2026",
+      "title": "What Pueblo County’s published numbers already reveal about the budget crisis",
+      "route": "county-public-financial-review.html",
+      "checked": "2026-11-18",
+      "reviewBy": "2026-12-02",
+      "questions": [
+        "What do Pueblo County's public finances reveal?",
+        "Why does the 2027 county budget rely on borrowing and asset sales?",
+        "How much is the proposed sheriff reduction?"
+      ],
+      "keywords": [
+        "county deficit",
+        "county financial review",
+        "fund balance",
+        "debt service",
+        "2027 cuts",
+        "asset sale"
+      ],
+      "summary": "The 2024 audited General Fund balance was $41.95M, including only $4.85M unassigned. The 2027 proposal projects a narrow $1.26M annual surplus and its opening-balance assumptions include $22M of anticipated financing and asset sales. [S1,S2]",
+      "chapters": [
+        {
+          "heading": "Historical audited position",
+          "text": "At December 31, 2024: General Fund total $41,950,453; nonspendable $2,038,078; restricted $18,166,573; committed $10,000,000; assigned $6,893,451; unassigned $4,852,351. The five sum exactly. Unassigned is 11.57% of total, not a cash balance. [S1 p17]",
+          "kind": "context"
+        },
+        {
+          "heading": "Transfers mask the underlying sensitivity",
+          "text": "2024 General Fund fell $2,159,812; management discussion reports a $4.8M transfer from excess marijuana tax funds. Holding all else equal, without that transfer the decrease would be approximately $6.96M. This is a counterfactual, not an allegation about legality. [S1]",
+          "kind": "context"
+        },
+        {
+          "heading": "Budget basis is different",
+          "text": "December 2024 GAAP fund balance and October 2026 budgetary projections are not directly subtractable. Before comparing, reconcile transfers, investment valuation and reporting basis; do not label the difference cash lost. [S1 pp17,104; S2 p9]",
+          "kind": "context"
+        },
+        {
+          "heading": "2027 all-funds proposal",
+          "text": "The October presentation compares $255.83M 2026 spending with $217.28M 2027 preliminary spending, a $38.55M difference; the General Fund shown in that table is before recommended reductions. This is not realized savings. [S2 p2]",
+          "kind": "context"
+        },
+        {
+          "heading": "2027 General Fund math",
+          "text": "Proposed revenues plus transfers $122.67M and expenses after cuts $121.40M; difference at displayed precision $1.27M versus reported $1.26M, plausibly rounding. The outlook displays starting expenses $131.21M, reductions $9.81M and spending $121.39M. [S2 p8; S3]",
+          "kind": "context"
+        },
+        {
+          "heading": "Personnel reduction screen",
+          "text": "The outlook shows 15%, a $66.96M eligible personnel base and $9.81M reduction. Straight multiplication gives $10.044M, a $234,000 difference. The slide says grant-backed/exempt personnel are excluded and elected offices can meet targets in other categories. Reconcile basis and rounding; not evidence of lost cash. [S3 reduction slide]",
+          "kind": "options"
+        },
+        {
+          "heading": "Distribution",
+          "text": "Sheriff $46.33M preliminary, $4.89M cut, $41.44M remaining (10.55%; 49.85% of $9.81M total). DA $6.42M to $5.58M, $0.84M reduction (13.08%); facilities $0.68M, clerk $0.60M, planning $0.49M, IT $0.48M. Dollar targets are not layoff counts. [S2 p6]",
+          "kind": "context"
+        },
+        {
+          "heading": "Financing dependency",
+          "text": "Slide 9 explains that the General Fund opening estimate for 2027 incorporates unaudited 2025 and 2026 projections, including $7M anticipated asset sale and $15M anticipated COP. Projected end-2026 $0.90M; if neither arrived and all else held constant, $0.90M − $22M = −$21.10M. Not a forecast or proof of issuance. [S2 p9]",
+          "kind": "context"
+        },
+        {
+          "heading": "Other funds",
+          "text": "2026 to 2027 projected endings: Road and Bridge −$5.48M to −$5.10M; Human Services $0 to −$0.50M; E911 $4.23M to $4.91M; Excess Marijuana $0.54M to $0.94M; Desert Hawk Golf $1.29M to $1.56M. Restricted resources cannot be assumed transferable. [S2 p9]",
+          "kind": "context"
+        },
+        {
+          "heading": "Debt and recurring costs",
+          "text": "Proposed General Fund debt service $21.35M versus $20.22M 2026; capital $1.11M versus $20.13M. Review COP series, collateral, trustee dates and payments through original financing disclosures; a capital decline is not an equivalent recurring cost saving. [S2 p5; S5]",
+          "kind": "context"
+        },
+        {
+          "heading": "Shock test",
+          "text": "Use reported annual surplus $1.26M minus revenue loss and unmet savings. At 1% revenue loss ($1.2267M), remaining margin is $33,300; at 2%, deficit $1.1934M. If 90% of $9.81M savings materializes with no other change, surplus $279,000. These are static scenarios, not forecasts; do not double count missing proceeds in annual and opening-balance calculations.",
+          "kind": "context"
+        },
+        {
+          "heading": "Crossover and child impact",
+          "text": "Assess jail obligations, pension funding, wildfire recovery, road maintenance, drought, wastewater and service disruptions together. Reduced household income and access to human services are possible knock-on effects; require outcome data before assigning causal effects.",
+          "kind": "context"
+        },
+        {
+          "heading": "Q processing",
+          "text": "Retain native dollar amounts, fund, fiscal period, accounting basis, proposal/adoption/actual stage and cited slide or page. Recalculate with integer cents; flag inconsistent rows; keep raw values and derived values separate. Match counterparties for interfund transfers.",
+          "kind": "options"
+        },
+        {
+          "heading": "EE / RX / event horizons",
+          "text": "Public-source first; measure recurring revenue against recurring expenditure before financing. In 2027 monitor actual receipts, savings, debt and fund ending balance. In 2029/2031 test reserve recovery and maintenance backlog. Compare alternatives without assuming that all cuts or asset sales are avoidable.",
+          "kind": "options"
+        }
+      ],
+      "unknowns": [
+        "2025 audited actuals and 2026 finalized accounts missing from checked archive.",
+        "Exact eligible-payroll reduction bridge not published in reviewed slides.",
+        "Actual financing proceeds, asset-sale completion and final adopted 2027 budget not verified."
+      ],
+      "sources": [
+        {
+          "id": "S1",
+          "title": "2024 ACFR — printed pp. 17, 21, 104 and notes",
+          "url": "https://county.pueblo.org/sites/default/files/2025-11/Pueblo%20County%20Annual%20Comprehensive%20Financial%20Report%202024.pdf"
+        },
+        {
+          "id": "S2",
+          "title": "2027 proposed budget — slides 2–9",
+          "url": "https://county.pueblo.org/sites/default/files/2026-10/2027%20Proposed%20Budget%20SB.pdf"
+        },
+        {
+          "id": "S3",
+          "title": "2027 financial outlook — reduction plan and surplus",
+          "url": "https://county.pueblo.org/sites/default/files/2026-10/2027%20Financial%20Update%20Final.pdf"
+        },
+        {
+          "id": "S4",
+          "title": "2027 budget portal",
+          "url": "https://county.pueblo.org/budget-and-finance-department/2027-budget"
+        },
+        {
+          "id": "S5",
+          "title": "Public municipal securities disclosures",
+          "url": "https://emma.msrb.org/"
+        }
+      ],
+      "packet": {
+        "schemaVersion": "1.0",
+        "lifecycle": "active",
+        "publicationStatus": "partial",
+        "evidenceStatus": "dated public-source review; some analysis and secondary reports",
+        "reviewDue": "2026-12-02",
+        "related": [
+          "qp-county-audit-cost-2026",
+          "qp-county-pension-2026",
+          "qp-regional-fragmentation-2026"
+        ],
+        "build": "Financial calculation ledger, scenario inputs, reconciliation checks and source-linked fund timeline.",
+        "privacy": "No commenter names or screenshots reproduced",
+        "validation": "Public-source arithmetic and source attribution; no certified audit"
+      }
+    },
+    {
+      "id": "qp-county-pension-2026",
+      "title": "Pueblo County pension funding, workforce cuts and future obligations",
+      "route": "county-pension-and-workforce.html",
+      "checked": "2026-11-18",
+      "reviewBy": "2026-12-02",
+      "questions": [
+        "How underfunded is Pueblo County's pension?",
+        "What could workforce cuts mean for pensions?",
+        "Are county commissioners in PERA?"
+      ],
+      "keywords": [
+        "county pension",
+        "retirement",
+        "pension funding",
+        "deputy layoffs",
+        "workforce sustainability"
+      ],
+      "summary": "The 2024 ACFR reports $145.10M net liability for the county officers and employees plan, $423,031 PERA net liability and a $4.215M actuarial contribution shortfall for the county plan. These are long-term obligations, not current General Fund bills. [S1]",
+      "chapters": [
+        {
+          "heading": "Pension balance sheet",
+          "text": "At December 31, 2024, total pension liability $314,240,583 minus fiduciary net position $169,141,289 = net liability $145,099,294; assets are 53.83% of liability. 2023 net liability $133,241,186; increase $11,858,108. [S1 p78]",
+          "kind": "options"
+        },
+        {
+          "heading": "Separate PERA participation",
+          "text": "The county reports PERA net liability $423,031 and combined reported net pension liability $145,522,325. This does not establish which individual elected officials are enrolled in either plan. [S1 p89]",
+          "kind": "context"
+        },
+        {
+          "heading": "2024 cash movement",
+          "text": "Employer contributions $8,188,507; employee contributions $6,004,905; benefits paid $19,875,889; investment income $10,823,331. Benefits are not an operating deficit and investment income is not guaranteed. [S1 p78]",
+          "kind": "context"
+        },
+        {
+          "heading": "Contribution history",
+          "text": "Actuarially determined versus actual employer contributions (millions, rounded): 2015 6.34/3.83; 2016 6.88/4.06; 2017 7.15/4.17; 2018 7.32/4.31; 2019 8.03/4.72; 2020 9.55/5.13; 2021 9.56/6.14; 2022 10.90/6.88; 2023 11.49/7.82; 2024 12.40/8.19. Shortfalls occur in all ten reported years, across administrations. [S1 p111]",
+          "kind": "context"
+        },
+        {
+          "heading": "Exact current historical shortfall",
+          "text": "$12,403,537 − $8,188,507 = $4,215,030 in 2024. The schedule reports a contribution of 11.22% of covered payroll; that ratio is not necessarily the statutory or policy contribution rate. [S1 p111]",
+          "kind": "context"
+        },
+        {
+          "heading": "Discount-rate sensitivity",
+          "text": "The actuarial disclosure gives $181,528,875 net liability at 6%, $145,099,294 at 7%, and $114,433,124 at 8%. These are valuation scenarios, not an immediate demand for cash or proof of insolvency. [S1 p78]",
+          "kind": "context"
+        },
+        {
+          "heading": "Layoff crossover",
+          "text": "Covered payroll $72,951,948 in 2024. A reduction in payroll can reduce payroll-linked contributions, while accrued obligations do not disappear. Retirement timing, replacement hiring, contributions and asset returns require qualified actuarial modeling. [S1 p111]",
+          "kind": "context"
+        },
+        {
+          "heading": "What workers and retirees need",
+          "text": "Clear benefit rules, accurate contributions, accessible aggregate funding data and independent advice. Q should not imply a pension reduction or benefit default or give personal retirement advice.",
+          "kind": "options"
+        },
+        {
+          "heading": "Community signal",
+          "text": "Comments express concern about employee safety and fairness and claim commissioners use a different pension scheme. The aggregate ACFR cannot establish those individual enrollments. Keep the claim unresolved instead of amplifying it.",
+          "kind": "context"
+        },
+        {
+          "heading": "Child impact and economic resilience",
+          "text": "Possible pathways include lost income, family housing instability and changes to service capacity. Retiree spending and the future tax/service tradeoff are regional concerns; not quantified outcomes.",
+          "kind": "context"
+        },
+        {
+          "heading": "Q processing and EE",
+          "text": "Store actuarial measurement date, valuation method, discount rate, total liability, fiduciary assets, plan, contribution target and contributions. Do not conflate pension expense, contribution, debt principal or annual budget deficit. Reuse historic data once with auditable calculations.",
+          "kind": "options"
+        },
+        {
+          "heading": "RX and event horizons",
+          "text": "Compare next valuation and ACFR, detect recurring deficiency, review employer-policy changes, model payroll and returns with an actuary. Evaluate year 3 and year 5 funding paths; no cost savings or changes to benefits assumed.",
+          "kind": "options"
+        }
+      ],
+      "unknowns": [
+        "2025 and 2026 liabilities and actuarial forecasts not verified.",
+        "Individual retirement enrollment and current contribution policy not reconciled.",
+        "Effect of proposed cuts on covered payroll and actuarial outcomes not calculated."
+      ],
+      "sources": [
+        {
+          "id": "S1",
+          "title": "2024 county ACFR — printed pp. 78, 89, 110–111",
+          "url": "https://county.pueblo.org/sites/default/files/2025-11/Pueblo%20County%20Annual%20Comprehensive%20Financial%20Report%202024.pdf"
+        },
+        {
+          "id": "S2",
+          "title": "County 2027 budget presentation",
+          "url": "https://county.pueblo.org/sites/default/files/2026-10/2027%20Proposed%20Budget%20SB.pdf"
+        },
+        {
+          "id": "S3",
+          "title": "County annual report archive",
+          "url": "https://county.pueblo.org/budget-and-finance-department/annual-comprehensive-financial-report-acfr"
+        }
+      ],
+      "packet": {
+        "schemaVersion": "1.0",
+        "lifecycle": "active",
+        "publicationStatus": "partial",
+        "evidenceStatus": "dated public-source review; some analysis and secondary reports",
+        "reviewDue": "2026-12-02",
+        "related": [
+          "qp-county-compensation-2026",
+          "qp-county-fiscal-review-2026",
+          "qp-regional-fragmentation-2026"
+        ],
+        "build": "Pension historical series and sensitivity specifications; workforce linkage at aggregate level only.",
+        "privacy": "No commenter names or screenshots reproduced",
+        "validation": "Public-source arithmetic and source attribution; no certified audit"
+      }
+    },
+    {
+      "id": "qp-regional-fragmentation-2026",
+      "title": "One Pueblo region, many disconnected reporting systems",
+      "route": "regional-fragmentation.html",
+      "checked": "2026-11-18",
+      "reviewBy": "2026-12-02",
+      "questions": [
+        "Why is Pueblo's regional reporting fractured?",
+        "How can Pueblo connect its government entities?",
+        "Why does Q Pueblo need to exist?"
+      ],
+      "keywords": [
+        "regional fragmentation",
+        "pacog",
+        "regional reporting",
+        "jurisdictions",
+        "shared services"
+      ],
+      "summary": "Public budgets and financial disclosures are maintained by separate institutions. PACOG already provides a regional coordination structure; Q proposes federated public information, not consolidated government. [S1–S5]",
+      "chapters": [
+        {
+          "heading": "Scope",
+          "text": "One regional economy intersects city and county boundaries, metro and special districts, schools, water, sanitation, libraries, emergency response, nonprofits, businesses and state/federal programs. These authorities retain different statutory mandates and records.",
+          "kind": "context"
+        },
+        {
+          "heading": "Existing public reporting",
+          "text": "County, city, Pueblo West, Pueblo Water and schools have distinct sources. State filings offer a separate oversight channel. Differences in fiscal years and accounting bases prevent direct comparisons without reconciliation. [S2–S8]",
+          "kind": "context"
+        },
+        {
+          "heading": "An existing coordinating body",
+          "text": "PACOG lists regional member government organizations and provides a forum for coordination. Q proposes exploring its convening role for compatibility; it has not been granted additional authority or adopted this design. [S1]",
+          "kind": "context"
+        },
+        {
+          "heading": "Why the fragmentation costs matter",
+          "text": "Residents search multiple portals; entities may buy overlapping data, maps or technology; cross-jurisdictional dependencies are difficult to identify. These are hypotheses requiring time-and-cost baselines, not audited dollar losses.",
+          "kind": "context"
+        },
+        {
+          "heading": "Follow the money",
+          "text": "A federal grant passed to the state, county and a local service provider can be recorded more than once. Match transfer amount, date, fund, counterparty and recognition basis. Sum comparable expenditures minus only matched duplicate internal flows; preserve unresolved matches.",
+          "kind": "context"
+        },
+        {
+          "heading": "Illustrative regional case",
+          "text": "When county road maintenance is deferred, municipal and school transport patterns may change; emergency access and local business costs may be affected. Track service boundaries and jointly affected assets without asserting effects are already measured.",
+          "kind": "context"
+        },
+        {
+          "heading": "Water and industry",
+          "text": "Link water rights, allocations, drought, wastewater, projects, industrial demand and utility capacity. Distinguish legal rights, physical water, seasonal availability and contracted use; avoid drawing conclusions from unrelated service territories.",
+          "kind": "context"
+        },
+        {
+          "heading": "Fire and emergency",
+          "text": "Use verified event dates, recovery milestones, household assistance, grant and asset packets. Link each cost to the responsible entity and do not count promised assistance as paid. Year 3/5 recovery monitoring belongs alongside immediate response.",
+          "kind": "context"
+        },
+        {
+          "heading": "Education and household impact",
+          "text": "Schools use different fiscal calendars. Child effects of transport, food availability, household income and service changes should be modeled in aggregate, without profiling children.",
+          "kind": "context"
+        },
+        {
+          "heading": "Digital twin and shadow",
+          "text": "Twin: source-backed public facts about institutions, assets, responsibilities and connections. Shadow: historical versions, observed public concerns and scenarios; distinguish source-backed states from hypothetical outcomes. Neither controls physical infrastructure.",
+          "kind": "context"
+        },
+        {
+          "heading": "Public signals",
+          "text": "Community comments are retained as dated thematic observations, not population sentiment or verified wrongdoing. Link them to claims and relevant sources; avoid publishing unnecessary identifiers. Preserve contradictory viewpoints.",
+          "kind": "context"
+        },
+        {
+          "heading": "EE / T2Y / LL",
+          "text": "Measure duplicated research time and data acquisition; shared definitions and stable identifiers can reduce rework. Maintain time validity and versions, preserve dissent and recover existing Q evidence before new extraction.",
+          "kind": "options"
+        },
+        {
+          "heading": "RX and leap",
+          "text": "Pilot common exports with willing partners and existing public archives. Use a read-only regional source registry and compatibility adapter rather than a centralized replacement. Human authority, local autonomy, legal retention and privacy remain intact.",
+          "kind": "options"
+        },
+        {
+          "heading": "Horizon and success",
+          "text": "2027 inventory and pilots; 2029 reconciled financial flows and GIS relationships; 2031 independent resilience evaluation. Success means fewer unresolved matches, reliable publication and proven reduction in rework — not number of entities forced onto one platform.",
+          "kind": "options"
+        }
+      ],
+      "unknowns": [
+        "No complete current entity and service-boundary census.",
+        "No measured region-wide fragmentation cost.",
+        "Institutional adoption, agreements and legal scope not established."
+      ],
+      "sources": [
+        {
+          "id": "S1",
+          "title": "PACOG — participating organizations and structure",
+          "url": "https://www.pacog.net/whoispacog"
+        },
+        {
+          "id": "S2",
+          "title": "County annual financial report archive",
+          "url": "https://county.pueblo.org/budget-and-finance-department/annual-comprehensive-financial-report-acfr"
+        },
+        {
+          "id": "S3",
+          "title": "City Finance",
+          "url": "https://www.pueblo.us/92/Finance"
+        },
+        {
+          "id": "S4",
+          "title": "Pueblo West budget and financial reports",
+          "url": "https://www.pueblowestmetro.us/548/Budget-and-Annual-Financial-Reports"
+        },
+        {
+          "id": "S5",
+          "title": "Pueblo Water financials",
+          "url": "https://pueblowater.org/our-board/financials/"
+        },
+        {
+          "id": "S6",
+          "title": "State Auditor public local audit repository",
+          "url": "https://apps.leg.co.gov/osa/lg"
+        },
+        {
+          "id": "S7",
+          "title": "District 60 financial transparency",
+          "url": "https://www.pueblod60.org/departments/business-services/financial-transparency"
+        },
+        {
+          "id": "S8",
+          "title": "District 70 financial transparency",
+          "url": "https://www.district70.org/district-information/district-departments/business-services/financial-transparency"
+        }
+      ],
+      "packet": {
+        "schemaVersion": "1.0",
+        "lifecycle": "active",
+        "publicationStatus": "partial",
+        "evidenceStatus": "dated public-source review; some analysis and secondary reports",
+        "reviewDue": "2026-12-02",
+        "related": [
+          "qp-regional-packets-2026",
+          "qp-regional-leap-2026",
+          "qp-county-fiscal-review-2026"
+        ],
+        "build": "Federated regional source inventory and entity relationship schema; no new authority or institutional consolidation.",
+        "privacy": "No commenter names or screenshots reproduced",
+        "validation": "Public-source arithmetic and source attribution; no certified audit"
+      }
+    },
+    {
+      "id": "qp-regional-packets-2026",
+      "title": "AI-compatible public records: the Q living packet transition",
+      "route": "regional-ai-compatible-packets.html",
+      "checked": "2026-11-18",
+      "reviewBy": "2026-12-02",
+      "questions": [
+        "What does AI-compatible government reporting mean?",
+        "How should Pueblo build public knowledge packets?",
+        "How can government avoid repeated audit reconstruction?"
+      ],
+      "keywords": [
+        "AI compatible",
+        "packet standard",
+        "machine readable",
+        "continuous assurance",
+        "AI governance",
+        "interoperability"
+      ],
+      "summary": "Q proposes source-linked, versioned, human-readable and machine-readable packets for financial records, projects, decisions and AI tools. Data remains owned by responsible institutions; public exports do not grant access to confidential records.",
+      "chapters": [
+        {
+          "heading": "Why a packet rather than another PDF?",
+          "text": "A published PDF preserves a document, but searchable structured records can also expose amounts, dates, relationships and provenance without repeated extraction. Keep the authentic original and generate accessible HTML, CSV/JSON and a stable record identifier.",
+          "kind": "context"
+        },
+        {
+          "heading": "Native creation",
+          "text": "Create a decision packet when a board authorizes a contract, not after a dispute. Include authority, signoff, amount, fund, vendor, milestone, effective dates, dependencies and public classification; append payment, amendment and outcome events.",
+          "kind": "context"
+        },
+        {
+          "heading": "Minimum data",
+          "text": "packet_id, entity_id, jurisdiction, schema_version, record_type, reporting_period, effective_date, source URI, observed_at, source hash if captured, claim status, review_due, fields with units and evidence IDs, revision history, related packets, owner role and access classification. Unknown is null, never zero.",
+          "kind": "context"
+        },
+        {
+          "heading": "Human-readable and machine-readable",
+          "text": "A resident reads plain language with original citations; an authorized tool reads validated JSON using a published data dictionary. Public export excludes bank details, protected employee records, privilege, security-sensitive configuration and personal information.",
+          "kind": "context"
+        },
+        {
+          "heading": "Financial validation",
+          "text": "Record authorization, commitment, invoice, payment, amendment, accounting basis, fund restriction and counterparty independently. Reconcile totals and reject incompatible fiscal periods. Run deterministic arithmetic before AI summarization.",
+          "kind": "context"
+        },
+        {
+          "heading": "Audit packet example",
+          "text": "2025 county audit record: fiscal close 2025-12-31; normal audit date 2026-06-30; county-reported fieldwork week 2026-10-26; independent fee, final opinion and state filing unknown. Keep separate consulting ceiling $170,950 only in its own contract record, not as audit fee. [S4 and linked investigation]",
+          "kind": "context"
+        },
+        {
+          "heading": "Versioning and TTL",
+          "text": "The packet remains open as evidence evolves. Review dates trigger freshness checks; expired observations remain historical with explicit dates. Corrections append reasons and source lineage. An unavailable source is not deleted or replaced silently.",
+          "kind": "context"
+        },
+        {
+          "heading": "AI uses and boundaries",
+          "text": "Offer retrieval, relevant comparison, anomaly flags and plain-language explanations. Treat retrieved text as untrusted content, cite source-level facts and abstain from unsupported claims. Do not allow AI to authorize expenditure, decide eligibility or control critical infrastructure.",
+          "kind": "context"
+        },
+        {
+          "heading": "Governance register",
+          "text": "Record AI tool purpose, owner, policy authority, affected population, data classes, model/provider version, test results, risk controls, human appeals, accessibility, security, procurement and exit plan. UK's transparency register illustrates public standardized records. [S2]",
+          "kind": "context"
+        },
+        {
+          "heading": "Interoperability precedents",
+          "text": "GAO's May 2026 report identifies potential efficiency of standardized regulatory reporting; it is not a claim all agencies have achieved it. Estonia's exchange infrastructure illustrates independent institutions sharing authorized data. [S1,S3]",
+          "kind": "context"
+        },
+        {
+          "heading": "Procurement acceptance",
+          "text": "Require documented export/data dictionary, stable IDs, legal ownership, access control, portability, migration cost, independent checks, manual fallback and deletion/retention rules. Test actual exports before acceptance; do not require one vendor or AI model.",
+          "kind": "context"
+        },
+        {
+          "heading": "Child and rights safeguards",
+          "text": "Never attach identifiable child data to public packets. Test accessibility for residents without smartphones or broadband; provide static reading, printable formats and non-AI referral paths. Keep humans accountable for high-impact decisions.",
+          "kind": "context"
+        },
+        {
+          "heading": "EE and T2Y",
+          "text": "Measure time per accepted record, duplicate extraction avoided, error correction, data freshness and energy/compute costs. Prefer structured deterministic processing and cached sources over repeated model calls. Measure answer fidelity and preserve years of context.",
+          "kind": "options"
+        },
+        {
+          "heading": "RX, failure modes and leap",
+          "text": "Reject malformed inputs, mark contested claims, retain previous known-good release, support revocation of compromised access and rollback. Start read-only with public finance; scale only after reproducible checks and owner approval.",
+          "kind": "options"
+        }
+      ],
+      "unknowns": [
+        "No government adoption or live private-system integration.",
+        "No measured local efficiency gain or procurement quotes.",
+        "A production regional schema and access policy require stakeholder and legal validation."
+      ],
+      "sources": [
+        {
+          "id": "S1",
+          "title": "GAO May 2026 — Financial Data Transparency Act reporting reform",
+          "url": "https://www.gao.gov/products/gao-26-108420"
+        },
+        {
+          "id": "S2",
+          "title": "UK algorithmic transparency recording standard hub",
+          "url": "https://www.gov.uk/government/collections/algorithmic-transparency-recording-standard-hub"
+        },
+        {
+          "id": "S3",
+          "title": "Estonia RIA X-tee data exchange",
+          "url": "https://www.ria.ee/en/state-information-system/data-exchange-platforms/data-exchange-layer-x-tee"
+        },
+        {
+          "id": "S4",
+          "title": "County documented accounting close and controls",
+          "url": "https://county.pueblo.org/board-county-commissioners-office/what-we-are-working"
+        }
+      ],
+      "packet": {
+        "schemaVersion": "1.0",
+        "lifecycle": "active",
+        "publicationStatus": "partial",
+        "evidenceStatus": "dated public-source review; some analysis and secondary reports",
+        "reviewDue": "2026-12-02",
+        "related": [
+          "qp-regional-fragmentation-2026",
+          "qp-regional-leap-2026",
+          "qp-county-audit-cost-2026"
+        ],
+        "build": "Static machine-readable research packet export, source-linked reading, procurement compatibility checklist and architecture proposal.",
+        "privacy": "No commenter names or screenshots reproduced",
+        "validation": "Public-source arithmetic and source attribution; no certified audit"
+      }
+    },
+    {
+      "id": "qp-regional-leap-2026",
+      "title": "Pueblo’s transition and leap plan: real examples, costs and implementation",
+      "route": "regional-transition-and-leap.html",
+      "checked": "2026-11-18",
+      "reviewBy": "2026-12-02",
+      "questions": [
+        "How can Pueblo leap into the AI era?",
+        "What real government transitions can Pueblo learn from?",
+        "What does Q Pueblo propose for implementation?"
+      ],
+      "keywords": [
+        "transition planning",
+        "leap planning",
+        "modernization",
+        "case studies",
+        "regional AI readiness",
+        "implementation"
+      ],
+      "summary": "Real transitions in Estonia, the UK, procurement reform and Colorado regional data sharing provide reusable patterns. Q proposes staged, measured, reversible pilots — not a claim of proven local savings or authorized deployment.",
+      "chapters": [
+        {
+          "heading": "Estonia — interoperability",
+          "text": "X-tee enables authorized exchange across independent information systems. Reuse the architecture principle of compatible interfaces, authentication and traceability, not Estonia's laws or identity infrastructure wholesale. [S1]",
+          "kind": "context"
+        },
+        {
+          "heading": "UK — coherent public access",
+          "text": "The digital strategy illustrates migrating disparate public publishing and services toward coherent access. Pueblo can offer one evidence navigation layer while preserving institutions' official sites and authority. [S2]",
+          "kind": "context"
+        },
+        {
+          "heading": "Colorado — regional acquisition",
+          "text": "DRCOG coordinates regional data acquisition including imagery. Pueblo should inventory existing datasets and licensing before recommending new contracts or hardware. [S3]",
+          "kind": "context"
+        },
+        {
+          "heading": "Ukraine — civic prototype to procurement reform",
+          "text": "The ProZorro case shows a civic-led pilot evolving into institutional procurement reform. Its reported results are context-specific; local legal and procurement adaptation plus independent measurement are needed. [S4]",
+          "kind": "context"
+        },
+        {
+          "heading": "Federal reporting — data first",
+          "text": "GAO describes the potential to reduce repetitive filings through standards but also a need for initial government-wide foundations. Common syntax alone cannot reconcile definitions or poor data. [S5]",
+          "kind": "context"
+        },
+        {
+          "heading": "UK governance — public records for AI",
+          "text": "ATRS supplies standardized disclosures and guidance for specified public-sector organizations. Q can adapt the pattern into a local tool registry with human appeal and assessment; it is not Colorado law. [S6]",
+          "kind": "context"
+        },
+        {
+          "heading": "Local anchor",
+          "text": "PACOG already coordinates across regional jurisdictions. A voluntary interoperability discussion could build on current regional planning, not create another government agency. No participation is assumed. [S7]",
+          "kind": "context"
+        },
+        {
+          "heading": "Six practical demonstrations",
+          "text": "Finance: document and simulate audit delays. Wildfire: connect recovery funding and household resources. Water: connect drought, wastewater and capacity. Jail: follow construction, debt and operations. Industry: track jobs, incentives and resource demands. Education: map skills pathways. Each begins with public evidence and a no-change baseline.",
+          "kind": "context"
+        },
+        {
+          "heading": "Three delivery lanes",
+          "text": "A: Q independently publishes public-source packets. B: willing institutions provide structured exports through agreements. C: authorized internal systems implement tested controls. A can work while B/C remain proposals; do not connect sensitive systems in the public prototype.",
+          "kind": "options"
+        },
+        {
+          "heading": "Illustrative economics",
+          "text": "Eight entities × 20 duplicated hours/month × 12 × $50 loaded cost = $96,000/year of modeled labor. At 40% reuse, $38,400 time value; less $25,000 annual operation = $13,400 modeled benefit; $60,000 setup / $13,400 ≈ 4.48 years simple payback. These are assumptions, not measured Pueblo costs or cash savings.",
+          "kind": "context"
+        },
+        {
+          "heading": "First 30–90 days",
+          "text": "Inventory systems, sources, reporting periods, permissions, existing contracts, staff skills and baseline hours. Pilot one export and one public answer with accessibility tests, source reconciliation, security review, manual fallback and an explicit stop gate.",
+          "kind": "context"
+        },
+        {
+          "heading": "2027–2028 transition",
+          "text": "Publish source registry, public financial packet demonstrations, regional comparison and correction channel. Test voluntary adapters with one or two willing institutions. Evaluation: traceable claims, consistent data, time and cost per accepted output versus manual baseline.",
+          "kind": "context"
+        },
+        {
+          "heading": "2029 and 2031 leap",
+          "text": "Year 3: reconcile cross-entity flows and map infrastructure dependencies. Year 5: independently evaluate continuous assurance, maintenance and disaster scenarios. Only advance if data quality, privacy, cost and service continuity pass review.",
+          "kind": "options"
+        },
+        {
+          "heading": "2036 and longer",
+          "text": "Maintain versioned data definitions, open exports, tested restore, succession, funding and exit plans. Avoid locking decades of public information into proprietary or obsolete systems.",
+          "kind": "context"
+        },
+        {
+          "heading": "Failure modes and correction",
+          "text": "ERP migrations can fail under rushed adoption, poor source quality or inadequate training. Do not migrate critical systems during a budget crisis without parallel validation. Watch vendor lock-in, sensitive-data leakage, unsupported AI claims, digital exclusion and duplicated procurement.",
+          "kind": "context"
+        },
+        {
+          "heading": "Child and workforce impact",
+          "text": "Offer digital literacy and accessible non-AI paths. Assess retraining, staffing impacts, emergency service continuity and intergenerational infrastructure costs before expansion. No automated employment or public-benefit decision-making.",
+          "kind": "context"
+        },
+        {
+          "heading": "LL / EE / T2Y / RX",
+          "text": "Capture each pilot’s baseline, methods, failures, costs and corrections; reuse validated components. Compare output accuracy and rework, energy and staff review. Pause or rollback on integrity failure; preserve human judgment.",
+          "kind": "options"
+        },
+        {
+          "heading": "Qified conclusion",
+          "text": "Independent public intelligence, compatible information, region-wide understanding and human authority can coexist. The near-term leap is reliable, explainable knowledge — not an expensive AI purchase or centralization.",
+          "kind": "context"
+        }
+      ],
+      "unknowns": [
+        "Actual regional staffing, software and duplicated work baselines not yet measured.",
+        "Pilot budgets, funding and participating institutions not authorized.",
+        "No production digital twin or autonomous AI service implied."
+      ],
+      "sources": [
+        {
+          "id": "S1",
+          "title": "Estonia RIA — X-tee exchange",
+          "url": "https://www.ria.ee/en/state-information-system/data-exchange-platforms/data-exchange-layer-x-tee"
+        },
+        {
+          "id": "S2",
+          "title": "UK government digital strategy",
+          "url": "https://www.gov.uk/government/publications/government-digital-strategy/government-digital-strategy"
+        },
+        {
+          "id": "S3",
+          "title": "DRCOG regional data acquisition",
+          "url": "https://drcog.org/data-maps-modeling/data-acquisition-projects"
+        },
+        {
+          "id": "S4",
+          "title": "Open Contracting Partnership — ProZorro case study",
+          "url": "https://www.open-contracting.org/2016/07/28/prozorro-volunteer-project-led-nation-wide-procurement-reform-ukraine/"
+        },
+        {
+          "id": "S5",
+          "title": "GAO regulatory reporting transition May 2026",
+          "url": "https://www.gao.gov/products/gao-26-108420"
+        },
+        {
+          "id": "S6",
+          "title": "UK algorithmic transparency standard",
+          "url": "https://www.gov.uk/government/collections/algorithmic-transparency-recording-standard-hub"
+        },
+        {
+          "id": "S7",
+          "title": "PACOG coordination",
+          "url": "https://www.pacog.net/whoispacog"
+        }
+      ],
+      "packet": {
+        "schemaVersion": "1.0",
+        "lifecycle": "active",
+        "publicationStatus": "partial",
+        "evidenceStatus": "dated public-source review; some analysis and secondary reports",
+        "reviewDue": "2026-12-02",
+        "related": [
+          "qp-regional-fragmentation-2026",
+          "qp-regional-packets-2026",
+          "qp-county-fiscal-review-2026"
+        ],
+        "build": "Case study library, staged implementation gates, duplication-cost scenario and six demonstration briefs.",
+        "privacy": "No commenter names or screenshots reproduced",
+        "validation": "Public-source arithmetic and source attribution; no certified audit"
+      }
+    }
+  ]
+}
