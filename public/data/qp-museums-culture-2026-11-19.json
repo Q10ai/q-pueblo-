@@ -1,0 +1,1016 @@
+{
+  "schema": "qp-cultural-portfolio-v2",
+  "id": "qp-culture-2026",
+  "title": "Pueblo Museums & Culture",
+  "status": "living_partial_evidence",
+  "checked": "2026-11-19",
+  "reviewBy": "2026-11-25",
+  "url": "museums-culture.html",
+  "profiles": [
+    {
+      "id": "heritage",
+      "name": "Pueblo Heritage Museum & Historical Society",
+      "location": "203 W B Street",
+      "historyPurpose": "Local and Southern Colorado history, artifacts, genealogy and the Edward Broadhead Library; society founded 1975, museum under its umbrella since January 2025.",
+      "ownershipGovernance": "City-owned freight station; nonprofit museum and library. Society describes volunteer operation; staffing/compensation details need reconciliation with its filing.",
+      "fundingEvidence": "2025 IRS extract: $193,046 revenue; $257,131 expenses; $2,247,327 net assets. City property sale reported Nov 11; $300,000 offer was not accepted; appraisal above $1.9M; reported historic renovation cost $1.3M and original acquisition $150,000. These are different transactions, not cash available. On Nov 17 the mayor reported $10 yearly rent and $600,000 in prior-year roof and HVAC work; these are attributed figures awaiting invoice and lease verification. She proposed dividing the property, with an estimated six months for utility separation and related work, not an approved transfer.",
+      "future": "Test donation, discounted purchase, subdivision, protected lease or easement; secure collection access, occupancy, deed restrictions, title, grant conditions, utilities and 12-month operating runway. No eviction or subdivision approval established.",
+      "sources": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "P3",
+        "U1"
+      ]
+    },
+    {
+      "id": "davinci",
+      "name": "Leonardo da Vinci Museum & STEAM Center",
+      "location": "310 Central Main Street",
+      "historyPurpose": "Opened June 2026; design, invention, models, manuscript facsimiles and hands-on STEAM.",
+      "ownershipGovernance": "Museum identifies itself as a 501(c)(3) supported by private donors; real estate title and affiliated entities not verified.",
+      "fundingEvidence": "Council rejected proposed $885,000 city incentive 5–2 on Sept 14, reported Sept 16. Proposed upgrades included café, signage and exhibits. Rejected request is not expenditure; audited start-up cost, private capital and attendance unavailable.",
+      "future": "Publish five-year attendance, net admission, payroll, educational outcomes, facility and cash projections; compare to existing institutions under fund-specific rules rather than treating proposals as interchangeable.",
+      "sources": [
+        "D1",
+        "D2",
+        "P3"
+      ]
+    },
+    {
+      "id": "arts",
+      "name": "Sangre de Cristo Arts Center & galleries",
+      "location": "210 N Santa Fe Avenue",
+      "historyPurpose": "Founded 1972 through federal EDA and county matching funds; visual arts, theater, dance, education, conferences and sculpture. Institutional history identifies regional service across 17 counties.",
+      "ownershipGovernance": "Nonprofit center; separate nonprofit endowment. Confirm facility title, capital obligations and restricted assets.",
+      "fundingEvidence": "2024 center IRS extract: revenue $2,613,727; expenses $3,089,338; net assets $22,606,852. Separate endowment 2024 net assets $3,539,601; do not add without eliminating inter-entity transfers. 2027 CSAC program request $30,186, not an award.",
+      "future": "Audit facility backlog, restricted balances, subsidy history and program-specific costs; retain affordable access and shared arts teaching.",
+      "sources": [
+        "A1",
+        "A2",
+        "A3",
+        "P1",
+        "P2"
+      ]
+    },
+    {
+      "id": "buell",
+      "name": "Buell Children’s Museum",
+      "location": "210 N Santa Fe Avenue",
+      "historyPurpose": "Interactive arts and learning space within the Arts Center campus, expanded from a smaller children's museum; accredited as part of the institutional offering.",
+      "ownershipGovernance": "Part of Arts Center; separate legal entity or standalone budget not established.",
+      "fundingEvidence": "Parent financials cannot be allocated to Buell without cost-center statements. Attendance, school contracts and admissions mix need records.",
+      "future": "Protect school field trips, sensory-friendly and low-income access; measure cost per student and separate outreach from ticket counts.",
+      "sources": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "id": "elpueblo",
+      "name": "El Pueblo History Museum",
+      "location": "301 N Union Avenue",
+      "historyPurpose": "Archaeology of the 1842 trading post, recreated adobe site, borderlands and regional cultures.",
+      "ownershipGovernance": "History Colorado regional museum; state operating and preservation framework, not equivalent to a municipal nonprofit.",
+      "fundingEvidence": "Determine site-specific state appropriation, earned revenue, grant awards and maintenance; no reliable local allocation established here.",
+      "future": "Coordinate archaeology and tribal consultation, preservation grants, bilingual classroom access and cross-museum passes.",
+      "sources": [
+        "E1",
+        "E2",
+        "I2"
+      ]
+    },
+    {
+      "id": "steelworks",
+      "name": "Steelworks Center of the West / Bessemer Historical Society",
+      "location": "215 Canal Street",
+      "historyPurpose": "CF&I labor, industrial and community history. Nonprofit formed 2000; acquired historic offices and 5.7 acres in 2001 after raising $1.7M; archives donated in 2002.",
+      "ownershipGovernance": "Bessemer Historical Society nonprofit; historical acquisition documented, current parcel title and restrictions require checks.",
+      "fundingEvidence": "2024 IRS extract: revenue $332,515; expenses $476,663; net assets $4,036,935. Rental property income $161,862. Past federal preservation and humanities grants identified, not current awards.",
+      "future": "Fund archival preservation, industrial heritage tourism, workforce education, environmental controls and digitization. Review real-estate obligations and operating cash separately.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": "railway",
+      "name": "Pueblo Railway Museum",
+      "location": "301 W B Street / Union Depot vicinity",
+      "historyPurpose": "Railroad artifacts, operating heritage equipment and school programs; foundation formed 2003 to continue earlier preservation activities.",
+      "ownershipGovernance": "All-volunteer Pueblo Railway Foundation; vehicles owned by foundation or loaned by members. Site tenure not verified.",
+      "fundingEvidence": "Foundation reports partial city/county CSAC support; $14,025 2027 general operating request. Award and current cash position unverified. A FY2024 tax extract directory reports about $95,600 revenue and $68,600 expenses; retrieve the original filing and reconcile donated equipment and in-kind support.",
+      "future": "Coordinate passenger rail interpretation while separating active rail operations, insurance, track access, inspection and equipment conservation.",
+      "sources": [
+        "T1",
+        "T2",
+        "P1",
+        "P2",
+        "T3"
+      ]
+    },
+    {
+      "id": "aircraft",
+      "name": "Pueblo Weisbrod Aircraft Museum / Southern Colorado Space Museum",
+      "location": "31001 Magnuson Avenue",
+      "historyPurpose": "Military and civilian aviation, restoration and space heritage near Pueblo Memorial Airport.",
+      "ownershipGovernance": "Pueblo Historic Aircraft Society receives donations; verify hangar leases, aircraft title/loan restrictions and insurance. The 2017 City Resolution 13760 materials identify a management agreement term ending April 21, 2027 and annual City budget requests. Confirm execution, amendments and renewal status; calendar the deadline as a priority.",
+      "fundingEvidence": "Donations, corporate membership and sponsorship opportunities documented. Annual income, airport support and capital obligations unverified. A third-party FY2024 return extract reports about $196,000 revenue; obtain the complete filing and municipal payments before drawing conclusions.",
+      "future": "Connect aviation/space STEAM to airport workforce education; plan hangar renewal, equipment safety and volunteer succession.",
+      "sources": [
+        "W1",
+        "I2",
+        "W2",
+        "W3"
+      ]
+    },
+    {
+      "id": "rosemount",
+      "name": "Rosemount Museum",
+      "location": "419 W 14th Street",
+      "historyPurpose": "1893 Thatcher mansion; historic interiors, collections and architecture.",
+      "ownershipGovernance": "Nonprofit museum supported by donors, members and volunteers; rents event space.",
+      "fundingEvidence": "Fiscal year ending April 2025: $824,190 revenue; $549,656 expenses; $6,121,126 net assets. $264,985 sales of assets included in revenue; not recurring ticket income.",
+      "future": "Protect interiors and collections; plan conservation reserve, sustainable events, accessibility and fire protection.",
+      "sources": [
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "id": "infozone",
+      "name": "InfoZone News Museum / library local history",
+      "location": "100 E Abriendo Avenue",
+      "historyPurpose": "News, communications, local research and public library heritage resources; listed at Rawlings Library.",
+      "ownershipGovernance": "Library-associated site; current operating status and district cost-center need confirmation.",
+      "fundingEvidence": "Museum-specific budget, staffing, current exhibits and visitor counts unverified; do not equate district-wide funding to museum costs.",
+      "future": "Confirm public access and preserve newspaper archives, media literacy, local reporting history and digital discovery.",
+      "sources": [
+        "I1",
+        "C2"
+      ]
+    },
+    {
+      "id": "mentalhealth",
+      "name": "Colorado Mental Health Institute Museum",
+      "location": "1600 W 24th Street",
+      "historyPurpose": "History of psychiatric institutions and practices; collection includes historical medical artifacts from the late 19th century onward.",
+      "ownershipGovernance": "Associated with state hospital campus; confirm curator, current public access and ownership.",
+      "fundingEvidence": "Facility and museum-specific funding unverified.",
+      "future": "Use survivor-informed interpretation, protect patient privacy, review sensitive exhibits and verify accessibility and appointment policy.",
+      "sources": [
+        "I1",
+        "I2"
+      ]
+    },
+    {
+      "id": "fire",
+      "name": "Hose Company No. 3 Fire Museum",
+      "location": "116 Broadway Avenue",
+      "historyPurpose": "Historic firehouse and firefighting equipment; museum operated by firefighters' historical society since 2001.",
+      "ownershipGovernance": "City-owned building, nonprofit operator per city.",
+      "fundingEvidence": "City describes preservation plans and critical repairs, with $26,210 State Historical Fund and $9,210 local match for the described project; not an annual budget.",
+      "future": "Confirm current condition, hours, title, grant restrictions and unfunded rehabilitation. A second test of city-owned nonprofit-occupied cultural property.",
+      "sources": [
+        "F1"
+      ]
+    },
+    {
+      "id": "valor",
+      "name": "Center for American Values / Home of Heroes",
+      "location": "Riverwalk district",
+      "historyPurpose": "Portraits and stories of Medal of Honor recipients and civic values education.",
+      "ownershipGovernance": "Confirm legal and property structure and program agreements. A separate 501(c)(3) filing is identified for EIN 27-2779073.",
+      "fundingEvidence": "2025 Form 990 extract: $925,593 revenue, $666,221 expenses and $681,473 net assets; contributions $925,133. Public funding share, attendance and restricted cash are not verified.",
+      "future": "Preserve oral histories with consent, link military history education, verify financial reporting and inclusive access.",
+      "sources": [
+        "V1",
+        "C2",
+        "V2"
+      ]
+    },
+    {
+      "id": "barn",
+      "name": "Goodnight Barn",
+      "location": "West of Pueblo / Rock Canyon",
+      "historyPurpose": "Historic ranching and cattle-trail heritage; preservation committee formed 2014. Sources differ on construction year (around 1870).",
+      "ownershipGovernance": "Preservation committee describes restored barn; verify current title and public access agreements.",
+      "fundingEvidence": "Donations, events and tour revenue identified; full restoration costs and operating funds not reconciled.",
+      "future": "Maintain masonry, sanitation, parking and security; manage tour access and interpretation of Indigenous and ranching history.",
+      "sources": [
+        "G1",
+        "G2"
+      ]
+    },
+    {
+      "id": "creative",
+      "name": "Pueblo Arts Alliance / Creative Corridor / independent galleries",
+      "location": "Downtown, Union Avenue, Mesa Junction",
+      "historyPurpose": "Certified creative district with studios, galleries, public art, murals, festivals and creative enterprise.",
+      "ownershipGovernance": "Arts Alliance and independent artists/businesses; not a single museum or budget.",
+      "fundingEvidence": "Grant awards, local support, artist income and gallery leases require entity-level audit.",
+      "future": "Shared marketing, public-art maintenance, affordable studios, paid artist opportunities and neighborhood access.",
+      "sources": [
+        "C1",
+        "C2",
+        "P4"
+      ]
+    },
+    {
+      "id": "performing",
+      "name": "Performing arts, festivals & cultural organizations",
+      "location": "Regional venues",
+      "historyPurpose": "Theater, music, dance, Pueblo Symphony, Pueblo Municipal Band, Steel City Theatre, Juneteenth, State Fair, heritage and genealogy groups.",
+      "ownershipGovernance": "Mixed nonprofits, public venues and independent organizers; affiliated groups not assumed to share legal entities.",
+      "fundingEvidence": "2027 CSAC application list: Municipal Band $20,000; Steel City Theatre $10,000. These are requests, not awards. Other program finances pending.",
+      "future": "Build individual entity register, venue agreements, school access and fair funding criteria; invite Indigenous, Hispanic, Black, immigrant and labor heritage groups to contribute voluntarily.",
+      "sources": [
+        "P1",
+        "C2",
+        "C1"
+      ]
+    },
+    {
+      "id": "zoo",
+      "name": "Pueblo Zoo (related science and culture asset)",
+      "location": "City Park",
+      "historyPurpose": "Conservation, animal care, science education, historic facilities. Zoo reports approximately 90,000 annual visitors; reporting year not identified.",
+      "ownershipGovernance": "Managed by nonprofit Pueblo Zoological Society; city park location.",
+      "fundingEvidence": "2027 CSAC general operating request $15,000, not award; admissions, members and sponsors also support operations. Confirm contract, actual funding and capital obligations. 2024 operating society tax extract: $2,925,341 revenue, $3,190,757 expenses and $4,527,258 net assets. Separate foundation exists; its 2024 net assets were $313,357. Do not consolidate without reconciliation.",
+      "future": "Maintain animal welfare, emergency utilities, access for low-income families, education and conservation; do not compare welfare-critical costs to discretionary exhibits.",
+      "sources": [
+        "Z1",
+        "P1",
+        "Z2",
+        "Z3"
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "Nature & Wildlife Discovery Center (related science asset)",
+      "location": "5200 Nature Center Road and regional campuses",
+      "historyPurpose": "Environmental education, outdoor recreation and raptor rehabilitation; formed through 2018 merger.",
+      "ownershipGovernance": "Nonprofit; river campus public park access reported.",
+      "fundingEvidence": "Membership, donations, programs and rentals are identifiable channels; full financials and public agreements pending.",
+      "future": "Protect wildlife rehab, field trips, outdoor access, wildfire/flood planning and education continuity.",
+      "sources": [
+        "N1"
+      ]
+    }
+  ],
+  "financials": [
+    {
+      "entity": "Historical Society",
+      "period": "2025 calendar",
+      "revenue": 193046,
+      "expenses": 257131,
+      "netAssets": 2247327,
+      "source": "H5"
+    },
+    {
+      "entity": "Arts Center",
+      "period": "2024 calendar",
+      "revenue": 2613727,
+      "expenses": 3089338,
+      "netAssets": 22606852,
+      "source": "A2"
+    },
+    {
+      "entity": "Arts Center Endowment (separate entity)",
+      "period": "2024 calendar",
+      "revenue": 229602,
+      "expenses": 128000,
+      "netAssets": 3539601,
+      "source": "A3"
+    },
+    {
+      "entity": "Steelworks / Bessemer",
+      "period": "2024 calendar",
+      "revenue": 332515,
+      "expenses": 476663,
+      "netAssets": 4036935,
+      "source": "S2"
+    },
+    {
+      "entity": "Rosemount",
+      "period": "2025 fiscal year ending April",
+      "revenue": 824190,
+      "expenses": 549656,
+      "netAssets": 6121126,
+      "source": "R2"
+    },
+    {
+      "entity": "Center for American Values",
+      "period": "2025 calendar",
+      "revenue": 925593,
+      "expenses": 666221,
+      "netAssets": 681473,
+      "source": "V2"
+    },
+    {
+      "entity": "Pueblo Zoological Society",
+      "period": "2024 calendar",
+      "revenue": 2925341,
+      "expenses": 3190757,
+      "netAssets": 4527258,
+      "source": "Z2"
+    },
+    {
+      "entity": "Zoo Foundation (separate entity)",
+      "period": "2024 calendar",
+      "revenue": 15947,
+      "expenses": 0,
+      "netAssets": 313357,
+      "source": "Z3"
+    }
+  ],
+  "sources": [
+    {
+      "id": "H1",
+      "title": "Pueblo County Historical Society and museum",
+      "url": "https://pueblohistory.org/"
+    },
+    {
+      "id": "H2",
+      "title": "Edward Broadhead Library collection",
+      "url": "https://pueblohistory.org/library/"
+    },
+    {
+      "id": "H3",
+      "title": "CPR/KRCC November 11 property reporting",
+      "url": "https://www.cpr.org/2026/11/11/pueblo-heritage-center-building-future-unclear/"
+    },
+    {
+      "id": "H4",
+      "title": "Mayor November 17 episode 80 (administration account)",
+      "url": "https://www.buzzsprout.com/2455789/episodes/20139550-the-mayor-s-mixtape-episode-80"
+    },
+    {
+      "id": "H5",
+      "title": "Historical Society IRS filing extracts",
+      "url": "https://projects.propublica.org/nonprofits/organizations/840851563"
+    },
+    {
+      "id": "D1",
+      "title": "Leonardo museum official",
+      "url": "https://davincisteam.org/"
+    },
+    {
+      "id": "D2",
+      "title": "KRDO September 16 council vote report",
+      "url": "https://krdo.com/news/2026/09/16/885000-funding-request-fails-for-leonard-da-vinci-museum-in-pueblo/"
+    },
+    {
+      "id": "A1",
+      "title": "Arts Center institutional history",
+      "url": "https://sdc-arts.org/about-arts-center"
+    },
+    {
+      "id": "A2",
+      "title": "Arts Center IRS filings",
+      "url": "https://projects.propublica.org/nonprofits/organizations/840624551"
+    },
+    {
+      "id": "A3",
+      "title": "Separate endowment tax filings",
+      "url": "https://projects.propublica.org/nonprofits/organizations/840897023"
+    },
+    {
+      "id": "S1",
+      "title": "Steelworks institutional history",
+      "url": "https://www.steelworks.us/about-us/"
+    },
+    {
+      "id": "S2",
+      "title": "Bessemer Historical Society IRS filings",
+      "url": "https://projects.propublica.org/nonprofits/organizations/311714170"
+    },
+    {
+      "id": "S3",
+      "title": "Steelworks organizational documents",
+      "url": "https://www.steelworks.us/about-us/documents/"
+    },
+    {
+      "id": "R1",
+      "title": "Rosemount museum",
+      "url": "https://rosemount.org/"
+    },
+    {
+      "id": "R2",
+      "title": "Rosemount IRS filings",
+      "url": "https://projects.propublica.org/nonprofits/organizations/846050423"
+    },
+    {
+      "id": "T1",
+      "title": "Railway Foundation",
+      "url": "https://pueblorailway.org/about-us/"
+    },
+    {
+      "id": "T2",
+      "title": "Railway Foundation funding statement",
+      "url": "https://pueblorailway.org/"
+    },
+    {
+      "id": "W1",
+      "title": "Aircraft museum contributions and support",
+      "url": "https://pwam.org/support/"
+    },
+    {
+      "id": "E1",
+      "title": "El Pueblo visitor information",
+      "url": "https://visitpueblo.org/attractions/el-pueblo-history-museum/"
+    },
+    {
+      "id": "E2",
+      "title": "History Colorado grant program",
+      "url": "https://www.historycolorado.org/competitive-grants"
+    },
+    {
+      "id": "F1",
+      "title": "City Fire Museum preservation record",
+      "url": "https://www.pueblo.us/2442/Endangered-Places-Nomination-Hose-Co-No-"
+    },
+    {
+      "id": "G1",
+      "title": "Goodnight Barn preservation committee",
+      "url": "https://goodnightbarnpueblo.org/"
+    },
+    {
+      "id": "G2",
+      "title": "Colorado Preservation: Goodnight Barn",
+      "url": "https://www.coloradopreservation.org/endangered-places/endangered-places-archives/goodnight-barn/"
+    },
+    {
+      "id": "V1",
+      "title": "Center for American Values visitor profile",
+      "url": "https://visitpueblo.org/attractions/center-for-american-values/"
+    },
+    {
+      "id": "I1",
+      "title": "Regional museum directory",
+      "url": "https://coloradomuseums.co/cities-4-plus-museums/pueblo-museums/"
+    },
+    {
+      "id": "I2",
+      "title": "Visit Pueblo heritage directory",
+      "url": "https://visitpueblo.org/listing/history/"
+    },
+    {
+      "id": "C1",
+      "title": "Pueblo Arts Alliance Creative Corridor",
+      "url": "https://puebloarts.org/pueblo-creative-corridor/"
+    },
+    {
+      "id": "C2",
+      "title": "Pueblo arts and heritage attractions",
+      "url": "https://visitpueblo.org/attractions/"
+    },
+    {
+      "id": "Z1",
+      "title": "Pueblo Zoo ownership/management and programs",
+      "url": "https://www.pueblozoo.org/about"
+    },
+    {
+      "id": "N1",
+      "title": "Nature & Wildlife Discovery Center",
+      "url": "https://www.hikeandlearn.org/about"
+    },
+    {
+      "id": "P1",
+      "title": "City September 1 CSAC applications",
+      "url": "https://www.pueblo.us/m/newsflash/home/detail/4996"
+    },
+    {
+      "id": "P2",
+      "title": "City November 3 CSAC funding announcement",
+      "url": "https://www.pueblo.us/m/newsflash/Home/Detail/5027"
+    },
+    {
+      "id": "P3",
+      "title": "City public meeting records",
+      "url": "https://pueblo.granicus.com/ViewPublisher.php?view_id=4"
+    },
+    {
+      "id": "P4",
+      "title": "City nondepartmental funding eligibility",
+      "url": "https://www.pueblo.us/2966/Non---Department-Funding-Request-Packet"
+    },
+    {
+      "id": "M1",
+      "title": "SCFD funding structure",
+      "url": "https://scfd.org/who-we-are/about-us/"
+    },
+    {
+      "id": "M2",
+      "title": "Denver cultural grant administration",
+      "url": "https://www.artsandvenuesdenver.com/about/creative-sector-leadership/denver-county-cultural-council"
+    },
+    {
+      "id": "M3",
+      "title": "Fort Collins public-private museum",
+      "url": "https://www.fortcollins.gov/Venues/Fort-Collins-Museum-of-Discovery"
+    },
+    {
+      "id": "M4",
+      "title": "Colorado Springs Pioneers Museum partnership",
+      "url": "https://www.cspm.org/about-us/"
+    },
+    {
+      "id": "M5",
+      "title": "Greeley city living-history museum",
+      "url": "https://greeleyco.gov/museums/visit/centennial-village-museum/"
+    },
+    {
+      "id": "U1",
+      "title": "Community-submitted support letter link; contents not inspected",
+      "url": "https://tinyurl.com/SupportPuebloHeritage"
+    },
+    {
+      "id": "U2",
+      "title": "Community-submitted Facebook post; not independently inspected",
+      "url": "https://www.facebook.com/share/p/1CUdQieC5N/?mibextid=wwXIfr"
+    },
+    {
+      "id": "W2",
+      "title": "City 2017 Resolution 13760 management agreement background and resolution",
+      "url": "https://www.pueblo.us/AgendaCenter/ViewFile/Item/20813?fileID=62970"
+    },
+    {
+      "id": "W3",
+      "title": "Aircraft Society FY2024 tax extract",
+      "url": "https://philanthropy.org/990/report/841005713/pueblo-historical-aircraft-society/2024"
+    },
+    {
+      "id": "T3",
+      "title": "Railway Foundation FY2024 tax extract listing",
+      "url": "https://philanthropy.org/990?city=Pueblo&page=1&state=CO"
+    },
+    {
+      "id": "V2",
+      "title": "Center for American Values IRS filing extracts",
+      "url": "https://projects.propublica.org/nonprofits/organizations/272779073"
+    },
+    {
+      "id": "Z2",
+      "title": "Pueblo Zoological Society IRS filing extracts",
+      "url": "https://projects.propublica.org/nonprofits/organizations/840723360"
+    },
+    {
+      "id": "Z3",
+      "title": "Separate Zoo Foundation IRS filing extracts",
+      "url": "https://projects.propublica.org/nonprofits/organizations/841293023"
+    },
+    {
+      "id": "RPL",
+      "title": "Pueblo Regional Comprehensive Plan (2022), cultural facility goals and funding policies",
+      "url": "https://county.pueblo.org/sites/default/files/2022-10/PuebloRegionalComprehensivePlan_Sept22_R.pdf"
+    },
+    {
+      "id": "B26",
+      "title": "City adopted 2026 budget portal",
+      "url": "https://stories.opengov.com/puebloco/3ee5469f-7fa9-484d-8250-15d502402f3f/published/JWL2z-WQq?currentPageId=68fbaa61fd10f05402c6deb6"
+    },
+    {
+      "id": "D3",
+      "title": "Gazette September 15: funding vote and museum-reported visitor counts",
+      "url": "https://gazette.com/2026/09/15/da-vinci-museums-885000-funding-request-gets-thumbs-down-from-city-council/"
+    },
+    {
+      "id": "D4",
+      "title": "Chieftain August 25: proposed uses of incentive",
+      "url": "https://www.aol.com/articles/pueblo-city-council-postpones-vote-175441000.html"
+    },
+    {
+      "id": "C3",
+      "title": "Arts Alliance organization and program directory",
+      "url": "https://puebloarts.org/"
+    },
+    {
+      "id": "COUNTY",
+      "title": "County budget archive",
+      "url": "https://county.pueblo.org/budget-and-finance-department/county-budget"
+    },
+    {
+      "id": "C4",
+      "title": "Visit Pueblo Creative Corridor and murals",
+      "url": "https://visitpueblo.org/attractions/creative-corridor-murals/"
+    },
+    {
+      "id": "H6",
+      "title": "Historical Society museum page",
+      "url": "https://pueblohistory.org/pueblo-heritage-museum/"
+    }
+  ],
+  "boundary": "Not a complete census, audit or live grant ledger; unknown is not zero. No autonomous refresh.",
+  "revision": "2026-11-19-r2",
+  "priorVersion": "data/qp-museums-culture-2026-11-18.json",
+  "paper": "museums-culture-research.html",
+  "tools": "museums-culture-tools.html",
+  "verification": "Newly checked key news and official CSAC pages; inherited institutional financials are not independently re-audited on Nov 19.",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Research question",
+      "analysis": "Can Pueblo maintain a diverse cultural ecosystem under fiscal stress without sacrificing irreplaceable collections or subsidizing projects without transparent public benefit? Compare institutions by mission, obligations, revenue durability and outcomes rather than assuming interchangeable budgets.",
+      "sources": [
+        "RPL",
+        "P2"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Method and evidence hierarchy",
+      "analysis": "Use official authorizations, signed contracts and actual payments first; financial filings and independent reporting next; institutional accounts and community submissions as attributed evidence. Retain earlier source dates, distinguish new verification from inherited claims and mark missing data explicitly.",
+      "sources": [
+        "P3",
+        "B26"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Scope and baseline",
+      "analysis": "The 2022 regional comprehensive plan identifies numerous museums, the zoo, arts center, Riverwalk, Creative Corridor and festivals as cultural assets. Its 4.3 policies support collaboration, existing venues, creative industries and access. The 18-profile directory expands that baseline but is not a complete census.",
+      "sources": [
+        "RPL",
+        "C3"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Heritage Museum",
+      "analysis": "The museum operates in the former freight station and came under the Historical Society umbrella in January 2025. Its collection and library require continuity independent of the building ownership outcome. Verify title, lease, catalog and grant conditions before changing occupancy.",
+      "sources": [
+        "H1",
+        "H3",
+        "H6"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Genealogy and archives",
+      "analysis": "Photographs, directories, oral histories, maps and research assistance are infrastructure for genealogists and residents beyond Pueblo. Record item rights, physical storage, format, inventory status and permitted online access; do not assume donation conveys copyright.",
+      "sources": [
+        "H2",
+        "H6"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "B Street property dispute",
+      "analysis": "CPR reported November 11 that the city marketed its building, that a $300,000 nonprofit offer was not accepted and that the mayor cited an appraisal above $1.9 million. Council members indicated interest in revisiting the issue. No final sale or eviction is established by these records.",
+      "sources": [
+        "H3",
+        "P3"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Property history and grant exposure",
+      "analysis": "The reported $150,000 purchase and $1.3 million mostly grant-supported renovations are historic expenditures, not current sale proceeds. Examine grant covenants, reversion, easements, deed restrictions and any obligations that follow title.",
+      "sources": [
+        "H3",
+        "E2"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Subdivision proposal",
+      "analysis": "The November 17 mayoral discussion supplies a potential path, not a binding agreement. Survey the parcel, engineer separate utilities and fire access, determine common-area obligations, appraise each resulting parcel and confirm title, occupancy and financing.",
+      "sources": [
+        "H4",
+        "P3"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Leonardo da Vinci Museum",
+      "analysis": "Opened June 2026; design and STEAM education offer a distinct mission. September reporting describes more than 10,000 paid visits claimed by operators, over half from outside Pueblo and about 15% from outside Colorado. The reporting window is limited and attendance was not independently audited.",
+      "sources": [
+        "D1",
+        "D3"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Leonardo funding decision",
+      "analysis": "Council rejected the $885,000 proposed half-cent incentive on September 14, 5–2. The August reported breakdown was $250,000 café, $175,000 exhibit remodel, $125,000 signage, $200,000 lab technology, $50,000 permanent displays, $85,000 other. Distinguish proposed expense from disbursement; no approved award in that vote.",
+      "sources": [
+        "D2",
+        "D3",
+        "D4"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Comparable treatment of museums",
+      "analysis": "A property sale, operating grant and economic development incentive are different instruments. Apply comparable public value and disclosure expectations, but respect separate lawful funding criteria. The chronology does not prove one museum caused another’s property sale.",
+      "sources": [
+        "H3",
+        "D3",
+        "B26"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Sangre de Cristo Arts Center",
+      "analysis": "Galleries, performance and instruction have facility and personnel obligations beyond admissions. Compare program costs, philanthropy, public contributions and capital renewal; keep the separate endowment distinct until inter-entity balances have been reconciled.",
+      "sources": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Buell Children’s Museum",
+      "analysis": "Children’s learning and family access cannot be measured solely by ticket revenue. Obtain school visits, subsidized admissions and parent-center program costs without counting the same parent income twice.",
+      "sources": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "El Pueblo History Museum",
+      "analysis": "History Colorado’s regional museum interprets trading-post and borderlands history. State support and site-specific spending cannot be inferred from city grants. Prioritize archaeological protection, tribal consultation and bilingual participation.",
+      "sources": [
+        "E1",
+        "E2"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Steelworks Center",
+      "analysis": "Industrial collections, former CF&I archives, buildings and rental income create distinct operating and preservation dependencies. Verify grant restrictions, property liabilities and conservation reserves; document oral-history permissions.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Railway Museum",
+      "analysis": "Volunteer restoration, historic rolling stock, tracks and loans create insurance, mechanical and access requirements. The $14,025 2027 CSAC request is not an award. Connect interpretation to regional rail planning without promising track or station access.",
+      "sources": [
+        "T1",
+        "T2",
+        "P1"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Aircraft and space museums",
+      "analysis": "Investigate the 2017 management agreement materials and reported April 21, 2027 term end; executed renewal and amendments are still needed. Separate public airport obligations from nonprofit restoration and educational programming.",
+      "sources": [
+        "W1",
+        "W2",
+        "W3"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Rosemount Museum",
+      "analysis": "Historic mansion conservation and daily operations differ from event income. The FY2025 reported asset sales contribution is not recurring admission revenue; model occupancy, fire safety, accessibility and restoration reserve separately.",
+      "sources": [
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "InfoZone and library collections",
+      "analysis": "Confirm current museum status, exhibit schedule and library district responsibility. Library-wide expenditures are not equivalent to museum costs. Preserve access to historical journalism and local records with item-level provenance.",
+      "sources": [
+        "I1",
+        "C2"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Mental health history museum",
+      "analysis": "Confirm availability and governance with the state institution. Historic medical interpretation must address patient dignity, trauma and confidentiality; do not publish identifiable clinical records absent documented lawful permission.",
+      "sources": [
+        "I1",
+        "I2"
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Fire museum and Goodnight Barn",
+      "analysis": "Historic structures require maintenance whether or not admission revenue covers it. Obtain current occupancy, preservation grant terms, title, structural assessment and public access agreements; distinguish one-time repair grants from annual support.",
+      "sources": [
+        "F1",
+        "G1",
+        "G2"
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Center for American Values",
+      "analysis": "Military heritage and civic education rely on philanthropic and program funding. Obtain verified paid/free attendance and restrictions on donations. Preserve interviews and portraits under consent and licensing.",
+      "sources": [
+        "V1",
+        "V2"
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Creative Corridor and independent galleries",
+      "analysis": "The Arts Alliance describes more than 55 arts and business participants and an annual impact exceeding $14 million; these are organization-reported estimates, not audited incremental tax receipts. Obtain study methodology, base year and business coverage; map paid artist opportunities and accessible venues.",
+      "sources": [
+        "C1",
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Performing arts and festivals",
+      "analysis": "Music, theater, dance, fairs, neighborhood festivals and genealogical organizations have different event economics and legal entities. Track seasonal costs, public venue agreements, paid labor and free events. Include groups not listed in the initial registry through reviewed submissions.",
+      "sources": [
+        "P1",
+        "C2",
+        "RPL"
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Zoo and nature education",
+      "analysis": "Animal care, rehabilitation, utilities and habitat maintenance are non-discretionary at relevant sites. Separate zoo operator, foundation and city assets; nature center program revenues should not be conflated with museum admissions.",
+      "sources": [
+        "Z1",
+        "Z2",
+        "Z3",
+        "N1"
+      ]
+    },
+    {
+      "id": 26,
+      "title": "City and county funding context",
+      "analysis": "The city adopted budget portal separates non-departmental accounts and economic development funds. The county maintains a separate budget archive. Query each actual disbursement and appropriation; a budget authorization is not proof of payment or an exhaustive public subsidy ledger.",
+      "sources": [
+        "B26",
+        "COUNTY",
+        "P4"
+      ]
+    },
+    {
+      "id": 27,
+      "title": "CSAC funding shock",
+      "analysis": "The September 1 list records 46 requests totaling $2,203,865. On November 3 the city announced proposed 2027 support of $490,000, county withdrawal and $465,500 outstanding 2026 reimbursement as of that date. The proposed pool is about 22.23% of aggregate requests, not a pro-rata grant promise.",
+      "sources": [
+        "P1",
+        "P2"
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Nonprofit financial normalization",
+      "analysis": "Use fiscal dates, unrestricted liquidity, restricted contributions, net asset changes, depreciation, liabilities and related entities. Historic revenue minus expense is an accounting difference, not cash runway; net assets do not measure available operating funds.",
+      "sources": [
+        "H5",
+        "A2",
+        "A3",
+        "S2",
+        "R2",
+        "V2",
+        "Z2"
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Funding instruments",
+      "analysis": "Compare admissions, memberships, donor funds, endowments, grants, contracts, asset rent, in-kind public services, tourism partnerships and tax revenue. Track restrictions, timing, matching requirements and renewal probability; no new tax or grant is presumed approved.",
+      "sources": [
+        "M1",
+        "E2",
+        "P4"
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Denver SCFD",
+      "analysis": "The metro district model provides voter-approved regional cultural tax support. An analogous Pueblo mechanism would require legal analysis, taxable base, boundary, ballot authorization, administration, eligibility and distribution rules; do not assume Denver’s receipts translate to Pueblo.",
+      "sources": [
+        "M1",
+        "M2"
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Fort Collins partnership",
+      "analysis": "Public–nonprofit museum collaboration offers a model for shared science/history services and explicitly allocated building obligations. Test shared back-office arrangements voluntarily instead of forcing unrelated institutions to merge.",
+      "sources": [
+        "M3"
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Colorado Springs and Greeley",
+      "analysis": "Municipal heritage facilities and philanthropic contributions offer ways to preserve access without relying entirely on ticket volume. Compare actual per-capita costs, asset age, operating mandates and admission policies before importing a model.",
+      "sources": [
+        "M4",
+        "M5"
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Access, equity and children",
+      "analysis": "Measure school participation, free admissions, travel distance, disability accommodations, language coverage and neighborhood access. Use aggregated metrics, opt-in participation and no student identifiers. Avoid a funding formula that penalizes free access.",
+      "sources": [
+        "RPL",
+        "A1"
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Economic development and tourism",
+      "analysis": "Use incremental nonlocal visits × net local spending × local retention; deduct substitution and leakage, and distinguish private sales from public tax receipts. Test rail, downtown, aviation and industrial interpretation itineraries with participating operators.",
+      "sources": [
+        "D3",
+        "C3",
+        "RPL"
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Scenario mathematics",
+      "analysis": "Illustrative tax receipts = taxable sales × rate × (1−administrative share). Operating gap = expenses−unrestricted income; cash runway = unrestricted cash/monthly deficit if positive. Property option present cost = initial cost + discounted recurring costs − net proceeds. Inputs are examples, not local estimates.",
+      "sources": [
+        "M1",
+        "B26"
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Collection and disaster resilience",
+      "analysis": "Use a catalog, priority salvage plan, condition logs, separate backups, disaster contacts and environmental monitoring. Establish loan and relocation agreements before displacement. Test electrical outage, flood, fire, theft, mold and volunteer succession.",
+      "sources": [
+        "H2",
+        "S3"
+      ]
+    },
+    {
+      "id": 37,
+      "title": "Digital knowledge and AI",
+      "analysis": "Use rights-aware metadata, source IDs, date, revision, checksum and correction records. Digitize only authorized material; retain original scans separate from transcription. Search should link to sources, not fabricate oral histories or infer private identities.",
+      "sources": [
+        "H2",
+        "S3"
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Governance and legal safeguards",
+      "analysis": "Confirm open-meeting records, disposal authority, public-purpose eligibility, conflicts, signed grants, procurement, historic designation and donor terms. Human boards retain consent and veto; no central Q control over assets or collections is proposed.",
+      "sources": [
+        "P3",
+        "P4",
+        "E2"
+      ]
+    },
+    {
+      "id": 39,
+      "title": "Implementation and monitoring",
+      "analysis": "0–30 days: verify title, meeting outcomes and grants; 31–90: obtain operator records and shared-service bids; 3–12 months: voluntary access/preservation pilot and audited results; annual: report actual collections care and accessibility. November 25 review is editorial, not automated.",
+      "sources": [
+        "P2",
+        "P3",
+        "RPL"
+      ]
+    },
+    {
+      "id": 40,
+      "title": "Conclusion and unresolved evidence",
+      "analysis": "Pueblo has a stated cultural-development policy and a diverse cultural inventory; public records show significant fiscal uncertainty and a specific property dispute. The defensible approach is transparent mission-based stewardship and reversible collaboration. No conclusion that any institution is insolvent, evicted, or guaranteed funding is supported.",
+      "sources": [
+        "RPL",
+        "H3",
+        "P2"
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "date": "2026-11-25",
+      "type": "editorial review",
+      "topic": "Council, property listing and CSAC status"
+    },
+    {
+      "date": "2027-01-15",
+      "type": "editorial review",
+      "topic": "Actual adopted 2027 budget, award and lease updates"
+    },
+    {
+      "date": "2027-04-21",
+      "type": "reported agreement horizon",
+      "topic": "Aircraft museum management agreement; verify executed documents"
+    }
+  ],
+  "evidencePolicy": "Unknown is null, not zero. Prior individual profile dates retained as inherited November 18 material. Sources are links; no blanket document verification.",
+  "release": "repository publication; live deployment and human editorial review outstanding"
+}

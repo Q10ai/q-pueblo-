@@ -2,7 +2,7 @@
 (() => {
  const form=document.querySelector('[data-search-mode="local"]');if(!form)return;
  const $=id=>document.getElementById(id),input=$('home-q'),k=$('home-kind'),area=$('home-results'),status=$('home-result-status'),list=$('home-result-list');
- const pathSources=['data/qp-current-reports.json','data/q-pueblo-issue-index-2026-11-09.json','data/qp-three-hop-2026-11-13.json','data/qp-now-2026-11-13.json','data/q-pueblo-public-case-summaries.json','data/qp-governance-index-input-v1.json','data/qp-governance-profiles-2026-11-14.json','data/qp-museums-culture-2026-11-18.json'];
+ const pathSources=['data/qp-current-reports.json','data/q-pueblo-issue-index-2026-11-09.json','data/qp-three-hop-2026-11-13.json','data/qp-now-2026-11-13.json','data/q-pueblo-public-case-summaries.json','data/qp-governance-index-input-v1.json','data/qp-governance-profiles-2026-11-14.json','data/qp-museums-culture-2026-11-19.json'];
  const words=s=>String(s??'').toLowerCase().normalize('NFKD').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
  let loading=null;
  const row=(type,title,text,href,date='')=>({type,title:String(title),text:String(text||''),href,date:String(date||'')});
@@ -19,7 +19,7 @@
  for(const u of f.lifecycle?.updates||[])out.push(row('Update',u.title,u.finding+' '+u.meaning,'now.html#'+encodeURIComponent(u.id),u.checkedDate));
  for(const ent of f.additions||[])out.push(row('Organization',ent.name,ent.description,'governance-entities.html#'+encodeURIComponent(ent.id),''));
  for(const p of g.profiles||[]){out.push(row('Organization',p.name,[p.work,p.scope,...p.topics].join(' '),'who-governs.html#'+encodeURIComponent(p.id),g.checked));for(const [name,role] of p.members||[])out.push(row('Organization',name,role+' · '+p.name,'who-governs.html#'+encodeURIComponent(p.id),g.checked));}
- if(culture.profiles?.length){out.push(row('Analysis',culture.title,'museum museums heritage culture arts funding preservation finance tourism history STEAM Leonardo da Vinci Pueblo',culture.url,culture.checked));for(const p of culture.profiles||[])out.push(row('Organization',p.name,[p.historyPurpose,p.ownershipGovernance,p.fundingEvidence,p.future,p.location].join(' '),culture.url+'#'+encodeURIComponent(p.id),culture.checked));}
+ if(culture.profiles?.length){if(culture.paper)out.push(row('Analysis',culture.title+' — full research paper',(culture.chapters||[]).map(x=>x.title+' '+x.analysis).join(' '),culture.paper,culture.checked));out.push(row('Analysis',culture.title,'museum museums heritage culture arts funding preservation finance tourism history STEAM Leonardo da Vinci Pueblo',culture.url,culture.checked));for(const p of culture.profiles||[])out.push(row('Organization',p.name,[p.historyPurpose,p.ownershipGovernance,p.fundingEvidence,p.future,p.location].join(' '),culture.url+'#'+encodeURIComponent(p.id),culture.checked));}
  for(const s of window.QPStoryEditions?.allStories||[])out.push(row('Analysis',s.title,[s.summary,...s.questions].join(' '),s.route,s.checked));
  for(const v of window.QPResource?.items||[])out.push(row('Resource',v.title,[v.publisher,v.description,v.format,...v.tags].join(' '),'resource-library.html#'+encodeURIComponent(v.id),v.checked));
  return {rows:out, failed:results.filter(x=>x.status==='rejected').length};

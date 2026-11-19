@@ -1,0 +1,47 @@
+{
+  "id": "qp-culture-2026",
+  "revision": "2026-11-19-r2",
+  "reviewDate": "2026-11-25",
+  "status": "repository_committed_live_host_unverified",
+  "checks": {
+    "chapters": 40,
+    "profiles": 18,
+    "sources": 55,
+    "sourceIdsUnique": true,
+    "allChapterAndProfileRefsResolve": true,
+    "allSourceAnchors": true,
+    "allChapterAnchors": true,
+    "allProfilesPresent": true,
+    "hubLinks": true,
+    "homepage": true,
+    "library": true,
+    "issueIndex": true,
+    "searchCurrent": true,
+    "calculatorScript": true,
+    "defaultFormulaChecks": {
+      "gross": 1000000,
+      "net": 950000,
+      "runway": 18,
+      "pv": 326510.1418387918,
+      "zeroDiscountPV": 400000
+    }
+  },
+  "paths": [
+    "public/museums-culture-research.html",
+    "public/data/qp-museums-culture-2026-11-19.json",
+    "public/museums-culture-tools.html",
+    "public/museums-culture-tools.js",
+    "public/museums-culture.html",
+    "public/index.html",
+    "public/reports-static.html",
+    "public/issues.html",
+    "public/home-search.js"
+  ],
+  "priorVersion": "data/qp-museums-culture-2026-11-18.json",
+  "limits": [
+    "Readback and reference checks only; full website CI and browser interaction not independently executed.",
+    "PDF page screenshot unavailable; policy text reviewed via extracted official PDF.",
+    "Historical financial and institution records inherited, not fully re-audited.",
+    "No automatic monitoring or final property/award determination."
+  ]
+}
