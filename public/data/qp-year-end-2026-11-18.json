@@ -1,0 +1,371 @@
+{
+  "schema": "qp-year-end-editorial-v1",
+  "version": "1.0.0",
+  "edition": "2026-11-18",
+  "featureThrough": "2026-12-31",
+  "rollover": "2027-01-01",
+  "publication": "human_review_required",
+  "canonicalCountPolicy": "Editorial aliases do not alter canonical issue counts.",
+  "articles": [
+    {
+      "alias": "01-county-financial-crisis",
+      "title": "Pueblo County's financial crisis: What must change before 2027?",
+      "summary": "October proposal: $9.81m reductions; $121.40m proposed spending; $122.67m funding. Track fund balance, one-time financing, road and human services exposure.",
+      "href": "year-end-01-county-financial-crisis.html",
+      "section": "Budget and public safety",
+      "reviewBy": "2026-11-25",
+      "trigger": [
+        "budget amendment",
+        "adoption",
+        "audit scope",
+        "official monthly financial report"
+      ],
+      "ttl": "7 days during active budget; same day on material event",
+      "checked": "2026-11-18",
+      "featureThrough": "2026-12-31",
+      "status": "dated_review_candidate",
+      "anchors": [
+        "findings",
+        "processing",
+        "builds",
+        "actions"
+      ]
+    },
+    {
+      "alias": "02-sheriff-staffing",
+      "title": "Sheriff staffing and public safety: What happens if personnel are cut?",
+      "summary": "$4.89m proposed sheriff reduction; dollar targets are not headcount. Explore staffing, overtime and service continuity.",
+      "href": "year-end-02-sheriff-staffing.html",
+      "section": "Budget and public safety",
+      "reviewBy": "2026-11-25",
+      "trigger": [
+        "staffing announcement",
+        "layoff notice",
+        "budget adoption",
+        "union response"
+      ],
+      "ttl": "7 days during active budget; same day on material event",
+      "checked": "2026-11-18",
+      "featureThrough": "2026-12-31",
+      "status": "dated_review_candidate",
+      "anchors": [
+        "findings",
+        "processing",
+        "builds",
+        "actions"
+      ]
+    },
+    {
+      "alias": "03-new-jail",
+      "title": "Pueblo's new jail: Can the county afford to operate the facility?",
+      "summary": "Installed beds are not staffed beds. Cost, capacity, medical care, and old-facility upkeep all matter.",
+      "href": "year-end-03-new-jail.html",
+      "section": "Budget and public safety",
+      "reviewBy": "2026-11-25",
+      "trigger": [
+        "current capacity report",
+        "medical contract",
+        "staffing plan",
+        "IGA approval"
+      ],
+      "ttl": "7 days during active budget; same day on material event",
+      "checked": "2026-11-18",
+      "featureThrough": "2026-12-31",
+      "status": "dated_review_candidate",
+      "anchors": [
+        "findings",
+        "processing",
+        "builds",
+        "actions"
+      ]
+    },
+    {
+      "alias": "04-municipal-offenses",
+      "title": "Jail time for municipal offenses: Will it improve safety, and who pays?",
+      "summary": "November 23 reported final reading; agreement and cost remain open. Examine due process, victim protection and alternatives.",
+      "href": "year-end-04-municipal-offenses.html",
+      "section": "Budget and public safety",
+      "reviewBy": "2026-11-19",
+      "trigger": [
+        "ordinance release",
+        "city vote",
+        "BOCC approval",
+        "agreement execution",
+        "intake activation"
+      ],
+      "ttl": "same day at decision events; refresh before vote",
+      "checked": "2026-11-18",
+      "featureThrough": "2026-12-31",
+      "status": "dated_review_candidate",
+      "anchors": [
+        "findings",
+        "processing",
+        "builds",
+        "actions"
+      ]
+    },
+    {
+      "alias": "05-sheriff-transition",
+      "title": "From election commitments to governing reality: A neutral sheriff transition tracker",
+      "summary": "Distinguish documented election commitments from inherited fiscal constraints and actual outcomes.",
+      "href": "year-end-05-sheriff-transition.html",
+      "section": "Budget and public safety",
+      "reviewBy": "2026-11-25",
+      "trigger": [
+        "election certification",
+        "official transition plan",
+        "budget change"
+      ],
+      "ttl": "7 days during active budget; same day on material event",
+      "checked": "2026-11-18",
+      "featureThrough": "2026-12-31",
+      "status": "dated_review_candidate",
+      "anchors": [
+        "findings",
+        "processing",
+        "builds",
+        "actions"
+      ]
+    },
+    {
+      "alias": "06-city-budget",
+      "title": "Pueblo's 2027 city budget: Services, reserves and future obligations",
+      "summary": "Follow city reserves, revenue, actual expenditures and new obligations without mixing restricted funds.",
+      "href": "year-end-06-city-budget.html",
+      "section": "Budget and public safety",
+      "reviewBy": "2026-11-23",
+      "trigger": [
+        "budget hearing",
+        "amendment",
+        "adoption",
+        "monthly actuals"
+      ],
+      "ttl": "7 days during active budget; same day on material event",
+      "checked": "2026-11-18",
+      "featureThrough": "2026-12-31",
+      "status": "dated_review_candidate",
+      "anchors": [
+        "findings",
+        "processing",
+        "builds",
+        "actions"
+      ]
+    },
+    {
+      "alias": "07-ai-governance",
+      "title": "Is Pueblo ready for AI governance? Start before the 2027 budget is locked",
+      "summary": "Colorado's January 2027 legal transition: inventory, procurement, human review and costed AI readiness scenarios.",
+      "href": "year-end-07-ai-governance.html",
+      "section": "AI governance and LEAP",
+      "reviewBy": "2026-11-25",
+      "trigger": [
+        "state rule change",
+        "budget hearing",
+        "new procurement",
+        "policy adoption"
+      ],
+      "ttl": "weekly budget; monthly law and immediately on change",
+      "checked": "2026-11-18",
+      "featureThrough": "2026-12-31",
+      "status": "dated_review_candidate",
+      "anchors": [
+        "findings",
+        "processing",
+        "builds",
+        "actions"
+      ]
+    },
+    {
+      "alias": "08-leap-2027",
+      "title": "LEAP 2027: Modernizing Pueblo without breaking Pueblo",
+      "summary": "Phased legacy-system integration with training, interoperability, measured outcomes and rollback.",
+      "href": "year-end-08-leap-2027.html",
+      "section": "AI governance and LEAP",
+      "reviewBy": "2026-12-02",
+      "trigger": [
+        "budget adoption",
+        "procurement",
+        "system inventory",
+        "pilot authorization"
+      ],
+      "ttl": "14 days or material event",
+      "checked": "2026-11-18",
+      "featureThrough": "2026-12-31",
+      "status": "dated_review_candidate",
+      "anchors": [
+        "findings",
+        "processing",
+        "builds",
+        "actions"
+      ]
+    },
+    {
+      "alias": "09-aspen-recovery",
+      "title": "Aspen Acres: From fire to five-year recovery — what was gained, who pays, who remains?",
+      "summary": "Historical $321,833.63 identified county direct costs, recovery resources, FEMA and the 2027–2031 roadmap.",
+      "href": "resilience-aspen-five-year.html",
+      "section": "SHOCK and recovery",
+      "reviewBy": "2026-11-25",
+      "trigger": [
+        "FEMA appeal decision",
+        "grant award or reimbursement",
+        "flood",
+        "recovery project acceptance",
+        "SBA deadline"
+      ],
+      "ttl": "7–14 days during active review; immediately on material event",
+      "checked": "2026-11-18",
+      "featureThrough": "2026-12-31",
+      "status": "dated_review_candidate",
+      "anchors": [
+        "findings",
+        "processing",
+        "builds",
+        "actions"
+      ]
+    },
+    {
+      "alias": "10-regional-shock-accountability",
+      "title": "SHOCK: Accountability from federal response to household recovery",
+      "summary": "Trace accountability, secondary shocks, service continuity and community recovery from federal agencies to households.",
+      "href": "resilience-regional-shock.html",
+      "section": "SHOCK and recovery",
+      "reviewBy": "2026-11-25",
+      "trigger": [
+        "new emergency",
+        "funding decision",
+        "after-action report",
+        "service disruption"
+      ],
+      "ttl": "7–14 days during active review; immediately on material event",
+      "checked": "2026-11-18",
+      "featureThrough": "2026-12-31",
+      "status": "dated_review_candidate",
+      "anchors": [
+        "findings",
+        "processing",
+        "builds",
+        "actions"
+      ]
+    },
+    {
+      "alias": "11-rye-mitigation-and-burn-scar",
+      "title": "Before and after Aspen Acres: mitigation, watershed and infrastructure accountability",
+      "summary": "Assess field completion, burn-scar risk, costs and mitigation maintenance; dates are not proof of completion.",
+      "href": "resilience-burn-scar-mitigation.html",
+      "section": "SHOCK and recovery",
+      "reviewBy": "2026-11-25",
+      "trigger": [
+        "mitigation completion",
+        "flood",
+        "official cause report",
+        "award or change order"
+      ],
+      "ttl": "7–14 days during active review; immediately on material event",
+      "checked": "2026-11-18",
+      "featureThrough": "2026-12-31",
+      "status": "dated_review_candidate",
+      "anchors": [
+        "findings",
+        "processing",
+        "builds",
+        "actions"
+      ]
+    },
+    {
+      "alias": "12-water-drought-and-budget",
+      "title": "Pueblo water security 2027–2031: drought, budgets, rights and reliable supply",
+      "summary": "Multi-year drought scenarios, rights, reliable supply, affordability and infrastructure budgets.",
+      "href": "resilience-water-drought-budget.html",
+      "section": "Water and infrastructure",
+      "reviewBy": "2026-11-25",
+      "trigger": [
+        "drought classification",
+        "snowpack update",
+        "water budget or rate",
+        "storage or rights change"
+      ],
+      "ttl": "7–14 days during active review; immediately on material event",
+      "checked": "2026-11-18",
+      "featureThrough": "2026-12-31",
+      "status": "dated_review_candidate",
+      "anchors": [
+        "findings",
+        "processing",
+        "builds",
+        "actions"
+      ]
+    },
+    {
+      "alias": "13-wastewater-forensic-followup",
+      "title": "Arkansas River wastewater failure: forensic follow-up and infrastructure modernization",
+      "summary": "August spill forensic chronology, project costs, detection, response and unresolved accountability.",
+      "href": "resilience-spill-infrastructure.html",
+      "section": "Water and infrastructure",
+      "reviewBy": "2026-11-25",
+      "trigger": [
+        "CDPHE enforcement",
+        "final remediation",
+        "contract closeout",
+        "new discharge"
+      ],
+      "ttl": "7–14 days during active review; immediately on material event",
+      "checked": "2026-11-18",
+      "featureThrough": "2026-12-31",
+      "status": "dated_review_candidate",
+      "anchors": [
+        "findings",
+        "processing",
+        "builds",
+        "actions"
+      ]
+    },
+    {
+      "alias": "14-wastewater-public-health",
+      "title": "Fentanyl and wastewater: what regional monitoring can and cannot tell us",
+      "summary": "Aggregate fentanyl monitoring, treatment navigation, limitations and privacy.",
+      "href": "resilience-wastewater-health.html",
+      "section": "Water and infrastructure",
+      "reviewBy": "2026-12-02",
+      "trigger": [
+        "dashboard methodology change",
+        "new surveillance data",
+        "public health alert"
+      ],
+      "ttl": "7–14 days during active review; immediately on material event",
+      "checked": "2026-11-18",
+      "featureThrough": "2026-12-31",
+      "status": "dated_review_candidate",
+      "anchors": [
+        "findings",
+        "processing",
+        "builds",
+        "actions"
+      ]
+    },
+    {
+      "alias": "15-water-land-use-industry",
+      "title": "Who uses Pueblo's water? Parks, golf, agriculture, industry and future data centers",
+      "summary": "Compare parks, golf, agriculture and major businesses by measured water use, rights, infrastructure and public value.",
+      "href": "resilience-water-users-industry.html",
+      "section": "Water and infrastructure",
+      "reviewBy": "2026-11-25",
+      "trigger": [
+        "large-user agreement",
+        "development application",
+        "drought plan",
+        "water rate or lease"
+      ],
+      "ttl": "7–14 days during active review; immediately on material event",
+      "checked": "2026-11-18",
+      "featureThrough": "2026-12-31",
+      "status": "dated_review_candidate",
+      "anchors": [
+        "findings",
+        "processing",
+        "builds",
+        "actions"
+      ]
+    }
+  ]
+}
