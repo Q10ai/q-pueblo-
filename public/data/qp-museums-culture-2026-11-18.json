@@ -13,7 +13,7 @@
       "location": "203 W B Street",
       "historyPurpose": "Local and Southern Colorado history, artifacts, genealogy and the Edward Broadhead Library; society founded 1975, museum under its umbrella since January 2025.",
       "ownershipGovernance": "City-owned freight station; nonprofit museum and library. Society describes volunteer operation; staffing/compensation details need reconciliation with its filing.",
-      "fundingEvidence": "2025 IRS extract: $193,046 revenue; $257,131 expenses; $2,247,327 net assets. City property sale reported Nov 11; $300,000 offer was not accepted; appraisal above $1.9M; reported historic renovation cost $1.3M and original acquisition $150,000. These are different transactions, not cash available.",
+      "fundingEvidence": "2025 IRS extract: $193,046 revenue; $257,131 expenses; $2,247,327 net assets. City property sale reported Nov 11; $300,000 offer was not accepted; appraisal above $1.9M; reported historic renovation cost $1.3M and original acquisition $150,000. These are different transactions, not cash available. On Nov 17 the mayor reported $10 yearly rent and $600,000 in prior-year roof and HVAC work; these are attributed figures awaiting invoice and lease verification. She proposed dividing the property, with an estimated six months for utility separation and related work, not an approved transfer.",
       "future": "Test donation, discounted purchase, subdivision, protected lease or easement; secure collection access, occupancy, deed restrictions, title, grant conditions, utilities and 12-month operating runway. No eviction or subdivision approval established.",
       "sources": [
         "H1",
@@ -102,13 +102,14 @@
       "location": "301 W B Street / Union Depot vicinity",
       "historyPurpose": "Railroad artifacts, operating heritage equipment and school programs; foundation formed 2003 to continue earlier preservation activities.",
       "ownershipGovernance": "All-volunteer Pueblo Railway Foundation; vehicles owned by foundation or loaned by members. Site tenure not verified.",
-      "fundingEvidence": "Foundation reports partial city/county CSAC support; $14,025 2027 general operating request. Award and current cash position unverified.",
+      "fundingEvidence": "Foundation reports partial city/county CSAC support; $14,025 2027 general operating request. Award and current cash position unverified. A FY2024 tax extract directory reports about $95,600 revenue and $68,600 expenses; retrieve the original filing and reconcile donated equipment and in-kind support.",
       "future": "Coordinate passenger rail interpretation while separating active rail operations, insurance, track access, inspection and equipment conservation.",
       "sources": [
         "T1",
         "T2",
         "P1",
-        "P2"
+        "P2",
+        "T3"
       ]
     },
     {
@@ -116,12 +117,14 @@
       "name": "Pueblo Weisbrod Aircraft Museum / Southern Colorado Space Museum",
       "location": "31001 Magnuson Avenue",
       "historyPurpose": "Military and civilian aviation, restoration and space heritage near Pueblo Memorial Airport.",
-      "ownershipGovernance": "Pueblo Historic Aircraft Society receives donations; verify hangar leases, aircraft title/loan restrictions and insurance.",
-      "fundingEvidence": "Donations, corporate membership and sponsorship opportunities documented. Annual income, airport support and capital obligations unverified.",
+      "ownershipGovernance": "Pueblo Historic Aircraft Society receives donations; verify hangar leases, aircraft title/loan restrictions and insurance. The 2017 City Resolution 13760 materials identify a management agreement term ending April 21, 2027 and annual City budget requests. Confirm execution, amendments and renewal status; calendar the deadline as a priority.",
+      "fundingEvidence": "Donations, corporate membership and sponsorship opportunities documented. Annual income, airport support and capital obligations unverified. A third-party FY2024 return extract reports about $196,000 revenue; obtain the complete filing and municipal payments before drawing conclusions.",
       "future": "Connect aviation/space STEAM to airport workforce education; plan hangar renewal, equipment safety and volunteer succession.",
       "sources": [
         "W1",
-        "I2"
+        "I2",
+        "W2",
+        "W3"
       ]
     },
     {
@@ -180,12 +183,13 @@
       "name": "Center for American Values / Home of Heroes",
       "location": "Riverwalk district",
       "historyPurpose": "Portraits and stories of Medal of Honor recipients and civic values education.",
-      "ownershipGovernance": "Confirm legal and property structure and program agreements.",
-      "fundingEvidence": "Museum-specific budget, grants, attendance and public subsidy not verified in this edition.",
+      "ownershipGovernance": "Confirm legal and property structure and program agreements. A separate 501(c)(3) filing is identified for EIN 27-2779073.",
+      "fundingEvidence": "2025 Form 990 extract: $925,593 revenue, $666,221 expenses and $681,473 net assets; contributions $925,133. Public funding share, attendance and restricted cash are not verified.",
       "future": "Preserve oral histories with consent, link military history education, verify financial reporting and inclusive access.",
       "sources": [
         "V1",
-        "C2"
+        "C2",
+        "V2"
       ]
     },
     {
@@ -235,11 +239,13 @@
       "location": "City Park",
       "historyPurpose": "Conservation, animal care, science education, historic facilities. Zoo reports approximately 90,000 annual visitors; reporting year not identified.",
       "ownershipGovernance": "Managed by nonprofit Pueblo Zoological Society; city park location.",
-      "fundingEvidence": "2027 CSAC general operating request $15,000, not award; admissions, members and sponsors also support operations. Confirm contract, actual funding and capital obligations.",
+      "fundingEvidence": "2027 CSAC general operating request $15,000, not award; admissions, members and sponsors also support operations. Confirm contract, actual funding and capital obligations. 2024 operating society tax extract: $2,925,341 revenue, $3,190,757 expenses and $4,527,258 net assets. Separate foundation exists; its 2024 net assets were $313,357. Do not consolidate without reconciliation.",
       "future": "Maintain animal welfare, emergency utilities, access for low-income families, education and conservation; do not compare welfare-critical costs to discretionary exhibits.",
       "sources": [
         "Z1",
-        "P1"
+        "P1",
+        "Z2",
+        "Z3"
       ]
     },
     {
@@ -295,6 +301,30 @@
       "expenses": 549656,
       "netAssets": 6121126,
       "source": "R2"
+    },
+    {
+      "entity": "Center for American Values",
+      "period": "2025 calendar",
+      "revenue": 925593,
+      "expenses": 666221,
+      "netAssets": 681473,
+      "source": "V2"
+    },
+    {
+      "entity": "Pueblo Zoological Society",
+      "period": "2024 calendar",
+      "revenue": 2925341,
+      "expenses": 3190757,
+      "netAssets": 4527258,
+      "source": "Z2"
+    },
+    {
+      "entity": "Zoo Foundation (separate entity)",
+      "period": "2024 calendar",
+      "revenue": 15947,
+      "expenses": 0,
+      "netAssets": 313357,
+      "source": "Z3"
     }
   ],
   "sources": [
@@ -502,6 +532,36 @@
       "id": "U2",
       "title": "Community-submitted Facebook post; not independently inspected",
       "url": "https://www.facebook.com/share/p/1CUdQieC5N/?mibextid=wwXIfr"
+    },
+    {
+      "id": "W2",
+      "title": "City 2017 Resolution 13760 management agreement background and resolution",
+      "url": "https://www.pueblo.us/AgendaCenter/ViewFile/Item/20813?fileID=62970"
+    },
+    {
+      "id": "W3",
+      "title": "Aircraft Society FY2024 tax extract",
+      "url": "https://philanthropy.org/990/report/841005713/pueblo-historical-aircraft-society/2024"
+    },
+    {
+      "id": "T3",
+      "title": "Railway Foundation FY2024 tax extract listing",
+      "url": "https://philanthropy.org/990?city=Pueblo&page=1&state=CO"
+    },
+    {
+      "id": "V2",
+      "title": "Center for American Values IRS filing extracts",
+      "url": "https://projects.propublica.org/nonprofits/organizations/272779073"
+    },
+    {
+      "id": "Z2",
+      "title": "Pueblo Zoological Society IRS filing extracts",
+      "url": "https://projects.propublica.org/nonprofits/organizations/840723360"
+    },
+    {
+      "id": "Z3",
+      "title": "Separate Zoo Foundation IRS filing extracts",
+      "url": "https://projects.propublica.org/nonprofits/organizations/841293023"
     }
   ],
   "boundary": "Not a complete census, audit or live grant ledger; unknown is not zero. No autonomous refresh."
