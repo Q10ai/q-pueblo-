@@ -371,5 +371,70 @@
     "cost scenario",
     "outcome tracker",
     "recovery navigator"
-  ]
+  ],
+  "toolImplementation": {
+    "checklist": "browser-local; no persistence",
+    "waterCalculator": "browser-local validated integer inputs",
+    "worksheets": [
+      {
+        "title": "Household emergency plan",
+        "instructions": "Print and complete offline. Household meeting places; alternate contact; transport arrangements; access needs; pet/livestock arrangements; backup caregiver; last practice date.",
+        "route": "be-ready-pueblo.html#worksheets"
+      },
+      {
+        "title": "Go bag and home supply worksheet",
+        "instructions": "List item, quantity needed, quantity on hand, replacement date and storage location. Food, water, light, battery radio, first aid, hygiene, medication continuity, documents and pet supplies. Separate portable and home supplies.",
+        "route": "be-ready-pueblo.html#worksheets"
+      },
+      {
+        "title": "Evacuation preparation worksheet",
+        "instructions": "Privately list multiple possible exits, accessible transportation, pickup arrangements, fuel or charging plan, and out-of-area contacts. Routes are not verified or live; follow official orders and closures. Do not travel through floodwater.",
+        "route": "be-ready-pueblo.html#worksheets"
+      },
+      {
+        "title": "Disability and medical continuity",
+        "instructions": "Privately record caregiver and care-team contacts, equipment supplier, backup power arrangement, medication refill plan, accessible transport and communication accommodations. Review with professionals; do not change medication based on this worksheet.",
+        "route": "be-ready-pueblo.html#worksheets"
+      },
+      {
+        "title": "Temporary housing and insurance",
+        "instructions": "Privately note insurer/landlord contacts, claim number, property inventory, essential receipts, temporary lodging options and rebuilding/permit contacts. No eligibility or reimbursement is guaranteed.",
+        "route": "be-ready-pueblo.html#worksheets"
+      },
+      {
+        "title": "Small business continuity",
+        "instructions": "For each critical activity, note maximum tolerable downtime, owner, alternate supplier and restart dependency. Test restoration, staff contact trees, payroll continuity and temporary operating locations.",
+        "route": "be-ready-pueblo.html#worksheets"
+      },
+      {
+        "title": "Financial shock worksheet",
+        "instructions": "Enter essential daily outlays, expected income interruption, temporary lodging/transport costs, available liquid funds, insurance deductibles and confirmed aid separately. Estimated cash gap = max(0, total expected outlays minus expected available resources). Do not count pending benefits as available.",
+        "route": "be-ready-pueblo.html#worksheets"
+      },
+      {
+        "title": "After-action and recovery tracker",
+        "instructions": "Record date, verified problem, responsible organization, authorized cost, actual paid, confirmed reimbursement, unmet need, corrective action and follow-up date. Distinguish reported totals and individual costs to prevent double counting.",
+        "route": "be-ready-pueblo.html#worksheets"
+      },
+      {
+        "title": "Volunteer and community partner intake",
+        "instructions": "For a proposed organization: public contact link, service type, geographic coverage, access needs served, verified training, current availability check and next review. Contact the organization directly; Q does not register volunteers or dispatch help.",
+        "route": "be-ready-pueblo.html#worksheets"
+      },
+      {
+        "title": "Event outcome reporting",
+        "instructions": "Aggregate attendance, kits handed out, training sessions, voluntary pre/post and follow-up knowledge scores, costs and donated resources. Do not collect household addresses, diagnoses or names for Q reporting. Label denominator and response rates.",
+        "route": "be-ready-pueblo.html#worksheets"
+      }
+    ],
+    "resourceDirectory": "official referral links only; no real-time availability",
+    "notEnabled": [
+      "live alert replication",
+      "live shelter capacity",
+      "automated evacuation routing",
+      "volunteer dispatch",
+      "live financial ledger",
+      "operational digital twin"
+    ]
+  }
 }
