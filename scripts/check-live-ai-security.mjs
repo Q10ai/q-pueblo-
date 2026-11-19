@@ -15,6 +15,7 @@ const operator = "a".repeat(64);
 const digest = body => createHash("sha256").update(JSON.stringify(body)).digest("hex");
 const env = {
   QP_LIVE_DRAFTS_ENABLED: "true", QP_API_BILLING_APPROVED: "true",
+  QP_APPROVED_MODEL_ID: "gpt-6-luna", QP_APPROVED_MODEL_POLICY: "2026-11-19.v0.2",
   QP_APPROVED_PAYLOAD_SHA256: digest(payload),
   QP_APPROVED_PAYLOAD_EXPIRES_UTC: new Date(Date.now()+3600000).toISOString().replace(/\.\d{3}Z$/, "Z"),
   QP_OPERATOR_TOKEN: operator, OPENAI_API_KEY: "test-key-not-real-00000000",
@@ -24,6 +25,8 @@ const env = {
     })
   }) }
 };
+const valid = {claims:[{claim:"Appropriation is not a verified payment.",source_id:"S1",quote:"Adopted appropriation is a budget authorization, not a verified payment."}],unknowns:["Actual payment not verified."],alternative_interpretations:[],verification_steps:["Read the official appropriation and payment ledger."]};
+const upstream = (draft=valid) => new Response(JSON.stringify({status:"completed",output:[{type:"message",role:"assistant",status:"completed",content:[{type:"output_text",text:JSON.stringify(draft)}]}]}),{status:200});
 const request = (body = payload, token = operator, type = "application/json") =>
   new Request("https://example.org/api/v1/report-draft", {
     method: "POST",
@@ -83,11 +86,12 @@ test("draft response is explicitly unverified, private, source-bound and capped"
     const body = JSON.parse(options.body);
     assert.equal(body.store, false);
     assert.equal(body.max_output_tokens, 600);
-    assert.equal(body.model, "gpt-4.1-mini");
+    assert.equal(body.model, "gpt-6-luna");
+    assert.equal(body.reasoning.effort,"none");
+    assert.equal(body.text.format.strict,true);
+    assert.equal(body.text.format.type,"json_schema");
     assert.match(body.instructions, /UNVERIFIED/);
-    return new Response(JSON.stringify({ status: "completed", output: [{ content: [{ type: "output_text", text: "Source S1 supports an appropriation, not payment." }] }] }), {
-      status: 200, headers: { "Content-Type": "application/json" }
-    });
+    return upstream();
   };
   try {
     const response = await onRequestPost({ request: request(), env });
@@ -97,6 +101,8 @@ test("draft response is explicitly unverified, private, source-bound and capped"
     assert.equal(data.publication_approved, false);
     assert.equal(data.human_review_required, true);
     assert.deepEqual(data.source_ids, ["S1"]);
+    assert.deepEqual(data.draft,valid);
+    assert.equal(data.evidence_check,"SOURCE_ID_AND_QUOTE_MEMBERSHIP_ONLY");
     assert.equal(response.headers.get("Access-Control-Allow-Origin"), null);
     assert.match(response.headers.get("Cache-Control"), /no-store/);
     assert.equal(calls, 1);
@@ -151,4 +157,38 @@ test("oversize provider response cannot become a draft",async()=>{
   globalThis.fetch=async()=>new Response("x".repeat(70000),{status:200});
   try {await checkStatus(await onRequestPost({request:request(),env}),502,"INVALID_MODEL_OUTPUT");}
   finally{globalThis.fetch=old;}
+});
+
+test("unapproved model or changed policy stops before quota/provider",async()=>{
+  let calls=0;const old=globalThis.fetch;globalThis.fetch=async()=>{calls++;throw Error("must not call")};
+  try{
+    for(const override of [{QP_APPROVED_MODEL_ID:"gpt-4.1-mini"},{QP_APPROVED_MODEL_POLICY:"old"},{QP_APPROVED_MODEL_ID:undefined}]){
+      await checkStatus(await onRequestPost({request:request(),env:{...env,...override}}),503,"MODEL_POLICY_NOT_APPROVED");
+    }
+    assert.equal(calls,0);
+  }finally{globalThis.fetch=old;}
+});
+test("rejects invented sources, altered quotations, missing review steps and extra fields",async()=>{
+  const old=globalThis.fetch;
+  try{
+    for(const draft of [
+      {...valid,claims:[{...valid.claims[0],source_id:"S99"}]},
+      {...valid,claims:[{...valid.claims[0],quote:"A quotation that is not in the supplied excerpt."}]},
+      {...valid,verification_steps:[]},
+      {...valid,claims:[],unknowns:[]},
+      {...valid,publication_approved:true}
+    ]){
+      globalThis.fetch=async()=>upstream(draft);
+      await checkStatus(await onRequestPost({request:request(),env}),502,"INVALID_MODEL_OUTPUT");
+    }
+  }finally{globalThis.fetch=old;}
+});
+test("refusal or incomplete result cannot be accepted as a draft",async()=>{
+  const old=globalThis.fetch;
+  try{
+    for(const data of [{status:"incomplete",output:[]},{status:"completed",output:[{type:"message",role:"assistant",status:"completed",content:[{type:"refusal",refusal:"refused"}]}]}]){
+      globalThis.fetch=async()=>new Response(JSON.stringify(data),{status:200});
+      await checkStatus(await onRequestPost({request:request(),env}),502,"INVALID_MODEL_OUTPUT");
+    }
+  }finally{globalThis.fetch=old;}
 });
