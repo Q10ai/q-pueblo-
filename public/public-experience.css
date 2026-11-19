@@ -560,3 +560,29 @@
  .qp-v3.qp-about-page .qp-accountability>h2,.qp-v3.qp-citizen-learning .qp-v3-section>h2{font-size:clamp(1.25rem,5vw,1.65rem);line-height:1.3;margin:.9rem 0 .65rem;}
  .qp-v3.qp-citizen-learning .qp-v3-section>h2>.qp-subject-icon,.qp-v3.qp-about-page .qp-accountability>h2>.qp-subject-icon{width:3rem;aspect-ratio:3/2;height:auto;}
 }
+
+/* Q-Pueblo visual identity: use the existing approved, locally themed WebP artwork library.
+   Preserve the approved emblem and original gold/blue/purple card hierarchy. New artwork
+   should use documented Pueblo references wherever practical; verify landmark identity and
+   usage rights before replacing an asset, and do not imply a generic illustration is a
+   documentary photograph. Reuse a subject icon for consistent navigation, not as filler.
+   Primary tiles remain more prominent than issue/supporting art; retain rectangular ratios,
+   natural proportions, readable labels, and same access with images disabled. */
+@media screen{
+ .qp-v3.qp-about-page .qp-about-links,.qp-v3.qp-citizen-learning .qp-learning-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:.8rem;}
+ .qp-v3.qp-about-page .qp-about-links>a,.qp-v3.qp-citizen-learning .qp-learning-path{display:flex;flex-direction:column;align-items:stretch;gap:0;padding:0;overflow:hidden;border:1px solid #d5a862;border-radius:var(--qp-tile-radius,12px);background:linear-gradient(145deg,#153a54,#091e38);}
+ .qp-v3.qp-about-page .qp-about-links>a>.qp-tile-art[data-qp-art],.qp-v3.qp-citizen-learning .qp-learning-path>.qp-tile-art[data-qp-art]{display:block;width:100%;height:auto;aspect-ratio:var(--qp-primary-art-ratio,3/2);flex:none;margin:0;padding:0;border:0;border-bottom:1px solid #d5a862;border-radius:0;background-size:cover;background-position:center;}
+ .qp-v3.qp-about-page .qp-about-links>a>strong{padding:.65rem .7rem .15rem;text-align:center;}
+ .qp-v3.qp-about-page .qp-about-links>a>span:not(.qp-tile-art){padding:0 .7rem .7rem;text-align:center;}
+ .qp-v3.qp-citizen-learning .qp-learning-path>span:last-child{display:block;padding:.65rem .7rem .7rem;text-align:center;}
+ .qp-v3.qp-about-page .qp-about-links>a:hover,.qp-v3.qp-citizen-learning .qp-learning-path:hover{border-color:#fff1c4;}
+}
+@media screen and (max-width:760px){
+ .qp-v3.qp-about-page .qp-about-links,.qp-v3.qp-citizen-learning .qp-learning-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem;}
+ .qp-v3.qp-about-page .qp-about-links>a>strong,.qp-v3.qp-citizen-learning .qp-learning-path strong{font-size:clamp(.93rem,3.6vw,1.04rem);}
+ .qp-v3.qp-about-page .qp-about-links>a>span:not(.qp-tile-art),.qp-v3.qp-citizen-learning .qp-learning-path>span:last-child>span{font-size:.84rem;line-height:1.4;}
+ .qp-v3.qp-citizen-learning .qp-learning-path>span:last-child{padding:.55rem .4rem;}
+}
+@media screen and (max-width:340px){
+ .qp-v3.qp-about-page .qp-about-links,.qp-v3.qp-citizen-learning .qp-learning-grid{grid-template-columns:minmax(0,1fr);}
+}
