@@ -2,11 +2,11 @@
 (() => {
  const form=document.querySelector('[data-search-mode="local"]');if(!form)return;
  const $=id=>document.getElementById(id),input=$('home-q'),k=$('home-kind'),area=$('home-results'),status=$('home-result-status'),list=$('home-result-list');
- const pathSources=['data/qp-current-reports.json','data/q-pueblo-issue-index-2026-11-09.json','data/qp-three-hop-2026-11-13.json','data/qp-now-2026-11-13.json','data/q-pueblo-public-case-summaries.json','data/qp-governance-index-input-v1.json','data/qp-governance-profiles-2026-11-14.json'];
+ const pathSources=['data/qp-current-reports.json','data/q-pueblo-issue-index-2026-11-09.json','data/qp-three-hop-2026-11-13.json','data/qp-now-2026-11-13.json','data/q-pueblo-public-case-summaries.json','data/qp-governance-index-input-v1.json','data/qp-governance-profiles-2026-11-14.json','data/qp-resilience-2026-11-18.json'];
  const words=s=>String(s??'').toLowerCase().normalize('NFKD').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
  let loading=null;
  const row=(type,title,text,href,date='')=>({type,title:String(title),text:String(text||''),href,date:String(date||'')});
- async function load(){const results=await Promise.allSettled(pathSources.map(p=>fetch(p,{credentials:'same-origin'}).then(r=>{if(!r.ok)throw Error('Read failed');return r.json()})));const [a,b,c,d,e,f,g]=results.map(x=>x.status==='fulfilled'?x.value:{});if(results.every(x=>x.status==='rejected'))throw Error('No data available');
+ async function load(){const results=await Promise.allSettled(pathSources.map(p=>fetch(p,{credentials:'same-origin'}).then(r=>{if(!r.ok)throw Error('Read failed');return r.json()})));const [a,b,c,d,e,f,g,h]=results.map(x=>x.status==='fulfilled'?x.value:{});if(results.every(x=>x.status==='rejected'))throw Error('No data available');
  const out=[];
  out.push(row('Analysis','Project Falcon — civic decision timeline','project falcon land option manufacturing incentives water jobs lime road st charles county public decision timeline','project-falcon.html','2026-11-15'));
  for(const r of a.reports||[])out.push(row('Analysis',r.title,[r.summary,r.topic,...(r.aliases||[]),...(r.questions||[])].join(' '),'report-'+encodeURIComponent(r.slug)+'.html',r.sourceChecked));
@@ -21,6 +21,8 @@
  for(const p of g.profiles||[]){out.push(row('Organization',p.name,[p.work,p.scope,...p.topics].join(' '),'who-governs.html#'+encodeURIComponent(p.id),g.checked));for(const [name,role] of p.members||[])out.push(row('Organization',name,role+' · '+p.name,'who-governs.html#'+encodeURIComponent(p.id),g.checked));}
  for(const s of window.QPStoryEditions?.allStories||[])out.push(row('Analysis',s.title,[s.summary,...s.questions].join(' '),s.route,s.checked));
  for(const v of window.QPResource?.items||[])out.push(row('Resource',v.title,[v.publisher,v.description,v.format,...v.tags].join(' '),'resource-library.html#'+encodeURIComponent(v.id),v.checked));
+ for(const v of h.articles||[])out.push(row('Analysis',v.title,[v.summary,...v.tags].join(' '),v.href,v.checked));
+ for(const v of h.resources||[])out.push(row('Resource',v.title,'Regional resilience water disaster recovery help',v.url,v.checked));
  return {rows:out, failed:results.filter(x=>x.status==='rejected').length};
  }
  function element(tag,txt,cls){let o=document.createElement(tag);if(txt!=null)o.textContent=txt;if(cls)o.className=cls;return o}
