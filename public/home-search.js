@@ -8,6 +8,7 @@
  const row=(type,title,text,href,date='')=>({type,title:String(title),text:String(text||''),href,date:String(date||'')});
  async function load(){const results=await Promise.allSettled(pathSources.map(p=>fetch(p,{credentials:'same-origin'}).then(r=>{if(!r.ok)throw Error('Read failed');return r.json()})));const [a,b,c,d,e,f,g]=results.map(x=>x.status==='fulfilled'?x.value:{});if(results.every(x=>x.status==='rejected'))throw Error('No data available');
  const out=[];
+ out.push(row('Analysis','How much of Q-Pueblo’s research is backed by evidence?','research progress accountability original 107 backlog living packets evidence gaps 40 sections coverage QIFY verification data sources reports completion corrections', 'research-progress.html','2026-11-18'));
  out.push(row('Analysis','Project Falcon — civic decision timeline','project falcon land option manufacturing incentives water jobs lime road st charles county public decision timeline','project-falcon.html','2026-11-15'));
  for(const r of a.reports||[])out.push(row('Analysis',r.title,[r.summary,r.topic,...(r.aliases||[]),...(r.questions||[])].join(' '),'report-'+encodeURIComponent(r.slug)+'.html',r.sourceChecked));
  for(const i of b.issues||[])out.push(row('Issue',i.title,[i.domain,i.category,i.geography].join(' '),'issues.html#'+encodeURIComponent(i.id),i.lastReviewed));
