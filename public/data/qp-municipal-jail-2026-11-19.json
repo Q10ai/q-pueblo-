@@ -1,0 +1,630 @@
+{
+  "schema": "qp-living-research-packet-v1",
+  "id": "QP-JUSTICE-2026-IGA-001",
+  "parentIssue": "safe-005",
+  "title": "Pueblo municipal jail agreement and community-based public safety",
+  "version": "1.0.0",
+  "asOf": "2026-11-19",
+  "nextReview": "2026-11-20",
+  "status": "active; final IGA and vote unverified",
+  "publication": "public editorial review candidate; no automatic publication",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "KRDO, Nov. 17, 2026: reported proposed IGA and administration rationale",
+      "url": "https://krdo.com/news/2026/11/17/pueblo-considers-jail-time-for-low-level-offenders-ordinance-to-be-voted-on-monday/",
+      "quality": "Secondary reporting; not contract",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S2",
+      "title": "City Council official meeting portal",
+      "url": "https://pueblo.granicus.com/ViewPublisher.php?view_id=4",
+      "quality": "Official meeting listing; Nov. 23; check actual agenda and vote",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S3",
+      "title": "Pueblo County News, Nov. 18, 2026: reported rate and bed limits",
+      "url": "https://pueblocounty.news/article/pueblo-weighs-jail-beds-for-low-level-municipal-offenders-00298d",
+      "quality": "Low confidence: derivative report gives inconsistent meeting date; no contract corroboration",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S4",
+      "title": "Pueblo State of the City 2026, p.31",
+      "url": "https://www.pueblo.us/DocumentCenter/View/31157/State-of-the-City-2026?bidId=",
+      "quality": "Official self-report; indexed passage; full PDF exceeded retrieval limit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S5",
+      "title": "County project dashboard: new detention center and old facility",
+      "url": "https://county.pueblo.org/board-county-commissioners-office/what-we-are-working",
+      "quality": "Official self-report; August 2026 updates",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S6",
+      "title": "Colorado HB26-1134, enacted April 27, 2026",
+      "url": "https://leg.colorado.gov/bills/HB26-1134",
+      "quality": "Official law summary; not a local compliance opinion",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S7",
+      "title": "Dee & Pyne (2022), Science Advances 8(23), eabm2106",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9176742/",
+      "quality": "Peer reviewed, preregistered quasi-experimental study",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S8",
+      "title": "Collins, Lonczak & Clifasefi (2017), Evaluation and Program Planning 64, 49–56",
+      "url": "https://www.ojp.gov/ncjrs/virtual-library/abstracts/seattles-law-enforcement-assisted-diversion-lead-program-effects",
+      "quality": "Peer-reviewed controlled nonrandomized study, abstract",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S9",
+      "title": "Clifasefi, Lonczak & Collins (2017), Crime & Delinquency 63(4), 429–445, corrected Sept. 2026",
+      "url": "https://leadbureau.org/wp-content/uploads/2023/08/clifasefi-et-al-2017-seattle-s-lead-program.pdf",
+      "quality": "Within-person observational analysis; corrected odds wording; rendered PDF unavailable",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S10",
+      "title": "Urban Institute (2021), Denver supportive housing outcomes",
+      "url": "https://www.urban.org/research/publication/breaking-homelessness-jail-cycle-housing-first-results-denver-supportive-housing-social-impact-bond-initiative",
+      "quality": "Randomized evaluation summary",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S11",
+      "title": "Gillespie, Hanson, Leopold & Oneto (2021), Costs and Offsets, Urban Institute",
+      "url": "https://www.urban.org/sites/default/files/publication/104499/costs-and-offsets-of-providing-supportive-housing-to-break-the-homelessness-jail-cycle_0.pdf",
+      "quality": "Cost study, executive summary pp. v–vii; p. vii visually checked",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S12",
+      "title": "Dobbie, Goldin & Yang (2018), American Economic Review 108(2), 201–240",
+      "url": "https://doi.org/10.1257/aer.20161503",
+      "quality": "Quasi-random judge assignment; pretrial detention evidence",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S13",
+      "title": "Health Solutions Emergency Crisis Services",
+      "url": "https://www.health.solutions/services/emergency-crisis-services/",
+      "quality": "Provider description, availability not independently audited",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S14",
+      "title": "City Open Records Request",
+      "url": "https://www.pueblo.us/169/Open-Records-Request-CORA",
+      "quality": "Official request routing",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S15",
+      "title": "Sheriff records request",
+      "url": "https://www.sheriff.co.pueblo.co.us/280/Records-Request-Form",
+      "quality": "Official request routing",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S16",
+      "title": "County budget source hub",
+      "url": "https://pueblocounty.gov/budget-and-finance-department/county-budget",
+      "quality": "Official budget index; no IGA line reconciliation",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S17",
+      "title": "City police records",
+      "url": "https://www.pueblo.us/3009/Request-Report-Copies",
+      "quality": "Official request route",
+      "checked": "2026-11-19"
+    }
+  ],
+  "sections": [
+    {
+      "n": 1,
+      "title": "Executive abstract",
+      "status": "Finding",
+      "answer": "Pueblo is considering a city–county inmate housing agreement. The decision couples enforcement, corrections capacity, municipal defense, behavioral health, housing and victim protection. The current evidence supports testing multiple interventions, but cannot establish the local net cost or effect without the agreement and baseline data.",
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S7",
+        "S10"
+      ]
+    },
+    {
+      "n": 2,
+      "title": "Research question",
+      "status": "Method",
+      "answer": "Which lawful allocation of limited public resources reduces repeat harms and meets due-process requirements at a sustainable cost? Compare status quo, detention, diversion and combined response against the same eligible population, with separate pretrial and sentenced pathways.",
+      "sourceIds": []
+    },
+    {
+      "n": 3,
+      "title": "Scope and definitions",
+      "status": "Method",
+      "answer": "City municipal cases are not county or state criminal cases. Arrest, booking, detention, conviction, sentence and release are different events. Bed-days are not people; a citation or allegation is not guilt. This is a dated narrative policy review, not an audit, census or systematic review.",
+      "sourceIds": []
+    },
+    {
+      "n": 4,
+      "title": "Timeline",
+      "status": "Reported",
+      "answer": "Nov. 17 local reporting describes a proposed agreement; Nov. 23 is the reported final reading and listed council meeting date. The final text, ordinance number, vote, county approval and commencement have not been obtained. Verify date/time at the official portal before attendance.",
+      "sourceIds": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "n": 5,
+      "title": "What the proposal reportedly covers",
+      "status": "Reported",
+      "answer": "Contemporaneous reporting identifies trespass, theft and property damage above $300, battery and fighting-related disorderly conduct among arrest categories, and a broader set of sentencing offenses. These are reported summaries, not a definitive eligibility rule.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "n": 6,
+      "title": "Who has authority",
+      "status": "Analysis",
+      "answer": "Council and county commissioners are reported approval bodies; administrators and sheriff implement agreements within their authority; judicial officials determine lawful case outcomes and counsel represents defendants. Verify signatures, charter and statutory authority before implementation.",
+      "sourceIds": [
+        "S1",
+        "S6"
+      ]
+    },
+    {
+      "n": 7,
+      "title": "Administration rationale",
+      "status": "Attributed statement",
+      "answer": "The mayor argues that recurring offenses harm businesses and residents and that the police budget can accommodate the arrangement. This is a stated rationale, not audited fiscal capacity or proof of deterrence. Request call, loss and repeat-incident data.",
+      "sourceIds": [
+        "S1"
+      ]
+    },
+    {
+      "n": 8,
+      "title": "Community opposition",
+      "status": "Community opinion",
+      "answer": "A resident letter supplied privately argues detention worsens poverty, housing and health and favors crisis response, diversion and supportive housing. Its policy position is not a Q-Pueblo finding. The author and verbatim letter are not republished here; any future republication requires permission.",
+      "sourceIds": []
+    },
+    {
+      "n": 9,
+      "title": "Victim and business impact",
+      "status": "Proposed measurement",
+      "answer": "Record unique victim reports, severity, property losses, repeat victimization, satisfaction and restitution where lawful. Offer practical case-status and victim-support pathways. Reduced bookings alone cannot demonstrate improved safety; compare both reporting and actual harm.",
+      "sourceIds": []
+    },
+    {
+      "n": 10,
+      "title": "Detention transition",
+      "status": "Official self-report",
+      "answer": "The county reports first-year operation of its new facility and controlled shutdown of the old building. Obtain rated and staffed capacity, daily occupancy, separation requirements, warranty exclusions and recurring operating costs. New construction does not establish spare staffed beds.",
+      "sourceIds": [
+        "S5"
+      ]
+    },
+    {
+      "n": 11,
+      "title": "Fiscal baseline",
+      "status": "Evidence gap",
+      "answer": "Obtain city and county adopted and amended budgets, actual spending through the latest closed month, available police appropriations, encumbrances and facility cost allocation. A spending authorization is not cash or an uncommitted balance.",
+      "sourceIds": [
+        "S1",
+        "S16"
+      ]
+    },
+    {
+      "n": 12,
+      "title": "Rate and allocation",
+      "status": "Unverified report",
+      "answer": "A derivative report suggests $60 per occupied day and 15–20 beds but gives an internally inconsistent meeting date. Treat both as low-confidence scenario inputs, not the contract. Obtain rate schedule, guaranteed minimum, escalation, billing units, cancellation and medical exceptions.",
+      "sourceIds": [
+        "S3",
+        "S2"
+      ]
+    },
+    {
+      "n": 13,
+      "title": "Scenario analysis",
+      "status": "Illustrative",
+      "answer": "At $60 per occupied day and 15 beds, 50%, 80% and 100% occupancy yield $164,250, $262,800 and $328,500 annually. At 20 beds: $219,000, $350,400 and $438,000. These are 365-day boarding-only scenarios, not appropriations or commitments.",
+      "sourceIds": []
+    },
+    {
+      "n": 14,
+      "title": "Demand and stays",
+      "status": "Model",
+      "answer": "Occupied days D=B×365×u; estimated stays D/L for assumed average length L. A 20-bed, 80%-occupied, 3-day case implies 5,840 occupied days and about 1,947 episodes, not unique people. Peaks and classification constraints can prevent placement at lower average occupancy.",
+      "sourceIds": []
+    },
+    {
+      "n": 15,
+      "title": "Full public cost",
+      "status": "Model",
+      "answer": "City exposure = boarding invoice + incremental transport, court, counsel and other costs. County net exposure = incremental staffing, medical, food, maintenance and administration minus city transfer. Regional resource use excludes the transfer itself; do not double-count bundled costs.",
+      "sourceIds": []
+    },
+    {
+      "n": 16,
+      "title": "Alternative break-even",
+      "status": "Model",
+      "answer": "For an alternative with net incremental annual city cost A and genuinely avoidable boarding rate r, boarding-only break-even avoided days=A/r. For $150,000 and $60/day, 2,500 days must be avoided, unless a fixed guarantee makes those days non-avoidable. Other outcomes and costs remain separate.",
+      "sourceIds": []
+    },
+    {
+      "n": 17,
+      "title": "Fixed costs and sensitivity",
+      "status": "Model",
+      "answer": "Distinguish paid occupied days from reserved bed guarantees and staffing thresholds. Stress-test 30–100% use, rate escalation, medical outliers, grant loss and 25% staffing overruns; budget one-time start-up separately. No guaranteed savings from short-run reductions in fixed cost.",
+      "sourceIds": []
+    },
+    {
+      "n": 18,
+      "title": "Household and worker effects",
+      "status": "Evidence and hypothesis",
+      "answer": "Pretrial detention research using judge assignment finds conviction and employment effects and no net future-crime effect, with lower pretrial crime and missed court appearances. Pueblo-specific employment, childcare, rent and income losses are unknown. Do not infer an outcome for a named person.",
+      "sourceIds": [
+        "S12"
+      ]
+    },
+    {
+      "n": 19,
+      "title": "Legal and procedural safeguards",
+      "status": "Official law",
+      "answer": "Colorado HB26-1134 became law April 27, 2026. Review its counsel, defense payment, in-custody public-observation and prompt-case provisions against actual municipal procedures. Obtain counsel, access, release and hearing protocols; trained legal review is required.",
+      "sourceIds": [
+        "S6"
+      ]
+    },
+    {
+      "n": 20,
+      "title": "Court workflow",
+      "status": "Proposed control",
+      "answer": "For every eligible case distinguish authority to book from authority to hold or sentence. Ensure court access, counsel, disability and language accommodations, timely review and clear release instructions. No poverty or housing status may serve as a proxy for guilt or dangerousness.",
+      "sourceIds": [
+        "S6"
+      ]
+    },
+    {
+      "n": 21,
+      "title": "Health and release continuity",
+      "status": "Proposed control",
+      "answer": "Specify clinical intake, medications, suicide prevention, withdrawal response, emergency transport, discharge planning, lawful property handling and consent-based connection to providers. These are design requirements, not findings of current detention deficiencies.",
+      "sourceIds": []
+    },
+    {
+      "n": 22,
+      "title": "Current local response",
+      "status": "Official self-report",
+      "answer": "The 2026 city report records 659 SOS and 1,840 CIT calls in 2025. SOS offers clinician, paramedic and lived-experience response; CIT partners police with clinicians. Counts do not measure unique people, incremental cost, successful diversion or capacity.",
+      "sourceIds": [
+        "S4"
+      ]
+    },
+    {
+      "n": 23,
+      "title": "Existing crisis stabilization",
+      "status": "Provider report",
+      "answer": "Health Solutions describes a 24/7 Crisis Living Room and crisis services at 1302 Chinook Lane. Clinical screening and appropriate referral are essential. Confirm actual intake, licensing, transportation, exclusion criteria and capacity. Use 911 for an immediate emergency and 988 for crisis support.",
+      "sourceIds": [
+        "S13"
+      ]
+    },
+    {
+      "n": 24,
+      "title": "STAR evidence",
+      "status": "Research",
+      "answer": "Denver's six-month 2020 STAR pilot evaluated selected nonviolent calls using comparative precinct changes. The study estimates a 34% reduction in targeted recorded offenses with no detectable effect on more serious offenses. Changed recording practices partly explain the finding; do not generalize to every crime or Pueblo.",
+      "sourceIds": [
+        "S7"
+      ]
+    },
+    {
+      "n": 25,
+      "title": "STAR financial evidence",
+      "status": "Research",
+      "answer": "Authors compare roughly $151 per modeled targeted offense reduced with $646 estimated direct criminal-justice cost for a minor offense. This is not equivalent to a jail-day rate or a comprehensive fiscal audit; downstream health spending is not fully included.",
+      "sourceIds": [
+        "S7"
+      ]
+    },
+    {
+      "n": 26,
+      "title": "LEAD arrest evidence",
+      "status": "Research",
+      "answer": "A Seattle nonrandomized comparison of 318 individuals found 60% lower arrest odds over six months for LEAD participants. Eligibility concerned selected drug and prostitution-related conduct. Selection and transferability limitations matter; odds are not probability changes.",
+      "sourceIds": [
+        "S8"
+      ]
+    },
+    {
+      "n": 27,
+      "title": "LEAD housing evidence",
+      "status": "Research",
+      "answer": "The separate 176-person within-subjects study found improved housing odds relative to participants' own baseline, not relative to people booked in jail. The September 2026 correction explicitly clarifies odds terminology. Do not promise a local housing rate.",
+      "sourceIds": [
+        "S9"
+      ]
+    },
+    {
+      "n": 28,
+      "title": "Supportive housing outcomes",
+      "status": "Research",
+      "answer": "Denver's randomized housing evaluation found 34% fewer police contacts, 40% fewer arrests and 27% fewer jail days among those referred for supportive housing compared with usual services over three years. Findings concern a selected high-need population.",
+      "sourceIds": [
+        "S10"
+      ]
+    },
+    {
+      "n": 29,
+      "title": "Housing cost offsets",
+      "status": "Research",
+      "answer": "Denver's cost evaluation found total offsets about half of program costs (57% and 44% across two providers). The 94% figure applies to one provider's city-funded supportive-service costs, not all costs. Vouchers and Medicaid shift payer exposure; costs avoided need not become spendable cash.",
+      "sourceIds": [
+        "S11"
+      ]
+    },
+    {
+      "n": 30,
+      "title": "Sobering and stabilization option",
+      "status": "Proposed research",
+      "answer": "Assess clinically supervised stabilization for eligible intoxication or behavioral distress: staffing, medical exclusions, transfer agreements, consent, transport and overnight capacity. No local operating cost or effect estimate has been confirmed; this is not a substitute for emergency care or lawful enforcement.",
+      "sourceIds": [
+        "S13"
+      ]
+    },
+    {
+      "n": 31,
+      "title": "Community court and diversion",
+      "status": "Proposed design",
+      "answer": "Build transparent offense eligibility, voluntary informed participation, case management, accessible community service, victim support and exit rules. No additional punitive burden solely for inability to pay or participate. Audit net-widening: people otherwise released should not be unnecessarily pulled into intensive supervision.",
+      "sourceIds": []
+    },
+    {
+      "n": 32,
+      "title": "Housing and treatment capacity",
+      "status": "Evidence gap",
+      "answer": "Map vacancies, waitlists, insurance acceptance, low-barrier intake, accessible units, treatment staffing and sustainable funding before promising referrals. Track successful handoffs instead of referral volume alone. Do not assume housing supply is instantly available.",
+      "sourceIds": []
+    },
+    {
+      "n": 33,
+      "title": "Option comparison",
+      "status": "Analysis",
+      "answer": "Status quo preserves baseline but may leave repeat harms unresolved; uncapped detention expands enforcement but introduces uncertain costs and collateral harms; caps and pilots reduce exposure but require reporting; crisis and diversion expansion has capacity limits; hybrid deployment requires cross-agency ownership. Compare alternatives for the same eligible cases.",
+      "sourceIds": []
+    },
+    {
+      "n": 34,
+      "title": "Recommended safeguards for any pilot",
+      "status": "Proposal",
+      "answer": "Require a written eligibility matrix, appropriated ceiling, invoice audit rights, no minimum guarantee without economic justification, staffing and clinical readiness, independent complaints, victim support, rapid suspension for serious safety failures, and a scheduled reauthorization review. These are design options, not adopted terms.",
+      "sourceIds": []
+    },
+    {
+      "n": 35,
+      "title": "Implementation and roles",
+      "status": "Proposed plan",
+      "answer": "First 30 days: reconcile contract, legal and finance baselines, inventory operations and consult providers and affected residents. Days 31–90: only after approval, train dispatch and court staff; phase capacity and test handoffs. Months 4–12: independent outcomes analysis and public review; no automatic expansion.",
+      "sourceIds": []
+    },
+    {
+      "n": 36,
+      "title": "Outcomes and data design",
+      "status": "Proposed specification",
+      "answer": "Monthly aggregate data: incidents by category, unique cases, arrest-to-book rate, occupied days, stay distribution, time to counsel, missed hearings, repeat victimization, referral acceptance, housing retention, participant safety, invoices and staffing. Record numerator, denominator, period, geography, source and suppression status.",
+      "sourceIds": []
+    },
+    {
+      "n": 37,
+      "title": "Evaluation and counterfactual",
+      "status": "Method",
+      "answer": "Prespecify primary victim-harm and repeat-incident outcomes, with fiscal and due-process safety endpoints. Use comparable areas or staggered rollout where feasible; check pretrends, changes in reporting, seasonality and spillover. Report effect uncertainty and missing data. No causal inference from before/after alone.",
+      "sourceIds": []
+    },
+    {
+      "n": 38,
+      "title": "Equity, privacy and AI boundaries",
+      "status": "Governance",
+      "answer": "Publish aggregate, non-identifying outcomes with small-cell suppression and documented denominators; separate restricted operational records. No individual profiling, automated guilt or detention decisions, public medical details, or inferred identities. Provide accessible correction channels and human review.",
+      "sourceIds": []
+    },
+    {
+      "n": 39,
+      "title": "Evidence acquisition and public participation",
+      "status": "Action",
+      "answer": "Use city clerk CORA for agreements and financial documents, police/sheriff criminal-justice records routes and municipal court for its own dispositions. Request existing redacted aggregate records, data dictionary and fee estimate. Check November 23 agenda, submit individual evidence or public comment through official procedures; no submission has been made by Q-Pueblo.",
+      "sourceIds": [
+        "S2",
+        "S14",
+        "S15",
+        "S17"
+      ]
+    },
+    {
+      "n": 40,
+      "title": "Conclusion and living update policy",
+      "status": "Conclusion",
+      "answer": "No defensible local causal or total-cost estimate is available yet. Evaluate enforcement, diversion and stabilization against victim safety, legal rights, measurable public costs and household consequences. Recheck November 20 for agenda, November 24 for council outcome, then county approval and weekly while active. Keep prior versions, corrections, unresolved gaps and public evidence available; expiry is a freshness flag, not deletion.",
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S6",
+        "S7",
+        "S8",
+        "S10",
+        "S11",
+        "S12"
+      ]
+    }
+  ],
+  "demands": [
+    {
+      "id": "R01",
+      "owner": "City Clerk",
+      "request": "Ordinance, background paper, all IGA drafts and executed agreement, attachments, amendments, recorded votes",
+      "status": "not obtained",
+      "requested": false
+    },
+    {
+      "id": "R02",
+      "owner": "City Finance / Police",
+      "request": "Budget authority, actual spend, encumbrance, rate schedule, invoice examples, transport and overtime",
+      "status": "not obtained",
+      "requested": false
+    },
+    {
+      "id": "R03",
+      "owner": "County Clerk / Finance",
+      "request": "County resolution and vote, cost allocation, staffing and healthcare costs, billed revenue",
+      "status": "not obtained",
+      "requested": false
+    },
+    {
+      "id": "R04",
+      "owner": "Sheriff",
+      "request": "Monthly staffed/rated bed capacity, occupancy, admissions and length-of-stay distributions by legal status; aggregate only",
+      "status": "not obtained",
+      "requested": false
+    },
+    {
+      "id": "R05",
+      "owner": "Municipal Court",
+      "request": "Aggregate case and warrant counts, disposition, counsel timing, release and hearing procedures",
+      "status": "not obtained",
+      "requested": false
+    },
+    {
+      "id": "R06",
+      "owner": "Police",
+      "request": "Monthly incidents, repeat victimization, arrests and summons by offense class, calls for service and dispatch definitions",
+      "status": "not obtained",
+      "requested": false
+    },
+    {
+      "id": "R07",
+      "owner": "City / Health Solutions",
+      "request": "SOS/CIT contracts, staffing, shift coverage, eligibility, call outcomes and referral completion",
+      "status": "not obtained",
+      "requested": false
+    },
+    {
+      "id": "R08",
+      "owner": "City housing / contracted providers",
+      "request": "Aggregate shelter and supportive housing occupancy, intake constraints, waiting lists and funding",
+      "status": "not obtained",
+      "requested": false
+    },
+    {
+      "id": "R09",
+      "owner": "County / detention health contractor",
+      "request": "Aggregate medical utilization and costs, continuity of care, adverse-event and grievance procedures",
+      "status": "not obtained",
+      "requested": false
+    },
+    {
+      "id": "R10",
+      "owner": "City and county",
+      "request": "Pilot evaluation, baseline, cost caps, termination and renewal rules",
+      "status": "not obtained",
+      "requested": false
+    }
+  ],
+  "scenario": {
+    "currency": "USD",
+    "days": 365,
+    "bedRate": 60,
+    "beds": 20,
+    "occupancy": 0.8,
+    "stayDays": 3,
+    "otherCityCosts": 0,
+    "alternativeNetCost": 150000,
+    "rateStatus": "unverified scenario only"
+  },
+  "related": [
+    "safe-005",
+    "heal-007",
+    "report-county-budget-2027.html",
+    "report-budget-2026.html",
+    "report-housing-pipeline.html",
+    "surveillance-accountability.html"
+  ],
+  "metrics": [
+    {
+      "metric": "incidents by severity",
+      "value": null,
+      "status": "not obtained"
+    },
+    {
+      "metric": "repeat victimization",
+      "value": null,
+      "status": "not obtained"
+    },
+    {
+      "metric": "unique defendants",
+      "value": null,
+      "status": "not obtained"
+    },
+    {
+      "metric": "occupied bed-days",
+      "value": null,
+      "status": "not obtained"
+    },
+    {
+      "metric": "time to counsel",
+      "value": null,
+      "status": "not obtained"
+    },
+    {
+      "metric": "referral acceptance",
+      "value": null,
+      "status": "not obtained"
+    },
+    {
+      "metric": "housing retention",
+      "value": null,
+      "status": "not obtained"
+    },
+    {
+      "metric": "city invoice",
+      "value": null,
+      "status": "not obtained"
+    },
+    {
+      "metric": "county incremental cost",
+      "value": null,
+      "status": "not obtained"
+    },
+    {
+      "metric": "adverse events",
+      "value": null,
+      "status": "not obtained"
+    }
+  ],
+  "corrections": [
+    "November 23 date supported by official portal; derivative rate report gives inconsistent date.",
+    "LEAD housing comparison is within-person, not jail control.",
+    "94% offset is one provider's city-funded supportive-service denominator, not total costs."
+  ],
+  "limitations": [
+    "No final IGA, vote, actual rate, capacity, or verified fiscal ledger.",
+    "No local causal evaluation; narrative review only.",
+    "No records requests submitted; no private letter reproduced."
+  ]
+}
