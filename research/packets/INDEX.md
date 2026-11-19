@@ -27,3 +27,7 @@ The first ZIP archive (v0.3.0) retains an *outdated* filing manifest because its
 Verification: seven original files were uploaded individually to controlled Google Drive, a full ZIP copy was uploaded, a separate Drive Doc contains four embedded screenshot objects, and the QPueblo registry recorded additions A-077 through A-083, LC-024, RH-027 through RH-036. The corrected ZIP was locally CRC-tested, and source-file hashes matched; **a remote byte-for-byte SHA-256 verification of Drive's uploaded files was not performed**. The current ZIP filename is `QP_TWIN_PUEBLO_ECONOMIC_RENEWAL_ARCHIVE_v0.3.1_2026-11-08.zip`.
 
 This correction improves archive continuity only: it does not certify all-year or all-account completeness, promote claims to canonical facts, connect a live twin, start recurring monitoring, or publish any site changes.
+
+
+## Advance Pueblo accountability — 2026-11-19
+- [Public research article and calculator](../../public/research/economic-development-20261119.html) — v0.2.0, living investigation. Fixed archive records used; recent-report version conflicts withheld. No audit or causal claim. Supersedes no historical evidence.
