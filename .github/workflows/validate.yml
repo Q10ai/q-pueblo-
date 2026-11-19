@@ -75,6 +75,7 @@ jobs:
           node scripts/check-qify.mjs
           node scripts/check-evidence-desk.mjs
           node scripts/check-packet-reports.mjs
+          node scripts/check-nov18-research.mjs
           node scripts/check-launch.mjs
           node scripts/check-experience.mjs
           node scripts/check-release-parity.mjs
