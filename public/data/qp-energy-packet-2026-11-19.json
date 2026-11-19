@@ -1,0 +1,1029 @@
+{
+  "schema": "qp-energy-evidence-packet-v2",
+  "id": "QP-ENERGY-2026-0232E",
+  "version": "2.0.0",
+  "asOf": "2026-11-19",
+  "reviewDue": "2026-11-25",
+  "predecessor": "qp-black-hills-rate-case-2026@1.0.0",
+  "state": "DATED_PUBLIC_EXPLANATORY_RESEARCH_NOT_FINAL",
+  "operational": false,
+  "issue": "qp-black-hills-rate-case-2026",
+  "case": "26AL-0232E",
+  "geography": "Black Hills Colorado Electric service territory; Pueblo city-only ownership case separately scoped",
+  "sources": [
+    {
+      "id": 1,
+      "title": "PUC summer 2026 newsletter",
+      "url": "https://content.govdelivery.com/accounts/CODORA/bulletins/423911b",
+      "scope": "Regulator summary; June filing, refund balances, spring 2027 target",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 2,
+      "title": "Black Hills filed customer notice, Exhibit 100 attachment 2",
+      "url": "https://blackhillsenergy.com/sites/blackhillsenergy.com/files/Hearing-Exhibit-100-Attachment-2-Colorado-Electric-2026-Rate-Review-Customer-Notice-Mailer.pdf",
+      "scope": "Utility proposal; residential and commercial bill examples and tariff components, pp. 1–2",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 3,
+      "title": "Black Hills 2026 rate review",
+      "url": "https://blackhillsenergy.com/billing-and-payments/rates-and-regulatory-information/2026-colorado-electric-regulatory-rate-review",
+      "scope": "Applicant’s explanation and investment claims; not independent audit",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 4,
+      "title": "Pueblo Chieftain, October 30, 2026",
+      "url": "https://www.aol.com/articles/pueblo-council-pushes-back-proposed-090723000.html",
+      "scope": "Secondary reporting of October 26 Council resolution, separate resource plan and hearing",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 5,
+      "title": "Mayor's Mixtape episode 80",
+      "url": "https://www.buzzsprout.com/2455789/episodes/20139550-the-mayor-s-mixtape-episode-80",
+      "scope": "Mayor’s account, Pueblo hearing date and time",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 6,
+      "title": "Cañon City hearing notice reporting, November 10",
+      "url": "https://canoncitynews24.com/article/canon-city-black-hills-electric-rate-hearing-december-1",
+      "scope": "Secondary corroboration of three hearings and comments",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 7,
+      "title": "PUC electric rate cases",
+      "url": "https://puc.colorado.gov/electric-rate-cases",
+      "scope": "Official public starting point; direct retrieval blocked in this review; confirm schedule and latest filings",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 8,
+      "title": "PUC comment form",
+      "url": "https://puc.colorado.gov/comments",
+      "scope": "Public comment route; supplied notice and secondary reporting; confirm current instructions",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 9,
+      "title": "Rate case docket index",
+      "url": "https://cloakanddocket.com/doc.php?id=26AL-0232E&k=co_psc_docket&s=CO",
+      "scope": "Third-party docket index, not controlling record; city/county/UCA/staff intervention listings",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 10,
+      "title": "City of Pueblo GDS energy strategy draft, April 17, 2025",
+      "url": "https://www.pueblo.us/DocumentCenter/View/38195/City-of-Pueblo-CO---Initial-Feasibility-Report",
+      "scope": "City-commissioned draft; executive summary, city-only feasibility and acquisition estimate",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 11,
+      "title": "Brattle study, March 25, 2025",
+      "url": "https://www.brattle.com/insights-events/publications/preliminary-feasibility-study/",
+      "scope": "Commissioned by Black Hills; separate more-than-$1B financing estimate",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 12,
+      "title": "Pueblo County official May 2025 election results landing page",
+      "url": "https://www.pueblocounty.gov/clerk-and-recorder-department/may-06-2025-official-election-results",
+      "scope": "Certified results access point; no certified totals transcribed in this report",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 13,
+      "title": "CPR reporting, May 7, 2025",
+      "url": "https://www.cpr.org/2025/05/07/pueblo-2025-election-results-black-hills-energy/",
+      "scope": "Historical election result reporting; then-unofficial numbers",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 14,
+      "title": "KOAA, March 2025 rate decision reporting",
+      "url": "https://www.koaa.com/news/covering-colorado/public-utilities-commission-approves-adjusted-rate-increases-by-black-hills-energy",
+      "scope": "Prior request reduced to $17M approved; original order should control",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 15,
+      "title": "Colorado statutes, Title 40, 2026 compilation",
+      "url": "https://olls.info/crs/crs2026-title-40.htm",
+      "scope": "Limits PUC authority under specified electrification provisions; not a universal analysis of building codes",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 16,
+      "title": "Black Hills Colorado regulatory filings",
+      "url": "https://www.blackhillsenergy.com/billing-and-payments/rates-and-regulatory-information/colorado-rates-and-regulatory-information",
+      "scope": "Separate riders, rate changes and assistance filings",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 17,
+      "title": "PUC April 2026 newsletter",
+      "url": "https://content.govdelivery.com/accounts/CODORA/bulletins/4136266",
+      "scope": "Economic development rate settlement; protections against cost shifting",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 18,
+      "title": "Pueblo County LEAP",
+      "url": "https://pueblocounty.gov/human-services/colorado-leap-program",
+      "scope": "Heating assistance and local application details",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 19,
+      "title": "Pueblo County residential programs",
+      "url": "https://www.pueblocounty.gov/residential-programs",
+      "scope": "Local assistance directory",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 20,
+      "title": "Energy Outreach Colorado",
+      "url": "https://energyoutreach.org/get-bill-payment-assistance/",
+      "scope": "Past-due bill assistance, availability and eligibility",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 21,
+      "title": "Pueblo County EOC",
+      "url": "https://www.pueblocounty.gov/human-services-department/energy-outreach-colorado-eoc-formerly-pueblo-county-human-services",
+      "scope": "Local EOC application and shutoff help",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 22,
+      "title": "Resource plan docket index",
+      "url": "https://cloakanddocket.com/doc.php?id=26A-0333E&k=co_psc_docket&s=CO",
+      "scope": "Third-party index; official filings must control",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": 23,
+      "title": "Black Hills Corp investor release, June 12, 2026",
+      "url": "https://ir.blackhillscorp.com/news-releases/news-release-details/black-hills-corp-requests-rate-review-colorado",
+      "scope": "Applicant requested 10.5% ROE; 51.02% equity and 48.98% debt; not allowed or realized return.",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": 24,
+      "title": "San Isabel Electric: Recovering Costs, October 20, 2026",
+      "url": "https://siea.com/working-for-you/recovering-costs/",
+      "scope": "Cooperative self-report: most residential accounts $35 monthly grid fee, 1.5 cents/kWh PCA and planned January reset; no disaster rider as of article.",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": 25,
+      "title": "San Isabel Electric: Power Cost Adjustment",
+      "url": "https://siea.com/pca/",
+      "scope": "Cooperative board approved adjustment for remainder of 2026, planned reset after December 31.",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": 26,
+      "title": "Xcel Colorado residential service",
+      "url": "https://co.my.xcelenergy.com/s/billing-payment/residential-rates/residential-plan",
+      "scope": "Published general service components; enrollment conditions, riders and effective tariffs need verification.",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": 27,
+      "title": "Colorado Springs Utilities electric tariff",
+      "url": "https://www.csu.org/hubfs/39606065/Document%20Library/ElectricTariff.pdf",
+      "scope": "Published schedule; comparator candidate only; no normalized total used.",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": 28,
+      "title": "Brattle preliminary feasibility study, March 2025",
+      "url": "https://www.brattle.com/wp-content/uploads/2025/03/Preliminary-Feasibility-Study.pdf",
+      "scope": "Utility-sponsored study, p. 1: financing estimate and city-only scope.",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": 29,
+      "title": "San Isabel rate selection tool",
+      "url": "https://siea.com/rateselectiontool/",
+      "scope": "Optional time-of-use rates and conditions; usage timestamps needed for comparison.",
+      "checked": "2026-11-19"
+    }
+  ],
+  "baseline": {
+    "schema": "qp-living-utility-investigation-v1",
+    "id": "qp-black-hills-rate-case-2026",
+    "version": "1.0.0",
+    "asOf": "2026-11-18",
+    "reviewDue": "2026-11-25",
+    "case": "26AL-0232E",
+    "relatedCases": [
+      "26A-0333E",
+      "24AL-0275E",
+      "25A-0500E",
+      "26AL-0322E"
+    ],
+    "status": "pending proposal; editorial review required",
+    "publicationClass": "PUBLIC_EXPLANATORY_ANALYSIS",
+    "residentSignals": {
+      "classification": "SIGNAL",
+      "description": "User-supplied social-media screenshots; themes only, no identity, raw images or purported representative counts published.",
+      "themes": [
+        "rate fatigue and distrust",
+        "alternative utilities",
+        "vegetation maintenance transparency",
+        "electrification affordability",
+        "public participation and rate reduction"
+      ]
+    },
+    "billExample": {
+      "kWh": 600,
+      "baseline": 124.18,
+      "withCredit": 135.08,
+      "withoutCredit": 142.48,
+      "smallBusiness": [
+        277.47,
+        285.66,
+        303.99
+      ],
+      "fixedCharge": [
+        8.77,
+        12
+      ],
+      "proposedAnnualRevenue": 26663479
+    },
+    "hearings": [
+      {
+        "date": "2026-12-01",
+        "time": "17:00–19:00 MST",
+        "place": "Cañon City Council Chambers, 128 Main Street",
+        "status": "secondary corroboration"
+      },
+      {
+        "date": "2026-12-02",
+        "time": "16:30–18:30 MST",
+        "place": "Barkman Branch Library, 1300 Jerry Murphy Road, Pueblo",
+        "status": "time and venue corroborated; address supplied by user notice"
+      },
+      {
+        "date": "2027-01-19",
+        "time": "17:00–19:00 MST",
+        "place": "Virtual, registration required",
+        "status": "secondary corroboration"
+      }
+    ],
+    "sources": [
+      {
+        "id": 1,
+        "title": "PUC summer 2026 newsletter",
+        "url": "https://content.govdelivery.com/accounts/CODORA/bulletins/423911b",
+        "scope": "Regulator summary; June filing, refund balances, spring 2027 target",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 2,
+        "title": "Black Hills filed customer notice, Exhibit 100 attachment 2",
+        "url": "https://blackhillsenergy.com/sites/blackhillsenergy.com/files/Hearing-Exhibit-100-Attachment-2-Colorado-Electric-2026-Rate-Review-Customer-Notice-Mailer.pdf",
+        "scope": "Utility proposal; residential and commercial bill examples and tariff components, pp. 1–2",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 3,
+        "title": "Black Hills 2026 rate review",
+        "url": "https://blackhillsenergy.com/billing-and-payments/rates-and-regulatory-information/2026-colorado-electric-regulatory-rate-review",
+        "scope": "Applicant’s explanation and investment claims; not independent audit",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 4,
+        "title": "Pueblo Chieftain, October 30, 2026",
+        "url": "https://www.aol.com/articles/pueblo-council-pushes-back-proposed-090723000.html",
+        "scope": "Secondary reporting of October 26 Council resolution, separate resource plan and hearing",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 5,
+        "title": "Mayor's Mixtape episode 80",
+        "url": "https://www.buzzsprout.com/2455789/episodes/20139550-the-mayor-s-mixtape-episode-80",
+        "scope": "Mayor’s account, Pueblo hearing date and time",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 6,
+        "title": "Cañon City hearing notice reporting, November 10",
+        "url": "https://canoncitynews24.com/article/canon-city-black-hills-electric-rate-hearing-december-1",
+        "scope": "Secondary corroboration of three hearings and comments",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 7,
+        "title": "PUC electric rate cases",
+        "url": "https://puc.colorado.gov/electric-rate-cases",
+        "scope": "Official public starting point; direct retrieval blocked in this review; confirm schedule and latest filings",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 8,
+        "title": "PUC comment form",
+        "url": "https://puc.colorado.gov/comments",
+        "scope": "Public comment route; supplied notice and secondary reporting; confirm current instructions",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 9,
+        "title": "Rate case docket index",
+        "url": "https://cloakanddocket.com/doc.php?id=26AL-0232E&k=co_psc_docket&s=CO",
+        "scope": "Third-party docket index, not controlling record; city/county/UCA/staff intervention listings",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 10,
+        "title": "City of Pueblo GDS energy strategy draft, April 17, 2025",
+        "url": "https://www.pueblo.us/DocumentCenter/View/38195/City-of-Pueblo-CO---Initial-Feasibility-Report",
+        "scope": "City-commissioned draft; executive summary, city-only feasibility and acquisition estimate",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 11,
+        "title": "Brattle study, March 25, 2025",
+        "url": "https://www.brattle.com/insights-events/publications/preliminary-feasibility-study/",
+        "scope": "Commissioned by Black Hills; separate more-than-$1B financing estimate",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 12,
+        "title": "Pueblo County official May 2025 election results landing page",
+        "url": "https://www.pueblocounty.gov/clerk-and-recorder-department/may-06-2025-official-election-results",
+        "scope": "Certified results access point; no certified totals transcribed in this report",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 13,
+        "title": "CPR reporting, May 7, 2025",
+        "url": "https://www.cpr.org/2025/05/07/pueblo-2025-election-results-black-hills-energy/",
+        "scope": "Historical election result reporting; then-unofficial numbers",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 14,
+        "title": "KOAA, March 2025 rate decision reporting",
+        "url": "https://www.koaa.com/news/covering-colorado/public-utilities-commission-approves-adjusted-rate-increases-by-black-hills-energy",
+        "scope": "Prior request reduced to $17M approved; original order should control",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 15,
+        "title": "Colorado statutes, Title 40, 2026 compilation",
+        "url": "https://olls.info/crs/crs2026-title-40.htm",
+        "scope": "Limits PUC authority under specified electrification provisions; not a universal analysis of building codes",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 16,
+        "title": "Black Hills Colorado regulatory filings",
+        "url": "https://www.blackhillsenergy.com/billing-and-payments/rates-and-regulatory-information/colorado-rates-and-regulatory-information",
+        "scope": "Separate riders, rate changes and assistance filings",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 17,
+        "title": "PUC April 2026 newsletter",
+        "url": "https://content.govdelivery.com/accounts/CODORA/bulletins/4136266",
+        "scope": "Economic development rate settlement; protections against cost shifting",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 18,
+        "title": "Pueblo County LEAP",
+        "url": "https://pueblocounty.gov/human-services/colorado-leap-program",
+        "scope": "Heating assistance and local application details",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 19,
+        "title": "Pueblo County residential programs",
+        "url": "https://www.pueblocounty.gov/residential-programs",
+        "scope": "Local assistance directory",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 20,
+        "title": "Energy Outreach Colorado",
+        "url": "https://energyoutreach.org/get-bill-payment-assistance/",
+        "scope": "Past-due bill assistance, availability and eligibility",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 21,
+        "title": "Pueblo County EOC",
+        "url": "https://www.pueblocounty.gov/human-services-department/energy-outreach-colorado-eoc-formerly-pueblo-county-human-services",
+        "scope": "Local EOC application and shutoff help",
+        "checked": "2026-11-18"
+      },
+      {
+        "id": 22,
+        "title": "Resource plan docket index",
+        "url": "https://cloakanddocket.com/doc.php?id=26A-0333E&k=co_psc_docket&s=CO",
+        "scope": "Third-party index; official filings must control",
+        "checked": "2026-11-18"
+      }
+    ],
+    "findings": [
+      {
+        "id": 1,
+        "title": "What this is about",
+        "answer": "A pending regulated electric rate case for Pueblo, Cañon City, Rocky Ford and other customers in Black Hills Colorado Electric territory.",
+        "sources": [
+          1,
+          2
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 2,
+        "title": "Main finding",
+        "answer": "The proposed $26,663,479 annual revenue change is not a bill already approved. The 600-kWh example rises $18.30/month without the proposed temporary credit.",
+        "sources": [
+          1,
+          2
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 3,
+        "title": "History",
+        "answer": "The 2024 filing was ultimately reduced; March 2025 reporting describes $17M approved and roughly $7/month residential impact. The new application is separate.",
+        "sources": [
+          14
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 4,
+        "title": "Current status",
+        "answer": "June 12 filing; Council opposition October 26; public comments in December and January. Applicant anticipates March 2027, regulator targets spring 2027; actual effective date depends on order.",
+        "sources": [
+          1,
+          3,
+          4,
+          6
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 5,
+        "title": "Dates",
+        "answer": "December 1 Cañon City; December 2 Pueblo; January 19, 2027 virtual. Early January is encouraged for written comments; confirm latest schedule.",
+        "sources": [
+          5,
+          6,
+          7
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 6,
+        "title": "Affected people",
+        "answer": "Over 102,000 regional customer accounts per company notice, not 102,000 people or Pueblo-only households.",
+        "sources": [
+          2
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 7,
+        "title": "Children",
+        "answer": "Higher energy costs could reduce disposable income for food, heating and education. No child-level outcomes have been measured.",
+        "sources": [],
+        "classification": "analysis or records gap"
+      },
+      {
+        "id": 8,
+        "title": "Families and workers",
+        "answer": "The example adds $130.80/year with credit or $219.60/year without it. Fixed-income burden depends on actual bills and income.",
+        "sources": [
+          2
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 9,
+        "title": "Neighborhoods",
+        "answer": "Different rate territories and housing efficiencies matter. Compare usage-matched bills, not a Pueblo address label or one anecdote.",
+        "sources": [
+          2
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 10,
+        "title": "Fairness",
+        "answer": "The proposed fixed charge rises from $8.77 to $12.00; assess low-usage and energy-burden impacts, including renters who cannot modify their homes.",
+        "sources": [
+          2
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 11,
+        "title": "Responsibility",
+        "answer": "Black Hills files and operates the system; the Colorado PUC regulates tariffs; Pueblo City Council can oppose and participate but does not set the PUC rate.",
+        "sources": [
+          1,
+          4
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 12,
+        "title": "Decision makers",
+        "answer": "PUC determines the outcome; public comments inform the process. Trial staff and utility consumer advocate participate; docket index also lists city and county intervention motions.",
+        "sources": [
+          1,
+          9
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 13,
+        "title": "Rules",
+        "answer": "The proceeding reviews proposed tariffs and prudent recoverable costs. Obtain current procedural schedule, orders and testimony before assigning approval status.",
+        "sources": [
+          1,
+          2,
+          7
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 14,
+        "title": "Commitments",
+        "answer": "Applicant reports approximately $184M invested since the last filing. The claim is not equivalent to a verified rate-base addition or an allowed return.",
+        "sources": [
+          2,
+          3
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 15,
+        "title": "Accountability",
+        "answer": "Request utility workpapers, approved revenue requirement, rate-base roll-forward, cost allocation, audit sampling, and service outcomes. Regulator's public docket is the first route; private company records are not automatically public records.",
+        "sources": [
+          7,
+          9
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 16,
+        "title": "Revenue",
+        "answer": "Proposed incremental annual revenue is a system-wide request, not profits, Pueblo-only receipts, or a tax.",
+        "sources": [
+          1,
+          2
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 17,
+        "title": "Household costs",
+        "answer": "600-kWh filed baseline $124.18; temporary-credit example $135.08; no-credit example $142.48. Small commercial examples $277.47, $285.66, $303.99.",
+        "sources": [
+          2
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 18,
+        "title": "Approved amounts",
+        "answer": "No final order for the new increase was established as of November 18. Do not substitute the company's requested rate or 2025 decision for the new outcome.",
+        "sources": [
+          1,
+          14
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 19,
+        "title": "Actual payments",
+        "answer": "No ledger of realized 2026–27 collections or individual work orders was reconciled. Request tariff-to-bill sample, actual capital invoices and recovery by account.",
+        "sources": [],
+        "classification": "analysis or records gap"
+      },
+      {
+        "id": 20,
+        "title": "Costs and benefits",
+        "answer": "Utility cites reliability, resilience and operating costs. Measure whether outage minutes, frequency, capacity and safety improve relative to demonstrated spending.",
+        "sources": [
+          3
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 21,
+        "title": "How it works",
+        "answer": "Base charges, usage rates and riders interact. Proposal replaces two residential base-energy tiers (12.159 and 15.807 cents/kWh) with 16 cents/kWh, plus other charges and adjustments.",
+        "sources": [
+          2
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 22,
+        "title": "Capacity",
+        "answer": "Company identifies Erie Avenue, Pueblo Industrial Park and airport generation infrastructure investments; actual spare distribution capacity is not established.",
+        "sources": [
+          3
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 23,
+        "title": "Quality",
+        "answer": "Request annual SAIDI/SAIFI, outage causes, restoration performance and service-quality compliance, with comparable exclusions and years.",
+        "sources": [],
+        "classification": "analysis or records gap"
+      },
+      {
+        "id": 24,
+        "title": "Maintenance",
+        "answer": "Residents request location-specific vegetation trimming records. Request aggregated corridors, completed miles, dates, contractors, labor, actual versus budget, allocation and tariff recovery; redact security-sensitive detail.",
+        "sources": [],
+        "classification": "analysis or records gap"
+      },
+      {
+        "id": 25,
+        "title": "Obstacles",
+        "answer": "Court or regulatory disputes, capital cost, fuel prices, procurement and rate design may affect timelines. Do not infer future delay without procedural evidence.",
+        "sources": [
+          7
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 26,
+        "title": "Connected issues",
+        "answer": "Municipal bills, schools, museums, nonprofits, hospitals, housing, public safety and small businesses could face operating-cost pressure. No citywide cost has been measured.",
+        "sources": [
+          4
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 27,
+        "title": "Energy needs",
+        "answer": "Separate resource plan case 26A-0333E and economic development case 25A-0500E matter for future power demand and cost allocation. Avoid treating their dollars as additive without a model.",
+        "sources": [
+          4,
+          17,
+          22
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 28,
+        "title": "Environment",
+        "answer": "Reliability, wildfire mitigation, fuel and renewable resources may carry distinct benefits and costs. Request quantified outcomes and alternatives, not a standalone claim that all spending is necessary.",
+        "sources": [
+          3
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 29,
+        "title": "Risks",
+        "answer": "Credit expires; higher base persists if approved as filed. Rate shock can interact with rent, gas, water and insurance increases; no cascading insolvency forecast is established.",
+        "sources": [
+          1,
+          4
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 30,
+        "title": "Long term",
+        "answer": "Compare five- and twenty-year cumulative costs, affordability, debt, technology, reliability, and future grid investment under each provider scenario.",
+        "sources": [
+          10,
+          11
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 31,
+        "title": "Alternatives",
+        "answer": "Regulated incumbent with rate scrutiny, negotiated concessions, energy assistance, weatherization, community solar, cooperative or public-power feasibility, and regional bulk-power options. No immediate supplier switch is established.",
+        "sources": [
+          10,
+          11,
+          19
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 32,
+        "title": "Tradeoffs",
+        "answer": "City-only utility draft puts acquisition-related total at $383–503M in 2030 dollars and finds city-only municipalization infeasible under assumptions. Black Hills-funded study estimates financing above $1B under its own framework; reconcile scopes rather than merge figures.",
+        "sources": [
+          10,
+          11
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 33,
+        "title": "Lessons",
+        "answer": "Benchmark Xcel, San Isabel Electric and Colorado Springs Utilities using current tariffs, identical usage, all riders, reliability and capitalization. No tariff-normalized ranking was verified here.",
+        "sources": [],
+        "classification": "analysis or records gap"
+      },
+      {
+        "id": 34,
+        "title": "Improvements",
+        "answer": "Publish a plain-language revenue bridge, maintenance accountability matrix, matched-tariff comparator, energy-burden dashboard and assistance navigator; assign review owners before implementation.",
+        "sources": [],
+        "classification": "analysis or records gap"
+      },
+      {
+        "id": 35,
+        "title": "Public action",
+        "answer": "Submit case 26AL-0232E comments and factual examples; ask for written answers. No need to disclose private bill account number in public filings.",
+        "sources": [
+          6,
+          8
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 36,
+        "title": "Evidence strength",
+        "answer": "Regulator confirms proposal and refund mechanics; utility notice supplies bill scenarios. Hearing specifics partly corroborated via local reporting/mayor. Official direct docket review remains incomplete.",
+        "sources": [
+          1,
+          2,
+          5,
+          6,
+          7
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 37,
+        "title": "Conflicting claims",
+        "answer": "Rate approval is not inevitable: prior case was reduced. State statutes limit PUC mandates to remove gas appliances from existing buildings in relevant programs; check local/new-building rules separately. No proof of excess profit or maintenance fraud supplied.",
+        "sources": [
+          14,
+          15
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 38,
+        "title": "Unknowns",
+        "answer": "Current staff and intervenor positions, requested and allowed return on equity, actual vegetation cost and location data, rate-class allocation, city facility costs, and final order.",
+        "sources": [
+          7,
+          9
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 39,
+        "title": "Change triggers",
+        "answer": "New testimony, settlement, commission order, revised tariff, hearing changes, or a validated municipalization update trigger amendments; historical baseline stays intact.",
+        "sources": [
+          7,
+          16
+        ],
+        "classification": "attributed/contextual"
+      },
+      {
+        "id": 40,
+        "title": "Qified insight",
+        "answer": "The temporary credit, permanent base-rate design, system costs and household outcomes must be tracked separately. Pair evidence-led intervention with source-backed local relief and long-term scenario comparisons.",
+        "sources": [
+          1,
+          2,
+          18,
+          20
+        ],
+        "classification": "attributed/contextual"
+      }
+    ],
+    "links": [
+      "report-water-budget-evidence.html",
+      "report-budget-2026.html",
+      "report-county-budget-2027.html",
+      "nonprofit-funding-continuity.html",
+      "pueblo-ai-readiness.html",
+      "regional-financial-transition.html"
+    ],
+    "amendments": [],
+    "limits": [
+      "Official PUC hub direct access blocked; current docket not fully reconciled.",
+      "Social screenshots are signals only; names and raw screenshots excluded.",
+      "No neighborhood maintenance or tariff-normalized competitor rates verified.",
+      "No final determination, no autonomous monitoring, no publication without editorial review."
+    ]
+  },
+  "amendments": [
+    {
+      "date": "2026-11-19",
+      "reason": "New corroborated evidence and model extensions",
+      "supersedes": "none; baseline retained",
+      "sources": [
+        2,
+        23,
+        24,
+        25,
+        26,
+        28
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "QP-ENERGY-2026-0232E-C01",
+      "type": "APPLICANT_REQUEST",
+      "value": 26663479,
+      "unit": "USD/year",
+      "sourceIds": [
+        2
+      ],
+      "effective": "proposal",
+      "ttl": "2026-11-25"
+    },
+    {
+      "id": "QP-ENERGY-2026-0232E-C02",
+      "type": "APPLICANT_REQUEST",
+      "value": 10.5,
+      "unit": "percent ROE",
+      "sourceIds": [
+        23
+      ],
+      "effective": "proposal",
+      "ttl": "2026-11-25"
+    },
+    {
+      "id": "QP-ENERGY-2026-0232E-C03",
+      "type": "APPLICANT_REQUEST",
+      "value": 51.02,
+      "unit": "percent equity",
+      "sourceIds": [
+        23
+      ],
+      "effective": "proposal",
+      "ttl": "2026-11-25"
+    },
+    {
+      "id": "QP-ENERGY-2026-0232E-C04",
+      "type": "COOP_REPORTED",
+      "value": 0.015,
+      "unit": "USD/kWh PCA",
+      "sourceIds": [
+        24,
+        25
+      ],
+      "effective": "remainder of 2026; reset planned 2027-01-01",
+      "ttl": "2026-11-25"
+    }
+  ],
+  "relationships": [
+    [
+      "Black Hills Colorado Electric",
+      "files",
+      "Colorado PUC"
+    ],
+    [
+      "Colorado PUC",
+      "determines",
+      "approved electric tariffs"
+    ],
+    [
+      "Pueblo City Council",
+      "opposition reported",
+      "26AL-0232E"
+    ],
+    [
+      "Pueblo County",
+      "intervention motion indexed",
+      "26AL-0232E"
+    ],
+    [
+      "Utility Consumer Advocate",
+      "intervention indexed",
+      "26AL-0232E"
+    ],
+    [
+      "San Isabel Electric",
+      "benchmark only",
+      "Pueblo regional energy"
+    ],
+    [
+      "Nonprofits / schools / government",
+      "potential cost exposure",
+      "utility tariffs"
+    ]
+  ],
+  "models": {
+    "billScenario": {
+      "residential": {
+        "usageKWh": 600,
+        "baselineCents": 12418,
+        "creditCents": 13508,
+        "fullCents": 14248
+      },
+      "commercial": {
+        "usageKWh": 1502,
+        "baselineCents": 27747,
+        "creditCents": 28566,
+        "fullCents": 30399
+      },
+      "formula": "monthsCredit*(credit-baseline)+monthsFull*(full-baseline)",
+      "excluded": "other tariff changes, usage changes, inflation, actual approval"
+    },
+    "roeSensitivity": {
+      "hypotheticalRateBase": 100000000,
+      "equityShare": 0.5102,
+      "roeDelta": 0.01,
+      "annualReturnDelta": 510200,
+      "excludes": "tax gross-up and other interactions"
+    },
+    "debtSensitivity": {
+      "principal": 400000000,
+      "years": 30,
+      "rates": [
+        0.04,
+        0.06,
+        0.08
+      ],
+      "formula": "P*r/(1-(1+r)^(-n))",
+      "status": "illustrative financing only"
+    }
+  },
+  "recordsQueue": [
+    [
+      "P0",
+      "Regulatory order, schedule, answer testimony, updated tariffs",
+      "PUC docket/UCA",
+      "pending"
+    ],
+    [
+      "P0",
+      "Revenue requirement and allocation workpapers; ROE and test-year cost",
+      "PUC docket",
+      "pending"
+    ],
+    [
+      "P0",
+      "Refund balance, eligible accounts, schedule and review",
+      "PUC docket",
+      "pending"
+    ],
+    [
+      "P1",
+      "Capital projects, actual cost, prudent/in-service and rider crosswalk",
+      "Utility/PUC",
+      "pending"
+    ],
+    [
+      "P1",
+      "Vegetation aggregate costs, planned/completed work and reliability records",
+      "Utility/PUC",
+      "pending"
+    ],
+    [
+      "P1",
+      "Matched full tariffs and winter/summer usage profiles",
+      "Utilities",
+      "partial"
+    ],
+    [
+      "P1",
+      "City/county/school facility utility costs and allocation",
+      "Public records custodians",
+      "pending"
+    ],
+    [
+      "P2",
+      "Regional acquisition, power supply, debt and workforce scenario",
+      "Qualified engineering/legal review",
+      "pending"
+    ]
+  ],
+  "limitations": [
+    "Official PUC hub direct access blocked; current docket not fully reconciled.",
+    "Social screenshots are signals only; names and raw screenshots excluded.",
+    "No neighborhood maintenance or tariff-normalized competitor rates verified.",
+    "No final determination, no autonomous monitoring, no publication without editorial review.",
+    "No full tariff normalization; no independent audit; no authenticated PUC answer testimony retrieved."
+  ],
+  "article": "report-black-hills-rate-case-2026.html",
+  "paper": "energy-research-paper-2026.html"
+}

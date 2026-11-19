@@ -1,0 +1,6 @@
+scenario,months_credit,months_without,residential_added_usd,commercial_added_usd,status
+no increase,0,0,0.00,0.00,conditional not forecast
+first year,12,0,130.80,98.28,conditional not forecast
+two years credit,24,0,261.60,196.56,conditional not forecast
+five-year scenario,24,36,920.40,1151.28,conditional not forecast
+five years no credit,0,60,1098.00,1591.20,conditional not forecast
