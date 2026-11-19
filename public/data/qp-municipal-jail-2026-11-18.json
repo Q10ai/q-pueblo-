@@ -1,0 +1,392 @@
+{
+  "schema": "qp-living-investigation-v1",
+  "id": "QP-JUSTICE-2026-1117",
+  "title": "Pueblo’s proposed municipal jail agreement: safety, costs, capacity and rights",
+  "summary": "A municipal inmate housing agreement is scheduled for City Council consideration November 23. The new jail has 672 physical beds; the county proposes $9.81 million in General Fund reductions. Contract rates, staffed capacity and actual outcomes remain unresolved.",
+  "version": "0.1.0",
+  "checked": "2026-11-18",
+  "reviewDue": "2026-11-19",
+  "status": "active-investigation; decision pending",
+  "decision": {
+    "reportedDate": "2026-11-23",
+    "countyApproval": "pending verification",
+    "finalIGA": null
+  },
+  "sourcePolicy": "Separate official records, attributed statements, community signals and hypothetical scenarios; no personal commenter identifiers.",
+  "community": {
+    "postReactions": 427,
+    "shares": 26,
+    "sampling": "selected screenshots of same post; not a poll"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "KRDO, November 17, 2026 — proposed agreement and reported decision schedule",
+      "url": "https://krdo.com/news/2026/11/17/pueblo-considers-jail-time-for-low-level-offenders-ordinance-to-be-voted-on-monday/",
+      "type": "secondary reporting"
+    },
+    {
+      "id": "S2",
+      "title": "Pueblo County — financial strategy progress, November 2026",
+      "url": "https://www.pueblocounty.gov/board-county-commissioners-office/what-we-are-working",
+      "type": "official"
+    },
+    {
+      "id": "S3",
+      "title": "Pueblo County — 2027 preliminary budget and presentations",
+      "url": "https://county.pueblo.org/budget-and-finance-department/2027-budget",
+      "type": "official"
+    },
+    {
+      "id": "S4",
+      "title": "Sheriff — May 7 detention center opening announcement",
+      "url": "https://pueblosheriff.com/DocumentCenter/View/3682/new-jail-ribbon-cutting?bidId=",
+      "type": "official"
+    },
+    {
+      "id": "S5",
+      "title": "Sheriff — July 11 transition to new jail",
+      "url": "https://www.pueblosheriff.com/m/newsflash/Home/Detail/637",
+      "type": "official"
+    },
+    {
+      "id": "S6",
+      "title": "KKTV — July 11 historical occupancy",
+      "url": "https://www.kktv.com/2026/07/11/all-pueblo-county-inmates-transferred-new-detention-facility/",
+      "type": "secondary"
+    },
+    {
+      "id": "S7",
+      "title": "City — 2017 Douglas County housing IGA",
+      "url": "https://www.pueblo.us/AgendaCenter/ViewFile/Item/20293?fileID=61044",
+      "type": "official historical"
+    },
+    {
+      "id": "S8",
+      "title": "City — February 2019 Las Animas County housing background and ordinance 9419",
+      "url": "https://www.pueblo.us/AgendaCenter/ViewFile/Item/27570?fileID=100649",
+      "type": "official historical"
+    },
+    {
+      "id": "S9",
+      "title": "2022 regional IGA, section 6(b)",
+      "url": "https://www.pueblo.us/AgendaCenter/ViewFile/Item/42703?fileID=148506",
+      "type": "official historical document"
+    },
+    {
+      "id": "S10",
+      "title": "Colorado Supreme Court, 2025 CO 64, Camp and Simons",
+      "url": "https://law.justia.com/cases/colorado/supreme-court/2025/24sa276.html",
+      "type": "opinion reproduction"
+    },
+    {
+      "id": "S11",
+      "title": "Colorado General Assembly — HB26-1134 enacted",
+      "url": "https://leg.colorado.gov/bills/HB26-1134",
+      "type": "official"
+    },
+    {
+      "id": "S12",
+      "title": "Colorado Revised Statutes §18-1.3-702",
+      "url": "https://law.justia.com/codes/colorado/title-18/article-1-3/part-7/section-18-1-3-702/",
+      "type": "statute reproduction"
+    },
+    {
+      "id": "S13",
+      "title": "Bearden v Georgia, 461 U.S. 660 (1983)",
+      "url": "https://www.law.cornell.edu/supremecourt/text/461/660",
+      "type": "opinion reproduction"
+    },
+    {
+      "id": "S14",
+      "title": "Pueblo County — LEAD diversion",
+      "url": "https://www.pueblocounty.gov/board-county-commissioners/lead-law-enforcement-assisted-diversion",
+      "type": "official program description"
+    },
+    {
+      "id": "S15",
+      "title": "District Attorney — diversion program",
+      "url": "https://www.pueblocounty.gov/district-attorneys-office/diversion-program",
+      "type": "official program description"
+    },
+    {
+      "id": "S16",
+      "title": "National Institute of Justice — Five Things About Deterrence",
+      "url": "https://nij.ojp.gov/topics/articles/five-things-about-deterrence",
+      "type": "research synthesis"
+    },
+    {
+      "id": "S17",
+      "title": "Pueblo Ledger — November 14 budget summary",
+      "url": "https://puebloledger.com/government-watch/pueblo-2027-budgets-city-county/",
+      "type": "secondary"
+    },
+    {
+      "id": "S18",
+      "title": "City Council agenda and meeting records",
+      "url": "https://pueblo.granicus.com/ViewPublisher.php?view_id=4",
+      "type": "official record locator; final text not retrieved"
+    }
+  ],
+  "findings": [
+    {
+      "id": 1,
+      "heading": "What is proposed",
+      "text": "A City–County intergovernmental agreement (IGA) would expand practical access to county detention for municipal cases. This is a proposed service agreement, not proof of new criminal prohibitions. S1"
+    },
+    {
+      "id": 2,
+      "heading": "Decision status",
+      "text": "KRDO reports final City Council reading November 23 and additional materials expected November 19; county approval is also required. Confirm agenda, vote, signed version and effective date independently. S1,S18"
+    },
+    {
+      "id": 3,
+      "heading": "Which conduct is reported",
+      "text": "Reported arrest examples are trespass, theft and damage above $300, battery and fighting-related disorderly conduct. Reported sentencing categories are broader. The actual offense schedule controls; parking-ticket detention is not established. S1"
+    },
+    {
+      "id": 4,
+      "heading": "Arrest is not conviction",
+      "text": "An arrest, booking, pretrial hold, sentence and fine enforcement are distinct legal events. The proposal must not be described as permission to punish someone without adjudication."
+    },
+    {
+      "id": 5,
+      "heading": "City authority",
+      "text": "Council considers the contract; municipal code defines offenses. The mayor and police implement authorized policy; judges independently determine lawful case dispositions. Obtain the charter/code crosswalk and counsel review."
+    },
+    {
+      "id": 6,
+      "heading": "County authority",
+      "text": "Commissioners consider county commitments; the sheriff manages detention. Verify signing authority, admission conditions, responsibility for transport, health care and release."
+    },
+    {
+      "id": 7,
+      "heading": "2017–2019 history",
+      "text": "Douglas and Park agreements date to 2017. The February 2019 Las Animas background paper explains prior overcrowding and identifies a $55 daily rate with a ceiling of 15 people. Neither term establishes the 2026 price. S7,S8"
+    },
+    {
+      "id": 8,
+      "heading": "2022 connection",
+      "text": "The regional jail and Joe Martinez roadway agreement anticipated good-faith negotiation of a separate municipal inmate housing agreement under section 6(b). This is an important historical link, not proof that a 2026 contract is already operative. S9"
+    },
+    {
+      "id": 9,
+      "heading": "New facility",
+      "text": "The sheriff announced 672 beds on May 7, 2026, and completed the move July 11. A July report counted 393 people in custody. This is not November occupancy or safe staffing capacity. S4–S6"
+    },
+    {
+      "id": 10,
+      "heading": "County fiscal pressure",
+      "text": "The county describes a proposed $9.81 million General Fund reduction from starting levels, with targets equal to 15% of eligible personnel budgets. Offices determine how to meet them. S2,S3"
+    },
+    {
+      "id": 11,
+      "heading": "Sheriff budget",
+      "text": "A November 14 secondary budget summary reports a $4.9 million sheriff reduction target. Compare the underlying proposed and adopted schedules: the target is not proof of layoffs or an identical cut to each service. S17"
+    },
+    {
+      "id": 12,
+      "heading": "City funding",
+      "text": "The mayor describes the proposed housing cost as manageable within police appropriations. Verify the account, committed balance, authorization, maximum liability and projected demand; her statement is not an audited expenditure. S1"
+    },
+    {
+      "id": 13,
+      "heading": "Actual jail financing",
+      "text": "Request voted borrowing/financing instruments, debt-service schedule, construction costs, retainage and operating appropriations. Capital debt and new incremental spending are separate; a financial motive cannot be inferred from debt alone."
+    },
+    {
+      "id": 14,
+      "heading": "Price and volume",
+      "text": "The actual 2026 rate, bed allocation, billing rules, minimum guarantee and escalation terms are not verified. The calculator uses hypothetical inputs only; historical terms are context. S8"
+    },
+    {
+      "id": 15,
+      "heading": "Regional cost accounting",
+      "text": "City payments to the county are an internal transfer for regional analysis. Regional incremental cost equals county incremental operating costs plus nonduplicated city and court costs. Do not add the reimbursement a second time."
+    },
+    {
+      "id": 16,
+      "heading": "Staffing capacity",
+      "text": "Physical beds are not interchangeable with staffed housing units. Obtain authorized/filled positions, shift rosters in aggregate, vacancies, turnover, overtime, supervision ratios and classification constraints. Layoff and pay-cut comments are leads."
+    },
+    {
+      "id": 17,
+      "heading": "Workforce and safety",
+      "text": "An added admission stream could increase booking, transport, medical screening and supervision workload. Track mandatory overtime, injuries, turnover, response coverage and recruitment; no current staffing deficit is proven here."
+    },
+    {
+      "id": 18,
+      "heading": "Police workload",
+      "text": "Compare citation processing and arrest-to-booking time. A scenario of 100 additional bookings at two officer-hours each consumes 200 officer-hours before any follow-up. This is a test case, not a measured local rate."
+    },
+    {
+      "id": 19,
+      "heading": "Courts and defense",
+      "text": "HB26-1134 became law in April 2026 and addresses municipal defense access, compensation and public observation of in-custody hearings. Measure counsel availability, elapsed time to hearing and court workload; verify implementation with court staff. S11"
+    },
+    {
+      "id": 20,
+      "heading": "State sentencing limit",
+      "text": "Camp and Simons, 2025 CO 64, restrict municipal penalties where a state offense prohibits identical conduct. Compare elements and sentencing limits individually; the opinion does not categorically ban municipal jail. S10"
+    },
+    {
+      "id": 21,
+      "heading": "Ability to pay",
+      "text": "Bearden and Colorado §18-1.3-702 distinguish financial inability from willful nonpayment and require safeguards. Inability alone is not grounds to jail someone; the court must apply relevant law and consider alternatives. S12,S13"
+    },
+    {
+      "id": 22,
+      "heading": "Competency",
+      "text": "Competency to proceed is a legal and clinical determination, not a self-declared exemption. Verify applicable state and municipal procedures, restoration eligibility and disposition data before claiming abuse or automatic dismissal."
+    },
+    {
+      "id": 23,
+      "heading": "Victims and restitution",
+      "text": "Measure repeat victimization, recovered losses, reporting and satisfaction, not just booking totals. Restitution and lawful accountability remain important; incarceration may also interfere with ability to earn and repay."
+    },
+    {
+      "id": 24,
+      "heading": "Business impacts",
+      "text": "Track theft and damage incidents, security expenses, closure hours and insurance claims. Compare these against enforcement costs and reporting changes; do not presume additional arrests equal avoided losses."
+    },
+    {
+      "id": 25,
+      "heading": "Homelessness",
+      "text": "Do not classify housing status as criminal conduct. Examine whether lawful enforcement displaces people or connects them to shelter and case management; compare available housing and service capacity."
+    },
+    {
+      "id": 26,
+      "heading": "Mental health and disability",
+      "text": "Medical screening, continuity of medication, disability accommodations and crisis alternatives must be included in operational planning. Use aggregate data and qualified clinical judgment, not automated individual profiling."
+    },
+    {
+      "id": 27,
+      "heading": "Addiction and treatment",
+      "text": "The county describes LEAD as pre-booking diversion for eligible low-level cases. Establish present eligibility, referrals, slots and outcomes; it is not a universal substitute for detention. S14"
+    },
+    {
+      "id": 28,
+      "heading": "Education and diversion",
+      "text": "The District Attorney describes diversion for eligible juveniles and adults, emphasizing accountability and services. Determine whether municipal cases qualify and whether a separate city program is needed. S15"
+    },
+    {
+      "id": 29,
+      "heading": "Child impact",
+      "text": "A safer neighborhood can benefit children; detention of caregivers can also interrupt care, income and schooling. Provide safe caregiver planning, lawful family contact and referral support; collect no identifiable child data."
+    },
+    {
+      "id": 30,
+      "heading": "Households and reentry",
+      "text": "Model lost wages, rent arrears, medication gaps, ID and transportation. A short stay can have longer effects; evaluate discharge plans and voluntary service referrals instead of assuming all people have the same needs."
+    },
+    {
+      "id": 31,
+      "heading": "Public discussion",
+      "text": "Supplied screenshots of one post show 427 reactions and 26 shares. Themes include accountability, victim safety, jail costs, staffing, poverty, rehabilitation, jobs and legal authority. These are selected comments, not a representative poll; omit names and private profiles."
+    },
+    {
+      "id": 32,
+      "heading": "Fact-check boundaries",
+      "text": "Claims that the city is using jail to finance construction, that deputies are leaving, or that offenders fake incompetency remain unverified. Do not infer motive or repeat personal accusations as fact. Separate requests for evidence from conclusions."
+    },
+    {
+      "id": 33,
+      "heading": "LL: comparative research",
+      "text": "NIJ summarizes evidence that certainty of apprehension generally outweighs greater severity as a deterrent. It does not establish a local effect for short municipal jail stays. Compare citation, detention, restoration and diversion outcomes. S16"
+    },
+    {
+      "id": 34,
+      "heading": "Q digital twin: scenario",
+      "text": "Use aggregate baseline arrivals, average length of stay, staffed capacity and additional admissions. Average added occupancy = annual admissions × average stay / 365; peaks and classifications need separate simulation. This is a browser scenario, not a deployed operational twin."
+    },
+    {
+      "id": 35,
+      "heading": "Q shadow model",
+      "text": "Independently reconcile admission records, invoices and occupied days; compare police incident trends and similar pre-policy periods. Check seasonal shifts, reporting changes and displacement. No causal claim without a defensible evaluation design."
+    },
+    {
+      "id": 36,
+      "heading": "EE resource efficiency",
+      "text": "Compare incremental regional dollars, officer-hours, jail bed-days and service slots per measured avoided repeat harm. If outcomes are unknown, report resource use separately; do not divide by a made-up benefit."
+    },
+    {
+      "id": 37,
+      "heading": "T2Y horizon",
+      "text": "Two-year nominal cost = annual incremental cost × 2 if assumptions stay constant. Test wage escalation, medical shocks, closure of staffed units and changes in duration; treat scenarios as sensitivity, not projections."
+    },
+    {
+      "id": 38,
+      "heading": "Event horizons and safeguards",
+      "text": "Proposed escalation conditions: staffed capacity exceeded; authorized spending exceeded; court delays; serious safety incidents; or deterioration in victim outcomes. Require human review, lawful admission limits, contingency plans and a contract termination mechanism."
+    },
+    {
+      "id": 39,
+      "heading": "Alternatives and implementation",
+      "text": "Compare targeted lawful detention, citations with reminders, restitution, supervised community service, eligible treatment and hybrid pathways. Establish a baseline before launch, then review 30, 90 and 180 days; avoid automatic detention rules."
+    },
+    {
+      "id": 40,
+      "heading": "Qified synthesis",
+      "text": "The decision is whether expanded detention plus other interventions measurably reduces harm within lawful and funded capacity. Request the contract and fiscal model before drawing a definitive conclusion. Keep the packet live with dated updates and corrections; publication does not establish an enacted policy."
+    }
+  ],
+  "records": [
+    "City Clerk: proposed ordinance, agenda background, amendments, recorded votes, executed IGA and effective date.",
+    "City Finance and Police: appropriation account, actual spending, projected admissions, transport and unit cost worksheet.",
+    "County Finance: proposed/adopted 2027 schedules, jail project capital ledger, debt service, contract revenue and marginal operating cost.",
+    "Sheriff: aggregate monthly bookings, staffed beds, occupancy, classification constraints, staffing/vacancies, overtime, health cost and intake eligibility.",
+    "Municipal Court: code-to-state offense crosswalk, sentencing and pretrial rules, anonymized case outcomes, counsel and time-to-hearing data.",
+    "Service providers: current eligibility, funded capacity, waitlists and aggregate outcomes; affected businesses and residents: voluntary de-identified evidence."
+  ],
+  "related": [
+    {
+      "route": "county-public-financial-review.html",
+      "title": "County fiscal review"
+    },
+    {
+      "route": "county-pension-and-workforce.html",
+      "title": "Workforce and pension"
+    },
+    {
+      "route": "county-financial-transparency.html",
+      "title": "County disclosure"
+    },
+    {
+      "route": "report-county-budget-2027.html",
+      "title": "County proposed budget"
+    },
+    {
+      "route": "report-budget-2026.html",
+      "title": "City budget"
+    },
+    {
+      "route": "connections.html?issue=safe-005",
+      "title": "Justice and detention"
+    },
+    {
+      "route": "connections.html?issue=heal-007",
+      "title": "Housing and homelessness"
+    },
+    {
+      "route": "pueblo-boulevard-pura-repayment.html",
+      "title": "Regional infrastructure financing"
+    },
+    {
+      "route": "report-records-request.html",
+      "title": "Public records requests"
+    }
+  ],
+  "model": {
+    "kind": "illustrative aggregate",
+    "defaults": {
+      "admissions": 400,
+      "stay": 5,
+      "rate": 60,
+      "countyUnitCost": 100,
+      "cityOtherCost": 50,
+      "staffedBeds": 0,
+      "baseline": 0
+    },
+    "unknownCapacity": true
+  }
+}
