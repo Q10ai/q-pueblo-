@@ -36,3 +36,12 @@ assert.equal(depth.rows.length,r.rows.length);
 for(const row of depth.rows){const html=read('public/'+row.route);const links=new Set([...html.matchAll(/<a\b[^>]*\bhref\s*=\s*["'](https?:\/\/[^"']+)["'][^>]*>/gi)].map(m=>m[1].replace(/&amp;/g,'&')));assert.equal(row.distinctExternalLinks,links.size,row.route+' link count');assert.equal(row.headingEntries,(html.match(/<h[1-6]\b/gi)||[]).length,row.route+' heading count');assert(depthPage.includes('href="'+row.route+'"'));}
 for(let i=1;i<depth.rows.length;i++){const a=depth.rows[i-1],b=depth.rows[i];assert(a.distinctExternalLinks>b.distinctExternalLinks||(a.distinctExternalLinks===b.distinctExternalLinks&&a.headingEntries>=b.headingEntries));}
 console.log('PASS complete living reference-depth index; counts are navigation descriptors, not evidence ratings.');
+
+const cultureHub=read('public/museums-culture.html'),culturePaper=read('public/museums-culture-research.html');
+assert(cultureHub.indexOf('id="story-first"')<cultureHub.indexOf('id="directory"'));
+assert(cultureHub.indexOf('id="money"')<cultureHub.indexOf('id="directory"'));
+assert(culturePaper.indexOf('id="story-first"')<culturePaper.indexOf('aria-label="Paper contents"'));
+for(const page of [cultureHub,culturePaper])assert(!/Continue adding community heritage groups|Q processing and future builds|Review dates are editorial targets|November 25 review is editorial/.test(page));
+assert(cultureHub.includes('museums-culture-research.html')&&cultureHub.includes('museums-culture-tools.html')&&cultureHub.includes('qp-museums-culture-2026-11-19.json'));
+assert.equal((culturePaper.match(/id="chapter-\d+"/g)||[]).length,40);
+console.log('PASS culture reader story leads; internal work notes omitted from reader pages; 40 analytical sections preserved.');
