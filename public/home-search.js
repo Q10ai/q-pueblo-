@@ -23,7 +23,7 @@
  for(const group of nav.groups||[])out.push(row('Issue',group.title,group.reason,'priorities.html#'+encodeURIComponent(group.id),nav.asOf));
  for(const p of living.rows||[])out.push(row('Analysis',p.title.replaceAll('&amp;','&'),'Living research paper',p.route,living.checked));
  for(const t of transition.records||[])out.push(row('Organization',t.office+' — transition watch','Unofficial count leader: '+t.reportedLeader+'; certification and assumption not verified.','who-governs.html#transition-2027',transition.sourceDate));
- for(const r of discovery.rows||[])if(r.status==='recovered-review-candidate'&&typeof r.route==='string'&&/^[a-z0-9/-]+\.html$/.test(r.route)&&!r.route.includes('..'))out.push(row('Analysis',r.title,r.keywords,r.route,discovery.asOf));
+ for(const r of discovery.rows||[])if(['recovered-review-candidate','new-review-candidate','existing-base-version'].includes(r.status)&&typeof r.route==='string'&&/^[a-z0-9/-]+\.html$/.test(r.route)&&!r.route.includes('..'))out.push(row('Analysis',r.title,r.keywords,r.route,discovery.asOf));
  for(const s of window.QPStoryEditions?.allStories||[])out.push(row('Analysis',s.title,[s.summary,...s.questions].join(' '),s.route,s.checked));
  for(const v of window.QPResource?.items||[])out.push(row('Resource',v.title,[v.publisher,v.description,v.format,...v.tags].join(' '),'resource-library.html#'+encodeURIComponent(v.id),v.checked));
  return {rows:out, failed:results.filter(x=>x.status==='rejected').length};
