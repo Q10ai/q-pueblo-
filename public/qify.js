@@ -15,7 +15,7 @@
   'Q review and reopening':'Document applicable EE/T2Y/RX/LEAP/TSLP checks actually performed, gaps, human review, freshness and correction triggers.'
  };
  async function render(question){
-  const seq=++renderSequence;$('qify-status').textContent='Loading the dated report collection…';const [loaded,living]=await Promise.all([briefsReady,livingReady]);if(seq!==renderSequence)return;
+  const seq=++renderSequence;$('qify-status').textContent='Loading the dated report collection…';const loaded=await briefsReady;const living=await livingReady;if(seq!==renderSequence)return;
   const terms=core.words(question), candidates=core.matchReports(question,reports);
   const gatedMatch=window.QP_QIFY_MATCH.selectReport(question,reports);
   const narrative=window.QPStoryEditions?.exact(question)||null, storyRelated=window.QPStoryEditions?.related(question)||[];
