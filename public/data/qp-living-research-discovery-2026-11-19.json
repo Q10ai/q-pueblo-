@@ -310,6 +310,22 @@
       "edition": "2026-11-19 reconciliation snapshot",
       "status": "existing-base-version",
       "review": "Source limitations and case-specific review dates remain in the original report."
+    },
+    {
+      "group": "safety",
+      "id": "mountain-park",
+      "title": "Pueblo Mountain Park recovery",
+      "route": "pueblo-mountain-park-recovery.html",
+      "sourcePR": null,
+      "sourceCommit": null,
+      "keywords": "Aspen Acres wildfire Beulah Horseshoe Lodge CIRSA insurance FEMA park trails watershed flood recovery",
+      "files": [
+        "data/qp-pueblo-mountain-park-2026-11-19.json",
+        "research/pueblo-mountain-park-2026-11-19.md"
+      ],
+      "edition": "2026-11-19 research amendment",
+      "status": "new-review-candidate",
+      "review": "Checked 2026-11-19; review 2026-11-25; grant and receipts unresolved."
     }
   ]
 }

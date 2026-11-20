@@ -21,3 +21,7 @@ State: review only. Baseline main `4652fc25960c5faa62eb024a2511d70379300a3a`; pr
 - ai: pueblo-ai-readiness.html — PR #75; preserve current base version
 
 KOS contract: per claim: stable ID, source locator, publication/observation date, scope, attributed claim, source grade, uncertainty, review date/TTL, correction predecessor, reviewer and release state. Per entity: stable ID, role, jurisdiction, effective dates, edge type, evidence and confidence; no liability inferred from association. Per packet: stable ID, version, public-safe artifact, review state, missing material questions, links and provenance. Keep historical scope sets distinct. Unknown metrics are null, never zero. Use 40 perspectives when relevant, not placeholder counts. Single writer regenerates shared discovery and checks changes against current main. No raw submissions or private Drive paths in public tree. Review exact-head CI, mobile/keyboard, source and privacy, dependency links, deployed commit and rollback. No runtime/twin activation or external publication asserted.
+
+## Mountain Park amendment
+
+Added QP-DISASTER-ASPEN-PMP-001, 40 research perspectives, seven dated source references, six institutional roles, HTML/JSON/Markdown, discovery/search registry row, and crosslinks to the earlier Aspen Acres reports. No legacy issue or evidence-slot counts changed. New exact-head checks and human editorial review required.
