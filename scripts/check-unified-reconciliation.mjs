@@ -18,3 +18,13 @@ assert.equal(r.metrics.canonicalClaimCoverage,null);
 assert.equal(r.metrics.productionParity,null);
 assert(!h.includes('5,760')&&!h.includes('4,914'));
 console.log('Living research discovery structural checks passed: '+r.rows.length+' routes; '+groups.size+' categories. No source-truth or production certification.');
+
+const cross=JSON.parse(read('public/data/qp-issue-identity-crosswalk-2026-11-19.json'));
+const historical=JSON.parse(read('public/data/q-pueblo-issue-index-2026-11-09.json')).issues;
+const graph=JSON.parse(read('public/data/qp-three-hop-2026-11-13.json')).issues;
+assert.deepEqual(new Set(cross.rows.map(x=>x.historicalId).filter(Boolean)),new Set(historical.map(x=>x.id)));
+assert.deepEqual(new Set(cross.rows.map(x=>x.graphId).filter(Boolean)),new Set(graph.map(x=>x.id)));
+assert.equal(cross.rows.filter(x=>x.historicalId).length,historical.length);assert.equal(cross.rows.filter(x=>x.graphId).length,graph.length);
+assert.equal(cross.rows.filter(x=>x.state==='id-match-scope-review').length,10);
+assert(h.includes('qp-issue-identity-crosswalk-2026-11-19.json'));
+console.log('Issue identity coverage passes; ten ambiguous title/scope pairs remain unmerged.');
