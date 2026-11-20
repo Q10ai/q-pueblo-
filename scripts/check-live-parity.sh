@@ -19,6 +19,20 @@ for spec in 'index.html:Get to Know Pueblo' 'public-experience.css:qp-entry-grid
   fi
   rm -f "$filename"
 done
-printf '\nNote: a PASS means only these public pages/assets respond with expected markers. It does not prove source freshness, a production backend, security audit, or any case finding.\n' >> "$output"
+if rev="$(curl -fsSL --max-time 25 -H 'Cache-Control: no-cache' "$base/deployment-revision.json?sha=${GITHUB_SHA:-unknown}")" && [[ -n "${GITHUB_SHA:-}" ]] && python -c 'import json,sys; d=json.loads(sys.argv[1]); assert d["commit"]==sys.argv[2] and d["target"]=="qpueblo"' "$rev" "$GITHUB_SHA"; then
+  printf 'PASS exact deployment revision %s\n' "$GITHUB_SHA" >> "$output"
+else
+  printf 'FAIL exact deployment revision not established\n' >> "$output"; result=1
+fi
+for path in index.html living-research.html qify.js reader-quilt.js report-core.js data/qp-living-research-discovery-2026-11-19.json; do
+  tmp="$(mktemp)"
+  if curl -fsSL --compressed --max-time 25 -H 'Cache-Control: no-cache' "$base/$path?sha=${GITHUB_SHA:-unknown}" -o "$tmp" && cmp -s "public/$path" "$tmp"; then
+    printf 'PASS exact bytes %s\n' "$path" >> "$output"
+  else
+    printf 'FAIL exact bytes %s\n' "$path" >> "$output"; result=1
+  fi
+  rm -f "$tmp"
+done
+printf '\nNote: a PASS verifies listed markers, revision receipt and selected exact file bytes. It does not prove source freshness, a production backend, security audit, or any case finding.\n' >> "$output"
 cat "$output"
 exit "$result"

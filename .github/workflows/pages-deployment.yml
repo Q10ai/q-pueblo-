@@ -135,6 +135,11 @@ jobs:
             ! grep -qi '<title>Page not found' "$RUNNER_TEMP/qpueblo-route.html" || exit 1
             echo "PASS: $route"
           done
+          for route in index.html living-research.html qify.js reader-quilt.js report-core.js data/qp-living-research-discovery-2026-11-19.json; do
+            curl -fsSL --compressed --max-time 20 -H 'Cache-Control: no-cache' "$base/$route?sha=$GITHUB_SHA" -o "$RUNNER_TEMP/qpueblo-exact"
+            cmp "$RUNNER_TEMP/qpueblo-publish/site/$route" "$RUNNER_TEMP/qpueblo-exact"
+            echo "PASS exact bytes: $route"
+          done
           curl -fsSL --max-time 20 -D "$RUNNER_TEMP/qpueblo-live-headers" -o /dev/null "$base/?sha=$GITHUB_SHA"
           for header in content-security-policy x-frame-options referrer-policy strict-transport-security x-content-type-options; do
             grep -qi "^$header:" "$RUNNER_TEMP/qpueblo-live-headers" || { echo "::error::Missing live security header: $header"; exit 1; }
