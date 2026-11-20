@@ -59,7 +59,14 @@
         "method.html",
         "ai-learn.html",
         "q-tools.html"
-      ]
+      ],
+      "modelUseWorksheet": {
+        "questions": 14,
+        "additionalLearningReferences": 6,
+        "storage": "none",
+        "assessment": "self-reported educational evidence checklist; not certification",
+        "externalConnections": false
+      }
     },
     "publicSourceFindings": 7,
     "livingResearchCollections": 18,
@@ -74,5 +81,5 @@
       "boundary": "Source-linked static education and practice; no private drafts or new runtime AI capabilities; full review and live host confirmation pending"
     }
   },
-  "presentationUpdated": "2026-11-18"
+  "presentationUpdated": "2026-11-19"
 }
