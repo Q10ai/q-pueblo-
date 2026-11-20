@@ -77,3 +77,5 @@ for(const path of ['qify.html','reports.html'])assert(read('public/'+path).inclu
 assert(read('public/qify.js').includes('packet.readerProjection')&&read('public/qify.js').includes('reader.relatedLiving'));
 const lean=quiz.project({report:currentReports[0],coverage:[{title:'Empty',answer:'Not assessed',classification:'Not assessed'},{title:'Duplicate',answer:currentReports[0].summary,classification:'Dated'},{title:'Distinct',answer:'A distinct test observation.',classification:'Dated'}]});assert.equal(lean.quilt.length,1);assert.equal(lean.quilt[0].title,'Distinct');
 console.log('PASS LL and quilt projections for '+new Set(groupRoutes).size+' registered subject routes, prepared reports, and unmatched question boundary');
+
+await import('./check-site-inventory.mjs');

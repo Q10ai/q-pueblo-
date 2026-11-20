@@ -1,0 +1,1825 @@
+{
+  "schema": "qp-site-inventory-v1",
+  "asOf": "2026-11-20",
+  "basisCommit": "f4249437a2948ed9706bfb961a30a552f9f81695",
+  "scope": "Static release-candidate route directory; topical links do not assert entity authority or claim evidence. Existing registers overlap and must not be summed. No new source verification or production publication.",
+  "counts": {
+    "htmlRoutes": 141,
+    "canonicalReports": 18,
+    "livingResearchRoutes": 53,
+    "historicalIssueRecords": 174,
+    "connectedIssueRecords": 211,
+    "entityLabels": 56,
+    "identityCrosswalkRows": 347
+  },
+  "groups": [
+    {
+      "id": "start",
+      "title": "Start here: questions, current updates and participation",
+      "priorityIssueIds": [],
+      "entityIds": []
+    },
+    {
+      "id": "library",
+      "title": "Research library and evidence",
+      "priorityIssueIds": [],
+      "entityIds": []
+    },
+    {
+      "id": "fiscal",
+      "title": "Budgets, debt and essential services",
+      "priorityIssueIds": [
+        "fisc-001",
+        "fisc-002",
+        "fisc-003",
+        "fisc-004",
+        "fisc-005",
+        "fisc-006",
+        "fisc-007",
+        "fisc-008",
+        "fisc-009",
+        "fisc-010",
+        "fund-001",
+        "fund-002",
+        "fund-003",
+        "fund-004",
+        "fund-005",
+        "fund-006",
+        "fund-007",
+        "fund-008",
+        "fund-009",
+        "fund-010",
+        "reg-002",
+        "reg-003",
+        "reg-011",
+        "reg-013",
+        "reg-017",
+        "reg-033",
+        "reg-034"
+      ],
+      "entityIds": [
+        "ent-eba66093d2f4",
+        "ent-1d07f2b59d68",
+        "ent-a7929887d398",
+        "ent-ddc3e0c25c7f",
+        "ent-0f4ec945e91d",
+        "ent-d95e5fcc8803",
+        "ent-9fc831fd79fc",
+        "ent-ff89f261999c",
+        "ent-7803e371263d"
+      ]
+    },
+    {
+      "id": "safety",
+      "title": "Public safety, health and recovery",
+      "priorityIssueIds": [
+        "work-003",
+        "work-004",
+        "safe-001",
+        "safe-002",
+        "safe-003",
+        "safe-004",
+        "safe-005",
+        "safe-006",
+        "safe-007",
+        "safe-008",
+        "safe-009",
+        "safe-010",
+        "safe-011",
+        "safe-012",
+        "safe-013",
+        "safe-014",
+        "safe-015",
+        "heal-001",
+        "heal-002",
+        "heal-003",
+        "heal-004",
+        "heal-005",
+        "heal-006",
+        "heal-008",
+        "reg-020",
+        "reg-024",
+        "reg-025",
+        "reg-032",
+        "case-rail-fire"
+      ],
+      "entityIds": [
+        "ent-1d07f2b59d68",
+        "ent-dcfdb2dffa7d",
+        "ent-715e2dc6a40e",
+        "ent-7e4ef3ccb3e3",
+        "ent-c88e6d5dc564",
+        "ent-a7929887d398",
+        "ent-0f4ec945e91d",
+        "ent-eed6bffea2db",
+        "ent-d95e5fcc8803",
+        "ent-9fc831fd79fc",
+        "ent-9528c16c953c",
+        "ent-7803e371263d",
+        "ent-2cf0b6261a11"
+      ]
+    },
+    {
+      "id": "utilities",
+      "title": "Energy, water and household affordability",
+      "priorityIssueIds": [
+        "infr-002",
+        "infr-007",
+        "infr-009",
+        "hous-001",
+        "env-001",
+        "env-002",
+        "env-003",
+        "env-004",
+        "env-005",
+        "env-006",
+        "env-007",
+        "env-008",
+        "env-009",
+        "env-010",
+        "env-011",
+        "env-012",
+        "env-013",
+        "env-014",
+        "env-015",
+        "spec-005",
+        "spec-006",
+        "reg-021",
+        "reg-022",
+        "reg-023",
+        "case-wastewater"
+      ],
+      "entityIds": [
+        "ent-e9982e089c2a",
+        "ent-1d07f2b59d68",
+        "ent-9ffdc1de3253",
+        "ent-2bf079571fbe",
+        "ent-c88e6d5dc564",
+        "ent-a7929887d398",
+        "ent-9fc831fd79fc",
+        "ent-ff89f261999c",
+        "ent-9528c16c953c"
+      ]
+    },
+    {
+      "id": "economy",
+      "title": "Jobs, industry and public investment",
+      "priorityIssueIds": [
+        "work-001",
+        "work-002",
+        "work-007",
+        "work-008",
+        "work-009",
+        "work-010",
+        "work-011",
+        "work-012",
+        "work-013",
+        "work-014",
+        "work-015",
+        "econ-001",
+        "econ-002",
+        "econ-003",
+        "econ-004",
+        "econ-005",
+        "econ-006",
+        "econ-007",
+        "econ-008",
+        "econ-009",
+        "econ-010",
+        "econ-011",
+        "econ-012",
+        "econ-014",
+        "econ-015",
+        "spec-008",
+        "spec-010",
+        "reg-001",
+        "reg-004",
+        "reg-005",
+        "reg-006",
+        "reg-007",
+        "reg-008",
+        "reg-018"
+      ],
+      "entityIds": [
+        "ent-58363d81e2d8",
+        "ent-e9982e089c2a",
+        "ent-a4057eeb882d",
+        "ent-eba66093d2f4",
+        "ent-1d07f2b59d68",
+        "ent-0f4ec945e91d",
+        "ent-b093130ce0eb",
+        "ent-d95e5fcc8803",
+        "ent-9fc831fd79fc",
+        "ent-36144c80645b",
+        "ent-9583a0236568",
+        "ent-9528c16c953c",
+        "ent-7803e371263d",
+        "ent-0a035c2b85b8"
+      ]
+    },
+    {
+      "id": "housing",
+      "title": "Housing, poverty and family stability",
+      "priorityIssueIds": [
+        "hous-002",
+        "hous-003",
+        "hous-004",
+        "hous-005",
+        "hous-006",
+        "hous-007",
+        "hous-008",
+        "hous-009",
+        "hous-010",
+        "heal-007",
+        "heal-009",
+        "heal-010",
+        "spec-007",
+        "spec-009",
+        "reg-016",
+        "reg-035"
+      ],
+      "entityIds": [
+        "ent-1d07f2b59d68",
+        "ent-a7929887d398",
+        "ent-ddc3e0c25c7f",
+        "ent-7866992fbe98",
+        "ent-d95e5fcc8803",
+        "ent-9fc831fd79fc",
+        "ent-9528c16c953c"
+      ]
+    },
+    {
+      "id": "governance",
+      "title": "Governance, authority and public records",
+      "priorityIssueIds": [
+        "gov-001",
+        "gov-002",
+        "gov-003",
+        "gov-004",
+        "gov-005",
+        "gov-006",
+        "gov-007",
+        "gov-008",
+        "gov-009",
+        "gov-010",
+        "gov-011",
+        "gov-012",
+        "gov-013",
+        "gov-014",
+        "gov-015",
+        "elec-001",
+        "elec-002",
+        "elec-003",
+        "elec-004",
+        "elec-005",
+        "elec-006",
+        "elec-007",
+        "elec-008",
+        "elec-009",
+        "elec-010",
+        "spec-001",
+        "spec-002",
+        "spec-003",
+        "spec-004",
+        "reg-010",
+        "reg-012",
+        "reg-014",
+        "reg-015",
+        "reg-030",
+        "reg-036"
+      ],
+      "entityIds": [
+        "ent-e61ec276ed94",
+        "ent-eba66093d2f4",
+        "ent-1d07f2b59d68",
+        "ent-7e4ef3ccb3e3",
+        "ent-0589a6692a55",
+        "ent-a7929887d398",
+        "ent-b093130ce0eb",
+        "ent-9fc831fd79fc",
+        "ent-36144c80645b",
+        "ent-49eacbe08379",
+        "ent-9528c16c953c",
+        "ent-7803e371263d",
+        "ent-4848bf0d8704"
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "title": "Infrastructure and transportation",
+      "priorityIssueIds": [
+        "infr-001",
+        "infr-003",
+        "infr-004",
+        "infr-005",
+        "infr-006",
+        "infr-008",
+        "infr-010",
+        "infr-011",
+        "infr-012",
+        "infr-013",
+        "infr-014",
+        "infr-015",
+        "case-fiber",
+        "case-rail",
+        "case-trail"
+      ],
+      "entityIds": [
+        "ent-adbbd55cc502",
+        "ent-6a552f625383",
+        "ent-33459c0d6f2f",
+        "ent-1d07f2b59d68",
+        "ent-7ac3e6c8e321",
+        "ent-a7929887d398",
+        "ent-830c76705c0a",
+        "ent-e3a406d99dc5",
+        "ent-ddc3e0c25c7f",
+        "ent-7484c1a13085",
+        "ent-dba71a488e74",
+        "ent-d9cadcfbc036",
+        "ent-bed5ff4a0d7f",
+        "ent-b9c587474e10",
+        "ent-9fc831fd79fc",
+        "ent-ff89f261999c",
+        "ent-9528c16c953c",
+        "ent-427ad14a3aa3",
+        "ent-de5be4dffc84",
+        "ent-42c51f1cebb0"
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Education, children and community services",
+      "priorityIssueIds": [
+        "work-005",
+        "work-006",
+        "edu-001",
+        "edu-002",
+        "edu-003",
+        "edu-004",
+        "edu-005",
+        "edu-006",
+        "edu-007",
+        "edu-008",
+        "edu-009",
+        "edu-010",
+        "edu-011",
+        "edu-012",
+        "edu-013",
+        "edu-014",
+        "edu-015",
+        "reg-019",
+        "reg-028",
+        "case-library-finance",
+        "case-school-governance"
+      ],
+      "entityIds": [
+        "ent-1d07f2b59d68",
+        "ent-fb819af4fdb7",
+        "ent-a7929887d398",
+        "ent-d5a3daa49988",
+        "ent-ddc3e0c25c7f",
+        "ent-0f4ec945e91d",
+        "ent-c8b2999ed42d",
+        "ent-d95e5fcc8803",
+        "ent-27b345efcd89",
+        "ent-9fc831fd79fc",
+        "ent-36144c80645b",
+        "ent-9583a0236568",
+        "ent-df5480d2516f",
+        "ent-7a261779542d"
+      ]
+    },
+    {
+      "id": "culture",
+      "title": "Museums, arts and heritage",
+      "priorityIssueIds": [
+        "econ-013",
+        "reg-009",
+        "reg-026"
+      ],
+      "entityIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ]
+    },
+    {
+      "id": "future",
+      "title": "AI readiness and regional transition",
+      "priorityIssueIds": [
+        "reg-027",
+        "reg-029",
+        "reg-031",
+        "reg-037",
+        "reg-038",
+        "case-library-ai"
+      ],
+      "entityIds": [
+        "ent-a940fb838463",
+        "ent-744205e43529",
+        "ent-fdde2f91d972",
+        "ent-ce770667e5f9",
+        "ent-8b7d1a3187ab",
+        "ent-27b345efcd89",
+        "ent-805487266d4d"
+      ]
+    },
+    {
+      "id": "network",
+      "title": "Entities, authority and connections",
+      "priorityIssueIds": [],
+      "entityIds": []
+    },
+    {
+      "id": "learning",
+      "title": "Legacy Learning, education and culture learning",
+      "priorityIssueIds": [],
+      "entityIds": []
+    },
+    {
+      "id": "tools",
+      "title": "Decision tools and practical assistance",
+      "priorityIssueIds": [],
+      "entityIds": []
+    },
+    {
+      "id": "twin",
+      "title": "Twin, AI and future systems",
+      "priorityIssueIds": [],
+      "entityIds": []
+    },
+    {
+      "id": "reference",
+      "title": "Site information and operational routes",
+      "priorityIssueIds": [],
+      "entityIds": []
+    }
+  ],
+  "rows": [
+    {
+      "route": "404.html",
+      "title": "Page not found",
+      "group": "reference",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "about.html",
+      "title": "About",
+      "group": "reference",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "ai-citizen-learning.html",
+      "title": "Ai Citizen Learning",
+      "group": "learning",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "ai-education.html",
+      "title": "Ai Education",
+      "group": "learning",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "ai-learn.html",
+      "title": "Ai Learn",
+      "group": "learning",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "ai-readiness.html",
+      "title": "Ai Readiness",
+      "group": "twin",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "ai-world.html",
+      "title": "Ai World",
+      "group": "twin",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "areas.html",
+      "title": "Areas",
+      "group": "start",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "ask-guide.html",
+      "title": "Ask Guide",
+      "group": "start",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "backup.html",
+      "title": "Backup",
+      "group": "reference",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "be-ready-pueblo.html",
+      "title": "Be Ready Pueblo — emergency preparedness",
+      "group": "safety",
+      "livingId": "preparedness",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "be-ready-pueblo.js",
+        "data/qp-be-ready-pueblo-2026-11-19.json",
+        "research/be-ready-pueblo-2026-11-19.md"
+      ]
+    },
+    {
+      "route": "case-library.html",
+      "title": "Case Library",
+      "group": "library",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "civic-finance-observatory.html",
+      "title": "Civic Finance Observatory",
+      "group": "fiscal",
+      "livingId": "civic-finance",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "civic-finance-observatory.js"
+      ]
+    },
+    {
+      "route": "civic-observatory.html",
+      "title": "Regional Civic Entity Observatory",
+      "group": "governance",
+      "livingId": "entity-observatory",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-civic-observatory-pilot.json"
+      ]
+    },
+    {
+      "route": "community-input-to-action.html",
+      "title": "Community input to civic action",
+      "group": "governance",
+      "livingId": "community-input",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "community-input-research-packet.json",
+        "community-input-research-paper.md"
+      ]
+    },
+    {
+      "route": "community-signals-2026-11-18.html",
+      "title": "Community signals and accountability — November 18 edition",
+      "group": "governance",
+      "livingId": "community-signals-18",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-year-end-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ]
+    },
+    {
+      "route": "connections.html",
+      "title": "Connections",
+      "group": "network",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "council-attorney-funding.html",
+      "title": "Council attorney funding",
+      "group": "fiscal",
+      "livingId": "council-attorney",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "council-attorney-reconciliation.js",
+        "council-attorney-reconciliation.csv"
+      ]
+    },
+    {
+      "route": "county-audit-cost-and-delay.html",
+      "title": "County audit timing and accounting support costs",
+      "group": "fiscal",
+      "livingId": "county-audit",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": []
+    },
+    {
+      "route": "county-budget-explanation-reconciled.html",
+      "title": "County budget explanation and revenue reconciliation",
+      "group": "fiscal",
+      "livingId": "county-budget-explanation",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-desert-hawk-budget-reconciliation-2026-11-18.json",
+        "regional-transition-tools.js"
+      ]
+    },
+    {
+      "route": "county-commissioner-compensation.html",
+      "title": "Commissioner compensation and county worker comparison",
+      "group": "governance",
+      "livingId": "commissioner-compensation",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": []
+    },
+    {
+      "route": "county-financial-transparency.html",
+      "title": "County financial records and transparency",
+      "group": "governance",
+      "livingId": "county-financial-transparency",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": []
+    },
+    {
+      "route": "county-fiscal-recovery-2026-11-19.html",
+      "title": "County fiscal recovery and essential services",
+      "group": "fiscal",
+      "livingId": "county-fiscal",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/county-fiscal-recovery-2026-11-19.json",
+        "county-fiscal-recovery-2026-11-19.js"
+      ]
+    },
+    {
+      "route": "county-pension-and-workforce.html",
+      "title": "County pension funding and workforce obligations",
+      "group": "fiscal",
+      "livingId": "county-pension",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": []
+    },
+    {
+      "route": "county-public-financial-review.html",
+      "title": "County audited fund balances and proposed fiscal outlook",
+      "group": "fiscal",
+      "livingId": "county-financial-review",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": []
+    },
+    {
+      "route": "county-public-safety-school-resource-officers.html",
+      "title": "Sheriff staffing, detention and school safety",
+      "group": "safety",
+      "livingId": "county-public-safety",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-public-safety-child-2026-11-18.json"
+      ]
+    },
+    {
+      "route": "creative-future.html",
+      "title": "Creative Future",
+      "group": "culture",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "culture-learning.html",
+      "title": "Culture Learning",
+      "group": "learning",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "decision-tools.html",
+      "title": "Decision Tools",
+      "group": "tools",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "desert-hawk-public-finances.html",
+      "title": "Golf course debt, public assets and water costs",
+      "group": "fiscal",
+      "livingId": "desert-hawk",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-desert-hawk-budget-reconciliation-2026-11-18.json",
+        "regional-transition-tools.js"
+      ]
+    },
+    {
+      "route": "digital-twins.html",
+      "title": "Digital Twins",
+      "group": "twin",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "discover.html",
+      "title": "Discover",
+      "group": "library",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "edu-review.html",
+      "title": "Edu Review",
+      "group": "learning",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "energy-governance-supplement-2026.html",
+      "title": "Energy governance, compensation and mutual aid",
+      "group": "utilities",
+      "livingId": "energy-governance",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-energy-governance-supplement-2026-11-19.json",
+        "energy-governance-supplement-2026.md"
+      ]
+    },
+    {
+      "route": "energy-research-paper-2026.html",
+      "title": "Electricity affordability and rate case",
+      "group": "utilities",
+      "livingId": "energy-rates",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": []
+    },
+    {
+      "route": "entities.html",
+      "title": "Entities",
+      "group": "network",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "es.html",
+      "title": "Información en español",
+      "group": "start",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "evidence-desk.html",
+      "title": "Evidence Desk",
+      "group": "library",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "exit.html",
+      "title": "Exit",
+      "group": "reference",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "explore.html",
+      "title": "Explore",
+      "group": "start",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "follow-money.html",
+      "title": "Follow Money",
+      "group": "fiscal",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "governance-entities.html",
+      "title": "Governance Entities",
+      "group": "network",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "governance-topics.html",
+      "title": "Governance Topics",
+      "group": "network",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "governance.html",
+      "title": "Governance",
+      "group": "governance",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "hot-topics.html",
+      "title": "Hot Topics",
+      "group": "start",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "index.html",
+      "title": "Home",
+      "group": "start",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "issues.html",
+      "title": "Issues",
+      "group": "library",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "launch.html",
+      "title": "Launch",
+      "group": "start",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "learn-pueblo.html",
+      "title": "Learn Pueblo",
+      "group": "education",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "learning-library.html",
+      "title": "Learning Library",
+      "group": "learning",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "living-research.html",
+      "title": "Living Research",
+      "group": "library",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "method.html",
+      "title": "Method",
+      "group": "reference",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "municipal-jail-community-safety.html",
+      "title": "Municipal jail and community safety",
+      "group": "safety",
+      "livingId": "municipal-jail",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-municipal-jail-2026-11-19.json",
+        "municipal-jail-research-paper.md",
+        "municipal-jail.css",
+        "municipal-jail.js"
+      ]
+    },
+    {
+      "route": "museums-culture-research.html",
+      "title": "Museums and culture — regional research",
+      "group": "culture",
+      "livingId": "museums",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": []
+    },
+    {
+      "route": "museums-culture-tools.html",
+      "title": "Museums Culture Tools",
+      "group": "culture",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "museums-culture.html",
+      "title": "Museums Culture",
+      "group": "culture",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "nonprofit-funding-continuity.html",
+      "title": "Nonprofit funding and continuity",
+      "group": "fiscal",
+      "livingId": "nonprofit",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": []
+    },
+    {
+      "route": "nov18-county-fiscal-recovery.html",
+      "title": "County fiscal recovery — November 18 edition",
+      "group": "fiscal",
+      "livingId": "county-fiscal-20261118",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "nov18-county-fiscal-recovery.md",
+        "nov18-research.css",
+        "nov18-tools.js"
+      ]
+    },
+    {
+      "route": "nov18-jail-lifecycle.html",
+      "title": "New county jail: capital and lifecycle costs",
+      "group": "safety",
+      "livingId": "jail-lifecycle",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "nov18-jail-lifecycle.md",
+        "nov18-research.css",
+        "nov18-tools.js"
+      ]
+    },
+    {
+      "route": "nov18-municipal-enforcement.html",
+      "title": "Municipal detention and repeat offending — November 18 edition",
+      "group": "safety",
+      "livingId": "municipal-enforcement-20261118",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "nov18-municipal-enforcement.md",
+        "nov18-research.css",
+        "nov18-tools.js"
+      ]
+    },
+    {
+      "route": "nov18-north-elizabeth-renewal.html",
+      "title": "North Elizabeth Street renewal",
+      "group": "infrastructure",
+      "livingId": "north-elizabeth",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "nov18-north-elizabeth-renewal.md",
+        "nov18-research.css",
+        "nov18-tools.js"
+      ]
+    },
+    {
+      "route": "nov18-research.html",
+      "title": "Nov18 Research",
+      "group": "library",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "nov18-school-safety.html",
+      "title": "School safety and resource officers",
+      "group": "education",
+      "livingId": "school-safety",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "nov18-school-safety.md",
+        "nov18-research.css",
+        "nov18-tools.js"
+      ]
+    },
+    {
+      "route": "nov18-sheriff-workforce.html",
+      "title": "Sheriff workforce and labor agreement",
+      "group": "safety",
+      "livingId": "sheriff-workforce",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "nov18-sheriff-workforce.md",
+        "nov18-research.css",
+        "nov18-tools.js"
+      ]
+    },
+    {
+      "route": "nov18-tif-accountability.html",
+      "title": "Tax increment financing accountability",
+      "group": "economy",
+      "livingId": "tif-accountability",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "nov18-tif-accountability.md",
+        "nov18-research.css",
+        "nov18-tools.js"
+      ]
+    },
+    {
+      "route": "now.html",
+      "title": "Now",
+      "group": "start",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "packets.html",
+      "title": "Packets",
+      "group": "library",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "participate.html",
+      "title": "Participate",
+      "group": "start",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "priorities.html",
+      "title": "Priorities",
+      "group": "start",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "project-falcon.html",
+      "title": "Project Falcon",
+      "group": "economy",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "public-information-transparency.html",
+      "title": "Public information and transparency",
+      "group": "governance",
+      "livingId": "transparency",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-public-transparency-20261119.json"
+      ]
+    },
+    {
+      "route": "pueblo-2027-transition.html",
+      "title": "Pueblo 2027 transition and decision calendar",
+      "group": "governance",
+      "livingId": "transition-2027",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-2027-transition.json",
+        "pueblo-2027-transition.md",
+        "pueblo-2027-transition-calendar.csv"
+      ]
+    },
+    {
+      "route": "pueblo-ai-readiness.html",
+      "title": "Pueblo AI-era readiness",
+      "group": "future",
+      "livingId": "ai",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": []
+    },
+    {
+      "route": "pueblo-air-service-2027.html",
+      "title": "Pueblo 2027 Essential Air Service",
+      "group": "infrastructure",
+      "livingId": "air-service",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-pueblo-air-service-2027.json"
+      ]
+    },
+    {
+      "route": "pueblo-boulevard-pura-repayment.html",
+      "title": "Pueblo Boulevard PURA repayment",
+      "group": "fiscal",
+      "livingId": "pura",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": []
+    },
+    {
+      "route": "pueblo-mountain-park-recovery.html",
+      "title": "Pueblo Mountain Park recovery",
+      "group": "safety",
+      "livingId": "mountain-park",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-pueblo-mountain-park-2026-11-19.json",
+        "research/pueblo-mountain-park-2026-11-19.md"
+      ]
+    },
+    {
+      "route": "pueblo-west-tract-367.html",
+      "title": "Pueblo West Tract 367 and grocery development",
+      "group": "economy",
+      "livingId": "tract-367",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-tract-367-2026-11-19.json",
+        "tract-367-tools.js"
+      ]
+    },
+    {
+      "route": "q-tools.html",
+      "title": "Q Tools",
+      "group": "tools",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "qify.html",
+      "title": "Ask Q",
+      "group": "start",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "regional-ai-compatible-packets.html",
+      "title": "AI-compatible public records and living packets",
+      "group": "future",
+      "livingId": "compatible-packets",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": []
+    },
+    {
+      "route": "regional-assurance.html",
+      "title": "Regional Assurance",
+      "group": "safety",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "regional-financial-transition.html",
+      "title": "Regional Financial Transition",
+      "group": "future",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "regional-fragmentation.html",
+      "title": "Regional reporting fragmentation and coordination",
+      "group": "governance",
+      "livingId": "regional-fragmentation",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": []
+    },
+    {
+      "route": "regional-transition-and-leap.html",
+      "title": "Regional transition and LEAP: examples and costs",
+      "group": "future",
+      "livingId": "regional-leap",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": []
+    },
+    {
+      "route": "regional-transition-tools.html",
+      "title": "Regional Transition Tools",
+      "group": "future",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "release-check.html",
+      "title": "Release Check",
+      "group": "reference",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "report-aspen-recovery-costs.html",
+      "title": "What has Pueblo County reported about Aspen Acres recovery?",
+      "group": "safety",
+      "livingId": null,
+      "canonicalId": "QP-20261114-ASPEN-RECOVERY-COSTS",
+      "canonicalIssueIds": [
+        "REG-025"
+      ]
+    },
+    {
+      "route": "report-aspen-recovery.html",
+      "title": "Aspen Acres recovery: a disaster declaration is not the same as individual assistance",
+      "group": "safety",
+      "livingId": null,
+      "canonicalId": "QP-QIFY-2026-007",
+      "canonicalIssueIds": [
+        "REG-025"
+      ]
+    },
+    {
+      "route": "report-black-hills-rate-case-2026.html",
+      "title": "Report Black Hills Rate Case 2026",
+      "group": "utilities",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "report-budget-2026.html",
+      "title": "Pueblo’s 2026 adopted budget: what the ordinance actually authorizes",
+      "group": "fiscal",
+      "livingId": null,
+      "canonicalId": "QP-FIN-2026-001",
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "report-city-mill-levy-2026.html",
+      "title": "City of Pueblo 2026 property tax mill levy — Ordinance 11074",
+      "group": "fiscal",
+      "livingId": null,
+      "canonicalId": "QP-CITY-TAX-2026-005",
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "report-county-budget-2027.html",
+      "title": "What does Pueblo County's 2027 budget proposal mean for services?",
+      "group": "fiscal",
+      "livingId": null,
+      "canonicalId": "QP-20261114-COUNTY-BUDGET-2027",
+      "canonicalIssueIds": [
+        "REG-069",
+        "fisc-001"
+      ]
+    },
+    {
+      "route": "report-county-priorities-2026.html",
+      "title": "Pueblo County commissioners priorities dashboard — August 2026",
+      "group": "fiscal",
+      "livingId": null,
+      "canonicalId": "QP-COUNTY-2026-004",
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "report-csac-2027.html",
+      "title": "2027 nonprofit funding: requests versus proposed City support",
+      "group": "fiscal",
+      "livingId": null,
+      "canonicalId": "QP-SOC-2027-003",
+      "canonicalIssueIds": [
+        "REG-049"
+      ]
+    },
+    {
+      "route": "report-d60-preschool-2026.html",
+      "title": "How can families apply for District 60 preschool in 2026–27?",
+      "group": "education",
+      "livingId": null,
+      "canonicalId": "QP-20261114-D60-PRESCHOOL-2026",
+      "canonicalIssueIds": [
+        "edu-006"
+      ]
+    },
+    {
+      "route": "report-food-assistance.html",
+      "title": "Where can Pueblo households get help with food?",
+      "group": "housing",
+      "livingId": null,
+      "canonicalId": "QP-20261114-FOOD-ASSISTANCE",
+      "canonicalIssueIds": [
+        "heal-010"
+      ]
+    },
+    {
+      "route": "report-half-cent-2026.html",
+      "title": "Half-Cent Economic Development Fund: commitments are not cash spent",
+      "group": "economy",
+      "livingId": null,
+      "canonicalId": "QP-MONEY-2026-002",
+      "canonicalIssueIds": [
+        "REG-001",
+        "REG-004"
+      ]
+    },
+    {
+      "route": "report-housing-pipeline.html",
+      "title": "Pueblo housing: permitted, financed, built and occupied are different outcomes",
+      "group": "housing",
+      "livingId": null,
+      "canonicalId": "QP-QIFY-2026-006",
+      "canonicalIssueIds": [
+        "REG-046",
+        "REG-068"
+      ]
+    },
+    {
+      "route": "report-lime-road-costs.html",
+      "title": "Lime Road and St Charles: what a commitment line can—and cannot—tell us",
+      "group": "economy",
+      "livingId": null,
+      "canonicalId": "QP-QIFY-2026-008",
+      "canonicalIssueIds": [
+        "REG-007",
+        "REG-008"
+      ]
+    },
+    {
+      "route": "report-permits-jurisdiction.html",
+      "title": "Building permits: location determines the responsible authority",
+      "group": "housing",
+      "livingId": null,
+      "canonicalId": "QP-QIFY-2026-004",
+      "canonicalIssueIds": [
+        "REG-074"
+      ]
+    },
+    {
+      "route": "report-pueblo-boulevard-agenda.html",
+      "title": "Pueblo Boulevard: reconciling the funding listed on the October 26 agenda",
+      "group": "fiscal",
+      "livingId": null,
+      "canonicalId": "QP-QIFY-2026-012",
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "report-pueblo-flood-history.html",
+      "title": "The 1921 Pueblo flood: connecting historical evidence to present resilience",
+      "group": "safety",
+      "livingId": null,
+      "canonicalId": "QP-QIFY-2026-011",
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "report-records-request.html",
+      "title": "Getting the records that could resolve a disputed public-spending claim",
+      "group": "governance",
+      "livingId": null,
+      "canonicalId": "QP-QIFY-2026-010",
+      "canonicalIssueIds": [
+        "REG-036"
+      ]
+    },
+    {
+      "route": "report-wastewater-2026.html",
+      "title": "Arkansas River sewage discharge: repair, water testing and accountability are different questions",
+      "group": "utilities",
+      "livingId": null,
+      "canonicalId": "QP-QIFY-2026-005",
+      "canonicalIssueIds": [
+        "REG-050"
+      ]
+    },
+    {
+      "route": "report-water-budget-evidence.html",
+      "title": "Pueblo Water: a budget, an audit and a household bill answer different questions",
+      "group": "utilities",
+      "livingId": null,
+      "canonicalId": "QP-QIFY-2026-009",
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "reports-static.html",
+      "title": "Reports Static",
+      "group": "library",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "reports.html",
+      "title": "Reports",
+      "group": "library",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "research-depth.html",
+      "title": "Research Depth",
+      "group": "library",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "research/economic-development-20261119.html",
+      "title": "Economic development accountability",
+      "group": "economy",
+      "livingId": "economic-development",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": []
+    },
+    {
+      "route": "resilience-aspen-five-year.html",
+      "title": "Aspen Acres recovery through 2031",
+      "group": "safety",
+      "livingId": "aspen-five-year",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-resilience-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ]
+    },
+    {
+      "route": "resilience-burn-scar-mitigation.html",
+      "title": "Rye and Beulah burn-scar mitigation",
+      "group": "safety",
+      "livingId": "burn-scar",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-resilience-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ]
+    },
+    {
+      "route": "resilience-regional-shock.html",
+      "title": "Regional SHOCK and continuity",
+      "group": "safety",
+      "livingId": "regional-shock",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-resilience-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ]
+    },
+    {
+      "route": "resilience-spill-infrastructure.html",
+      "title": "Arkansas River spill infrastructure",
+      "group": "utilities",
+      "livingId": "spill-infrastructure",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-resilience-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ]
+    },
+    {
+      "route": "resilience-tools.html",
+      "title": "Resilience Tools",
+      "group": "tools",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "resilience-wastewater-health.html",
+      "title": "Wastewater and public health",
+      "group": "safety",
+      "livingId": "wastewater-health",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-resilience-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ]
+    },
+    {
+      "route": "resilience-water-drought-budget.html",
+      "title": "Water security through 2031",
+      "group": "utilities",
+      "livingId": "water-drought",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-resilience-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ]
+    },
+    {
+      "route": "resilience-water-users-industry.html",
+      "title": "Water users and industry",
+      "group": "utilities",
+      "livingId": "water-users",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-resilience-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ]
+    },
+    {
+      "route": "resilience.html",
+      "title": "Resilience",
+      "group": "utilities",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "resource-library.html",
+      "title": "Resource Library",
+      "group": "library",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "rumor-mill.html",
+      "title": "Rumor Mill",
+      "group": "start",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "rx.html",
+      "title": "Rx",
+      "group": "tools",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "shock-recovery.html",
+      "title": "Shock Recovery",
+      "group": "utilities",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "site-inventory.html",
+      "title": "Complete site directory",
+      "group": "reference",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "sources.html",
+      "title": "Sources",
+      "group": "library",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "support.html",
+      "title": "Support",
+      "group": "start",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "surveillance-accountability.html",
+      "title": "Surveillance Accountability",
+      "group": "safety",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "topics.html",
+      "title": "Topics",
+      "group": "start",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "twin.html",
+      "title": "Twin Pueblo",
+      "group": "future",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "updates.html",
+      "title": "Updates",
+      "group": "start",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "water-security.html",
+      "title": "Water Security",
+      "group": "utilities",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "who-governs.html",
+      "title": "Who Governs",
+      "group": "governance",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "workbench.html",
+      "title": "Workbench",
+      "group": "tools",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "year-end-01-county-financial-crisis.html",
+      "title": "County financial crisis — year-end edition",
+      "group": "fiscal",
+      "livingId": "year-end-county",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-year-end-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ]
+    },
+    {
+      "route": "year-end-02-sheriff-staffing.html",
+      "title": "Sheriff staffing — year-end edition",
+      "group": "safety",
+      "livingId": "year-end-sheriff",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-year-end-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ]
+    },
+    {
+      "route": "year-end-03-new-jail.html",
+      "title": "New jail operations — year-end edition",
+      "group": "safety",
+      "livingId": "year-end-jail",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-year-end-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ]
+    },
+    {
+      "route": "year-end-04-municipal-offenses.html",
+      "title": "Municipal offenses — year-end edition",
+      "group": "safety",
+      "livingId": "year-end-offenses",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-year-end-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ]
+    },
+    {
+      "route": "year-end-05-sheriff-transition.html",
+      "title": "Sheriff transition tracker — year-end edition",
+      "group": "governance",
+      "livingId": "year-end-sheriff-transition",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-year-end-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ]
+    },
+    {
+      "route": "year-end-06-city-budget.html",
+      "title": "City 2027 budget — year-end edition",
+      "group": "fiscal",
+      "livingId": "year-end-city-budget",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-year-end-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ]
+    },
+    {
+      "route": "year-end-07-ai-governance.html",
+      "title": "AI governance — year-end edition",
+      "group": "future",
+      "livingId": "year-end-ai",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-year-end-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ]
+    },
+    {
+      "route": "year-end-08-leap-2027.html",
+      "title": "LEAP 2027 — year-end edition",
+      "group": "future",
+      "livingId": "year-end-leap",
+      "canonicalId": null,
+      "canonicalIssueIds": [],
+      "supportingFiles": [
+        "data/qp-year-end-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ]
+    },
+    {
+      "route": "year-end-issues.html",
+      "title": "Year End Issues",
+      "group": "library",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    }
+  ],
+  "registers": {
+    "historical": "data/q-pueblo-issue-index-2026-11-09.json",
+    "connected": "data/qp-three-hop-2026-11-13.json",
+    "identityCrosswalk": "data/qp-issue-identity-crosswalk-2026-11-19.json",
+    "priorities": "data/qp-priority-navigation-2026-11-19.json",
+    "canonical": "data/qp-current-reports.json",
+    "living": "data/qp-living-research-discovery-2026-11-19.json",
+    "referenceDepth": "data/qp-living-reference-depth-2026-11-20.json"
+  },
+  "related": {
+    "legacyLearning": "learning-library.html",
+    "readerQuilt": "learn-pueblo.html",
+    "twin": "twin.html",
+    "entityDirectory": "governance-entities.html",
+    "connections": "connections.html",
+    "packets": "packets.html"
+  }
+}
