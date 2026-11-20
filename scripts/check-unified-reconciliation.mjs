@@ -63,3 +63,16 @@ for(const x of cultureLearning.rows){assert(x.lesson&&x.question&&x.sourceUrls.l
 for(const p of ['twin.html','learn-pueblo.html','museums-culture-research.html','museums-culture-tools.html'])assert(read('public/'+p).includes('culture-learning.html'));
 assert(cultureLearnPage.includes('twin.html#culture-learning'));
 console.log('PASS cultural profile learning, legacy learning meaning, and reciprocal Twin connections');
+
+const {runInNewContext}=await import('node:vm');
+const quiltScope={window:{}};runInNewContext(read('public/reader-quilt.js'),quiltScope);const quiz=quiltScope.window.QPReaderQuilt;
+const currentReports=JSON.parse(read('public/data/qp-current-reports.json')).reports;
+const reportScope={window:{}};runInNewContext(read('public/report-core.js'),reportScope);const reportApi=reportScope.window.QPReport;
+const groupRoutes=[...currentReports.map(x=>'report-'+x.slug+'.html'),...r.rows.map(x=>x.route),'museums-culture.html','culture-learning.html'];
+const launchCode=read('public/launch-system.js');
+for(const route of groupRoutes){const html=read('public/'+route);assert(launchCode.includes(JSON.stringify(route)),route+' missing subject entry');assert(/launch-system\.js|reader-quilt\.js/.test(html),route+' missing runtime');for(const prior of quiz.priorFor(route))assert(existsSync('public/'+prior.route),prior.route);}
+for(const report of currentReports){const q=quiz.project({report,prior:quiz.priorFor('report-'+report.slug+'.html'),coverage:reportApi.coverage40(report)});assert(q.findings.length&&q.legacyLearning.historical.length&&q.quilt.length===40);assert(q.evidenceState==='DATED_PREPARED_FINDINGS');assert(quiz.markdown(q).includes('Legacy Learning (LL)'));}
+const none=quiz.project({question:'Unestablished question',related:[{title:'Related topic',route:'museums-culture.html'}]});assert.equal(none.evidenceState,'NO_EXACT_PREPARED_ANSWER');assert.equal(none.findings.length,0);assert.equal(none.quilt.length,0);assert.equal(none.related.length,1);assert(!quiz.safeLocal('../private.html'));
+for(const path of ['qify.html','reports.html'])assert(read('public/'+path).includes('reader-quilt.js'));
+assert(read('public/qify.js').includes('packet.readerProjection')&&read('public/qify.js').includes('reader.relatedLiving'));
+console.log('PASS LL and quilt projections for '+new Set(groupRoutes).size+' registered subject routes, prepared reports, and unmatched question boundary');
