@@ -1,0 +1,20 @@
+import assert from 'node:assert/strict';
+import {readFileSync,existsSync} from 'node:fs';
+import {resolve} from 'node:path';
+const read=p=>readFileSync(p,'utf8');
+const data='data/qp-living-research-discovery-2026-11-19.json';
+const r=JSON.parse(read('public/'+data));
+const h=read('public/living-research.html');
+assert.equal(r.schema,'qp-living-research-discovery-v1');
+assert.equal(new Set(r.rows.map(x=>x.id)).size,r.rows.length);
+assert.equal(new Set(r.rows.map(x=>x.route)).size,r.rows.length);
+const groups=new Set(r.groups.map(x=>x.id));
+assert.equal(groups.size,10);
+for(const x of r.rows){assert(groups.has(x.group));assert(x.title&&x.review&&x.status);assert(h.includes('href="'+x.route+'"'));for(const file of [x.route,...x.files]){assert(/^[a-z0-9_./-]+$/i.test(file)&&!file.includes('..')&&!file.startsWith('/'));const path=resolve('public',file);assert(existsSync(path),'Missing '+path);if(file.endsWith('.json'))JSON.parse(read(path));}}
+for(const p of ['index.html','reports-static.html','priorities.html','twin.html','packets.html'])assert(read('public/'+p).includes('living-research.html'),p);
+assert(read('public/entities.html').includes('civic-observatory.html'));
+assert(read('public/home-search.js').includes(data));
+assert.equal(r.metrics.canonicalClaimCoverage,null);
+assert.equal(r.metrics.productionParity,null);
+assert(!h.includes('5,760')&&!h.includes('4,914'));
+console.log('Living research discovery structural checks passed: '+r.rows.length+' routes; '+groups.size+' categories. No source-truth or production certification.');
