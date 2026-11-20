@@ -80,6 +80,7 @@ jobs:
           node scripts/check-release-parity.mjs
           node scripts/check-regional-transition.mjs
           node scripts/check-priority-navigation.mjs
+          node scripts/check-unified-reconciliation.mjs
           test -s public/site.css
           test -s public/_headers
           grep -q 'Q-PUEBLO' public/index.html
