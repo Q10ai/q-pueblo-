@@ -1,0 +1,4138 @@
+{
+  "schema": "qp-issue-identity-crosswalk-v1",
+  "asOf": "2026-11-19",
+  "status": "candidate crosswalk; no canonical merges authorized",
+  "inputs": [
+    {
+      "path": "public/data/q-pueblo-issue-index-2026-11-09.json",
+      "blob": "7706b60818b25bdc11fd66d0403bc59945303060",
+      "count": 174
+    },
+    {
+      "path": "public/data/qp-three-hop-2026-11-13.json",
+      "blob": "14b1ae79431a8df39500533883a2a94ef5eadf60",
+      "count": 211
+    }
+  ],
+  "method": "Case-insensitive exact ID match; normalized title comparison. Title differences require scope review. Unmatched IDs may describe overlapping topics; no semantic joins or source transfers. Entity associations are historical, not proof of jurisdiction or liability.",
+  "counts": {
+    "id-title-match-candidate": 28,
+    "id-match-scope-review": 10,
+    "historical-only": 136,
+    "graph-only": 173
+  },
+  "sourceMappedHistorical": 82,
+  "rows": [
+    {
+      "historicalId": "REG-001",
+      "historicalTitle": "Half-Cent Jobs Fund principal, interest, and voter-purpose controls",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-001",
+      "graphTitle": "Half-Cent Jobs Fund principal, interest, and voter-purpose controls",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-002",
+      "historicalTitle": "Dittmer Building additional $182,175 and $60,000 lineage",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-002",
+      "graphTitle": "Dittmer Building funding and account lineage",
+      "entityAssociationIds": [],
+      "state": "id-match-scope-review"
+    },
+    {
+      "historicalId": "REG-003",
+      "historicalTitle": "Municipal Court SUV account origin and retransfer",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-003",
+      "graphTitle": "Municipal Court SUV account origin and retransfer",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-004",
+      "historicalTitle": "PEDCO transition and replacement-provider continuity",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-004",
+      "graphTitle": "PEDCO transition and replacement-provider continuity",
+      "entityAssociationIds": [
+        "ent-eba66093d2f4",
+        "ent-b093130ce0eb"
+      ],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-005",
+      "historicalTitle": "Advance Pueblo authority, legal form, budget, and role",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-005",
+      "graphTitle": "Advance Pueblo authority, legal form, budget, and role",
+      "entityAssociationIds": [
+        "ent-eba66093d2f4"
+      ],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-006",
+      "historicalTitle": "Economic-development RFQ/RFP process and cancellation",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-006",
+      "graphTitle": "Economic-development RFQ/RFP process and cancellation",
+      "entityAssociationIds": [
+        "ent-eba66093d2f4"
+      ],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-007",
+      "historicalTitle": "Project Falcon confidentiality, jobs, incentives, and public-value packet",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-16",
+      "graphId": "reg-007",
+      "graphTitle": "Project Falcon: public value and authorized disclosure",
+      "entityAssociationIds": [],
+      "state": "id-match-scope-review"
+    },
+    {
+      "historicalId": "REG-008",
+      "historicalTitle": "St. Charles Industrial Park execution status",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-16",
+      "graphId": "reg-008",
+      "graphTitle": "St. Charles Industrial Park execution status",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-009",
+      "historicalTitle": "Leonardo da Vinci Museum / ED2602 public-finance, governance, related-party, tourism, and post-denial project exposure",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-009",
+      "graphTitle": "Museum funding, facilities and operating commitments",
+      "entityAssociationIds": [],
+      "state": "id-match-scope-review"
+    },
+    {
+      "historicalId": "REG-010",
+      "historicalTitle": "Strategic-plan inventory and duplicate-planning expenditure",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-010",
+      "graphTitle": "Strategic-plan inventory and duplicate-planning expenditure",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-b093130ce0eb",
+        "ent-49eacbe08379"
+      ],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-011",
+      "historicalTitle": "Dillon Drive URA / RRA / TIF public-value ledger",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-011",
+      "graphTitle": "Dillon Drive: urban renewal, reimbursements and public value",
+      "entityAssociationIds": [],
+      "state": "id-match-scope-review"
+    },
+    {
+      "historicalId": "REG-012",
+      "historicalTitle": "Mayor appointment to PURA: narrow legality versus governance controls",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-012",
+      "graphTitle": "Urban renewal appointments, disclosures and decision roles",
+      "entityAssociationIds": [
+        "ent-49eacbe08379"
+      ],
+      "state": "id-match-scope-review"
+    },
+    {
+      "historicalId": "REG-013",
+      "historicalTitle": "Mayor/City recognition and award promotion spending",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-013",
+      "graphTitle": "Public recognition and communications: funding questions",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68"
+      ],
+      "state": "id-match-scope-review"
+    },
+    {
+      "historicalId": "REG-014",
+      "historicalTitle": "City Council direction, execution, meeting conduct, and public legibility",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-014",
+      "graphTitle": "City Council direction, execution, meeting conduct, and public legibility",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-eba66093d2f4"
+      ],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-015",
+      "historicalTitle": "County governance signals: land use, disclosure/recusal, HR, holidays",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-015",
+      "graphTitle": "County governance signals: land use, disclosure/recusal, HR, holidays",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc"
+      ],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-016",
+      "historicalTitle": "Property-tax ability-to-pay and assessed-value education",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-016",
+      "graphTitle": "Property-tax ability-to-pay and assessed-value education",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-017",
+      "historicalTitle": "May 2026 sales-tax report and revenue trend",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-017",
+      "graphTitle": "May 2026 sales-tax report and revenue trend",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-018",
+      "historicalTitle": "Women-owned business ecosystem and local enterprise growth",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-018",
+      "graphTitle": "Women-owned business ecosystem and local enterprise growth",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-019",
+      "historicalTitle": "Youth safeguarding and public-service accountability records",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-019",
+      "graphTitle": "Child-welfare governance — restricted review",
+      "entityAssociationIds": [],
+      "state": "id-match-scope-review"
+    },
+    {
+      "historicalId": "REG-020",
+      "historicalTitle": "Pueblo Police statistics update and interpretation",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-020",
+      "graphTitle": "Pueblo Police statistics update and interpretation",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-021",
+      "historicalTitle": "Southern Colorado water-yield, storage, and drought resilience",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-021",
+      "graphTitle": "Southern Colorado water-yield, storage, and drought resilience",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-022",
+      "historicalTitle": "Comanche / Ray Nixon / workforce and tax-base transition",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-022",
+      "graphTitle": "Comanche / Ray Nixon / workforce and tax-base transition",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-023",
+      "historicalTitle": "Nuclear/SMR and large-load/data-center public-value gates",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-023",
+      "graphTitle": "Nuclear/SMR and large-load/data-center public-value gates",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-024",
+      "historicalTitle": "Aspen Acres live incident operations and official information",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-024",
+      "graphTitle": "Wildfire information — current official sources required",
+      "entityAssociationIds": [],
+      "state": "id-match-scope-review"
+    },
+    {
+      "historicalId": "REG-025",
+      "historicalTitle": "Aspen Acres long-term recovery and regional shock absorption",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-025",
+      "graphTitle": "Aspen Acres long-term recovery and regional shock absorption",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-026",
+      "historicalTitle": "Volunteer stories, mutual aid, animal rescue, recognition, and burnout",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-026",
+      "graphTitle": "Volunteer stories, mutual aid, animal rescue, recognition, and burnout",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-027",
+      "historicalTitle": "Rumor, gossip, misinformation, and emerging-signal ledger",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-027",
+      "graphTitle": "Rumor, gossip, misinformation, and emerging-signal ledger",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-028",
+      "historicalTitle": "Public proof, youth ecology, Pueblo Zoo, and community learning",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-028",
+      "graphTitle": "Public proof, youth ecology, Pueblo Zoo, and community learning",
+      "entityAssociationIds": [
+        "ent-df5480d2516f"
+      ],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-029",
+      "historicalTitle": "Q governance explainer, CTA infographic, and commercial assets",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-029",
+      "graphTitle": "Q governance explainer, CTA infographic, and commercial assets",
+      "entityAssociationIds": [
+        "ent-805487266d4d"
+      ],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-030",
+      "historicalTitle": "Hart Beat / civic source-document library",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-030",
+      "graphTitle": "Hart Beat / civic source-document library",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-031",
+      "historicalTitle": "AI-laundered civic claims and summary contamination",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-031",
+      "graphTitle": "AI-laundered civic claims and summary contamination",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-032",
+      "historicalTitle": "Regional shock continuity and threat-mapping system",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-032",
+      "graphTitle": "Regional shock continuity and threat-mapping system",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-033",
+      "historicalTitle": "Half-cent extension election-history correction and 2031 funding horizon",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-033",
+      "graphTitle": "Half-cent election history and source reconciliation",
+      "entityAssociationIds": [],
+      "state": "id-match-scope-review"
+    },
+    {
+      "historicalId": "REG-034",
+      "historicalTitle": "City Annex / PBR / museum asset naming and interest-dependency theory",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-034",
+      "graphTitle": "Public facilities: asset identity and financial dependencies",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68"
+      ],
+      "state": "id-match-scope-review"
+    },
+    {
+      "historicalId": "REG-035",
+      "historicalTitle": "Property-assessment public narrative and policy-option design",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-035",
+      "graphTitle": "Property-assessment public narrative and policy-option design",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-036",
+      "historicalTitle": "CORA/public-records source-fill queue and custodian verification",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-036",
+      "graphTitle": "CORA/public-records source-fill queue and custodian verification",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-037",
+      "historicalTitle": "Cross-system storage integrity and artifact recovery",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-037",
+      "graphTitle": "Cross-system storage integrity and artifact recovery",
+      "entityAssociationIds": [],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-038",
+      "historicalTitle": "Q10 Pueblo architecture, tests, production, and official-use gates",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": "reg-038",
+      "graphTitle": "Q10 Pueblo architecture, tests, production, and official-use gates",
+      "entityAssociationIds": [
+        "ent-805487266d4d"
+      ],
+      "state": "id-title-match-candidate"
+    },
+    {
+      "historicalId": "REG-039",
+      "historicalTitle": "Water marketing and site-serviceability claim integrity",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-050",
+      "historicalTitle": "Arkansas River 4.25M-gallon sewage spill / Stockyard CIPP 25-070A responsibility and regional impact",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-041",
+      "historicalTitle": "Economic-development institutional fragmentation, authority, and attribution matrix",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-042",
+      "historicalTitle": "Social-sentiment representativeness and evidence-upgrade control",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-043",
+      "historicalTitle": "Pueblo workforce decline, economic capacity, and countywide job-growth funding architecture",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-044",
+      "historicalTitle": "Date, supersession, and reshared-post integrity control",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-045",
+      "historicalTitle": "Colorado Connector tax, debt, lifecycle cost, schedule and public-value ledger",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-046",
+      "historicalTitle": "Bluffs URA / superseded Riverly proposal / current Prop 123 housing and public-finance lineage",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-047",
+      "historicalTitle": "Pueblo ALPR/RTCC inventory, vendor, privacy, sharing and outcome governance",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-048",
+      "historicalTitle": "PCCLD AI procurement, privacy, literacy outcomes and value-for-money review",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-049",
+      "historicalTitle": "CSAC nonprofit allocation, concentration, conflicts and outcome ledger",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-051",
+      "historicalTitle": "Pueblo West Fire Department sales-tax/property-tax fund additionality and fungibility",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-052",
+      "historicalTitle": "Pueblo County D70 board governance, Open Meetings Law court order, appeal/litigation cost and policy-record integrity",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-053",
+      "historicalTitle": "Pueblo D60 proclamation, heritage-recognition and ceremonial-governance record",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-054",
+      "historicalTitle": "Q-Pueblo real-world mechanism transfer, portable-assurance convergence, continuity repair and field validation",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-055",
+      "historicalTitle": "Q-Pueblo continuity/index concurrency and current-state drift control",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-056",
+      "historicalTitle": "McLaughlin Building preservation grant match, milestone and completion-state integrity",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-057",
+      "historicalTitle": "Pueblo behavioral-health continuum, CMHHIP role, crisis capacity, civil/forensic pathways and care-transition integrity",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-058",
+      "historicalTitle": "Pueblo Memorial Airport governance, lease authority, federal litigation residue, legal spend and Council appropriation controls",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-059",
+      "historicalTitle": "Acacia Lyn-Darr federal civil-rights litigation and law-enforcement evidence-integrity chain",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-060",
+      "historicalTitle": "Pueblo West roads IGA, Reverse IGA, 6C road-sales-tax accounting and MS4 responsibility",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-061",
+      "historicalTitle": "Pueblo West water/wastewater enterprise reserves, rates, tap limits and $200M-plus infrastructure planning",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-062",
+      "historicalTitle": "Runyon Sports Complex governance, County relationship, staffing, lease/operating model and subsidy/outcome ledger",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-063",
+      "historicalTitle": "2026 Pueblo-area ballot measures: tax, revenue-retention, debt, duration and service-purpose crosswalk",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-16",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-064",
+      "historicalTitle": "Black Hills electric/gas rates, Clean Energy Plan, battery/solar recovery, merger and Pueblo ratepayer exposure",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-065",
+      "historicalTitle": "Colorado Rural Health Transformation funding and actual Pueblo beneficiary/allocation map",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-066",
+      "historicalTitle": "DOJ Model Cities Initiative: Pueblo $100M application, partner governance, allowable uses, federal conditions and award risk",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-067",
+      "historicalTitle": "Aspen Acres / Gold Mountain post-fire watershed protection, EWP cost share, flood risk and long-term recovery",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-068",
+      "historicalTitle": "Pueblo homelessness, shelter, transitional housing, PIT methodology and service-continuum outcomes",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-069",
+      "historicalTitle": "Pueblo County fiscal strategy, 2026 amendments, staffing/HR consolidation, CAO governance and 2027 budget pressure",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-16",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-070",
+      "historicalTitle": "Pueblo County Coroner independence, funding, office capacity, election transition and political-claim integrity",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-071",
+      "historicalTitle": "2026 Pueblo candidate, officeholder and campaign claim verification across county/state/local races",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-16",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-072",
+      "historicalTitle": "Rocky Mountain Steel Mills / Orion ownership, long-rail mill, railroad customers, USW contract and industrial-transition outcomes",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-073",
+      "historicalTitle": "City of Pueblo marijuana licensing and reported 2026 retail-license moratorium: ordinance, existing-license rights and market/tax impacts",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-001",
+      "historicalTitle": "Complete Pueblo regional taxing-authority enumeration",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-06",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-RTA-001",
+      "historicalTitle": "City/PURA RTA principal and intergovernmental balance reconciliation",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-06",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-RTA-002",
+      "historicalTitle": "PURA interest-payment/accrual reconciliation",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-06",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-RTA-003",
+      "historicalTitle": "2019 $112,800 City/PURA note accounting",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-06",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-HARP-001",
+      "historicalTitle": "HARP 1A/Boathouse lifecycle funding and closeout",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-06",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-COUNTY-1A-001",
+      "historicalTitle": "County 1A capital program + COP debt lifecycle",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-06",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-PWEST-001",
+      "historicalTitle": "Pueblo West water reliable-yield/capacity/growth constraint",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-06",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-PWEST-002",
+      "historicalTitle": "Pueblo West fire funding and service sustainability",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-06",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-PWEST-003",
+      "historicalTitle": "Desert Hawk joint ownership/loan/debt/service reconciliation",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-06",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-CCMD-001",
+      "historicalTitle": "Colorado City Metro complete finance/debt/service map",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-06",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-WATER-REG-001",
+      "historicalTitle": "Arkansas Valley Conduit Pueblo-region cost/benefit and obligation graph",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-06",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-PDPHE-001",
+      "historicalTitle": "PDPHE joint-governance subsidy and outcome ledger",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-06",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-E911-001",
+      "historicalTitle": "E-911 component-unit surcharge, assets, contracts and service outcomes",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-06",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-BUILD-001",
+      "historicalTitle": "2026 Regional Building split — authority, finance and permitting performance",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-16",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-PLEX-001",
+      "historicalTitle": "PuebloPlex federal-property transfer/remediation/infrastructure/jobs lifecycle",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-06",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-SCHOOL-001",
+      "historicalTitle": "Regional school-tax/bond/enrollment/capital-outcome model",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-06",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-FED-001",
+      "historicalTitle": "City federal grant accounting/control findings and closeout",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-06",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-PROC-REG-001",
+      "historicalTitle": "Cross-jurisdiction procurement/vendor/change-order network",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-06",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-DEV-METRO-001",
+      "historicalTitle": "Development metro/special-district levy, debt, infrastructure and assessed-value reconciliation",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-07",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-QP-CONVERGENCE-001",
+      "historicalTitle": "Q-Pueblo Q10 convergence, external-pattern adaptation, EH/EE/LEAP/RX integration and field-validation closure",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-09",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-RISE-001",
+      "historicalTitle": "RISE / Section 108 financing-to-parcel-to-reuse lifecycle reconciliation",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-09-14",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-058-01",
+      "historicalTitle": "Airport: Lease/termination/supersession authority chain",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-058-02",
+      "historicalTitle": "Airport: Outside-counsel engagement, invoice and appropriation lineage",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-058-03",
+      "historicalTitle": "Airport: Airport Properties federal docket state and attorney-fee residue",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-058-04",
+      "historicalTitle": "Airport: FAA grant/property/minimum-standards obligations",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-059-01",
+      "historicalTitle": "Lyn-Darr civil-rights case: Current pleadings, parties and scheduling state",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-059-02",
+      "historicalTitle": "Civil-rights litigation: source documents, evidentiary disputes and case procedure",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-059-03",
+      "historicalTitle": "Lyn-Darr civil-rights case: County/PCSO defense, insurance and counsel exposure",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-059-04",
+      "historicalTitle": "Lyn-Darr civil-rights case: Underlying vacatur/dismissal and policy-learning lineage",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-060-01",
+      "historicalTitle": "Pueblo West roads IGA: 6C road-sales-tax receipts and expenditure reconciliation",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-060-02",
+      "historicalTitle": "Pueblo West roads IGA: 2023 IGA versus Sept. 2026 Reverse IGA responsibility map",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-060-03",
+      "historicalTitle": "Pueblo West roads IGA: MS4/drainage/stormwater responsibility and cost allocation",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-060-04",
+      "historicalTitle": "Pueblo West roads IGA: Road condition, work-order, maintenance and rehabilitation outcomes",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-061-01",
+      "historicalTitle": "Pueblo West utilities: 2027 rate scenarios and reserve depletion model",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-061-02",
+      "historicalTitle": "Pueblo West utilities: Water/wastewater capital plan, debt and first-five-year needs",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-061-03",
+      "historicalTitle": "Pueblo West utilities: Reliable water yield, treatment/storage and tap commitments",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-061-04",
+      "historicalTitle": "Pueblo West utilities: Wastewater capacity, reserves and serviceability",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-062-01",
+      "historicalTitle": "Runyon governance: New County-Runyon operating/lease agreement and control rights",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-062-02",
+      "historicalTitle": "Runyon governance: Staff employer, supervision, benefits and transition",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-062-03",
+      "historicalTitle": "Runyon governance: County subsidy, revenues, capital obligations and liabilities",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-062-04",
+      "historicalTitle": "Runyon governance: Utilization, tournament economics and community outcomes",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-063-01",
+      "historicalTitle": "2026 Pueblo-area ballot measures: Certified text, geography, duration and legal effect for all local measures",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-063-02",
+      "historicalTitle": "2026 Pueblo-area ballot measures: Combined tax/levy/revenue-retention stack by geography",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-063-03",
+      "historicalTitle": "2026 Pueblo-area ballot measures: Implementation, fund restriction, audit and sunset rules",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-063-04",
+      "historicalTitle": "2026 Pueblo-area ballot measures: Public claim/campaign statement verification",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-064-01",
+      "historicalTitle": "Black Hills utility proceedings: 2026 electric base-rate case and proposed bill impacts",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-064-02",
+      "historicalTitle": "Black Hills utility proceedings: Gas clean-heat plan, riders and ratepayer impacts",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-064-03",
+      "historicalTitle": "Black Hills utility proceedings: Electric resource plan, battery/solar and rider transition",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-064-04",
+      "historicalTitle": "Black Hills utility proceedings: Black Hills-NorthWestern merger regulatory/local implications",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-065-01",
+      "historicalTitle": "Rural Health Transformation: Awardee/subaward/project geography serving Pueblo",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-065-02",
+      "historicalTitle": "Rural Health Transformation: Pueblo provider participation and direct/indirect benefit",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-065-03",
+      "historicalTitle": "Rural Health Transformation: Workforce, service-line and technology deliverables",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-065-04",
+      "historicalTitle": "Rural Health Transformation: Access, quality and financial-sustainability outcomes",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-066-01",
+      "historicalTitle": "DOJ Model Cities Initiative: Phase-two application, authority, certifications and requested budget",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-066-02",
+      "historicalTitle": "DOJ Model Cities Initiative: Partner allocation, governance, procurement and subaward map",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-066-03",
+      "historicalTitle": "DOJ Model Cities Initiative: Federal conditions, civil-rights, immigration, data/privacy and technology controls",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-066-04",
+      "historicalTitle": "DOJ Model Cities Initiative: Crime, victim, reentry and prevention outcome framework",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-067-01",
+      "historicalTitle": "Post-fire watershed/EWP: Federal/state/local EWP cost-share reconciliation",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-067-02",
+      "historicalTitle": "Post-fire watershed/EWP: Project engineering, procurement, scope and schedule",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-067-03",
+      "historicalTitle": "Post-fire watershed/EWP: Burn-scar flood/debris hazard and infrastructure exposure",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-067-04",
+      "historicalTitle": "Post-fire watershed/EWP: Household/agriculture/insurance/recovery burden",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-068-01",
+      "historicalTitle": "Pueblo homelessness continuum: PIT/HMIS methodology, coverage and trend interpretation",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-068-02",
+      "historicalTitle": "Pueblo homelessness continuum: Shelter ownership, SafeSide operating contract and capacity",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-068-03",
+      "historicalTitle": "Pueblo homelessness continuum: CDBG/HOME/ESG/local funding and provider flow",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-068-04",
+      "historicalTitle": "Pueblo homelessness continuum: Exits to housing, returns, health/employment and system outcomes",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-069-01",
+      "historicalTitle": "Pueblo County fiscal/organizational state: 2026 adopted budget to amendments, actuals and 2027 baseline",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-069-02",
+      "historicalTitle": "Pueblo County fiscal/organizational state: Hiring, vacancies, HR consolidation and service capacity",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-069-03",
+      "historicalTitle": "Pueblo County fiscal/organizational state: CAO delegated authority versus independently elected offices",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-069-04",
+      "historicalTitle": "Pueblo County fiscal/organizational state: Jail, wildfire recovery, grants and other pressure drivers",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-070-01",
+      "historicalTitle": "Pueblo County Coroner governance: Statutory independence, qualifications and authority",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-070-02",
+      "historicalTitle": "Pueblo County Coroner governance: Budget, staffing, pathology/investigation contracts and capacity",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-070-03",
+      "historicalTitle": "Pueblo County Coroner governance: Election/candidate and office-transition claim integrity",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-070-04",
+      "historicalTitle": "Pueblo County Coroner governance: Service quality, family/public-health/justice handoffs",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-071-01",
+      "historicalTitle": "2026 candidate/public claim integrity: Exact claim capture, speaker, date, venue and wording",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-071-02",
+      "historicalTitle": "2026 candidate/public claim integrity: Budget/tax/public-finance campaign claims",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-071-03",
+      "historicalTitle": "2026 candidate/public claim integrity: Crime/litigation/government-authority campaign claims",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-071-04",
+      "historicalTitle": "2026 candidate/public claim integrity: Healthcare/economic-development/service-impact campaign claims",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-025-MTN-PARK",
+      "historicalTitle": "Aspen Acres recovery: Pueblo Mountain Park insurance, fire-damage assessment and access restoration",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-043-MISSION-01",
+      "historicalTitle": "Mission Foods: primary closure/WARN/CDLE notice and closure-date reconciliation",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-043-MISSION-02",
+      "historicalTitle": "Mission Foods: worker displacement, bumping rights, reemployment and income transition",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-043-MISSION-03",
+      "historicalTitle": "Mission Foods: plant property, reuse and industrial-site transition",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-043-MISSION-04",
+      "historicalTitle": "Mission Foods: realized local payroll, tax-base, supplier and household impact",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-072-01",
+      "historicalTitle": "Steel: 2026 five-year USW CBA terms, wage schedules and realized compensation",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-072-02",
+      "historicalTitle": "Steel: $1.2B long-rail mill commissioning, production, capacity and reliability outcomes",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-072-03",
+      "historicalTitle": "Steel: railroad customer contracts and dispute-state reconciliation",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-072-04",
+      "historicalTitle": "Steel: ownership, incentives, utilities, workforce and local fiscal/outcome ledger",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-073-01",
+      "historicalTitle": "Marijuana: exact 2026 retail-license moratorium ordinance, vote, scope and sunset",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-073-02",
+      "historicalTitle": "Marijuana: current license universe, applications, renewals, transfers and existing-rights treatment",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-073-03",
+      "historicalTitle": "Marijuana: tax/revenue, market concentration and business-transition effects",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-073-04",
+      "historicalTitle": "Marijuana: enforcement, complaints, sanctions and public-health/safety outcomes",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-047-SPEED-01",
+      "historicalTitle": "Automated speed enforcement: Obvio contract, authority, payment and deployment scope",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-047-SPEED-02",
+      "historicalTitle": "Automated speed enforcement: signage, public notice, warning period and citation transition",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-047-SPEED-03",
+      "historicalTitle": "Automated speed enforcement: evidence review, service, appeals, data retention and vendor access",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-047-SPEED-04",
+      "historicalTitle": "Automated speed enforcement: speed/crash outcomes, citations, collections and net fiscal effect",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-041-TORTUGA-01",
+      "historicalTitle": "Project Tortuga: authority, confidentiality, negotiation and approval path",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-041-TORTUGA-02",
+      "historicalTitle": "Project Tortuga: eventual jobs, wages, incentives, infrastructure and public-value packet",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-025-CAUSE",
+      "historicalTitle": "Aspen Acres recovery: official ignition/cause investigation and evidence boundary",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-025-LIT",
+      "historicalTitle": "Aspen Acres recovery: San Isabel Electric civil litigation, insurance, damages and recovery interactions",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-05",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "REG-074",
+      "historicalTitle": "Pueblo building/permitting jurisdiction split, transition cost, staffing and performance",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-16",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-007-01",
+      "historicalTitle": "Project Falcon land option: Oct. 13 first presentation, Oct. 26 hearing, appraisal and future-purchase controls",
+      "historicalSourceMapped": false,
+      "historicalReviewed": "2026-10-16",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-063-05",
+      "historicalTitle": "2026 property-owner/special-district ballots: multiple-mailing eligibility, list certification and duplicate-handling controls",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-16",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": "QRX-REG-071-05",
+      "historicalTitle": "2026 Pueblo campaign finance: candidate/committee filing, penalty, waiver and complaint state",
+      "historicalSourceMapped": true,
+      "historicalReviewed": "2026-10-16",
+      "graphId": null,
+      "graphTitle": null,
+      "entityAssociationIds": [],
+      "state": "historical-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fisc-001",
+      "graphTitle": "County structural budget pressure",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fisc-002",
+      "graphTitle": "City 2026 budget shortfall pressure",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fisc-003",
+      "graphTitle": "City reserve draw / reserve policy pressure",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-eba66093d2f4"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fisc-004",
+      "graphTitle": "Deferred maintenance compounding",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-ff89f261999c"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fisc-005",
+      "graphTitle": "Overtime as hidden workforce system",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-0f4ec945e91d"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fisc-006",
+      "graphTitle": "Furlough–overtime paradox",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fisc-007",
+      "graphTitle": "Comp time liability",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fisc-008",
+      "graphTitle": "Procurement cycle-time cost",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fisc-009",
+      "graphTitle": "Grant match earmarking gap",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fisc-010",
+      "graphTitle": "TABOR revenue flexibility constraints",
+      "entityAssociationIds": [
+        "ent-a7929887d398",
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "infr-001",
+      "graphTitle": "Pavement backlog visibility",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "infr-002",
+      "graphTitle": "Water infrastructure renewal need",
+      "entityAssociationIds": [
+        "ent-ff89f261999c",
+        "ent-1d07f2b59d68"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "infr-003",
+      "graphTitle": "Public facilities deferred maintenance",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "infr-004",
+      "graphTitle": "Sun Mountain Boulevard extension delivery",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "infr-005",
+      "graphTitle": "24th Street bridge planning",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "infr-006",
+      "graphTitle": "West Side ADA bus stop upgrades",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-ddc3e0c25c7f"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "infr-007",
+      "graphTitle": "Desert Hawk irrigation capital need",
+      "entityAssociationIds": [
+        "ent-9528c16c953c",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "infr-008",
+      "graphTitle": "Fleet replacement timing",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "infr-009",
+      "graphTitle": "Stormwater / MS4 compliance",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "infr-010",
+      "graphTitle": "ADA transition plan compliance",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "infr-011",
+      "graphTitle": "Sidewalk accessibility backlog",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9528c16c953c"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "infr-012",
+      "graphTitle": "Public transit access reliability",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-ddc3e0c25c7f"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "infr-013",
+      "graphTitle": "Capital project inflation exposure",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "infr-014",
+      "graphTitle": "Intergovernmental road IGA maintenance",
+      "entityAssociationIds": [
+        "ent-9528c16c953c",
+        "ent-9fc831fd79fc",
+        "ent-1d07f2b59d68"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "infr-015",
+      "graphTitle": "Asset inventory completeness",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-ff89f261999c"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "work-001",
+      "graphTitle": "City position freezes and abolishments",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "work-002",
+      "graphTitle": "County hiring freeze pressure",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-1d07f2b59d68"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "work-003",
+      "graphTitle": "Police staffing shortage",
+      "entityAssociationIds": [
+        "ent-0f4ec945e91d",
+        "ent-1d07f2b59d68"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "work-004",
+      "graphTitle": "Fire staffing and overtime pressure",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "work-005",
+      "graphTitle": "Teacher shortage D60",
+      "entityAssociationIds": [
+        "ent-9583a0236568",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "work-006",
+      "graphTitle": "Teacher shortage D70",
+      "entityAssociationIds": [
+        "ent-36144c80645b",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "work-007",
+      "graphTitle": "Utility specialized position recruitment",
+      "entityAssociationIds": [
+        "ent-e9982e089c2a",
+        "ent-1d07f2b59d68"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "work-008",
+      "graphTitle": "Vacancy delay cost",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "work-009",
+      "graphTitle": "Workers compensation claim clusters",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "work-010",
+      "graphTitle": "Insurance premium drivers",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "work-011",
+      "graphTitle": "Leadership turnover and institutional memory decay",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-b093130ce0eb"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "work-012",
+      "graphTitle": "Project Falcon knowledge-transfer risk",
+      "entityAssociationIds": [
+        "ent-58363d81e2d8",
+        "ent-b093130ce0eb",
+        "ent-1d07f2b59d68"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "work-013",
+      "graphTitle": "Burnout-driven turnover risk",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-d95e5fcc8803"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "work-014",
+      "graphTitle": "Cross-training pool weakness",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "work-015",
+      "graphTitle": "Succession planning gaps",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-9583a0236568",
+        "ent-36144c80645b"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "safe-001",
+      "graphTitle": "Police response time variability",
+      "entityAssociationIds": [
+        "ent-0f4ec945e91d",
+        "ent-1d07f2b59d68"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "safe-002",
+      "graphTitle": "Mental health call burden on police",
+      "entityAssociationIds": [
+        "ent-0f4ec945e91d",
+        "ent-d95e5fcc8803"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "safe-003",
+      "graphTitle": "Co-response unit implementation",
+      "entityAssociationIds": [
+        "ent-0f4ec945e91d",
+        "ent-d95e5fcc8803",
+        "ent-1d07f2b59d68"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "safe-004",
+      "graphTitle": "Hotspot crime concentration",
+      "entityAssociationIds": [
+        "ent-0f4ec945e91d",
+        "ent-1d07f2b59d68"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "safe-005",
+      "graphTitle": "Jail/detention capacity pressure",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-0f4ec945e91d"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "safe-006",
+      "graphTitle": "Jail lifecycle cost visibility",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "safe-007",
+      "graphTitle": "Incarcerated healthcare cost pressure",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-d95e5fcc8803"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "safe-008",
+      "graphTitle": "Court transport logistics burden",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-0f4ec945e91d"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "safe-009",
+      "graphTitle": "Sheriff leadership transition risk",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-0f4ec945e91d"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "safe-010",
+      "graphTitle": "Coroner scandal trust fallout",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-7e4ef3ccb3e3"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "safe-011",
+      "graphTitle": "Use-of-force litigation exposure",
+      "entityAssociationIds": [
+        "ent-0f4ec945e91d",
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "safe-012",
+      "graphTitle": "Code enforcement backlog",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "safe-013",
+      "graphTitle": "Permit/inspection bottlenecks affecting safety investments",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "safe-014",
+      "graphTitle": "Val U Stay / enforcement gap risk",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-eed6bffea2db"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "safe-015",
+      "graphTitle": "Pueblo West fire funding permanence",
+      "entityAssociationIds": [
+        "ent-9528c16c953c",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "econ-001",
+      "graphTitle": "PEDCO lawsuit exposure",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-b093130ce0eb",
+        "ent-58363d81e2d8"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "econ-002",
+      "graphTitle": "PEDCO contract/accounting dispute",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-b093130ce0eb"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "econ-003",
+      "graphTitle": "Half-cent economic development governance transition",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-58363d81e2d8"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "econ-004",
+      "graphTitle": "Economic development operator replacement design",
+      "entityAssociationIds": [
+        "ent-58363d81e2d8",
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "econ-005",
+      "graphTitle": "Project Falcon continuity risk",
+      "entityAssociationIds": [
+        "ent-58363d81e2d8",
+        "ent-b093130ce0eb",
+        "ent-1d07f2b59d68"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "econ-006",
+      "graphTitle": "Small business theft/corridor protection",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-0f4ec945e91d"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "econ-007",
+      "graphTitle": "Permit fast-lane feasibility",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-a4057eeb882d"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "econ-008",
+      "graphTitle": "Workforce pipeline alignment",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9583a0236568",
+        "ent-36144c80645b",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "econ-009",
+      "graphTitle": "Local procurement preference design",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "econ-010",
+      "graphTitle": "Small business insurance pooling feasibility",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "econ-011",
+      "graphTitle": "Buc-ee's / major retail recruitment visibility",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-58363d81e2d8"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "econ-012",
+      "graphTitle": "PuebloPlex industrial expansion pressure",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-9528c16c953c",
+        "ent-0a035c2b85b8"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "econ-013",
+      "graphTitle": "Festival/tourism event economic capture",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "econ-014",
+      "graphTitle": "Business retention / vacancy data gap",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-58363d81e2d8"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "econ-015",
+      "graphTitle": "Incentive governance and milestone-based payouts",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-58363d81e2d8"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "hous-001",
+      "graphTitle": "Utility rate pressure",
+      "entityAssociationIds": [
+        "ent-e9982e089c2a",
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "hous-002",
+      "graphTitle": "Housing supply shortage visibility",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "hous-003",
+      "graphTitle": "Modular / infill housing project pipeline",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-7866992fbe98"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "hous-004",
+      "graphTitle": "Free land / development RFI governance",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "hous-005",
+      "graphTitle": "Affordable housing trust fund leverage",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-a7929887d398",
+        "ent-ddc3e0c25c7f"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "hous-006",
+      "graphTitle": "Workforce housing access",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-9528c16c953c"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "hous-007",
+      "graphTitle": "Senior housing availability",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "hous-008",
+      "graphTitle": "Rental assistance / eviction prevention capacity",
+      "entityAssociationIds": [
+        "ent-d95e5fcc8803",
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "hous-009",
+      "graphTitle": "Housing authority coordination",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-ddc3e0c25c7f"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "hous-010",
+      "graphTitle": "Property tax affordability stress",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-1d07f2b59d68",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "edu-001",
+      "graphTitle": "D60 privacy policy implementation clarity",
+      "entityAssociationIds": [
+        "ent-9583a0236568",
+        "ent-c8b2999ed42d",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "edu-002",
+      "graphTitle": "D70 open meetings / vacancy dispute",
+      "entityAssociationIds": [
+        "ent-36144c80645b",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "edu-003",
+      "graphTitle": "Enrollment shifts across districts",
+      "entityAssociationIds": [
+        "ent-9583a0236568",
+        "ent-36144c80645b"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "edu-004",
+      "graphTitle": "School funding volatility",
+      "entityAssociationIds": [
+        "ent-a7929887d398",
+        "ent-9583a0236568",
+        "ent-36144c80645b"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "edu-005",
+      "graphTitle": "Teacher recruitment and retention",
+      "entityAssociationIds": [
+        "ent-9583a0236568",
+        "ent-36144c80645b"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "edu-006",
+      "graphTitle": "Early childhood education access",
+      "entityAssociationIds": [
+        "ent-9583a0236568",
+        "ent-9fc831fd79fc",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "edu-007",
+      "graphTitle": "Student mental health service capacity",
+      "entityAssociationIds": [
+        "ent-9583a0236568",
+        "ent-d95e5fcc8803"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "edu-008",
+      "graphTitle": "Title IX / OCR compliance exposure",
+      "entityAssociationIds": [
+        "ent-9583a0236568",
+        "ent-36144c80645b",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "edu-009",
+      "graphTitle": "School safety and security infrastructure",
+      "entityAssociationIds": [
+        "ent-9583a0236568",
+        "ent-36144c80645b",
+        "ent-0f4ec945e91d"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "edu-010",
+      "graphTitle": "Deferred maintenance in school facilities",
+      "entityAssociationIds": [
+        "ent-9583a0236568",
+        "ent-36144c80645b"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "edu-011",
+      "graphTitle": "Medicaid claiming for school-based services",
+      "entityAssociationIds": [
+        "ent-9583a0236568",
+        "ent-a7929887d398",
+        "ent-ddc3e0c25c7f"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "edu-012",
+      "graphTitle": "Special education funding gaps",
+      "entityAssociationIds": [
+        "ent-9583a0236568",
+        "ent-36144c80645b",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "edu-013",
+      "graphTitle": "Curriculum transparency debates",
+      "entityAssociationIds": [
+        "ent-9583a0236568",
+        "ent-c8b2999ed42d",
+        "ent-36144c80645b"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "edu-014",
+      "graphTitle": "School board governance conflict risk",
+      "entityAssociationIds": [
+        "ent-9583a0236568",
+        "ent-36144c80645b"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "edu-015",
+      "graphTitle": "Inter-entity cost shifting involving schools",
+      "entityAssociationIds": [
+        "ent-9583a0236568",
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "heal-001",
+      "graphTitle": "Mental health same-week treatment access",
+      "entityAssociationIds": [
+        "ent-d95e5fcc8803",
+        "ent-9fc831fd79fc",
+        "ent-1d07f2b59d68"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "heal-002",
+      "graphTitle": "Substance use treatment capacity",
+      "entityAssociationIds": [
+        "ent-d95e5fcc8803",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "heal-003",
+      "graphTitle": "Veterans Treatment Court support",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "heal-004",
+      "graphTitle": "Co-response program expansion",
+      "entityAssociationIds": [
+        "ent-d95e5fcc8803",
+        "ent-0f4ec945e91d",
+        "ent-1d07f2b59d68"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "heal-005",
+      "graphTitle": "Public health department capacity",
+      "entityAssociationIds": [
+        "ent-d95e5fcc8803",
+        "ent-9fc831fd79fc",
+        "ent-1d07f2b59d68"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "heal-006",
+      "graphTitle": "Regional health system coordination",
+      "entityAssociationIds": [
+        "ent-d95e5fcc8803",
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "heal-007",
+      "graphTitle": "Continuum of Care / homelessness services coordination",
+      "entityAssociationIds": [
+        "ent-d95e5fcc8803",
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "heal-008",
+      "graphTitle": "Medicaid flexibility / enhanced claiming audit",
+      "entityAssociationIds": [
+        "ent-a7929887d398",
+        "ent-d95e5fcc8803",
+        "ent-7803e371263d"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "heal-009",
+      "graphTitle": "Senior and disability services integration",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-1d07f2b59d68",
+        "ent-d95e5fcc8803"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "heal-010",
+      "graphTitle": "Food insecurity monitoring",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-1d07f2b59d68",
+        "ent-d95e5fcc8803"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "env-001",
+      "graphTitle": "Pueblo West water rights target",
+      "entityAssociationIds": [
+        "ent-9528c16c953c",
+        "ent-9fc831fd79fc",
+        "ent-ff89f261999c"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "env-002",
+      "graphTitle": "Pueblo West water-growth imbalance",
+      "entityAssociationIds": [
+        "ent-9528c16c953c",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "env-003",
+      "graphTitle": "Arkansas River watershed coordination",
+      "entityAssociationIds": [
+        "ent-ff89f261999c",
+        "ent-9fc831fd79fc",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "env-004",
+      "graphTitle": "Drought planning and storage strategy",
+      "entityAssociationIds": [
+        "ent-9528c16c953c",
+        "ent-ff89f261999c"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "env-005",
+      "graphTitle": "Stormwater management and permit exposure",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "env-006",
+      "graphTitle": "Agricultural water rights pressure",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-9528c16c953c",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "env-007",
+      "graphTitle": "Water main break risk visibility",
+      "entityAssociationIds": [
+        "ent-ff89f261999c",
+        "ent-1d07f2b59d68"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "env-008",
+      "graphTitle": "Desert Hawk irrigation/water use tradeoff",
+      "entityAssociationIds": [
+        "ent-9528c16c953c",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "env-009",
+      "graphTitle": "Land use versus open space tension",
+      "entityAssociationIds": [
+        "ent-9528c16c953c",
+        "ent-9fc831fd79fc",
+        "ent-1d07f2b59d68"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "env-010",
+      "graphTitle": "Municipal energy drift in facilities",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-ff89f261999c"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "env-011",
+      "graphTitle": "LED conversion savings opportunity",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "env-012",
+      "graphTitle": "Energy savings performance contract feasibility",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-ff89f261999c"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "env-013",
+      "graphTitle": "Peak demand management",
+      "entityAssociationIds": [
+        "ent-e9982e089c2a",
+        "ent-1d07f2b59d68",
+        "ent-ff89f261999c"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "env-014",
+      "graphTitle": "Fleet electrification total cost analysis",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "env-015",
+      "graphTitle": "Climate adaptation planning",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-9528c16c953c"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "gov-001",
+      "graphTitle": "PEDCO litigation case file",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-b093130ce0eb",
+        "ent-e61ec276ed94"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "gov-002",
+      "graphTitle": "PEDCO accounting request trail",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-b093130ce0eb"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "gov-003",
+      "graphTitle": "PURA / open meetings allegations visibility",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-4848bf0d8704"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "gov-004",
+      "graphTitle": "D70 open meetings compliance risk",
+      "entityAssociationIds": [
+        "ent-36144c80645b",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "gov-005",
+      "graphTitle": "Coroner criminal investigation status",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-7e4ef3ccb3e3"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "gov-006",
+      "graphTitle": "Recall history / institutional memory",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "gov-007",
+      "graphTitle": "Campaign-finance transparency monitoring",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-0589a6692a55"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "gov-008",
+      "graphTitle": "Intergovernmental agreement inventory",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-9528c16c953c"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "gov-009",
+      "graphTitle": "Cross-entity cost shifting",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-7803e371263d",
+        "ent-9528c16c953c"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "gov-010",
+      "graphTitle": "Public decision ledger absence",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "gov-011",
+      "graphTitle": "Public dashboard continuity",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-7803e371263d"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "gov-012",
+      "graphTitle": "No Packet = No Agenda rule gap",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-7803e371263d"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "gov-013",
+      "graphTitle": "Governance council charter absence",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-9528c16c953c",
+        "ent-7803e371263d"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "gov-014",
+      "graphTitle": "Gate failure escalation protocol absence",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "gov-015",
+      "graphTitle": "Institutional memory repository gap",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-7803e371263d"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "elec-001",
+      "graphTitle": "Democratic state assembly in Pueblo",
+      "entityAssociationIds": [
+        "ent-a7929887d398",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "elec-002",
+      "graphTitle": "Republican state assembly in Pueblo",
+      "entityAssociationIds": [
+        "ent-a7929887d398",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "elec-003",
+      "graphTitle": "Primary election date",
+      "entityAssociationIds": [
+        "ent-0589a6692a55",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "elec-004",
+      "graphTitle": "General election date",
+      "entityAssociationIds": [
+        "ent-0589a6692a55",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "elec-005",
+      "graphTitle": "Pueblo swing-county status",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "elec-006",
+      "graphTitle": "Current SD3 candidate field (public listing)",
+      "entityAssociationIds": [
+        "ent-0589a6692a55",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "elec-007",
+      "graphTitle": "Current HD60 candidate field (public listing)",
+      "entityAssociationIds": [
+        "ent-0589a6692a55",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "elec-008",
+      "graphTitle": "Current HD62 candidate field (public listing)",
+      "entityAssociationIds": [
+        "ent-0589a6692a55",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "elec-009",
+      "graphTitle": "Ballot-access flexibility for unaffiliated/minor-party/write-in",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-0589a6692a55"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "elec-010",
+      "graphTitle": "Election-result baseline and turnout tracking",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-0589a6692a55"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "spec-001",
+      "graphTitle": "Pueblo West service-plan limits",
+      "entityAssociationIds": [
+        "ent-9528c16c953c",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "spec-002",
+      "graphTitle": "Pueblo West 14 strategic priorities execution",
+      "entityAssociationIds": [
+        "ent-9528c16c953c",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "spec-003",
+      "graphTitle": "Urban renewal governance transparency",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-4848bf0d8704"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "spec-004",
+      "graphTitle": "PACOG transportation planning coordination",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-1d07f2b59d68",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "spec-005",
+      "graphTitle": "Lower Arkansas Valley Water Conservancy coordination",
+      "entityAssociationIds": [
+        "ent-ff89f261999c",
+        "ent-9fc831fd79fc",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "spec-006",
+      "graphTitle": "Southeastern Colorado Water Conservancy coordination",
+      "entityAssociationIds": [
+        "ent-ff89f261999c",
+        "ent-9fc831fd79fc",
+        "ent-a7929887d398"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "spec-007",
+      "graphTitle": "Pueblo Housing Authority coordination visibility",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-ddc3e0c25c7f"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "spec-008",
+      "graphTitle": "Workforce board alignment",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-1d07f2b59d68",
+        "ent-7803e371263d"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "spec-009",
+      "graphTitle": "Continuum of Care governance visibility",
+      "entityAssociationIds": [
+        "ent-d95e5fcc8803",
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "spec-010",
+      "graphTitle": "PuebloPlex governance and infrastructure interface",
+      "entityAssociationIds": [
+        "ent-9fc831fd79fc",
+        "ent-1d07f2b59d68",
+        "ent-0a035c2b85b8"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fund-001",
+      "graphTitle": "IIJA alignment pipeline",
+      "entityAssociationIds": [
+        "ent-ddc3e0c25c7f",
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fund-002",
+      "graphTitle": "FTA transit funding continuity",
+      "entityAssociationIds": [
+        "ent-ddc3e0c25c7f",
+        "ent-1d07f2b59d68"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fund-003",
+      "graphTitle": "DOLA capacity-building opportunity",
+      "entityAssociationIds": [
+        "ent-a7929887d398",
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fund-004",
+      "graphTitle": "CDOT competitive grant pipeline",
+      "entityAssociationIds": [
+        "ent-a7929887d398",
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fund-005",
+      "graphTitle": "RAISE grant execution risk",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-ddc3e0c25c7f"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fund-006",
+      "graphTitle": "State budget deficit spillover",
+      "entityAssociationIds": [
+        "ent-a7929887d398",
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc",
+        "ent-7803e371263d"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fund-007",
+      "graphTitle": "Federal funding freeze / uncertainty exposure",
+      "entityAssociationIds": [
+        "ent-ddc3e0c25c7f",
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fund-008",
+      "graphTitle": "Medicaid reimbursement under-claiming",
+      "entityAssociationIds": [
+        "ent-a7929887d398",
+        "ent-7803e371263d",
+        "ent-d95e5fcc8803"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fund-009",
+      "graphTitle": "Grant match reserve readiness",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "fund-010",
+      "graphTitle": "Grant coordinator / grant ledger absence",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "case-fiber",
+      "graphTitle": "Fiber access: ownership, permits and service",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-d9cadcfbc036",
+        "ent-de5be4dffc84"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "case-wastewater",
+      "graphTitle": "Wastewater: incident, repair and public-health clearance",
+      "entityAssociationIds": [
+        "ent-1d07f2b59d68",
+        "ent-2bf079571fbe",
+        "ent-9ffdc1de3253",
+        "ent-c88e6d5dc564"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "case-rail",
+      "graphTitle": "Passenger rail: station plans, owners and service commitments",
+      "entityAssociationIds": [
+        "ent-dba71a488e74",
+        "ent-7ac3e6c8e321",
+        "ent-b9c587474e10",
+        "ent-1d07f2b59d68",
+        "ent-6a552f625383",
+        "ent-42c51f1cebb0",
+        "ent-adbbd55cc502",
+        "ent-427ad14a3aa3",
+        "ent-33459c0d6f2f",
+        "ent-7484c1a13085",
+        "ent-830c76705c0a",
+        "ent-bed5ff4a0d7f",
+        "ent-e3a406d99dc5"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "case-rail-fire",
+      "graphTitle": "Railroad-tie fire: evidence, material and jurisdiction questions",
+      "entityAssociationIds": [
+        "ent-715e2dc6a40e",
+        "ent-dcfdb2dffa7d",
+        "ent-2cf0b6261a11",
+        "ent-c88e6d5dc564"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "case-library-ai",
+      "graphTitle": "Library AI: contracts, privacy, costs and useful outcomes",
+      "entityAssociationIds": [
+        "ent-27b345efcd89",
+        "ent-fdde2f91d972",
+        "ent-8b7d1a3187ab",
+        "ent-744205e43529",
+        "ent-ce770667e5f9",
+        "ent-a940fb838463"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "case-library-finance",
+      "graphTitle": "Library finance: audited records, services and facility use",
+      "entityAssociationIds": [
+        "ent-27b345efcd89"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "case-school-governance",
+      "graphTitle": "School authorization and governance: roles and public records",
+      "entityAssociationIds": [
+        "ent-d5a3daa49988",
+        "ent-7a261779542d",
+        "ent-36144c80645b",
+        "ent-fb819af4fdb7"
+      ],
+      "state": "graph-only"
+    },
+    {
+      "historicalId": null,
+      "historicalTitle": null,
+      "historicalSourceMapped": null,
+      "historicalReviewed": null,
+      "graphId": "case-trail",
+      "graphTitle": "Connecting Communities: trail funding and delivery",
+      "entityAssociationIds": [
+        "ent-b9c587474e10",
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "state": "graph-only"
+    }
+  ]
+}
