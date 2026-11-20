@@ -15,11 +15,22 @@
   });
  }
  function pruneCoverage(root){
-  for(const row of root.querySelectorAll('.qp40-row')){
-   if(row.querySelector('.qp-coverage-note')?.textContent.trim()==='Not yet established')row.remove();
-  }
-  for(const group of root.querySelectorAll('.qp40-group,.qp40-additional')){
-   if(!group.querySelector('.qp40-row'))group.remove();
+  // Narrow scope: explicit research appendices only. Main stories and material limits remain intact.
+  for(const region of root.querySelectorAll('#coverage-40,#coverage,#perspectives')){
+   const seen=new Set();
+   for(const row of region.querySelectorAll('.qp40-row,details')){
+    if(row.tagName==='DETAILS'&&row.closest('.qp40-row'))continue;
+    const mark=row.querySelector(':scope > p > strong,.qp-coverage-note');
+    const state=normalize(mark?.textContent);
+    const answer=row.querySelector('.qp40-finding')?.textContent||row.querySelector(':scope > p:nth-of-type(2)')?.textContent||'';
+    const key=normalize(answer);
+    if(/^(not assessed|not established|not yet established|unassessed)( |$)/.test(state)){row.remove();continue;}
+    // Preserve source-bearing entries even when their wording repeats.
+    if(key&&seen.has(key)&&!row.querySelector('a[href]')){row.remove();continue;}if(key)seen.add(key);
+   }
+   for(const group of region.querySelectorAll('.qp40-group,.qp40-additional'))if(!group.querySelector('.qp40-row'))group.remove();
+   const heading=region.querySelector(':scope > h2,:scope > summary');
+   if(heading&&/^(?:(?:explore all )?(?:40|forty) (?:qified )?research perspectives|technical evidence appendix — 40 research perspectives)(?:\b|$)/i.test(heading.textContent.trim()))heading.textContent='Additional research findings';
   }
  }
  function project({question='',report=null,story=null,related=[],prior=[],coverage=[]}={}){
@@ -29,7 +40,7 @@
   const lessonLinks=links(prior);
   const rawQuilt=report?coverage.map(x=>({title:x.title,text:x.answer,state:x.classification,group:x.group})):story?(s.coverage40?.length?s.coverage40.map(x=>({title:x.title,text:x.answer,state:x.classification,group:'Research perspectives'})):s.chapters.map(c=>({title:c.heading,text:c.text,state:c.kind,group:'Story sections'}))):[];
   const quilt=substantive(rawQuilt,[...findings,...historical]);
-  return {schema:'qp-reader-quilt-v1',question,evidenceState:known?'DATED_PREPARED_FINDINGS':'NO_EXACT_PREPARED_ANSWER',answer:findings[0]||'No prepared, source-supported answer matches this exact question.',findings,legacyLearning:{historical,prior:lessonLinks,scope:'Dated findings and linked prior work in the available collection. The wider Legacy Learning archive is not certified reconciled.'},quilt,related:links(related),unknowns:clean(report?[r.counter,...(r.unknowns||[])]:story?s.unknowns:[]),twin:'twin.html',learn:'learn-pueblo.html'};
+  return {schema:'qp-reader-quilt-v1',question,evidenceState:known?'DATED_PREPARED_FINDINGS':'NO_EXACT_PREPARED_ANSWER',answer:findings[0]||'No prepared, source-supported answer matches this exact question.',findings,legacyLearning:{historical,prior:lessonLinks,scope:'Earlier dated research and related findings are shown where available.'},quilt,related:links(related),unknowns:clean(report?[r.counter,...(r.unknowns||[])]:story?s.unknowns:[]),twin:'twin.html',learn:'learn-pueblo.html'};
  }
  const node=(tag,text)=>{const e=document.createElement(tag);if(text!=null)e.textContent=String(text);return e;};
  const para=(p,t)=>{if(t)p.append(node('p',t));};
@@ -65,5 +76,5 @@
   if(finding){const section=finding.closest('section')||finding;section.after(block);}else{const first=main.querySelector('h1');const p=first?.nextElementSibling;if(p?.tagName==='P')p.after(block);else if(first)first.after(block);else main.append(block);}
  }
  const api={project,view,markdown,relatedLiving,safeLocal,priorFor,mountSubject,substantive,pruneCoverage};
-if(root){root.QPReaderQuilt=api;const script=typeof document!=='undefined'?document.currentScript:null;if(script?.dataset.qpSubject)mountSubject(script.dataset.qpSubject,new URL('.',script.src)).catch(()=>{});}if(typeof module!=='undefined')module.exports=api;
+if(root){root.QPReaderQuilt=api;const script=typeof document!=='undefined'?document.currentScript:null;if(script?.dataset.qpSubject){pruneCoverage(document);if(script.dataset.qpSubject!=='presentation-only')mountSubject(script.dataset.qpSubject,new URL('.',script.src)).catch(()=>{});}}if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:null);
