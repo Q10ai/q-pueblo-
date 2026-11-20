@@ -1,6 +1,6 @@
 {
   "schema": "qp-living-research-discovery-v1",
-  "asOf": "2026-11-19",
+  "asOf": "2026-11-20",
   "state": "review-candidate",
   "baseline": "4652fc25960c5faa62eb024a2511d70379300a3a",
   "priorityBase": "06a6dabe343770b04373f39852bc6e5c4c7cd05a",
@@ -100,7 +100,10 @@
       "sourcePR": 75,
       "sourceCommit": null,
       "keywords": "city council attorney legal advice audit lobbying budget",
-      "files": [],
+      "files": [
+        "council-attorney-reconciliation.js",
+        "council-attorney-reconciliation.csv"
+      ],
       "edition": "2026-11-19 reconciliation snapshot",
       "status": "existing-base-version",
       "review": "Source limitations and case-specific review dates remain in the original report."
@@ -717,6 +720,174 @@
       "edition": "2026-11-18 archival edition; later reports retained",
       "status": "recovered-review-candidate",
       "review": "Retain original source dates; newer evidence and assumptions may supersede individual claims after review."
+    },
+    {
+      "group": "fiscal",
+      "id": "desert-hawk",
+      "title": "Golf course debt, public assets and water costs",
+      "route": "desert-hawk-public-finances.html",
+      "sourcePR": 84,
+      "sourceCommit": "196066af88c937459cadadef43b46a369a4c88aa",
+      "keywords": "golf course debt water enterprise fund Pueblo West",
+      "files": [
+        "data/qp-desert-hawk-budget-reconciliation-2026-11-18.json",
+        "regional-transition-tools.js"
+      ],
+      "edition": "2026-11-18 research; November 20 incremental integration",
+      "status": "recovered-review-candidate",
+      "review": "Original dated evidence and limitations retained."
+    },
+    {
+      "group": "fiscal",
+      "id": "county-budget-explanation",
+      "title": "County budget explanation and revenue reconciliation",
+      "route": "county-budget-explanation-reconciled.html",
+      "sourcePR": 84,
+      "sourceCommit": "196066af88c937459cadadef43b46a369a4c88aa",
+      "keywords": "commissioners budget explanation capital debt grants marijuana revenue",
+      "files": [
+        "data/qp-desert-hawk-budget-reconciliation-2026-11-18.json",
+        "regional-transition-tools.js"
+      ],
+      "edition": "2026-11-18 research; November 20 incremental integration",
+      "status": "recovered-review-candidate",
+      "review": "Original dated evidence and limitations retained."
+    },
+    {
+      "group": "safety",
+      "id": "county-public-safety",
+      "title": "Sheriff staffing, detention and school safety",
+      "route": "county-public-safety-school-resource-officers.html",
+      "sourcePR": 84,
+      "sourceCommit": "196066af88c937459cadadef43b46a369a4c88aa",
+      "keywords": "sheriff deputies SRO school resource officers child safety",
+      "files": [
+        "data/qp-public-safety-child-2026-11-18.json"
+      ],
+      "edition": "2026-11-18 research; November 20 incremental integration",
+      "status": "recovered-review-candidate",
+      "review": "Original dated evidence and limitations retained."
+    },
+    {
+      "group": "governance",
+      "id": "transition-2027",
+      "title": "Pueblo 2027 transition and decision calendar",
+      "route": "pueblo-2027-transition.html",
+      "sourcePR": 85,
+      "sourceCommit": "d864c41cfe357636fb4f083b40ccb29f658a5ae9",
+      "keywords": "2027 calendar leadership elections budgets Medicaid household deadlines",
+      "files": [
+        "data/qp-2027-transition.json",
+        "pueblo-2027-transition.md",
+        "pueblo-2027-transition-calendar.csv"
+      ],
+      "edition": "2026-11-18 research; November 20 incremental integration",
+      "status": "recovered-review-candidate",
+      "review": "Original dated evidence and limitations retained."
+    },
+    {
+      "group": "governance",
+      "id": "county-financial-transparency",
+      "title": "County financial records and transparency",
+      "route": "county-financial-transparency.html",
+      "sourcePR": null,
+      "sourceCommit": null,
+      "keywords": "county salary ACFR financial records audit public access",
+      "files": [],
+      "edition": "2026-11-18 research; November 20 incremental integration",
+      "status": "existing-base-version",
+      "review": "Original dated evidence and limitations retained."
+    },
+    {
+      "group": "governance",
+      "id": "commissioner-compensation",
+      "title": "Commissioner compensation and county worker comparison",
+      "route": "county-commissioner-compensation.html",
+      "sourcePR": null,
+      "sourceCommit": null,
+      "keywords": "commissioners salaries pay compensation county workers",
+      "files": [],
+      "edition": "2026-11-18 research; November 20 incremental integration",
+      "status": "existing-base-version",
+      "review": "Original dated evidence and limitations retained."
+    },
+    {
+      "group": "fiscal",
+      "id": "county-audit",
+      "title": "County audit timing and accounting support costs",
+      "route": "county-audit-cost-and-delay.html",
+      "sourcePR": null,
+      "sourceCommit": null,
+      "keywords": "audit costs accounting engagement fieldwork",
+      "files": [],
+      "edition": "2026-11-18 research; November 20 incremental integration",
+      "status": "existing-base-version",
+      "review": "Original dated evidence and limitations retained."
+    },
+    {
+      "group": "fiscal",
+      "id": "county-financial-review",
+      "title": "County audited fund balances and proposed fiscal outlook",
+      "route": "county-public-financial-review.html",
+      "sourcePR": null,
+      "sourceCommit": null,
+      "keywords": "General Fund audited balance financial crisis financing",
+      "files": [],
+      "edition": "2026-11-18 research; November 20 incremental integration",
+      "status": "existing-base-version",
+      "review": "Original dated evidence and limitations retained."
+    },
+    {
+      "group": "fiscal",
+      "id": "county-pension",
+      "title": "County pension funding and workforce obligations",
+      "route": "county-pension-and-workforce.html",
+      "sourcePR": null,
+      "sourceCommit": null,
+      "keywords": "pension liability contributions actuarial workforce",
+      "files": [],
+      "edition": "2026-11-18 research; November 20 incremental integration",
+      "status": "existing-base-version",
+      "review": "Original dated evidence and limitations retained."
+    },
+    {
+      "group": "governance",
+      "id": "regional-fragmentation",
+      "title": "Regional reporting fragmentation and coordination",
+      "route": "regional-fragmentation.html",
+      "sourcePR": null,
+      "sourceCommit": null,
+      "keywords": "PACOG coordination public reporting data interoperability",
+      "files": [],
+      "edition": "2026-11-18 research; November 20 incremental integration",
+      "status": "existing-base-version",
+      "review": "Original dated evidence and limitations retained."
+    },
+    {
+      "group": "future",
+      "id": "compatible-packets",
+      "title": "AI-compatible public records and living packets",
+      "route": "regional-ai-compatible-packets.html",
+      "sourcePR": null,
+      "sourceCommit": null,
+      "keywords": "AI compatible public data provenance version records",
+      "files": [],
+      "edition": "2026-11-18 research; November 20 incremental integration",
+      "status": "existing-base-version",
+      "review": "Original dated evidence and limitations retained."
+    },
+    {
+      "group": "future",
+      "id": "regional-leap",
+      "title": "Regional transition and LEAP: examples and costs",
+      "route": "regional-transition-and-leap.html",
+      "sourcePR": null,
+      "sourceCommit": null,
+      "keywords": "LEAP transition pilots costs interoperability",
+      "files": [],
+      "edition": "2026-11-18 research; November 20 incremental integration",
+      "status": "existing-base-version",
+      "review": "Original dated evidence and limitations retained."
     }
   ]
 }
