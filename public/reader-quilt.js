@@ -51,5 +51,5 @@
   if(finding){const section=finding.closest('section')||finding;section.after(block);}else{const first=main.querySelector('h1');const p=first?.nextElementSibling;if(p?.tagName==='P')p.after(block);else if(first)first.after(block);else main.append(block);}
  }
  const api={project,view,markdown,relatedLiving,safeLocal,priorFor,mountSubject};
-if(root){root.QPReaderQuilt=api;const script=document.currentScript;if(script?.dataset.qpSubject)mountSubject(script.dataset.qpSubject,new URL('.',script.src)).catch(()=>{});}if(typeof module!=='undefined')module.exports=api;
+if(root){root.QPReaderQuilt=api;const script=typeof document!=='undefined'?document.currentScript:null;if(script?.dataset.qpSubject)mountSubject(script.dataset.qpSubject,new URL('.',script.src)).catch(()=>{});}if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:null);
