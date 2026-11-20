@@ -1206,6 +1206,59 @@
         ],
         "checked": "2026-11-20",
         "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "symphony",
+        "name": "Pueblo Symphony Association",
+        "domain": "Orchestral music",
+        "finding": "The nonprofit's FY ending June 2025 Form 990 extract reports $344,287 revenue, $235,852 expenses and $594,210 net assets, a $108,435 accounting difference.",
+        "meaning": "Orchestral programming and music education belong in the cultural funding comparison; a positive annual accounting difference does not establish available cash.",
+        "unknown": "Current program-level participation, restricted funds and public payments are not established.",
+        "sources": [
+          "https://projects.propublica.org/nonprofits/organizations/840580443"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "library-archives",
+        "name": "Pueblo City-County Library Digital Collections",
+        "domain": "Community archives and oral history",
+        "finding": "The library reports 1,625 hours of recorded oral histories and a digitization program initiated in 2014. Its collections include local schools, industries, ethnic heritage and regional life.",
+        "meaning": "This is major cultural research infrastructure connecting family histories and public memory to digital access; not all archival items are online.",
+        "unknown": "Collection-specific spending and remaining digitization volume are not established.",
+        "sources": [
+          "https://pcclddigitalcollection.contentdm.oclc.org/digital/collection/p16620coll14",
+          "https://pcclddigitalcollection.contentdm.oclc.org/digital/about"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "slovenian-heritage",
+        "name": "Slovenian heritage and Saint Mary's Slovenian Society",
+        "domain": "Immigration and industrial heritage",
+        "finding": "The Heritage Museum attributes its Slovenian exhibition to Saint Mary's Slovenian Society, connecting immigration with CF&I employment, businesses and music.",
+        "meaning": "The museum, Steelworks and neighborhood heritage preserve complementary accounts of Pueblo's industrial communities.",
+        "unknown": "The society's current operations, exhibition ownership and financial position remain unresolved.",
+        "sources": [
+          "https://pueblohistory.org/pueblo-heritage-museum/heritage-museum-exhibits/"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "italian-heritage",
+        "name": "Dante Alighieri Society of Pueblo",
+        "domain": "Italian language and cultural heritage",
+        "finding": "The society lists a 2026 Carnevale at Union Depot, a scholarship luncheon and meetings connected to the Leonardo museum's education room or online.",
+        "meaning": "The organization links Italian cultural traditions, education and the new museum; shared programming is not evidence of a shared legal entity or public subsidy.",
+        "unknown": "Current scholarships paid, program finances and occupancy arrangements are not established.",
+        "sources": [
+          "https://dantealighieripueblo.org/upcoming-events/"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
       }
     ]
   }
