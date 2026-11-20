@@ -127,9 +127,9 @@
   if(r.serviceResources)add('Practical service directory',r.serviceResources.map(x=>x.name+' | '+x.type+' | '+x.access+' | '+x.schedule+' | '+x.eligibility+' | '+x.url+' | Checked '+x.checked+' | Review due '+x.reviewDue));
   story(r).forEach(([h,p])=>add(h,p));add('Material uncertainties',[r.counter,...(r.unknowns||[])].filter(Boolean));
   add('Summary',[r.qification.assessment]);add('Useful next steps',r.actions);add('Related Q-Pueblo paths',usefulLinks(r).map(([t,u])=>t+' — '+u));
-  add('Supporting context and figures',r.keyFacts.map(f=>f.label+': '+f.value+' | '+f.stage+' | Source '+f.source));add('Technical appendix — 40 research perspectives',coverage40(r).map(x=>x.n+'. '+x.title+' — '+x.answer+' ['+x.classification+']'));
+  add('Supporting context and figures',r.keyFacts.map(f=>f.label+': '+f.value+' | '+f.stage+' | Source '+f.source));const priorText=new Set([r.summary,r.qification.assessment,...story(r).map(x=>x[1])].map(norm));const extra=coverage40(r).filter(x=>{const k=norm(x.answer);if(!k||x.classification==='Not assessed'||priorText.has(k)||[38,39].includes(x.n))return false;priorText.add(k);return true;});if(extra.length)add('Additional research findings',extra.map(x=>x.title+' — '+x.answer+' ['+x.classification+']'));
   if(r.slug==='csac-2027'){add('All 46 published requests (not awards)',csacEvidence.rows.map(([n,v,k])=>n+' | '+k+' | '+moneyFormat(v)));add('Supplemental source check: November 14',[csacEvidence.url,csacEvidence.statementUrl,csacEvidence.countyNoticeUrl]);}
-  add('Discoveries & insights',window.QPDiscovery?.markdown(r)||'No additional derived discovery has been admitted.');
+  const discoveries=window.QPDiscovery?.markdown(r);if(discoveries&&window.QPDiscovery?.derive(r)?.length)add('Discoveries & insights',discoveries);
   sections(r).filter(([h])=>!['Source-supported facts','Q assessment','Practical next steps'].includes(h)).forEach(([h,v])=>add(h,v));
   add('Claim ledger',r.claims.map(c=>c.id+' | '+c.claim+' | '+c.classification+' | Sources: '+c.sourceIds.join(', ')+' | '+c.boundary));
   add('Sources',r.sources.map(s=>s.id+' | '+s.title+' | '+s.url+' | '+s.asOf+' | '+s.locator+' | Checked '+s.checked+' | Role '+s.role));
