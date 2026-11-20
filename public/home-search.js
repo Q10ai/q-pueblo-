@@ -2,11 +2,11 @@
 (() => {
  const form=document.querySelector('[data-search-mode="local"]');if(!form)return;
  const $=id=>document.getElementById(id),input=$('home-q'),k=$('home-kind'),area=$('home-results'),status=$('home-result-status'),list=$('home-result-list');
- const pathSources=['data/qp-current-reports.json','data/q-pueblo-issue-index-2026-11-09.json','data/qp-three-hop-2026-11-13.json','data/qp-now-2026-11-13.json','data/q-pueblo-public-case-summaries.json','data/qp-governance-index-input-v1.json','data/qp-governance-profiles-2026-11-14.json','data/qp-museums-culture-2026-11-19.json','data/qp-priority-navigation-2026-11-19.json','data/qp-living-paper-depth-2026-11-19.json','data/qp-office-transition-2027.json'];
+ const pathSources=['data/qp-current-reports.json','data/q-pueblo-issue-index-2026-11-09.json','data/qp-three-hop-2026-11-13.json','data/qp-now-2026-11-13.json','data/q-pueblo-public-case-summaries.json','data/qp-governance-index-input-v1.json','data/qp-governance-profiles-2026-11-14.json','data/qp-museums-culture-2026-11-19.json','data/qp-priority-navigation-2026-11-19.json','data/qp-living-paper-depth-2026-11-19.json','data/qp-office-transition-2027.json','data/qp-living-research-discovery-2026-11-19.json'];
  const words=s=>String(s??'').toLowerCase().normalize('NFKD').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
  let loading=null;
  const row=(type,title,text,href,date='')=>({type,title:String(title),text:String(text||''),href,date:String(date||'')});
- async function load(){const results=await Promise.allSettled(pathSources.map(p=>fetch(p,{credentials:'same-origin'}).then(r=>{if(!r.ok)throw Error('Read failed');return r.json()})));const [a,b,c,d,e,f,g,culture,nav,living,transition]=results.map(x=>x.status==='fulfilled'?x.value:{});if(results.every(x=>x.status==='rejected'))throw Error('No data available');
+ async function load(){const results=await Promise.allSettled(pathSources.map(p=>fetch(p,{credentials:'same-origin'}).then(r=>{if(!r.ok)throw Error('Read failed');return r.json()})));const [a,b,c,d,e,f,g,culture,nav,living,transition,discovery]=results.map(x=>x.status==='fulfilled'?x.value:{});if(results.every(x=>x.status==='rejected'))throw Error('No data available');
  const out=[];
  out.push(row('Analysis','Project Falcon — civic decision timeline','project falcon land option manufacturing incentives water jobs lime road st charles county public decision timeline','project-falcon.html','2026-11-15'));
  for(const r of a.reports||[])out.push(row('Analysis',r.title,[r.summary,r.topic,...(r.aliases||[]),...(r.questions||[])].join(' '),'report-'+encodeURIComponent(r.slug)+'.html',r.sourceChecked));
@@ -23,6 +23,7 @@
  for(const group of nav.groups||[])out.push(row('Issue',group.title,group.reason,'priorities.html#'+encodeURIComponent(group.id),nav.asOf));
  for(const p of living.rows||[])out.push(row('Analysis',p.title.replaceAll('&amp;','&'),'Living research paper',p.route,living.checked));
  for(const t of transition.records||[])out.push(row('Organization',t.office+' — transition watch','Unofficial count leader: '+t.reportedLeader+'; certification and assumption not verified.','who-governs.html#transition-2027',transition.sourceDate));
+ for(const r of discovery.rows||[])if(r.status==='recovered-review-candidate'&&typeof r.route==='string'&&/^[a-z0-9/-]+\.html$/.test(r.route)&&!r.route.includes('..'))out.push(row('Analysis',r.title,r.keywords,r.route,discovery.asOf));
  for(const s of window.QPStoryEditions?.allStories||[])out.push(row('Analysis',s.title,[s.summary,...s.questions].join(' '),s.route,s.checked));
  for(const v of window.QPResource?.items||[])out.push(row('Resource',v.title,[v.publisher,v.description,v.format,...v.tags].join(' '),'resource-library.html#'+encodeURIComponent(v.id),v.checked));
  return {rows:out, failed:results.filter(x=>x.status==='rejected').length};
