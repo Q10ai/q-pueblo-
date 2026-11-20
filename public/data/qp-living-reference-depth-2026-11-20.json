@@ -1,0 +1,336 @@
+{
+  "schema": "qp-living-reference-depth-v2",
+  "asOf": "2026-11-20",
+  "basisCommit": "055371a2186f4fbf65c09510c29ee3089f1628e2",
+  "method": "Distinct literal HTTP(S) anchor destinations and heading counts on each public HTML report. Links include resources and navigation; counts do not measure truth, evidence quality, urgency, or completeness.",
+  "rows": [
+    {
+      "id": "museums",
+      "title": "Museums and culture — regional research",
+      "route": "museums-culture-research.html",
+      "group": "culture",
+      "distinctExternalLinks": 55,
+      "headingEntries": 62
+    },
+    {
+      "id": "energy-rates",
+      "title": "Electricity affordability and rate case",
+      "route": "energy-research-paper-2026.html",
+      "group": "utilities",
+      "distinctExternalLinks": 29,
+      "headingEntries": 22
+    },
+    {
+      "id": "community-signals-18",
+      "title": "Community signals and accountability — November 18 edition",
+      "route": "community-signals-2026-11-18.html",
+      "group": "governance",
+      "distinctExternalLinks": 21,
+      "headingEntries": 37
+    },
+    {
+      "id": "energy-governance",
+      "title": "Energy governance, compensation and mutual aid",
+      "route": "energy-governance-supplement-2026.html",
+      "group": "utilities",
+      "distinctExternalLinks": 20,
+      "headingEntries": 16
+    },
+    {
+      "id": "entity-observatory",
+      "title": "Regional Civic Entity Observatory",
+      "route": "civic-observatory.html",
+      "group": "governance",
+      "distinctExternalLinks": 19,
+      "headingEntries": 16
+    },
+    {
+      "id": "municipal-jail",
+      "title": "Municipal jail and community safety",
+      "route": "municipal-jail-community-safety.html",
+      "group": "safety",
+      "distinctExternalLinks": 17,
+      "headingEntries": 50
+    },
+    {
+      "id": "transparency",
+      "title": "Public information and transparency",
+      "route": "public-information-transparency.html",
+      "group": "governance",
+      "distinctExternalLinks": 16,
+      "headingEntries": 51
+    },
+    {
+      "id": "community-input",
+      "title": "Community input to civic action",
+      "route": "community-input-to-action.html",
+      "group": "governance",
+      "distinctExternalLinks": 14,
+      "headingEntries": 72
+    },
+    {
+      "id": "tract-367",
+      "title": "Pueblo West Tract 367 and grocery development",
+      "route": "pueblo-west-tract-367.html",
+      "group": "economy",
+      "distinctExternalLinks": 14,
+      "headingEntries": 11
+    },
+    {
+      "id": "school-safety",
+      "title": "School safety and resource officers",
+      "route": "nov18-school-safety.html",
+      "group": "education",
+      "distinctExternalLinks": 13,
+      "headingEntries": 44
+    },
+    {
+      "id": "economic-development",
+      "title": "Economic development accountability",
+      "route": "research/economic-development-20261119.html",
+      "group": "economy",
+      "distinctExternalLinks": 13,
+      "headingEntries": 16
+    },
+    {
+      "id": "preparedness",
+      "title": "Be Ready Pueblo — emergency preparedness",
+      "route": "be-ready-pueblo.html",
+      "group": "safety",
+      "distinctExternalLinks": 12,
+      "headingEntries": 59
+    },
+    {
+      "id": "ai",
+      "title": "Pueblo AI-era readiness",
+      "route": "pueblo-ai-readiness.html",
+      "group": "future",
+      "distinctExternalLinks": 12,
+      "headingEntries": 13
+    },
+    {
+      "id": "air-service",
+      "title": "Pueblo 2027 Essential Air Service",
+      "route": "pueblo-air-service-2027.html",
+      "group": "infrastructure",
+      "distinctExternalLinks": 12,
+      "headingEntries": 9
+    },
+    {
+      "id": "pura",
+      "title": "Pueblo Boulevard PURA repayment",
+      "route": "pueblo-boulevard-pura-repayment.html",
+      "group": "fiscal",
+      "distinctExternalLinks": 9,
+      "headingEntries": 47
+    },
+    {
+      "id": "sheriff-workforce",
+      "title": "Sheriff workforce and labor agreement",
+      "route": "nov18-sheriff-workforce.html",
+      "group": "safety",
+      "distinctExternalLinks": 9,
+      "headingEntries": 44
+    },
+    {
+      "id": "municipal-enforcement-20261118",
+      "title": "Municipal detention and repeat offending — November 18 edition",
+      "route": "nov18-municipal-enforcement.html",
+      "group": "safety",
+      "distinctExternalLinks": 8,
+      "headingEntries": 44
+    },
+    {
+      "id": "water-drought",
+      "title": "Water security through 2031",
+      "route": "resilience-water-drought-budget.html",
+      "group": "utilities",
+      "distinctExternalLinks": 8,
+      "headingEntries": 14
+    },
+    {
+      "id": "county-fiscal-20261118",
+      "title": "County fiscal recovery — November 18 edition",
+      "route": "nov18-county-fiscal-recovery.html",
+      "group": "fiscal",
+      "distinctExternalLinks": 7,
+      "headingEntries": 44
+    },
+    {
+      "id": "burn-scar",
+      "title": "Rye and Beulah burn-scar mitigation",
+      "route": "resilience-burn-scar-mitigation.html",
+      "group": "safety",
+      "distinctExternalLinks": 7,
+      "headingEntries": 13
+    },
+    {
+      "id": "county-fiscal",
+      "title": "County fiscal recovery and essential services",
+      "route": "county-fiscal-recovery-2026-11-19.html",
+      "group": "fiscal",
+      "distinctExternalLinks": 7,
+      "headingEntries": 6
+    },
+    {
+      "id": "mountain-park",
+      "title": "Pueblo Mountain Park recovery",
+      "route": "pueblo-mountain-park-recovery.html",
+      "group": "safety",
+      "distinctExternalLinks": 7,
+      "headingEntries": 4
+    },
+    {
+      "id": "north-elizabeth",
+      "title": "North Elizabeth Street renewal",
+      "route": "nov18-north-elizabeth-renewal.html",
+      "group": "infrastructure",
+      "distinctExternalLinks": 6,
+      "headingEntries": 44
+    },
+    {
+      "id": "tif-accountability",
+      "title": "Tax increment financing accountability",
+      "route": "nov18-tif-accountability.html",
+      "group": "economy",
+      "distinctExternalLinks": 6,
+      "headingEntries": 44
+    },
+    {
+      "id": "year-end-county",
+      "title": "County financial crisis — year-end edition",
+      "route": "year-end-01-county-financial-crisis.html",
+      "group": "fiscal",
+      "distinctExternalLinks": 6,
+      "headingEntries": 16
+    },
+    {
+      "id": "aspen-five-year",
+      "title": "Aspen Acres recovery through 2031",
+      "route": "resilience-aspen-five-year.html",
+      "group": "safety",
+      "distinctExternalLinks": 6,
+      "headingEntries": 15
+    },
+    {
+      "id": "water-users",
+      "title": "Water users and industry",
+      "route": "resilience-water-users-industry.html",
+      "group": "utilities",
+      "distinctExternalLinks": 6,
+      "headingEntries": 13
+    },
+    {
+      "id": "nonprofit",
+      "title": "Nonprofit funding and continuity",
+      "route": "nonprofit-funding-continuity.html",
+      "group": "fiscal",
+      "distinctExternalLinks": 5,
+      "headingEntries": 52
+    },
+    {
+      "id": "jail-lifecycle",
+      "title": "New county jail: capital and lifecycle costs",
+      "route": "nov18-jail-lifecycle.html",
+      "group": "safety",
+      "distinctExternalLinks": 5,
+      "headingEntries": 44
+    },
+    {
+      "id": "year-end-ai",
+      "title": "AI governance — year-end edition",
+      "route": "year-end-07-ai-governance.html",
+      "group": "future",
+      "distinctExternalLinks": 5,
+      "headingEntries": 17
+    },
+    {
+      "id": "year-end-leap",
+      "title": "LEAP 2027 — year-end edition",
+      "route": "year-end-08-leap-2027.html",
+      "group": "future",
+      "distinctExternalLinks": 5,
+      "headingEntries": 16
+    },
+    {
+      "id": "year-end-sheriff",
+      "title": "Sheriff staffing — year-end edition",
+      "route": "year-end-02-sheriff-staffing.html",
+      "group": "safety",
+      "distinctExternalLinks": 5,
+      "headingEntries": 16
+    },
+    {
+      "id": "regional-shock",
+      "title": "Regional SHOCK and continuity",
+      "route": "resilience-regional-shock.html",
+      "group": "safety",
+      "distinctExternalLinks": 5,
+      "headingEntries": 14
+    },
+    {
+      "id": "council-attorney",
+      "title": "Council attorney funding",
+      "route": "council-attorney-funding.html",
+      "group": "fiscal",
+      "distinctExternalLinks": 5,
+      "headingEntries": 11
+    },
+    {
+      "id": "civic-finance",
+      "title": "Civic Finance Observatory",
+      "route": "civic-finance-observatory.html",
+      "group": "fiscal",
+      "distinctExternalLinks": 4,
+      "headingEntries": 43
+    },
+    {
+      "id": "year-end-offenses",
+      "title": "Municipal offenses — year-end edition",
+      "route": "year-end-04-municipal-offenses.html",
+      "group": "safety",
+      "distinctExternalLinks": 4,
+      "headingEntries": 16
+    },
+    {
+      "id": "year-end-jail",
+      "title": "New jail operations — year-end edition",
+      "route": "year-end-03-new-jail.html",
+      "group": "safety",
+      "distinctExternalLinks": 4,
+      "headingEntries": 16
+    },
+    {
+      "id": "year-end-city-budget",
+      "title": "City 2027 budget — year-end edition",
+      "route": "year-end-06-city-budget.html",
+      "group": "fiscal",
+      "distinctExternalLinks": 4,
+      "headingEntries": 15
+    },
+    {
+      "id": "year-end-sheriff-transition",
+      "title": "Sheriff transition tracker — year-end edition",
+      "route": "year-end-05-sheriff-transition.html",
+      "group": "governance",
+      "distinctExternalLinks": 4,
+      "headingEntries": 15
+    },
+    {
+      "id": "spill-infrastructure",
+      "title": "Arkansas River spill infrastructure",
+      "route": "resilience-spill-infrastructure.html",
+      "group": "utilities",
+      "distinctExternalLinks": 4,
+      "headingEntries": 13
+    },
+    {
+      "id": "wastewater-health",
+      "title": "Wastewater and public health",
+      "route": "resilience-wastewater-health.html",
+      "group": "safety",
+      "distinctExternalLinks": 3,
+      "headingEntries": 14
+    }
+  ]
+}
