@@ -326,6 +326,125 @@
       "edition": "2026-11-19 research amendment",
       "status": "new-review-candidate",
       "review": "Checked 2026-11-19; review 2026-11-25; grant and receipts unresolved."
+    },
+    {
+      "group": "fiscal",
+      "id": "county-fiscal-20261118",
+      "title": "County fiscal recovery — November 18 edition",
+      "route": "nov18-county-fiscal-recovery.html",
+      "sourcePR": 85,
+      "sourceCommit": "d864c41cfe357636fb4f083b40ccb29f658a5ae9",
+      "keywords": "county budget",
+      "files": [
+        "nov18-county-fiscal-recovery.md",
+        "nov18-research.css",
+        "nov18-tools.js"
+      ],
+      "edition": "2026-11-18 dated archival edition; newer editions retained",
+      "status": "recovered-review-candidate",
+      "review": "Preserved original dated report, source limitations and recheck requirements."
+    },
+    {
+      "group": "safety",
+      "id": "jail-lifecycle",
+      "title": "New county jail: capital and lifecycle costs",
+      "route": "nov18-jail-lifecycle.html",
+      "sourcePR": 85,
+      "sourceCommit": "d864c41cfe357636fb4f083b40ccb29f658a5ae9",
+      "keywords": "jail debt construction capacity",
+      "files": [
+        "nov18-jail-lifecycle.md",
+        "nov18-research.css",
+        "nov18-tools.js"
+      ],
+      "edition": "2026-11-18 dated archival edition; newer editions retained",
+      "status": "recovered-review-candidate",
+      "review": "Preserved original dated report, source limitations and recheck requirements."
+    },
+    {
+      "group": "safety",
+      "id": "municipal-enforcement-20261118",
+      "title": "Municipal detention and repeat offending — November 18 edition",
+      "route": "nov18-municipal-enforcement.html",
+      "sourcePR": 85,
+      "sourceCommit": "d864c41cfe357636fb4f083b40ccb29f658a5ae9",
+      "keywords": "municipal enforcement diversion safety",
+      "files": [
+        "nov18-municipal-enforcement.md",
+        "nov18-research.css",
+        "nov18-tools.js"
+      ],
+      "edition": "2026-11-18 dated archival edition; newer editions retained",
+      "status": "recovered-review-candidate",
+      "review": "Preserved original dated report, source limitations and recheck requirements."
+    },
+    {
+      "group": "safety",
+      "id": "sheriff-workforce",
+      "title": "Sheriff workforce and labor agreement",
+      "route": "nov18-sheriff-workforce.html",
+      "sourcePR": 85,
+      "sourceCommit": "d864c41cfe357636fb4f083b40ccb29f658a5ae9",
+      "keywords": "sheriff deputies overtime staffing labor",
+      "files": [
+        "nov18-sheriff-workforce.md",
+        "nov18-research.css",
+        "nov18-tools.js"
+      ],
+      "edition": "2026-11-18 dated archival edition; newer editions retained",
+      "status": "recovered-review-candidate",
+      "review": "Preserved original dated report, source limitations and recheck requirements."
+    },
+    {
+      "group": "education",
+      "id": "school-safety",
+      "title": "School safety and resource officers",
+      "route": "nov18-school-safety.html",
+      "sourcePR": 85,
+      "sourceCommit": "d864c41cfe357636fb4f083b40ccb29f658a5ae9",
+      "keywords": "district school resource officer student safety",
+      "files": [
+        "nov18-school-safety.md",
+        "nov18-research.css",
+        "nov18-tools.js"
+      ],
+      "edition": "2026-11-18 dated archival edition; newer editions retained",
+      "status": "recovered-review-candidate",
+      "review": "Preserved original dated report, source limitations and recheck requirements."
+    },
+    {
+      "group": "economy",
+      "id": "tif-accountability",
+      "title": "Tax increment financing accountability",
+      "route": "nov18-tif-accountability.html",
+      "sourcePR": 85,
+      "sourceCommit": "d864c41cfe357636fb4f083b40ccb29f658a5ae9",
+      "keywords": "TIF tax increment finance urban renewal",
+      "files": [
+        "nov18-tif-accountability.md",
+        "nov18-research.css",
+        "nov18-tools.js"
+      ],
+      "edition": "2026-11-18 dated archival edition; newer editions retained",
+      "status": "recovered-review-candidate",
+      "review": "Preserved original dated report, source limitations and recheck requirements."
+    },
+    {
+      "group": "infrastructure",
+      "id": "north-elizabeth",
+      "title": "North Elizabeth Street renewal",
+      "route": "nov18-north-elizabeth-renewal.html",
+      "sourcePR": 85,
+      "sourceCommit": "d864c41cfe357636fb4f083b40ccb29f658a5ae9",
+      "keywords": "street corridor neighborhood revitalization",
+      "files": [
+        "nov18-north-elizabeth-renewal.md",
+        "nov18-research.css",
+        "nov18-tools.js"
+      ],
+      "edition": "2026-11-18 dated archival edition; newer editions retained",
+      "status": "recovered-review-candidate",
+      "review": "Preserved original dated report, source limitations and recheck requirements."
     }
   ]
 }
