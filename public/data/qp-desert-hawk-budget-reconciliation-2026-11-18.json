@@ -1,0 +1,1062 @@
+{
+  "schema": "qp-living-research-v1",
+  "edition": "2026-11-18",
+  "stories": [
+    {
+      "id": "qp-desert-hawk-finance-2026",
+      "title": "Desert Hawk Golf Course: what public records reveal about costs, debt and regional obligations",
+      "route": "desert-hawk-public-finances.html",
+      "checked": "2026-11-18",
+      "reviewBy": "2026-12-02",
+      "questions": [
+        "What are Desert Hawk Golf Course's financial details?",
+        "Is Desert Hawk Golf Course profitable?",
+        "Can Desert Hawk funds pay for sheriff deputies?"
+      ],
+      "keywords": [
+        "Desert Hawk",
+        "golf course finances",
+        "golf course debt",
+        "golf course water",
+        "golf course subsidy"
+      ],
+      "summary": "County 2024 audited statements show $238,560 operating income but a $1,667,877 negative net position. Pueblo West’s 2025 audit lists $7,613,306 in long-term notes plus a $457,000 land option. Public records are spread across two institutions; no freely transferable balance is established. [S1,S2]",
+      "sources": [
+        {
+          "id": "S1",
+          "title": "County 2024 ACFR — printed pages 9, 24–26, 29, 66, 133",
+          "url": "https://county.pueblo.org/sites/default/files/2025-11/Pueblo%20County%20Annual%20Comprehensive%20Financial%20Report%202024.pdf"
+        },
+        {
+          "id": "S2",
+          "title": "Pueblo West 2025 ACFR — printed page 26 (PDF page 55)",
+          "url": "https://www.pueblowestmetro.us/Archive.aspx?ADID=114"
+        },
+        {
+          "id": "S3",
+          "title": "Pueblo West May 2026 board summary — IGA and water explanation",
+          "url": "https://www.pueblowestmetro.us/Blog.aspx?IID=10"
+        },
+        {
+          "id": "S4",
+          "title": "County 2027 proposed budget presentation — slide 9",
+          "url": "https://county.pueblo.org/sites/default/files/2026-10/2027%20Proposed%20Budget%20SB.pdf"
+        },
+        {
+          "id": "S5",
+          "title": "County Desert Hawk board description and 2001 resolution",
+          "url": "https://county.pueblo.org/boards-and-commissions-department/accepting-applications-desert-hawk-golf-course-management-board"
+        },
+        {
+          "id": "S6",
+          "title": "Official board membership registry",
+          "url": "https://pueblocounty.granicus.com/boards/w/0b77065d49fd192c/boards/39696"
+        },
+        {
+          "id": "S7",
+          "title": "August 19, 2026 management board meeting — secondary summary, original minutes not verified",
+          "url": "https://www.zonewire.co/meetings/pueblo-county/8400"
+        },
+        {
+          "id": "S8",
+          "title": "Pueblo West annual reports and budgets",
+          "url": "https://www.pueblowestmetro.us/548/Budget-and-Annual-Financial-Reports"
+        }
+      ],
+      "chapters": [
+        {
+          "kind": "context",
+          "heading": "Public-source finding and scope",
+          "text": "A supplied comment asks why Desert Hawk financial details have not been released. Annual financial details are available, although split across agencies. The county’s latest audited golf statements reviewed here are for 2024; Pueblo West’s 2025 audit supplies a newer creditor-side view. A missing 2025 county report does not erase the published records. [S1,S2,S8]"
+        },
+        {
+          "kind": "context",
+          "heading": "Acquisition and purpose",
+          "text": "The county acquired the course in 2000, citing recreation and preservation of area property values. Resolution 01-134, May 8, 2001, established a cooperative management board. The original 2005 acquisition-refinancing COPs were fully retired in 2024. Other obligations survive. [S1,S5]"
+        },
+        {
+          "kind": "context",
+          "heading": "Management and responsibility",
+          "text": "The official board registry lists seven seats, shared county/district appointments and the three county commissioners among members. A county enterprise fund reports the golf activity. Board membership is not evidence of personal wrongdoing. [S1,S5,S6]"
+        },
+        {
+          "kind": "context",
+          "heading": "Operating results",
+          "text": "2024 customer/service revenue $1,531,007 less operating expenses $1,292,447 equals operating income $238,560 (15.58% margin). Income before transfers is $245,184; $45,322 transfers in raise net-position change to $290,506. Positive operating income does not establish financial independence or cash available to transfer. [S1 p25]"
+        },
+        {
+          "kind": "context",
+          "heading": "Operating expense ledger",
+          "text": "Contract fees $535,567; utilities and communications $323,820; supplies $193,504; depreciation $88,897; personnel $49,709; repairs/maintenance $42,995; insurance $30,038; professional services $27,522; equipment rent $395. These total $1,292,447; utilities includes more than water and contracts do not identify individual payees. [S1 p25]"
+        },
+        {
+          "kind": "context",
+          "heading": "Assets, liabilities and net position",
+          "text": "Assets $6,740,132 include cash $277,275, investments $898,089, net capital assets $5,076,762 and development land $457,000. Liabilities $8,396,323 plus deferred inflows $11,686 result in net position −$1,667,877; unrestricted net position −$6,699,928. Book values are not appraisals or sellable cash. [S1 p24]"
+        },
+        {
+          "kind": "context",
+          "heading": "Cash flow and retired financing",
+          "text": "Operating cash flow $340,307; transfer receipts $45,322; capital/financing cash outflow $730,750 (including $580,000 COP principal); investing net outflow $94,890. The net decline is $440,011, from $717,286 to $277,275 cash. The county narrative says General Fund transfers were not needed for COP repayment in 2024, yet the enterprise statements show a transfer in; origin and purpose require reconciliation, not an assumption of operating subsidy. [S1 pp9,26]"
+        },
+        {
+          "kind": "context",
+          "heading": "County obligation breakdown",
+          "text": "At end 2024 county reports $6,334,553 non-interest-bearing loan, $1,279,813 water advance, $457,000 purchase option; total $8,071,366. Other current obligations include $212,715 due to other funds; do not add a second copy of the district receivable to regional debt. [S1 pp24,66]"
+        },
+        {
+          "kind": "context",
+          "heading": "Newer district-side evidence",
+          "text": "2025 Pueblo West audit lists $6,078,478 historical operating/debt-service note, $255,000 acquisition/other note and $1,279,828 water note; total notes $7,613,306, plus $457,000 land option = $8,070,306. It reports notes not scheduled to be collected the subsequent year. County 2024 versus district 2025 totals differ by $1,060; dates and classifications differ, and no repayment can be inferred solely from that difference. [S2 p26]"
+        },
+        {
+          "kind": "context",
+          "heading": "Water cost and counterevidence",
+          "text": "The IGA treats water not covered by annual revenue before 2011 as noninterest-bearing loans and provides untreated water at no more than actual district cost. District’s May 2026 statement says the golf course has paid under agreement terms since 2011. Hence $8.07M is not an ordinary overdue water bill. Current consumption, rate, metering and repair costs require independent comparison. [S1,S2,S3]"
+        },
+        {
+          "kind": "context",
+          "heading": "Repayment and event horizon",
+          "text": "Repayments are limited to excess revenues over cash disbursements and $500,000 per year for all applicable loans. For the 2025 district notes alone (excluding land option), illustrative constant annual payments $100k, $250k, $500k imply 77, 31, 16 payment years, assuming no further advances or changes and all payment directed to those notes. These are bounds/scenarios, not an enforceable amortization schedule. [S1,S2]"
+        },
+        {
+          "kind": "context",
+          "heading": "2027 budget and decision",
+          "text": "County slides project 2026 ending budgetary balance $1.29M, 2027 revenue $1.82M, expense $1.55M and ending $1.56M, all millions. The 2026 inputs are unaudited. An August 19 secondary meeting summary reports equipment reductions and fee decisions; verify original minutes before relying on contract/fee changes. [S4,S7]"
+        },
+        {
+          "kind": "context",
+          "heading": "Water infrastructure and asset choices",
+          "text": "Investigate irrigation replacement, lifecycle cost, measured losses and water affordability. Secondary meeting summary reports infrastructure discussion, but no leak estimates or funding claims are treated as verified. Compare retain/reinvest, competitively contract, restructure IGA, lease, sell or change use only after appraisals, legal review, access and debt/land-option protections. [S7]"
+        },
+        {
+          "kind": "context",
+          "heading": "Public safety crossover",
+          "text": "Do not count the $1.56M projected golf budgetary balance, the $7.61M notes or the sale book value as freely available sheriff funds. Assess legal authority, obligations, deferred maintenance, debt repayment priorities, revenue loss and recurring net effect separately. Compare golf recreation and affordability, water affordability, emergency resources and child/family effects without assuming service tradeoffs are zero."
+        },
+        {
+          "kind": "context",
+          "heading": "Q processing, LL, EE and T2Y",
+          "text": "Retain fiscal date, entity, fund, accounting basis, item, counterparty, value and source page; match district assets to county liabilities only at common dates. Record public statements as attributed, do not replicate commentary identities. Reuse audited rows across budget, water, debt, regional twin and public asset packets; review contradictions rather than overwriting them."
+        },
+        {
+          "kind": "context",
+          "heading": "RX, implementation and future",
+          "text": "Build an asset/IGA packet with ownership, financing, repayment, transfers, water volumes and lifecycle maintenance; publish costed alternatives and annual totals. Trigger review at 2027 budget adoption, next County ACFR and any IGA amendment, then year 3 and 5 repayment/capital comparisons. Human decision authority remains with participating governments. No automated financial action."
+        }
+      ],
+      "unknowns": [
+        "County 2025/2026 audited enterprise results, transfer counterparties and final 2027 appropriation not verified.",
+        "Current IGA amendments, repayment schedule, actual water usage, deferred maintenance, appraisals and contractor payments not reconciled.",
+        "Pueblo West 2025 audit text retrieved; page screenshot failed. County key pages and budget slide were visually verified.",
+        "No finding of illegal subsidy or legally transferable funds."
+      ],
+      "packet": {
+        "schemaVersion": "1.0",
+        "lifecycle": "active",
+        "publicationStatus": "partial",
+        "evidenceStatus": "Dated public-source analysis and supplied screenshot observations",
+        "reviewDue": "2026-12-02",
+        "related": [
+          "qp-county-fiscal-review-2026",
+          "qp-regional-fragmentation-2026",
+          "qp-county-public-safety-child-2026"
+        ],
+        "build": "Cross-entity obligation register, public asset lifecycle packet, conditional repayment model, regional cost comparison and audit-ready data.",
+        "privacy": "No private commenter identities or screenshots republished.",
+        "coverage": "40 substantive perspectives; active and incomplete evidence lifecycle"
+      },
+      "coverage40": [
+        {
+          "n": 1,
+          "title": "Public question",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "One supplied comment asks why the county-owned course's financial details have not been released. It is a research lead, not proof of concealment. Annual statements are already available."
+        },
+        {
+          "n": 2,
+          "title": "Ownership history",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S1"
+          ],
+          "answer": "The county acquired Desert Hawk in 2000. Public recreation and property-value preservation are described purposes, not quantified benefits."
+        },
+        {
+          "n": 3,
+          "title": "Intergovernmental agreement",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S5"
+          ],
+          "answer": "Resolution 01-134 of May 8, 2001 established a joint management arrangement. Review current amendments before relying on original terms."
+        },
+        {
+          "n": 4,
+          "title": "Management board",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S6"
+          ],
+          "answer": "The registry lists a seven-seat board with county and district appointments. Track public votes and terms; membership alone does not establish responsibility for an individual transaction."
+        },
+        {
+          "n": 5,
+          "title": "Reporting architecture",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S1",
+            "S2",
+            "S8"
+          ],
+          "answer": "County reports an enterprise fund and Pueblo West reports creditor-side balances. Both are needed; do not add overlapping obligations."
+        },
+        {
+          "n": 6,
+          "title": "2024 operating revenue",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S1"
+          ],
+          "answer": "$1,531,007, classified as operating revenue, not unrestricted General Fund resources."
+        },
+        {
+          "n": 7,
+          "title": "2024 operating expenditure",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S1"
+          ],
+          "answer": "$1,292,447, including depreciation. Accrual expenses differ from cash disbursements."
+        },
+        {
+          "n": 8,
+          "title": "Operating margin",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [
+            "S1"
+          ],
+          "answer": "$238,560 operating income divided by $1,531,007 revenue equals about 15.58%. One positive year does not establish long-run self-sufficiency."
+        },
+        {
+          "n": 9,
+          "title": "Contract expense",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S1"
+          ],
+          "answer": "$535,567 contract fees in 2024, around 41.4% of operating expenses. Vendor identities and scope require the contract register."
+        },
+        {
+          "n": 10,
+          "title": "Utilities and supplies",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S1"
+          ],
+          "answer": "Utilities/communications $323,820 and supplies $193,504. Utility total is not a standalone water bill."
+        },
+        {
+          "n": 11,
+          "title": "Other operating expenses",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S1"
+          ],
+          "answer": "Depreciation $88,897; personnel $49,709; repairs $42,995; insurance $30,038; professional services $27,522; equipment rental $395."
+        },
+        {
+          "n": 12,
+          "title": "Income and transfers",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S1"
+          ],
+          "answer": "$245,184 income before transfers plus $45,322 transfers in equals $290,506 change in net position. Transfer source and purpose remain unresolved."
+        },
+        {
+          "n": 13,
+          "title": "Assets",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S1"
+          ],
+          "answer": "2024 total assets $6,740,132, including $5,076,762 net capital assets and $457,000 development land. Book value is not a market appraisal."
+        },
+        {
+          "n": 14,
+          "title": "Liabilities",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S1"
+          ],
+          "answer": "2024 total liabilities $8,396,323; deferred inflows $11,686. Separate borrowing from trade and interfund obligations."
+        },
+        {
+          "n": 15,
+          "title": "Net position",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [
+            "S1"
+          ],
+          "answer": "$6,740,132 minus $8,396,323 minus $11,686 equals negative $1,667,877. Negative net position is not proof of imminent cash insolvency."
+        },
+        {
+          "n": 16,
+          "title": "Unrestricted net position",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S1"
+          ],
+          "answer": "Negative $6,699,928 in 2024. This accounting measure is not a transferable cash balance."
+        },
+        {
+          "n": 17,
+          "title": "Cash and investments",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S1"
+          ],
+          "answer": "2024 ending cash $277,275 and investments $898,089. Liquidity must be assessed against obligations and legal restrictions."
+        },
+        {
+          "n": 18,
+          "title": "Cash-flow bridge",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [
+            "S1"
+          ],
+          "answer": "$340,307 operating cash plus $45,322 transfers less $730,750 capital/financing outflow and $94,890 investing outflow equals a $440,011 cash decrease."
+        },
+        {
+          "n": 19,
+          "title": "Acquisition financing retired",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S1"
+          ],
+          "answer": "Original acquisition-refinancing COPs were retired in 2024; capital/financing cash flows include $580,000 principal. This does not repay all district advances."
+        },
+        {
+          "n": 20,
+          "title": "Historical district advances",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S1"
+          ],
+          "answer": "County 2024 loan $6,334,553, water advance $1,279,813 and option $457,000 total $8,071,366."
+        },
+        {
+          "n": 21,
+          "title": "Newer district audit",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S2"
+          ],
+          "answer": "2025 district notes: $6,078,478, $255,000 and $1,279,828, totaling $7,613,306, plus $457,000 option. The report says notes are not scheduled for collection in the subsequent year."
+        },
+        {
+          "n": 22,
+          "title": "Matching both sides",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [
+            "S1",
+            "S2"
+          ],
+          "answer": "County 2024 total and district 2025 total differ by $1,060. Different dates and classifications prevent identifying a payment from that difference alone."
+        },
+        {
+          "n": 23,
+          "title": "Water agreement",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "answer": "Historical water costs were structured as noninterest-bearing advances. District says agreement terms have been followed since 2011. Do not call all advances delinquent water bills."
+        },
+        {
+          "n": 24,
+          "title": "Repayment restriction",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S1",
+            "S2"
+          ],
+          "answer": "Repayment depends on excess receipts over cash disbursements and an annual aggregate $500,000 maximum under reported terms. Verify amendments."
+        },
+        {
+          "n": 25,
+          "title": "Repayment scenarios",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [
+            "S2"
+          ],
+          "answer": "$7,613,306 notes alone require 77 years at $100,000, 31 at $250,000 or 16 at $500,000, with no new advances and unchanged terms. No payment is forecast."
+        },
+        {
+          "n": 26,
+          "title": "Projected 2027 budget",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S4"
+          ],
+          "answer": "2026 ending budgetary balance $1.29M, 2027 revenue $1.82M, expenditure $1.55M, ending $1.56M, rounded. These are not audited actuals."
+        },
+        {
+          "n": 27,
+          "title": "Current financial position",
+          "classification": "Not established",
+          "sourceIds": [],
+          "answer": "County 2025 audited enterprise results and 2026 closed accounts are not located in this investigation. District 2025 figures cannot substitute for them."
+        },
+        {
+          "n": 28,
+          "title": "Transfer authority",
+          "classification": "Not established",
+          "sourceIds": [],
+          "answer": "No legal determination of cash transferable to public safety. Review enterprise restrictions, agreement, outstanding commitments and reserve requirements."
+        },
+        {
+          "n": 29,
+          "title": "Capital condition",
+          "classification": "Not established",
+          "sourceIds": [],
+          "answer": "Current irrigation condition, replacement estimates, deferred maintenance, asset appraisals and independent water-loss measurements remain unverified."
+        },
+        {
+          "n": 30,
+          "title": "Water efficiency",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [
+            "S3",
+            "S7"
+          ],
+          "answer": "Compare annual measured water volumes, actual supply cost, crop/turf demand and irrigation maintenance. An efficiency project needs measured baseline, bids, lifetime savings and environmental review."
+        },
+        {
+          "n": 31,
+          "title": "Retain and improve",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Model user fees, realistic demand, maintenance capital and cash available after repayment. Preserve access and avoid assuming rate increases cause no loss of users."
+        },
+        {
+          "n": 32,
+          "title": "Lease or contract",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Compare public procurement, performance standards, revenue sharing, insurance, water obligations and termination rights against the public operation baseline."
+        },
+        {
+          "n": 33,
+          "title": "Sale or conversion",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Require independent appraisal, option and deed review, land-use approval, net sale proceeds after obligations and recurring revenue/service consequences; no sale price is asserted."
+        },
+        {
+          "n": 34,
+          "title": "Taxpayer and recreation effects",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Compare distribution of costs and recreational access across county and district populations; account for non-golf users and alternative services."
+        },
+        {
+          "n": 35,
+          "title": "Child and family impact",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Assess youth recreation affordability and household cost burdens alongside emergency-service access. No causal or dollar child impact has been measured."
+        },
+        {
+          "n": 36,
+          "title": "Regional financial crossover",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [
+            "S1",
+            "S2",
+            "S4"
+          ],
+          "answer": "Match reciprocal debts on the same reporting date. Do not count notes as new cash or treat enterprise income as a verified alternative to Sheriff reductions."
+        },
+        {
+          "n": 37,
+          "title": "LL and EE",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Reuse the original audited tables, reconcile counterparties once, record discrepancies and measure preparation time and costs before claiming efficiency."
+        },
+        {
+          "n": 38,
+          "title": "T2Y, twin and shadow",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Version the public asset, agreement, financial snapshots and related water/finance entities; keep factual states separate from scenarios. No live asset control."
+        },
+        {
+          "n": 39,
+          "title": "RX and governance gate",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Publish comparable retain, restructure and exit options, independent review, documented votes, affordability and a rollback or contingency plan; human authorities decide."
+        },
+        {
+          "n": 40,
+          "title": "Event horizons and Qified synthesis",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Recheck final 2027 budget, next county audit and agreement changes, then year 3 and 5 costs and repayment. Publish accessible data now despite incomplete records; no certified audit or finding of misconduct."
+        }
+      ]
+    },
+    {
+      "id": "qp-county-budget-explanation-2026",
+      "title": "Pueblo County’s budget realities: reconstructing the commissioners’ public explanation",
+      "route": "county-budget-explanation-reconciled.html",
+      "checked": "2026-11-18",
+      "reviewBy": "2026-12-02",
+      "questions": [
+        "What is the commissioners' explanation for the Pueblo County budget crisis?",
+        "Do Pueblo County's 2027 budget graphics reconcile?",
+        "How much did county detention expenses increase?"
+      ],
+      "keywords": [
+        "budget realities",
+        "Paula McPheeters budget",
+        "Robert Choi budget",
+        "capital spending",
+        "marijuana revenue decline",
+        "cost of maintaining services"
+      ],
+      "summary": "Commissioner-shared graphics describe capital commitments, declining marijuana revenue and rising service costs. Recalculation shows $19.068M lower proposed revenue/sources versus the 2026 budget, with lower grants and zero proposed financing accounting for $17.928M of that net change. A proposed $1.265M surplus is a narrow margin, not a final result.",
+      "sources": [
+        {
+          "id": "S1",
+          "title": "County official budget portal — preliminary book and presentations",
+          "url": "https://county.pueblo.org/budget-and-finance-department/2027-budget"
+        },
+        {
+          "id": "S2",
+          "title": "County October 2026 proposed budget presentation, slide 9 and other slides",
+          "url": "https://county.pueblo.org/sites/default/files/2026-10/2027%20Proposed%20Budget%20SB.pdf"
+        },
+        {
+          "id": "S3",
+          "title": "County 2024 ACFR — governmental fund and debt statements",
+          "url": "https://county.pueblo.org/sites/default/files/2025-11/Pueblo%20County%20Annual%20Comprehensive%20Financial%20Report%202024.pdf"
+        },
+        {
+          "id": "S4",
+          "title": "County November 2026 progress and policy report",
+          "url": "https://www.pueblocounty.gov/board-county-commissioners-office/what-we-are-working"
+        },
+        {
+          "id": "S5",
+          "title": "Pueblo Ledger November 14 — secondary description of preliminary budget",
+          "url": "https://puebloledger.com/government-watch/pueblo-2027-budgets-city-county/"
+        }
+      ],
+      "chapters": [
+        {
+          "kind": "context",
+          "heading": "Evidence intake",
+          "text": "Nine supplied screenshots include a resident question and overlapping captures of a post attributed to Commissioner Paula McPheeters crediting CAO Robert Choi’s 2027 preliminary budget. Deduplicate repeated graphics; do not add overlapping engagement numbers. The post showed 16 reactions, 4 comments and 15 shares in one capture, not a representative survey. The original post and full preliminary PDF could not be independently retrieved. Figures attributed to screenshots are labeled separately from audited or verified documents."
+        },
+        {
+          "kind": "context",
+          "heading": "Administration's explanation",
+          "text": "The post argues the county faces structural problems: historical capital projects, debt service, sustained marijuana receipts decline and higher recurring costs. These can all be real pressures; historical authorization and current budget management are different responsibilities. The original jail refinancing claim concerns initial financing, not every later amendment or payment. [S1–S5 and supplied graphics]"
+        },
+        {
+          "kind": "context",
+          "heading": "Capital and debt",
+          "text": "Supplied capital graphic: governmental capital outlays were $10.9M in 2021, $21.2M in 2022, $36.8M in 2023, $118.85M in 2024; debt payments in 2024 $19.83M. 2024 capital outlays are about 10.9 times 2021. Capital spending, financing principal and current operating expense are distinct. The graphic identifies jail/roadway, Workday and Beulah water as commitments; project-specific award, funding source, contract changes and actuals are not established by totals alone."
+        },
+        {
+          "kind": "context",
+          "heading": "Marijuana revenue",
+          "text": "Supplied graph: 2019 $6.0M, 2020 $13.7M, 2021 $14.3M, 2022 $9.3M, 2023 $7.9M, 2024 $6.6M, 2025 $5.39M (rounded graph $5.4M). It reports a 62.3% peak-to-2025 fall, $8.90M lower revenue and rate change from 3.5% to 6% in 2020. Four consecutive lower receipts following 2021 are a planning warning; no conclusion about individual knowledge or intent follows. These are combined tax streams, not all unrestricted General Fund revenue."
+        },
+        {
+          "kind": "context",
+          "heading": "Exact revenue table",
+          "text": "Supplied graphic, dollars, order 2025 recorded / 2026 budget / 2027 proposed: property 55,719,758 / 61,129,747 / 59,232,895; sales/use 31,114,375 / 32,352,500 / 32,370,500; ownership 4,815,614 / 5,000,000 / 5,000,000; fees/licenses/fines 9,972,510 / 11,890,980 / 12,570,736; grants 7,330,548 / 18,306,931 / 5,879,043; investments 2,260,187 / 1,910,000 / 2,310,000; transfers 0 / 1,465,000 / 1,000,000; other 2,061,413 / 4,179,427 / 4,303,427; financing 3,686,000 / 5,500,000 / 0."
+        },
+        {
+          "kind": "context",
+          "heading": "Revenue reconciliation",
+          "text": "Displayed totals $116,960,406 / $141,734,585 / $122,666,601. Row sum for 2025 is $116,960,405, a $1 difference; 2026 and 2027 reconcile exactly. 2027 is $19,067,984 below 2026 budget; grant decrease $12,427,888 plus financing decrease $5,500,000 = $17,927,888 (94.02% of net decrease). Property decreases $1,896,852; sales rises $18,000. These are proposal-versus-budget changes not actual losses or proof grant funds could pay for eligible personnel."
+        },
+        {
+          "kind": "context",
+          "heading": "Recurring revenue nuance",
+          "text": "2025 recorded total includes $3.686M financing, whereas 2027 proposal has zero financing. Proposed total is $5,706,195 greater than the displayed 2025 recorded total; excluding financing, difference $9,392,195. Grants/transfers may still be temporary or restricted, so these comparisons do not establish a structural operating surplus. Do not compare preliminary 2025 recorded numbers as audited actuals."
+        },
+        {
+          "kind": "context",
+          "heading": "Six cost drivers",
+          "text": "Supplied graphic, 2023 actual / 2025 recorded: property/liability insurance $967,345 / $1,658,262; detention medical $4,656,465 / $5,894,700; health claims/admin $13,404,845 / $15,879,224; utilities $2,410,939 / $2,674,738; repairs/maintenance contracts $395,586 / $1,017,949; detention overtime $1,779,099 / $2,445,239. Total $23,614,279 to $29,570,112 = $5,955,833 increase (25.22%)."
+        },
+        {
+          "kind": "context",
+          "heading": "Detention crossover",
+          "text": "Medical increase $1,238,235 (26.59%) plus overtime increase $666,140 (37.44%) = $1,904,375, or about 32% of the selected cost rise. These are gross cost areas, not the whole sheriff budget or verified causal effects of the new jail. Health claims/admin is shown before reimbursements. Connect staffing, custody demand, city–county agreements, contracts and health coverage; do not count these increases twice."
+        },
+        {
+          "kind": "context",
+          "heading": "Budget exact arithmetic",
+          "text": "Supplied graphic lists revenue/sources $122,666,601; base expenditures $131,213,309; reported base shortfall $8,546,709; reductions $9,811,472; proposed expenditures $121,401,837; reported surplus $1,264,763. Recalculation gives shortfall $8,546,708, expenses $121,401,837, surplus $1,264,764. Two one-dollar differences likely underlying precision/rounding; not evidence of lost money. Reported surplus is 1.031% of proposed revenue."
+        },
+        {
+          "kind": "context",
+          "heading": "Margin stress test",
+          "text": "Holding other items constant, 1% revenue loss $1,226,666 leaves about $38,097 of reported surplus. 90% attainment of the $9,811,472 reduction gives $283,616. Budget-balance headroom is not evidence that reserve targets or services are adequately funded. Do not combine annual shock with the separately projected opening balance."
+        },
+        {
+          "kind": "context",
+          "heading": "Opening balance and fiscal policy",
+          "text": "October slide 9 expressly says the opening balance incorporates $7M anticipated asset sale and $15M anticipated COP. No financing in the 2027 annual revenue table does not contradict possible 2026 financing. Separate years and verify transactions. County progress report says policy sets 10% minimum and 16.67% target; subsequent schedule and exact eligible reserve measure need confirmation. [S2,S4]"
+        },
+        {
+          "kind": "context",
+          "heading": "Inherited versus current governance",
+          "text": "Assign each project original authorization, later amendments, new financing, approved budget, expenditure, forecast and operating handoff to independently dated resolutions. The 2024 audit documents lease obligations but alone does not establish a complete responsibility matrix. Do not accuse a named official or exonerate all current decisions solely from the graphic. [S3]"
+        },
+        {
+          "kind": "context",
+          "heading": "Options and child impact",
+          "text": "Compare recurring-cost controls, contract renewal, job vacancy treatment, debt and capital plans, restricted grant continuity and public safety service assessment. Evaluate prevention, detention healthcare, staffing, child reporting/education services and families receiving grants. No confirmed equivalent savings or causal harms claimed."
+        },
+        {
+          "kind": "context",
+          "heading": "Q processing, LL, EE, T2Y and shadow",
+          "text": "Record screenshot-derived rows as source observations, not final audit figures; retain original display totals and recalculated sums. Version the November communications, match the original budget and audit when available, never overwrite historical figures silently. Reuse data across pension, public safety, jail, Desert Hawk and regional packets; separate staff time saved from cash savings."
+        },
+        {
+          "kind": "context",
+          "heading": "RX, procurement and leap",
+          "text": "Require project authorization packets with 10–30 year debt, operations, staffing, maintenance, revenue sensitivities, contract commitments and exit plan; review Workday interoperability before new technology spending. A full-cost capital plan and monthly exception dashboard can help prevent reconstruction. Test read-only on historical figures; human authorization required."
+        },
+        {
+          "kind": "context",
+          "heading": "Event horizons",
+          "text": "Before final 2027 budget adoption, update figures and alternatives; publish actual-vs-budget plus debt and grant reconciliation monthly in 2027. Compare reserve progress, recurring income and service outcomes through 2029 and 2031. No claim these practices are fully implemented. [S4]"
+        }
+      ],
+      "unknowns": [
+        "Original post and complete preliminary budget book inaccessible; screenshot figures are attributed, not independently audited.",
+        "2025 audited actuals, 2026 actual results, project-by-project costs and grant-specific restrictions not reconciled.",
+        "Actual service reductions, final budget and financing transactions unverified."
+      ],
+      "packet": {
+        "schemaVersion": "1.0",
+        "lifecycle": "active",
+        "publicationStatus": "partial",
+        "evidenceStatus": "Dated public-source analysis and supplied screenshot observations",
+        "reviewDue": "2026-12-02",
+        "related": [
+          "qp-county-fiscal-review-2026",
+          "qp-county-public-safety-child-2026",
+          "qp-desert-hawk-finance-2026",
+          "qp-county-audit-cost-2026",
+          "qp-regional-packets-2026"
+        ],
+        "build": "Exact-dollar screenshot transcription, revenue and cost bridges, operating margin stress checks, capital authorization ledger and public budget-packet specification.",
+        "privacy": "No private commenter identities or screenshots republished.",
+        "coverage": "40 substantive perspectives; active and incomplete evidence lifecycle"
+      },
+      "coverage40": [
+        {
+          "n": 1,
+          "title": "Evidence identity",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "Nine supplied screenshots show overlapping commissioner-post graphics and a resident's golf-course question. Deduplicate repeated captures and keep their original displayed amounts."
+        },
+        {
+          "n": 2,
+          "title": "Attributed explanation",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "The post attributed to Commissioner McPheeters credits CAO Robert Choi's preliminary budget for structural challenges. The original post and full underlying book were not independently retrieved."
+        },
+        {
+          "n": 3,
+          "title": "Capital outlay baseline",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "Governmental capital outlay: $10.9M 2021, $21.2M 2022, $36.8M 2023 and $118.85M 2024. Figures are displayed in the supplied graphic."
+        },
+        {
+          "n": 4,
+          "title": "Capital spending scale",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "$118.85M / $10.9M ≈ 10.9. A large capital-outlay year does not mean equivalent recurring operating costs or freely available cash."
+        },
+        {
+          "n": 5,
+          "title": "Debt payments",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "The graphic reports $19.83M governmental-fund debt payments in 2024. Debt service is not outstanding principal; reconcile original debt schedules."
+        },
+        {
+          "n": 6,
+          "title": "Capital commitments",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "Graphic cites jail and related roadway, Workday and Beulah water infrastructure. Project-level awards, amendments, draws and lifecycle costs cannot be separated from the graphic alone."
+        },
+        {
+          "n": 7,
+          "title": "Original jail financing",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "Graphic attributes original financing to an earlier board. Verify authorization separately from later amendments, payments, forecasts and operational decisions."
+        },
+        {
+          "n": 8,
+          "title": "Cannabis tax receipts",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "2019 $6.0M, 2020 $13.7M, 2021 $14.3M, 2022 $9.3M, 2023 $7.9M, 2024 $6.6M, 2025 $5.39M per text. Graph rounds 2025 to $5.4M."
+        },
+        {
+          "n": 9,
+          "title": "Revenue warning signal",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Four consecutive annual decreases after the 2021 peak were visible in the graph. It reports 62.3% decline and $8.90M loss versus peak, not a causal proof about individual officials."
+        },
+        {
+          "n": 10,
+          "title": "Tax rate change",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "Graphic reports local rate increasing from 3.5% to 6% in 2020. Receipts combine streams; do not assume all can pay unrestricted operations."
+        },
+        {
+          "n": 11,
+          "title": "Reporting stages",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "2025 recorded, 2026 budget and 2027 proposed are different stages. The 2025 amounts are not an audited final ledger and the 2027 amounts are not enacted."
+        },
+        {
+          "n": 12,
+          "title": "Property and sales taxes",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "2026 budget to 2027 proposed property tax $61,129,747 to $59,232,895; sales/use $32,352,500 to $32,370,500. Property decreases $1,896,852; sales increases $18,000."
+        },
+        {
+          "n": 13,
+          "title": "Ownership taxes and fees",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "Specific ownership $5M in both years. Fees/licenses/fines $11,890,980 to $12,570,736, increase $679,756. Fee burden deserves assessment."
+        },
+        {
+          "n": 14,
+          "title": "Grant funding",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "$18,306,931 budgeted in 2026 versus $5,879,043 proposed in 2027, difference $12,427,888. Grant-specific timing, restrictions and associated expenditures remain unknown."
+        },
+        {
+          "n": 15,
+          "title": "Financing proceeds",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "2026 budget $5.5M, 2027 proposed zero; 2025 recorded $3.686M. Financing is not recurring earned revenue, and the screenshot cautions proceeds are not reconciled as final."
+        },
+        {
+          "n": 16,
+          "title": "Other revenue sources",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "Investments $1.91M to $2.31M, transfers $1.465M to $1M, other revenue $4,179,427 to $4,303,427. These are proposal-to-budget amounts."
+        },
+        {
+          "n": 17,
+          "title": "Row reconciliation",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "2025 rows sum to $116,960,405 against displayed $116,960,406. 2026 $141,734,585 and 2027 $122,666,601 reconcile. Keep $1 discrepancy in the record, not a claim of missing money."
+        },
+        {
+          "n": 18,
+          "title": "Revenue bridge",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Net 2026 budget-to-2027 proposal decrease $19,067,984; grants plus financing decreases $17,927,888 (about 94.02%). This is not a measure of actual loss."
+        },
+        {
+          "n": 19,
+          "title": "2025 comparison",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "2027 proposed sources exceed 2025 displayed recorded sources by $5,706,195; excluding 2025 financing gives $9,392,195. Neither proves stable recurring revenue."
+        },
+        {
+          "n": 20,
+          "title": "Insurance",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "$967,345 in 2023 and $1,658,262 recorded in 2025: $690,917 increase (about 71.42%). Examine premium and coverage terms separately."
+        },
+        {
+          "n": 21,
+          "title": "Detention medical",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "$4,656,465 to $5,894,700, increase $1,238,235 (26.59%). Medical demand, contracts and custody populations need reconciliation."
+        },
+        {
+          "n": 22,
+          "title": "Health claims",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "$13,404,845 to $15,879,224, increase $2,474,379 (18.46%); before reimbursements according to graphic. Net expenditure remains unverified."
+        },
+        {
+          "n": 23,
+          "title": "Utility expenditures",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "$2,410,939 to $2,674,738, increase $263,799 (10.94%). Tariff, demand and facility changes should be separated."
+        },
+        {
+          "n": 24,
+          "title": "Maintenance spending",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "$395,586 to $1,017,949, increase $622,363 (157.33%). Distinguish deferred maintenance catch-up from recurring contracts."
+        },
+        {
+          "n": 25,
+          "title": "Detention overtime",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "$1,779,099 to $2,445,239, increase $666,140 (37.44%). Do not infer actual staffing counts from overtime dollars."
+        },
+        {
+          "n": 26,
+          "title": "Selected cost bridge",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Selected costs rise from $23,614,279 to $29,570,112: $5,955,833 (25.22%). These six lines are not the entire General Fund."
+        },
+        {
+          "n": 27,
+          "title": "Jail cost crossover",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Medical and overtime increases total $1,904,375 (about 32% of selected cost rise). This does not establish new jail causation; connect staffing and municipal custody proposal."
+        },
+        {
+          "n": 28,
+          "title": "Base shortfall",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Displayed revenues $122,666,601 less base $131,213,309 implies −$8,546,708; graphic reports −$8,546,709. Retain original and recalculation."
+        },
+        {
+          "n": 29,
+          "title": "Department reductions",
+          "classification": "Supplied screenshot observation",
+          "sourceIds": [],
+          "answer": "Reported reduction plan $9,811,472. The graphic does not establish final layoffs, achievable offsets or service continuity."
+        },
+        {
+          "n": 30,
+          "title": "Proposed expenditure",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "$131,213,309 − $9,811,472 = $121,401,837, exactly matching displayed proposed expenditure."
+        },
+        {
+          "n": 31,
+          "title": "Surplus precision",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Revenue less proposed expenditure is $1,264,764; graphic displays $1,264,763. A one-dollar difference may reflect rounding; both imply roughly 1.03% headroom."
+        },
+        {
+          "n": 32,
+          "title": "Stress and forecast",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "At 1% less revenue, reported surplus falls to about $38,097. At 90% reduction attainment with revenue unchanged, it is about $283,616. These are not predictions."
+        },
+        {
+          "n": 33,
+          "title": "Opening balance and financing",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S2"
+          ],
+          "answer": "October slide 9 includes anticipated $7M asset sale and $15M COP in opening assumptions. Zero proposed 2027 annual financing is a separate concept; avoid double counting."
+        },
+        {
+          "n": 34,
+          "title": "Reserves",
+          "classification": "Dated source finding",
+          "sourceIds": [
+            "S4"
+          ],
+          "answer": "County progress report describes a 10% minimum and 16.67% target. Verify eligible base, timing and actually available reserves before assigning compliance."
+        },
+        {
+          "n": 35,
+          "title": "Fiscal accountability",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [
+            "S3"
+          ],
+          "answer": "Create a decision-by-date timeline for historical commitments and later changes. Separate record-backed authority from assumptions about officials' knowledge or intent."
+        },
+        {
+          "n": 36,
+          "title": "Child and service continuity",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Test reductions against prevention, child protection, family grant services, detention care, school safety and equitable access. Aggregate indicators only; no child case disclosure."
+        },
+        {
+          "n": 37,
+          "title": "Options and grant bridge",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Compare lawful recurrent sources, temporary programs ending, related grant expenses, contract renewals and staffing alternatives. No $9.81M offset has been verified."
+        },
+        {
+          "n": 38,
+          "title": "AI-ready procurement and EE",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Workday and other investments require export rights, reconciliation, total lifecycle cost and tested controls. Reuse source rows and benchmark staff time; don't claim software fixes an accounting failure."
+        },
+        {
+          "n": 39,
+          "title": "LL, RX, T2Y and twin/shadow",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Store observed figures, exact formulas, dated approvals and scenarios separately, attach source lineage, review inconsistencies, and retain corrections and prior states. Financial decisions remain human-controlled."
+        },
+        {
+          "n": 40,
+          "title": "Event horizons and Qified conclusion",
+          "classification": "Q analysis or practical guidance",
+          "sourceIds": [],
+          "answer": "Review final budget and financing, monthly actuals and next audit, then year 3/5 capital and reserve results. Distinguish explanation from proof, and proposed balance from achieved recovery. Original full budget and 2025 audit remain gaps."
+        }
+      ]
+    }
+  ],
+  "observations": {
+    "source": "Nine user-supplied screenshots of commissioner post and public comment; exact original link absent; duplicates deduplicated",
+    "revenueRows": {
+      "categories": [
+        "property",
+        "sales/use",
+        "specific ownership",
+        "fees/licenses/fines",
+        "grants",
+        "investment",
+        "transfers",
+        "other",
+        "financing"
+      ],
+      "recorded2025": [
+        55719758,
+        31114375,
+        4815614,
+        9972510,
+        7330548,
+        2260187,
+        0,
+        2061413,
+        3686000
+      ],
+      "budget2026": [
+        61129747,
+        32352500,
+        5000000,
+        11890980,
+        18306931,
+        1910000,
+        1465000,
+        4179427,
+        5500000
+      ],
+      "proposed2027": [
+        59232895,
+        32370500,
+        5000000,
+        12570736,
+        5879043,
+        2310000,
+        1000000,
+        4303427,
+        0
+      ],
+      "displayTotals": [
+        116960406,
+        141734585,
+        122666601
+      ]
+    },
+    "costRows": {
+      "categories": [
+        "insurance",
+        "detention medical",
+        "health claims/admin",
+        "utilities",
+        "maintenance",
+        "detention overtime"
+      ],
+      "actual2023": [
+        967345,
+        4656465,
+        13404845,
+        2410939,
+        395586,
+        1779099
+      ],
+      "recorded2025": [
+        1658262,
+        5894700,
+        15879224,
+        2674738,
+        1017949,
+        2445239
+      ]
+    },
+    "budget": {
+      "revenue": 122666601,
+      "base": 131213309,
+      "reductions": 9811472,
+      "reportedSurplus": 1264763,
+      "reportedShortfall": 8546709
+    },
+    "golf": {
+      "county2024": {
+        "revenue": 1531007,
+        "expense": 1292447,
+        "assets": 6740132,
+        "liabilities": 8396323,
+        "deferredInflows": 11686,
+        "netPosition": -1667877
+      },
+      "district2025": {
+        "notes": 7613306,
+        "option": 457000
+      }
+    }
+  }
+}
