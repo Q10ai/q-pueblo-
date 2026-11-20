@@ -1,0 +1,466 @@
+{
+  "schema": "qp-regional-resilience-v1",
+  "asOf": "2026-11-18",
+  "reviewBy": "2026-11-25",
+  "featureThrough": "2026-12-31",
+  "rolloverReview": "2027-01-01",
+  "horizon": 2031,
+  "status": "source_attributed_review_candidate",
+  "boundary": "No new canonical issue IDs or verified completion count. Source-level freshness, human review and official authorities control.",
+  "articles": [
+    {
+      "slug": "aspen-five-year",
+      "section": "shock",
+      "title": "Aspen Acres: what recovery costs, who gets help and what happens through 2031",
+      "summary": "The wildfire is a continuing household, infrastructure and financial recovery—not a closed event.",
+      "tags": [
+        "Aspen Acres",
+        "wildfire",
+        "insurance",
+        "housing",
+        "FEMA",
+        "recovery",
+        "renters",
+        "SBA",
+        "grants"
+      ],
+      "relatedReportSlugs": [
+        "aspen-recovery",
+        "aspen-recovery-costs"
+      ],
+      "href": "resilience-aspen-five-year.html",
+      "sources": [
+        {
+          "title": "County recovery dashboard",
+          "url": "https://www.pueblocounty.gov/aspen-acres-fire-recovery-assistance"
+        },
+        {
+          "title": "Official rebuilding and recovery resources",
+          "url": "https://pueblopermits.com/aspen-acres-fire-recovery-resources/"
+        },
+        {
+          "title": "SBA Aspen Acres disaster loans",
+          "url": "https://www.sba.gov/sba-newsroom/2026/10/15/sba-offers-relief-colorado-businesses-private-nonprofits-residents-affected-aspen-acres-fire/"
+        },
+        {
+          "title": "Colorado 211",
+          "url": "https://www.211colorado.org/"
+        },
+        {
+          "title": "Colorado NRCS watershed protection",
+          "url": "https://www.nrcs.usda.gov/programs-initiatives/emergency-watershed-protection/colorado/emergency-watershed-protection-ewp"
+        }
+      ],
+      "checked": "2026-11-18",
+      "reviewBy": "2026-11-25"
+    },
+    {
+      "slug": "regional-shock",
+      "section": "shock",
+      "title": "Regional SHOCK: from incident response to accountable continuity",
+      "summary": "Trace how disaster pressures move across government, utilities, families, budgets and future years.",
+      "tags": [
+        "emergency",
+        "shock absorption",
+        "accountability",
+        "disaster",
+        "volunteer",
+        "continuity",
+        "evacuation",
+        "preparedness"
+      ],
+      "relatedReportSlugs": [
+        "aspen-recovery",
+        "pueblo-flood-history",
+        "county-budget-2027"
+      ],
+      "href": "resilience-regional-shock.html",
+      "sources": [
+        {
+          "title": "County recovery dashboard",
+          "url": "https://www.pueblocounty.gov/aspen-acres-fire-recovery-assistance"
+        },
+        {
+          "title": "Sheriff emergency status board",
+          "url": "https://www.pueblosheriff.org/394/Pueblo-Emergency-Status-Board"
+        },
+        {
+          "title": "County emergency-alert registration",
+          "url": "https://www.pueblosheriff.org/441/Emergency-Alerts"
+        },
+        {
+          "title": "Official rebuilding and recovery resources",
+          "url": "https://pueblopermits.com/aspen-acres-fire-recovery-resources/"
+        },
+        {
+          "title": "Colorado NRCS watershed protection",
+          "url": "https://www.nrcs.usda.gov/programs-initiatives/emergency-watershed-protection/colorado/emergency-watershed-protection-ewp"
+        }
+      ],
+      "checked": "2026-11-18",
+      "reviewBy": "2026-11-25"
+    },
+    {
+      "slug": "burn-scar-mitigation",
+      "section": "shock",
+      "title": "Rye and Beulah: mitigation, burn-scar watersheds and the next storm",
+      "summary": "Recovery requires protective works and maintenance, not just rebuilding.",
+      "tags": [
+        "Rye",
+        "Beulah",
+        "burn scar",
+        "flood",
+        "erosion",
+        "mitigation",
+        "watershed",
+        "drainage",
+        "forest"
+      ],
+      "relatedReportSlugs": [
+        "aspen-recovery",
+        "pueblo-flood-history"
+      ],
+      "href": "resilience-burn-scar-mitigation.html",
+      "sources": [
+        {
+          "title": "Official rebuilding and recovery resources",
+          "url": "https://pueblopermits.com/aspen-acres-fire-recovery-resources/"
+        },
+        {
+          "title": "County recovery dashboard",
+          "url": "https://www.pueblocounty.gov/aspen-acres-fire-recovery-assistance"
+        },
+        {
+          "title": "Colorado NRCS watershed protection",
+          "url": "https://www.nrcs.usda.gov/programs-initiatives/emergency-watershed-protection/colorado/emergency-watershed-protection-ewp"
+        },
+        {
+          "title": "NRCS EWP eligibility and exclusions",
+          "url": "https://www.nrcs.usda.gov/programs-initiatives/emergency-watershed-protection"
+        },
+        {
+          "title": "NRCS disaster and agricultural recovery",
+          "url": "https://www.nrcs.usda.gov/getting-assistance/disaster-recovery"
+        },
+        {
+          "title": "Sheriff emergency status board",
+          "url": "https://www.pueblosheriff.org/394/Pueblo-Emergency-Status-Board"
+        }
+      ],
+      "checked": "2026-11-18",
+      "reviewBy": "2026-11-25"
+    },
+    {
+      "slug": "water-drought-budget",
+      "section": "water",
+      "title": "Water security through 2031: drought, rights, rates and household budgets",
+      "summary": "Drought planning means testing reliable supply, legal use, utility costs and household affordability together.",
+      "tags": [
+        "water",
+        "drought",
+        "snowpack",
+        "reservoir",
+        "water bill",
+        "Pueblo West",
+        "water rights",
+        "rates",
+        "conservation"
+      ],
+      "relatedReportSlugs": [
+        "water-budget-evidence",
+        "county-budget-2027"
+      ],
+      "href": "resilience-water-drought-budget.html",
+      "sources": [
+        {
+          "title": "Pueblo Water customer assistance and leak reporting",
+          "url": "https://pueblowater.org/customer-service/"
+        },
+        {
+          "title": "Pueblo West conservation and efficiency plan",
+          "url": "https://www.pueblowestmetro.us/399/Conservation"
+        },
+        {
+          "title": "Pueblo West Water Department",
+          "url": "https://www.pueblowestmetro.us/1649/Water-Department"
+        },
+        {
+          "title": "Water, sewer and stormwater billing responsibilities",
+          "url": "https://pueblowater.org/customer-service/sewer-and-stormwater/"
+        },
+        {
+          "title": "Arkansas Basin water rights line diagram",
+          "url": "https://www.secwcd.org/content/arkansas-river-basin-water-rights"
+        },
+        {
+          "title": "Colorado Water Plan scenario explorer",
+          "url": "https://waterplandata.state.co.us/"
+        },
+        {
+          "title": "EPA WaterSense savings calculator",
+          "url": "https://www.epa.gov/watersense/watersense-calculator"
+        }
+      ],
+      "checked": "2026-11-18",
+      "reviewBy": "2026-11-25"
+    },
+    {
+      "slug": "spill-infrastructure",
+      "section": "water",
+      "title": "Arkansas River sewage incident: what failed, what must be checked, what changes next",
+      "summary": "Follow the engineering, reporting, financial and downstream recovery chain without claiming unproved liability.",
+      "tags": [
+        "sewage",
+        "spill",
+        "wastewater",
+        "Arkansas River",
+        "infrastructure",
+        "E coli",
+        "contractor",
+        "water quality"
+      ],
+      "relatedReportSlugs": [
+        "wastewater-2026",
+        "water-budget-evidence"
+      ],
+      "href": "resilience-spill-infrastructure.html",
+      "sources": [
+        {
+          "title": "City original spill notice",
+          "url": "https://www.pueblo.us/m/newsflash/home/detail/4990"
+        },
+        {
+          "title": "City September 14 sewage incident update",
+          "url": "https://www.pueblo.us/m/newsflash/home/detail/5002"
+        },
+        {
+          "title": "September 10 downstream response reporting — CPR",
+          "url": "https://www.cpr.org/2026/09/10/arkansas-river-sewage-spill-exposed-gaps/"
+        },
+        {
+          "title": "Water, sewer and stormwater billing responsibilities",
+          "url": "https://pueblowater.org/customer-service/sewer-and-stormwater/"
+        }
+      ],
+      "checked": "2026-11-18",
+      "reviewBy": "2026-11-25"
+    },
+    {
+      "slug": "wastewater-health",
+      "section": "water",
+      "title": "Fentanyl and wastewater data: use it to understand public-health needs",
+      "summary": "Aggregate substance monitoring is a different public-health question from drinking-water quality or the sewage spill.",
+      "tags": [
+        "fentanyl",
+        "naloxone",
+        "xylazine",
+        "overdose",
+        "treatment",
+        "wastewater",
+        "public health",
+        "child"
+      ],
+      "relatedReportSlugs": [
+        "wastewater-2026"
+      ],
+      "href": "resilience-wastewater-health.html",
+      "sources": [
+        {
+          "title": "Pueblo public-health wastewater dashboard",
+          "url": "https://county.pueblo.org/public-health-department/substance-use-wastewater-dashboard"
+        },
+        {
+          "title": "Pueblo substance-use data and treatment resources",
+          "url": "https://county.pueblo.org/public-health-department/substance-use-data-pueblo-county"
+        },
+        {
+          "title": "Colorado 211",
+          "url": "https://www.211colorado.org/"
+        }
+      ],
+      "checked": "2026-11-18",
+      "reviewBy": "2026-11-25"
+    },
+    {
+      "slug": "water-users-industry",
+      "section": "water",
+      "title": "Who uses Pueblo's water? Parks, golf, farms, industry and data centers",
+      "summary": "Compare real water demand, legal rights, public value and drought obligations—not labels.",
+      "tags": [
+        "golf",
+        "parks",
+        "irrigation",
+        "agriculture",
+        "industry",
+        "data center",
+        "Falcon",
+        "Ecoasis",
+        "cooling",
+        "water rights"
+      ],
+      "relatedReportSlugs": [
+        "water-budget-evidence",
+        "lime-road-costs"
+      ],
+      "href": "resilience-water-users-industry.html",
+      "sources": [
+        {
+          "title": "City Parks and Open Space inventory",
+          "url": "https://www.pueblo.us/338/Parks-and-Open-Space"
+        },
+        {
+          "title": "Arkansas Basin water rights line diagram",
+          "url": "https://www.secwcd.org/content/arkansas-river-basin-water-rights"
+        },
+        {
+          "title": "Colorado Water Plan scenario explorer",
+          "url": "https://waterplandata.state.co.us/"
+        },
+        {
+          "title": "Pueblo West conservation and efficiency plan",
+          "url": "https://www.pueblowestmetro.us/399/Conservation"
+        },
+        {
+          "title": "Pueblo Water customer assistance and leak reporting",
+          "url": "https://pueblowater.org/customer-service/"
+        }
+      ],
+      "checked": "2026-11-18",
+      "reviewBy": "2026-11-25"
+    }
+  ],
+  "resources": [
+    {
+      "id": "recovery",
+      "title": "County recovery dashboard",
+      "url": "https://www.pueblocounty.gov/aspen-acres-fire-recovery-assistance",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "permits",
+      "title": "Official rebuilding and recovery resources",
+      "url": "https://pueblopermits.com/aspen-acres-fire-recovery-resources/",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "alerts",
+      "title": "Sheriff emergency status board",
+      "url": "https://www.pueblosheriff.org/394/Pueblo-Emergency-Status-Board",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "signup",
+      "title": "County emergency-alert registration",
+      "url": "https://www.pueblosheriff.org/441/Emergency-Alerts",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "sba",
+      "title": "SBA Aspen Acres disaster loans",
+      "url": "https://www.sba.gov/sba-newsroom/2026/10/15/sba-offers-relief-colorado-businesses-private-nonprofits-residents-affected-aspen-acres-fire/",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "ewp",
+      "title": "Colorado NRCS watershed protection",
+      "url": "https://www.nrcs.usda.gov/programs-initiatives/emergency-watershed-protection/colorado/emergency-watershed-protection-ewp",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "ewpRules",
+      "title": "NRCS EWP eligibility and exclusions",
+      "url": "https://www.nrcs.usda.gov/programs-initiatives/emergency-watershed-protection",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "water",
+      "title": "Pueblo Water customer assistance and leak reporting",
+      "url": "https://pueblowater.org/customer-service/",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "west",
+      "title": "Pueblo West conservation and efficiency plan",
+      "url": "https://www.pueblowestmetro.us/399/Conservation",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "westStatus",
+      "title": "Pueblo West Water Department",
+      "url": "https://www.pueblowestmetro.us/1649/Water-Department",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "billing",
+      "title": "Water, sewer and stormwater billing responsibilities",
+      "url": "https://pueblowater.org/customer-service/sewer-and-stormwater/",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "rights",
+      "title": "Arkansas Basin water rights line diagram",
+      "url": "https://www.secwcd.org/content/arkansas-river-basin-water-rights",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "plan",
+      "title": "Colorado Water Plan scenario explorer",
+      "url": "https://waterplandata.state.co.us/",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "savings",
+      "title": "EPA WaterSense savings calculator",
+      "url": "https://www.epa.gov/watersense/watersense-calculator",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "spill",
+      "title": "City September 14 sewage incident update",
+      "url": "https://www.pueblo.us/m/newsflash/home/detail/5002",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "spillFirst",
+      "title": "City original spill notice",
+      "url": "https://www.pueblo.us/m/newsflash/home/detail/4990",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "health",
+      "title": "Pueblo public-health wastewater dashboard",
+      "url": "https://county.pueblo.org/public-health-department/substance-use-wastewater-dashboard",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "treatment",
+      "title": "Pueblo substance-use data and treatment resources",
+      "url": "https://county.pueblo.org/public-health-department/substance-use-data-pueblo-county",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "parks",
+      "title": "City Parks and Open Space inventory",
+      "url": "https://www.pueblo.us/338/Parks-and-Open-Space",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "river",
+      "title": "September 10 downstream response reporting — CPR",
+      "url": "https://www.cpr.org/2026/09/10/arkansas-river-sewage-spill-exposed-gaps/",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "aid",
+      "title": "Colorado 211",
+      "url": "https://www.211colorado.org/",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "nrAgr",
+      "title": "NRCS disaster and agricultural recovery",
+      "url": "https://www.nrcs.usda.gov/getting-assistance/disaster-recovery",
+      "checked": "2026-11-18"
+    }
+  ]
+}

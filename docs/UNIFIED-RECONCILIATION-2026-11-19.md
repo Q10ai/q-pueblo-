@@ -29,3 +29,7 @@ Added QP-DISASTER-ASPEN-PMP-001, 40 research perspectives, seven dated source re
 ## November 18 archival recovery
 
 Recovered seven November 18 research editions from PR #85 at d864c41cfe357636fb4f083b40ccb29f658a5ae9, including their original HTML/Markdown and shared CSS/JS. Sixteen additive blobs reused exactly. Repaired legacy transition hub link to the newer priority/office navigation instead of reintroducing older transition records. Original reports are dated editions, not new canonical issues; no supersession or evidence transfer inferred. Privacy-pattern scan was clean, not a full editorial audit.
+
+## Year-end and resilience recovery
+
+Recovered 25 original public artifacts from PR #81 at 6bc75e5665ff723c62e080991a4e2836d693b2ac, including 16 dated papers, five navigation/tools pages, shared assets and data. Added grouped archive cards and search entries; existing newer reports remain intact. Exact blob reuse; privacy-pattern and local dependency review performed, not complete factual or editorial certification.

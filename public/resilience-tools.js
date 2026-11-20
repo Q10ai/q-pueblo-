@@ -1,0 +1,17 @@
+'use strict';
+(function(root){
+function validate(a,n){if(!Array.isArray(a)||a.length!==n||a.some(x=>typeof x!=='number'||!Number.isFinite(x)||x<0||x>1e12))throw Error('Enter valid nonnegative values within the allowed range.')}
+function calc(id,a){const usd=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(n);const num=n=>new Intl.NumberFormat('en-US',{maximumFractionDigits:3}).format(n);let x,y,z;
+switch(id){
+case 'recovery-gap':validate(a,3);x=Math.max(0,a[0]-a[1]-a[2]);return 'Remaining estimated gap: '+usd(x)+'\nConfirmed funds and assistance: '+usd(a[1]+a[2])+'\nLoans and unapproved aid excluded.';
+case 'cost-share':validate(a,4);if(a[1]>a[0]||a[2]>100||a[3]>100)throw Error('Eligible cost cannot exceed total; percentage must be 0–100.');x=a[1]*a[2]/100;y=(a[1]-x)*a[3]/100;z=a[0]-x-y;return 'Federal modeled share: '+usd(x)+'\nOther modeled share: '+usd(y)+'\nResidual local / uncovered share: '+usd(z)+'\nCash financing and reimbursement timing are separate.';
+case 'water-balance':validate(a,5);x=a[1]+a[2]+a[3]+a[4];return 'Total modeled requirement: '+num(x)+' units\nSupply margin: '+num(a[0]-x)+' units\n'+(a[0]<x?'Scenario deficit; review actual rights, demand and reserve with the utility.':'Scenario requirements covered; not a supply certification.');
+case 'water-bill':validate(a,4);if(a[2]>1000||a[3]>1000)throw Error('Increase percentages must be 0–1000.');x=a[0]*a[2]/100+a[1]*a[3]/100;return 'New modeled monthly charges: '+usd(a[0]+a[1]+x)+'\nMonthly increase: '+usd(x)+'\nAnnual increase: '+usd(12*x);
+case 'conservation':validate(a,3);if(a[1]>3650)throw Error('Days must be 0–3650.');x=a[0]*a[1];return 'Water saved: '+num(x)+' gallons\nEstimated avoided volumetric charge: '+usd(x/1000*a[2])+'\nFixed charges excluded.';
+case 'industry':validate(a,2);if(a[1]>1000)throw Error('Intensity exceeds input limit.');x=a[0]*1000*a[1];return 'Annual modeled direct consumption: '+num(x)+' liters\nApproximate US gallons: '+num(x/3.785411784)+'\nNo peak, indirect power-water or rights assessment.';
+default:throw Error('Unknown tool');}}
+if(typeof module!=='undefined')module.exports={calc};
+if(!root||!root.document)return;
+for(const form of root.document.querySelectorAll('[data-rs-tool]')){const out=form.querySelector('output');let current='';form.addEventListener('input',()=>{current='';out.textContent='Inputs changed; calculate again.';});form.addEventListener('submit',e=>{e.preventDefault();current='';try{const fields=[...form.querySelectorAll('input[type=number]')];if(fields.some(f=>f.value.trim()==='')||!form.checkValidity())throw Error('Complete all required values within the allowed ranges.');const values=fields.map(f=>f.valueAsNumber);const result=calc(form.dataset.rsTool,values);current='Q-Pueblo illustrative scenario — not official data\n'+fields.map(f=>f.parentElement.textContent.trim()+': '+f.value).join('\n')+'\n'+result;out.textContent=result;out.focus();}catch(err){out.textContent=err.message;}});form.querySelector('[data-rs-save]').addEventListener('click',()=>{if(!current){out.textContent='Calculate a valid result first.';return;}const url=URL.createObjectURL(new Blob([current],{type:'text/plain'}));const a=root.document.createElement('a');a.href=url;a.download='qpueblo-'+form.dataset.rsTool+'.txt';a.click();URL.revokeObjectURL(url);});}
+for(const b of root.document.querySelectorAll('[data-rs-print]'))b.addEventListener('click',()=>root.print());
+})(typeof window!=='undefined'?window:null);

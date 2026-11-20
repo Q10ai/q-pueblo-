@@ -445,6 +445,278 @@
       "edition": "2026-11-18 dated archival edition; newer editions retained",
       "status": "recovered-review-candidate",
       "review": "Preserved original dated report, source limitations and recheck requirements."
+    },
+    {
+      "group": "safety",
+      "id": "aspen-five-year",
+      "title": "Aspen Acres recovery through 2031",
+      "route": "resilience-aspen-five-year.html",
+      "sourcePR": 81,
+      "sourceCommit": "6bc75e5665ff723c62e080991a4e2836d693b2ac",
+      "keywords": "wildfire long-term costs",
+      "files": [
+        "data/qp-resilience-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ],
+      "edition": "2026-11-18 archival edition; later reports retained",
+      "status": "recovered-review-candidate",
+      "review": "Retain original source dates; newer evidence and assumptions may supersede individual claims after review."
+    },
+    {
+      "group": "safety",
+      "id": "burn-scar",
+      "title": "Rye and Beulah burn-scar mitigation",
+      "route": "resilience-burn-scar-mitigation.html",
+      "sourcePR": 81,
+      "sourceCommit": "6bc75e5665ff723c62e080991a4e2836d693b2ac",
+      "keywords": "watershed wildfire erosion flood",
+      "files": [
+        "data/qp-resilience-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ],
+      "edition": "2026-11-18 archival edition; later reports retained",
+      "status": "recovered-review-candidate",
+      "review": "Retain original source dates; newer evidence and assumptions may supersede individual claims after review."
+    },
+    {
+      "group": "safety",
+      "id": "regional-shock",
+      "title": "Regional SHOCK and continuity",
+      "route": "resilience-regional-shock.html",
+      "sourcePR": 81,
+      "sourceCommit": "6bc75e5665ff723c62e080991a4e2836d693b2ac",
+      "keywords": "disaster continuity impact",
+      "files": [
+        "data/qp-resilience-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ],
+      "edition": "2026-11-18 archival edition; later reports retained",
+      "status": "recovered-review-candidate",
+      "review": "Retain original source dates; newer evidence and assumptions may supersede individual claims after review."
+    },
+    {
+      "group": "utilities",
+      "id": "spill-infrastructure",
+      "title": "Arkansas River spill infrastructure",
+      "route": "resilience-spill-infrastructure.html",
+      "sourcePR": 81,
+      "sourceCommit": "6bc75e5665ff723c62e080991a4e2836d693b2ac",
+      "keywords": "wastewater sewage incident",
+      "files": [
+        "data/qp-resilience-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ],
+      "edition": "2026-11-18 archival edition; later reports retained",
+      "status": "recovered-review-candidate",
+      "review": "Retain original source dates; newer evidence and assumptions may supersede individual claims after review."
+    },
+    {
+      "group": "safety",
+      "id": "wastewater-health",
+      "title": "Wastewater and public health",
+      "route": "resilience-wastewater-health.html",
+      "sourcePR": 81,
+      "sourceCommit": "6bc75e5665ff723c62e080991a4e2836d693b2ac",
+      "keywords": "wastewater surveillance aggregate health fentanyl",
+      "files": [
+        "data/qp-resilience-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ],
+      "edition": "2026-11-18 archival edition; later reports retained",
+      "status": "recovered-review-candidate",
+      "review": "Retain original source dates; newer evidence and assumptions may supersede individual claims after review."
+    },
+    {
+      "group": "utilities",
+      "id": "water-drought",
+      "title": "Water security through 2031",
+      "route": "resilience-water-drought-budget.html",
+      "sourcePR": 81,
+      "sourceCommit": "6bc75e5665ff723c62e080991a4e2836d693b2ac",
+      "keywords": "drought water rights rates",
+      "files": [
+        "data/qp-resilience-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ],
+      "edition": "2026-11-18 archival edition; later reports retained",
+      "status": "recovered-review-candidate",
+      "review": "Retain original source dates; newer evidence and assumptions may supersede individual claims after review."
+    },
+    {
+      "group": "utilities",
+      "id": "water-users",
+      "title": "Water users and industry",
+      "route": "resilience-water-users-industry.html",
+      "sourcePR": 81,
+      "sourceCommit": "6bc75e5665ff723c62e080991a4e2836d693b2ac",
+      "keywords": "golf farms industry data centers water",
+      "files": [
+        "data/qp-resilience-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ],
+      "edition": "2026-11-18 archival edition; later reports retained",
+      "status": "recovered-review-candidate",
+      "review": "Retain original source dates; newer evidence and assumptions may supersede individual claims after review."
+    },
+    {
+      "group": "governance",
+      "id": "community-signals-18",
+      "title": "Community signals and accountability — November 18 edition",
+      "route": "community-signals-2026-11-18.html",
+      "sourcePR": 81,
+      "sourceCommit": "6bc75e5665ff723c62e080991a4e2836d693b2ac",
+      "keywords": "community feedback public safety services",
+      "files": [
+        "data/qp-year-end-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ],
+      "edition": "2026-11-18 archival edition; later reports retained",
+      "status": "recovered-review-candidate",
+      "review": "Retain original source dates; newer evidence and assumptions may supersede individual claims after review."
+    },
+    {
+      "group": "fiscal",
+      "id": "year-end-county",
+      "title": "County financial crisis — year-end edition",
+      "route": "year-end-01-county-financial-crisis.html",
+      "sourcePR": 81,
+      "sourceCommit": "6bc75e5665ff723c62e080991a4e2836d693b2ac",
+      "keywords": "budget fiscal recovery",
+      "files": [
+        "data/qp-year-end-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ],
+      "edition": "2026-11-18 archival edition; later reports retained",
+      "status": "recovered-review-candidate",
+      "review": "Retain original source dates; newer evidence and assumptions may supersede individual claims after review."
+    },
+    {
+      "group": "safety",
+      "id": "year-end-sheriff",
+      "title": "Sheriff staffing — year-end edition",
+      "route": "year-end-02-sheriff-staffing.html",
+      "sourcePR": 81,
+      "sourceCommit": "6bc75e5665ff723c62e080991a4e2836d693b2ac",
+      "keywords": "deputy staffing",
+      "files": [
+        "data/qp-year-end-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ],
+      "edition": "2026-11-18 archival edition; later reports retained",
+      "status": "recovered-review-candidate",
+      "review": "Retain original source dates; newer evidence and assumptions may supersede individual claims after review."
+    },
+    {
+      "group": "safety",
+      "id": "year-end-jail",
+      "title": "New jail operations — year-end edition",
+      "route": "year-end-03-new-jail.html",
+      "sourcePR": 81,
+      "sourceCommit": "6bc75e5665ff723c62e080991a4e2836d693b2ac",
+      "keywords": "jail capacity debt operations",
+      "files": [
+        "data/qp-year-end-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ],
+      "edition": "2026-11-18 archival edition; later reports retained",
+      "status": "recovered-review-candidate",
+      "review": "Retain original source dates; newer evidence and assumptions may supersede individual claims after review."
+    },
+    {
+      "group": "safety",
+      "id": "year-end-offenses",
+      "title": "Municipal offenses — year-end edition",
+      "route": "year-end-04-municipal-offenses.html",
+      "sourcePR": 81,
+      "sourceCommit": "6bc75e5665ff723c62e080991a4e2836d693b2ac",
+      "keywords": "municipal detention",
+      "files": [
+        "data/qp-year-end-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ],
+      "edition": "2026-11-18 archival edition; later reports retained",
+      "status": "recovered-review-candidate",
+      "review": "Retain original source dates; newer evidence and assumptions may supersede individual claims after review."
+    },
+    {
+      "group": "governance",
+      "id": "year-end-sheriff-transition",
+      "title": "Sheriff transition tracker — year-end edition",
+      "route": "year-end-05-sheriff-transition.html",
+      "sourcePR": 81,
+      "sourceCommit": "6bc75e5665ff723c62e080991a4e2836d693b2ac",
+      "keywords": "leadership transition commitments",
+      "files": [
+        "data/qp-year-end-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ],
+      "edition": "2026-11-18 archival edition; later reports retained",
+      "status": "recovered-review-candidate",
+      "review": "Retain original source dates; newer evidence and assumptions may supersede individual claims after review."
+    },
+    {
+      "group": "fiscal",
+      "id": "year-end-city-budget",
+      "title": "City 2027 budget — year-end edition",
+      "route": "year-end-06-city-budget.html",
+      "sourcePR": 81,
+      "sourceCommit": "6bc75e5665ff723c62e080991a4e2836d693b2ac",
+      "keywords": "city budget reserves services",
+      "files": [
+        "data/qp-year-end-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ],
+      "edition": "2026-11-18 archival edition; later reports retained",
+      "status": "recovered-review-candidate",
+      "review": "Retain original source dates; newer evidence and assumptions may supersede individual claims after review."
+    },
+    {
+      "group": "future",
+      "id": "year-end-ai",
+      "title": "AI governance — year-end edition",
+      "route": "year-end-07-ai-governance.html",
+      "sourcePR": 81,
+      "sourceCommit": "6bc75e5665ff723c62e080991a4e2836d693b2ac",
+      "keywords": "AI governance budget",
+      "files": [
+        "data/qp-year-end-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ],
+      "edition": "2026-11-18 archival edition; later reports retained",
+      "status": "recovered-review-candidate",
+      "review": "Retain original source dates; newer evidence and assumptions may supersede individual claims after review."
+    },
+    {
+      "group": "future",
+      "id": "year-end-leap",
+      "title": "LEAP 2027 — year-end edition",
+      "route": "year-end-08-leap-2027.html",
+      "sourcePR": 81,
+      "sourceCommit": "6bc75e5665ff723c62e080991a4e2836d693b2ac",
+      "keywords": "regional transition modernization",
+      "files": [
+        "data/qp-year-end-2026-11-18.json",
+        "resilience.css",
+        "resilience-tools.js"
+      ],
+      "edition": "2026-11-18 archival edition; later reports retained",
+      "status": "recovered-review-candidate",
+      "review": "Retain original source dates; newer evidence and assumptions may supersede individual claims after review."
     }
   ]
 }
