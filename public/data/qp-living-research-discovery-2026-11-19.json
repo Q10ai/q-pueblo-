@@ -1,0 +1,315 @@
+{
+  "schema": "qp-living-research-discovery-v1",
+  "asOf": "2026-11-19",
+  "state": "review-candidate",
+  "baseline": "4652fc25960c5faa62eb024a2511d70379300a3a",
+  "priorityBase": "06a6dabe343770b04373f39852bc6e5c4c7cd05a",
+  "scope": "Additive discovery crosswalk; not canonical case totals or verified claims. Priorities retain the wider historical issue graph.",
+  "metrics": {
+    "amendments": {
+      "value": 107,
+      "denominator": 107,
+      "asOf": "2026-11-18",
+      "qualification": "Historical PR #86 reported bounded amendments, not verified evidence completeness."
+    },
+    "canonicalClaimCoverage": null,
+    "materialUnresolvedQuestions": null,
+    "sourceFreshness": null,
+    "entityCoverage": null,
+    "productionParity": null
+  },
+  "groups": [
+    {
+      "id": "fiscal",
+      "title": "Budgets, debt and essential services"
+    },
+    {
+      "id": "safety",
+      "title": "Public safety, health and recovery"
+    },
+    {
+      "id": "utilities",
+      "title": "Energy, water and household affordability"
+    },
+    {
+      "id": "economy",
+      "title": "Jobs, industry and public investment"
+    },
+    {
+      "id": "housing",
+      "title": "Housing, poverty and family stability"
+    },
+    {
+      "id": "governance",
+      "title": "Governance, authority and public records"
+    },
+    {
+      "id": "infrastructure",
+      "title": "Infrastructure and transportation"
+    },
+    {
+      "id": "education",
+      "title": "Education, children and community services"
+    },
+    {
+      "id": "culture",
+      "title": "Museums, arts and heritage"
+    },
+    {
+      "id": "future",
+      "title": "AI readiness and regional transition"
+    }
+  ],
+  "rows": [
+    {
+      "group": "fiscal",
+      "id": "county-fiscal",
+      "title": "County fiscal recovery and essential services",
+      "route": "county-fiscal-recovery-2026-11-19.html",
+      "sourcePR": 98,
+      "sourceCommit": "83d8dff325778c3169ea6e65bcc0d4ee32fb773d",
+      "keywords": "county budget funding debt HARP CSAC wastewater essential services fiscal recovery",
+      "files": [
+        "data/county-fiscal-recovery-2026-11-19.json",
+        "county-fiscal-recovery-2026-11-19.js"
+      ],
+      "edition": "2026-11-19 reconciliation snapshot",
+      "status": "recovered-review-candidate",
+      "review": "Source limitations and case-specific review dates remain in the original report."
+    },
+    {
+      "group": "fiscal",
+      "id": "civic-finance",
+      "title": "Civic Finance Observatory",
+      "route": "civic-finance-observatory.html",
+      "sourcePR": 93,
+      "sourceCommit": "45d8fdcbd1ca8f37d4156f30c1536312721614d1",
+      "keywords": "public finance budget contracts expenditures funding taxes money",
+      "files": [
+        "civic-finance-observatory.js"
+      ],
+      "edition": "2026-11-19 reconciliation snapshot",
+      "status": "recovered-review-candidate",
+      "review": "Source limitations and case-specific review dates remain in the original report."
+    },
+    {
+      "group": "fiscal",
+      "id": "council-attorney",
+      "title": "Council attorney funding",
+      "route": "council-attorney-funding.html",
+      "sourcePR": 75,
+      "sourceCommit": null,
+      "keywords": "city council attorney legal advice audit lobbying budget",
+      "files": [],
+      "edition": "2026-11-19 reconciliation snapshot",
+      "status": "existing-base-version",
+      "review": "Source limitations and case-specific review dates remain in the original report."
+    },
+    {
+      "group": "fiscal",
+      "id": "nonprofit",
+      "title": "Nonprofit funding and continuity",
+      "route": "nonprofit-funding-continuity.html",
+      "sourcePR": null,
+      "sourceCommit": null,
+      "keywords": "CSAC nonprofits funding grants community services",
+      "files": [],
+      "edition": "2026-11-19 reconciliation snapshot",
+      "status": "existing-base-version",
+      "review": "Source limitations and case-specific review dates remain in the original report."
+    },
+    {
+      "group": "fiscal",
+      "id": "pura",
+      "title": "Pueblo Boulevard PURA repayment",
+      "route": "pueblo-boulevard-pura-repayment.html",
+      "sourcePR": null,
+      "sourceCommit": null,
+      "keywords": "urban renewal public investment repayment funds",
+      "files": [],
+      "edition": "2026-11-19 reconciliation snapshot",
+      "status": "existing-base-version",
+      "review": "Source limitations and case-specific review dates remain in the original report."
+    },
+    {
+      "group": "safety",
+      "id": "municipal-jail",
+      "title": "Municipal jail and community safety",
+      "route": "municipal-jail-community-safety.html",
+      "sourcePR": 95,
+      "sourceCommit": "966a6561ac482bcdf74a4d23390ce6171ac99d54",
+      "keywords": "jail IGA misdemeanor costs justice alternatives detention",
+      "files": [
+        "data/qp-municipal-jail-2026-11-19.json",
+        "municipal-jail-research-paper.md",
+        "municipal-jail.css",
+        "municipal-jail.js"
+      ],
+      "edition": "2026-11-19 reconciliation snapshot",
+      "status": "recovered-review-candidate",
+      "review": "Source limitations and case-specific review dates remain in the original report."
+    },
+    {
+      "group": "safety",
+      "id": "preparedness",
+      "title": "Be Ready Pueblo — emergency preparedness",
+      "route": "be-ready-pueblo.html",
+      "sourcePR": 97,
+      "sourceCommit": "01b60ead41bc4ff6fc2f5ab7847239704e1fafea",
+      "keywords": "emergency disaster resilience CSU Pueblo community preparedness recovery",
+      "files": [
+        "be-ready-pueblo.js",
+        "data/qp-be-ready-pueblo-2026-11-19.json",
+        "research/be-ready-pueblo-2026-11-19.md"
+      ],
+      "edition": "2026-11-19 reconciliation snapshot",
+      "status": "recovered-review-candidate",
+      "review": "Source limitations and case-specific review dates remain in the original report."
+    },
+    {
+      "group": "utilities",
+      "id": "energy-rates",
+      "title": "Electricity affordability and rate case",
+      "route": "energy-research-paper-2026.html",
+      "sourcePR": 90,
+      "sourceCommit": null,
+      "keywords": "Black Hills Energy electricity bills rates utilities",
+      "files": [],
+      "edition": "2026-11-19 reconciliation snapshot",
+      "status": "existing-base-version",
+      "review": "Source limitations and case-specific review dates remain in the original report."
+    },
+    {
+      "group": "utilities",
+      "id": "energy-governance",
+      "title": "Energy governance, compensation and mutual aid",
+      "route": "energy-governance-supplement-2026.html",
+      "sourcePR": 105,
+      "sourceCommit": "e81743f9658b43132cce96e88779a60ac291fc45",
+      "keywords": "Black Hills electricity CEO compensation utility mutual aid governance rates",
+      "files": [
+        "data/qp-energy-governance-supplement-2026-11-19.json",
+        "energy-governance-supplement-2026.md"
+      ],
+      "edition": "2026-11-19 reconciliation snapshot",
+      "status": "recovered-review-candidate",
+      "review": "Source limitations and case-specific review dates remain in the original report."
+    },
+    {
+      "group": "economy",
+      "id": "economic-development",
+      "title": "Economic development accountability",
+      "route": "research/economic-development-20261119.html",
+      "sourcePR": 94,
+      "sourceCommit": "eb002c8c1bc8ab7223bd7609fec6596fd13d8ae3",
+      "keywords": "Advance Pueblo jobs recruitment incentives workforce business",
+      "files": [],
+      "edition": "2026-11-19 reconciliation snapshot",
+      "status": "recovered-review-candidate",
+      "review": "Source limitations and case-specific review dates remain in the original report."
+    },
+    {
+      "group": "economy",
+      "id": "tract-367",
+      "title": "Pueblo West Tract 367 and grocery development",
+      "route": "pueblo-west-tract-367.html",
+      "sourcePR": 96,
+      "sourceCommit": "f57a26efdb78e40de72fe00114d98e64b3f917d3",
+      "keywords": "Sprouts grocery Pueblo West tract land retail infrastructure",
+      "files": [
+        "data/qp-tract-367-2026-11-19.json",
+        "tract-367-tools.js"
+      ],
+      "edition": "2026-11-19 reconciliation snapshot",
+      "status": "recovered-review-candidate",
+      "review": "Source limitations and case-specific review dates remain in the original report."
+    },
+    {
+      "group": "governance",
+      "id": "transparency",
+      "title": "Public information and transparency",
+      "route": "public-information-transparency.html",
+      "sourcePR": 100,
+      "sourceCommit": "72e815269cbbcb183fdc871aebbb126455a49519",
+      "keywords": "public notices records CORA open government transparency",
+      "files": [
+        "data/qp-public-transparency-20261119.json"
+      ],
+      "edition": "2026-11-19 reconciliation snapshot",
+      "status": "recovered-review-candidate",
+      "review": "Source limitations and case-specific review dates remain in the original report."
+    },
+    {
+      "group": "governance",
+      "id": "entity-observatory",
+      "title": "Regional Civic Entity Observatory",
+      "route": "civic-observatory.html",
+      "sourcePR": 102,
+      "sourceCommit": "ff5b5767d8da81ee9b1b5e499a6dde11793a5008",
+      "keywords": "entity institutions neighborhood federal roles jurisdictions transition",
+      "files": [
+        "data/qp-civic-observatory-pilot.json"
+      ],
+      "edition": "2026-11-19 reconciliation snapshot",
+      "status": "recovered-review-candidate",
+      "review": "Source limitations and case-specific review dates remain in the original report."
+    },
+    {
+      "group": "governance",
+      "id": "community-input",
+      "title": "Community input to civic action",
+      "route": "community-input-to-action.html",
+      "sourcePR": 101,
+      "sourceCommit": "44ce5dcf39a5017bd35b8c939963731b38bff977",
+      "keywords": "community questions longitudinal research civic action",
+      "files": [
+        "community-input-research-packet.json",
+        "community-input-research-paper.md"
+      ],
+      "edition": "2026-11-19 reconciliation snapshot",
+      "status": "recovered-review-candidate",
+      "review": "Source limitations and case-specific review dates remain in the original report."
+    },
+    {
+      "group": "infrastructure",
+      "id": "air-service",
+      "title": "Pueblo 2027 Essential Air Service",
+      "route": "pueblo-air-service-2027.html",
+      "sourcePR": 89,
+      "sourceCommit": "0c56a02568d9076b3bb493f139938457fe2c735c",
+      "keywords": "airport airlines EAS transportation air service",
+      "files": [
+        "data/qp-pueblo-air-service-2027.json"
+      ],
+      "edition": "2026-11-19 reconciliation snapshot",
+      "status": "recovered-review-candidate",
+      "review": "Source limitations and case-specific review dates remain in the original report."
+    },
+    {
+      "group": "culture",
+      "id": "museums",
+      "title": "Museums and culture — regional research",
+      "route": "museums-culture-research.html",
+      "sourcePR": null,
+      "sourceCommit": null,
+      "keywords": "heritage museum Leonardo da Vinci museums history culture preservation arts",
+      "files": [],
+      "edition": "2026-11-19 reconciliation snapshot",
+      "status": "existing-base-version",
+      "review": "Source limitations and case-specific review dates remain in the original report."
+    },
+    {
+      "group": "future",
+      "id": "ai",
+      "title": "Pueblo AI-era readiness",
+      "route": "pueblo-ai-readiness.html",
+      "sourcePR": 75,
+      "sourceCommit": null,
+      "keywords": "AI artificial intelligence readiness workforce public services",
+      "files": [],
+      "edition": "2026-11-19 reconciliation snapshot",
+      "status": "existing-base-version",
+      "review": "Source limitations and case-specific review dates remain in the original report."
+    }
+  ]
+}
