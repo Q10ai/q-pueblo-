@@ -3,6 +3,7 @@
  const $=id=>document.getElementById(id),core=window.QPReport,catalog=window.QP_PUBLIC_CATALOG;
  let reports=[],packet=null,renderSequence=0;
  const briefsReady=fetch('data/qp-current-reports.json').then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>{reports=d.reports;return true;}).catch(()=>false);
+ const livingReady=fetch('data/qp-living-research-discovery-2026-11-19.json').then(r=>{if(!r.ok)throw Error();return r.json();}).then(d=>d.rows||[]).catch(()=>[]);
  const sourceLink=s=>{const u=core.safeUrl(s.url);return u?'<a href="'+core.esc(u)+'" target="_blank" rel="noopener noreferrer">'+core.esc(s.title)+' ↗</a>':core.esc(s.title);};
  const investigation={
   'Question and scope':'Record the exact question, geography, jurisdiction and valid date. No current answer is established by a related title.',
@@ -14,7 +15,7 @@
   'Q review and reopening':'Document applicable EE/T2Y/RX/LEAP/TSLP checks actually performed, gaps, human review, freshness and correction triggers.'
  };
  async function render(question){
-  const seq=++renderSequence;$('qify-status').textContent='Loading the dated report collection…';const loaded=await briefsReady;if(seq!==renderSequence)return;
+  const seq=++renderSequence;$('qify-status').textContent='Loading the dated report collection…';const [loaded,living]=await Promise.all([briefsReady,livingReady]);if(seq!==renderSequence)return;
   const terms=core.words(question), candidates=core.matchReports(question,reports);
   const gatedMatch=window.QP_QIFY_MATCH.selectReport(question,reports);
   const narrative=window.QPStoryEditions?.exact(question)||null, storyRelated=window.QPStoryEditions?.related(question)||[];
@@ -36,6 +37,16 @@
   const foodNeed=/(?:food pantry|food pantries|food assistance|free food|free meal|food bank|hungry|help with food|food services|where.{0,45}(?:food|meal|groceries))/i.test(question);
   if(food&&(exact?.slug===food.slug||(!exact&&!narrative&&foodNeed))){const box=document.createElement('section');box.className='qp-answer-intro';const h=document.createElement('h2');h.textContent='Practical food services in Pueblo';box.append(h);const note=document.createElement('p');note.textContent='Dated local options; not confirmation of an individual service, stock, eligibility or opening right now.';box.append(note);for(const x of food.serviceResources){const a=document.createElement('a');a.href=core.safeUrl(x.url);a.textContent=x.name;const p=document.createElement('p');p.append(a,document.createTextNode(' — '+x.type+' · '+x.access+' · '+x.schedule+' · '+x.eligibility+' · Checked '+x.checked));box.append(p);}const link=document.createElement('a');link.href='report-food-assistance.html#service-directory';link.textContent='Full food resource directory, evidence and 40 findings';box.append(link);$('qify-output').prepend(box);packet.relatedServiceResources=food.serviceResources;}
 
+  const reader=window.QPReaderQuilt;if(reader){
+   const reportPath=r=>'report-'+r.slug+'.html';
+   const linked=related.map(x=>({title:x.report.title,route:reportPath(x.report),context:'Related dated report; scope may differ'}));
+   const storyLinks=storyRelated.filter(s=>s.id!==narrative?.id).map(s=>({title:s.title,route:s.route,context:'Related dated story; not exact verification'}));
+   const prior=reader.priorFor(exact?reportPath(exact):narrative?.route||'');
+   if(narrative)for(const id of narrative.packet?.related||[]){const earlier=window.QPStoryEditions?.byId(id);if(earlier)prior.push({title:earlier.title,route:earlier.route,context:'Linked earlier or companion research; check dates and scope'});}
+   packet.readerProjection=reader.project({question,report:exact,story:narrative,prior,related:[...linked,...storyLinks,...reader.relatedLiving(question,living)],coverage:exact?core.coverage40(exact):[]});
+   const projection=reader.view(packet.readerProjection,{includeFindings:!exact&&!narrative,includeQuilt:true});
+   const intro=$('qify-output').querySelector('.qp-answer-intro,.qp-issue-story');if(intro)intro.after(projection);else $('qify-output').append(projection);
+  }
   $('qify-prompt').value=packet.prompt;
   // Dated sources in matched brief are linked directly to the report.
   $('qify-output').hidden=false;$('qify-actions').hidden=false;
@@ -49,6 +60,6 @@
  if(initial&&initial.length>=3){$('qify-query').value=initial.slice(0,180);render($('qify-query').value);}
  window.addEventListener('hashchange',()=>{const v=new URLSearchParams(location.hash.slice(1)).get('q');if(v&&v.length>=3){$('qify-query').value=v.slice(0,180);render($('qify-query').value);}});
  const md=()=>packet?'# Q-Pueblo question\n\n'+packet.question+'\n\n'+packet.answer+'\n\n'+(packet.storyEdition?packet.storyEdition.chapters.map(x=>'## '+x.heading+'\n'+x.text).join('\n\n')+(packet.storyEdition.coverage40?'\n\n## 40 research perspectives\n'+packet.storyEdition.coverage40.map(r=>r.n+'. '+r.title+' — '+r.answer+' ['+r.classification+(r.sourceIds.length?'; '+r.sourceIds.join(', '):'')+']').join('\n'):'')+'\n\nSources:\n'+packet.storyEdition.sources.map(s=>s.id+' '+s.url).join('\n')+'\n\nUnknowns:\n'+packet.storyEdition.unknowns.join('\n'):packet.matchedReport?core.markdown(packet.matchedReport):'No verified answer in the dated public collection.\n\n## Optional research prompt\n\n'+packet.prompt):'';
- $('qify-download').addEventListener('click',()=>packet&&core.download('Q-Pueblo-Question-Packet.md',md(),'text/markdown;charset=utf-8'));
+ $('qify-download').addEventListener('click',()=>packet&&core.download('Q-Pueblo-Question-Packet.md',md()+(packet.readerProjection?window.QPReaderQuilt.markdown(packet.readerProjection):''),'text/markdown;charset=utf-8'));
  $('qify-copy').addEventListener('click',async()=>{if(!packet)return;try{await navigator.clipboard.writeText(core.researchPrompt(packet.question,$('qify-audience').value,$('qify-format').value));$('qify-status').textContent='Research prompt copied. Nothing was sent.';}catch{$('qify-status').textContent='Copy unavailable; download the packet instead.';}});
 })();
