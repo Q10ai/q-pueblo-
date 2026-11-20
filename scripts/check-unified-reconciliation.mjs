@@ -45,3 +45,10 @@ for(const page of [cultureHub,culturePaper])assert(!/Continue adding community h
 assert(cultureHub.includes('museums-culture-research.html')&&cultureHub.includes('museums-culture-tools.html')&&cultureHub.includes('qp-museums-culture-2026-11-19.json'));
 assert.equal((culturePaper.match(/id="chapter-\d+"/g)||[]).length,40);
 console.log('PASS culture reader story leads; internal work notes omitted from reader pages; 40 analytical sections preserved.');
+
+const expandedCulture=JSON.parse(read('public/data/qp-museums-culture-2026-11-19.json')).cultureExpansion.profiles;
+assert.equal(new Set(expandedCulture.map(x=>x.id)).size,expandedCulture.length);
+for(const x of expandedCulture){assert(x.finding&&x.meaning&&x.unknown&&x.sources.length&&cultureHub.includes('id="culture-'+x.id+'"'));}
+assert(culturePaper.includes('museums-culture.html#living-culture'));
+assert(read('public/home-search.js').includes('culture.cultureExpansion'));
+console.log('PASS individual cultural profiles, research and search links');
