@@ -13,12 +13,28 @@
       "headingEntries": 63
     },
     {
+      "id": "transition-2027",
+      "title": "Pueblo 2027 transition and decision calendar",
+      "route": "pueblo-2027-transition.html",
+      "group": "governance",
+      "headingEntries": 62,
+      "distinctExternalLinks": 33
+    },
+    {
       "id": "energy-rates",
       "title": "Electricity affordability and rate case",
       "route": "energy-research-paper-2026.html",
       "group": "utilities",
       "distinctExternalLinks": 29,
       "headingEntries": 22
+    },
+    {
+      "id": "county-public-safety",
+      "title": "Sheriff staffing, detention and school safety",
+      "route": "county-public-safety-school-resource-officers.html",
+      "group": "safety",
+      "headingEntries": 16,
+      "distinctExternalLinks": 22
     },
     {
       "id": "community-signals-18",
@@ -85,6 +101,14 @@
       "headingEntries": 44
     },
     {
+      "id": "council-attorney",
+      "title": "Council attorney funding",
+      "route": "council-attorney-funding.html",
+      "group": "fiscal",
+      "distinctExternalLinks": 13,
+      "headingEntries": 17
+    },
+    {
       "id": "economic-development",
       "title": "Economic development accountability",
       "route": "research/economic-development-20261119.html",
@@ -141,6 +165,22 @@
       "headingEntries": 44
     },
     {
+      "id": "desert-hawk",
+      "title": "Golf course debt, public assets and water costs",
+      "route": "desert-hawk-public-finances.html",
+      "group": "fiscal",
+      "headingEntries": 22,
+      "distinctExternalLinks": 8
+    },
+    {
+      "id": "regional-fragmentation",
+      "title": "Regional reporting fragmentation and coordination",
+      "route": "regional-fragmentation.html",
+      "group": "governance",
+      "headingEntries": 19,
+      "distinctExternalLinks": 8
+    },
+    {
       "id": "water-drought",
       "title": "Water security through 2031",
       "route": "resilience-water-drought-budget.html",
@@ -155,6 +195,14 @@
       "group": "fiscal",
       "distinctExternalLinks": 7,
       "headingEntries": 44
+    },
+    {
+      "id": "regional-leap",
+      "title": "Regional transition and LEAP: examples and costs",
+      "route": "regional-transition-and-leap.html",
+      "group": "future",
+      "headingEntries": 24,
+      "distinctExternalLinks": 7
     },
     {
       "id": "burn-scar",
@@ -197,6 +245,22 @@
       "headingEntries": 44
     },
     {
+      "id": "county-audit",
+      "title": "County audit timing and accounting support costs",
+      "route": "county-audit-cost-and-delay.html",
+      "group": "fiscal",
+      "headingEntries": 19,
+      "distinctExternalLinks": 6
+    },
+    {
+      "id": "county-financial-transparency",
+      "title": "County financial records and transparency",
+      "route": "county-financial-transparency.html",
+      "group": "governance",
+      "headingEntries": 17,
+      "distinctExternalLinks": 6
+    },
+    {
       "id": "year-end-county",
       "title": "County financial crisis — year-end edition",
       "route": "year-end-01-county-financial-crisis.html",
@@ -237,6 +301,30 @@
       "headingEntries": 44
     },
     {
+      "id": "county-budget-explanation",
+      "title": "County budget explanation and revenue reconciliation",
+      "route": "county-budget-explanation-reconciled.html",
+      "group": "fiscal",
+      "headingEntries": 23,
+      "distinctExternalLinks": 5
+    },
+    {
+      "id": "county-financial-review",
+      "title": "County audited fund balances and proposed fiscal outlook",
+      "route": "county-public-financial-review.html",
+      "group": "fiscal",
+      "headingEntries": 19,
+      "distinctExternalLinks": 5
+    },
+    {
+      "id": "commissioner-compensation",
+      "title": "Commissioner compensation and county worker comparison",
+      "route": "county-commissioner-compensation.html",
+      "group": "governance",
+      "headingEntries": 18,
+      "distinctExternalLinks": 5
+    },
+    {
       "id": "year-end-ai",
       "title": "AI governance — year-end edition",
       "route": "year-end-07-ai-governance.html",
@@ -269,20 +357,20 @@
       "headingEntries": 14
     },
     {
-      "id": "council-attorney",
-      "title": "Council attorney funding",
-      "route": "council-attorney-funding.html",
-      "group": "fiscal",
-      "distinctExternalLinks": 5,
-      "headingEntries": 11
-    },
-    {
       "id": "civic-finance",
       "title": "Civic Finance Observatory",
       "route": "civic-finance-observatory.html",
       "group": "fiscal",
       "distinctExternalLinks": 4,
       "headingEntries": 43
+    },
+    {
+      "id": "compatible-packets",
+      "title": "AI-compatible public records and living packets",
+      "route": "regional-ai-compatible-packets.html",
+      "group": "future",
+      "headingEntries": 19,
+      "distinctExternalLinks": 4
     },
     {
       "id": "year-end-offenses",
@@ -323,6 +411,14 @@
       "group": "utilities",
       "distinctExternalLinks": 4,
       "headingEntries": 13
+    },
+    {
+      "id": "county-pension",
+      "title": "County pension funding and workforce obligations",
+      "route": "county-pension-and-workforce.html",
+      "group": "fiscal",
+      "headingEntries": 17,
+      "distinctExternalLinks": 3
     },
     {
       "id": "wastewater-health",
