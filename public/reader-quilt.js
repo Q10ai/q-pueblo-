@@ -9,7 +9,7 @@
  function substantive(rows,already=[]){
   const seen=new Set(already.map(normalize));
   return rows.filter(x=>{const t=normalize(x.text??x.answer),state=normalize(x.state??x.classification);
-   if(!t||seen.has(t)||/^(not assessed|not yet established|unknown|unassessed|no evidence|unanswered)( |$)/.test(state))return false;
+   if(!t||seen.has(t)||/^(not assessed|not established|not yet established|unknown|unassessed|no evidence|unanswered)( |$)/.test(state))return false;
    if(/^(not yet established by the available evidence|this point has not been established by the reviewed records)$/.test(t))return false;
    seen.add(t);return true;
   });
