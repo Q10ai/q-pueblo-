@@ -1,0 +1,2 @@
+"use strict";
+const c=document.getElementById('cost'),j=document.getElementById('jobs'),o=document.getElementById('result');function calc(){let a=Number(c.value),b=Number(j.value);o.textContent=c.value!==''&&j.value!==''&&a>=0&&b>0?'Cost per sustained job: '+(a/b).toLocaleString('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}):'Enter a nonnegative cost and positive jobs.'}c.addEventListener('input',calc);j.addEventListener('input',calc);calc()
