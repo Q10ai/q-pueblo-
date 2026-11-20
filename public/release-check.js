@@ -6,7 +6,7 @@
     ['release-manifest.json', releaseId, 'json'],
     ['index.html', 'Get to Know Pueblo', 'text'],
     ['packets.html', 'recent-source-findings', 'text'],
-    ['report-budget-2026.html', 'Additional research coverage and unanswered questions', 'text'],
+    ['report-budget-2026.html', 'Additional research findings', 'text'],
     ['assets/pueblo-riverwalk-hero.webp', null, 'image'],
     ['assets/pueblo-riverwalk-hero-mobile.webp', null, 'image'],
     ['assets/pueblo-entry-art.webp', null, 'image'],
@@ -99,7 +99,7 @@
       li.textContent=(good?'PASS — ':'FAIL — ')+path+' · '+desc;
       list.appendChild(li);
     }
-    status.textContent=passed+'/'+assets.length+' assets matched on '+location.origin+'. '+(passed===assets.length?'Source assets are served; complete human functional and provenance checks before release.':'Publication is incomplete or stale. Do not claim this release is live.');
+    status.textContent=passed+'/'+assets.length+' assets matched on '+location.origin+'. '+(passed===assets.length?'Expected markers are served; compare the deployment receipt with the GitHub revision for exact verification.':'Publication is incomplete or stale. Do not claim this release is live.');
     btn.disabled=false;
   }
   btn.addEventListener('click',run);

@@ -1,0 +1,278 @@
+{
+  "id": "QP-FISCAL-COUNTY-2027",
+  "version": "1.1.0-candidate",
+  "as_of": "2026-11-19",
+  "review_due": "2026-11-20",
+  "status": "evolving",
+  "editorial_status": "human_review_required",
+  "jurisdiction": "Pueblo County, Colorado",
+  "canonical_report": "report-county-budget-2027.html",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "2027 Proposed Budget presentation",
+      "url": "https://county.pueblo.org/sites/default/files/2026-10/2027%20Proposed%20Budget%20SB.pdf",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S2",
+      "title": "2027 Financial Outlook presentation",
+      "url": "https://county.pueblo.org/sites/default/files/2026-10/2027%20Financial%20Update%20Final.pdf",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S3",
+      "title": "County budget directory",
+      "url": "https://county.pueblo.org/budget-and-finance-department/2027-budget",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S4",
+      "title": "County budget calendar",
+      "url": "https://county.pueblo.org/sites/default/files/2026-10/2027%20Budget%20Meeting%20Calendar.pdf",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S5",
+      "title": "County corrective initiatives",
+      "url": "https://county.pueblo.org/board-county-commissioners-office/what-we-are-working",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S6",
+      "title": "KRDO, Nov. 18: possible sheriff layoffs",
+      "url": "https://krdo.com/news/2026/11/18/pueblo-sheriff-warns-layoffs/",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S7",
+      "title": "Pueblo Ledger, Nov. 14: city/county proposals",
+      "url": "https://puebloledger.com/government-watch/pueblo-2027-budgets-city-county/",
+      "checked": "2026-11-19"
+    }
+  ],
+  "coverage": [
+    {
+      "number": 1,
+      "title": "Research question",
+      "finding": "Can the proposed county budget restore recurring balance while preserving essential service capacity? This is a conditional fiscal analysis, not an audit."
+    },
+    {
+      "number": 2,
+      "title": "Status",
+      "finding": "The Nov. 19 directory had no linked adopted budget. The October proposal is not an enacted appropriation. [S3]"
+    },
+    {
+      "number": 3,
+      "title": "Method",
+      "finding": "Compare stages and fund-level categories; preserve original rounding, separate one-time resources, and distinguish predictions from outcomes."
+    },
+    {
+      "number": 4,
+      "title": "All-funds baseline",
+      "finding": "2026 budget $255.83M, 2027 initial proposal $217.28M, before targeted General Fund reductions. [S1 p2]"
+    },
+    {
+      "number": 5,
+      "title": "Adjusted stage",
+      "finding": "Subtracting the $9.81M target gives $207.47M, a derived 18.9% decline from the 2026 budget, not an official final all-funds total. [S1 pp2,7]"
+    },
+    {
+      "number": 6,
+      "title": "General Fund flows",
+      "finding": "Reported proposed sources $122.67M and after-target spending $121.40M; county reports $1.26M surplus. The $0.01M displayed arithmetic discrepancy is rounding, not evidence of wrongdoing. [S1 p8]"
+    },
+    {
+      "number": 7,
+      "title": "Revenue structure",
+      "finding": "Property tax $59.23M; sales/use/ownership $37.37M; fees $12.57M; grants $5.88M; other revenue/transfers $7.52M. New debt proceeds zero in proposed 2027. [S1 p4]"
+    },
+    {
+      "number": 8,
+      "title": "Revenue risk",
+      "finding": "Grant decline and absent new debt proceeds explain much of the comparative sources decline; neither is necessarily a recurring tax-base loss. [S1 p4]"
+    },
+    {
+      "number": 9,
+      "title": "Capital exposure",
+      "finding": "Capital outlays across governmental funds increased from $10.9M in 2021 to $118.8M in 2024; compare completed projects and funded obligations before calling planned reductions service cuts. [S2 PDF p2]"
+    },
+    {
+      "number": 10,
+      "title": "Marijuana receipts",
+      "finding": "County reports $14.3M in 2021 and $5.4M in 2025, across restricted and other streams; 2025 unaudited. [S2 PDF p3]"
+    },
+    {
+      "number": 11,
+      "title": "Operating cost drivers",
+      "finding": "Insurance, detention medical and gross health claims rose between 2023 and 2025; test price, utilization, claims and reimbursements separately. [S2 PDF pp4,6]"
+    },
+    {
+      "number": 12,
+      "title": "Debt service",
+      "finding": "Governmental-fund debt service was $9M in 2021 and $19.8M in 2024. The 2027 General Fund starting proposal includes $21.35M debt service. Verify series, due dates, coverage and fund. [S2 PDF p5; S1 p5]"
+    },
+    {
+      "number": 13,
+      "title": "One-time financing",
+      "finding": "The $0.90M projected opening 2027 General Fund balance assumes $7M asset sale and $15M COP financing in 2026. Neither transaction's closing is verified here. [S1 p9]"
+    },
+    {
+      "number": 14,
+      "title": "Asset disposition",
+      "finding": "Request appraisals, sale resolutions, transaction costs, net proceeds, restrictions and collateral terms before assessing value or liquidity."
+    },
+    {
+      "number": 15,
+      "title": "Financing failure sensitivity",
+      "finding": "If net usable receipts assumed in the opening balance do not arrive, model opening balance deterioration separately from the annual operating result; debt-service consequences must be separately recalculated."
+    },
+    {
+      "number": 16,
+      "title": "Fund restrictions",
+      "finding": "Do not offset a deficit in one fund using another fund's positive balance without documented legal authority and cash availability."
+    },
+    {
+      "number": 17,
+      "title": "Road and Bridge",
+      "finding": "October projection: opening -$5.48M, closing -$5.10M. Investigate interfund advances, receivables, cash, legal restrictions and road condition. [S1 p9]"
+    },
+    {
+      "number": 18,
+      "title": "Human Services",
+      "finding": "October projection: closing -$0.50M. County says no targeted personnel cuts in this fund; this does not eliminate the negative projection or establish unchanged access. [S1 p9; S5]"
+    },
+    {
+      "number": 19,
+      "title": "E911",
+      "finding": "Projected ending budgetary balance $4.91M; determine statutory restrictions before any cross-fund analysis. [S1 p9]"
+    },
+    {
+      "number": 20,
+      "title": "Reduction method",
+      "finding": "Targets derive from eligible personnel budgets, not 15% of all spending; independent offices choose how to meet targets. [S2 PDF p11; S5]"
+    },
+    {
+      "number": 21,
+      "title": "Sheriff",
+      "finding": "October reduction target $4.89M, preliminary $46.33M, post-target $41.44M. No direct translation into layoff counts. [S1 p6]"
+    },
+    {
+      "number": 22,
+      "title": "Current staffing signal",
+      "finding": "KRDO Nov. 18 reports a sheriff staff warning about likely layoffs; number and scope had not been decided. Obtain dated final office plan. [S6]"
+    },
+    {
+      "number": 23,
+      "title": "Other departments",
+      "finding": "DA $0.84M; facilities $0.68M; clerk $0.60M; planning $0.49M; IT $0.48M targets. Track workload rather than assuming across-the-board service loss. [S1 p6]"
+    },
+    {
+      "number": 24,
+      "title": "Emergency services",
+      "finding": "Monitor dispatch queue, response-time percentiles, staffing coverage and mutual aid. Any threshold requires legal and operational review."
+    },
+    {
+      "number": 25,
+      "title": "Detention",
+      "finding": "Track occupancy, mandatory care, vacancies, overtime, staff injury and contract costs; a cut can shift spending instead of reducing it."
+    },
+    {
+      "number": 26,
+      "title": "Courts and prosecution",
+      "finding": "Track case processing, statutory deadlines, vacancy rates and diversion capacity; separate county, district and municipal authority."
+    },
+    {
+      "number": 27,
+      "title": "Children and families",
+      "finding": "Track actual food, housing, protection and childcare caseloads and wait times; impacts are hypotheses until service data exist."
+    },
+    {
+      "number": 28,
+      "title": "Nonprofits and CSAC",
+      "finding": "Verify executed city/county agreements, appropriations, receivables, payments and provider-level continuity before quantifying cost shifts. Related report: report-csac-2027.html."
+    },
+    {
+      "number": 29,
+      "title": "City crossover",
+      "finding": "City and county budgets are separate. City proposals and county withdrawals may affect shared services; never sum balances or assume a transfer. [S7]"
+    },
+    {
+      "number": 30,
+      "title": "Wastewater and utilities",
+      "finding": "City sewer and regulated electric rates have distinct financing and authority; analyze household burden and emergency demand, not presumed county General Fund liabilities."
+    },
+    {
+      "number": 31,
+      "title": "Reserves",
+      "finding": "County outlook sets a 10% interim floor and 16.67% stabilization target, distinct from TABOR. Verify the policy denominator and qualified reserves before claiming compliance. [S2 PDF p10]"
+    },
+    {
+      "number": 32,
+      "title": "Liquidity",
+      "finding": "Require a rolling 13-week cash forecast, trustee-payment calendar, aged payables/receivables and interfund balance reconciliation."
+    },
+    {
+      "number": 33,
+      "title": "Stress-test methodology",
+      "finding": "Annual result in millions = 1.26 − 122.67 × revenue miss fraction − 9.81 × unrealized savings fraction − unexpected cost. Ending balance = 0.90 + annual result − opening financing shortfall. Conditional static model, no probabilities."
+    },
+    {
+      "number": 34,
+      "title": "Sensitivity",
+      "finding": "Baseline +$1.26M; 1% revenue miss +$0.0333M; 2% miss −$1.1934M; 80% savings delivery −$0.702M; combined 2% miss, 80% savings and $2M cost −$5.1554M. Model does not predict outcomes."
+    },
+    {
+      "number": 35,
+      "title": "Recovery options",
+      "finding": "Compare procurement, shared services, attrition, preventative maintenance, grant recovery and debt restructuring by net recurring cost and service performance. No savings assumed without evidence."
+    },
+    {
+      "number": 36,
+      "title": "Governance",
+      "finding": "County reports finance leadership reassignment and planned monthly reporting, financial controls and debt-payment processes. Verify dated outputs and independent review. [S2 PDF pp9,12–14; S5]"
+    },
+    {
+      "number": 37,
+      "title": "Public participation",
+      "finding": "Official calendar lists Dec. 4 final Workday adjustment and Dec. 10 adoption hearing. Recheck notice and location before attending. [S4]"
+    },
+    {
+      "number": 38,
+      "title": "Records and audit",
+      "finding": "Request final budget, amendments, audits, monthly ledgers, debt agreements, appraisals, staffing plans, grant obligations and service data; seek redacted aggregate information."
+    },
+    {
+      "number": 39,
+      "title": "TTL and corrections",
+      "finding": "Recheck active decisions daily, monthly finance on issuance, structural risks quarterly; stale evidence remains visible with its date. Append corrections with source, reason and reviewer."
+    },
+    {
+      "number": 40,
+      "title": "Conclusion and limits",
+      "finding": "The proposal offers a narrow conditional surplus, not proof of structural recovery. Full 18.93 MB budget book retrieval failed; no detailed audit, final layoffs, cash validation or financing close verified. Human editorial approval and deployment verification remain required. [S1–S6]"
+    }
+  ],
+  "model": {
+    "unit": "USD millions",
+    "revenue": 122.67,
+    "savingsTarget": 9.81,
+    "reportedSurplus": 1.26,
+    "openingBalance": 0.9,
+    "financingAssumptions": {
+      "assetSale": 7,
+      "cop": 15
+    },
+    "note": "Conditional model; no probability or legal conclusion."
+  },
+  "related": [
+    "report-csac-2027.html",
+    "report-wastewater-2026.html",
+    "county-financial-transparency.html",
+    "county-public-financial-review.html",
+    "nonprofit-funding-continuity.html",
+    "regional-financial-transition.html",
+    "report-aspen-recovery.html",
+    "report-records-request.html"
+  ]
+}

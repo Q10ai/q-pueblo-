@@ -1,0 +1,304 @@
+{
+  "id": "QP-CIVIC-ENTITY-PILOT-20261119",
+  "status": "public_source_pilot_not_canonical",
+  "observed_on": "2026-11-19",
+  "sources": [
+    {
+      "id": "city-dir",
+      "title": "City staff and service directory",
+      "url": "https://www.pueblo.us/m/directory",
+      "scope": "Public contact and department discovery"
+    },
+    {
+      "id": "council",
+      "title": "City Council roster",
+      "url": "https://www.pueblo.us/585/Council-Members",
+      "scope": "Named city representatives and role titles"
+    },
+    {
+      "id": "boards",
+      "title": "City appointments",
+      "url": "https://pueblo.granicus.com/boards/w/453d296055539108/members",
+      "scope": "Term history; expired terms not current"
+    },
+    {
+      "id": "county",
+      "title": "County departments",
+      "url": "https://www.pueblocounty.gov/departments-taxonomy-view",
+      "scope": "County offices and service routing"
+    },
+    {
+      "id": "election",
+      "title": "County election results",
+      "url": "https://pueblocounty.gov/clerk-and-recorder-department/election-results-november-2026",
+      "scope": "Nov 13 unofficial returns; no successor activation"
+    },
+    {
+      "id": "districts",
+      "title": "Colorado special districts",
+      "url": "https://gis.dola.colorado.gov/CO_SpecialDistrict/",
+      "scope": "Discovery map, not authoritative boundary evidence"
+    },
+    {
+      "id": "metro",
+      "title": "Pueblo West Metro board",
+      "url": "https://pueblowestmetro.us/152/Board-of-Directors",
+      "scope": "Board roles, term years, meeting guidance"
+    },
+    {
+      "id": "water",
+      "title": "Pueblo Water board",
+      "url": "https://pueblowater.org/our-board/",
+      "scope": "Water governance and public office contact"
+    },
+    {
+      "id": "pacog",
+      "title": "PACOG member governments",
+      "url": "https://www.pacog.net/pacogmembers",
+      "scope": "Eight member governments, 16 voting seats"
+    },
+    {
+      "id": "scedd",
+      "title": "SCEDD regional information",
+      "url": "https://scedd.com/about/",
+      "scope": "Thirteen-county service scope and regional strategy"
+    },
+    {
+      "id": "scedd-home",
+      "title": "SCEDD home",
+      "url": "https://scedd.com/",
+      "scope": "Organization reports EDA funding; award detail not established"
+    },
+    {
+      "id": "state",
+      "title": "Colorado legislative lookup",
+      "url": "https://www.leg.colorado.gov/find-my-legislator",
+      "scope": "Official district/representative lookup"
+    },
+    {
+      "id": "house",
+      "title": "US House lookup",
+      "url": "https://www.house.gov/representatives/find-your-representative",
+      "scope": "Congressional office lookup"
+    },
+    {
+      "id": "senate",
+      "title": "US Senate Colorado",
+      "url": "https://www.senate.gov/states/CO/intro.htm",
+      "scope": "Senators, public contact and committee links"
+    },
+    {
+      "id": "federal",
+      "title": "US agency index",
+      "url": "https://www.usa.gov/agency-index",
+      "scope": "Federal agency directory"
+    },
+    {
+      "id": "sam",
+      "title": "Federal assistance listings",
+      "url": "https://sam.gov/assistance-listings",
+      "scope": "Program descriptions; not awards"
+    },
+    {
+      "id": "spending",
+      "title": "Federal award search",
+      "url": "https://www.usaspending.gov/search",
+      "scope": "Search entry point only; transactions unreviewed"
+    },
+    {
+      "id": "tracer",
+      "title": "Colorado campaign finance",
+      "url": "https://tracer.sos.colorado.gov/PublicSite/DataDownload.aspx",
+      "scope": "Transaction downloads; not yet ingested"
+    },
+    {
+      "id": "irs",
+      "title": "IRS tax-exempt organization search",
+      "url": "https://www.irs.gov/charities-non-profits/search-for-tax-exempt-organizations",
+      "scope": "Nonprofit discovery and filings portal"
+    }
+  ],
+  "relationships": [
+    {
+      "from": "City of Pueblo",
+      "to": "Pueblo Area Council of Governments",
+      "type": "member_government_of",
+      "source": "pacog",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "Pueblo County",
+      "to": "Pueblo Area Council of Governments",
+      "type": "member_government_of",
+      "source": "pacog",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "Pueblo Board of Water Works",
+      "to": "Pueblo Area Council of Governments",
+      "type": "member_government_of",
+      "source": "pacog",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "School District 60",
+      "to": "Pueblo Area Council of Governments",
+      "type": "member_government_of",
+      "source": "pacog",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "School District 70",
+      "to": "Pueblo Area Council of Governments",
+      "type": "member_government_of",
+      "source": "pacog",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "Pueblo West Metropolitan District",
+      "to": "Pueblo Area Council of Governments",
+      "type": "member_government_of",
+      "source": "pacog",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "Colorado City Metropolitan District",
+      "to": "Pueblo Area Council of Governments",
+      "type": "member_government_of",
+      "source": "pacog",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "Salt Creek Sanitation District",
+      "to": "Pueblo Area Council of Governments",
+      "type": "member_government_of",
+      "source": "pacog",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "Southern Colorado Economic Development District",
+      "to": "Baca County",
+      "type": "serves_region_including",
+      "source": "scedd",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "Southern Colorado Economic Development District",
+      "to": "Bent County",
+      "type": "serves_region_including",
+      "source": "scedd",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "Southern Colorado Economic Development District",
+      "to": "Chaffee County",
+      "type": "serves_region_including",
+      "source": "scedd",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "Southern Colorado Economic Development District",
+      "to": "Crowley County",
+      "type": "serves_region_including",
+      "source": "scedd",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "Southern Colorado Economic Development District",
+      "to": "Custer County",
+      "type": "serves_region_including",
+      "source": "scedd",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "Southern Colorado Economic Development District",
+      "to": "Fremont County",
+      "type": "serves_region_including",
+      "source": "scedd",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "Southern Colorado Economic Development District",
+      "to": "Huerfano County",
+      "type": "serves_region_including",
+      "source": "scedd",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "Southern Colorado Economic Development District",
+      "to": "Kiowa County",
+      "type": "serves_region_including",
+      "source": "scedd",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "Southern Colorado Economic Development District",
+      "to": "Lake County",
+      "type": "serves_region_including",
+      "source": "scedd",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "Southern Colorado Economic Development District",
+      "to": "Las Animas County",
+      "type": "serves_region_including",
+      "source": "scedd",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "Southern Colorado Economic Development District",
+      "to": "Otero County",
+      "type": "serves_region_including",
+      "source": "scedd",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "Southern Colorado Economic Development District",
+      "to": "Prowers County",
+      "type": "serves_region_including",
+      "source": "scedd",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "Southern Colorado Economic Development District",
+      "to": "Pueblo County",
+      "type": "serves_region_including",
+      "source": "scedd",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false
+    },
+    {
+      "from": "U.S. Economic Development Administration",
+      "to": "Southern Colorado Economic Development District",
+      "type": "organization_reports_funding_from",
+      "source": "scedd-home",
+      "observed_on": "2026-11-19",
+      "operational_dependency": false,
+      "amount": null,
+      "award_id": null
+    }
+  ],
+  "operational_dependencies": [],
+  "successor_activations": [],
+  "notes": "Observed source claims, not a census or causal graph. No private contact data. Funding disclosure not award verification."
+}

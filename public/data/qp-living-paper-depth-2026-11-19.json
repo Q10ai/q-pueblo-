@@ -1,0 +1,112 @@
+{
+  "schema": "qp-living-paper-depth-v1",
+  "checked": "2026-11-19",
+  "boundary": "Page markup inventory only; counts of distinct external href strings and h2/h3 headings are navigation proxies, not original evidence count or completed analysis. Duplicate sources across papers not deduplicated globally. Comparison excludes structured report snapshot and papers not in this selected lane.",
+  "rows": [
+    {
+      "route": "museums-culture-research.html",
+      "title": "Pueblo Museums &amp; Culture: Regional Cultural Infrastructure Research Paper",
+      "externalReferenceLinks": 55,
+      "headingEntries": 61,
+      "iconOk": false
+    },
+    {
+      "route": "energy-research-paper-2026.html",
+      "title": "Electricity affordability, utility accountability and alternative energy pathways in Pueblo",
+      "externalReferenceLinks": 29,
+      "headingEntries": 20,
+      "iconOk": true
+    },
+    {
+      "route": "pueblo-ai-readiness.html",
+      "title": "Is Pueblo ready for the AI era? A regional plan for people, jobs and public services",
+      "externalReferenceLinks": 12,
+      "headingEntries": 12,
+      "iconOk": true
+    },
+    {
+      "route": "pueblo-boulevard-pura-repayment.html",
+      "title": "Pueblo Boulevard’s $1.76 million investment: who repays the public fund?",
+      "externalReferenceLinks": 9,
+      "headingEntries": 46,
+      "iconOk": true
+    },
+    {
+      "route": "regional-fragmentation.html",
+      "title": "One Pueblo region, many disconnected reporting systems",
+      "externalReferenceLinks": 8,
+      "headingEntries": 18,
+      "iconOk": true
+    },
+    {
+      "route": "regional-transition-and-leap.html",
+      "title": "Pueblo’s transition and leap plan: real examples, costs and implementation",
+      "externalReferenceLinks": 7,
+      "headingEntries": 22,
+      "iconOk": true
+    },
+    {
+      "route": "county-audit-cost-and-delay.html",
+      "title": "What audit is Pueblo County paying for — and why is it taking so long?",
+      "externalReferenceLinks": 6,
+      "headingEntries": 18,
+      "iconOk": true
+    },
+    {
+      "route": "county-financial-transparency.html",
+      "title": "Where are Pueblo County’s 2025 financial records?",
+      "externalReferenceLinks": 6,
+      "headingEntries": 16,
+      "iconOk": true
+    },
+    {
+      "route": "county-public-financial-review.html",
+      "title": "What Pueblo County’s published numbers already reveal about the budget crisis",
+      "externalReferenceLinks": 5,
+      "headingEntries": 18,
+      "iconOk": true
+    },
+    {
+      "route": "county-commissioner-compensation.html",
+      "title": "Who sets commissioner pay — and how does it compare with county workers?",
+      "externalReferenceLinks": 5,
+      "headingEntries": 17,
+      "iconOk": true
+    },
+    {
+      "route": "nonprofit-funding-continuity.html",
+      "title": "Who absorbs Pueblo’s nonprofit funding disruption?",
+      "externalReferenceLinks": 5,
+      "headingEntries": 11,
+      "iconOk": true
+    },
+    {
+      "route": "council-attorney-funding.html",
+      "title": "Does Pueblo City Council really have $100,000 for independent legal advice?",
+      "externalReferenceLinks": 5,
+      "headingEntries": 10,
+      "iconOk": true
+    },
+    {
+      "route": "regional-ai-compatible-packets.html",
+      "title": "AI-compatible public records: the Q living packet transition",
+      "externalReferenceLinks": 4,
+      "headingEntries": 18,
+      "iconOk": true
+    },
+    {
+      "route": "surveillance-accountability.html",
+      "title": "Surveillance in Pueblo: what is actually in use, what it costs, and who oversees it",
+      "externalReferenceLinks": 4,
+      "headingEntries": 10,
+      "iconOk": true
+    },
+    {
+      "route": "county-pension-and-workforce.html",
+      "title": "Pueblo County pension funding, workforce cuts and future obligations",
+      "externalReferenceLinks": 3,
+      "headingEntries": 16,
+      "iconOk": true
+    }
+  ]
+}

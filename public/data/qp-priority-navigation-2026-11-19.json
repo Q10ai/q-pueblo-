@@ -1,0 +1,1735 @@
+{
+  "schema": "qp-priority-navigation-v1",
+  "asOf": "2026-11-19",
+  "status": "editorial candidate; association navigation, not new factual findings",
+  "sources": [
+    "data/qp-current-reports.json",
+    "data/qp-three-hop-2026-11-13.json",
+    "index.html",
+    "reports-static.html"
+  ],
+  "method": "Editorial impact order; research depth separately sorted by source entries then claim entries; unknown living-paper depth not scored. Each graph issue has one editorial primary category; related topical links are not authority edges. Reverse associations are copied from the dated graph.",
+  "groups": [
+    {
+      "id": "fiscal",
+      "title": "1 · Budgets, debt & essential services",
+      "reason": "Highest cross-system exposure: public obligations, service continuity, staffing and financial oversight.",
+      "routes": [
+        "report-county-budget-2027.html",
+        "report-budget-2026.html",
+        "report-city-mill-levy-2026.html",
+        "report-county-priorities-2026.html",
+        "council-attorney-funding.html",
+        "county-financial-transparency.html",
+        "county-public-financial-review.html",
+        "county-audit-cost-and-delay.html",
+        "county-commissioner-compensation.html",
+        "county-pension-and-workforce.html",
+        "nonprofit-funding-continuity.html",
+        "report-csac-2027.html",
+        "pueblo-boulevard-pura-repayment.html",
+        "report-pueblo-boulevard-agenda.html",
+        "follow-money.html"
+      ],
+      "issues": [
+        "fisc-001",
+        "fisc-002"
+      ],
+      "entities": [
+        "ent-9fc831fd79fc",
+        "ent-eba66093d2f4",
+        "ent-1d07f2b59d68",
+        "ent-49eacbe08379"
+      ],
+      "primaryIssueIds": [
+        "fisc-001",
+        "fisc-002",
+        "fisc-003",
+        "fisc-004",
+        "fisc-005",
+        "fisc-006",
+        "fisc-007",
+        "fisc-008",
+        "fisc-009",
+        "fisc-010",
+        "fund-001",
+        "fund-002",
+        "fund-003",
+        "fund-004",
+        "fund-005",
+        "fund-006",
+        "fund-007",
+        "fund-008",
+        "fund-009",
+        "fund-010",
+        "reg-002",
+        "reg-003",
+        "reg-011",
+        "reg-013",
+        "reg-017",
+        "reg-033",
+        "reg-034"
+      ]
+    },
+    {
+      "id": "safety",
+      "title": "2 · Public safety, jail, health & recovery",
+      "reason": "Life safety, detention and treatment capacity, emergency preparedness and recovery costs.",
+      "routes": [
+        "surveillance-accountability.html",
+        "report-aspen-recovery.html",
+        "report-aspen-recovery-costs.html",
+        "regional-assurance.html",
+        "report-pueblo-flood-history.html"
+      ],
+      "issues": [
+        "safe-005",
+        "safe-006",
+        "safe-007",
+        "reg-025"
+      ],
+      "entities": [
+        "ent-9fc831fd79fc",
+        "ent-0f4ec945e91d",
+        "ent-715e2dc6a40e",
+        "ent-d95e5fcc8803"
+      ],
+      "primaryIssueIds": [
+        "work-003",
+        "work-004",
+        "safe-001",
+        "safe-002",
+        "safe-003",
+        "safe-004",
+        "safe-005",
+        "safe-006",
+        "safe-007",
+        "safe-008",
+        "safe-009",
+        "safe-010",
+        "safe-011",
+        "safe-012",
+        "safe-013",
+        "safe-014",
+        "safe-015",
+        "heal-001",
+        "heal-002",
+        "heal-003",
+        "heal-004",
+        "heal-005",
+        "heal-006",
+        "heal-008",
+        "reg-020",
+        "reg-024",
+        "reg-025",
+        "reg-032",
+        "case-rail-fire"
+      ]
+    },
+    {
+      "id": "utilities",
+      "title": "3 · Energy, water & household affordability",
+      "reason": "Utility costs, water and sanitation capacity; proposed rate decisions are separate from approved rates.",
+      "routes": [
+        "report-black-hills-rate-case-2026.html",
+        "energy-research-paper-2026.html",
+        "report-water-budget-evidence.html",
+        "report-wastewater-2026.html"
+      ],
+      "issues": [
+        "hous-001",
+        "env-002",
+        "env-003",
+        "reg-021",
+        "case-wastewater"
+      ],
+      "entities": [
+        "ent-e9982e089c2a",
+        "ent-ff89f261999c",
+        "ent-9528c16c953c",
+        "ent-2bf079571fbe",
+        "ent-c88e6d5dc564"
+      ],
+      "primaryIssueIds": [
+        "infr-002",
+        "infr-007",
+        "infr-009",
+        "hous-001",
+        "env-001",
+        "env-002",
+        "env-003",
+        "env-004",
+        "env-005",
+        "env-006",
+        "env-007",
+        "env-008",
+        "env-009",
+        "env-010",
+        "env-011",
+        "env-012",
+        "env-013",
+        "env-014",
+        "env-015",
+        "spec-005",
+        "spec-006",
+        "reg-021",
+        "reg-022",
+        "reg-023",
+        "case-wastewater"
+      ]
+    },
+    {
+      "id": "economy",
+      "title": "4 · Jobs, industry & public investment",
+      "reason": "Regional employment, incentives, project milestones and realized public value.",
+      "routes": [
+        "report-half-cent-2026.html",
+        "project-falcon.html",
+        "report-lime-road-costs.html"
+      ],
+      "issues": [
+        "reg-005",
+        "reg-007",
+        "econ-003",
+        "econ-005"
+      ],
+      "entities": [
+        "ent-58363d81e2d8",
+        "ent-b093130ce0eb",
+        "ent-e3a406d99dc5",
+        "ent-eba66093d2f4"
+      ],
+      "primaryIssueIds": [
+        "work-001",
+        "work-002",
+        "work-007",
+        "work-008",
+        "work-009",
+        "work-010",
+        "work-011",
+        "work-012",
+        "work-013",
+        "work-014",
+        "work-015",
+        "econ-001",
+        "econ-002",
+        "econ-003",
+        "econ-004",
+        "econ-005",
+        "econ-006",
+        "econ-007",
+        "econ-008",
+        "econ-009",
+        "econ-010",
+        "econ-011",
+        "econ-012",
+        "econ-014",
+        "econ-015",
+        "spec-008",
+        "spec-010",
+        "reg-001",
+        "reg-004",
+        "reg-005",
+        "reg-006",
+        "reg-007",
+        "reg-008",
+        "reg-018"
+      ]
+    },
+    {
+      "id": "housing",
+      "title": "5 · Housing, poverty & family stability",
+      "reason": "Access to housing and basic needs, permits, affordability and actual service delivery.",
+      "routes": [
+        "report-housing-pipeline.html",
+        "report-permits-jurisdiction.html",
+        "report-food-assistance.html"
+      ],
+      "issues": [
+        "hous-002",
+        "hous-003",
+        "hous-005",
+        "hous-006"
+      ],
+      "entities": [
+        "ent-7866992fbe98",
+        "ent-1d07f2b59d68",
+        "ent-9fc831fd79fc"
+      ],
+      "primaryIssueIds": [
+        "hous-002",
+        "hous-003",
+        "hous-004",
+        "hous-005",
+        "hous-006",
+        "hous-007",
+        "hous-008",
+        "hous-009",
+        "hous-010",
+        "heal-007",
+        "heal-009",
+        "heal-010",
+        "spec-007",
+        "spec-009",
+        "reg-016",
+        "reg-035"
+      ]
+    },
+    {
+      "id": "governance",
+      "title": "6 · Governance, authority & public records",
+      "reason": "Decision rights, independent review, legal boundaries, transparency and 2027 office transitions.",
+      "routes": [
+        "governance.html",
+        "who-governs.html",
+        "report-records-request.html",
+        "regional-fragmentation.html"
+      ],
+      "issues": [
+        "reg-005",
+        "gov-003"
+      ],
+      "entities": [
+        "ent-eba66093d2f4",
+        "ent-e61ec276ed94",
+        "ent-9fc831fd79fc",
+        "ent-b9c587474e10"
+      ],
+      "primaryIssueIds": [
+        "gov-001",
+        "gov-002",
+        "gov-003",
+        "gov-004",
+        "gov-005",
+        "gov-006",
+        "gov-007",
+        "gov-008",
+        "gov-009",
+        "gov-010",
+        "gov-011",
+        "gov-012",
+        "gov-013",
+        "gov-014",
+        "gov-015",
+        "elec-001",
+        "elec-002",
+        "elec-003",
+        "elec-004",
+        "elec-005",
+        "elec-006",
+        "elec-007",
+        "elec-008",
+        "elec-009",
+        "elec-010",
+        "spec-001",
+        "spec-002",
+        "spec-003",
+        "spec-004",
+        "reg-010",
+        "reg-012",
+        "reg-014",
+        "reg-015",
+        "reg-030",
+        "reg-036"
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "title": "7 · Infrastructure & transportation",
+      "reason": "Capital obligations, roads, rail, airport and intergovernmental service dependencies.",
+      "routes": [
+        "report-pueblo-boulevard-agenda.html",
+        "pueblo-boulevard-pura-repayment.html",
+        "report-lime-road-costs.html"
+      ],
+      "issues": [
+        "infr-009"
+      ],
+      "entities": [
+        "ent-6a552f625383",
+        "ent-33459c0d6f2f",
+        "ent-49eacbe08379",
+        "ent-9528c16c953c"
+      ],
+      "primaryIssueIds": [
+        "infr-001",
+        "infr-003",
+        "infr-004",
+        "infr-005",
+        "infr-006",
+        "infr-008",
+        "infr-010",
+        "infr-011",
+        "infr-012",
+        "infr-013",
+        "infr-014",
+        "infr-015",
+        "case-fiber",
+        "case-rail",
+        "case-trail"
+      ]
+    },
+    {
+      "id": "education",
+      "title": "8 · Education, children & community services",
+      "reason": "School access, workforce preparation, child effects and institutional oversight.",
+      "routes": [
+        "report-d60-preschool-2026.html",
+        "learn-pueblo.html"
+      ],
+      "issues": [
+        "reg-028"
+      ],
+      "entities": [
+        "ent-9583a0236568",
+        "ent-36144c80645b",
+        "ent-fb819af4fdb7",
+        "ent-27b345efcd89"
+      ],
+      "primaryIssueIds": [
+        "work-005",
+        "work-006",
+        "edu-001",
+        "edu-002",
+        "edu-003",
+        "edu-004",
+        "edu-005",
+        "edu-006",
+        "edu-007",
+        "edu-008",
+        "edu-009",
+        "edu-010",
+        "edu-011",
+        "edu-012",
+        "edu-013",
+        "edu-014",
+        "edu-015",
+        "reg-019",
+        "reg-028",
+        "case-library-finance",
+        "case-school-governance"
+      ]
+    },
+    {
+      "id": "culture",
+      "title": "9 · Museums, arts, heritage & community life",
+      "reason": "Preservation, funding, ownership, education and long-term cultural options.",
+      "routes": [
+        "museums-culture.html",
+        "museums-culture-research.html",
+        "museums-culture-tools.html"
+      ],
+      "issues": [
+        "reg-009"
+      ],
+      "entities": [
+        "ent-1d07f2b59d68",
+        "ent-eba66093d2f4",
+        "ent-df5480d2516f"
+      ],
+      "primaryIssueIds": [
+        "econ-013",
+        "reg-009",
+        "reg-026"
+      ]
+    },
+    {
+      "id": "future",
+      "title": "10 · AI readiness, digital twin & regional transition",
+      "reason": "Build literacy, regional coordination and human-governed decision tools; no live twin implied.",
+      "routes": [
+        "pueblo-ai-readiness.html",
+        "regional-financial-transition.html",
+        "regional-ai-compatible-packets.html",
+        "regional-transition-and-leap.html",
+        "regional-transition-tools.html",
+        "twin.html"
+      ],
+      "issues": [
+        "work-012"
+      ],
+      "entities": [
+        "ent-b9c587474e10",
+        "ent-27b345efcd89",
+        "ent-805487266d4d"
+      ],
+      "primaryIssueIds": [
+        "reg-027",
+        "reg-029",
+        "reg-031",
+        "reg-037",
+        "reg-038",
+        "case-library-ai"
+      ]
+    }
+  ],
+  "structuredReports": [
+    {
+      "id": "QP-20261114-FOOD-ASSISTANCE",
+      "slug": "food-assistance",
+      "sourceEntries": 15,
+      "claimEntries": 16,
+      "sourceChecked": "2026-11-15"
+    },
+    {
+      "id": "QP-SOC-2027-003",
+      "slug": "csac-2027",
+      "sourceEntries": 3,
+      "claimEntries": 4,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-FIN-2026-001",
+      "slug": "budget-2026",
+      "sourceEntries": 3,
+      "claimEntries": 4,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-20261114-COUNTY-BUDGET-2027",
+      "slug": "county-budget-2027",
+      "sourceEntries": 2,
+      "claimEntries": 6,
+      "sourceChecked": "2026-11-14"
+    },
+    {
+      "id": "QP-20261114-D60-PRESCHOOL-2026",
+      "slug": "d60-preschool-2026",
+      "sourceEntries": 2,
+      "claimEntries": 5,
+      "sourceChecked": "2026-11-14"
+    },
+    {
+      "id": "QP-MONEY-2026-002",
+      "slug": "half-cent-2026",
+      "sourceEntries": 2,
+      "claimEntries": 4,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-QIFY-2026-007",
+      "slug": "aspen-recovery",
+      "sourceEntries": 2,
+      "claimEntries": 3,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-QIFY-2026-004",
+      "slug": "permits-jurisdiction",
+      "sourceEntries": 2,
+      "claimEntries": 3,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-QIFY-2026-006",
+      "slug": "housing-pipeline",
+      "sourceEntries": 2,
+      "claimEntries": 3,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-QIFY-2026-009",
+      "slug": "water-budget-evidence",
+      "sourceEntries": 2,
+      "claimEntries": 3,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-QIFY-2026-012",
+      "slug": "pueblo-boulevard-agenda",
+      "sourceEntries": 1,
+      "claimEntries": 5,
+      "sourceChecked": "2026-11-10"
+    },
+    {
+      "id": "QP-20261114-ASPEN-RECOVERY-COSTS",
+      "slug": "aspen-recovery-costs",
+      "sourceEntries": 1,
+      "claimEntries": 5,
+      "sourceChecked": "2026-11-14"
+    },
+    {
+      "id": "QP-CITY-TAX-2026-005",
+      "slug": "city-mill-levy-2026",
+      "sourceEntries": 1,
+      "claimEntries": 4,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-COUNTY-2026-004",
+      "slug": "county-priorities-2026",
+      "sourceEntries": 1,
+      "claimEntries": 4,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-QIFY-2026-005",
+      "slug": "wastewater-2026",
+      "sourceEntries": 1,
+      "claimEntries": 3,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-QIFY-2026-010",
+      "slug": "records-request",
+      "sourceEntries": 1,
+      "claimEntries": 3,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-QIFY-2026-008",
+      "slug": "lime-road-costs",
+      "sourceEntries": 1,
+      "claimEntries": 3,
+      "sourceChecked": "2026-11-09"
+    },
+    {
+      "id": "QP-QIFY-2026-011",
+      "slug": "pueblo-flood-history",
+      "sourceEntries": 1,
+      "claimEntries": 3,
+      "sourceChecked": "2026-11-09"
+    }
+  ],
+  "coverage": {
+    "issues": 211,
+    "entity_labels": 56,
+    "associations": 456,
+    "unresolved_groups": 15,
+    "unmapped_issues": 26
+  },
+  "entityCrosswalk": [
+    {
+      "id": "ent-58363d81e2d8",
+      "identityState": "Unresolved group — not one verified legal entity",
+      "issueIds": [
+        "work-012",
+        "econ-001",
+        "econ-003",
+        "econ-004",
+        "econ-005",
+        "econ-011",
+        "econ-014",
+        "econ-015"
+      ],
+      "groupIds": [
+        "economy"
+      ],
+      "editorialGroupIds": [
+        "economy"
+      ]
+    },
+    {
+      "id": "ent-a940fb838463",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-library-ai"
+      ],
+      "groupIds": [
+        "future"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-adbbd55cc502",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-rail"
+      ],
+      "groupIds": [
+        "infrastructure"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-744205e43529",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-library-ai"
+      ],
+      "groupIds": [
+        "future"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-e9982e089c2a",
+      "identityState": "Unresolved group — not one verified legal entity",
+      "issueIds": [
+        "work-007",
+        "hous-001",
+        "env-013"
+      ],
+      "groupIds": [
+        "economy",
+        "utilities"
+      ],
+      "editorialGroupIds": [
+        "utilities"
+      ]
+    },
+    {
+      "id": "ent-6a552f625383",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-rail"
+      ],
+      "groupIds": [
+        "infrastructure"
+      ],
+      "editorialGroupIds": [
+        "infrastructure"
+      ]
+    },
+    {
+      "id": "ent-fdde2f91d972",
+      "identityState": "Unresolved group — not one verified legal entity",
+      "issueIds": [
+        "case-library-ai"
+      ],
+      "groupIds": [
+        "future"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-a4057eeb882d",
+      "identityState": "Unresolved group — not one verified legal entity",
+      "issueIds": [
+        "econ-007"
+      ],
+      "groupIds": [
+        "economy"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-33459c0d6f2f",
+      "identityState": "Unresolved group — not one verified legal entity",
+      "issueIds": [
+        "case-rail"
+      ],
+      "groupIds": [
+        "infrastructure"
+      ],
+      "editorialGroupIds": [
+        "infrastructure"
+      ]
+    },
+    {
+      "id": "ent-e61ec276ed94",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "gov-001"
+      ],
+      "groupIds": [
+        "governance"
+      ],
+      "editorialGroupIds": [
+        "governance"
+      ]
+    },
+    {
+      "id": "ent-eba66093d2f4",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "fisc-003",
+        "reg-004",
+        "reg-005",
+        "reg-006",
+        "reg-014"
+      ],
+      "groupIds": [
+        "fiscal",
+        "economy",
+        "governance"
+      ],
+      "editorialGroupIds": [
+        "fiscal",
+        "economy",
+        "governance",
+        "culture"
+      ]
+    },
+    {
+      "id": "ent-1d07f2b59d68",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "fisc-002",
+        "fisc-003",
+        "fisc-004",
+        "fisc-005",
+        "fisc-006",
+        "fisc-007",
+        "fisc-008",
+        "fisc-009",
+        "fisc-010",
+        "infr-001",
+        "infr-002",
+        "infr-003",
+        "infr-004",
+        "infr-005",
+        "infr-006",
+        "infr-008",
+        "infr-009",
+        "infr-010",
+        "infr-011",
+        "infr-012",
+        "infr-013",
+        "infr-014",
+        "infr-015",
+        "work-001",
+        "work-002",
+        "work-003",
+        "work-004",
+        "work-007",
+        "work-008",
+        "work-009",
+        "work-010",
+        "work-011",
+        "work-012",
+        "work-013",
+        "work-014",
+        "work-015",
+        "safe-001",
+        "safe-003",
+        "safe-004",
+        "safe-011",
+        "safe-012",
+        "safe-013",
+        "safe-014",
+        "econ-001",
+        "econ-002",
+        "econ-003",
+        "econ-004",
+        "econ-005",
+        "econ-006",
+        "econ-007",
+        "econ-008",
+        "econ-009",
+        "econ-010",
+        "econ-011",
+        "econ-013",
+        "econ-014",
+        "econ-015",
+        "hous-001",
+        "hous-002",
+        "hous-003",
+        "hous-004",
+        "hous-005",
+        "hous-006",
+        "hous-007",
+        "hous-008",
+        "hous-009",
+        "hous-010",
+        "edu-015",
+        "heal-001",
+        "heal-004",
+        "heal-005",
+        "heal-006",
+        "heal-007",
+        "heal-009",
+        "heal-010",
+        "env-005",
+        "env-007",
+        "env-009",
+        "env-010",
+        "env-011",
+        "env-012",
+        "env-013",
+        "env-014",
+        "env-015",
+        "gov-001",
+        "gov-002",
+        "gov-003",
+        "gov-008",
+        "gov-009",
+        "gov-010",
+        "gov-011",
+        "gov-012",
+        "gov-013",
+        "gov-014",
+        "gov-015",
+        "spec-003",
+        "spec-004",
+        "spec-007",
+        "spec-008",
+        "spec-009",
+        "spec-010",
+        "fund-001",
+        "fund-002",
+        "fund-003",
+        "fund-004",
+        "fund-005",
+        "fund-006",
+        "fund-007",
+        "fund-009",
+        "fund-010",
+        "reg-010",
+        "reg-013",
+        "reg-014",
+        "reg-034",
+        "case-fiber",
+        "case-wastewater",
+        "case-rail",
+        "case-trail"
+      ],
+      "groupIds": [
+        "fiscal",
+        "infrastructure",
+        "utilities",
+        "economy",
+        "safety",
+        "culture",
+        "housing",
+        "education",
+        "governance"
+      ],
+      "editorialGroupIds": [
+        "fiscal",
+        "housing",
+        "culture"
+      ]
+    },
+    {
+      "id": "ent-dcfdb2dffa7d",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-rail-fire"
+      ],
+      "groupIds": [
+        "safety"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-715e2dc6a40e",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-rail-fire"
+      ],
+      "groupIds": [
+        "safety"
+      ],
+      "editorialGroupIds": [
+        "safety"
+      ]
+    },
+    {
+      "id": "ent-9ffdc1de3253",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-wastewater"
+      ],
+      "groupIds": [
+        "utilities"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-2bf079571fbe",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-wastewater"
+      ],
+      "groupIds": [
+        "utilities"
+      ],
+      "editorialGroupIds": [
+        "utilities"
+      ]
+    },
+    {
+      "id": "ent-7e4ef3ccb3e3",
+      "identityState": "Unresolved group — not one verified legal entity",
+      "issueIds": [
+        "safe-010",
+        "gov-005"
+      ],
+      "groupIds": [
+        "safety",
+        "governance"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-7ac3e6c8e321",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-rail"
+      ],
+      "groupIds": [
+        "infrastructure"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-fb819af4fdb7",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-school-governance"
+      ],
+      "groupIds": [
+        "education"
+      ],
+      "editorialGroupIds": [
+        "education"
+      ]
+    },
+    {
+      "id": "ent-c88e6d5dc564",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-wastewater",
+        "case-rail-fire"
+      ],
+      "groupIds": [
+        "utilities",
+        "safety"
+      ],
+      "editorialGroupIds": [
+        "utilities"
+      ]
+    },
+    {
+      "id": "ent-0589a6692a55",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "gov-007",
+        "elec-003",
+        "elec-004",
+        "elec-006",
+        "elec-007",
+        "elec-008",
+        "elec-009",
+        "elec-010"
+      ],
+      "groupIds": [
+        "governance"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-a7929887d398",
+      "identityState": "Unresolved group — not one verified legal entity",
+      "issueIds": [
+        "fisc-001",
+        "fisc-002",
+        "fisc-009",
+        "fisc-010",
+        "infr-004",
+        "infr-005",
+        "infr-009",
+        "work-005",
+        "work-006",
+        "safe-006",
+        "hous-005",
+        "hous-010",
+        "edu-001",
+        "edu-002",
+        "edu-004",
+        "edu-006",
+        "edu-008",
+        "edu-011",
+        "edu-012",
+        "heal-003",
+        "heal-008",
+        "env-003",
+        "env-006",
+        "gov-004",
+        "gov-006",
+        "elec-001",
+        "elec-002",
+        "elec-005",
+        "spec-004",
+        "spec-005",
+        "spec-006",
+        "fund-003",
+        "fund-004",
+        "fund-006",
+        "fund-008"
+      ],
+      "groupIds": [
+        "fiscal",
+        "infrastructure",
+        "utilities",
+        "education",
+        "safety",
+        "housing",
+        "governance"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-d5a3daa49988",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-school-governance"
+      ],
+      "groupIds": [
+        "education"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-830c76705c0a",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-rail"
+      ],
+      "groupIds": [
+        "infrastructure"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-e3a406d99dc5",
+      "identityState": "Verified current organization identity; historical EVRAZ naming retained as alias context",
+      "issueIds": [
+        "case-rail"
+      ],
+      "groupIds": [
+        "infrastructure"
+      ],
+      "editorialGroupIds": [
+        "economy"
+      ]
+    },
+    {
+      "id": "ent-ddc3e0c25c7f",
+      "identityState": "Unresolved group — not one verified legal entity",
+      "issueIds": [
+        "infr-006",
+        "infr-012",
+        "hous-005",
+        "hous-009",
+        "edu-011",
+        "spec-007",
+        "fund-001",
+        "fund-002",
+        "fund-005",
+        "fund-007"
+      ],
+      "groupIds": [
+        "infrastructure",
+        "housing",
+        "education",
+        "fiscal"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-7484c1a13085",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-rail"
+      ],
+      "groupIds": [
+        "infrastructure"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-dba71a488e74",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-rail"
+      ],
+      "groupIds": [
+        "infrastructure"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-ce770667e5f9",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-library-ai"
+      ],
+      "groupIds": [
+        "future"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-7866992fbe98",
+      "identityState": "Unresolved group — not one verified legal entity",
+      "issueIds": [
+        "hous-003"
+      ],
+      "groupIds": [
+        "housing"
+      ],
+      "editorialGroupIds": [
+        "housing"
+      ]
+    },
+    {
+      "id": "ent-d9cadcfbc036",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-fiber"
+      ],
+      "groupIds": [
+        "infrastructure"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-0f4ec945e91d",
+      "identityState": "Unresolved group — not one verified legal entity",
+      "issueIds": [
+        "fisc-005",
+        "work-003",
+        "safe-001",
+        "safe-002",
+        "safe-003",
+        "safe-004",
+        "safe-005",
+        "safe-008",
+        "safe-009",
+        "safe-011",
+        "econ-006",
+        "edu-009",
+        "heal-004"
+      ],
+      "groupIds": [
+        "fiscal",
+        "safety",
+        "economy",
+        "education"
+      ],
+      "editorialGroupIds": [
+        "safety"
+      ]
+    },
+    {
+      "id": "ent-eed6bffea2db",
+      "identityState": "Unresolved group — not one verified legal entity",
+      "issueIds": [
+        "safe-014"
+      ],
+      "groupIds": [
+        "safety"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-bed5ff4a0d7f",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-rail"
+      ],
+      "groupIds": [
+        "infrastructure"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-8b7d1a3187ab",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-library-ai"
+      ],
+      "groupIds": [
+        "future"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-c8b2999ed42d",
+      "identityState": "Unresolved group — not one verified legal entity",
+      "issueIds": [
+        "edu-001",
+        "edu-013"
+      ],
+      "groupIds": [
+        "education"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-b093130ce0eb",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "work-011",
+        "work-012",
+        "econ-001",
+        "econ-002",
+        "econ-005",
+        "gov-001",
+        "gov-002",
+        "reg-004",
+        "reg-010"
+      ],
+      "groupIds": [
+        "economy",
+        "governance"
+      ],
+      "editorialGroupIds": [
+        "economy"
+      ]
+    },
+    {
+      "id": "ent-d95e5fcc8803",
+      "identityState": "Unresolved group — not one verified legal entity",
+      "issueIds": [
+        "work-013",
+        "safe-002",
+        "safe-003",
+        "safe-007",
+        "hous-008",
+        "edu-007",
+        "heal-001",
+        "heal-002",
+        "heal-004",
+        "heal-005",
+        "heal-006",
+        "heal-007",
+        "heal-008",
+        "heal-009",
+        "heal-010",
+        "spec-009",
+        "fund-008"
+      ],
+      "groupIds": [
+        "economy",
+        "safety",
+        "housing",
+        "education",
+        "fiscal"
+      ],
+      "editorialGroupIds": [
+        "safety"
+      ]
+    },
+    {
+      "id": "ent-b9c587474e10",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-rail",
+        "case-trail"
+      ],
+      "groupIds": [
+        "infrastructure"
+      ],
+      "editorialGroupIds": [
+        "governance",
+        "future"
+      ]
+    },
+    {
+      "id": "ent-27b345efcd89",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-library-ai",
+        "case-library-finance"
+      ],
+      "groupIds": [
+        "future",
+        "education"
+      ],
+      "editorialGroupIds": [
+        "education",
+        "future"
+      ]
+    },
+    {
+      "id": "ent-9fc831fd79fc",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "fisc-001",
+        "fisc-004",
+        "fisc-005",
+        "fisc-006",
+        "fisc-007",
+        "fisc-008",
+        "fisc-009",
+        "fisc-010",
+        "infr-001",
+        "infr-003",
+        "infr-007",
+        "infr-008",
+        "infr-010",
+        "infr-013",
+        "infr-014",
+        "infr-015",
+        "work-001",
+        "work-002",
+        "work-004",
+        "work-008",
+        "work-009",
+        "work-010",
+        "work-011",
+        "work-013",
+        "work-014",
+        "work-015",
+        "safe-005",
+        "safe-006",
+        "safe-007",
+        "safe-008",
+        "safe-009",
+        "safe-010",
+        "safe-011",
+        "safe-012",
+        "safe-013",
+        "safe-015",
+        "econ-004",
+        "econ-008",
+        "econ-009",
+        "econ-010",
+        "econ-012",
+        "econ-013",
+        "hous-001",
+        "hous-002",
+        "hous-004",
+        "hous-006",
+        "hous-007",
+        "hous-008",
+        "hous-009",
+        "hous-010",
+        "edu-006",
+        "edu-015",
+        "heal-001",
+        "heal-002",
+        "heal-003",
+        "heal-005",
+        "heal-006",
+        "heal-007",
+        "heal-009",
+        "heal-010",
+        "env-001",
+        "env-002",
+        "env-003",
+        "env-005",
+        "env-006",
+        "env-008",
+        "env-009",
+        "env-010",
+        "env-011",
+        "env-012",
+        "env-014",
+        "env-015",
+        "gov-005",
+        "gov-006",
+        "gov-007",
+        "gov-008",
+        "gov-009",
+        "gov-010",
+        "gov-011",
+        "gov-012",
+        "gov-013",
+        "gov-014",
+        "gov-015",
+        "elec-001",
+        "elec-002",
+        "elec-003",
+        "elec-004",
+        "elec-005",
+        "elec-006",
+        "elec-007",
+        "elec-008",
+        "elec-009",
+        "elec-010",
+        "spec-001",
+        "spec-002",
+        "spec-004",
+        "spec-005",
+        "spec-006",
+        "spec-008",
+        "spec-009",
+        "spec-010",
+        "fund-001",
+        "fund-003",
+        "fund-004",
+        "fund-006",
+        "fund-007",
+        "fund-009",
+        "fund-010",
+        "reg-015",
+        "case-trail"
+      ],
+      "groupIds": [
+        "fiscal",
+        "infrastructure",
+        "utilities",
+        "economy",
+        "safety",
+        "culture",
+        "housing",
+        "education",
+        "governance"
+      ],
+      "editorialGroupIds": [
+        "fiscal",
+        "safety",
+        "housing",
+        "governance"
+      ]
+    },
+    {
+      "id": "ent-36144c80645b",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "work-006",
+        "work-015",
+        "econ-008",
+        "edu-002",
+        "edu-003",
+        "edu-004",
+        "edu-005",
+        "edu-008",
+        "edu-009",
+        "edu-010",
+        "edu-012",
+        "edu-013",
+        "edu-014",
+        "gov-004",
+        "case-school-governance"
+      ],
+      "groupIds": [
+        "education",
+        "economy",
+        "governance"
+      ],
+      "editorialGroupIds": [
+        "education"
+      ]
+    },
+    {
+      "id": "ent-9583a0236568",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "work-005",
+        "work-015",
+        "econ-008",
+        "edu-001",
+        "edu-003",
+        "edu-004",
+        "edu-005",
+        "edu-006",
+        "edu-007",
+        "edu-008",
+        "edu-009",
+        "edu-010",
+        "edu-011",
+        "edu-012",
+        "edu-013",
+        "edu-014",
+        "edu-015"
+      ],
+      "groupIds": [
+        "education",
+        "economy"
+      ],
+      "editorialGroupIds": [
+        "education"
+      ]
+    },
+    {
+      "id": "ent-49eacbe08379",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "reg-010",
+        "reg-012"
+      ],
+      "groupIds": [
+        "governance"
+      ],
+      "editorialGroupIds": [
+        "fiscal",
+        "infrastructure"
+      ]
+    },
+    {
+      "id": "ent-ff89f261999c",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "fisc-004",
+        "infr-002",
+        "infr-015",
+        "env-001",
+        "env-003",
+        "env-004",
+        "env-007",
+        "env-010",
+        "env-012",
+        "env-013",
+        "spec-005",
+        "spec-006"
+      ],
+      "groupIds": [
+        "fiscal",
+        "utilities",
+        "infrastructure"
+      ],
+      "editorialGroupIds": [
+        "utilities"
+      ]
+    },
+    {
+      "id": "ent-9528c16c953c",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "infr-007",
+        "infr-011",
+        "infr-014",
+        "safe-015",
+        "econ-012",
+        "hous-006",
+        "env-001",
+        "env-002",
+        "env-004",
+        "env-006",
+        "env-008",
+        "env-009",
+        "env-015",
+        "gov-008",
+        "gov-009",
+        "gov-013",
+        "spec-001",
+        "spec-002"
+      ],
+      "groupIds": [
+        "utilities",
+        "infrastructure",
+        "safety",
+        "economy",
+        "housing",
+        "governance"
+      ],
+      "editorialGroupIds": [
+        "utilities",
+        "infrastructure"
+      ]
+    },
+    {
+      "id": "ent-df5480d2516f",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "reg-028"
+      ],
+      "groupIds": [
+        "education"
+      ],
+      "editorialGroupIds": [
+        "culture"
+      ]
+    },
+    {
+      "id": "ent-805487266d4d",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "reg-029",
+        "reg-038"
+      ],
+      "groupIds": [
+        "future"
+      ],
+      "editorialGroupIds": [
+        "future"
+      ]
+    },
+    {
+      "id": "ent-427ad14a3aa3",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-rail"
+      ],
+      "groupIds": [
+        "infrastructure"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-7a261779542d",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-school-governance"
+      ],
+      "groupIds": [
+        "education"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-7803e371263d",
+      "identityState": "Unresolved group — not one verified legal entity",
+      "issueIds": [
+        "heal-008",
+        "gov-009",
+        "gov-011",
+        "gov-012",
+        "gov-013",
+        "gov-015",
+        "spec-008",
+        "fund-006",
+        "fund-008"
+      ],
+      "groupIds": [
+        "safety",
+        "governance",
+        "economy",
+        "fiscal"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-de5be4dffc84",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-fiber"
+      ],
+      "groupIds": [
+        "infrastructure"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-42c51f1cebb0",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-rail"
+      ],
+      "groupIds": [
+        "infrastructure"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-2cf0b6261a11",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "case-rail-fire"
+      ],
+      "groupIds": [
+        "safety"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-4848bf0d8704",
+      "identityState": "Named label — aliases and consequential roles need confirmation",
+      "issueIds": [
+        "gov-003",
+        "spec-003"
+      ],
+      "groupIds": [
+        "governance"
+      ],
+      "editorialGroupIds": []
+    },
+    {
+      "id": "ent-0a035c2b85b8",
+      "identityState": "Unresolved group — not one verified legal entity",
+      "issueIds": [
+        "econ-012",
+        "spec-010"
+      ],
+      "groupIds": [
+        "economy"
+      ],
+      "editorialGroupIds": []
+    }
+  ]
+}

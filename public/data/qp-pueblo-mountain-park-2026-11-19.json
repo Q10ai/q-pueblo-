@@ -1,0 +1,512 @@
+{
+  "id": "QP-DISASTER-ASPEN-PMP-001",
+  "version": "1.0.0",
+  "asOf": "2026-11-19",
+  "reviewDue": "2026-11-25",
+  "scope": "City-owned park; not County expenditure or household assistance",
+  "status": "living research; publication review required",
+  "sources": [
+    {
+      "id": "city",
+      "title": "City of Pueblo — Mountain Park recovery",
+      "url": "https://www.pueblo.us/3153/Pueblo-Mountain-Park",
+      "kind": "Official municipal update",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "cpr",
+      "title": "Colorado Public Radio, November 9, 2026",
+      "url": "https://www.cpr.org/2026/11/09/pueblo-mountain-park-future-pueblo-damage/",
+      "kind": "Attributed reporting",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "county",
+      "title": "County rebuilding guidance, October 19, 2026 edition",
+      "url": "https://pueblopermits.com/aspen-acres-fire-recovery-resources/",
+      "kind": "Official regional guidance",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "fema",
+      "title": "FEMA training — documenting disaster-related damage",
+      "url": "https://emilms.fema.gov/is_1021/groups/109.html",
+      "kind": "Official program guidance",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "beulah",
+      "title": "City calendar — October 20 meeting",
+      "url": "https://www.pueblo.us/Calendar.aspx?EID=15847&calType=0&day=8&month=10&year=2026",
+      "kind": "Official notice",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "pueblo",
+      "title": "City calendar — October 22 meeting",
+      "url": "https://www.pueblo.us/Calendar.aspx?EID=15850",
+      "kind": "Official notice",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "rule",
+      "title": "44 CFR 206.202 — application procedures",
+      "url": "https://www.law.cornell.edu/cfr/text/44/206.202",
+      "kind": "Regulatory text via Cornell LII",
+      "checked": "2026-11-19"
+    }
+  ],
+  "sections": [
+    {
+      "n": 1,
+      "title": "Scope",
+      "finding": "City park recovery in Beulah; separate from county emergency expenses and household aid.",
+      "sourceIds": [
+        "city",
+        "cpr",
+        "county"
+      ],
+      "classification": "analysis"
+    },
+    {
+      "n": 2,
+      "title": "Fire chronology",
+      "finding": "The City dates the fire onset to June 29, 2026.",
+      "sourceIds": [
+        "city"
+      ],
+      "classification": "official statement"
+    },
+    {
+      "n": 3,
+      "title": "Physical loss",
+      "finding": "Fire and subsequent floods damaged buildings, roads and trails; surviving structures require assessment.",
+      "sourceIds": [
+        "cpr"
+      ],
+      "classification": "reported"
+    },
+    {
+      "n": 4,
+      "title": "Public access",
+      "finding": "City reports the park remains closed; this report cannot authorize entry.",
+      "sourceIds": [
+        "city"
+      ],
+      "classification": "official statement"
+    },
+    {
+      "n": 5,
+      "title": "Area",
+      "finding": "CPR describes the park as approximately 600 acres, not a measured burn footprint.",
+      "sourceIds": [
+        "cpr"
+      ],
+      "classification": "reported"
+    },
+    {
+      "n": 6,
+      "title": "Public meetings",
+      "finding": "The City identifies October 20 in Beulah and October 22 in Pueblo as its two initial meetings.",
+      "sourceIds": [
+        "city",
+        "beulah",
+        "pueblo"
+      ],
+      "classification": "official statement"
+    },
+    {
+      "n": 7,
+      "title": "Public communication",
+      "finding": "Use the City's recovery portal to follow new meeting announcements and recovery plans.",
+      "sourceIds": [
+        "city"
+      ],
+      "classification": "practical guidance"
+    },
+    {
+      "n": 8,
+      "title": "Education continuity",
+      "finding": "CPR reports nonprofit programs shifted to the River Campus; verify service counts separately.",
+      "sourceIds": [
+        "cpr"
+      ],
+      "classification": "reported"
+    },
+    {
+      "n": 9,
+      "title": "Children and families",
+      "finding": "Compare delivered sessions, transportation costs and accessibility; avoid individual child records.",
+      "sourceIds": [
+        "cpr"
+      ],
+      "classification": "proposed measure"
+    },
+    {
+      "n": 10,
+      "title": "Equitable access",
+      "finding": "Record barriers for older adults, disabled visitors and households without vehicles; no distributional result yet.",
+      "sourceIds": [
+        "cpr"
+      ],
+      "classification": "proposed measure"
+    },
+    {
+      "n": 11,
+      "title": "Ownership",
+      "finding": "CPR identifies the park as City-owned; verify title and operating agreements for precise rights.",
+      "sourceIds": [
+        "cpr"
+      ],
+      "classification": "reported"
+    },
+    {
+      "n": 12,
+      "title": "Municipal leadership",
+      "finding": "Parks and Recreation is leading public recovery communication; detailed delegations are not established here.",
+      "sourceIds": [
+        "city",
+        "cpr"
+      ],
+      "classification": "attributed"
+    },
+    {
+      "n": 13,
+      "title": "State role",
+      "finding": "The state recipient and municipal applicant have distinct grant responsibilities; confirm award terms.",
+      "sourceIds": [
+        "rule",
+        "fema"
+      ],
+      "classification": "regulatory context"
+    },
+    {
+      "n": 14,
+      "title": "FEMA authority",
+      "finding": "Damage documentation and grant eligibility are distinct from local authority to rebuild.",
+      "sourceIds": [
+        "fema",
+        "rule"
+      ],
+      "classification": "analysis"
+    },
+    {
+      "n": 15,
+      "title": "Insurance provider",
+      "finding": "The City identifies CIRSA as its self-insurance provider; settlement documentation is not available here.",
+      "sourceIds": [
+        "city"
+      ],
+      "classification": "official statement"
+    },
+    {
+      "n": 16,
+      "title": "Insurance range",
+      "finding": "CPR reports expected insurance proceeds of $4.9–6.3 million; this is not verified receipt or total project cost.",
+      "sourceIds": [
+        "cpr"
+      ],
+      "classification": "reported"
+    },
+    {
+      "n": 17,
+      "title": "Reporting clock",
+      "finding": "FEMA guidance allows 60 days from the recovery scoping meeting to identify disaster impacts, with possible extensions.",
+      "sourceIds": [
+        "fema",
+        "rule"
+      ],
+      "classification": "guidance"
+    },
+    {
+      "n": 18,
+      "title": "Deadline uncertainty",
+      "finding": "City reports FEMA meetings began early October; exact triggering date, extension and submission status are not established.",
+      "sourceIds": [
+        "city",
+        "fema"
+      ],
+      "classification": "unknown"
+    },
+    {
+      "n": 19,
+      "title": "Grant stages",
+      "finding": "Track application, eligibility, obligation, disbursement and reimbursement separately; park-specific award unverified.",
+      "sourceIds": [
+        "fema",
+        "rule"
+      ],
+      "classification": "analysis"
+    },
+    {
+      "n": 20,
+      "title": "Funding separation",
+      "finding": "County disaster assistance and City insurance are different scopes; avoid double counting overlapping recovery funding.",
+      "sourceIds": [
+        "county",
+        "city"
+      ],
+      "classification": "proposed control"
+    },
+    {
+      "n": 21,
+      "title": "Net recovery cost",
+      "finding": "For each scope, compare eligible cost with applicable nonoverlapping funding; unknown values stay null.",
+      "sourceIds": [
+        "city",
+        "cpr"
+      ],
+      "classification": "proposed model"
+    },
+    {
+      "n": 22,
+      "title": "Cash reconciliation",
+      "finding": "Maintain separate ledgers for estimated, received, authorized, contracted, invoiced and paid amounts.",
+      "sourceIds": [
+        "cpr",
+        "rule"
+      ],
+      "classification": "proposed control"
+    },
+    {
+      "n": 23,
+      "title": "Debris",
+      "finding": "CPR reports building debris remains; verify disposal scope and hazard assessment before work.",
+      "sourceIds": [
+        "cpr"
+      ],
+      "classification": "reported"
+    },
+    {
+      "n": 24,
+      "title": "Equipment",
+      "finding": "CPR reports damaged equipment was identified and removed; replacement costs remain unverified.",
+      "sourceIds": [
+        "cpr"
+      ],
+      "classification": "reported"
+    },
+    {
+      "n": 25,
+      "title": "Hazardous trees",
+      "finding": "Burn-damaged trees require professional assessment and clearance before access.",
+      "sourceIds": [
+        "cpr"
+      ],
+      "classification": "reported risk"
+    },
+    {
+      "n": 26,
+      "title": "Flooding and watershed",
+      "finding": "Evaluate post-fire runoff, debris flows and drainage before reopening vulnerable areas.",
+      "sourceIds": [
+        "cpr"
+      ],
+      "classification": "proposed assessment"
+    },
+    {
+      "n": 27,
+      "title": "Soil and revegetation",
+      "finding": "Track stabilized acreage and plant survival; do not invent treatment targets or completion figures.",
+      "sourceIds": [
+        "cpr"
+      ],
+      "classification": "proposed measure"
+    },
+    {
+      "n": 28,
+      "title": "Roads and trails",
+      "finding": "Use inspection-based segment inventory; evaluate safe phased access rather than promise a reopening.",
+      "sourceIds": [
+        "cpr"
+      ],
+      "classification": "analysis"
+    },
+    {
+      "n": 29,
+      "title": "Utilities",
+      "finding": "CPR identifies utility repairs among recovery needs; verify asset owners and inspections.",
+      "sourceIds": [
+        "cpr"
+      ],
+      "classification": "reported"
+    },
+    {
+      "n": 30,
+      "title": "Horseshoe Lodge",
+      "finding": "The City describes extensive lodge damage; surviving fabric and structural feasibility require qualified review.",
+      "sourceIds": [
+        "city",
+        "cpr"
+      ],
+      "classification": "reported"
+    },
+    {
+      "n": 31,
+      "title": "Heritage options",
+      "finding": "Compare stabilization, rehabilitation and reconstruction with preservation specialists before committing.",
+      "sourceIds": [
+        "city",
+        "cpr"
+      ],
+      "classification": "proposed options"
+    },
+    {
+      "n": 32,
+      "title": "Procurement",
+      "finding": "CPR reports consultants are being sought; verify solicitation, executed contracts and amendments.",
+      "sourceIds": [
+        "cpr"
+      ],
+      "classification": "reported"
+    },
+    {
+      "n": 33,
+      "title": "Alternatives",
+      "finding": "Compare stabilization-only, phased reopening and broader rebuild with safety, cost and public benefit metrics.",
+      "sourceIds": [
+        "cpr"
+      ],
+      "classification": "proposed options"
+    },
+    {
+      "n": 34,
+      "title": "Decision gates",
+      "finding": "Require professional hazard clearance, applicable preservation review and funding authorization.",
+      "sourceIds": [
+        "fema",
+        "cpr"
+      ],
+      "classification": "proposed controls"
+    },
+    {
+      "n": 35,
+      "title": "Community participation",
+      "finding": "Publish meeting feedback themes and documented responses; do not assume consensus.",
+      "sourceIds": [
+        "city",
+        "beulah",
+        "pueblo"
+      ],
+      "classification": "proposed measure"
+    },
+    {
+      "n": 36,
+      "title": "Risk",
+      "finding": "Funding uncertainty, flooding, unsafe access and irreversible heritage loss are risks, not established future failures.",
+      "sourceIds": [
+        "city",
+        "cpr"
+      ],
+      "classification": "analysis"
+    },
+    {
+      "n": 37,
+      "title": "Performance",
+      "finding": "Measure assessed assets, inspected trail segments, funded scopes and restored programs with dated denominators.",
+      "sourceIds": [
+        "city",
+        "cpr"
+      ],
+      "classification": "proposed measure"
+    },
+    {
+      "n": 38,
+      "title": "Twin candidate",
+      "finding": "Candidate layers: public assets, watershed, closures, fiscal stages and education continuity; no operational activation.",
+      "sourceIds": [
+        "city",
+        "cpr"
+      ],
+      "classification": "proposed model"
+    },
+    {
+      "n": 39,
+      "title": "Evidence responsibility",
+      "finding": "Entities and users obtain underlying records; Q evaluates supplied and publicly available evidence. No records request sent.",
+      "sourceIds": [
+        "city",
+        "rule"
+      ],
+      "classification": "operating boundary"
+    },
+    {
+      "n": 40,
+      "title": "Lifecycle and correction",
+      "finding": "Recheck November 25 or upon official funding, meeting, hazard or scope change; retain prior versions.",
+      "sourceIds": [
+        "city"
+      ],
+      "classification": "proposed review"
+    }
+  ],
+  "financial": {
+    "reportedInsuranceRangeUSD": [
+      4900000,
+      6300000
+    ],
+    "verifiedCumulativeInsuranceReceiptsUSD": null,
+    "femaParkAwardUSD": null,
+    "totalRecoveryCostUSD": null,
+    "netCostUSD": null
+  },
+  "entities": [
+    {
+      "name": "City of Pueblo",
+      "role": "owner and recovery coordination",
+      "sourceIds": [
+        "city",
+        "cpr"
+      ]
+    },
+    {
+      "name": "CIRSA",
+      "role": "self-insurance provider",
+      "sourceIds": [
+        "city"
+      ]
+    },
+    {
+      "name": "FEMA",
+      "role": "public assistance process",
+      "sourceIds": [
+        "city",
+        "fema"
+      ]
+    },
+    {
+      "name": "Colorado",
+      "role": "state recipient context",
+      "sourceIds": [
+        "rule"
+      ]
+    },
+    {
+      "name": "Pueblo County",
+      "role": "regional rebuilding guidance",
+      "sourceIds": [
+        "county"
+      ]
+    },
+    {
+      "name": "Nature & Wildlife Discovery Center",
+      "role": "education service continuity",
+      "sourceIds": [
+        "cpr"
+      ]
+    }
+  ],
+  "related": [
+    "report-aspen-recovery.html",
+    "report-aspen-recovery-costs.html",
+    "be-ready-pueblo.html",
+    "museums-culture.html",
+    "twin.html"
+  ],
+  "twin": {
+    "activation": false,
+    "status": "candidate only"
+  },
+  "independentAudit": false,
+  "recordsRequested": false
+}

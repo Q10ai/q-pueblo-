@@ -1,0 +1,346 @@
+{
+  "schema": "qp-living-investigation-v1",
+  "id": "QP-AVI-EAS-2027",
+  "slug": "pueblo-air-service-2027",
+  "title": "Pueblo’s next airline: the 2027 Essential Air Service decision",
+  "asOf": "2026-11-18",
+  "reviewDue": "2026-11-25",
+  "status": "living_source_attributed",
+  "publicationAuthority": "human_required",
+  "event": {
+    "date": "2026-12-15",
+    "start": "11:00",
+    "end": "13:00",
+    "timezone": "America/Denver",
+    "place": "Pueblo Memorial Airport Terminal, 31201 Bryan Circle, Pueblo, CO 81001",
+    "telephone": "719-553-2760",
+    "verification": "supplied airport announcement; independently confirmed address/contact only"
+  },
+  "contract": {
+    "order": "2025-3-7",
+    "docket": "DOT-OST-1999-6589",
+    "carrier": "Key Lime Air dba Denver Air Connection",
+    "start": "2025-04-01",
+    "end": "2027-03-31",
+    "hub": "DEN",
+    "weeklyRoundTrips": 12,
+    "seatOptions": [
+      30,
+      50
+    ],
+    "annualSubsidy": [
+      6449526,
+      6836498
+    ],
+    "nominalTotal": 13286024,
+    "actualPayments": null
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Fly Pueblo public open-house announcement",
+      "url": "https://www.flypueblo.com/",
+      "scope": "User-supplied screenshots of airport social announcement; official site corroborates address and telephone, not event date. Link is airport home, not the original post.",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "S2",
+      "title": "U.S. DOT Order 2025-3-7, March 17, 2025",
+      "url": "https://downloads.regulations.gov/DOT-OST-1999-6589-0206/attachment_1.pdf",
+      "scope": "Primary contract selection, term, frequency, aircraft, annual subsidy and historical bids; actual payments not established.",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "S3",
+      "title": "U.S. DOT Essential Air Service program",
+      "url": "https://www.transportation.gov/policy/aviation-policy/small-community-rural-air-service/essential-air-service",
+      "scope": "Program eligibility, waiver limits, procurement, compensation.",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "S4",
+      "title": "Fly Pueblo airline information",
+      "url": "https://www.flypueblo.com/airline-information",
+      "scope": "Airport identifies Denver Air Connection; consult carrier for live schedules.",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "S5",
+      "title": "CDOT 2025 Colorado Aviation Economic Impact Study",
+      "url": "https://www.codot.gov/programs/aeronautics/studies-plans-reports/2025ceis/2025ceis",
+      "scope": "Study scope and official access; estimated impacts rather than airline-specific revenue.",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "S6",
+      "title": "CDOT 2025 study executive summary",
+      "url": "https://www.coloradoaviationsystem.com/wp-content/uploads/2025/02/CEIS-Executive-Summary_FINAL_021925.pdf",
+      "scope": "Pueblo Memorial row: 838 jobs, $60.766m payroll, $118.487m value added and $226.095m business revenues; PDF text retrieved, screenshot unavailable.",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "S7",
+      "title": "PCC — state-supported aviation maintenance program",
+      "url": "https://pueblocc.edu/pueblo-campus/pcc-helps-develop-new-state-supported-aviation-program-meet-growing-need-maintenance",
+      "scope": "$471,423 approval in November 2025; 45 full-time job target over three years, not realized hires.",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "S8",
+      "title": "PCC — Aviation Maintenance Technician",
+      "url": "https://pueblocc.edu/programs/amt",
+      "scope": "Program listing and contact; page says spring start, earlier announcement expected fall 2026. Confirm schedule directly.",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "S9",
+      "title": "City — Airport Advisory Committee",
+      "url": "https://www.pueblo.us/564/Airport-Advisory-Committee",
+      "scope": "Advisory authority, agenda and records access.",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "S10",
+      "title": "DOT case docket DOT-OST-1999-6589",
+      "url": "https://www.regulations.gov/docket/DOT-OST-1999-6589",
+      "scope": "Known docket identifier from S2; docket page could not be retrieved; 2026 proposals and comment deadline not verified.",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "S11",
+      "title": "Airport information and staff",
+      "url": "https://www.flypueblo.com/airport-information",
+      "scope": "Official contacts and airport operations; separate from scheduled airline passenger counts.",
+      "checked": "2026-11-18"
+    },
+    {
+      "id": "S12",
+      "title": "DOT route-data secondary compilation",
+      "url": "https://eflight.com/routes/DEN-PUB",
+      "scope": "Reports 6,035 segment passengers across both directions and multiple carriers, Aug 2025–Jul 2026. Not official EAS eligibility denominator; verify via BTS.",
+      "checked": "2026-11-18"
+    }
+  ],
+  "coverage": [
+    {
+      "n": 1,
+      "heading": "What this is about",
+      "answer": "Pueblo's next Essential Air Service (EAS) provider selection, a public engagement event and the future of scheduled air service; not a closure notice. [S1,S2]"
+    },
+    {
+      "n": 2,
+      "heading": "The main finding",
+      "answer": "Denver Air Connection's existing order runs to March 31, 2027. The public can give input at an announced December 15 open house. Neither a new winner nor the 2027 subsidy is known. [S1,S2]"
+    },
+    {
+      "n": 3,
+      "heading": "How it developed",
+      "answer": "The preceding Southern Airways contract specified 24 weekly round trips with nine-seat aircraft. In 2024 five carriers submitted proposals; DOT chose DAC in March 2025. Those are historical bidders, not a 2026 shortlist. [S2]"
+    },
+    {
+      "n": 4,
+      "heading": "What is happening now",
+      "answer": "The supplied Fly Pueblo notice invites residents to meet bidding airlines. The airport still lists DAC; verify the proposed schedules and attendance with airport staff. [S1,S4]"
+    },
+    {
+      "n": 5,
+      "heading": "Important dates",
+      "answer": "March 17, 2025 selection order; April 1, 2025 contract start; December 15, 2026 open house 11 am–1 pm; March 31, 2027 scheduled contract end. New order and comment cutoff not established. [S1,S2]"
+    },
+    {
+      "n": 6,
+      "heading": "Who is affected",
+      "answer": "Potential passengers, families, employers, students, airport workers, visitors and residents of the surrounding region. Quantify actual users and unmet demand rather than assuming all residents benefit."
+    },
+    {
+      "n": 7,
+      "heading": "Children and future generations",
+      "answer": "Assess travel for specialist appointments, educational trips, family reunification, and access to aviation career pathways. Track affordability and cancellations without collecting children's personal details; no measured child outcome yet."
+    },
+    {
+      "n": 8,
+      "heading": "Families and workers",
+      "answer": "Compare door-to-door costs, work time lost, missed connections, accessible transport and baggage costs. A household without a car may face different choices from one driving to Denver."
+    },
+    {
+      "n": 9,
+      "heading": "Neighborhoods and wider region",
+      "answer": "Pueblo Memorial is east of the city. Include Pueblo West and southeastern Colorado in a voluntary origin survey; do not assign the whole region's demand to the airport. [S11]"
+    },
+    {
+      "n": 10,
+      "heading": "Fairness and access",
+      "answer": "Ask each bidder for wheelchair boarding arrangements, accessible lavatories where applicable, assistance procedures, accessible booking and fares; evaluate actual performance, not aircraft size alone."
+    },
+    {
+      "n": 11,
+      "heading": "Who is responsible",
+      "answer": "City Aviation manages local airport operations; carriers deliver service; U.S. DOT administers the EAS award. Airport Advisory Committee provides recommendations. [S3,S9,S11]"
+    },
+    {
+      "n": 12,
+      "heading": "Who can make decisions",
+      "answer": "DOT selects the provider; City officials and actual or prospective passengers can submit preferences. The open house itself is not a final vote or award. [S3]"
+    },
+    {
+      "n": 13,
+      "heading": "Rules and requirements",
+      "answer": "DOT describes an average of at least 10 enplanements per service day for communities not exempt by distance, and a subsidy-per-passenger threshold below $650 for communities less than 175 miles from the nearest large or medium hub. Confirm Pueblo's official distance and calculation. [S3]"
+    },
+    {
+      "n": 14,
+      "heading": "Promises and commitments",
+      "answer": "Current order specifies twelve nonstop weekly round trips to Denver, 30- or 50-seat aircraft; scheduled service is not the same as completed service. [S2]"
+    },
+    {
+      "n": 15,
+      "heading": "Oversight and accountability",
+      "answer": "Seek the next selection order, local recommendation, comment summary, contract compliance, and Airport Advisory Committee records. Separate city lease and federal EAS contract. [S2,S3,S9]"
+    },
+    {
+      "n": 16,
+      "heading": "Where money comes from",
+      "answer": "The EAS subsidy is federally funded. Municipal operations, leases, capital grants and local matching funds have separate accounting. Do not assign the airline subsidy to the City's general fund. [S2,S3]"
+    },
+    {
+      "n": 17,
+      "heading": "Costs to public and households",
+      "answer": "Existing second-year annual subsidy rate is $6,836,498. Household cost should include ticket, parking, ground transport, time, baggage and expected disruption; no current fare quote is implied. [S2]"
+    },
+    {
+      "n": 18,
+      "heading": "What has been approved",
+      "answer": "Order 2025-3-7 specifies year-one $6,449,526 and year-two $6,836,498, a nominal two-year total of $13,286,024. Future bid amounts not verified. [S2]"
+    },
+    {
+      "n": 19,
+      "heading": "What has actually been paid",
+      "answer": "DOT generally compensates compliant completed segments after service. Obtain actual claims, adjustments, payments and fiscal-year denominator; the announced annual subsidy is not proof of cash disbursement. [S3]"
+    },
+    {
+      "n": 20,
+      "heading": "Benefits and value",
+      "answer": "CDOT's 2025 study estimates 838 jobs and $226.095m business revenue associated with the overall airport. These figures include wider aviation activity and are not a measure of EAS-only benefit or loss. [S5,S6]"
+    },
+    {
+      "n": 21,
+      "heading": "How the service works",
+      "answer": "Air carriers submit proposals for routes, schedule, equipment and requested support; DOT solicits preferences and evaluates the statutory factors before selecting. [S3]"
+    },
+    {
+      "n": 22,
+      "heading": "Capacity and availability",
+      "answer": "Current contracted frequency implies 624 scheduled departures per 52-week illustrative year, each 30 or 50 seats, or 18,720–31,200 outbound seats before actual schedule deviations. Do not confuse available seats with people flown. [S2]"
+    },
+    {
+      "n": 23,
+      "heading": "Quality and actual results",
+      "answer": "Publish monthly completion and on-time rates, actual boardings, accessible-service metrics and missed connection reports. A secondary route compilation reports low utilization, but official EAS metrics remain unverified. [S12]"
+    },
+    {
+      "n": 24,
+      "heading": "Reliability and maintenance",
+      "answer": "Compare spare aircraft, replacement crew, weather planning, incident procedures and hub recovery as service-quality considerations. Do not suggest operations in unsafe conditions."
+    },
+    {
+      "n": 25,
+      "heading": "Delays and obstacles",
+      "answer": "Key unknowns are the formal solicitation, bidder identities, proposed schedules, airport performance, applicable waivers and official award timing. [S10]"
+    },
+    {
+      "n": 26,
+      "heading": "Connections to other issues",
+      "answer": "Rail, buses, highway travel, tourism, workforce training, economic development, airport capital planning and regional fiscal resilience are interconnected but distinct funding instruments."
+    },
+    {
+      "n": 27,
+      "heading": "Energy and resource needs",
+      "answer": "Compare measured fuel per passenger trip and airport operating resources across equivalent itineraries, including driving to substitute airports. No energy score without data."
+    },
+    {
+      "n": 28,
+      "heading": "Environmental and physical effects",
+      "answer": "Assess noise, air emissions, airport pavement, water and stormwater obligations through appropriate official studies. No new construction or quantified environmental impact is established by the open house."
+    },
+    {
+      "n": 29,
+      "heading": "Risks and unintended effects",
+      "answer": "Low ridership, rising subsidy, insufficient connection windows, affordability barriers or service gaps may create feedback loops. These are conditional risks, not findings."
+    },
+    {
+      "n": 30,
+      "heading": "Long-term consequences",
+      "answer": "Continued useful connectivity could support workforce and business access; loss of service could increase road travel. A scheduled airline disruption does not imply closure of general aviation, cargo or training."
+    },
+    {
+      "n": 31,
+      "heading": "Available alternatives",
+      "answer": "Compare any actual bids, a continued Denver link, other viable hub proposals, alternate EAS only if available and authorized, and ground connections as contingency. No alternative described here is a confirmed bid."
+    },
+    {
+      "n": 32,
+      "heading": "Tradeoffs between options",
+      "answer": "Balance frequency, larger aircraft, competitive fares, accessible boarding, reliable connections, subsidy and transition risk. Avoid recommending a carrier before seeing comparable bids."
+    },
+    {
+      "n": 33,
+      "heading": "Lessons from elsewhere",
+      "answer": "Use similar EAS communities as benchmarks only after normalizing geography, service days, aircraft and passenger reporting; no peer performance claim is made."
+    },
+    {
+      "n": 34,
+      "heading": "What could improve the situation",
+      "answer": "Create a common bid table, publish monthly performance and eligibility data, survey unused demand, and test last-mile airport transport. Start with existing data resources and reversible pilots."
+    },
+    {
+      "n": 35,
+      "heading": "What people can do",
+      "answer": "Attend the December 15 event; call 719-553-2760 if unable to attend and ask how to submit written comments plus the official deadline. Use the known DOT docket number to find filed material. [S1,S10,S11]"
+    },
+    {
+      "n": 36,
+      "heading": "How strong the evidence is",
+      "answer": "Contract and national rules are primary official sources. Event date is supported by supplied announcement only; latest bid documents and eligibility calculations not retrieved. Study economic values are estimates."
+    },
+    {
+      "n": 37,
+      "heading": "Conflicting information and other explanations",
+      "answer": "In 2024 the City favored Breeze but DOT selected DAC after weighing criteria including cost. Public preference matters but is not dispositive. Current performance requires current evidence. [S2]"
+    },
+    {
+      "n": 38,
+      "heading": "What remains unknown",
+      "answer": "FY2026 DOT passenger denominator, actual eligible payments, waiver history, 2026 bidders, local operating net cost, response plans, comment procedure and future award."
+    },
+    {
+      "n": 39,
+      "heading": "What would change the conclusion",
+      "answer": "New solicitation or award, formal eligibility/waiver status, audited performance data, city recommendation, updated event notice or documented route economics trigger an amendment."
+    },
+    {
+      "n": 40,
+      "heading": "Qified insight",
+      "answer": "Treat commercial air service as a bounded regional access system: service design influences ridership, ridership affects funding resilience, and funding affects connectivity. Protect separate airport functions and test service options against documented household and public costs."
+    }
+  ],
+  "crossovers": [
+    "regional transportation",
+    "economic development",
+    "Pueblo airport advisory committee",
+    "PCC aviation workforce",
+    "Comanche transition",
+    "city budget",
+    "regional AI readiness",
+    "child access",
+    "federal funding"
+  ],
+  "q": {
+    "T2Y": "Separate sourced facts and unknowns; yield is a public bid comparison, comment guide and records checklist.",
+    "EE": "Compute only from compatible energy and cost observations; compare existing data before new spending.",
+    "RX": "Keep prior dated evidence and add amendments; recheck notice and bid status weekly and around event/award.",
+    "eventHorizon": "Review Dec 15 and Dec 16–22, mid-January, and March 31/April 1; no automatic monitoring.",
+    "leap": "Unified accessible mobility and workforce planning, initially a reversible shared dashboard.",
+    "shock": "Model service interruption with advance notices and ground alternatives; no claim it will occur.",
+    "supervision": "Human editorial review and no carrier ranking until verified bids."
+  }
+}

@@ -1,0 +1,682 @@
+{
+  "schema": "qp-culture-twin-learning-v1",
+  "caseId": "qp-culture-2026",
+  "asOf": "2026-11-20",
+  "basisPacket": "data/qp-museums-culture-2026-11-19.json",
+  "status": "dated public educational linkage; not operational twin ingestion",
+  "boundary": "All rows are learning links and analytical associations, not verified legal or operational dependencies. Original and expanded profiles overlap. No automatic record collection or feedback ingestion.",
+  "models": {
+    "property": {
+      "title": "Property and lifecycle",
+      "route": "museums-culture-tools.html",
+      "lens": "land, public assets, maintenance, resilience"
+    },
+    "funding": {
+      "title": "Public finance and funding",
+      "route": "museums-culture-tools.html",
+      "lens": "government, public money, jobs and enterprise"
+    },
+    "runway": {
+      "title": "Financial continuity",
+      "route": "museums-culture-tools.html",
+      "lens": "operating finance, workforce, service continuity"
+    },
+    "access": {
+      "title": "Learning and access",
+      "route": "learn-pueblo.html",
+      "lens": "education, families, culture and public access"
+    }
+  },
+  "rows": [
+    {
+      "id": "heritage",
+      "name": "Pueblo Heritage Museum & Historical Society",
+      "profileType": "original",
+      "storyRoute": "museums-culture.html#heritage",
+      "question": "Can ownership of a building and ownership of its archive differ?",
+      "nextEvidence": "assets, lease, collection rights, fiscal cost",
+      "model": "property",
+      "sourceIds": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "P3",
+        "U1"
+      ],
+      "sourceUrls": [
+        "https://pueblohistory.org/",
+        "https://pueblohistory.org/library/",
+        "https://www.cpr.org/2026/11/11/pueblo-heritage-center-building-future-unclear/",
+        "https://www.buzzsprout.com/2455789/episodes/20139550-the-mayor-s-mixtape-episode-80",
+        "https://projects.propublica.org/nonprofits/organizations/840851563",
+        "https://pueblo.granicus.com/ViewPublisher.php?view_id=4",
+        "https://tinyurl.com/SupportPuebloHeritage"
+      ],
+      "lesson": "A property transfer and collection continuity are separate decisions. Compare a protected lease, subdivision and sale using the same lifecycle scope."
+    },
+    {
+      "id": "davinci",
+      "name": "Leonardo da Vinci Museum & STEAM Center",
+      "profileType": "original",
+      "storyRoute": "museums-culture.html#davinci",
+      "question": "Why distinguish a rejected incentive from money paid?",
+      "nextEvidence": "eligibility, lease, audited receipts, actual jobs and visitors",
+      "model": "funding",
+      "sourceIds": [
+        "D1",
+        "D2",
+        "P3"
+      ],
+      "sourceUrls": [
+        "https://davincisteam.org/",
+        "https://krdo.com/news/2026/09/16/885000-funding-request-fails-for-leonard-da-vinci-museum-in-pueblo/",
+        "https://pueblo.granicus.com/ViewPublisher.php?view_id=4"
+      ],
+      "lesson": "A project's request, authorization, contract, payment and observed outcomes are separate evidence stages. Earlier ED2602 asked $1,817,044; the revised $885,000 request was $932,044 lower. The September vote rejected that proposal, not every future alternative."
+    },
+    {
+      "id": "arts",
+      "name": "Sangre de Cristo Arts Center & galleries",
+      "profileType": "original",
+      "storyRoute": "museums-culture.html#arts",
+      "question": "Why don't net assets establish spendable operating cash?",
+      "nextEvidence": "restricted cash, capital obligations, attendance and grants",
+      "model": "runway",
+      "sourceIds": [
+        "A1",
+        "A2",
+        "A3",
+        "P1",
+        "P2"
+      ],
+      "sourceUrls": [
+        "https://sdc-arts.org/about-arts-center",
+        "https://projects.propublica.org/nonprofits/organizations/840624551",
+        "https://projects.propublica.org/nonprofits/organizations/840897023",
+        "https://www.pueblo.us/m/newsflash/home/detail/4996",
+        "https://www.pueblo.us/m/newsflash/Home/Detail/5027"
+      ],
+      "lesson": "Restricted gifts, buildings and endowments cannot automatically cover operating deficits; keep parent and endowment accounts separate."
+    },
+    {
+      "id": "buell",
+      "name": "Buell Children’s Museum",
+      "profileType": "original",
+      "storyRoute": "museums-culture.html#buell",
+      "question": "How can a free school visit create public value?",
+      "nextEvidence": "cost centers, school visits, subsidized admission",
+      "model": "access",
+      "sourceIds": [
+        "A1",
+        "A2"
+      ],
+      "sourceUrls": [
+        "https://sdc-arts.org/about-arts-center",
+        "https://projects.propublica.org/nonprofits/organizations/840624551"
+      ],
+      "lesson": "Measure educational access and learning alongside costs; do not count the parent Arts Center budget twice."
+    },
+    {
+      "id": "elpueblo",
+      "name": "El Pueblo History Museum",
+      "profileType": "original",
+      "storyRoute": "museums-culture.html#elpueblo",
+      "question": "How does archaeology differ from a recreated historical structure?",
+      "nextEvidence": "site preservation, interpretation, state expenditures",
+      "model": "property",
+      "sourceIds": [
+        "E1",
+        "E2",
+        "I2"
+      ],
+      "sourceUrls": [
+        "https://visitpueblo.org/attractions/el-pueblo-history-museum/",
+        "https://www.historycolorado.org/competitive-grants",
+        "https://visitpueblo.org/listing/history/"
+      ],
+      "lesson": "Interpret the original site alongside historical reproduction and multiple cultural perspectives; state and local funding have distinct scopes."
+    },
+    {
+      "id": "steelworks",
+      "name": "Steelworks Center of the West / Bessemer Historical Society",
+      "profileType": "original",
+      "storyRoute": "museums-culture.html#steelworks",
+      "question": "What happens if industrial archives lose their home?",
+      "nextEvidence": "collection conditions, property obligations, cash flows",
+      "model": "runway",
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "sourceUrls": [
+        "https://www.steelworks.us/about-us/",
+        "https://projects.propublica.org/nonprofits/organizations/311714170",
+        "https://www.steelworks.us/about-us/documents/"
+      ],
+      "lesson": "Preserve labor and industrial records independent of parcel transactions; archival conservation has real ongoing costs."
+    },
+    {
+      "id": "railway",
+      "name": "Pueblo Railway Museum",
+      "profileType": "original",
+      "storyRoute": "museums-culture.html#railway",
+      "question": "Why isn't ownership of rolling stock the same as permission to operate it?",
+      "nextEvidence": "asset inventory, track agreements, actual grant payments",
+      "model": "property",
+      "sourceIds": [
+        "T1",
+        "T2",
+        "P1",
+        "P2",
+        "T3"
+      ],
+      "sourceUrls": [
+        "https://pueblorailway.org/about-us/",
+        "https://pueblorailway.org/",
+        "https://www.pueblo.us/m/newsflash/home/detail/4996",
+        "https://www.pueblo.us/m/newsflash/Home/Detail/5027",
+        "https://philanthropy.org/990?city=Pueblo&page=1&state=CO"
+      ],
+      "lesson": "Equipment title, track access, insurance and safety obligations are distinct."
+    },
+    {
+      "id": "aircraft",
+      "name": "Pueblo Weisbrod Aircraft Museum / Southern Colorado Space Museum",
+      "profileType": "original",
+      "storyRoute": "museums-culture.html#aircraft",
+      "question": "Why does an agreement date matter to a museum?",
+      "nextEvidence": "executed management agreement, amendments, maintenance",
+      "model": "property",
+      "sourceIds": [
+        "W1",
+        "I2",
+        "W2",
+        "W3"
+      ],
+      "sourceUrls": [
+        "https://pwam.org/support/",
+        "https://visitpueblo.org/listing/history/",
+        "https://www.pueblo.us/AgendaCenter/ViewFile/Item/20813?fileID=62970",
+        "https://philanthropy.org/990/report/841005713/pueblo-historical-aircraft-society/2024"
+      ],
+      "lesson": "An agreement horizon is a decision trigger, not evidence of a closure or renewal. Distinguish aircraft ownership from hangar tenure."
+    },
+    {
+      "id": "rosemount",
+      "name": "Rosemount Museum",
+      "profileType": "original",
+      "storyRoute": "museums-culture.html#rosemount",
+      "question": "Can proceeds from selling an asset sustainably pay recurring bills?",
+      "nextEvidence": "recurring receipts, asset sale, conservation liabilities",
+      "model": "runway",
+      "sourceIds": [
+        "R1",
+        "R2"
+      ],
+      "sourceUrls": [
+        "https://rosemount.org/",
+        "https://projects.propublica.org/nonprofits/organizations/846050423"
+      ],
+      "lesson": "One-time proceeds and recurring income differ; preservation costs continue across years."
+    },
+    {
+      "id": "infozone",
+      "name": "InfoZone News Museum / library local history",
+      "profileType": "original",
+      "storyRoute": "museums-culture.html#infozone",
+      "question": "Why can't library-wide expenses be assigned to a single exhibit?",
+      "nextEvidence": "exhibit status, district cost center, access",
+      "model": "access",
+      "sourceIds": [
+        "I1",
+        "C2"
+      ],
+      "sourceUrls": [
+        "https://coloradomuseums.co/cities-4-plus-museums/pueblo-museums/",
+        "https://visitpueblo.org/attractions/"
+      ],
+      "lesson": "Use scope-specific costs and access evidence before drawing financial conclusions."
+    },
+    {
+      "id": "mentalhealth",
+      "name": "Colorado Mental Health Institute Museum",
+      "profileType": "original",
+      "storyRoute": "museums-culture.html#mentalhealth",
+      "question": "How can history be preserved while protecting people?",
+      "nextEvidence": "public collection rights, access rules, interpretation",
+      "model": "access",
+      "sourceIds": [
+        "I1",
+        "I2"
+      ],
+      "sourceUrls": [
+        "https://coloradomuseums.co/cities-4-plus-museums/pueblo-museums/",
+        "https://visitpueblo.org/listing/history/"
+      ],
+      "lesson": "Public learning must distinguish historical institutions from identifiable patient records; dignity and lawful consent matter."
+    },
+    {
+      "id": "fire",
+      "name": "Hose Company No. 3 Fire Museum",
+      "profileType": "original",
+      "storyRoute": "museums-culture.html#fire",
+      "question": "Is a restoration grant the same as an annual museum budget?",
+      "nextEvidence": "grant terms, local match, ownership, maintenance",
+      "model": "property",
+      "sourceIds": [
+        "F1"
+      ],
+      "sourceUrls": [
+        "https://www.pueblo.us/2442/Endangered-Places-Nomination-Hose-Co-No-"
+      ],
+      "lesson": "Capital grants fund specified work; maintenance and program costs remain distinct."
+    },
+    {
+      "id": "valor",
+      "name": "Center for American Values / Home of Heroes",
+      "profileType": "original",
+      "storyRoute": "museums-culture.html#valor",
+      "question": "Does a large contribution year guarantee sustainable programming?",
+      "nextEvidence": "unrestricted recurring support, access, program outcomes",
+      "model": "runway",
+      "sourceIds": [
+        "V1",
+        "C2",
+        "V2"
+      ],
+      "sourceUrls": [
+        "https://visitpueblo.org/attractions/center-for-american-values/",
+        "https://visitpueblo.org/attractions/",
+        "https://projects.propublica.org/nonprofits/organizations/272779073"
+      ],
+      "lesson": "Donor timing and restrictions matter; education outcomes and consent for oral histories deserve separate evidence."
+    },
+    {
+      "id": "barn",
+      "name": "Goodnight Barn",
+      "profileType": "original",
+      "storyRoute": "museums-culture.html#barn",
+      "question": "Why can different historical sources report different construction years?",
+      "nextEvidence": "historic records, title, structural conditions",
+      "model": "property",
+      "sourceIds": [
+        "G1",
+        "G2"
+      ],
+      "sourceUrls": [
+        "https://goodnightbarnpueblo.org/",
+        "https://www.coloradopreservation.org/endangered-places/endangered-places-archives/goodnight-barn/"
+      ],
+      "lesson": "Retain conflicting date evidence and compare original sources rather than choosing the most repeated year."
+    },
+    {
+      "id": "creative",
+      "name": "Pueblo Arts Alliance / Creative Corridor / independent galleries",
+      "profileType": "original",
+      "storyRoute": "museums-culture.html#creative",
+      "question": "Does creative-sector economic activity equal additional City tax receipts?",
+      "nextEvidence": "study method, local retention, artist income",
+      "model": "funding",
+      "sourceIds": [
+        "C1",
+        "C2",
+        "P4"
+      ],
+      "sourceUrls": [
+        "https://puebloarts.org/pueblo-creative-corridor/",
+        "https://visitpueblo.org/attractions/",
+        "https://www.pueblo.us/2966/Non---Department-Funding-Request-Packet"
+      ],
+      "lesson": "Economic contribution is not automatically incremental revenue. Define the geography, period and counterfactual."
+    },
+    {
+      "id": "performing",
+      "name": "Performing arts, festivals & cultural organizations",
+      "profileType": "original",
+      "storyRoute": "museums-culture.html#performing",
+      "question": "How should community performances be compared to museums?",
+      "nextEvidence": "venue terms, seasonal costs, paid and free participation",
+      "model": "access",
+      "sourceIds": [
+        "P1",
+        "C2",
+        "C1"
+      ],
+      "sourceUrls": [
+        "https://www.pueblo.us/m/newsflash/home/detail/4996",
+        "https://visitpueblo.org/attractions/",
+        "https://puebloarts.org/pueblo-creative-corridor/"
+      ],
+      "lesson": "Different missions, event cycles and public access call for comparable criteria without pretending their costs are identical."
+    },
+    {
+      "id": "zoo",
+      "name": "Pueblo Zoo (related science and culture asset)",
+      "profileType": "original",
+      "storyRoute": "museums-culture.html#zoo",
+      "question": "Which costs continue even when attendance drops?",
+      "nextEvidence": "care obligations, cash, facility agreement",
+      "model": "runway",
+      "sourceIds": [
+        "Z1",
+        "P1",
+        "Z2",
+        "Z3"
+      ],
+      "sourceUrls": [
+        "https://www.pueblozoo.org/about",
+        "https://www.pueblo.us/m/newsflash/home/detail/4996",
+        "https://projects.propublica.org/nonprofits/organizations/840723360",
+        "https://projects.propublica.org/nonprofits/organizations/841293023"
+      ],
+      "lesson": "Animal welfare and life-support utilities continue; the operator, foundation and public asset owner are distinct."
+    },
+    {
+      "id": "nature",
+      "name": "Nature & Wildlife Discovery Center (related science asset)",
+      "profileType": "original",
+      "storyRoute": "museums-culture.html#nature",
+      "question": "What happens to outdoor education during fire or flood disruption?",
+      "nextEvidence": "site conditions, rehabilitation obligations, emergency access",
+      "model": "property",
+      "sourceIds": [
+        "N1"
+      ],
+      "sourceUrls": [
+        "https://www.hikeandlearn.org/about"
+      ],
+      "lesson": "Continuity includes wildlife care, safe access, alternate learning and disaster preparedness."
+    },
+    {
+      "id": "state-fair",
+      "name": "Colorado State Fair & Fiesta Day",
+      "profileType": "expanded",
+      "storyRoute": "museums-culture.html#culture-state-fair",
+      "question": "Do admissions count distinct people or local economic benefit?",
+      "nextEvidence": "attendance definition, audited fair finances, vendor receipts",
+      "model": "funding",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://coloradostatefair.com/about/fair-attendance/",
+        "https://www.cpr.org/2026/09/11/colorado-state-fair-2026-attendance-high/",
+        "https://coloradostatefair.com/about/reports/"
+      ],
+      "lesson": "Admissions can include repeat visits; measure fairground costs, retention and youth participation separately."
+    },
+    {
+      "id": "chile-festival",
+      "name": "Chile & Frijoles Festival",
+      "profileType": "expanded",
+      "storyRoute": "museums-culture.html#culture-chile-festival",
+      "question": "How does a food festival connect agriculture and culture?",
+      "nextEvidence": "grower and vendor earnings, public costs, visitor scope",
+      "model": "funding",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://pueblochilefestival.com/"
+      ],
+      "lesson": "Regional foodways link growers, cooks, artists, vendors and tourism; gross attendance does not measure their net income."
+    },
+    {
+      "id": "creative-corridor",
+      "name": "Pueblo Arts Alliance & Creative Corridor",
+      "profileType": "expanded",
+      "storyRoute": "museums-culture.html#culture-creative-corridor",
+      "question": "What does a reported economic contribution measure?",
+      "nextEvidence": "study methodology, public payments, artist incomes",
+      "model": "funding",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://puebloarts.org/",
+        "https://puebloarts.org/pueblo-creative-corridor/"
+      ],
+      "lesson": "Identify the method and base year before comparing a sector estimate with public receipts or jobs."
+    },
+    {
+      "id": "art-guild",
+      "name": "Pueblo Art Guild",
+      "profileType": "expanded",
+      "storyRoute": "museums-culture.html#culture-art-guild",
+      "question": "What is the value of a community gallery in a historic public building?",
+      "nextEvidence": "facility agreement, program participation, conservation cost",
+      "model": "property",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://www.puebloartguild.org/about-us",
+        "https://www.puebloartguild.org/"
+      ],
+      "lesson": "Separate accessible artist opportunities from ownership, upkeep and rental obligations."
+    },
+    {
+      "id": "municipal-band",
+      "name": "Pueblo Municipal Band",
+      "profileType": "expanded",
+      "storyRoute": "museums-culture.html#culture-municipal-band",
+      "question": "How can a free concert be evaluated?",
+      "nextEvidence": "actual award, cost, free attendance",
+      "model": "access",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://pueblomunicipalband.org/"
+      ],
+      "lesson": "Access, educational opportunities and community benefit can be measured without ticket revenue; requests are not awards."
+    },
+    {
+      "id": "steel-city",
+      "name": "Steel City Theatre Company",
+      "profileType": "expanded",
+      "storyRoute": "museums-culture.html#culture-steel-city",
+      "question": "What connects youth theater to downtown public value?",
+      "nextEvidence": "school and youth programming, actual receipts, facility obligations",
+      "model": "access",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://www.steelcitytheatre.org/",
+        "https://visitpueblo.org/attractions/steel-city-theatre-company/"
+      ],
+      "lesson": "Theater participation and affordable access are educational outcomes distinct from venue finances."
+    },
+    {
+      "id": "impossible-players",
+      "name": "Impossible Players",
+      "profileType": "expanded",
+      "storyRoute": "museums-culture.html#culture-impossible-players",
+      "question": "How does volunteer labor support cultural continuity?",
+      "nextEvidence": "volunteer hours, operating costs, accessible programming",
+      "model": "runway",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://www.impossibleplayers.com/",
+        "https://visitpueblo.org/attractions/impossible-players/"
+      ],
+      "lesson": "Volunteer time is valuable but finite; succession and facility upkeep affect resilience."
+    },
+    {
+      "id": "memorial-hall",
+      "name": "Pueblo Memorial Hall",
+      "profileType": "expanded",
+      "storyRoute": "museums-culture.html#culture-memorial-hall",
+      "question": "Why distinguish a venue from its performers?",
+      "nextEvidence": "operator agreement, facility maintenance, event costs",
+      "model": "property",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://visitpueblo.org/listing/arts/"
+      ],
+      "lesson": "A public facility has a lifecycle budget, while each event or organizer has separate revenues and costs."
+    },
+    {
+      "id": "riverwalk",
+      "name": "Historic Arkansas Riverwalk",
+      "profileType": "expanded",
+      "storyRoute": "museums-culture.html#culture-riverwalk",
+      "question": "How can a public attraction depend on both history and engineering?",
+      "nextEvidence": "HARP costs, safety, contracts and local spending",
+      "model": "property",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://www.puebloriverwalk.org/173/About"
+      ],
+      "lesson": "Flood history, public access, commerce and infrastructure maintenance are linked; visitor activity is not a maintenance budget."
+    },
+    {
+      "id": "levee-murals",
+      "name": "Pueblo Levee Mural Project",
+      "profileType": "expanded",
+      "storyRoute": "museums-culture.html#culture-levee-murals",
+      "question": "What changes if a flood-control asset also supports public art?",
+      "nextEvidence": "levee safety, mural rights, conservation and artist pay",
+      "model": "property",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://pueblolevee.org/levee-mural-project/",
+        "https://www.puebloleveemurals.com/"
+      ],
+      "lesson": "Engineering integrity and art stewardship have different duties that must coexist."
+    },
+    {
+      "id": "ethnic-archives",
+      "name": "CSU Pueblo Southern Colorado Ethnic Heritage & Colorado Chicano Movement Archives",
+      "profileType": "expanded",
+      "storyRoute": "museums-culture.html#culture-ethnic-archives",
+      "question": "How do primary archives change understanding of local history?",
+      "nextEvidence": "collection scope, permitted access, preservation costs",
+      "model": "access",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://www.csupueblo.edu/archives-and-special-collections/ethnic-heritage.html"
+      ],
+      "lesson": "Multiple community sources reveal experiences that an institutional summary may omit; preserve provenance and rights."
+    },
+    {
+      "id": "movimiento-sigue",
+      "name": "El Movimiento Sigue",
+      "profileType": "expanded",
+      "storyRoute": "museums-culture.html#culture-movimiento-sigue",
+      "question": "Why is living heritage more than a building?",
+      "nextEvidence": "program scope, voluntary aggregated participation, funding",
+      "model": "access",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://www.elmovimientosigue.org/"
+      ],
+      "lesson": "Cultural practices, youth leadership and community organization carry knowledge across generations without implying one group represents everyone."
+    },
+    {
+      "id": "juneteenth",
+      "name": "Pueblo Juneteenth Organization",
+      "profileType": "expanded",
+      "storyRoute": "museums-culture.html#culture-juneteenth",
+      "question": "What can a community celebration teach about public memory?",
+      "nextEvidence": "organizer-confirmed events, oral history rights, program support",
+      "model": "access",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://www.pueblonaacp.net/events-projects/pueblo-network-for-civil-rights/"
+      ],
+      "lesson": "Organizers, families and archival sources preserve distinct accounts of freedom and local history; do not infer representation of every resident."
+    },
+    {
+      "id": "genealogy",
+      "name": "Fray Angélico Chávez Chapter & associated heritage groups",
+      "profileType": "expanded",
+      "storyRoute": "museums-culture.html#culture-genealogy",
+      "question": "Why might a property decision affect many heritage groups?",
+      "nextEvidence": "group agreements, ownership and access conditions",
+      "model": "property",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://pueblohistory.org/pueblo-heritage-museum/",
+        "https://pueblohistory.org/library/"
+      ],
+      "lesson": "Shared space, archival access and membership relationships are different from legal tenancy or collection ownership."
+    },
+    {
+      "id": "symphony",
+      "name": "Pueblo Symphony Association",
+      "profileType": "expanded",
+      "storyRoute": "museums-culture.html#culture-symphony",
+      "question": "Does a positive annual accounting difference prove available cash?",
+      "nextEvidence": "restriction and timing, program access, actual public payments",
+      "model": "runway",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://projects.propublica.org/nonprofits/organizations/840580443"
+      ],
+      "lesson": "Revenue minus expenses is not unrestricted cash; evaluate music education and recurring funding separately."
+    },
+    {
+      "id": "library-archives",
+      "name": "Pueblo City-County Library Digital Collections",
+      "profileType": "expanded",
+      "storyRoute": "museums-culture.html#culture-library-archives",
+      "question": "Is a digital collection the same as a complete archive?",
+      "nextEvidence": "catalog scope, rights, remaining digitization cost",
+      "model": "access",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://pcclddigitalcollection.contentdm.oclc.org/digital/collection/p16620coll14",
+        "https://pcclddigitalcollection.contentdm.oclc.org/digital/about"
+      ],
+      "lesson": "Digitization improves discovery without proving all holdings are online, legally reusable or independently verified."
+    },
+    {
+      "id": "slovenian-heritage",
+      "name": "Slovenian heritage and Saint Mary's Slovenian Society",
+      "profileType": "expanded",
+      "storyRoute": "museums-culture.html#culture-slovenian-heritage",
+      "question": "How do immigration and industrial history connect?",
+      "nextEvidence": "exhibit provenance, rights, community accounts",
+      "model": "access",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://pueblohistory.org/pueblo-heritage-museum/heritage-museum-exhibits/"
+      ],
+      "lesson": "An exhibition can connect family traditions, labor and music across organizations without proving common ownership."
+    },
+    {
+      "id": "italian-heritage",
+      "name": "Dante Alighieri Society of Pueblo",
+      "profileType": "expanded",
+      "storyRoute": "museums-culture.html#culture-italian-heritage",
+      "question": "Does shared programming establish common ownership?",
+      "nextEvidence": "program agreements, scholarship payments, organizational finances",
+      "model": "access",
+      "sourceIds": [],
+      "sourceUrls": [
+        "https://dantealighieripueblo.org/upcoming-events/"
+      ],
+      "lesson": "Events and partnership links are distinct from legal control, facility agreements or public subsidy."
+    }
+  ],
+  "legacyLearning": {
+    "meaning": "Legacy Learning",
+    "boundary": "Reuse dated prior research without silent overwrite. Educational exercises are a separate reader projection.",
+    "reused": [
+      {
+        "id": "ED2602",
+        "date": "2026-09-03",
+        "finding": "Earlier $1,817,044 proposal revised to $885,000, difference $932,044; September 3 record predates the September 14 rejected vote.",
+        "later": "museums-culture-research.html#chapter-10",
+        "sources": [
+          "https://puebloco.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=6137,plainText=false)"
+        ]
+      },
+      {
+        "id": "QP-DISCOVER-PLAY-001",
+        "date": "2026-11-13",
+        "finding": "Evidence-led local education: question, answer, original source, related topic and optional contribution.",
+        "later": "learn-pueblo.html"
+      },
+      {
+        "id": "qp-culture-2026",
+        "date": "2026-11-19",
+        "finding": "Museum and culture research, 40 analytical sections, 18 original profiles; November 20 expansion adds 18 overlapping cultural profiles.",
+        "later": "museums-culture.html"
+      }
+    ]
+  }
+}

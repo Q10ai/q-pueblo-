@@ -1,0 +1,8 @@
+field,amount_usd,status,source_date,source_reference,notes
+adopted_authority,,unknown,,,Use verified account scope
+net_amendments_transfers,,unknown,,,Signed net value
+recognized_expenditures,,unknown,,,As of common reporting date
+remaining_unexpensed_commitments,,unknown,,,Exclude amounts already expensed
+other_necessary_obligations,,unknown,,,Exclude overlap
+additional_counsel_cost,,unknown,,,Use approved scope or quote
+unrestricted_cash_and_legal_authority,,unknown,,,Separate certification required

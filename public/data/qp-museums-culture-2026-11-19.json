@@ -975,8 +975,8 @@
     },
     {
       "id": 39,
-      "title": "Implementation and monitoring",
-      "analysis": "0–30 days: verify title, meeting outcomes and grants; 31–90: obtain operator records and shared-service bids; 3–12 months: voluntary access/preservation pilot and audited results; annual: report actual collections care and accessibility. November 25 review is editorial, not automated.",
+      "title": "Conditions for preserving public value",
+      "analysis": "Property decisions depend on title and grant conditions, documented operating costs, viable occupancy arrangements and collection protection. Shared services and access pilots would require voluntary agreements and expenditure oversight. Public outcomes can be compared through actual collections care, accessibility and financial results, rather than promised benefits.",
       "sources": [
         "P2",
         "P3",
@@ -1012,5 +1012,254 @@
     }
   ],
   "evidencePolicy": "Unknown is null, not zero. Prior individual profile dates retained as inherited November 18 material. Sources are links; no blanket document verification.",
-  "release": "repository publication; live deployment and human editorial review outstanding"
+  "release": "repository publication; live deployment and human editorial review outstanding",
+  "cultureExpansion": {
+    "checked": "2026-11-20",
+    "scope": "Individual cultural profiles beyond and overlapping the inherited 18 profiles; not an additive unique institution count.",
+    "profiles": [
+      {
+        "id": "state-fair",
+        "name": "Colorado State Fair & Fiesta Day",
+        "domain": "Festivals, agriculture and arts",
+        "finding": "September 2026 reporting records 507,970 admissions, compared with 428,941 in 2025; Fiesta Day drew nearly 63,000. Counts describe admissions, not unique visitors or net local benefit.",
+        "meaning": "The fair supports agriculture, artisans and performing arts at state scale. Assess fairground operating costs, local vendor retention and youth participation separately from attendance.",
+        "unknown": "State Fair Authority reports and audited finances are separate from the City museum budget; 2026 final financial outcome not established.",
+        "sources": [
+          "https://coloradostatefair.com/about/fair-attendance/",
+          "https://www.cpr.org/2026/09/11/colorado-state-fair-2026-attendance-high/",
+          "https://coloradostatefair.com/about/reports/"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "chile-festival",
+        "name": "Chile & Frijoles Festival",
+        "domain": "Foodways and agriculture",
+        "finding": "The festival promotes regional chile growers, food businesses, cooking competitions, music and local produce along Union Avenue. The 2026 event was advertised for September 18–20.",
+        "meaning": "A cultural ecosystem connects farm production, local culinary identity, tourism and seasonal income.",
+        "unknown": "Actual attendance, event costs, farmer/vendor net receipts and public support are not established here.",
+        "sources": [
+          "https://pueblochilefestival.com/"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "creative-corridor",
+        "name": "Pueblo Arts Alliance & Creative Corridor",
+        "domain": "Creative economy",
+        "finding": "The Alliance identifies three historic commercial districts and reports a network of 55+ arts/business organizations and more than $14 million in annual economic contribution.",
+        "meaning": "Shared studios, education and district programming may strengthen small creative businesses; the Alliance’s reported impact is not a verified incremental fiscal return.",
+        "unknown": "The estimate's base year, methodology and direct public payments are not established here.",
+        "sources": [
+          "https://puebloarts.org/",
+          "https://puebloarts.org/pueblo-creative-corridor/"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "art-guild",
+        "name": "Pueblo Art Guild",
+        "domain": "Visual arts",
+        "finding": "The Guild reports founding in 1959 and gallery operation in the historic Mineral Palace Park boathouse since 1960. It exhibits and sells local artworks and offers classes.",
+        "meaning": "A community arts institution doubles as a historic-building stewardship case and an entry point for local artists.",
+        "unknown": "Facility agreement, upkeep obligations, program finances and artist earnings are not established.",
+        "sources": [
+          "https://www.puebloartguild.org/about-us",
+          "https://www.puebloartguild.org/"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "municipal-band",
+        "name": "Pueblo Municipal Band",
+        "domain": "Music",
+        "finding": "The band reports eight summer concerts at Pueblo Community College and a community tradition dating to 1913. Its 2027 community-service application requested $20,000 in the inherited research packet.",
+        "meaning": "Free performances support access for residents who may not purchase commercial concert tickets; evaluate arts education and continuity.",
+        "unknown": "The application is not an award; actual subsidy, sponsorship and operating costs remain unresolved.",
+        "sources": [
+          "https://pueblomunicipalband.org/"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "steel-city",
+        "name": "Steel City Theatre Company",
+        "domain": "Theater and education",
+        "finding": "Founded in 2001 according to Visit Pueblo; the company identifies as a nonprofit, lists a separate education building and Chief Theatre, and describes donations as supporting affordable prices. The inherited packet records a $10,000 2027 service-funding request.",
+        "meaning": "The theater connects youth arts education and downtown performance activity.",
+        "unknown": "The request is not a payment; operating revenue, facility obligations and participation totals remain unresolved.",
+        "sources": [
+          "https://www.steelcitytheatre.org/",
+          "https://visitpueblo.org/attractions/steel-city-theatre-company/"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "impossible-players",
+        "name": "Impossible Players",
+        "domain": "Community theater",
+        "finding": "Visit Pueblo dates this volunteer theater group to 1966; its own site documents community performances and occasional free programming.",
+        "meaning": "Volunteer theater provides local creative participation and affordable cultural access, distinct from a large performance venue.",
+        "unknown": "Facility costs, operating income, public funding and volunteer succession are not quantified.",
+        "sources": [
+          "https://www.impossibleplayers.com/",
+          "https://visitpueblo.org/attractions/impossible-players/"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "memorial-hall",
+        "name": "Pueblo Memorial Hall",
+        "domain": "Performance venue and civic heritage",
+        "finding": "Tourism records describe a venue dedicated in 1919 and remodeled in 2012, hosting concerts, theater, graduations and other events.",
+        "meaning": "The venue combines historic public infrastructure and ticketed or community programming; compare capital upkeep with operating and access outcomes.",
+        "unknown": "Current operator agreement, public expenditure, revenue and event utilization have not been reconciled.",
+        "sources": [
+          "https://visitpueblo.org/listing/arts/"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "riverwalk",
+        "name": "Historic Arkansas Riverwalk",
+        "domain": "Public space, heritage and tourism",
+        "finding": "The Riverwalk's history describes a 1991 citizen coalition, 1993 City-created HARP Commission and opening in 1999 of the city-owned project.",
+        "meaning": "The attraction connects flood history, downtown commerce, public gathering and maintenance obligations; it is not interchangeable with a museum.",
+        "unknown": "Current HARP appropriations, actual payments, visitor economics and future capital commitments are not established in this profile.",
+        "sources": [
+          "https://www.puebloriverwalk.org/173/About"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "levee-murals",
+        "name": "Pueblo Levee Mural Project",
+        "domain": "Public art and flood infrastructure",
+        "finding": "The Conservancy District and Arts Alliance collaborate on murals on the reconstructed flood-control levee. The project organization reports that the historic murals were removed and a new program began in 2021.",
+        "meaning": "This is both a cultural conservation issue and a flood protection asset; public art maintenance must coexist with engineering and safe access.",
+        "unknown": "Current mural inventory, artist compensation, conservation costs and total program expenditure are not reconciled.",
+        "sources": [
+          "https://pueblolevee.org/levee-mural-project/",
+          "https://www.puebloleveemurals.com/"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "ethnic-archives",
+        "name": "CSU Pueblo Southern Colorado Ethnic Heritage & Colorado Chicano Movement Archives",
+        "domain": "Archives and living heritage",
+        "finding": "CSU Pueblo describes collections of records from regional ethnic and cultural communities, including materials documenting the Colorado Chicano civil rights movement.",
+        "meaning": "The collections preserve primary sources for understanding education, labor, land, politics and cultural identity. Rights-aware access is distinct from physical museum admission.",
+        "unknown": "Collection-specific operating budget, digitization coverage and preservation liabilities are not established.",
+        "sources": [
+          "https://www.csupueblo.edu/archives-and-special-collections/ethnic-heritage.html"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "movimiento-sigue",
+        "name": "El Movimiento Sigue",
+        "domain": "Chicanx and Indigenous living culture",
+        "finding": "The organization describes cultural preservation and youth education alongside community organizing; listed initiatives include Cinco de Mayo and the Rita J. Martinez Youth Leadership Conference.",
+        "meaning": "Living cultural traditions and youth leadership belong in the regional inventory alongside buildings and collections; the organization does not represent every Indigenous or Hispanic community.",
+        "unknown": "Program funding and participation are not quantified in this record.",
+        "sources": [
+          "https://www.elmovimientosigue.org/"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "juneteenth",
+        "name": "Pueblo Juneteenth Organization",
+        "domain": "Black heritage and community celebration",
+        "finding": "The local NAACP network identifies the organization as preserving and celebrating African-American freedom and heritage.",
+        "meaning": "Community heritage is not captured by museum budgets; independent organizers and oral histories deserve separate coverage.",
+        "unknown": "Current organizer details, program schedule and finances are not verified in this record.",
+        "sources": [
+          "https://www.pueblonaacp.net/events-projects/pueblo-network-for-civil-rights/"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "genealogy",
+        "name": "Fray Angélico Chávez Chapter & associated heritage groups",
+        "domain": "Genealogy and community history",
+        "finding": "The Heritage Museum identifies the Hispanic genealogy chapter, Irish Club of Pueblo and Pueblo Archaeological Historical Society among member groups.",
+        "meaning": "The B Street property issue may affect a shared heritage network, not merely a single exhibit space; membership does not establish tenancy or legal property rights.",
+        "unknown": "Individual occupancy, collection ownership, membership terms and group finances remain unresolved.",
+        "sources": [
+          "https://pueblohistory.org/pueblo-heritage-museum/",
+          "https://pueblohistory.org/library/"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "symphony",
+        "name": "Pueblo Symphony Association",
+        "domain": "Orchestral music",
+        "finding": "The nonprofit's FY ending June 2025 Form 990 extract reports $344,287 revenue, $235,852 expenses and $594,210 net assets, a $108,435 accounting difference.",
+        "meaning": "Orchestral programming and music education belong in the cultural funding comparison; a positive annual accounting difference does not establish available cash.",
+        "unknown": "Current program-level participation, restricted funds and public payments are not established.",
+        "sources": [
+          "https://projects.propublica.org/nonprofits/organizations/840580443"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "library-archives",
+        "name": "Pueblo City-County Library Digital Collections",
+        "domain": "Community archives and oral history",
+        "finding": "The library reports 1,625 hours of recorded oral histories and a digitization program initiated in 2014. Its collections include local schools, industries, ethnic heritage and regional life.",
+        "meaning": "This is major cultural research infrastructure connecting family histories and public memory to digital access; not all archival items are online.",
+        "unknown": "Collection-specific spending and remaining digitization volume are not established.",
+        "sources": [
+          "https://pcclddigitalcollection.contentdm.oclc.org/digital/collection/p16620coll14",
+          "https://pcclddigitalcollection.contentdm.oclc.org/digital/about"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "slovenian-heritage",
+        "name": "Slovenian heritage and Saint Mary's Slovenian Society",
+        "domain": "Immigration and industrial heritage",
+        "finding": "The Heritage Museum attributes its Slovenian exhibition to Saint Mary's Slovenian Society, connecting immigration with CF&I employment, businesses and music.",
+        "meaning": "The museum, Steelworks and neighborhood heritage preserve complementary accounts of Pueblo's industrial communities.",
+        "unknown": "The society's current operations, exhibition ownership and financial position remain unresolved.",
+        "sources": [
+          "https://pueblohistory.org/pueblo-heritage-museum/heritage-museum-exhibits/"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      },
+      {
+        "id": "italian-heritage",
+        "name": "Dante Alighieri Society of Pueblo",
+        "domain": "Italian language and cultural heritage",
+        "finding": "The society lists a 2026 Carnevale at Union Depot, a scholarship luncheon and meetings connected to the Leonardo museum's education room or online.",
+        "meaning": "The organization links Italian cultural traditions, education and the new museum; shared programming is not evidence of a shared legal entity or public subsidy.",
+        "unknown": "Current scholarships paid, program finances and occupancy arrangements are not established.",
+        "sources": [
+          "https://dantealighieripueblo.org/upcoming-events/"
+        ],
+        "checked": "2026-11-20",
+        "classification": "source-linked profile; not a financial audit"
+      }
+    ]
+  }
 }
