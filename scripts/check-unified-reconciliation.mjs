@@ -28,3 +28,11 @@ assert.equal(cross.rows.filter(x=>x.historicalId).length,historical.length);asse
 assert.equal(cross.rows.filter(x=>x.state==='id-match-scope-review').length,10);
 assert(h.includes('qp-issue-identity-crosswalk-2026-11-19.json'));
 console.log('Issue identity coverage passes; ten ambiguous title/scope pairs remain unmerged.');
+
+const depth=JSON.parse(read('public/data/qp-living-reference-depth-2026-11-20.json'));
+const depthPage=read('public/research-depth.html');
+assert.deepEqual(new Set(depth.rows.map(x=>x.route)),new Set(r.rows.map(x=>x.route)));
+assert.equal(depth.rows.length,r.rows.length);
+for(const row of depth.rows){const html=read('public/'+row.route);const links=new Set([...html.matchAll(/<a\b[^>]*\bhref\s*=\s*["'](https?:\/\/[^"']+)["'][^>]*>/gi)].map(m=>m[1].replace(/&amp;/g,'&')));assert.equal(row.distinctExternalLinks,links.size,row.route+' link count');assert.equal(row.headingEntries,(html.match(/<h[1-6]\b/gi)||[]).length,row.route+' heading count');assert(depthPage.includes('href="'+row.route+'"'));}
+for(let i=1;i<depth.rows.length;i++){const a=depth.rows[i-1],b=depth.rows[i];assert(a.distinctExternalLinks>b.distinctExternalLinks||(a.distinctExternalLinks===b.distinctExternalLinks&&a.headingEntries>=b.headingEntries));}
+console.log('PASS complete living reference-depth index; counts are navigation descriptors, not evidence ratings.');
