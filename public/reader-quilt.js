@@ -5,12 +5,30 @@
  const links=items=>{const seen=new Set();return (items||[]).filter(x=>safeLocal(x.route)&&x.title&&!seen.has(x.route)&&seen.add(x.route));};
  const normalize=s=>String(s??'').toLowerCase().normalize('NFKD').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
  const relatedLiving=(q,rows)=>{const tokens=normalize(q).split(' ').filter(t=>t.length>2&&!['pueblo','what','where','which','about','does','the','and','how','can','for','when','with','are'].includes(t));return rows.map(r=>({r,n:tokens.filter(w=>(' '+normalize(r.title+' '+r.keywords)+' ').includes(' '+w+' ')).length})).filter(x=>x.n>=Math.min(2,Math.max(1,tokens.length))).sort((a,b)=>b.n-a.n).slice(0,6).map(x=>({title:x.r.title,route:x.r.route,context:'Related living research; not an exact answer'}));};
+ // The analytical lenses are available internally, never a public section quota.
+ function substantive(rows,already=[]){
+  const seen=new Set(already.map(normalize));
+  return rows.filter(x=>{const t=normalize(x.text??x.answer),state=normalize(x.state??x.classification);
+   if(!t||seen.has(t)||/^(not assessed|not yet established|unknown|unassessed|no evidence|unanswered)( |$)/.test(state))return false;
+   if(/^(not yet established by the available evidence|this point has not been established by the reviewed records)$/.test(t))return false;
+   seen.add(t);return true;
+  });
+ }
+ function pruneCoverage(root){
+  for(const row of root.querySelectorAll('.qp40-row')){
+   if(row.querySelector('.qp-coverage-note')?.textContent.trim()==='Not yet established')row.remove();
+  }
+  for(const group of root.querySelectorAll('.qp40-group,.qp40-additional')){
+   if(!group.querySelector('.qp40-row'))group.remove();
+  }
+ }
  function project({question='',report=null,story=null,related=[],prior=[],coverage=[]}={}){
   const known=!!(report||story),r=report||{},s=story||{},t=r.qification?.temporal||{};
   const findings=clean(report?[r.summary,...(r.whatKnown||[]),r.qification?.assessment]:story?[s.summary,...(s.chapters||[]).filter(c=>['fact','finding','evidence'].includes(c.kind)).map(c=>c.text)]:[]);
   const historical=clean(report?[t.past]:story?(s.chapters||[]).filter(c=>/histor|timeline|past|background|develop|earlier|origins/i.test(c.heading)).map(c=>c.text):[]);
   const lessonLinks=links(prior);
-  const quilt=report?coverage.map(x=>({title:x.title,text:x.answer,state:x.classification,group:x.group})):story?(s.coverage40?.length?s.coverage40.map(x=>({title:x.title,text:x.answer,state:x.classification,group:'Research perspectives'})):s.chapters.map(c=>({title:c.heading,text:c.text,state:c.kind,group:'Story sections'}))):[];
+  const rawQuilt=report?coverage.map(x=>({title:x.title,text:x.answer,state:x.classification,group:x.group})):story?(s.coverage40?.length?s.coverage40.map(x=>({title:x.title,text:x.answer,state:x.classification,group:'Research perspectives'})):s.chapters.map(c=>({title:c.heading,text:c.text,state:c.kind,group:'Story sections'}))):[];
+  const quilt=substantive(rawQuilt,[...findings,...historical]);
   return {schema:'qp-reader-quilt-v1',question,evidenceState:known?'DATED_PREPARED_FINDINGS':'NO_EXACT_PREPARED_ANSWER',answer:findings[0]||'No prepared, source-supported answer matches this exact question.',findings,legacyLearning:{historical,prior:lessonLinks,scope:'Dated findings and linked prior work in the available collection. The wider Legacy Learning archive is not certified reconciled.'},quilt,related:links(related),unknowns:clean(report?[r.counter,...(r.unknowns||[])]:story?s.unknowns:[]),twin:'twin.html',learn:'learn-pueblo.html'};
  }
  const node=(tag,text)=>{const e=document.createElement(tag);if(text!=null)e.textContent=String(text);return e;};
@@ -21,7 +39,7 @@
   const out=node('section');out.className='qp-story';out.dataset.qpReaderQuilt='true';
   if(includeFindings){out.append(node('h3','Findings'));if(data.findings.length)for(const f of data.findings)para(out,f);else para(out,data.answer);}
   const ll=node('details');ll.append(node('summary','Legacy Learning (LL) — earlier evidence and findings'));for(const h of data.legacyLearning.historical)para(ll,h);linkList(ll,data.legacyLearning.prior);if(!data.legacyLearning.historical.length&&!data.legacyLearning.prior.length)para(ll,'No earlier case-specific findings are established in this linked collection.');para(ll,data.legacyLearning.scope);out.append(ll);
-  if(includeQuilt){const quilt=node('details');quilt.append(node('summary','Quilted research sections — evidence and connections'));if(data.quilt.length){let last='';for(const x of data.quilt){if(x.group&&x.group!==last){quilt.append(node('h4',x.group));last=x.group;}const d=node('details');d.append(node('summary',x.title));para(d,x.text);if(x.state)para(d,x.state);quilt.append(d);}}else para(quilt,'No case-specific analytical findings are available for this exact question. Related research below does not establish an answer.');out.append(quilt);}
+  if(includeQuilt&&data.quilt.length){const quilt=node('details');quilt.append(node('summary','Quilted research sections — evidence and connections'));if(data.quilt.length){let last='';for(const x of data.quilt){if(x.group&&x.group!==last){quilt.append(node('h4',x.group));last=x.group;}const d=node('details');d.append(node('summary',x.title));para(d,x.text);if(x.state)para(d,x.state);quilt.append(d);}}else para(quilt,'No case-specific analytical findings are available for this exact question. Related research below does not establish an answer.');out.append(quilt);}
   if(data.related.length){const d=node('details');d.append(node('summary','Connected research and earlier editions'));linkList(d,data.related);out.append(d);}
   const p=node('p');anchor(p,'Twin Pueblo — relationships and scenarios',data.twin);p.append(document.createTextNode(' · '));anchor(p,'Learn Pueblo',data.learn);out.append(p);return out;
  }
@@ -38,18 +56,14 @@
   if(canonical){try{const response=await fetch(new URL('data/qp-current-reports.json',base),{credentials:'same-origin'});if(response.ok)report=(await response.json()).reports.find(r=>r.slug===canonical[1])||null;}catch{}}
   const projection=project({report,prior:priorFor(route)});
   const block=view(projection,{includeFindings:false,includeQuilt:false});
-  const details=node('details');details.append(node('summary','Quilted sections — explore the connected findings'));
-  const headings=[...main.querySelectorAll('h2,h3')].filter(h=>!h.closest('[data-qp-reader-quilt]'));
-  const used=new Set([...document.querySelectorAll('[id]')].map(x=>x.id));let serial=0;
-  const list=node('ul');
-  for(const h of headings){const label=h.textContent.trim();if(!label)continue;let id=h.id||((h.parentElement?.firstElementChild===h)?h.parentElement.id:'');if(!id){do{id='qp-quilt-section-'+(++serial);}while(used.has(id));h.id=id;used.add(id);}const li=node('li');anchor(li,label,'#'+id);list.append(li);}
-  if(list.childElementCount)details.append(list);else para(details,'Read the dated findings and evidence on this page.');
-  block.append(details);
+  pruneCoverage(main);
+  // Use the existing story and sections in place; do not generate a second table of contents.
+  if(main.querySelector('#coverage-40 .qp40-row')){const p=node('p');anchor(p,'Detailed findings and analysis','#coverage-40');block.append(p);}
   const prior=block.querySelector('details');if(prior&&route==='museums-culture-research.html'){const p=node('p');anchor(p,'Cultural Legacy Learning case history','culture-learning.html#legacy-learning');prior.append(p);}
   for(const link of block.querySelectorAll('a[href]')){const href=link.getAttribute('href');if(safeLocal(href))link.href=new URL(href,base).href;}
   const finding=main.querySelector('.qp-story-takeaway,#story-first,.qp-story-lead,.qp-answer-intro');
   if(finding){const section=finding.closest('section')||finding;section.after(block);}else{const first=main.querySelector('h1');const p=first?.nextElementSibling;if(p?.tagName==='P')p.after(block);else if(first)first.after(block);else main.append(block);}
  }
- const api={project,view,markdown,relatedLiving,safeLocal,priorFor,mountSubject};
+ const api={project,view,markdown,relatedLiving,safeLocal,priorFor,mountSubject,substantive,pruneCoverage};
 if(root){root.QPReaderQuilt=api;const script=typeof document!=='undefined'?document.currentScript:null;if(script?.dataset.qpSubject)mountSubject(script.dataset.qpSubject,new URL('.',script.src)).catch(()=>{});}if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:null);
