@@ -52,3 +52,14 @@ for(const x of expandedCulture){assert(x.finding&&x.meaning&&x.unknown&&x.source
 assert(culturePaper.includes('museums-culture.html#living-culture'));
 assert(read('public/home-search.js').includes('culture.cultureExpansion'));
 console.log('PASS individual cultural profiles, research and search links');
+
+const cultureLearning=JSON.parse(read('public/data/qp-culture-twin-learning-2026-11-20.json'));
+const cultureLearnPage=read('public/culture-learning.html');
+const culturePacket=JSON.parse(read('public/data/qp-museums-culture-2026-11-19.json'));
+assert.equal(cultureLearning.legacyLearning.meaning,'Legacy Learning');
+assert.deepEqual(new Set(cultureLearning.rows.map(x=>x.id)),new Set([...culturePacket.profiles,...culturePacket.cultureExpansion.profiles].map(x=>x.id)));
+assert.equal(cultureLearning.rows.length,36);
+for(const x of cultureLearning.rows){assert(x.lesson&&x.question&&x.sourceUrls.length);assert(cultureLearnPage.includes('id="learn-'+x.id+'"'));assert(cultureHub.includes('culture-learning.html#learn-'+x.id));assert(cultureHub.includes('id="'+x.storyRoute.split('#')[1]+'"'));}
+for(const p of ['twin.html','learn-pueblo.html','museums-culture-research.html','museums-culture-tools.html'])assert(read('public/'+p).includes('culture-learning.html'));
+assert(cultureLearnPage.includes('twin.html#culture-learning'));
+console.log('PASS cultural profile learning, legacy learning meaning, and reciprocal Twin connections');
