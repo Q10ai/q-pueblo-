@@ -19,6 +19,7 @@ jobs:
           node --check public/site.js
           node --check public/connections.js
           node --check scripts/check-experience.mjs
+          node --check scripts/check-subject-families.mjs
           node --check public/explore.js
           node --check public/issues.js
           node --check scripts/check-topic-nav.mjs
@@ -76,6 +77,7 @@ jobs:
           node scripts/check-evidence-desk.mjs
           node scripts/check-packet-reports.mjs
           node scripts/check-launch.mjs
+          node scripts/check-subject-families.mjs
           node scripts/check-experience.mjs
           node scripts/check-release-parity.mjs
           node scripts/check-regional-transition.mjs
