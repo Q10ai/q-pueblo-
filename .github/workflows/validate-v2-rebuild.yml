@@ -1,0 +1,32 @@
+name: Q Pueblo v2 dual KOS build checks
+on:
+  push:
+    branches:
+      - q-pueblo/clean-rebuild-v2-2026-11-21
+    paths:
+      - "rebuild/**"
+      - ".github/workflows/validate-v2-rebuild.yml"
+  pull_request:
+    paths:
+      - "rebuild/**"
+      - ".github/workflows/validate-v2-rebuild.yml"
+permissions:
+  contents: read
+jobs:
+  dual-context:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Static syntax checks
+        run: |
+          node --check rebuild/src/kos/planes.mjs
+          node --check rebuild/src/kos/memory.mjs
+          node --check rebuild/src/kos/breakdown.mjs
+          node --check rebuild/src/kos/linear.mjs
+          node --check rebuild/src/kos/index.mjs
+          node --check rebuild/tests/dual-context.test.mjs
+      - name: Safe dual KOS context tests
+        run: node --test rebuild/tests/dual-context.test.mjs
