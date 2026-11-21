@@ -24,6 +24,11 @@
       "allowAction": false
     },
     {
+      "id": "twin-shadow",
+      "contract": "Only relevant source-linked public/aggregate Twin and Shadow comparison candidates; no public personal replica, no live-system control or model-as-proof",
+      "allowAction": false
+    },
+    {
       "id": "linear",
       "contract": "chronological source-linked paragraphs; grade-10 editorial review needed",
       "allowAction": false
@@ -56,6 +61,11 @@
     {
       "id": "release",
       "contract": "exact artifact signature/version readback and rollback",
+      "allowAction": false
+    },
+    {
+      "id": "learning-review",
+      "contract": "Source corrections, historical version differences, feedback and test outcomes become learning candidates; no autonomous promotion or silent rewrite",
       "allowAction": false
     }
   ],
@@ -95,6 +105,8 @@
     "Exact approved artifact is verified after deployment",
     "Public concerns and fears are never inferred from a person's private profile or merely because a question was asked",
     "Where views conflict, sources are weighted by strength and scope; unsupported alternatives are not presented as equally true",
-    "Every concern explainer includes supported facts, meaningful uncertainty, real-world implications, claim/source provenance and provisional review state"
+    "Every concern explainer includes supported facts, meaningful uncertainty, real-world implications, claim/source provenance and provisional review state",
+    "Twins and shadows cannot certify their source inputs, impersonate individuals or control public systems",
+    "Human-admitted source corrections and red-team findings retain history, provenance and review before production changes"
   ]
 }
