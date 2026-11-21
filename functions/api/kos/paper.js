@@ -19,7 +19,7 @@ const validPaper=paper=>{
   if(typeof source?.id!=='string'||!/^s[a-z0-9_-]{1,32}$/i.test(source.id) || ids.has(source.id) ||
      typeof source?.title!=='string'||source.title.length<4||source.title.length>250 ||
      typeof source?.url!=='string'||!/^https:\/\//i.test(source.url) ||
-     source.url.length>1500) return false;
+     source.url.length>1500 || !/^\d{4}-\d{2}-\d{2}$/.test(source.checkedAt||'')) return false;
   try{const url=new URL(source.url);if(!url.hostname.includes('.')||url.username||url.password)return false;}catch{return false;}
   ids.add(source.id);
  }
@@ -28,8 +28,10 @@ const validPaper=paper=>{
   if(typeof section?.heading!=='string'||section.heading.length>180||
      !Array.isArray(section.paragraphs)||!section.paragraphs.length||section.paragraphs.length>25)return false;
   for(const paragraph of section.paragraphs){
-   if(typeof paragraph!=='string'||paragraph.length>4500)return false;
-   length+=paragraph.length;
+   if(typeof paragraph?.text!=='string'||paragraph.text.length>4500||
+      !Array.isArray(paragraph.sourceIds)||paragraph.sourceIds.length<1||
+      !paragraph.sourceIds.every(id=>ids.has(id)))return false;
+   length+=paragraph.text.length;
   }
  }
  if(length<1400||length>100000||paper.claimEvidence.length<3||paper.claimEvidence.length>250)return false;
