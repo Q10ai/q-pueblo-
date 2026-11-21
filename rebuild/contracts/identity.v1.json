@@ -10,7 +10,8 @@
     "Legacy records are archival leads until claim-by-claim checked against original materials; they are never imported as authoritative v2 facts.",
     "Every canonical link resolves through one registry. Maintain redirects or historical links for verified old routes. Never redirect two different legacy subjects to one new subject by title alone.",
     "Keep historical amendments and supersessions in a lineage graph. TTL expiry requires re-verification, never deletion.",
-    "All public publication and corrections retain human review and rollback."
+    "All public publication and corrections retain human review and rollback.",
+    "Twin, Shadow and Learning IDs refer to reviewable model/candidate artifacts, never evidence of operational authority; models do not mint original source claims."
   ],
   "kinds": [
     {
@@ -92,6 +93,21 @@
       "kind": "project",
       "format": "qp:project:<uuid>",
       "notes": "Named project across revisions, contracts and construction phases"
+    },
+    {
+      "kind": "twin",
+      "format": "qp:twin:<uuid>",
+      "notes": "Bounded system-model instance; identity is not an operational safety certification or an observed fact"
+    },
+    {
+      "kind": "shadow",
+      "format": "qp:shadow:<uuid>",
+      "notes": "Read-only comparator or observation candidate; no personal replica or execution authority in public systems"
+    },
+    {
+      "kind": "learning",
+      "format": "qp:learning:<uuid>",
+      "notes": "Append-only sourced learning/review candidate; separately human-approved amendment required"
     },
     {
       "kind": "paper",
