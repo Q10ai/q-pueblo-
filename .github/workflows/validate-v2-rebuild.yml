@@ -31,7 +31,9 @@ jobs:
           node --check rebuild/src/kos/twin-shadow.mjs
           node --check rebuild/src/kos/learning-loop.mjs
           node --check rebuild/src/kos/expert-panel.mjs
-          node --check rebuild/tests/expert-panel.test.mjs
+          node --check rebuild/src/kos/panel-runner.mjs
+          node --check rebuild/tests/panel-runner.test.mjs
+          node --check rebuild/tests/expert-panel.test.mjs rebuild/tests/panel-runner.test.mjs
           node --check rebuild/tests/twin-shadow-learning.test.mjs rebuild/tests/expert-panel.test.mjs
           node --check rebuild/tests/human-concerns.test.mjs
           node --check rebuild/tests/dual-context.test.mjs
