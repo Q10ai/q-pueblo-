@@ -4,7 +4,7 @@
   "basisCommit": "f4249437a2948ed9706bfb961a30a552f9f81695",
   "scope": "Public static route directory. Counts separate generated canonical reports, living research and independent contextual stories; identity counts must not be summed. Route presence is not proof of fact-checking or live operation.",
   "counts": {
-    "htmlRoutes": 142,
+    "htmlRoutes": 143,
     "canonicalReports": 18,
     "livingResearchRoutes": 53,
     "historicalIssueRecords": 174,
@@ -885,6 +885,14 @@
       "route": "kos-story-pueblo-flood-1921.html",
       "title": "The Great Pueblo Flood of 1921: how a river changed a city — independently sourced story",
       "group": "learning",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "kos.html",
+      "title": "KOS: Q Core, Crosswalking, Qified research and reusable outputs",
+      "group": "twin",
       "livingId": null,
       "canonicalId": null,
       "canonicalIssueIds": []
