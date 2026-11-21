@@ -50,7 +50,7 @@ test("candidate archive claims and contested statements cannot certify a graph l
  f.claims.push({id:"qp:claim:demo-dispute",nodeIds:["qp:subject:water"],
   text:"These fictional sources disagree about the duration of the outage.",
   state:"CONTESTED",eventDate:"2026-10-01",planes:["physical"],
-  sourceIds:["qp:source:demo-one"],visibility:"PUBLIC"});
+  sourceIds:["qp:source:demo-one"],visibility:"PUBLIC",disclosure:"PUBLIC_CONTEXT_ALLOWED"});
  const b=createBreakdown(f);
  assert.equal(b.edges.length,0); // an unverified first hop cannot bridge to the second edge
  assert(b.leads.some(x=>x.id==="qp:claim:demo-lead"));
