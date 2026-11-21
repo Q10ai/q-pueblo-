@@ -1,3 +1,4 @@
+import {resolveKOS} from './resolve.js';
 // Optional Cloudflare Pages Function for on-demand contextual papers.
 // Default OFF. No configured provider, budget/rate protection, and source-verification
 // authority means no generation. The browser is never given server credentials.
@@ -41,7 +42,7 @@ const validPaper=paper=>{
  return true;
 };
 export function onRequestGet({env}){
- return json({onDemandGeneration:active(env),publicPublishing:false,status:active(env)?'configured-conditional':'not-enabled'});
+ return json({onDemandGeneration:active(env),publicPublishing:false,connectedResearchLinks:true,status:active(env)?'configured-conditional':'not-enabled'});
 }
 export async function onRequestPost({request,env}){
  if(!active(env))return json({error:'On-demand KOS generation is not enabled or not release-gated.'},503);
@@ -59,6 +60,10 @@ export async function onRequestPost({request,env}){
  const requested=typeof idea==='string' && idea.trim().length>=3 && idea.trim().length<=240;
  if(!scoped&&!requested)return json({error:'Specify a valid subject'},400);
  if(data?.privacyConsent!==true)return json({error:'Consent is required for sending a request to the governed research service'},400);
+ let connections;
+ try{
+  connections=await resolveKOS({env,request,familyId:scoped?family:null,topicIndex:scoped?topic??null:null,idea:requested?idea.trim():null});
+ }catch{return json({error:'The public KOS connections could not be resolved. No unsupported paper will be produced.'},503);}
  const payload={
   schema:'qp-kos-on-demand-request-v1',
   task:'source-check-crosswalk-qify-context-paper',
@@ -68,7 +73,10 @@ export async function onRequestPost({request,env}){
   requireOriginalSources:true,requireClaimEvidence:true,
   accountingStatesSeparate:true,avoidRecycledReportsAsProof:true,
   publicationAuthority:'human-only',outputStatus:'provisional-user-specific',
-  noAutonomousActions:true,noPrivateData:true
+  noAutonomousActions:true,noPrivateData:true,
+  connectedContext:connections,
+  sourceRule:'Existing links are leads, not proof. Independently retrieve and check authoritative source documents; support every material claim with original source IDs. Do not cite a Q Pueblo report as independent evidence.',
+  publicationState:'private-provisional-user-response-only'
  };
  let upstream;
  try{
@@ -82,6 +90,6 @@ export async function onRequestPost({request,env}){
   if(resultText.length>220000)return json({error:'Paper exceeds the safe output limit'},502);
   const result=JSON.parse(resultText);
   if(!validPaper(result.paper))return json({error:'The proposed paper did not meet the evidence and narrative requirements.'},422);
-  return json({status:'provisional-user-specific',publicPublished:false,paper:result.paper});
+  return json({status:'provisional-user-specific',publicPublished:false,sourceReviewStatus:'service-reported-not-independent-publication-audit',subject:connections.subject,contextReferences:{issues:connections.connectedIssues.length,entities:connections.connectedEntities.length,research:connections.research.length,resources:connections.resources.length,originalSourceLeads:connections.sourceCandidates.length},paper:result.paper});
  } catch {return json({error:'The research service could not complete a source-supported paper.'},503);}
 }
