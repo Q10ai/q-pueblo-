@@ -299,8 +299,8 @@
     },
     {
       "id": "shock",
-      "group": "Place",
-      "title": "SHOCK, backups to backups & resilience",
+      "group": "Knowledge",
+      "title": "SHOCK & continuity — across all KOS subjects",
       "topics": [
         "Economic, institutional, technical and natural disruptions",
         "Primary, secondary, tertiary and human-run fallback",
@@ -312,7 +312,9 @@
         "be-ready-pueblo.html",
         "resilience-aspen-five-year.html"
       ],
-      "coverage": "partial"
+      "coverage": "partial",
+      "crossCutting": true,
+      "description": "Universal risk and continuity lens used inside every subject paper, not an exclusive law-enforcement or public-safety category."
     },
     {
       "id": "media",
