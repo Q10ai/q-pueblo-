@@ -1,0 +1,368 @@
+{
+  "schema": "qp.kos.expert-panel-registry.v1",
+  "asOf": "2026-11-21",
+  "status": "role-catalogue-and-candidate-routing-only",
+  "purpose": "Expert-panel coverage behind KOS, not a claim that outside professionals or models are connected or have reviewed a subject.",
+  "advisoryNotAuthority": true,
+  "roleTypes": {
+    "AI_ROLE": "Specialist AI review role; never label as credentialed human",
+    "VERIFIED_HUMAN": "Human reviewer with independently checked field credentials and conflicts; not presently connected",
+    "INSTITUTIONAL_SOURCE": "Dated published institutional account, not a human expert opinion"
+  },
+  "roles": [
+    {
+      "id": "source-forensics",
+      "name": "Original-source investigator",
+      "approach": "Checks document identity, provenance, dates, completeness, independent corroboration and conflicting records.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "governance",
+      "name": "Government and institutional governance",
+      "approach": "Examines jurisdiction, decision authority, boards, agencies, current and historical roles and oversight.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "law-rights",
+      "name": "Legal systems and rights",
+      "approach": "Checks legal process, remedies, regulation, civil rights, due process and court/administrative distinctions.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "finance",
+      "name": "Public finance and forensic accounting",
+      "approach": "Separates proposed, appropriated, contracted, invoiced, paid and delivered outcomes; checks debt and lifecycle cost.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "engineering",
+      "name": "Civil, industrial and systems engineering",
+      "approach": "Evaluates assets, maintenance, tolerances, physical interdependencies and technically feasible alternatives.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "hydrology",
+      "name": "Water engineering and hydrology",
+      "approach": "Examines water rights, rivers, treatment, supply, irrigation, wastewater and water-system risks.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "energy",
+      "name": "Energy systems and utilities",
+      "approach": "Examines generation, distribution, rate regulation, reliability, gas/power networks and household cost effects.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "environment",
+      "name": "Environmental science and ecosystems",
+      "approach": "Examines air, water, land, wildlife, habitat, contamination and evidence of ecological effects.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "medicine",
+      "name": "Healthcare and epidemiology",
+      "approach": "Examines health-system performance, medical evidence, care accessibility, population health and uncertainty.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "education",
+      "name": "Education and learning science",
+      "approach": "Examines schools, educational outcomes, student needs, historical instruction and age-appropriate teaching.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "economy-labor",
+      "name": "Economy, labor and workforce",
+      "approach": "Examines employers, workers, pay, bargaining, local development, employment outcomes and suppliers.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "housing-social",
+      "name": "Housing and social services",
+      "approach": "Examines housing, kinship care, poverty, service availability, families and documented community needs.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "agriculture-food",
+      "name": "Agriculture and food systems",
+      "approach": "Examines production, crops, ranching, irrigation, supply chains and food access.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "history-culture",
+      "name": "History, archives and culture",
+      "approach": "Reconstructs chronology and local history with original archives, cultural context and competing interpretations.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "technology-cyber",
+      "name": "Information systems and cybersecurity",
+      "approach": "Examines AI, digital systems, source integrity, privacy, outages and defensive cyber resilience.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "resilience",
+      "name": "Emergency planning and continuity",
+      "approach": "Examines credible cross-system shocks, cascading failures, independent backups and recovery.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "community-context",
+      "name": "Community and lived-experience evidence",
+      "approach": "Identifies documented burdens and benefits without inventing representative voices or speaking for residents.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "child-rights",
+      "name": "Child safety, disability and inclusion",
+      "approach": "Examines consequences for children and vulnerable groups, access, rights and protective boundaries.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "rx-solutions",
+      "name": "Conflict resolution and practical options",
+      "approach": "Compares feasible remedies, stakeholder interests, risks, costs, consent and actual decision authority.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "skeptic",
+      "name": "Skeptic and falsification reviewer",
+      "approach": "Challenges the leading explanation, seeks disconfirming evidence and checks missing assumptions.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "alternative",
+      "name": "Independent alternative-hypothesis reviewer",
+      "approach": "Develops plausible alternative causal accounts without making them facts or false equivalents.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "consequences",
+      "name": "Cross-system consequence reviewer",
+      "approach": "Follows first-, second- and third-order effects, overlooked populations, money and future liabilities.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    },
+    {
+      "id": "narrative",
+      "name": "Plain-language research editor",
+      "approach": "Checks that a full, accurate story is understandable to a tenth-grade reader without loss of nuance.",
+      "entityType": "DISCIPLINARY_REVIEW_ROLE",
+      "authority": "READ_ONLY",
+      "credentialedHuman": false,
+      "requiresOriginalSources": true
+    }
+  ],
+  "subjectDomainRoles": {
+    "governance": [
+      "governance",
+      "law-rights",
+      "finance"
+    ],
+    "ai": [
+      "technology-cyber",
+      "economy-labor",
+      "child-rights"
+    ],
+    "money": [
+      "finance",
+      "governance",
+      "economy-labor"
+    ],
+    "water": [
+      "hydrology",
+      "engineering",
+      "environment"
+    ],
+    "energy": [
+      "energy",
+      "engineering",
+      "finance"
+    ],
+    "help": [
+      "housing-social",
+      "community-context",
+      "child-rights"
+    ],
+    "economy": [
+      "economy-labor",
+      "finance",
+      "engineering"
+    ],
+    "housing": [
+      "housing-social",
+      "governance",
+      "community-context"
+    ],
+    "healthcare": [
+      "medicine",
+      "finance",
+      "child-rights"
+    ],
+    "social": [
+      "housing-social",
+      "medicine",
+      "child-rights"
+    ],
+    "education": [
+      "education",
+      "finance",
+      "child-rights"
+    ],
+    "safety": [
+      "law-rights",
+      "resilience",
+      "community-context"
+    ],
+    "law": [
+      "law-rights",
+      "governance",
+      "community-context"
+    ],
+    "infrastructure": [
+      "engineering",
+      "finance",
+      "resilience"
+    ],
+    "agriculture": [
+      "agriculture-food",
+      "hydrology",
+      "economy-labor"
+    ],
+    "environment": [
+      "environment",
+      "hydrology",
+      "medicine"
+    ],
+    "state-federal": [
+      "governance",
+      "law-rights",
+      "finance"
+    ],
+    "recreation": [
+      "education",
+      "community-context",
+      "child-rights"
+    ],
+    "culture": [
+      "history-culture",
+      "community-context",
+      "finance"
+    ],
+    "history": [
+      "history-culture",
+      "source-forensics",
+      "community-context"
+    ],
+    "places": [
+      "governance",
+      "housing-social",
+      "community-context"
+    ],
+    "media": [
+      "source-forensics",
+      "technology-cyber",
+      "law-rights"
+    ],
+    "solutions": [
+      "rx-solutions",
+      "law-rights",
+      "community-context"
+    ],
+    "ai-rights": [
+      "technology-cyber",
+      "law-rights",
+      "child-rights"
+    ],
+    "kos": [
+      "source-forensics",
+      "technology-cyber",
+      "narrative"
+    ]
+  },
+  "defaultIndependentReviewRoles": [
+    "source-forensics",
+    "skeptic",
+    "alternative",
+    "consequences",
+    "narrative"
+  ],
+  "standards": {
+    "roleDiversityOverVotes": true,
+    "modelAgreementIsNotEvidence": true,
+    "originalSourcesRequired": true,
+    "maxRecommendedConcurrentRoles": 9,
+    "noPersonalProfiling": true,
+    "noAutonomousPublication": true,
+    "minimumDataOutflow": "Only an explicitly reviewed public context capsule may be offered to an approved external provider",
+    "externalProviderState": "NOT_CONNECTED",
+    "sourceComparison": "Use original issuer/source-version records, not another agent answer as independent corroboration",
+    "highConsequence": "Independent review, counterexamples, specialist human signoff where necessary; no increase in consequence may reduce review",
+    "publication": "Human editorial approval and reproducible receipts"
+  }
+}
