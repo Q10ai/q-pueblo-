@@ -52,7 +52,7 @@ test("candidate archive claims and contested statements cannot certify a graph l
   state:"CONTESTED",eventDate:"2026-10-01",planes:["physical"],
   sourceIds:["qp:source:demo-one"],visibility:"PUBLIC"});
  const b=createBreakdown(f);
- assert.equal(b.edges.length,1);
+ assert.equal(b.edges.length,0); // an unverified first hop cannot bridge to the second edge
  assert(b.leads.some(x=>x.id==="qp:claim:demo-lead"));
  assert(b.unresolved.some(x=>x.id==="qp:claim:demo-dispute"));
  assert(!createLinear(b).story.some(x=>x.text.includes("disagree")));
@@ -62,7 +62,7 @@ test("unreviewed or stale sources fail closed, not promoted by recency",()=>{
  f.sources[0].evidenceReview="NOT_REVIEWED";
  const b=createBreakdown(f);
  assert.equal(b.claims.length,1);
- assert.equal(b.edges.length,1);
+ assert.equal(b.edges.length,0); // an unreviewed first source severs the graph
  assert.equal(createLinear(b).status,"LIMITED_SUPPORTED_CONTEXT");
  const expired=clone(fixture);
  expired.claims[1].validUntil="2026-02-01";
