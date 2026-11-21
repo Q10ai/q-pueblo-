@@ -1,10 +1,10 @@
 {
   "schema": "qp-site-inventory-v1",
-  "asOf": "2026-11-20",
+  "asOf": "2026-11-21",
   "basisCommit": "f4249437a2948ed9706bfb961a30a552f9f81695",
-  "scope": "Static release-candidate route directory; topical links do not assert entity authority or claim evidence. Existing registers overlap and must not be summed. No new source verification or production publication.",
+  "scope": "Public static route directory. Counts separate generated canonical reports, living research and independent contextual stories; identity counts must not be summed. Route presence is not proof of fact-checking or live operation.",
   "counts": {
-    "htmlRoutes": 141,
+    "htmlRoutes": 142,
     "canonicalReports": 18,
     "livingResearchRoutes": 53,
     "historicalIssueRecords": 174,
@@ -877,6 +877,14 @@
       "route": "issues.html",
       "title": "Issues",
       "group": "library",
+      "livingId": null,
+      "canonicalId": null,
+      "canonicalIssueIds": []
+    },
+    {
+      "route": "kos-story-pueblo-flood-1921.html",
+      "title": "The Great Pueblo Flood of 1921: how a river changed a city — independently sourced story",
+      "group": "learning",
       "livingId": null,
       "canonicalId": null,
       "canonicalIssueIds": []
