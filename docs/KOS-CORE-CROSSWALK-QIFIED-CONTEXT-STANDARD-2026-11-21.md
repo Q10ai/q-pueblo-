@@ -82,6 +82,37 @@ Q10 reference documentation:
 - https://github.com/Q10ai/q10-core/blob/main/docs/q10/strategy/VALUE_AND_MOAT.md
 - https://github.com/Q10ai/q10-core/blob/main/docs/q10/governance/CLAIM_BOUNDARY.md
 
+## Subject-entry resolution and dynamic context path (review branch)
+
+The same KOS entry route accepts all 25 subject-family IDs, their 77 documented subtopics, or a free-form user idea. A user clicking **Enter KOS** should not have to choose individual source files or reconnect a system. The selected subject is the lookup key.
+
+- `public/areas.html`: links a family or a numbered subtopic to `kos.html?family=<id>&topic=<index>`.
+- `public/kos-subject.js`: safely renders connected reading and original-source discovery links. User-entered ideas use a browser fragment, not a query-string navigation history. No untrusted HTML is inserted directly.
+- `functions/api/kos/links.js`: read-only, source-discovery endpoint for a family, subtopic or public idea.
+- `functions/api/kos/resolve.js`: resolves against the dated family register, KOS resource mapping, 35-resource public library, 53 living research routes, the 18-report register, priority group associations, the 211-issue / 56-entity graph, the independent 174 historical issue register, the issue-identity candidate crosswalk and the full public site-route inventory. A route, label, date or topic association is a **lead**, not an original source check or a verified directed relationship.
+- `public/data/qp-kos-resource-links-2026-11-21.json`: stable catalogue-ID and family mapping from the public resource registry. Test receipts compare its item IDs, URLs and review dates to the existing JavaScript resource catalogue to prevent silent drift.
+- `functions/api/kos/paper.js`: an **optional, default-OFF** on-demand gateway. Requires explicit enabled flag, real provider URL/token, actual Cloudflare rate-limit binding, a consented on-demand action, and schema-valid source-linked paragraphs. Upstream must fetch/verify original material and produce a complete narrative. This gateway never automatically publishes; a service-claimed source-check date is not independent public certification.
+- `scripts/check-kos-connections.mjs`: deterministic coverage and fail-closed test; included in public release CI.
+
+For connected resources that are not public web material (private uploads, external providers, partner systems), a separate explicit authorization, data-use contract, connector and privacy review are required. The current resolver cannot magically reach those systems.
+
+This implementation is a source-discovery and gated paper-generation path, **not evidence that a live generative research provider has been configured**. The public page must be honest about that at every step.
+
+### Connection-to-paper contract
+
+1. Exact subject or selected subcategory, plus dated coverage identity.
+2. Follow linked source registry, relevant original documents, report citations, organizations, money states, historical archives, other entities and affected systems.
+3. Rank evidence by topical relevance and most recently checked substantive date, preserving old versions for LL.
+4. Retrieve original sources using permitted connectors. Validate date, document identity, jurisdiction and what each passage actually supports.
+5. Reconcile conflicts without automatically merging historic IDs or treating related groups as confirmed actors.
+6. Qify a plain-language, approximately tenth-grade narrative, with original-source IDs supporting every substantial paragraph and claim. Include human impact, money, downstream effects and realistic options wherever material.
+7. Send a user-visible provisional paper; keep any public publishing action separate under human authority.
+8. Reopen the packet when TTL, corrections, contradicting evidence or source updates require it.
+
+### Verification gaps
+
+The resolver and crosswalk index are implemented on the review branch. Independent accuracy testing of on-demand synthesis, external source retrieval, current content rights, user consent language, provider credentials and Cloudflare rate limiting are **not yet complete**. No production claim is allowed until the actual service is configured, simulated under failures and verified.
+
 ## Current concrete sample
 
 `public/kos-story-pueblo-flood-1921.html` is a separate contextual account of the 1921 Pueblo flood. It links historical river geography, people and uncertain casualty records, engineering, public financing, the Pueblo Conservancy District and current resilience lessons. Its sources must be independently read and the paper reviewed before publication. It is not an automatically generated Q10 production output or evidence of a fully automated subject-wide research process.
