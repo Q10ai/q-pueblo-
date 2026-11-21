@@ -1,0 +1,678 @@
+{
+  "schema": "qp.v2.site-content.v1",
+  "asOf": "2026-11-21",
+  "status": "DESIGN_PREVIEW_SOURCE_BOUND",
+  "primarySourceRule": "Direct links to official records only; no claim that a KOS investigation has been independently published",
+  "subjects": [
+    {
+      "id": "qp:subject:governance",
+      "slug": "governance",
+      "title": "Governance & Accountability",
+      "description": "Who makes decisions, holds authority, and answers to the public",
+      "displayOrder": 1,
+      "route": "/subjects/governance/",
+      "artIndex": 1,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Government is about who is allowed to make decisions, how those decisions are recorded, and how residents can question them. City, county, state and federal bodies have different responsibilities. Understanding a decision starts with finding the actual governing authority and its dated records.",
+      "subtopics": [
+        "Mayor and city council",
+        "County commissioners and departments",
+        "Boards, districts and appointments",
+        "Public meetings and decisions",
+        "Oversight and accountability",
+        "Current and incoming officials"
+      ],
+      "related": [
+        "money",
+        "law",
+        "state-federal",
+        "places"
+      ]
+    },
+    {
+      "id": "qp:subject:ai",
+      "slug": "ai",
+      "title": "AI & Pueblo's Future",
+      "description": "Artificial intelligence, human control, jobs and local consequences",
+      "displayOrder": 2,
+      "route": "/subjects/ai/",
+      "artIndex": 11,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "AI may change how people learn, work, receive services and understand information. Useful questions include what the system actually does, who oversees it, what evidence supports its claims and what can happen when it is wrong.",
+      "subtopics": [
+        "AI in jobs and services",
+        "Real capabilities and limitations",
+        "Digital access",
+        "AI and public institutions",
+        "Skills and careers",
+        "Long-term possibilities"
+      ],
+      "related": [
+        "ai-rights",
+        "education",
+        "economy",
+        "kos"
+      ]
+    },
+    {
+      "id": "qp:subject:money",
+      "slug": "money",
+      "title": "Public Money & Finance",
+      "description": "Budgets, taxes, grants, contracts, payments and outcomes",
+      "displayOrder": 3,
+      "route": "/subjects/money/",
+      "artIndex": 2,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "A public budget is a plan, not proof of a payment or a finished result. Following money means distinguishing proposals, approvals, contracts, actual spending and outcomes, and tracing who has authority at each step.",
+      "subtopics": [
+        "Proposed and adopted budgets",
+        "Taxes, rates and fees",
+        "Grants and transfers",
+        "Contracts and procurement",
+        "Actual spending and debt",
+        "Delivered results"
+      ],
+      "related": [
+        "governance",
+        "economy",
+        "infrastructure",
+        "state-federal"
+      ]
+    },
+    {
+      "id": "qp:subject:water",
+      "slug": "water",
+      "title": "Water & Water Rights",
+      "description": "Supply, rights, rivers, treatment, conservation and drought",
+      "displayOrder": 4,
+      "route": "/subjects/water/",
+      "artIndex": 5,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Pueblo's water questions involve the Arkansas River basin, drinking water, water rights, treatment, conservation, agriculture and public costs. These systems affect one another, but a proposed project, a water right and a measured water-quality result are different kinds of evidence.",
+      "subtopics": [
+        "Rivers and reservoirs",
+        "Water rights and governance",
+        "Drinking water and treatment",
+        "Irrigation and drought",
+        "Rates and affordability",
+        "Water quality and wastewater"
+      ],
+      "related": [
+        "environment",
+        "agriculture",
+        "energy",
+        "infrastructure"
+      ]
+    },
+    {
+      "id": "qp:subject:energy",
+      "slug": "energy",
+      "title": "Energy & Utility Bills",
+      "description": "Power, gas, proposed and approved rates, and reliability",
+      "displayOrder": 5,
+      "route": "/subjects/energy/",
+      "artIndex": 5,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Energy connects household bills, electric and gas service, infrastructure, reliability and regulation. A requested rate increase, a regulator's approval and a household's actual bill must be kept separate when explaining costs.",
+      "subtopics": [
+        "Electricity service and reliability",
+        "Gas service and heating",
+        "Utility rates and hearings",
+        "Energy projects and supplies",
+        "Outages and backups",
+        "Affordability"
+      ],
+      "related": [
+        "money",
+        "governance",
+        "infrastructure",
+        "water"
+      ]
+    },
+    {
+      "id": "qp:subject:help",
+      "slug": "help",
+      "title": "Help, Services & Benefits",
+      "description": "Public assistance, community support, eligibility and contacts",
+      "displayOrder": 6,
+      "route": "/subjects/help/",
+      "artIndex": 6,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Community support can come from government programs, schools, nonprofits and neighbors. A useful guide explains who provides a service, who may qualify and how to confirm current contact details, hours and availability.",
+      "subtopics": [
+        "Food and basic needs",
+        "Housing assistance",
+        "Kinship and caregiver support",
+        "Benefits and eligibility",
+        "Disability and senior resources",
+        "Veteran and family services"
+      ],
+      "related": [
+        "social",
+        "healthcare",
+        "housing",
+        "education"
+      ]
+    },
+    {
+      "id": "qp:subject:economy",
+      "slug": "economy",
+      "title": "Jobs, Business & Industry",
+      "description": "Employers, wages, manufacturing, investment and the local economy",
+      "displayOrder": 7,
+      "route": "/subjects/economy/",
+      "artIndex": 2,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Pueblo's economy includes employers, small businesses, manufacturing, workers, public investments and regional trade. The important distinction is between announced plans, actual jobs, operating businesses and results that have been measured.",
+      "subtopics": [
+        "Jobs, wages and benefits",
+        "Manufacturing and steel",
+        "Business development",
+        "Small businesses",
+        "Workforce and unions",
+        "Investment outcomes"
+      ],
+      "related": [
+        "money",
+        "agriculture",
+        "education",
+        "infrastructure"
+      ]
+    },
+    {
+      "id": "qp:subject:housing",
+      "slug": "housing",
+      "title": "Housing & Neighborhoods",
+      "description": "Rent, homeownership, homelessness, construction and places people live",
+      "displayOrder": 8,
+      "route": "/subjects/housing/",
+      "artIndex": 6,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Housing affects a household's cost of living, stability, transportation, access to services and neighborhood life. To understand a housing issue, distinguish plans and permits from homes that exist, and compare costs with people's circumstances.",
+      "subtopics": [
+        "Rent and affordability",
+        "Homeownership",
+        "Homelessness and shelter",
+        "Development and zoning",
+        "Neighborhood conditions",
+        "Displacement and accessibility"
+      ],
+      "related": [
+        "help",
+        "social",
+        "places",
+        "governance"
+      ]
+    },
+    {
+      "id": "qp:subject:healthcare",
+      "slug": "healthcare",
+      "title": "Healthcare & Public Health",
+      "description": "Hospitals, care, insurance, public health, mental health and costs",
+      "displayOrder": 9,
+      "route": "/subjects/healthcare/",
+      "artIndex": 10,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Healthcare includes hospitals, clinics, public health, insurance, mental health and the people who provide care. Programs and coverage change over time; the source and effective date matter when a family needs a usable answer.",
+      "subtopics": [
+        "Hospitals and clinics",
+        "Insurance and coverage",
+        "Public health",
+        "Mental health and recovery",
+        "Children and older adults",
+        "Costs and workforce"
+      ],
+      "related": [
+        "help",
+        "social",
+        "education",
+        "money"
+      ]
+    },
+    {
+      "id": "qp:subject:social",
+      "slug": "social",
+      "title": "Families & Social Issues",
+      "description": "Grandfamilies, youth, poverty, addiction, recovery and community support",
+      "displayOrder": 10,
+      "route": "/subjects/social/",
+      "artIndex": 6,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Family and community issues are connected to housing, work, healthcare, schools and relationships. This includes grandparents raising grandchildren, substance use, youth needs and the resources people use to stay safe and supported.",
+      "subtopics": [
+        "Grandparents raising grandchildren",
+        "Substance use and recovery",
+        "Youth and family support",
+        "Poverty and food access",
+        "Mental wellbeing",
+        "Seniors, disability and veterans"
+      ],
+      "related": [
+        "help",
+        "housing",
+        "healthcare",
+        "recreation"
+      ]
+    },
+    {
+      "id": "qp:subject:education",
+      "slug": "education",
+      "title": "Education & Schools",
+      "description": "Preschool, K–12, colleges, vocational paths and lifelong learning",
+      "displayOrder": 11,
+      "route": "/subjects/education/",
+      "artIndex": 10,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Education starts before kindergarten and continues through adult learning, workforce training and community research. Understanding it means looking at access, funding, actual learning opportunities and the needs of students and families.",
+      "subtopics": [
+        "Early childhood learning",
+        "K–12 schools",
+        "Colleges and universities",
+        "Workforce training",
+        "Special education and access",
+        "Lifelong learning"
+      ],
+      "related": [
+        "recreation",
+        "history",
+        "healthcare",
+        "money"
+      ]
+    },
+    {
+      "id": "qp:subject:safety",
+      "slug": "safety",
+      "title": "Law Enforcement & Public Safety",
+      "description": "Police, sheriff, detention, crime, victim protections and oversight",
+      "displayOrder": 12,
+      "route": "/subjects/safety/",
+      "artIndex": 7,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Public safety involves law enforcement, emergency response, detention, victims' rights and public oversight. It is not the owner of every disaster: drought, power failure, disease and cyber disruptions are examined across all affected subjects.",
+      "subtopics": [
+        "Police and sheriff",
+        "Crime and reporting",
+        "Detention and corrections",
+        "Victim services",
+        "Emergency response",
+        "Rights and oversight"
+      ],
+      "related": [
+        "law",
+        "governance",
+        "social",
+        "infrastructure"
+      ]
+    },
+    {
+      "id": "qp:subject:law",
+      "slug": "law",
+      "title": "Law, Courts & Rights",
+      "description": "Legal systems, civil rights, courts, legal services and remedies",
+      "displayOrder": 13,
+      "route": "/subjects/law/",
+      "artIndex": 1,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Law explains rights, duties, courts and the processes available when people disagree. A complaint, allegation, formal charge, legal ruling and final outcome are not the same, and a trustworthy explanation keeps them distinct.",
+      "subtopics": [
+        "Courts and legal procedures",
+        "Civil rights",
+        "Administrative law",
+        "Legal help",
+        "Contracts and obligations",
+        "Historical legal changes"
+      ],
+      "related": [
+        "governance",
+        "safety",
+        "solutions",
+        "state-federal"
+      ]
+    },
+    {
+      "id": "qp:subject:infrastructure",
+      "slug": "infrastructure",
+      "title": "Infrastructure & Transportation",
+      "description": "Roads, bridges, rail, airport, buildings, facilities and networks",
+      "displayOrder": 14,
+      "route": "/subjects/infrastructure/",
+      "artIndex": 3,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Infrastructure is the connected physical systems that let communities function: roads, bridges, water systems, airports, communications and public facilities. Their condition, maintenance, costs and dependencies matter as much as new construction.",
+      "subtopics": [
+        "Roads and bridges",
+        "Rail, transit and airport",
+        "Public buildings",
+        "Water, sewer and drainage",
+        "Broadband and communications",
+        "Maintenance and lifecycle costs"
+      ],
+      "related": [
+        "water",
+        "energy",
+        "money",
+        "places"
+      ]
+    },
+    {
+      "id": "qp:subject:agriculture",
+      "slug": "agriculture",
+      "title": "Agriculture & Food Systems",
+      "description": "Pueblo chile, farming, ranching, irrigation and regional food security",
+      "displayOrder": 15,
+      "route": "/subjects/agriculture/",
+      "artIndex": 5,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Agriculture ties farms and ranches to land, water, workers, food markets and Pueblo's heritage. Weather, irrigation, transport and supply chains can all affect production and the food people can buy.",
+      "subtopics": [
+        "Pueblo chile",
+        "Farms and ranches",
+        "Irrigation and water",
+        "Food processing and distribution",
+        "Agricultural workforce",
+        "Drought and crop health"
+      ],
+      "related": [
+        "water",
+        "environment",
+        "economy",
+        "history"
+      ]
+    },
+    {
+      "id": "qp:subject:environment",
+      "slug": "environment",
+      "title": "Environment & Natural Systems",
+      "description": "Land, air, habitats, wildlife, parks and conservation",
+      "displayOrder": 16,
+      "route": "/subjects/environment/",
+      "artIndex": 5,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "The region's environment includes air, rivers, land, wildlife, parks and ecosystems. Real environmental findings should distinguish what was measured, what caused it, who is affected and what restoration options exist.",
+      "subtopics": [
+        "Air and water quality",
+        "Land and habitat",
+        "Wildfire and smoke",
+        "Pollution and cleanup",
+        "Parks and conservation",
+        "Climate and drought"
+      ],
+      "related": [
+        "water",
+        "agriculture",
+        "healthcare",
+        "infrastructure"
+      ]
+    },
+    {
+      "id": "qp:subject:state-federal",
+      "slug": "state-federal",
+      "title": "State & Federal Changes",
+      "description": "Policy, leadership, funding, benefits, legal changes and local impacts",
+      "displayOrder": 17,
+      "route": "/subjects/state-federal/",
+      "artIndex": 1,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "State and federal laws, budgets, agencies and court decisions can affect Pueblo even when the decisions are made elsewhere. A proposed policy, enacted rule and effective requirement need different explanations.",
+      "subtopics": [
+        "State legislation",
+        "Federal policies",
+        "Public funding changes",
+        "Benefits and services",
+        "Regulators and agencies",
+        "Upcoming effective dates"
+      ],
+      "related": [
+        "governance",
+        "money",
+        "law",
+        "healthcare"
+      ]
+    },
+    {
+      "id": "qp:subject:recreation",
+      "slug": "recreation",
+      "title": "Youth Activities, Sports & Recreation",
+      "description": "Clubs, sports, parks, activities, events and recreation",
+      "displayOrder": 18,
+      "route": "/subjects/recreation/",
+      "artIndex": 8,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Recreation includes affordable youth activities, sports, parks, clubs, outdoor access and community events. The useful details are what people can actually participate in, costs, accessibility and who runs each program.",
+      "subtopics": [
+        "Youth activities",
+        "Sports and leagues",
+        "Parks and trails",
+        "Clubs and mentoring",
+        "Outdoor recreation",
+        "Events and accessibility"
+      ],
+      "related": [
+        "social",
+        "culture",
+        "education",
+        "places"
+      ]
+    },
+    {
+      "id": "qp:subject:culture",
+      "slug": "culture",
+      "title": "Culture, Museums & Churches",
+      "description": "Arts, faith communities, heritage, festivals and living cultures",
+      "displayOrder": 19,
+      "route": "/subjects/culture/",
+      "artIndex": 9,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Pueblo's culture is expressed through museums, churches, music, arts, festivals, living communities and historic places. Each has a story, a purpose, people who sustain it and often important funding or preservation questions.",
+      "subtopics": [
+        "Museums and collections",
+        "Churches and faith communities",
+        "Arts and music",
+        "Living cultural traditions",
+        "Historic buildings",
+        "Festivals and preservation"
+      ],
+      "related": [
+        "history",
+        "recreation",
+        "places",
+        "money"
+      ]
+    },
+    {
+      "id": "qp:subject:history",
+      "slug": "history",
+      "title": "History & Legacy Learning",
+      "description": "Regional timelines, archives, primary sources and History of Histories",
+      "displayOrder": 20,
+      "route": "/subjects/history/",
+      "artIndex": 9,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "History helps explain how Pueblo became what it is today, which stories have been preserved and which evidence needs a closer look. Legacy Learning links original records and different interpretations to the decisions that shape the present.",
+      "subtopics": [
+        "Indigenous histories",
+        "Early Pueblo and the region",
+        "Steel, rail and labor",
+        "Floods and recovery",
+        "Neighborhood and family history",
+        "Archives and oral histories"
+      ],
+      "related": [
+        "culture",
+        "places",
+        "governance",
+        "education"
+      ]
+    },
+    {
+      "id": "qp:subject:places",
+      "slug": "places",
+      "title": "Pueblo Places & Population",
+      "description": "Neighborhoods, Pueblo West, rural communities, maps and demographics",
+      "displayOrder": 21,
+      "route": "/subjects/places/",
+      "artIndex": 3,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Pueblo is made of many different neighborhoods, towns, rural communities and overlapping service areas. Maps and population figures are useful only when they use the right boundaries, year and source.",
+      "subtopics": [
+        "Pueblo neighborhoods",
+        "Pueblo West",
+        "Beulah, Rye and rural areas",
+        "Regional maps",
+        "Population and demographics",
+        "Boundaries and services"
+      ],
+      "related": [
+        "housing",
+        "infrastructure",
+        "governance",
+        "history"
+      ]
+    },
+    {
+      "id": "qp:subject:media",
+      "slug": "media",
+      "title": "News & Public Information",
+      "description": "Local reporting, public notices, access to evidence and misinformation",
+      "displayOrder": 22,
+      "route": "/subjects/media/",
+      "artIndex": 11,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Public information includes journalism, government notices, public records, libraries and online claims. A reliable account distinguishes first-hand documents, reporting, commentary and information that has not been verified.",
+      "subtopics": [
+        "Local news and journalism",
+        "Public notices",
+        "Records and archives",
+        "Digital access",
+        "Rumors and claim checking",
+        "Communication systems"
+      ],
+      "related": [
+        "kos",
+        "governance",
+        "ai",
+        "history"
+      ]
+    },
+    {
+      "id": "qp:subject:solutions",
+      "slug": "solutions",
+      "title": "Conflicts, Options & Solutions",
+      "description": "Rights, disputes, alternatives, remedies and real-world outcomes",
+      "displayOrder": 23,
+      "route": "/subjects/solutions/",
+      "artIndex": 7,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Problems rarely have one consequence-free solution. Comparing approaches means understanding who is affected, who has authority, rights, costs, benefits, risks and what could happen if an option fails.",
+      "subtopics": [
+        "Conflict and mediation",
+        "Possible remedies",
+        "Positive and negative effects",
+        "Costs and practical needs",
+        "Risks and gaps",
+        "Measuring outcomes"
+      ],
+      "related": [
+        "law",
+        "governance",
+        "money",
+        "social"
+      ]
+    },
+    {
+      "id": "qp:subject:ai-rights",
+      "slug": "ai-rights",
+      "title": "AI Rights & Governance",
+      "description": "AI safety, privacy, regulation, oversight and human authority",
+      "displayOrder": 24,
+      "route": "/subjects/ai-rights/",
+      "artIndex": 11,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "People must retain control when AI affects consequential decisions. Useful safeguards include clear responsibility, privacy, understandable reasons, human review, correction and ways to stop or reverse harmful automated actions.",
+      "subtopics": [
+        "Privacy and data use",
+        "Human oversight",
+        "Children and vulnerable people",
+        "AI regulation",
+        "Audits and appeals",
+        "Shutdown and rollback"
+      ],
+      "related": [
+        "ai",
+        "law",
+        "media",
+        "kos"
+      ]
+    },
+    {
+      "id": "qp:subject:kos",
+      "slug": "kos",
+      "title": "Ask Q & Connected KOS Research",
+      "description": "Q Core, crosswalking, Qification, sources and full contextual papers",
+      "displayOrder": 25,
+      "route": "/subjects/kos/",
+      "artIndex": 0,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification",
+      "overview": "Q Pueblo's research approach is designed to connect sources, history, institutions, money and consequences into understandable stories. Source records, disagreements and review dates matter more than how many automated tools are involved.",
+      "subtopics": [
+        "Understand a subject",
+        "Original sources and provenance",
+        "People and organization links",
+        "History and Legacy Learning",
+        "Options and outcomes",
+        "Corrections and review"
+      ],
+      "related": [
+        "media",
+        "history",
+        "solutions",
+        "governance"
+      ]
+    }
+  ],
+  "sourceHighlights": [
+    {
+      "slug": "money",
+      "title": "Pueblo County's 2027 preliminary budget",
+      "summary": "The County has published its preliminary 2027 budget and supporting presentation materials. A proposal should not be confused with adopted spending.",
+      "publisher": "Pueblo County",
+      "url": "https://county.pueblo.org/budget-and-finance-department/2027-budget",
+      "checked": "2026-11-21",
+      "kind": "Official budget documents"
+    },
+    {
+      "slug": "environment",
+      "title": "Pueblo Mountain Park recovery",
+      "summary": "The City describes fire damage, the park closure and its work documenting losses and possible recovery funding. Follow the City's page for new official information.",
+      "publisher": "City of Pueblo",
+      "url": "https://www.pueblo.us/3153/Pueblo-Mountain-Park",
+      "checked": "2026-11-21",
+      "kind": "Official project update"
+    }
+  ]
+}
