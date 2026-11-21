@@ -10,7 +10,8 @@ const paths=Object.freeze({
  site:'data/qp-site-inventory.json',
  historical:'data/q-pueblo-issue-index-2026-11-09.json',
  identity:'data/qp-issue-identity-crosswalk-2026-11-19.json',
- shock:'data/qp-kos-shock-lens-2026-11-21.json'
+ shock:'data/qp-kos-shock-lens-2026-11-21.json',
+ depth:'data/qp-kos-depth-profiles-2026-11-21.json'
 });
 const load=async(env,request,path)=>{
  if(!env?.ASSETS?.fetch)throw new Error('Static research asset service unavailable');
@@ -29,7 +30,7 @@ const ranked=(arr,term,max)=>arr.map((x,i)=>({
  .slice(0,max).map(({_score,_date,_order,...row})=>row);
 const urlOK=s=>{try{const u=new URL(s);return u.protocol==='https:'&&!u.username&&!u.password&&u.hostname.includes('.')&&u.href.length<1600}catch{return false}};
 export async function resolveKOS({env,request,familyId,topicIndex=null,idea=null}){
- const [families,mapping,priority,graph,living,reports,site,historical,identity,shock]=await Promise.all(
+ const [families,mapping,priority,graph,living,reports,site,historical,identity,shock,depth]=await Promise.all(
   Object.values(paths).map(path=>load(env,request,path))
  );
  if(families.schema!=='qp-subject-families-v1'||mapping.schema!=='qp-kos-resource-links-v1')throw new Error('KOS registry version mismatch');
@@ -110,6 +111,26 @@ export async function resolveKOS({env,request,familyId,topicIndex=null,idea=null
    dimensions:shock.recognitionRules.humanImpactDimensions,
    requiredNextStep:'Before any active-impact claim, establish original source, current date, area, affected people, responsible authority and what actually failed.'
  };
+ // Research depth scales to actual source-backed institutional complexity.
+ // Registry associations are candidates and must not establish an institution's legal identity.
+ const normalized=s=>String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+ const exactEntity=connectedEntities.find(e=>normalized(e.name)===normalized(title));
+ const focusIsEntity=!!exactEntity || (!family &&
+  /\\b(department|school district|university|hospital|medical center|energy company|utility|county government|city government|authority|commission|corporation|inc|llc)\\b/i.test(title));
+ const researchMode=focusIsEntity?'institutional-full-context':
+  (family&&topicIndex===null?'multi-entity-system':'everyday-subject');
+ const depthPlan={
+  standard:depth.schema,
+  audience:depth.reader.target,
+  primaryOutput:depth.reader.defaultProduct,
+  mode:researchMode,
+  institutionIdentity:exactEntity?{id:exactEntity.id,name:exactEntity.name,
+   status:exactEntity.identityState||'candidate-not-verified'}:null,
+  contextDimensions:depth.research.entityDimensions,
+  sourceRule:depth.research.depthPolicy,
+  presentationRule:'Explain the full supported story in plain language. Include deep institutional records only when their documented evidence is material; never create empty headings or invent relationships.',
+  completenessBoundary:'The link registry is not enough to certify completion; source-check original records, chronology, authority, finances and downstream effects.'
+ };
  const sourceCandidates=[];
  const add=(kind,title,url,checkedAt=null,sourceStatus='discovery-lead')=>{
   if(!urlOK(url)||sourceCandidates.some(c=>c.url===url)||sourceCandidates.length>=45)return;
@@ -128,7 +149,7 @@ export async function resolveKOS({env,request,familyId,topicIndex=null,idea=null
   evidenceBoundary:'Connections are research leads only. Content, timing, attribution, jurisdiction and causal edges must be checked against original records before supporting a claim. No autonomous authority.',
   asOf:{families:families.asOf,mapping:mapping.asOf,living:living.asOf,priority:priority.asOf},
   connectedIssues,connectedEntities,canonical,research,resources,editorial,
-  historicalIssues,historicalCrosswalk,siteRoutes,impactLens,
+  historicalIssues,historicalCrosswalk,siteRoutes,impactLens,depthPlan,
   sourceCandidates
  };
 }
