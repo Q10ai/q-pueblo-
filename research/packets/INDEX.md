@@ -10,6 +10,8 @@ This index registers **research candidates**, not live website content or operat
 
 | QP-ENERGY-2026-0232E | 2026-06-12 to 2026-11-19 | 2026-11-25 (due) | [Research paper](../../public/energy-research-paper-2026.md), [structured evidence packet](../../public/data/qp-energy-packet-2026-11-19.json), [November 18 baseline](../../public/data/qp-black-hills-rate-case-2026-11-18.json) | DATED PUBLIC EXPLANATORY RESEARCH — no independent audit or operational activation |
 
+| QP-ECON-MADE-20261120 | 2026-11-20 | 2026-11-23 (first review due) | [Manufacturing and jobs research](QP-ECON-MADE-20261120.md), [structured project data](../../public/data/qp-made-in-pueblo-2026-11-20.json), [proposed public story](../../public/made-in-pueblo.html) | PROPOSED STORY — Council decisions pending, projected jobs not verified; human review required |
+
 ## Integration contract
 
 - **Control-plane:** existing QPueblo master evidence ledger / index registry / QIFY-QRX workbook; this page does not declare which historical artifact is canonical.
