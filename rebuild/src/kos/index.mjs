@@ -4,6 +4,7 @@ import {createProduction} from "./production.mjs";
 import {compileTwinShadow} from "./twin-shadow.mjs";
 import {stageLearning} from "./learning-loop.mjs";
 import {planExpertPanel,reconcileExpertReports} from "./expert-panel.mjs";
+import {compileLEAP} from "./leap.mjs";
 // Two complementary builds share the same IDs, source version and authority.
 export function createKOSContext(packet,limits={}){
  const breakdown=createBreakdown(packet,limits);
@@ -16,7 +17,8 @@ export function createKOSContext(packet,limits={}){
  const internalOnly={
    twinShadow:compileTwinShadow(breakdown,packet.twinShadowInputs||{}),
    expertPanel:{plan:expertPlan,reviews:expertReviews},
-   learning:stageLearning(breakdown,packet.learningCandidates||[])
+   learning:stageLearning(breakdown,packet.learningCandidates||[]),
+   leap:compileLEAP(breakdown,packet.leapCandidates||[])
  };
  return {breakdown,linear,production,internalOnly,releaseState:"HUMAN_REVIEW_REQUIRED"};
 }
