@@ -9,7 +9,8 @@ const paths=Object.freeze({
  reports:'data/qp-current-reports.json',
  site:'data/qp-site-inventory.json',
  historical:'data/q-pueblo-issue-index-2026-11-09.json',
- identity:'data/qp-issue-identity-crosswalk-2026-11-19.json'
+ identity:'data/qp-issue-identity-crosswalk-2026-11-19.json',
+ shock:'data/qp-kos-shock-lens-2026-11-21.json'
 });
 const load=async(env,request,path)=>{
  if(!env?.ASSETS?.fetch)throw new Error('Static research asset service unavailable');
@@ -28,7 +29,7 @@ const ranked=(arr,term,max)=>arr.map((x,i)=>({
  .slice(0,max).map(({_score,_date,_order,...row})=>row);
 const urlOK=s=>{try{const u=new URL(s);return u.protocol==='https:'&&!u.username&&!u.password&&u.hostname.includes('.')&&u.href.length<1600}catch{return false}};
 export async function resolveKOS({env,request,familyId,topicIndex=null,idea=null}){
- const [families,mapping,priority,graph,living,reports,site,historical,identity]=await Promise.all(
+ const [families,mapping,priority,graph,living,reports,site,historical,identity,shock]=await Promise.all(
   Object.values(paths).map(path=>load(env,request,path))
  );
  if(families.schema!=='qp-subject-families-v1'||mapping.schema!=='qp-kos-resource-links-v1')throw new Error('KOS registry version mismatch');
@@ -96,6 +97,19 @@ export async function resolveKOS({env,request,familyId,topicIndex=null,idea=null
    canonicalId:r.canonicalId||null,livingId:r.livingId||null,
    type:'published-route-link-not-evidence'
   })),matchPhrase,18);
+ const subjectRiskIds=family?shock.familyEventPriorities[family.id]||[]:[];
+ const impactLens={
+   scope:'sitewide-subject-impact-analysis',
+   frameworkVersion:shock.schema,
+   status:'PLANNING_SCENARIO',
+   activeIncident:false,
+   sourceStatus:'unverified-planning-possibilities-not-current-alerts',
+   rule:shock.recognitionRules.notEveryChangeIsShock,
+   relevantDisruptions:shock.eventTypes.filter(e=>subjectRiskIds.includes(e.id))
+     .slice(0,5).map(e=>({id:e.id,title:e.title,mechanism:e.mechanism})),
+   dimensions:shock.recognitionRules.humanImpactDimensions,
+   requiredNextStep:'Before any active-impact claim, establish original source, current date, area, affected people, responsible authority and what actually failed.'
+ };
  const sourceCandidates=[];
  const add=(kind,title,url,checkedAt=null,sourceStatus='discovery-lead')=>{
   if(!urlOK(url)||sourceCandidates.some(c=>c.url===url)||sourceCandidates.length>=45)return;
@@ -114,7 +128,7 @@ export async function resolveKOS({env,request,familyId,topicIndex=null,idea=null
   evidenceBoundary:'Connections are research leads only. Content, timing, attribution, jurisdiction and causal edges must be checked against original records before supporting a claim. No autonomous authority.',
   asOf:{families:families.asOf,mapping:mapping.asOf,living:living.asOf,priority:priority.asOf},
   connectedIssues,connectedEntities,canonical,research,resources,editorial,
-  historicalIssues,historicalCrosswalk,siteRoutes,
+  historicalIssues,historicalCrosswalk,siteRoutes,impactLens,
   sourceCandidates
  };
 }
