@@ -27,6 +27,8 @@ jobs:
           node --check rebuild/src/kos/breakdown.mjs
           node --check rebuild/src/kos/linear.mjs
           node --check rebuild/src/kos/index.mjs
+          node --check rebuild/src/kos/production.mjs
+          node --check rebuild/tests/human-concerns.test.mjs
           node --check rebuild/tests/dual-context.test.mjs
       - name: Safe dual KOS context tests
-        run: node --test rebuild/tests/dual-context.test.mjs
+        run: node --test rebuild/tests/dual-context.test.mjs rebuild/tests/human-concerns.test.mjs
