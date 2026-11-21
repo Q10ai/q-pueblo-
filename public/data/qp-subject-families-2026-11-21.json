@@ -1,0 +1,435 @@
+{
+  "schema": "qp-subject-families-v1",
+  "asOf": "2026-11-21",
+  "status": "editorial-navigation-not-evidence-validation",
+  "groups": [
+    {
+      "id": "Civic",
+      "title": "Civic authority & justice"
+    },
+    {
+      "id": "Livelihoods",
+      "title": "Finance, industry & neighborhoods"
+    },
+    {
+      "id": "People",
+      "title": "People, culture & education"
+    },
+    {
+      "id": "Place",
+      "title": "Natural and built systems"
+    },
+    {
+      "id": "Knowledge",
+      "title": "Knowledge, futures & practical learning"
+    }
+  ],
+  "count": 25,
+  "families": [
+    {
+      "id": "government",
+      "group": "Civic",
+      "title": "Government, leadership & accountability",
+      "topics": [
+        "City, county, Pueblo West, districts and boards",
+        "Current and incoming leaders, duties and jurisdiction",
+        "Decisions, public records, oversight and participation"
+      ],
+      "links": [
+        "who-governs.html",
+        "governance-entities.html",
+        "living-research.html#governance"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "id": "state-federal",
+      "group": "Civic",
+      "title": "State & federal impacts",
+      "topics": [
+        "Policies in force and proposals distinguished",
+        "State and federal programs, deadlines and local effects",
+        "Funding, laws, representation and future plans"
+      ],
+      "links": [
+        "pueblo-2027-transition.html",
+        "now.html",
+        "who-governs.html"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "id": "legal",
+      "group": "Civic",
+      "title": "Legal, law & justice",
+      "topics": [
+        "Courts, civil and criminal processes",
+        "Rights, legal aid, appeals and administrative remedies",
+        "Ordinances, litigation and due process"
+      ],
+      "links": [
+        "council-attorney-funding.html",
+        "public-information-transparency.html",
+        "method.html"
+      ],
+      "coverage": "underrepresented"
+    },
+    {
+      "id": "law-enforcement",
+      "group": "Civic",
+      "title": "Law enforcement & public safety",
+      "topics": [
+        "Police, sheriff, courts and correctional institutions",
+        "Staffing, detention, victim protection and youth safety",
+        "Crime data, oversight, costs and continuity"
+      ],
+      "links": [
+        "county-public-safety-school-resource-officers.html",
+        "municipal-jail-community-safety.html"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "id": "finance",
+      "group": "Livelihoods",
+      "title": "Follow the money — LL to LEAP",
+      "topics": [
+        "Household through federal financial facts and figures",
+        "Appropriated, contracted, paid and actual outcomes kept separate",
+        "Debt, grants, audits, lifecycle costs and public benefit"
+      ],
+      "links": [
+        "follow-money.html",
+        "civic-finance-observatory.html",
+        "living-research.html#fiscal"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "id": "economy",
+      "group": "Livelihoods",
+      "title": "Economy, business & workforce",
+      "topics": [
+        "Manufacturing, steel, industry and small business",
+        "Employment, wages, labor and workforce programs",
+        "Investment, public incentives and verified results"
+      ],
+      "links": [
+        "research/economic-development-20261119.html",
+        "report-half-cent-2026.html",
+        "pueblo-west-tract-367.html"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "id": "agriculture",
+      "group": "Livelihoods",
+      "title": "Agriculture, ranching & food systems",
+      "topics": [
+        "Pueblo chile, farming, ranching and food heritage",
+        "Irrigation, water, soil, markets and processing",
+        "Food security, labor, finances and resilience"
+      ],
+      "links": [
+        "resilience-water-users-industry.html",
+        "report-food-assistance.html"
+      ],
+      "coverage": "underrepresented"
+    },
+    {
+      "id": "housing",
+      "group": "Livelihoods",
+      "title": "Housing, land use & neighborhoods",
+      "topics": [
+        "Rentals, ownership, costs, housing quality and accessibility",
+        "Zoning, construction, neighborhoods and redevelopment",
+        "Homelessness, prevention, displacement and supports"
+      ],
+      "links": [
+        "report-housing-pipeline.html",
+        "living-research.html#housing"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "id": "places",
+      "group": "Livelihoods",
+      "title": "Regional places & demographics",
+      "topics": [
+        "Pueblo neighborhoods and Pueblo West",
+        "Rural communities, smaller towns and regional boundaries",
+        "Population, maps, income, age and service coverage"
+      ],
+      "links": [
+        "areas.html#regional-overview",
+        "governance-entities.html",
+        "site-inventory.html"
+      ],
+      "coverage": "underrepresented"
+    },
+    {
+      "id": "social",
+      "group": "People",
+      "title": "Social issues & family wellbeing",
+      "topics": [
+        "Homelessness, poverty, food insecurity and community support",
+        "Grandparents raising grandchildren and kinship care",
+        "Substance use, recovery, youth activities and family services"
+      ],
+      "links": [
+        "living-research.html#housing",
+        "report-food-assistance.html",
+        "nonprofit-funding-continuity.html"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "id": "healthcare",
+      "group": "People",
+      "title": "Healthcare & public health",
+      "topics": [
+        "Hospitals, clinics, healthcare access and insurance",
+        "Mental health, addiction, maternal and senior care",
+        "Public health outcomes, spending and workforce"
+      ],
+      "links": [
+        "learning-library.html",
+        "resilience-wastewater-health.html",
+        "be-ready-pueblo.html"
+      ],
+      "coverage": "underrepresented"
+    },
+    {
+      "id": "education",
+      "group": "People",
+      "title": "Education & lifelong learning",
+      "topics": [
+        "Preschool, schools, higher education and special education",
+        "Funding, enrollment, teachers and measurable outcomes",
+        "Lifelong learning, careers and AI literacy"
+      ],
+      "links": [
+        "learning-library.html",
+        "report-d60-preschool-2026.html",
+        "learn-pueblo.html"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "id": "culture",
+      "group": "People",
+      "title": "Culture, faith communities & heritage",
+      "topics": [
+        "Museums, archives, art, music and festivals",
+        "Churches, congregations, religious history and faith-based services",
+        "Indigenous, Hispanic, immigrant and other living traditions",
+        "Cultural funding, property, preservation and LL"
+      ],
+      "links": [
+        "museums-culture.html",
+        "museums-culture-research.html",
+        "culture-learning.html"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "id": "recreation",
+      "group": "People",
+      "title": "Tourism, sports & recreation",
+      "topics": [
+        "Sports, youth programs and accessible activities",
+        "Parks, trails, outdoor spaces and visitor economy",
+        "Festivals, public facilities and maintenance"
+      ],
+      "links": [
+        "learn-pueblo.html",
+        "museums-culture.html",
+        "pueblo-mountain-park-recovery.html"
+      ],
+      "coverage": "underrepresented"
+    },
+    {
+      "id": "environment",
+      "group": "Place",
+      "title": "Environment & natural systems",
+      "topics": [
+        "Air, soil, ecosystems, wildlife and conservation",
+        "Arkansas River basin, industrial impacts and restoration",
+        "Climate, wildfire, drought and hazard adaptation"
+      ],
+      "links": [
+        "kos-story-pueblo-flood-1921.html",
+        "resilience-water-users-industry.html",
+        "resilience-aspen-five-year.html",
+        "pueblo-mountain-park-recovery.html"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "id": "utilities",
+      "group": "Place",
+      "title": "Water, energy & utilities",
+      "topics": [
+        "Electricity and gas rates, bills and regulation",
+        "Water rights, reservoirs, treatment and distribution",
+        "Wastewater, sewer, water quality and household affordability"
+      ],
+      "links": [
+        "energy-research-paper-2026.html",
+        "resilience-water-users-industry.html",
+        "report-wastewater-2026.html"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "id": "infrastructure",
+      "group": "Place",
+      "title": "Infrastructure & built systems",
+      "topics": [
+        "Road, bridges, rail, airport and transit",
+        "Buildings, broadband, industrial sites and utilities",
+        "Asset conditions, contracts, finance, maintenance and lifecycle"
+      ],
+      "links": [
+        "pueblo-boulevard-pura-repayment.html",
+        "pueblo-air-service-2027.html",
+        "priorities.html#infrastructure"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "id": "shock",
+      "group": "Knowledge",
+      "title": "SHOCK & continuity — across all KOS subjects",
+      "topics": [
+        "Economic, institutional, technical and natural disruptions",
+        "Primary, secondary, tertiary and human-run fallback",
+        "Dependencies, essential-service continuity and recovery tests"
+      ],
+      "links": [
+        "kos-story-pueblo-flood-1921.html",
+        "shock-recovery.html",
+        "be-ready-pueblo.html",
+        "resilience-aspen-five-year.html"
+      ],
+      "coverage": "partial",
+      "crossCutting": true,
+      "description": "Universal risk and continuity lens used inside every subject paper, not an exclusive law-enforcement or public-safety category."
+    },
+    {
+      "id": "media",
+      "group": "Knowledge",
+      "title": "Media, communications & information",
+      "topics": [
+        "Local journalism, public notices and cultural media",
+        "Source checking, misinformation, transparency and corrections",
+        "Digital access, privacy and communications history"
+      ],
+      "links": [
+        "public-information-transparency.html",
+        "rumor-mill.html",
+        "sources.html"
+      ],
+      "coverage": "underrepresented"
+    },
+    {
+      "id": "ai-era",
+      "group": "Knowledge",
+      "title": "Pueblo in the AI era",
+      "topics": [
+        "AI impact on families, employment and industry",
+        "Infrastructure, resources, digital rights and civic readiness",
+        "Schools, research, Twin scenarios and LL to LEAP"
+      ],
+      "links": [
+        "pueblo-ai-readiness.html",
+        "ai-world.html",
+        "twin.html"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "id": "ai-governance",
+      "group": "Knowledge",
+      "title": "AI governance & responsible building",
+      "topics": [
+        "Child Zero, T2Y, EE and human authority",
+        "Responsible design, testing, privacy and red-team review",
+        "Procurement, oversight, rollback and lifecycle governance"
+      ],
+      "links": [
+        "method.html",
+        "ai-world.html",
+        "q-tools.html"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "id": "solutions",
+      "group": "Knowledge",
+      "title": "Conflicts, resolutions & solutions",
+      "topics": [
+        "Families, neighborhoods, institutions and resources",
+        "Rights, negotiations, mediation and non-coercive remedies",
+        "RX alternatives, measurable outcomes, SHOCK and LEAP"
+      ],
+      "links": [
+        "decision-tools.html",
+        "community-input-to-action.html",
+        "participate.html"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "id": "history",
+      "group": "Knowledge",
+      "title": "History of Histories, learning & games",
+      "topics": [
+        "Indigenous, settlement, industrial and modern histories",
+        "Primary sources, oral histories, museums and LL",
+        "Subject and age editions: five levels, three or more challenges per level"
+      ],
+      "links": [
+        "kos-story-pueblo-flood-1921.html",
+        "learn-pueblo.html",
+        "learning-library.html",
+        "discover.html"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "id": "help",
+      "group": "Knowledge",
+      "title": "Practical help, resources & participation",
+      "topics": [
+        "Housing, food, family and medical programs",
+        "Local organizations, service contacts, eligibility and hours",
+        "Public participation, youth activities and community networks"
+      ],
+      "links": [
+        "resource-library.html",
+        "report-food-assistance.html",
+        "participate.html"
+      ],
+      "coverage": "partial"
+    },
+    {
+      "id": "q-kos",
+      "group": "Knowledge",
+      "title": "What Q is, KOS, studies & abilities",
+      "topics": [
+        "Three-level Entities, Issues and financial relationships",
+        "Study and ability inventories, source coverage and statuses",
+        "Child Zero, T2Y, EE, LL, Quilt, Twin, TTL and LEAP",
+        "Glossary, readmes, handbooks, limitations and safety"
+      ],
+      "links": [
+        "about.html",
+        "site-inventory.html",
+        "q-tools.html",
+        "method.html"
+      ],
+      "coverage": "partial"
+    }
+  ]
+}

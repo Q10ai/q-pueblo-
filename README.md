@@ -2,6 +2,11 @@
 
 Independent, nonpartisan civic evidence, source-linked local research and decision support for the Pueblo region. This public website is separate from controlled Q10 systems.
 
+## Where to start
+- Subject-family directory: [`public/areas.html`](public/areas.html#subject-families), organized into 25 editorial families with connected dated reading. Coverage does not imply research completeness.
+- Study and route inventory: [`public/site-inventory.html`](public/site-inventory.html), living research and historical records.
+- Reconciliation specification: [`docs/MASTER-SUBJECT-RECONCILIATION-2026-11-21.md`](docs/MASTER-SUBJECT-RECONCILIATION-2026-11-21.md).
+
 ## Actual capabilities
 - Dated historical issue index and source directory; curated, human-reviewed explanatory briefs.
 - Qify a question: conservative lexical matching to a dated published brief, direct source links and a locally generated research-lead packet. A match is **not** fresh verification.

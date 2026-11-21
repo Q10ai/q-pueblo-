@@ -1,0 +1,289 @@
+{
+  "schema": "qp-public-subject-tiles-v2",
+  "asOf": "2026-11-21",
+  "status": "visible-navigation-not-completed-research",
+  "purpose": "Twenty-five visible subject entries; no forced mixed-domain headings. SHOCK is a cross-cutting KOS lens instead of a subject tile. The underlying water/energy catalogue is shared while distinct topics receive separate user-facing entrances.",
+  "firstFour": [
+    "governance",
+    "ai-pueblo",
+    "public-money",
+    "water"
+  ],
+  "tiles": [
+    {
+      "id": "governance",
+      "title": "Government & Accountability",
+      "summary": "Who decides, who serves, and how public decisions are made",
+      "familyId": "government",
+      "topicIndex": null,
+      "artIndex": 1,
+      "rank": 1,
+      "subjectHref": "areas.html#family-government",
+      "kosHref": "kos.html?family=government#kos-subject-entry"
+    },
+    {
+      "id": "ai-pueblo",
+      "title": "AI & Pueblo's Future",
+      "summary": "Technology, changing work, practical uses and risks",
+      "familyId": "ai-era",
+      "topicIndex": null,
+      "artIndex": 11,
+      "rank": 2,
+      "subjectHref": "areas.html#family-ai-era",
+      "kosHref": "kos.html?family=ai-era#kos-subject-entry"
+    },
+    {
+      "id": "public-money",
+      "title": "Public Money & Finance",
+      "summary": "Budgets, taxes, contracts, debts and actual spending",
+      "familyId": "finance",
+      "topicIndex": null,
+      "artIndex": 2,
+      "rank": 3,
+      "subjectHref": "areas.html#family-finance",
+      "kosHref": "kos.html?family=finance#kos-subject-entry"
+    },
+    {
+      "id": "water",
+      "title": "Water & Water Rights",
+      "summary": "Water supply, rights, treatment, drought and cost",
+      "familyId": "utilities",
+      "topicIndex": 1,
+      "artIndex": 5,
+      "rank": 4,
+      "subjectHref": "areas.html#water-systems",
+      "kosHref": "kos.html?family=utilities&topic=1#kos-subject-entry"
+    },
+    {
+      "id": "energy",
+      "title": "Energy & Utility Bills",
+      "summary": "Electricity, gas, rates, energy projects and reliability",
+      "familyId": "utilities",
+      "topicIndex": 0,
+      "artIndex": 5,
+      "rank": 5,
+      "subjectHref": "areas.html#energy-systems",
+      "kosHref": "kos.html?family=utilities&topic=0#kos-subject-entry"
+    },
+    {
+      "id": "help",
+      "title": "Help, Services & Benefits",
+      "summary": "Food, housing, healthcare, caregiving and local support",
+      "familyId": "help",
+      "topicIndex": null,
+      "artIndex": 6,
+      "rank": 6,
+      "subjectHref": "areas.html#family-help",
+      "kosHref": "kos.html?family=help#kos-subject-entry"
+    },
+    {
+      "id": "jobs-business",
+      "title": "Jobs, Business & Industry",
+      "summary": "Employers, wages, manufacturing, industry and local investment",
+      "familyId": "economy",
+      "topicIndex": null,
+      "artIndex": 2,
+      "rank": 7,
+      "subjectHref": "areas.html#family-economy",
+      "kosHref": "kos.html?family=economy#kos-subject-entry"
+    },
+    {
+      "id": "housing",
+      "title": "Housing & Neighborhoods",
+      "summary": "Rent, ownership, development, housing instability and communities",
+      "familyId": "housing",
+      "topicIndex": null,
+      "artIndex": 6,
+      "rank": 8,
+      "subjectHref": "areas.html#family-housing",
+      "kosHref": "kos.html?family=housing#kos-subject-entry"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare & Public Health",
+      "summary": "Hospitals, clinics, coverage, mental health and prevention",
+      "familyId": "healthcare",
+      "topicIndex": null,
+      "artIndex": 10,
+      "rank": 9,
+      "subjectHref": "areas.html#family-healthcare",
+      "kosHref": "kos.html?family=healthcare#kos-subject-entry"
+    },
+    {
+      "id": "families-social",
+      "title": "Families & Social Issues",
+      "summary": "Grandparents raising grandchildren, substance use and community needs",
+      "familyId": "social",
+      "topicIndex": null,
+      "artIndex": 6,
+      "rank": 10,
+      "subjectHref": "areas.html#family-social",
+      "kosHref": "kos.html?family=social#kos-subject-entry"
+    },
+    {
+      "id": "education",
+      "title": "Education & Schools",
+      "summary": "Preschool, K–12, colleges, training and lifelong learning",
+      "familyId": "education",
+      "topicIndex": null,
+      "artIndex": 10,
+      "rank": 11,
+      "subjectHref": "areas.html#family-education",
+      "kosHref": "kos.html?family=education#kos-subject-entry"
+    },
+    {
+      "id": "public-safety",
+      "title": "Law Enforcement & Public Safety",
+      "summary": "Police, sheriff, crime, detention, rights and emergency response",
+      "familyId": "law-enforcement",
+      "topicIndex": null,
+      "artIndex": 7,
+      "rank": 12,
+      "subjectHref": "areas.html#family-law-enforcement",
+      "kosHref": "kos.html?family=law-enforcement#kos-subject-entry"
+    },
+    {
+      "id": "law-justice",
+      "title": "Law, Courts & Rights",
+      "summary": "Laws, civil justice, courts, legal help and due process",
+      "familyId": "legal",
+      "topicIndex": null,
+      "artIndex": 1,
+      "rank": 13,
+      "subjectHref": "areas.html#family-legal",
+      "kosHref": "kos.html?family=legal#kos-subject-entry"
+    },
+    {
+      "id": "infrastructure",
+      "title": "Infrastructure & Transportation",
+      "summary": "Roads, rail, airport, bridges, facilities and networks",
+      "familyId": "infrastructure",
+      "topicIndex": null,
+      "artIndex": 3,
+      "rank": 14,
+      "subjectHref": "areas.html#family-infrastructure",
+      "kosHref": "kos.html?family=infrastructure#kos-subject-entry"
+    },
+    {
+      "id": "agriculture",
+      "title": "Agriculture & Food Systems",
+      "summary": "Pueblo chile, farms, ranches, irrigation and food supply",
+      "familyId": "agriculture",
+      "topicIndex": null,
+      "artIndex": 5,
+      "rank": 15,
+      "subjectHref": "areas.html#family-agriculture",
+      "kosHref": "kos.html?family=agriculture#kos-subject-entry"
+    },
+    {
+      "id": "environment",
+      "title": "Environment & Natural Systems",
+      "summary": "Land, air, wildlife, conservation, hazards and restoration",
+      "familyId": "environment",
+      "topicIndex": null,
+      "artIndex": 5,
+      "rank": 16,
+      "subjectHref": "areas.html#family-environment",
+      "kosHref": "kos.html?family=environment#kos-subject-entry"
+    },
+    {
+      "id": "state-federal",
+      "title": "State & Federal Changes",
+      "summary": "New laws, budgets, benefits, leadership and Pueblo impacts",
+      "familyId": "state-federal",
+      "topicIndex": null,
+      "artIndex": 1,
+      "rank": 17,
+      "subjectHref": "areas.html#family-state-federal",
+      "kosHref": "kos.html?family=state-federal#kos-subject-entry"
+    },
+    {
+      "id": "recreation",
+      "title": "Youth Activities, Sports & Recreation",
+      "summary": "Youth programs, parks, sports, events and outdoor opportunities",
+      "familyId": "recreation",
+      "topicIndex": null,
+      "artIndex": 8,
+      "rank": 18,
+      "subjectHref": "areas.html#family-recreation",
+      "kosHref": "kos.html?family=recreation#kos-subject-entry"
+    },
+    {
+      "id": "culture",
+      "title": "Culture, Museums & Churches",
+      "summary": "Arts, faith communities, museums, heritage and festivals",
+      "familyId": "culture",
+      "topicIndex": null,
+      "artIndex": 9,
+      "rank": 19,
+      "subjectHref": "areas.html#family-culture",
+      "kosHref": "kos.html?family=culture#kos-subject-entry"
+    },
+    {
+      "id": "history",
+      "title": "History & Legacy Learning",
+      "summary": "People, places, records, historical stories and research",
+      "familyId": "history",
+      "topicIndex": null,
+      "artIndex": 9,
+      "rank": 20,
+      "subjectHref": "areas.html#family-history",
+      "kosHref": "kos.html?family=history#kos-subject-entry"
+    },
+    {
+      "id": "regional-places",
+      "title": "Pueblo Places & Population",
+      "summary": "Neighborhoods, Pueblo West, rural areas, maps and demographics",
+      "familyId": "places",
+      "topicIndex": null,
+      "artIndex": 3,
+      "rank": 21,
+      "subjectHref": "areas.html#family-places",
+      "kosHref": "kos.html?family=places#kos-subject-entry"
+    },
+    {
+      "id": "media",
+      "title": "News & Public Information",
+      "summary": "Local journalism, notices, communication and source checking",
+      "familyId": "media",
+      "topicIndex": null,
+      "artIndex": 11,
+      "rank": 22,
+      "subjectHref": "areas.html#family-media",
+      "kosHref": "kos.html?family=media#kos-subject-entry"
+    },
+    {
+      "id": "solutions",
+      "title": "Conflicts, Options & Solutions",
+      "summary": "Understand disagreements, compare remedies and measure outcomes",
+      "familyId": "solutions",
+      "topicIndex": null,
+      "artIndex": 7,
+      "rank": 23,
+      "subjectHref": "areas.html#family-solutions",
+      "kosHref": "kos.html?family=solutions#kos-subject-entry"
+    },
+    {
+      "id": "ai-governance",
+      "title": "AI Rights & Governance",
+      "summary": "Human control, privacy, AI oversight, safety and accountability",
+      "familyId": "ai-governance",
+      "topicIndex": null,
+      "artIndex": 11,
+      "rank": 24,
+      "subjectHref": "areas.html#family-ai-governance",
+      "kosHref": "kos.html?family=ai-governance#kos-subject-entry"
+    },
+    {
+      "id": "kos",
+      "title": "Ask Q, KOS & Connected Research",
+      "summary": "Understand any subject through sources, people, money and history",
+      "familyId": "q-kos",
+      "topicIndex": null,
+      "artIndex": 0,
+      "rank": 25,
+      "subjectHref": "areas.html#family-q-kos",
+      "kosHref": "kos.html?family=q-kos#kos-subject-entry"
+    }
+  ]
+}

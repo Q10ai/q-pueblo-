@@ -1,0 +1,390 @@
+{
+  "schema": "qp-kos-shock-lens-v1",
+  "asOf": "2026-11-21",
+  "status": "scenario-taxonomy-only-not-current-incident-feed",
+  "purpose": "Every subject's KOS/Qified paper tests significant direct, downstream and long-tail consequences only when credible relevance and evidence exist. SHOCK is cross-cutting, not a policing subsection.",
+  "eventTypes": [
+    {
+      "id": "electricity-outage",
+      "title": "Electricity outage or grid constraint",
+      "mechanism": "A sudden or sustained loss of electric service can interrupt water pumping, heating, healthcare, refrigeration, communications and businesses.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "fuel-gas-shortage",
+      "title": "Fuel, natural gas or heating shortage",
+      "mechanism": "Fuel and gas disruptions can interrupt transportation, household heating, generators, manufacturing and emergency response.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "water-system-failure",
+      "title": "Water supply, treatment or contamination event",
+      "mechanism": "Supply, treatment, pipeline or water-quality problems can affect drinking water, hospitals, schools, businesses and irrigation.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "wastewater-failure",
+      "title": "Sewer or wastewater failure",
+      "mechanism": "Treatment failures, overflows and infrastructure damage can affect public health, waterways, businesses and cleanup costs.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "drought",
+      "title": "Drought and water scarcity",
+      "mechanism": "Long-running water shortages can affect households, agriculture, industry, utilities, wildfire risk and regional agreements.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "flood-storm",
+      "title": "Flood, storm, snow, extreme heat or cold",
+      "mechanism": "Severe conditions can close roads, damage homes and public assets, interrupt energy and endanger vulnerable residents.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "wildfire-smoke",
+      "title": "Wildfire and smoke",
+      "mechanism": "Fire and smoke can threaten homes, forests, public health, tourism, emergency capacity and water quality.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "cyberattack",
+      "title": "Cyberattack, ransomware or malicious intrusion",
+      "mechanism": "Attacks on utilities, hospitals, schools, firms or government can interrupt services, payments, operations and data access.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "communications-failure",
+      "title": "911, dispatch, broadband or communications outage",
+      "mechanism": "Loss of communications can delay emergency response, public warnings, education, commerce and public services.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "payment-data-failure",
+      "title": "Banking, payment or data-system failure",
+      "mechanism": "Payment, identity or records disruption can affect payroll, benefits, taxes, commerce and access to essential services.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "food-shortage",
+      "title": "Food shortage or distribution disruption",
+      "mechanism": "Crop losses, transport problems or sudden cost pressures can reduce access to food, including for children and older adults.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "disease-outbreak",
+      "title": "Infectious disease outbreak or public-health surge",
+      "mechanism": "Disease events can strain healthcare, schools, workplaces, caregiving and essential-service staffing.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "healthcare-capacity",
+      "title": "Hospital, EMS, medication or medical-supply disruption",
+      "mechanism": "A care-capacity failure or medicine shortage can block treatment, emergency response and continuing support.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "labor-disruption",
+      "title": "Strike, labor stoppage or major staffing shortage",
+      "mechanism": "A lawful strike or staffing shortage can affect service delivery and supply chains; distinguish labor rights from actual service consequences.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "supply-chain",
+      "title": "Supply-chain or essential-material shortage",
+      "mechanism": "Missing equipment, inputs, construction materials, medication or parts can delay essential repairs and operations.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "transport-hazmat",
+      "title": "Transport corridor closure or hazardous-material event",
+      "mechanism": "Road, rail, airport or hazardous-cargo events can disrupt mobility, commerce and public health.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "industrial-accident",
+      "title": "Industrial accident, explosion or hazardous release",
+      "mechanism": "A production failure, fire or release may affect workers, air and water, transport and nearby communities.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "housing-displacement",
+      "title": "Sudden housing displacement or shelter shortage",
+      "mechanism": "An emergency, eviction wave or facility closure can displace residents and overwhelm food, health and shelter services.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "funding-interruption",
+      "title": "Funding cut, delayed grant or fiscal-service crisis",
+      "mechanism": "Funding interruptions can affect workers, nonprofits, healthcare, education, infrastructure and essential services.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "policy-legal-shift",
+      "title": "Major legal, regulatory or jurisdictional change",
+      "mechanism": "A verified new requirement or decision can change benefits, operating duties, public spending and compliance deadlines.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "school-care-disruption",
+      "title": "School, childcare or youth-service disruption",
+      "mechanism": "Closures, staffing shortfalls or system failures can affect learning, family employment, meals and care.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "information-failure",
+      "title": "False emergency information or critical public-notice failure",
+      "mechanism": "Conflicting, false or missing notices can prevent informed protective action and damage trust.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "ai-failure",
+      "title": "AI, automated-control or data-integrity failure",
+      "mechanism": "A flawed automated process can disrupt decisions, deny needed services or produce unsafe recommendations; humans retain authority.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "ecosystem-loss",
+      "title": "Environmental damage, crop disease or ecosystem disruption",
+      "mechanism": "Contamination, plant/animal disease or habitat damage can affect food, water, tourism, farms and long-term restoration.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    },
+    {
+      "id": "service-overload",
+      "title": "Community-service overload or assistance network interruption",
+      "mechanism": "Loss or overload of shelters, food programs, caregivers and support networks can leave essential needs unmet.",
+      "status": "planning-scenario-only",
+      "sourceRequiredForCurrentEvent": true
+    }
+  ],
+  "familyEventPriorities": {
+    "government": [
+      "funding-interruption",
+      "cyberattack",
+      "policy-legal-shift",
+      "information-failure",
+      "communications-failure"
+    ],
+    "state-federal": [
+      "policy-legal-shift",
+      "funding-interruption",
+      "supply-chain",
+      "disease-outbreak",
+      "drought"
+    ],
+    "legal": [
+      "policy-legal-shift",
+      "cyberattack",
+      "payment-data-failure",
+      "housing-displacement"
+    ],
+    "law-enforcement": [
+      "communications-failure",
+      "cyberattack",
+      "labor-disruption",
+      "disease-outbreak",
+      "flood-storm"
+    ],
+    "finance": [
+      "funding-interruption",
+      "payment-data-failure",
+      "cyberattack",
+      "labor-disruption",
+      "fuel-gas-shortage"
+    ],
+    "economy": [
+      "labor-disruption",
+      "supply-chain",
+      "funding-interruption",
+      "electricity-outage",
+      "transport-hazmat"
+    ],
+    "agriculture": [
+      "drought",
+      "food-shortage",
+      "ecosystem-loss",
+      "labor-disruption",
+      "fuel-gas-shortage"
+    ],
+    "housing": [
+      "housing-displacement",
+      "flood-storm",
+      "electricity-outage",
+      "fuel-gas-shortage",
+      "water-system-failure"
+    ],
+    "places": [
+      "flood-storm",
+      "housing-displacement",
+      "drought",
+      "transport-hazmat",
+      "wildfire-smoke"
+    ],
+    "social": [
+      "service-overload",
+      "food-shortage",
+      "housing-displacement",
+      "disease-outbreak",
+      "electricity-outage"
+    ],
+    "healthcare": [
+      "disease-outbreak",
+      "healthcare-capacity",
+      "electricity-outage",
+      "cyberattack",
+      "water-system-failure"
+    ],
+    "education": [
+      "school-care-disruption",
+      "disease-outbreak",
+      "cyberattack",
+      "electricity-outage",
+      "information-failure"
+    ],
+    "culture": [
+      "flood-storm",
+      "funding-interruption",
+      "wildfire-smoke",
+      "cyberattack",
+      "service-overload"
+    ],
+    "recreation": [
+      "wildfire-smoke",
+      "flood-storm",
+      "flood-storm",
+      "water-system-failure",
+      "drought"
+    ],
+    "environment": [
+      "drought",
+      "wildfire-smoke",
+      "flood-storm",
+      "ecosystem-loss",
+      "industrial-accident"
+    ],
+    "utilities": [
+      "electricity-outage",
+      "water-system-failure",
+      "wastewater-failure",
+      "drought",
+      "cyberattack"
+    ],
+    "infrastructure": [
+      "electricity-outage",
+      "transport-hazmat",
+      "flood-storm",
+      "supply-chain",
+      "cyberattack"
+    ],
+    "shock": [
+      "electricity-outage",
+      "water-system-failure",
+      "cyberattack",
+      "disease-outbreak",
+      "funding-interruption"
+    ],
+    "media": [
+      "information-failure",
+      "cyberattack",
+      "communications-failure",
+      "policy-legal-shift"
+    ],
+    "ai-era": [
+      "ai-failure",
+      "cyberattack",
+      "electricity-outage",
+      "labor-disruption",
+      "information-failure"
+    ],
+    "ai-governance": [
+      "ai-failure",
+      "cyberattack",
+      "policy-legal-shift",
+      "information-failure"
+    ],
+    "solutions": [
+      "service-overload",
+      "housing-displacement",
+      "funding-interruption",
+      "policy-legal-shift",
+      "labor-disruption"
+    ],
+    "history": [
+      "flood-storm",
+      "wildfire-smoke",
+      "policy-legal-shift",
+      "housing-displacement"
+    ],
+    "help": [
+      "service-overload",
+      "food-shortage",
+      "housing-displacement",
+      "disease-outbreak",
+      "healthcare-capacity"
+    ],
+    "q-kos": [
+      "ai-failure",
+      "cyberattack",
+      "information-failure",
+      "payment-data-failure",
+      "electricity-outage"
+    ]
+  },
+  "recognitionRules": {
+    "notEveryChangeIsShock": "A scheduled repair, budget proposal or peaceful labor action is not an emergency by itself; look for documented essential-service interruption, credible imminent threat or severe actual consequence.",
+    "incidentStatuses": [
+      "VERIFIED_ACTIVE",
+      "VERIFIED_UPCOMING",
+      "SOURCE_REPORTED_UNCONFIRMED",
+      "PLANNING_SCENARIO",
+      "HISTORICAL",
+      "RESOLVED"
+    ],
+    "defaultStatus": "PLANNING_SCENARIO",
+    "sourceRequirement": "Show authority, original public source URL, incident/event time, geographic scope, last verified date, review due and corrections; no invented current alerts.",
+    "humanImpactDimensions": [
+      "life_and_health_including_children",
+      "essential_services",
+      "people_and_places_affected",
+      "duration",
+      "costs_and_institutional_burden",
+      "shared_dependencies_and_backups",
+      "recovery_and_equity"
+    ],
+    "analyticalSequence": [
+      "Recognize supported trigger",
+      "Check source and actual vs hypothetical status",
+      "Determine location, timing and authority",
+      "Crosswalk the affected people, entities, assets, services and funding",
+      "Trace immediate, secondary and longer-term effects",
+      "Evaluate human protection and independent backups",
+      "Compare realistic mitigations, costs and tradeoffs",
+      "Explain it in the KOS paper; elevate only verified current high-impact events to What's Happening Now"
+    ],
+    "sourceProtocol": "Q Pueblo is not an emergency notification authority; official and authorized warning sources govern protective action and immediacy. A Q analysis does not itself make a public safety determination.",
+    "publicationGate": "Public alerts require human editorial verification and appropriate official attribution. No unattended event generation or publishing."
+  }
+}
