@@ -342,6 +342,16 @@
       "id": "qp:method:rx",
       "name": "Solutions and safe remedies",
       "notSubject": true
+    },
+    {
+      "id": "qp:method:shadow",
+      "name": "Read-only real-world comparison and shadow-testing",
+      "notSubject": true
+    },
+    {
+      "id": "qp:method:learning",
+      "name": "Source-based ongoing learning and human-reviewed amendments",
+      "notSubject": true
     }
   ]
 }
