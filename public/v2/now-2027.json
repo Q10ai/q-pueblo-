@@ -110,7 +110,49 @@
         "Totals without fund restrictions may misrepresent resources actually available."
       ],
       "provenance": "Official County budget hub; no private budget records accessed.",
-      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID"
+      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID",
+      "relatedWatchKeys": [
+        "sheriff-staffing-2027",
+        "city-budget-2027",
+        "csac-2027"
+      ],
+      "leap": {
+        "schema": "qp.kos.leap-feature.v1",
+        "epistemicStatus": "ANALYTICAL_POSSIBILITIES_NOT_OFFICIAL_PROPOSALS",
+        "purpose": "Reasonable pathways worth comparing, not predicted outcomes or an institution's adopted plan.",
+        "possiblePaths": [
+          {
+            "optionKey": "county-budget-2027-path-1",
+            "title": "Protect essential service continuity",
+            "mechanism": "Commissioners and departments could evaluate which statutory and essential services need protected capacity while balancing the adopted budget.",
+            "potentialBenefit": "May preserve core access and continuity.",
+            "potentialDownside": "Other programs may face greater constraints.",
+            "risk": "Protecting one program without funding can create other gaps.",
+            "needs": "Documented statutory duties, fund restrictions and credible workload measures.",
+            "decisionAuthority": "The Pueblo County Board of County Commissioners decides the county budget through its statutory process; departments and funded entities implement approved allocations.",
+            "sourceBound": "The current issue's source records ground the setting; this option is a provisional editorial possibility."
+          },
+          {
+            "optionKey": "county-budget-2027-path-2",
+            "title": "Phase spending with public outcome checks",
+            "mechanism": "Decision-makers could stage discretionary activities and establish regular comparisons of authorized versus actual costs and services.",
+            "potentialBenefit": "Makes changing conditions and tradeoffs easier to audit.",
+            "potentialDownside": "Delays some intended improvements or purchases.",
+            "risk": "Deferred maintenance and hidden future costs may rise.",
+            "needs": "Reviewed project priorities, maintenance liabilities, public reporting and decision authority.",
+            "decisionAuthority": "The Pueblo County Board of County Commissioners decides the county budget through its statutory process; departments and funded entities implement approved allocations.",
+            "sourceBound": "The current issue's source records ground the setting; this option is a provisional editorial possibility."
+          }
+        ],
+        "nextVerification": [
+          "Track preliminary versus adopted budgets and later amendments.",
+          "Crosswalk each material change to department, program, fund, contract and payment stage.",
+          "Monitor countywide services, employee impacts and capital maintenance without inventing neighborhood effects."
+        ],
+        "crossSystem": "Use federal/state/regional/city-neighborhood-household impact layers only where facts support a relation.",
+        "historyAndLearning": "Record the eventual decisions and results so LEAP can compare what was anticipated with what occurred.",
+        "publicationAuthority": "HUMAN_REVIEW_REQUIRED"
+      }
     },
     {
       "id": "qp:change:sheriff-staffing-2027",
@@ -200,7 +242,48 @@
         "An institution's budget dispute must not become a presumption of misconduct."
       ],
       "provenance": "Dated journalistic reporting reproducing a sheriff email and statements, cross-referenced with County official budget and authority materials. No personnel files accessed.",
-      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID"
+      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID",
+      "relatedWatchKeys": [
+        "county-budget-2027",
+        "city-budget-2027"
+      ],
+      "leap": {
+        "schema": "qp.kos.leap-feature.v1",
+        "epistemicStatus": "ANALYTICAL_POSSIBILITIES_NOT_OFFICIAL_PROPOSALS",
+        "purpose": "Reasonable pathways worth comparing, not predicted outcomes or an institution's adopted plan.",
+        "possiblePaths": [
+          {
+            "optionKey": "sheriff-staffing-2027-path-1",
+            "title": "Evaluate essential functions before staffing decisions",
+            "mechanism": "Leadership could test staffing plans against legally required detention and response functions and documented workload.",
+            "potentialBenefit": "Makes operational consequences visible before irreversible changes.",
+            "potentialDownside": "May limit the immediate savings available.",
+            "risk": "Rushed staffing changes could affect worker safety and training coverage.",
+            "needs": "Current staffing data, legal responsibilities, union rights, service measures and costs.",
+            "decisionAuthority": "County commissioners control adopted appropriations; the independently elected sheriff manages staffing and operations within applicable legal and labor requirements. The incoming sheriff's transition may affect decisions.",
+            "sourceBound": "The current issue's source records ground the setting; this option is a provisional editorial possibility."
+          },
+          {
+            "optionKey": "sheriff-staffing-2027-path-2",
+            "title": "Compare alternative cost-reduction paths",
+            "mechanism": "County and Sheriff's Office decision-makers could compare lawful non-personnel savings, vacancy management and phased actions where feasible.",
+            "potentialBenefit": "May widen the range of choices beyond one personnel target.",
+            "potentialDownside": "Not all alternatives will produce sufficient or timely savings.",
+            "risk": "Projected savings could be overstated without verified figures.",
+            "needs": "Actual spending, contract obligations, position types and written budget authority.",
+            "decisionAuthority": "County commissioners control adopted appropriations; the independently elected sheriff manages staffing and operations within applicable legal and labor requirements. The incoming sheriff's transition may affect decisions.",
+            "sourceBound": "The current issue's source records ground the setting; this option is a provisional editorial possibility."
+          }
+        ],
+        "nextVerification": [
+          "Verify adopted Sheriff and Detention appropriations against the County's final budget.",
+          "Track documented staffing actions, union responses, due process and leadership transition.",
+          "Measure actual service and safety effects with comparable data rather than projected claims."
+        ],
+        "crossSystem": "Use federal/state/regional/city-neighborhood-household impact layers only where facts support a relation.",
+        "historyAndLearning": "Record the eventual decisions and results so LEAP can compare what was anticipated with what occurred.",
+        "publicationAuthority": "HUMAN_REVIEW_REQUIRED"
+      }
     },
     {
       "id": "qp:change:medicaid-2027",
@@ -289,7 +372,48 @@
         "Incorrect explanations about exemptions could cause unnecessary alarm."
       ],
       "provenance": "Original state-program guidance, not an individual eligibility determination.",
-      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID"
+      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID",
+      "relatedWatchKeys": [
+        "csac-2027",
+        "county-budget-2027"
+      ],
+      "leap": {
+        "schema": "qp.kos.leap-feature.v1",
+        "epistemicStatus": "ANALYTICAL_POSSIBILITIES_NOT_OFFICIAL_PROPOSALS",
+        "purpose": "Reasonable pathways worth comparing, not predicted outcomes or an institution's adopted plan.",
+        "possiblePaths": [
+          {
+            "optionKey": "medicaid-2027-path-1",
+            "title": "Improve early, accessible public guidance",
+            "mechanism": "State, county and health-service partners could provide understandable, accurate notices about covered adults, exemptions and renewals.",
+            "potentialBenefit": "May help eligible residents understand and comply with requirements.",
+            "potentialDownside": "Outreach consumes staff time and may not reach everyone.",
+            "risk": "Incorrect or oversimplified exemption advice could cause harm.",
+            "needs": "Current state notices, language access, appeal routes and verified local service information.",
+            "decisionAuthority": "Federal lawmakers set the requirements; Colorado's Health First Colorado administers eligibility, notices, renewals and exemptions.",
+            "sourceBound": "The current issue's source records ground the setting; this option is a provisional editorial possibility."
+          },
+          {
+            "optionKey": "medicaid-2027-path-2",
+            "title": "Monitor implementation and correct errors",
+            "mechanism": "State and local administrators could measure aggregate application and renewal problems and correct verified process failures.",
+            "potentialBenefit": "Can identify unintended loss of access and technical gaps.",
+            "potentialDownside": "Reliable data and corrections may arrive after residents experience disruption.",
+            "risk": "Privacy, fairness and data-quality problems if sensitive records are mishandled.",
+            "needs": "Authorized aggregate metrics, privacy review, complaint processes and human decision-makers.",
+            "decisionAuthority": "Federal lawmakers set the requirements; Colorado's Health First Colorado administers eligibility, notices, renewals and exemptions.",
+            "sourceBound": "The current issue's source records ground the setting; this option is a provisional editorial possibility."
+          }
+        ],
+        "nextVerification": [
+          "Watch official member notices and effective-date guidance.",
+          "Check exemptions, renewal timing and documentation through Health First Colorado.",
+          "Measure Pueblo impacts using published, privacy-protecting aggregate data—not assumptions."
+        ],
+        "crossSystem": "Use federal/state/regional/city-neighborhood-household impact layers only where facts support a relation.",
+        "historyAndLearning": "Record the eventual decisions and results so LEAP can compare what was anticipated with what occurred.",
+        "publicationAuthority": "HUMAN_REVIEW_REQUIRED"
+      }
     },
     {
       "id": "qp:change:energy-rate-2027",
@@ -373,7 +497,48 @@
         "Conflicting expected decision dates require explicit reconciliation."
       ],
       "provenance": "Utility applicant explanation and City-posted PUC notice, with proposal status retained.",
-      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID"
+      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID",
+      "relatedWatchKeys": [
+        "city-budget-2027",
+        "pueblo-west-infrastructure-2027"
+      ],
+      "leap": {
+        "schema": "qp.kos.leap-feature.v1",
+        "epistemicStatus": "ANALYTICAL_POSSIBILITIES_NOT_OFFICIAL_PROPOSALS",
+        "purpose": "Reasonable pathways worth comparing, not predicted outcomes or an institution's adopted plan.",
+        "possiblePaths": [
+          {
+            "optionKey": "energy-rate-2027-path-1",
+            "title": "Evaluate the filed utility request against evidence",
+            "mechanism": "Regulators may approve, modify or reject parts of the request after reviewing testimony, finances and customer consequences.",
+            "potentialBenefit": "Provides a reasoned record for the eventual rate decision.",
+            "potentialDownside": "The process can be lengthy and complicated for residents.",
+            "risk": "Average bill figures may obscure different customer situations.",
+            "needs": "Official docket, filed testimony, rate class calculations and procedural rights.",
+            "decisionAuthority": "The Colorado Public Utilities Commission decides whether to approve proposed rates. Black Hills Energy is the applicant; customers and other parties may comment.",
+            "sourceBound": "The current issue's source records ground the setting; this option is a provisional editorial possibility."
+          },
+          {
+            "optionKey": "energy-rate-2027-path-2",
+            "title": "Compare affordability and infrastructure tradeoffs",
+            "mechanism": "The record can examine service reliability needs, rate design and lawful customer protections where proposed.",
+            "potentialBenefit": "May surface clearer options for balancing service and cost.",
+            "potentialDownside": "Protective adjustments may move costs among users or funding sources.",
+            "risk": "Unfunded maintenance or inaccurate bill comparisons can mislead.",
+            "needs": "Verified cost of service, actual assets and legally permitted rate options.",
+            "decisionAuthority": "The Colorado Public Utilities Commission decides whether to approve proposed rates. Black Hills Energy is the applicant; customers and other parties may comment.",
+            "sourceBound": "The current issue's source records ground the setting; this option is a provisional editorial possibility."
+          }
+        ],
+        "nextVerification": [
+          "Check the December 2 Pueblo public-comment hearing and official proceeding 26AL-0232E.",
+          "Track the PUC's final decision, approved tariff and effective date.",
+          "Compare actual billing classes, low-income assistance proposals and delivered infrastructure outcomes."
+        ],
+        "crossSystem": "Use federal/state/regional/city-neighborhood-household impact layers only where facts support a relation.",
+        "historyAndLearning": "Record the eventual decisions and results so LEAP can compare what was anticipated with what occurred.",
+        "publicationAuthority": "HUMAN_REVIEW_REQUIRED"
+      }
     },
     {
       "id": "qp:change:city-budget-2027",
@@ -452,7 +617,49 @@
         "Citywide totals can hide which services are geographically or legally restricted."
       ],
       "provenance": "Official City Finance Department source, budget status subject to further checking.",
-      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID"
+      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID",
+      "relatedWatchKeys": [
+        "county-budget-2027",
+        "csac-2027",
+        "energy-rate-2027"
+      ],
+      "leap": {
+        "schema": "qp.kos.leap-feature.v1",
+        "epistemicStatus": "ANALYTICAL_POSSIBILITIES_NOT_OFFICIAL_PROPOSALS",
+        "purpose": "Reasonable pathways worth comparing, not predicted outcomes or an institution's adopted plan.",
+        "possiblePaths": [
+          {
+            "optionKey": "city-budget-2027-path-1",
+            "title": "Prioritize necessary maintenance and essential services",
+            "mechanism": "Council may evaluate expected service impact and lifecycle costs before final allocation.",
+            "potentialBenefit": "May help avoid costly failures and disruptions.",
+            "potentialDownside": "Can limit funding available for other priorities.",
+            "risk": "Undermaintained systems can later create larger costs.",
+            "needs": "Documented asset condition, current contracts, service coverage and budgets.",
+            "decisionAuthority": "City Council is responsible for adopting appropriations under the applicable municipal process; City departments administer approved programs.",
+            "sourceBound": "The current issue's source records ground the setting; this option is a provisional editorial possibility."
+          },
+          {
+            "optionKey": "city-budget-2027-path-2",
+            "title": "Phase projects and publish comparable outcomes",
+            "mechanism": "Decision-makers could review which initiatives can be staged with transparent spending and delivery checkpoints.",
+            "potentialBenefit": "Makes actual progress easier for residents to follow.",
+            "potentialDownside": "Projects could take longer and cost more under some conditions.",
+            "risk": "A delayed capital project may still carry ongoing obligations.",
+            "needs": "Verified project schedules, financing terms and responsible offices.",
+            "decisionAuthority": "City Council is responsible for adopting appropriations under the applicable municipal process; City departments administer approved programs.",
+            "sourceBound": "The current issue's source records ground the setting; this option is a provisional editorial possibility."
+          }
+        ],
+        "nextVerification": [
+          "Track official Council action on the proposed budget.",
+          "Separate appropriations, contracts, paid invoices and completed work.",
+          "Compare city and county decisions where they share services or financing."
+        ],
+        "crossSystem": "Use federal/state/regional/city-neighborhood-household impact layers only where facts support a relation.",
+        "historyAndLearning": "Record the eventual decisions and results so LEAP can compare what was anticipated with what occurred.",
+        "publicationAuthority": "HUMAN_REVIEW_REQUIRED"
+      }
     },
     {
       "id": "qp:change:csac-2027",
@@ -537,7 +744,49 @@
         "A one-sided institutional account cannot resolve an active dispute."
       ],
       "provenance": "City official releases; County perspective and final awards need independent reconciliation.",
-      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID"
+      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID",
+      "relatedWatchKeys": [
+        "city-budget-2027",
+        "county-budget-2027",
+        "medicaid-2027"
+      ],
+      "leap": {
+        "schema": "qp.kos.leap-feature.v1",
+        "epistemicStatus": "ANALYTICAL_POSSIBILITIES_NOT_OFFICIAL_PROPOSALS",
+        "purpose": "Reasonable pathways worth comparing, not predicted outcomes or an institution's adopted plan.",
+        "possiblePaths": [
+          {
+            "optionKey": "csac-2027-path-1",
+            "title": "Reconcile funding authority and reimbursement records",
+            "mechanism": "The City and County could clarify respective funding decisions, contract terms and past reimbursements through their public processes.",
+            "potentialBenefit": "May reduce confusion for applicant organizations and residents.",
+            "potentialDownside": "Legal, contractual and budget processes can take time.",
+            "risk": "Assuming fault before examining records can damage trust.",
+            "needs": "Both governing bodies' records, dated agreements, invoices and payment stages.",
+            "decisionAuthority": "The City Council and County Commissioners decide their respective appropriations. The CSAC process has historically recommended awards, rather than independently authorizing spending.",
+            "sourceBound": "The current issue's source records ground the setting; this option is a provisional editorial possibility."
+          },
+          {
+            "optionKey": "csac-2027-path-2",
+            "title": "Track provider-level service continuity",
+            "mechanism": "Governments and service organizations could identify which confirmed awards and activities change, then evaluate lawful contingency options.",
+            "potentialBenefit": "Focuses on services residents actually use.",
+            "potentialDownside": "Replacement resources may not be available for every program.",
+            "risk": "Fear of closures may spread before an organization reports a real change.",
+            "needs": "Approved award lists, provider statements, grant restrictions and verified service data.",
+            "decisionAuthority": "The City Council and County Commissioners decide their respective appropriations. The CSAC process has historically recommended awards, rather than independently authorizing spending.",
+            "sourceBound": "The current issue's source records ground the setting; this option is a provisional editorial possibility."
+          }
+        ],
+        "nextVerification": [
+          "Track separate City and County statements, votes and budget amendments.",
+          "Compare 46 application requests with recommended and finally approved grants.",
+          "Follow recipient contracts, paid funds and actual service continuity."
+        ],
+        "crossSystem": "Use federal/state/regional/city-neighborhood-household impact layers only where facts support a relation.",
+        "historyAndLearning": "Record the eventual decisions and results so LEAP can compare what was anticipated with what occurred.",
+        "publicationAuthority": "HUMAN_REVIEW_REQUIRED"
+      }
     },
     {
       "id": "qp:change:pueblo-west-infrastructure-2027",
@@ -623,7 +872,48 @@
         "A proposed financing or road agreement may change before final authorization."
       ],
       "provenance": "October 2 official Pueblo West District summary of September 2026 Board actions; future budget/rate status must be refreshed.",
-      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID"
+      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID",
+      "relatedWatchKeys": [
+        "county-budget-2027",
+        "energy-rate-2027"
+      ],
+      "leap": {
+        "schema": "qp.kos.leap-feature.v1",
+        "epistemicStatus": "ANALYTICAL_POSSIBILITIES_NOT_OFFICIAL_PROPOSALS",
+        "purpose": "Reasonable pathways worth comparing, not predicted outcomes or an institution's adopted plan.",
+        "possiblePaths": [
+          {
+            "optionKey": "pueblo-west-infrastructure-2027-path-1",
+            "title": "Phase projects against documented system needs",
+            "mechanism": "District decision-makers could compare reliability, timing and lifecycle cost for the water and wastewater projects.",
+            "potentialBenefit": "May prioritize the systems and repairs with greatest documented need.",
+            "potentialDownside": "May postpone lower-priority work and its benefits.",
+            "risk": "Phasing can introduce future cost and operational dependencies.",
+            "needs": "Engineering plans, condition data, approved contracts, debt and project milestones.",
+            "decisionAuthority": "The Pueblo West Metropolitan District Board makes district decisions; some road funding choices involve Pueblo County and other statutory or voter authorities.",
+            "sourceBound": "The current issue's source records ground the setting; this option is a provisional editorial possibility."
+          },
+          {
+            "optionKey": "pueblo-west-infrastructure-2027-path-2",
+            "title": "Compare rate, reserves, grants and financing pathways",
+            "mechanism": "The District may examine lawful funding scenarios and roads agreements before adopting changes.",
+            "potentialBenefit": "Makes customer and taxpayer tradeoffs more transparent.",
+            "potentialDownside": "Debt and rates have different costs and distributional effects.",
+            "risk": "Projected funding assumptions may change with interest rates or grant decisions.",
+            "needs": "Updated board votes, independent fiscal analysis, utility classes and road agreements.",
+            "decisionAuthority": "The Pueblo West Metropolitan District Board makes district decisions; some road funding choices involve Pueblo County and other statutory or voter authorities.",
+            "sourceBound": "The current issue's source records ground the setting; this option is a provisional editorial possibility."
+          }
+        ],
+        "nextVerification": [
+          "Check the final adopted 2027 District budget and later board votes.",
+          "Distinguish approved water-storage contracts from future projects and completed assets.",
+          "Trace wastewater funding scenarios and road intergovernmental agreements before estimating household effects."
+        ],
+        "crossSystem": "Use federal/state/regional/city-neighborhood-household impact layers only where facts support a relation.",
+        "historyAndLearning": "Record the eventual decisions and results so LEAP can compare what was anticipated with what occurred.",
+        "publicationAuthority": "HUMAN_REVIEW_REQUIRED"
+      }
     },
     {
       "id": "qp:change:ag-overtime-2027",
@@ -702,7 +992,48 @@
         "Claims that food prices will change are predictions unless supported by real evidence."
       ],
       "provenance": "Enacted Colorado General Assembly bill summary, not individualized labor advice.",
-      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID"
+      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID",
+      "relatedWatchKeys": [
+        "medicaid-2027",
+        "county-budget-2027"
+      ],
+      "leap": {
+        "schema": "qp.kos.leap-feature.v1",
+        "epistemicStatus": "ANALYTICAL_POSSIBILITIES_NOT_OFFICIAL_PROPOSALS",
+        "purpose": "Reasonable pathways worth comparing, not predicted outcomes or an institution's adopted plan.",
+        "possiblePaths": [
+          {
+            "optionKey": "ag-overtime-2027-path-1",
+            "title": "Explain legal coverage and exceptions clearly",
+            "mechanism": "State labor officials and agricultural employers could communicate who is covered, how overtime is counted and lawful remedies.",
+            "potentialBenefit": "May reduce compliance errors and worker confusion.",
+            "potentialDownside": "Implementation requires time and accessible training.",
+            "risk": "Incorrect general advice may misstate coverage for a specific worker.",
+            "needs": "Final statutes, official rules, payroll systems and worker-protection channels.",
+            "decisionAuthority": "Colorado's enacted statute sets the requirements; employers must comply and the relevant state labor authorities oversee applicable labor rules.",
+            "sourceBound": "The current issue's source records ground the setting; this option is a provisional editorial possibility."
+          },
+          {
+            "optionKey": "ag-overtime-2027-path-2",
+            "title": "Measure actual employer and worker outcomes",
+            "mechanism": "Public aggregate analysis can compare hours, pay, staffing and costs after the new rule takes effect.",
+            "potentialBenefit": "Supports decisions using observed outcomes rather than assumptions.",
+            "potentialDownside": "Seasonality and other economic changes can complicate comparisons.",
+            "risk": "Correlation could be mistaken for proof of price or employment changes.",
+            "needs": "Comparable, privacy-protecting data and legally sound study methods.",
+            "decisionAuthority": "Colorado's enacted statute sets the requirements; employers must comply and the relevant state labor authorities oversee applicable labor rules.",
+            "sourceBound": "The current issue's source records ground the setting; this option is a provisional editorial possibility."
+          }
+        ],
+        "nextVerification": [
+          "Check final state labor guidance and exemptions.",
+          "Examine local agricultural workforce evidence before estimating impacts.",
+          "Track real employer compliance, worker pay and documented outcomes without predicting prices."
+        ],
+        "crossSystem": "Use federal/state/regional/city-neighborhood-household impact layers only where facts support a relation.",
+        "historyAndLearning": "Record the eventual decisions and results so LEAP can compare what was anticipated with what occurred.",
+        "publicationAuthority": "HUMAN_REVIEW_REQUIRED"
+      }
     }
   ],
   "featuredCount": 8,
