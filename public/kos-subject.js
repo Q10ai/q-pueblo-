@@ -15,7 +15,7 @@
    try{
      const url=new URL(href,location.origin);
      if(external?(url.protocol!=='https:'||!url.hostname.includes('.')||url.username||url.password):
-       (url.origin!==location.origin||url.protocol!=='https:'))return;
+       (url.origin!==location.origin||url.protocol!==location.protocol))return;
      const li=document.createElement('li'),a=document.createElement('a');
      a.textContent=label;a.href=url.href;
      if(external){a.rel='noopener noreferrer';a.target='_blank';}
