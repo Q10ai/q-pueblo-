@@ -36,6 +36,8 @@
   const research=by('kos-research-links');
   for(const r of (c.canonical||[]).slice(0,8))if(safeLocal(r.route))link(research,r.title+' (dated Q Pueblo research)',r.route);
   for(const r of (c.research||[]).slice(0,10))if(safeLocal(r.route))link(research,r.title+' (related study)',r.route);
+  for(const r of (c.siteRoutes||[]).slice(0,10))if(safeLocal(r.route))link(research,r.title+' (related site material)',r.route);
+  for(const r of (c.historicalIssues||[]).slice(0,8))if(/^[a-z0-9-]+$/i.test(r.id))link(research,r.title+' (historical record, recheck required)','issues.html#'+encodeURIComponent(r.id));
   for(const r of (c.connectedIssues||[]).slice(0,10))if(/^[a-z0-9-]+$/.test(r.id))link(research,r.title+' (historical issue lead)','connections.html?issue='+encodeURIComponent(r.id));
   for(const r of (c.connectedEntities||[]).slice(0,8))if(/^[a-z0-9-]+$/.test(r.id))link(research,r.name+' (entity label; identity must be checked)','governance-entities.html?entity='+encodeURIComponent(r.id));
   by('kos-connected-research').hidden=research.children.length===0;
