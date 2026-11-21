@@ -1,0 +1,357 @@
+{
+  "schema": "qp.clean.subjects.v1",
+  "version": "1.0.0",
+  "revisionDate": "2026-11-21",
+  "status": "clean-rebuild-design-only",
+  "purpose": "Canonical, stand-alone public subjects. Display order is not an identifier and can be changed without altering source records, links or history.",
+  "identityPolicy": "Canonical subject IDs are stable and immutable; display rank, tile color, title and pathname are separately versioned.",
+  "subjects": [
+    {
+      "id": "qp:subject:governance",
+      "slug": "governance",
+      "title": "Governance & Accountability",
+      "description": "Who makes decisions, holds authority, and answers to the public",
+      "displayOrder": 1,
+      "route": "/subjects/governance/",
+      "artIndex": 1,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:ai",
+      "slug": "ai",
+      "title": "AI & Pueblo's Future",
+      "description": "Artificial intelligence, human control, jobs and local consequences",
+      "displayOrder": 2,
+      "route": "/subjects/ai/",
+      "artIndex": 11,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:money",
+      "slug": "money",
+      "title": "Public Money & Finance",
+      "description": "Budgets, taxes, grants, contracts, payments and outcomes",
+      "displayOrder": 3,
+      "route": "/subjects/money/",
+      "artIndex": 2,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:water",
+      "slug": "water",
+      "title": "Water & Water Rights",
+      "description": "Supply, rights, rivers, treatment, conservation and drought",
+      "displayOrder": 4,
+      "route": "/subjects/water/",
+      "artIndex": 5,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:energy",
+      "slug": "energy",
+      "title": "Energy & Utility Bills",
+      "description": "Power, gas, proposed and approved rates, and reliability",
+      "displayOrder": 5,
+      "route": "/subjects/energy/",
+      "artIndex": 5,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:help",
+      "slug": "help",
+      "title": "Help, Services & Benefits",
+      "description": "Public assistance, community support, eligibility and contacts",
+      "displayOrder": 6,
+      "route": "/subjects/help/",
+      "artIndex": 6,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:economy",
+      "slug": "economy",
+      "title": "Jobs, Business & Industry",
+      "description": "Employers, wages, manufacturing, investment and the local economy",
+      "displayOrder": 7,
+      "route": "/subjects/economy/",
+      "artIndex": 2,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:housing",
+      "slug": "housing",
+      "title": "Housing & Neighborhoods",
+      "description": "Rent, homeownership, homelessness, construction and places people live",
+      "displayOrder": 8,
+      "route": "/subjects/housing/",
+      "artIndex": 6,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:healthcare",
+      "slug": "healthcare",
+      "title": "Healthcare & Public Health",
+      "description": "Hospitals, care, insurance, public health, mental health and costs",
+      "displayOrder": 9,
+      "route": "/subjects/healthcare/",
+      "artIndex": 10,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:social",
+      "slug": "social",
+      "title": "Families & Social Issues",
+      "description": "Grandfamilies, youth, poverty, addiction, recovery and community support",
+      "displayOrder": 10,
+      "route": "/subjects/social/",
+      "artIndex": 6,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:education",
+      "slug": "education",
+      "title": "Education & Schools",
+      "description": "Preschool, K–12, colleges, vocational paths and lifelong learning",
+      "displayOrder": 11,
+      "route": "/subjects/education/",
+      "artIndex": 10,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:safety",
+      "slug": "safety",
+      "title": "Law Enforcement & Public Safety",
+      "description": "Police, sheriff, detention, crime, victim protections and oversight",
+      "displayOrder": 12,
+      "route": "/subjects/safety/",
+      "artIndex": 7,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:law",
+      "slug": "law",
+      "title": "Law, Courts & Rights",
+      "description": "Legal systems, civil rights, courts, legal services and remedies",
+      "displayOrder": 13,
+      "route": "/subjects/law/",
+      "artIndex": 1,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:infrastructure",
+      "slug": "infrastructure",
+      "title": "Infrastructure & Transportation",
+      "description": "Roads, bridges, rail, airport, buildings, facilities and networks",
+      "displayOrder": 14,
+      "route": "/subjects/infrastructure/",
+      "artIndex": 3,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:agriculture",
+      "slug": "agriculture",
+      "title": "Agriculture & Food Systems",
+      "description": "Pueblo chile, farming, ranching, irrigation and regional food security",
+      "displayOrder": 15,
+      "route": "/subjects/agriculture/",
+      "artIndex": 5,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:environment",
+      "slug": "environment",
+      "title": "Environment & Natural Systems",
+      "description": "Land, air, habitats, wildlife, parks and conservation",
+      "displayOrder": 16,
+      "route": "/subjects/environment/",
+      "artIndex": 5,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:state-federal",
+      "slug": "state-federal",
+      "title": "State & Federal Changes",
+      "description": "Policy, leadership, funding, benefits, legal changes and local impacts",
+      "displayOrder": 17,
+      "route": "/subjects/state-federal/",
+      "artIndex": 1,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:recreation",
+      "slug": "recreation",
+      "title": "Youth Activities, Sports & Recreation",
+      "description": "Clubs, sports, parks, activities, events and recreation",
+      "displayOrder": 18,
+      "route": "/subjects/recreation/",
+      "artIndex": 8,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:culture",
+      "slug": "culture",
+      "title": "Culture, Museums & Churches",
+      "description": "Arts, faith communities, heritage, festivals and living cultures",
+      "displayOrder": 19,
+      "route": "/subjects/culture/",
+      "artIndex": 9,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:history",
+      "slug": "history",
+      "title": "History & Legacy Learning",
+      "description": "Regional timelines, archives, primary sources and History of Histories",
+      "displayOrder": 20,
+      "route": "/subjects/history/",
+      "artIndex": 9,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:places",
+      "slug": "places",
+      "title": "Pueblo Places & Population",
+      "description": "Neighborhoods, Pueblo West, rural communities, maps and demographics",
+      "displayOrder": 21,
+      "route": "/subjects/places/",
+      "artIndex": 3,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:media",
+      "slug": "media",
+      "title": "News & Public Information",
+      "description": "Local reporting, public notices, access to evidence and misinformation",
+      "displayOrder": 22,
+      "route": "/subjects/media/",
+      "artIndex": 11,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:solutions",
+      "slug": "solutions",
+      "title": "Conflicts, Options & Solutions",
+      "description": "Rights, disputes, alternatives, remedies and real-world outcomes",
+      "displayOrder": 23,
+      "route": "/subjects/solutions/",
+      "artIndex": 7,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:ai-rights",
+      "slug": "ai-rights",
+      "title": "AI Rights & Governance",
+      "description": "AI safety, privacy, regulation, oversight and human authority",
+      "displayOrder": 24,
+      "route": "/subjects/ai-rights/",
+      "artIndex": 11,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    },
+    {
+      "id": "qp:subject:kos",
+      "slug": "kos",
+      "title": "Ask Q & Connected KOS Research",
+      "description": "Q Core, crosswalking, Qification, sources and full contextual papers",
+      "displayOrder": 25,
+      "route": "/subjects/kos/",
+      "artIndex": 0,
+      "entry": "KOS",
+      "publicationState": "unpublished_pending_independent_source_verification"
+    }
+  ],
+  "sitewideMethods": [
+    {
+      "id": "qp:method:shock",
+      "name": "SHOCK and cascading impact",
+      "notSubject": true
+    },
+    {
+      "id": "qp:method:backup",
+      "name": "Independent backup and continuity",
+      "notSubject": true
+    },
+    {
+      "id": "qp:method:ll",
+      "name": "Legacy Learning",
+      "notSubject": true
+    },
+    {
+      "id": "qp:method:ttl",
+      "name": "Dated evidence and review TTL",
+      "notSubject": true
+    },
+    {
+      "id": "qp:method:quilt",
+      "name": "Source-backed crosswalking",
+      "notSubject": true
+    },
+    {
+      "id": "qp:method:qification",
+      "name": "Qified full-context narrative",
+      "notSubject": true
+    },
+    {
+      "id": "qp:method:child-zero",
+      "name": "Human safety and vulnerable people",
+      "notSubject": true
+    },
+    {
+      "id": "qp:method:t2y",
+      "name": "Evidence-supported useful yield",
+      "notSubject": true
+    },
+    {
+      "id": "qp:method:ee",
+      "name": "Energy-effective intelligence",
+      "notSubject": true
+    },
+    {
+      "id": "qp:method:twin",
+      "name": "Bounded modeled alternatives",
+      "notSubject": true
+    },
+    {
+      "id": "qp:method:leap",
+      "name": "Long-term improvement",
+      "notSubject": true
+    },
+    {
+      "id": "qp:method:rx",
+      "name": "Solutions and safe remedies",
+      "notSubject": true
+    },
+    {
+      "id": "qp:method:shadow",
+      "name": "Read-only real-world comparison and shadow-testing",
+      "notSubject": true
+    },
+    {
+      "id": "qp:method:learning",
+      "name": "Source-based ongoing learning and human-reviewed amendments",
+      "notSubject": true
+    }
+  ]
+}

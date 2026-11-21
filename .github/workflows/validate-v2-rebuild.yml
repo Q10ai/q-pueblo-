@@ -1,0 +1,41 @@
+name: Q Pueblo v2 dual KOS build checks
+on:
+  push:
+    branches:
+      - q-pueblo/clean-rebuild-v2-2026-11-21
+    paths:
+      - "rebuild/**"
+      - ".github/workflows/validate-v2-rebuild.yml"
+  pull_request:
+    paths:
+      - "rebuild/**"
+      - ".github/workflows/validate-v2-rebuild.yml"
+permissions:
+  contents: read
+jobs:
+  dual-context:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Static syntax checks
+        run: |
+          node --check rebuild/src/kos/planes.mjs
+          node --check rebuild/src/kos/memory.mjs
+          node --check rebuild/src/kos/breakdown.mjs
+          node --check rebuild/src/kos/linear.mjs
+          node --check rebuild/src/kos/index.mjs
+          node --check rebuild/src/kos/production.mjs
+          node --check rebuild/src/kos/twin-shadow.mjs
+          node --check rebuild/src/kos/learning-loop.mjs
+          node --check rebuild/src/kos/expert-panel.mjs
+          node --check rebuild/src/kos/panel-runner.mjs
+          node --check rebuild/tests/panel-runner.test.mjs
+          node --check rebuild/tests/expert-panel.test.mjs rebuild/tests/panel-runner.test.mjs
+          node --check rebuild/tests/twin-shadow-learning.test.mjs rebuild/tests/expert-panel.test.mjs
+          node --check rebuild/tests/human-concerns.test.mjs
+          node --check rebuild/tests/dual-context.test.mjs
+      - name: Safe dual KOS context tests
+        run: node --test rebuild/tests/dual-context.test.mjs rebuild/tests/human-concerns.test.mjs rebuild/tests/twin-shadow-learning.test.mjs

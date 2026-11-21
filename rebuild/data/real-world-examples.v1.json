@@ -1,0 +1,110 @@
+{
+  "schema": "qp.real-world-example-leads.v1",
+  "asOf": "2026-11-21",
+  "purpose": "A small set of externally located real Pueblo source examples that KOS may investigate and crosswalk. These are source discovery leads, not v2 verified claims or production-ready case studies.",
+  "policy": "Only show examples when real and relevant. Admit into a published output only after independently validating the exact original source, date, legal/financial terminology and claim in the v2 evidence ledger. Do not produce empty example cards for other subjects.",
+  "examples": [
+    {
+      "id": "ex-pueblo-1921-flood",
+      "subjectIds": [
+        "qp:subject:water",
+        "qp:subject:history",
+        "qp:subject:infrastructure",
+        "qp:subject:environment"
+      ],
+      "name": "Pueblo's 1921 Arkansas River flood",
+      "eventPeriod": "1921-06",
+      "originalPublisher": "National Weather Service",
+      "originalUrl": "https://www.weather.gov/safety/flood-states-co",
+      "sourceClaim": "The Weather Service's Colorado flood history describes the June 1921 Arkansas River flood at Pueblo.",
+      "possibleOutputTypes": [
+        "REAL_EXAMPLE",
+        "LEARNING",
+        "SCENARIO"
+      ],
+      "relevance": "Historical example of a natural event affecting transportation, homes, industry and long-term flood planning.",
+      "status": "SOURCE_LOCATED_NOT_ADMITTED"
+    },
+    {
+      "id": "ex-2027-pueblo-county-budget",
+      "subjectIds": [
+        "qp:subject:governance",
+        "qp:subject:money",
+        "qp:subject:state-federal"
+      ],
+      "name": "Pueblo County's preliminary 2027 budget",
+      "eventPeriod": "2026",
+      "originalPublisher": "Pueblo County Budget and Finance",
+      "originalUrl": "https://county.pueblo.org/budget-and-finance-department/2027-budget",
+      "sourceClaim": "Pueblo County publishes a 2027 preliminary budget document for public review.",
+      "possibleOutputTypes": [
+        "REAL_EXAMPLE",
+        "FINANCE_VIEW",
+        "RX_OPTION"
+      ],
+      "relevance": "The proposal is an example for explaining public budgeting; proposed figures are not equivalent to final approval, spending or outcomes.",
+      "status": "SOURCE_LOCATED_NOT_ADMITTED"
+    },
+    {
+      "id": "ex-pueblo-water-board",
+      "subjectIds": [
+        "qp:subject:governance",
+        "qp:subject:water",
+        "qp:subject:money"
+      ],
+      "name": "Pueblo Water's five-member governing board",
+      "eventPeriod": "2026",
+      "originalPublisher": "Pueblo Water",
+      "originalUrl": "https://pueblowater.org/our-board/",
+      "sourceClaim": "Pueblo Water explains its board's roles in policy, approving budgets, setting rates and long-range planning.",
+      "possibleOutputTypes": [
+        "REAL_EXAMPLE",
+        "ENTITY_VIEW",
+        "FINANCE_VIEW"
+      ],
+      "relevance": "Illustrates crosswalking public authority, drinking water, infrastructure and household utility costs.",
+      "status": "SOURCE_LOCATED_NOT_ADMITTED"
+    },
+    {
+      "id": "ex-whitlock-water-treatment",
+      "subjectIds": [
+        "qp:subject:water",
+        "qp:subject:infrastructure",
+        "qp:subject:healthcare"
+      ],
+      "name": "Whitlock Water Treatment Plant and drinking water",
+      "eventPeriod": "2026",
+      "originalPublisher": "Pueblo Water",
+      "originalUrl": "https://pueblowater.org/your-water/",
+      "sourceClaim": "Pueblo Water describes treatment at its Whitlock facility and its responsibility for drinking-water quality.",
+      "possibleOutputTypes": [
+        "REAL_EXAMPLE",
+        "ENTITY_VIEW",
+        "SCENARIO"
+      ],
+      "relevance": "Illustrates an institution, physical asset, treatment process and public health connection.",
+      "status": "SOURCE_LOCATED_NOT_ADMITTED"
+    },
+    {
+      "id": "ex-pueblo-wastewater",
+      "subjectIds": [
+        "qp:subject:water",
+        "qp:subject:environment",
+        "qp:subject:infrastructure",
+        "qp:subject:healthcare"
+      ],
+      "name": "Pueblo's DiIorio Water Reclamation Facility",
+      "eventPeriod": "2026",
+      "originalPublisher": "City of Pueblo",
+      "originalUrl": "https://www.pueblo.us/281/Reclamation-Facility",
+      "sourceClaim": "The City describes the DiIorio facility as treating wastewater from homes, businesses and industry.",
+      "possibleOutputTypes": [
+        "REAL_EXAMPLE",
+        "SCENARIO",
+        "ENTITY_VIEW"
+      ],
+      "relevance": "Connects wastewater, health, environment, industry and infrastructure continuity.",
+      "status": "SOURCE_LOCATED_NOT_ADMITTED"
+    }
+  ]
+}

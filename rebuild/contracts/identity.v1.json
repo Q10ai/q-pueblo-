@@ -1,0 +1,211 @@
+{
+  "schema": "qp.clean.identity.v1",
+  "date": "2026-11-21",
+  "status": "proposed-versioned-contract",
+  "principles": [
+    "Never use a list position, section number, display title, URL pathname or date as a canonical record identity.",
+    "IDs do not change when a tile moves, an office changes hands, a story is amended, or the site is redesigned.",
+    "Use individual identities for original sources, source versions, claims, relationships, events, people, roles, institutions, funds, projects and derived stories.",
+    "Link a person to a role through dated, evidence-backed appointments, not through an immutable role occupant field.",
+    "Legacy records are archival leads until claim-by-claim checked against original materials; they are never imported as authoritative v2 facts.",
+    "Every canonical link resolves through one registry. Maintain redirects or historical links for verified old routes. Never redirect two different legacy subjects to one new subject by title alone.",
+    "Keep historical amendments and supersessions in a lineage graph. TTL expiry requires re-verification, never deletion.",
+    "All public publication and corrections retain human review and rollback.",
+    "Twin, Shadow and Learning IDs refer to reviewable model/candidate artifacts, never evidence of operational authority; models do not mint original source claims."
+  ],
+  "kinds": [
+    {
+      "kind": "subject",
+      "format": "qp:subject:<reserved-semantic-key>",
+      "notes": "Small, editorially governed set; stable permanently once released"
+    },
+    {
+      "kind": "method",
+      "format": "qp:method:<reserved-semantic-key>",
+      "notes": "Cross-cutting analytical lenses, not standalone subjects unless separately authored"
+    },
+    {
+      "kind": "entity",
+      "format": "qp:entity:<uuid>",
+      "notes": "Organization, department, agency, regulated company or other institution"
+    },
+    {
+      "kind": "person",
+      "format": "qp:person:<uuid>",
+      "notes": "Publicly relevant individual only when justified; no sensitive personal records"
+    },
+    {
+      "kind": "role",
+      "format": "qp:role:<uuid>",
+      "notes": "Position independent of person; incumbency is a dated claim with authority"
+    },
+    {
+      "kind": "place",
+      "format": "qp:place:<uuid>",
+      "notes": "Stable geographic unit; include shapefile/official boundary edition"
+    },
+    {
+      "kind": "issue",
+      "format": "qp:issue:<uuid>",
+      "notes": "One issue identity across multiple subject families"
+    },
+    {
+      "kind": "study",
+      "format": "qp:study:<uuid>",
+      "notes": "One research project through multiple editions"
+    },
+    {
+      "kind": "source",
+      "format": "qp:source:<uuid>",
+      "notes": "Issuing document/work; versions and retrieval times separate"
+    },
+    {
+      "kind": "claim",
+      "format": "qp:claim:<uuid>",
+      "notes": "Atomic proposition with evidence states and temporal scope"
+    },
+    {
+      "kind": "edge",
+      "format": "qp:edge:<uuid>",
+      "notes": "Directed typed relation backed by claim IDs and effective dates"
+    },
+    {
+      "kind": "event",
+      "format": "qp:event:<uuid>",
+      "notes": "Historical or current event with start/end and status"
+    },
+    {
+      "kind": "fund",
+      "format": "qp:fund:<uuid>",
+      "notes": "Fund, grant, bond, appropriation or other financing instrument"
+    },
+    {
+      "kind": "transaction",
+      "format": "qp:transaction:<uuid>",
+      "notes": "Proposed, authorized, awarded, obligated, invoiced, paid and outcome as different events"
+    },
+    {
+      "kind": "asset",
+      "format": "qp:asset:<uuid>",
+      "notes": "Infrastructure or physical asset independent of project"
+    },
+    {
+      "kind": "project",
+      "format": "qp:project:<uuid>",
+      "notes": "Named project across revisions, contracts and construction phases"
+    },
+    {
+      "kind": "twin",
+      "format": "qp:twin:<uuid>",
+      "notes": "Bounded system-model instance; identity is not an operational safety certification or an observed fact"
+    },
+    {
+      "kind": "shadow",
+      "format": "qp:shadow:<uuid>",
+      "notes": "Read-only comparator or observation candidate; no personal replica or execution authority in public systems"
+    },
+    {
+      "kind": "learning",
+      "format": "qp:learning:<uuid>",
+      "notes": "Append-only sourced learning/review candidate; separately human-approved amendment required"
+    },
+    {
+      "kind": "paper",
+      "format": "qp:paper:<uuid>",
+      "notes": "One Qified contextual article identity; each edition independently dated"
+    },
+    {
+      "kind": "resource",
+      "format": "qp:resource:<uuid>",
+      "notes": "Service or external learning resource; check eligibility, hours, current contact"
+    },
+    {
+      "kind": "lesson",
+      "format": "qp:lesson:<uuid>",
+      "notes": "Educational unit across topics, levels and age editions"
+    }
+  ],
+  "uuidPolicy": "UUID version 4 or 7 generated by a trusted creation service, never invented from a title. No new real-world entity UUID is issued from a candidate name match alone.",
+  "recordContract": {
+    "requiredForAll": [
+      "id",
+      "kind",
+      "createdAt",
+      "recordVersion",
+      "visibility",
+      "provenanceState"
+    ],
+    "sourceVersionFields": [
+      "documentIssuedAt",
+      "eventDate",
+      "retrievedAt",
+      "checkedAt",
+      "reviewDueAt",
+      "supersedesVersion",
+      "contentFingerprint",
+      "publicationRights"
+    ],
+    "claimFields": [
+      "proposition",
+      "scope",
+      "subjectId",
+      "timeBasis",
+      "sourceEvidence",
+      "state",
+      "verifiedAt",
+      "reviewDueAt",
+      "contradictedBy"
+    ],
+    "relationshipFields": [
+      "fromId",
+      "toId",
+      "relationType",
+      "effectiveFrom",
+      "effectiveTo",
+      "supportingClaimIds",
+      "verificationState",
+      "confidenceBasis"
+    ],
+    "paperFields": [
+      "subjectIds",
+      "scope",
+      "edition",
+      "publishedAt",
+      "readabilityTarget",
+      "claimIds",
+      "sourceVersionIds",
+      "reviewer",
+      "approvalStatus",
+      "supersedesEdition"
+    ],
+    "decisionStates": [
+      "CANDIDATE",
+      "VERIFIED_CURRENT",
+      "VERIFIED_HISTORICAL",
+      "CONTESTED",
+      "RECHECK_REQUIRED",
+      "REJECTED",
+      "SUPERSEDED"
+    ]
+  },
+  "linkPolicy": {
+    "canonicalSubjectTemplate": "/subjects/{subject_slug}/",
+    "canonicalPaperTemplate": "/research/{paper_id}/",
+    "canonicalEntityTemplate": "/who/{entity_id}/",
+    "canonicalIssueTemplate": "/issues/{issue_id}/",
+    "idsAlwaysRouteViaResolver": true,
+    "queryPartsNeverIdentity": true,
+    "unknownLink": "404 with parent subject navigation, never silent fallback to unrelated report",
+    "legacyRoute": "Keep archives readable; verified explicit 301/308 redirects only if content equivalence proven",
+    "sourceUrls": "Original HTTPS URL preserved unchanged, including publisher/document version; retrieval date and content digest stored separately",
+    "citation": "Citations point to exact source version, supporting excerpt/locator, verification date and claim IDs; render numbers per paper only as visual footnote order"
+  },
+  "security": {
+    "forbidAutomaticEntityJoins": true,
+    "privateDataPublicExposure": false,
+    "humanEditorialApproval": true,
+    "doNotTurnHistoricalLeadsIntoLiveAlerts": true,
+    "protectChildrenVictimsAndMedicalRecords": true,
+    "avoidAutonomousPublishing": true
+  }
+}

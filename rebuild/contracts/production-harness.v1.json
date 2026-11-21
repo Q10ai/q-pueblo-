@@ -1,0 +1,121 @@
+{
+  "schema": "qp.kos.production-harness.v1",
+  "asOf": "2026-11-21",
+  "state": "reference-gates",
+  "stages": [
+    {
+      "id": "intake",
+      "contract": "scope, consent, public/private classification, no secrets",
+      "allowAction": false
+    },
+    {
+      "id": "retrieval",
+      "contract": "public original source/version admission, old research as lead only",
+      "allowAction": false
+    },
+    {
+      "id": "memory",
+      "contract": "human-admitted scoped, dated, provenance-linked and non-evidentiary",
+      "allowAction": false
+    },
+    {
+      "id": "breakdown",
+      "contract": "typed nodes, directed relationships, source claims, planes and bounded resources",
+      "allowAction": false
+    },
+    {
+      "id": "twin-shadow",
+      "contract": "Only relevant source-linked public/aggregate Twin and Shadow comparison candidates; no public personal replica, no live-system control or model-as-proof",
+      "allowAction": false
+    },
+    {
+      "id": "expert-panel",
+      "contract": "Select topic-relevant specialist disciplines and independent skeptic/alternative/consequence review; source-link every finding, label simulated AI vs verified human expertise, record independence groups, reconcile against original evidence, never vote on truth or disclose private Q methods",
+      "allowAction": false
+    },
+    {
+      "id": "linear",
+      "contract": "chronological source-linked paragraphs; grade-10 editorial review needed",
+      "allowAction": false
+    },
+    {
+      "id": "human-context",
+      "contract": "Answer documented concerns and misunderstandings with source-weighted facts, material uncertainty, rights and real options; no inferred beliefs or false balance",
+      "allowAction": false
+    },
+    {
+      "id": "rx",
+      "contract": "rights, conflicts, benefits, downsides, risks, needs, gaps, responsible parties and legal options",
+      "allowAction": false
+    },
+    {
+      "id": "production",
+      "contract": "public allowlist and source-backed outputs, no internalOnly serializations",
+      "allowAction": false
+    },
+    {
+      "id": "privacy",
+      "contract": "private record and secret scanning, no protected Q internals",
+      "allowAction": false
+    },
+    {
+      "id": "review",
+      "contract": "human editorial/sign-off, high stakes, originality and accessibility checks",
+      "allowAction": false
+    },
+    {
+      "id": "release",
+      "contract": "exact artifact signature/version readback and rollback",
+      "allowAction": false
+    },
+    {
+      "id": "learning-review",
+      "contract": "Source corrections, historical version differences, feedback and test outcomes become learning candidates; no autonomous promotion or silent rewrite",
+      "allowAction": false
+    }
+  ],
+  "capabilities": {
+    "implemented": [
+      "public-context-only deterministic breakdown graph",
+      "linear cited sequence",
+      "provisional product packager",
+      "synthetic unit tests"
+    ],
+    "notOperational": [
+      "autonomous primary-source retrieval",
+      "independently corroborated real case production for all 25 topics",
+      "AI-authored comprehensive paper generation",
+      "private Q access or connectors",
+      "public publishing and approval workflow"
+    ],
+    "budgets": {
+      "maxGraphHops": 3,
+      "maxPublicProductsPerRequest": 40,
+      "maxSourceReferences": 150,
+      "reviewRequired": true
+    }
+  },
+  "releaseChecks": [
+    "No private/secret/control payload appears in public product JSON",
+    "Every cited claim maps to admitted checked source and permitted document version",
+    "Legacy references are not automatically evidence",
+    "Current and proposed states are never conflated",
+    "Each output carries type, as-of, revision, fingerprint, source/claim provenance and release state",
+    "Real examples are specific, sourced, relevant and never invented",
+    "RX compares positives, negatives, risks, needs, gaps and rights with human authority",
+    "Scenarios are not presented as observed incidents or forecasts",
+    "No blank output tiles or product classes",
+    "No model receives permission to publish or access restricted Q internals",
+    "Accessibility and plain-language acceptance are independently reviewed",
+    "Exact approved artifact is verified after deployment",
+    "Public concerns and fears are never inferred from a person's private profile or merely because a question was asked",
+    "Where views conflict, sources are weighted by strength and scope; unsupported alternatives are not presented as equally true",
+    "Every concern explainer includes supported facts, meaningful uncertainty, real-world implications, claim/source provenance and provisional review state",
+    "Twins and shadows cannot certify their source inputs, impersonate individuals or control public systems",
+    "Human-admitted source corrections and red-team findings retain history, provenance and review before production changes",
+    "Expert-panel role planning never claims a real expert or external LLM was consulted without a separate authenticated receipt",
+    "Correlated agents or shared LLM providers do not count as independent corroboration; source-check against original evidence",
+    "External AI review requires explicit provider-specific authorization and a minimum public-data-only disclosure capsule",
+    "Panel disagreements and novel links create human-reviewed source leads or correction candidates, not automatic fact promotion"
+  ]
+}
