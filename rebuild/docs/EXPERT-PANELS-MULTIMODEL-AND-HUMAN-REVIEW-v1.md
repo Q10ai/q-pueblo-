@@ -61,7 +61,22 @@ Without explicit provider-specific permission **nothing is sent**. A candidate e
 
 The candidate package says **PREPARED_NOT_SENT**. It is not an external request or proof of secure transport. A future actual connector requires authenticated provider identity, data classification and DLP review, legal retention and licensing terms, independent egress controls, token/cost limits, abuse monitoring, revocation, secure audit and readback.
 
-### Tests and release rules
+#
+## Governed provider-adapter harness (reference implementation)
+
+`rebuild/src/kos/panel-runner.mjs` adds `runApprovedPanel` as an **asynchronous integration boundary**. KOS itself does not contain provider keys, endpoint addresses, provider SDKs, AI system instructions or user-specific private records.
+
+A separately authenticated backend may register adapters with an explicit provider ID, independence group, approved specialist roles, read-only/public-data classification and review callback. A role is assigned to a permitted adapter only after (1) the feature is enabled, (2) a genuine budget guard can reserve the call, (3) source rights and provider/data-use permissions are approved, and (4) a sanitized public-source capsule has passed its disclosure gate.
+
+Reviewers receive the same evidence capsule independently—no previous AI answer, hidden private memory or other agent's draft. The harness limits roles, calls and concurrency, validates receipt role and provider identity, and runs the source-ledger reconciliation. Failed adapters are recorded rather than silently replaced with simulated expertise. A return value of `externalContacted: true` is meaningful **only when an actual independently connected approved adapter performed a call**. The current repository has no such provider adapter configured; its tests use fictional mock callbacks.
+
+An injected adapter is a privileged boundary controlled by the future server integrator. **A caller's Boolean approval flags alone are not proof of legal authorization**; a production implementation must obtain and verify those permissions through actual account and consent records, provider agreements, technical egress/DLP enforcement, key custody, per-provider spend limits, measured cost and rate limits, cancellation, privacy audits and human review. Do not put executable adapters in the browser.
+
+**Harness tests:** `rebuild/tests/panel-runner.test.mjs` verifies disabled-by-default behavior, mock internal/external reviewer independence, rejected provider identities, missing budget guard, denied permission, wrong reviewer roles and false action claims. They are engineering checks, not independent model-quality evaluation or penetration testing.
+
+The actual public research workflow must still retrieve original evidence, calibrate model quality, validate source provenance, check reviewer independence, run adversarial samples and ensure high-stakes cases have qualified human specialists before any production release.
+
+## Tests and release rules
 
 - Every subject has directly relevant specialist coverage, and at least source/skeptic/alternative/consequence/editorial checks as appropriate to the topic.
 - No false equivalence: evidence quality and authority, not AI voting, determine admissible claims.
