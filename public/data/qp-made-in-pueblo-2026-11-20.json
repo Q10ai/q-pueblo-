@@ -1,0 +1,130 @@
+{
+  "schema": "qp-living-production-economy-v1",
+  "packet_id": "QP-ECON-MADE-20261120",
+  "version": "0.1.0",
+  "as_of": "2026-11-20",
+  "review_after": "2026-11-23",
+  "public_status": "candidate_human_review",
+  "runtime_tracking": false,
+  "source_article": "https://hartbeatofthecity.substack.com/p/pueblo-countys-economy-survives-on-making-things",
+  "observed_manufacturing_jobs": {
+    "value": 5000,
+    "geography": "Pueblo MSA",
+    "period": "2026-08",
+    "precision": "rounded_to_nearest_100",
+    "source": "https://www.bls.gov/eag/eag.co_pueblo_msa.htm"
+  },
+  "projects": [
+    {
+      "id": "pueblo-little-leaf-2026",
+      "name": "Little Leaf Farms",
+      "type": "greenhouse_agriculture",
+      "status": "proposed_council_decision_pending",
+      "as_of": "2026-11-20",
+      "investment_first_phase_usd": {
+        "value": 150000000,
+        "kind": "reported_proposal"
+      },
+      "investment_possible_next_phase_usd": {
+        "value": 100000000,
+        "kind": "reported_proposal"
+      },
+      "jobs": {
+        "value": 200,
+        "comparator": "greater_than",
+        "stage": "projected_not_verified"
+      },
+      "city_council_next_date": "2026-11-23",
+      "actual_jobs_verified": null,
+      "public_disbursement_verified_usd": null,
+      "source": "https://civiciq.com/public-project/the-council-scheduled-an-ordinance-approving-an-employment-b0a976cd-88af-56f9-b351-2cbdad43090d"
+    },
+    {
+      "id": "pueblo-ecoasis-2026",
+      "name": "Ecoasis AgTech Park",
+      "type": "greenhouse_and_data_center",
+      "status": "land_use_proposal",
+      "as_of": "2026-11-20",
+      "acreage": {
+        "campus_proposed": 272,
+        "greenhouses_proposed": 160
+      },
+      "jobs": {
+        "value": 1000,
+        "stage": "developer_full_buildout_projection"
+      },
+      "actual_jobs_verified": null,
+      "approved_annual_water_acre_feet": null,
+      "verified_peak_power_mw": null,
+      "source": "https://krdo.com/news/2026/11/16/greenhouse-development-could-bring-jobs-south-of-pueblo-people-still-unsure-because-of-included-data-center/",
+      "prior_packet": "QP-ECON-2026-ECOASIS-001"
+    },
+    {
+      "id": "pueblo-project-falcon-2026",
+      "name": "Project Falcon",
+      "type": "advanced_tissue_manufacturing",
+      "status": "reported_land_option_mou_pending",
+      "as_of": "2026-11-20",
+      "investment_projected_usd": {
+        "value": 800000000,
+        "kind": "multiphase_reported_proposal"
+      },
+      "jobs": {
+        "value": 293,
+        "stage": "projected_not_verified"
+      },
+      "wage_average_projected_usd": 80000,
+      "approved_public_incentives_verified_usd": null,
+      "public_disbursement_verified_usd": null,
+      "actual_jobs_verified": null,
+      "source": "https://www.koaa.com/news/local-news/in-your-community/pueblo/pueblo-mayor-provides-update-on-secretive-project-falcon",
+      "related_page": "project-falcon.html"
+    },
+    {
+      "id": "pueblo-driven-plastics-2026",
+      "name": "Driven Plastics",
+      "type": "recycled_plastic_asphalt",
+      "status": "existing_activity_documented_long_term_outcome_unverified",
+      "as_of": "2026-11-20",
+      "projected_incentive_amount_usd": null,
+      "verified_lifecycle_savings_usd": null,
+      "verified_new_jobs": null,
+      "road_example": "Medal of Honor Boulevard",
+      "source": "https://krdo.com/news/top-stories/2026/04/10/pueblo-countys-new-medal-of-honor-boulevard-officially-opens-today/"
+    }
+  ],
+  "crosswalk": [
+    "report-half-cent-2026.html",
+    "project-falcon.html",
+    "report-lime-road-costs.html",
+    "report-water-budget-evidence.html",
+    "learn-pueblo.html",
+    "twin.html"
+  ],
+  "evidence_rules": {
+    "claim_stages": [
+      "proposed",
+      "approved",
+      "contracted",
+      "disbursed",
+      "spent",
+      "observed_outcome"
+    ],
+    "non_additive": [
+      "capital_investment",
+      "public_incentives",
+      "projected_jobs",
+      "economic_output"
+    ],
+    "editorial_review_required": true
+  },
+  "twin": {
+    "status": "concept_only",
+    "scenarios": [
+      "funded_delivery",
+      "partial_or_delayed",
+      "abandoned"
+    ],
+    "simulation_receipt": null
+  }
+}
