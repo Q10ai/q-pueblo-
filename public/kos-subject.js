@@ -23,8 +23,8 @@
    }catch{/* do not render untrusted link */}
  };
  const safeLocal=href=>/^(?:[a-z0-9-]+\/)*[a-z0-9-]+\.html(?:#[a-z0-9-]+)?$/i.test(href);
- function clear(){for(const id of ['kos-source-links','kos-research-links','kos-archival-links','kos-paper-sections','kos-paper-sources'])by(id).replaceChildren();
-  for(const id of ['kos-connected-sources','kos-connected-research','kos-archival-leads','kos-verified-story','kos-paper-output','kos-on-demand'])by(id).hidden=true;
+ function clear(){for(const id of ['kos-source-links','kos-research-links','kos-archival-links','kos-paper-sections','kos-paper-sources','kos-impact-events'])by(id).replaceChildren();
+  for(const id of ['kos-connected-sources','kos-connected-research','kos-archival-leads','kos-verified-story','kos-paper-output','kos-on-demand','kos-impact-lens'])by(id).hidden=true;
   text('kos-paper-status','');}
  function renderConnections(c){
   const sources=by('kos-source-links');
@@ -41,6 +41,16 @@
   for(const r of (c.connectedIssues||[]).slice(0,10))if(/^[a-z0-9-]+$/.test(r.id))link(research,r.title+' (historical issue lead)','connections.html?issue='+encodeURIComponent(r.id));
   for(const r of (c.connectedEntities||[]).slice(0,8))if(/^[a-z0-9-]+$/.test(r.id))link(research,r.name+' (entity label; identity must be checked)','governance-entities.html?entity='+encodeURIComponent(r.id));
   by('kos-connected-research').hidden=research.children.length===0;
+  const examples=by('kos-impact-events'),lens=c.impactLens;
+  if(lens?.status==='PLANNING_SCENARIO'){
+    for(const event of (lens.relevantDisruptions||[]).slice(0,5)){
+      const li=document.createElement('li');
+      const strong=document.createElement('strong');strong.textContent=String(event.title||'');
+      li.append(strong,document.createTextNode(' — '+String(event.mechanism||'')));
+      examples.append(li);
+    }
+  }
+  by('kos-impact-lens').hidden=examples.children.length===0;
  }
  function renderPaper(result){
   const p=result.paper;if(!p)return;
