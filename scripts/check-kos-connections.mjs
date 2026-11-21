@@ -9,6 +9,20 @@ const read=p=>readFileSync(root+p,'utf8');
 const families=JSON.parse(read('data/qp-subject-families-2026-11-21.json'));
 const index=JSON.parse(read('data/qp-kos-resource-links-2026-11-21.json'));
 const js=read('data/qp-resource-registry.js');
+const depthSpec=JSON.parse(read('data/qp-kos-depth-profiles-2026-11-21.json'));
+const css=read('public-experience.css');
+assert.equal(depthSpec.schema,'qp-kos-proportional-context-v1');
+assert.equal(depthSpec.research.entityDimensions.length,13);
+for(const swatch of ['--qp3-purple','#deaff8','#ffd39e','#a7ece0','#bfe2a4'])
+ assert(css.includes(swatch),'Missing logo palette swatch '+swatch);
+assert(css.includes('QP LOGO-PALETTE V1'),'Logo-inspired high contrast theme missing');
+const home=read('index.html'),areas=read('areas.html');
+const tiles=['authority','future','money','water','infrastructure','homes','people','safety'];
+const homeLinks=[...home.slice(home.indexOf('<div class="qp-entry-grid">')).matchAll(/class="qp-art-card qp-entry-card" href="areas.html#([a-z-]+)"/g)].slice(0,8).map(x=>x[1]);
+const areasLinks=[...areas.slice(areas.indexOf('id="tile-entry"')).matchAll(/class="qp-exp-card" href="#([a-z-]+)"/g)].slice(0,8).map(x=>x[1]);
+assert.deepEqual(homeLinks,tiles,'Home priority tile order');
+assert.deepEqual(areasLinks,tiles,'Explore priority tile order');
+
 const from=js.indexOf('const items=')+12,to=js.indexOf('],scopes=')+1;
 assert(from>=12 && to>from,'Original resource registry shape changed');
 const original=JSON.parse(js.slice(from,to));
@@ -34,6 +48,12 @@ for(const family of families.families){
  assert.equal(f.schema,'qp-kos-resolved-context-v1');
  assert.equal(f.family.id,family.id);
  assert.equal(f.subject,family.title);
+ assert.equal(f.depthPlan.standard,'qp-kos-proportional-context-v1');
+ assert.equal(f.depthPlan.audience,depthSpec.reader.target);
+ assert.equal(f.depthPlan.primaryOutput,depthSpec.reader.defaultProduct);
+ assert.equal(f.depthPlan.contextDimensions.length,13);
+ assert.equal(f.depthPlan.mode,'multi-entity-system');
+
  assert(f.sourceCandidates.length<=45);
  assert(f.resources.every(r=>/^https:\/\//.test(r.url)),'Non-HTTPS resource lead');
  assert(f.sourceCandidates.every(r=>r.sourceStatus!=='independently-verified-for-request'));
@@ -48,6 +68,11 @@ for(const family of families.families){
 }
 assert.equal(families.families.length,25);
 assert.equal(topicCount,77);
+const institutional=await resolveKOS({env,request,idea:'Pueblo County government'});
+assert.equal(institutional.depthPlan.mode,'institutional-full-context');
+assert.equal(institutional.depthPlan.contextDimensions.length,13);
+assert(institutional.depthPlan.presentationRule.includes('never create empty headings'));
+
 assert(withLeads>=20,'Resources not broadly connected');
 const q=new Request('https://qpueblo.pages.dev/api/kos/links?family=agriculture&topic=0');
 const response=await linksGet({request:q,env});
