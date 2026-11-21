@@ -88,7 +88,7 @@ export function createProduction({breakdown,linear},{
       "Source ledger checks are caller declarations pending independent human review"
     ]}));
  }
- for(const x of examples){
+ for(const x of (Array.isArray(examples)?examples:[]).slice(0,24)){
    if(!x||x.visibility!=="PUBLIC"||!plain(x.title)||!plain(x.context)||
     !["REAL_HISTORICAL","REAL_CURRENT"].includes(x.kind))continue;
    const cs=citedClaims(x.claimIds,ci);if(!cs||!permittedText([x.title,x.context]))continue;
@@ -99,11 +99,11 @@ export function createProduction({breakdown,linear},{
     asOf:breakdown.asOf,data:{title:x.title,context:x.context,kind:x.kind},
     claims:x.claimIds,sources:external,limitations:["Illustrative case; verify whether it applies to another subject"]}));
  }
- for(const option of options){
+ for(const option of (Array.isArray(options)?options:[]).slice(0,40)){
    const product=buildOption(option,breakdown,ci);
    if(product)products.push(product);
  }
- for(const s of scenarios){
+ for(const s of (Array.isArray(scenarios)?scenarios:[]).slice(0,20)){
    if(!s||s.visibility!=="PUBLIC"||!plain(s.title)||!plain(s.mechanism)||
     !permittedText([...(s.assumptions||[]),...(s.positiveEffects||[]),...(s.negativeEffects||[]),
        ...(s.risks||[]),...(s.unknowns||[])]))continue;
@@ -117,16 +117,17 @@ export function createProduction({breakdown,linear},{
     limitations:["Not an active hazard notification, verified forecast or authorized action"]}));
  }
  // Learning is only admitted when actual source-grounded educational content exists.
- for(const l of learning){
+ for(const l of (Array.isArray(learning)?learning:[]).slice(0,20)){
    if(!l||l.visibility!=="PUBLIC"||!plain(l.title)||!plain(l.explanation)||l.status!=="REVIEWED_CONTENT")continue;
    const cs=citedClaims(l.claimIds,ci);if(!cs)continue;
    products.push(makeProduct({kind:"LEARNING",subjectId:breakdown.subjectId,asOf:breakdown.asOf,
     data:{title:l.title,explanation:l.explanation,readability:"grade-10",level:l.level||"GENERAL"},
     claims:l.claimIds,sources:unique(cs.flatMap(c=>c.sourceIds))}));
  }
- const sources=unique(products.flatMap(p=>p.provenance.sourceIds)).map(id=>si.get(id))
+ const selected=products.slice(0,40);
+ const sources=unique(selected.flatMap(p=>p.provenance.sourceIds)).map(id=>si.get(id))
   .filter(Boolean).map(s=>({id:s.id,title:s.title,publisher:s.publisher,url:s.url,checkedAt:s.checkedAt}));
- const claimIds=unique(products.flatMap(p=>p.provenance.supportingClaimIds));
+ const claimIds=unique(selected.flatMap(p=>p.provenance.supportingClaimIds));
  // An inquiry is a routing option, NOT an open invitation to paste private data.
  const privateReferral=privateBuildRequest===true?{
    type:"PRIVATE_BUILD_REFERRAL",available:"NOT_CONNECTED",
@@ -137,7 +138,7 @@ export function createProduction({breakdown,linear},{
   schema:"qp.kos.public-output.v1",subjectId:breakdown.subjectId,asOf:breakdown.asOf,
   status:"PROVISIONAL_READ_ONLY",publicPublished:false,
   summary:"Source-linked draft materials only; independent review required.",
-  products,provenance:{
+  products:selected,provenance:{
     sourceRecords:sources,claimIds,reviewState:"HUMAN_APPROVAL_REQUIRED",
     sourceCheckBoundary:"SOURCE_LEDGER_DECLARED_NOT_INDEPENDENTLY_RECHECKED",
     identityVersion:"qp.clean.identity.v1",
