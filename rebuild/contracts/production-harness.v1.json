@@ -29,6 +29,11 @@
       "allowAction": false
     },
     {
+      "id": "human-context",
+      "contract": "Answer documented concerns and misunderstandings with source-weighted facts, material uncertainty, rights and real options; no inferred beliefs or false balance",
+      "allowAction": false
+    },
+    {
       "id": "rx",
       "contract": "rights, conflicts, benefits, downsides, risks, needs, gaps, responsible parties and legal options",
       "allowAction": false
@@ -87,6 +92,9 @@
     "No blank output tiles or product classes",
     "No model receives permission to publish or access restricted Q internals",
     "Accessibility and plain-language acceptance are independently reviewed",
-    "Exact approved artifact is verified after deployment"
+    "Exact approved artifact is verified after deployment",
+    "Public concerns and fears are never inferred from a person's private profile or merely because a question was asked",
+    "Where views conflict, sources are weighted by strength and scope; unsupported alternatives are not presented as equally true",
+    "Every concern explainer includes supported facts, meaningful uncertainty, real-world implications, claim/source provenance and provisional review state"
   ]
 }
