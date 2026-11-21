@@ -1,0 +1,222 @@
+{
+  "schema": "qp.kos.fixture.v1",
+  "description": "FICTIONAL source-ledger test case. NOT an account of a real Pueblo event.",
+  "subjectId": "qp:subject:water",
+  "asOf": "2026-11-21",
+  "nodes": [
+    {
+      "id": "qp:subject:water",
+      "label": "Fictional water example",
+      "kind": "subject",
+      "visibility": "PUBLIC",
+      "planes": [
+        "physical",
+        "economic"
+      ]
+    },
+    {
+      "id": "qp:entity:demo-utility",
+      "label": "Example Utility",
+      "kind": "entity",
+      "visibility": "PUBLIC",
+      "planes": [
+        "physical",
+        "economic"
+      ]
+    },
+    {
+      "id": "qp:asset:demo-pump",
+      "label": "Example Pump",
+      "kind": "asset",
+      "visibility": "PUBLIC",
+      "planes": [
+        "physical"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "qp:source:demo-one",
+      "title": "Fictional inspected budget note",
+      "publisher": "Synthetic test",
+      "url": "https://example.org/demo-one",
+      "checkedAt": "2026-11-20",
+      "evidenceReview": "SOURCE_CHECKED",
+      "visibility": "PUBLIC"
+    },
+    {
+      "id": "qp:source:demo-two",
+      "title": "Fictional pump inspection note",
+      "publisher": "Synthetic test",
+      "url": "https://example.org/demo-two",
+      "checkedAt": "2026-11-20",
+      "evidenceReview": "SOURCE_CHECKED",
+      "visibility": "PUBLIC"
+    }
+  ],
+  "claims": [
+    {
+      "id": "qp:claim:demo-early",
+      "nodeIds": [
+        "qp:subject:water",
+        "qp:entity:demo-utility"
+      ],
+      "text": "In this invented case, the utility approved an inspection budget for its imaginary pumps.",
+      "eventDate": "2025-01-01",
+      "state": "VERIFIED_HISTORICAL",
+      "planes": [
+        "economic"
+      ],
+      "sourceIds": [
+        "qp:source:demo-one"
+      ],
+      "visibility": "PUBLIC"
+    },
+    {
+      "id": "qp:claim:demo-later",
+      "nodeIds": [
+        "qp:asset:demo-pump",
+        "qp:subject:water"
+      ],
+      "text": "In this fictional exercise, the next inspection reported that the pump needed maintenance.",
+      "eventDate": "2026-11-01",
+      "state": "VERIFIED_CURRENT",
+      "validUntil": "2026-12-21",
+      "planes": [
+        "physical"
+      ],
+      "sourceIds": [
+        "qp:source:demo-two"
+      ],
+      "visibility": "PUBLIC"
+    },
+    {
+      "id": "qp:claim:demo-stale",
+      "nodeIds": [
+        "qp:subject:water"
+      ],
+      "text": "This stale test claim must never be represented as a current finding without renewed checking.",
+      "eventDate": "2022-01-01",
+      "state": "VERIFIED_CURRENT",
+      "validUntil": "2023-01-01",
+      "planes": [
+        "physical"
+      ],
+      "sourceIds": [
+        "qp:source:demo-one"
+      ],
+      "visibility": "PUBLIC"
+    },
+    {
+      "id": "qp:claim:demo-private",
+      "nodeIds": [
+        "qp:subject:water"
+      ],
+      "text": "This synthetic private record must be excluded from all public context and generated stories.",
+      "state": "VERIFIED_CURRENT",
+      "planes": [
+        "physical"
+      ],
+      "sourceIds": [
+        "qp:source:demo-one"
+      ],
+      "visibility": "PRIVATE"
+    },
+    {
+      "id": "qp:claim:demo-lead",
+      "nodeIds": [
+        "qp:subject:water"
+      ],
+      "text": "The previous archive suggested a possible but unverified concern about the same fictional system.",
+      "state": "CONTEXT_ONLY",
+      "planes": [
+        "physical"
+      ],
+      "sourceIds": [
+        "qp:source:demo-one"
+      ],
+      "visibility": "PUBLIC"
+    }
+  ],
+  "edges": [
+    {
+      "id": "qp:edge:demo-connection",
+      "fromId": "qp:subject:water",
+      "toId": "qp:entity:demo-utility",
+      "relation": "has-operator",
+      "sourceIds": [
+        "qp:source:demo-one"
+      ],
+      "claimIds": [
+        "qp:claim:demo-early"
+      ],
+      "visibility": "PUBLIC",
+      "reviewState": "SOURCE_CHECKED"
+    },
+    {
+      "id": "qp:edge:demo-asset",
+      "fromId": "qp:entity:demo-utility",
+      "toId": "qp:asset:demo-pump",
+      "relation": "operates-asset",
+      "sourceIds": [
+        "qp:source:demo-two"
+      ],
+      "claimIds": [
+        "qp:claim:demo-later"
+      ],
+      "visibility": "PUBLIC",
+      "reviewState": "SOURCE_CHECKED"
+    }
+  ],
+  "memory": [
+    {
+      "id": "qp:memory:demo-warning",
+      "kind": "CORRECTION",
+      "recordedAt": "2026-11-20",
+      "admission": "HUMAN_ADMITTED",
+      "authorizedBy": "fixture-human",
+      "scopeIds": [
+        "qp:subject:water"
+      ],
+      "provenanceIds": [
+        "qp:source:demo-one"
+      ],
+      "visibility": "PUBLIC",
+      "contradictsIds": [
+        "qp:claim:demo-lead"
+      ]
+    },
+    {
+      "id": "qp:memory:demo-private",
+      "kind": "LESSON",
+      "recordedAt": "2026-11-20",
+      "admission": "HUMAN_ADMITTED",
+      "authorizedBy": "fixture-human",
+      "scopeIds": [
+        "qp:subject:water"
+      ],
+      "provenanceIds": [
+        "qp:source:demo-one"
+      ],
+      "visibility": "PRIVATE"
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "local-graph-traverse",
+      "status": "LOCAL_IMPLEMENTED",
+      "authority": "READ_ONLY",
+      "modes": [
+        "BREAKDOWN"
+      ]
+    },
+    {
+      "id": "live-source-retrieval",
+      "status": "NOT_CONNECTED",
+      "authority": "NONE",
+      "modes": [
+        "BREAKDOWN"
+      ]
+    }
+  ]
+}
