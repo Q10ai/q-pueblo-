@@ -28,9 +28,184 @@
   "refreshPolicy": "All reviewed dates are metadata, not a promise of automatic checking. Records must be rechecked against the original before being relabeled current, enacted or resolved. Preserve previous editions and source versions.",
   "items": [
     {
+      "id": "qp:change:county-budget-2027",
+      "slug": "county-budget-2027",
+      "priority": 1,
+      "category": "Government & money",
+      "jurisdiction": "Pueblo County",
+      "state": "PROPOSED_UNDER_REVIEW",
+      "stateLabel": "Preliminary · under review",
+      "asOf": "2026-11-21",
+      "effectiveAt": "2027",
+      "decisionAt": null,
+      "reviewDue": "2026-11-30",
+      "subjects": [
+        "money",
+        "governance",
+        "state-federal",
+        "social",
+        "safety",
+        "infrastructure"
+      ],
+      "title": "Pueblo County's 2027 budget: what will actually be funded?",
+      "lead": "The County has published its preliminary proposed budget and presentations. The next essential comparison is proposal versus adopted allocations and actual expenditures.",
+      "whoDecides": "The Pueblo County Board of County Commissioners decides the county budget through its statutory process; departments and funded entities implement approved allocations.",
+      "timeline": "2027 fiscal planning is underway. The County's official page currently separates preliminary budget materials from its adopted-budget and amendment sections.",
+      "sources": [
+        {
+          "publisher": "Pueblo County",
+          "title": "Official 2027 budget, presentations and calendar",
+          "url": "https://county.pueblo.org/budget-and-finance-department/2027-budget"
+        },
+        {
+          "publisher": "Pueblo County",
+          "title": "County commissioners' priorities and updates",
+          "url": "https://county.pueblo.org/board-county-commissioners-office/what-we-are-working"
+        }
+      ],
+      "story": [
+        "Pueblo County's 2027 budget determines how county government plans to fund departments, employees, services and capital responsibilities. The County has published a preliminary budget, a meeting calendar and financial-outlook materials. A preliminary budget communicates proposed priorities; it is not proof that every line item has been finally adopted, contracted or spent.",
+        "The important research question is not only which totals went up or down. KOS must connect the County's proposed figures with the responsible departments, legal obligations, grants and payments, staffing assumptions, and the services people actually receive. A reduction proposed for one office may have a different effect from the same nominal reduction in another service.",
+        "Residents need to know when commissioners decide, which appropriations are final, how changes compare with previous years and which consequences are directly supported by official records. Neighborhood and household impacts should not be asserted until affected services, locations or populations can be identified from evidence."
+      ],
+      "impact": [
+        [
+          "Federal",
+          "Federal programs and grant conditions may constrain eligible county spending; identify the specific instrument for each claim.",
+          "TO_MONITOR"
+        ],
+        [
+          "Colorado",
+          "State mandates, aid and law may affect County responsibilities; check each relevant budget line.",
+          "TO_MONITOR"
+        ],
+        [
+          "Regional",
+          "County services operate across city, Pueblo West and rural areas; effects differ by program.",
+          "CONFIRMED_SCOPE"
+        ],
+        [
+          "City & county",
+          "Commissioners, finance staff and departments decide, administer and report the budget.",
+          "CONFIRMED_SCOPE"
+        ],
+        [
+          "Neighborhood",
+          "Service changes must be matched to actual facilities, locations and program coverage.",
+          "TO_MONITOR"
+        ],
+        [
+          "Household",
+          "Taxpayer and service-recipient effects require documented rates, service rules or actual program changes.",
+          "TO_MONITOR"
+        ]
+      ],
+      "follow": [
+        "Track preliminary versus adopted budgets and later amendments.",
+        "Crosswalk each material change to department, program, fund, contract and payment stage.",
+        "Monitor countywide services, employee impacts and capital maintenance without inventing neighborhood effects."
+      ],
+      "risks": [
+        "Proposed cuts may be presented as completed layoffs or service closures.",
+        "Totals without fund restrictions may misrepresent resources actually available."
+      ],
+      "provenance": "Official County budget hub; no private budget records accessed.",
+      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID"
+    },
+    {
+      "id": "qp:change:sheriff-staffing-2027",
+      "slug": "sheriff-staffing-2027",
+      "priority": 2,
+      "category": "Public safety and workforce",
+      "jurisdiction": "Pueblo County",
+      "state": "REPORTED_PROPOSED_CUTS",
+      "stateLabel": "Staffing reductions under consideration",
+      "asOf": "2026-11-21",
+      "effectiveAt": "2027",
+      "decisionAt": null,
+      "reviewDue": "2026-12-05",
+      "subjects": [
+        "safety",
+        "money",
+        "governance",
+        "economy",
+        "law"
+      ],
+      "title": "Sheriff's Office staffing: what could change in 2027?",
+      "lead": "The Sheriff's Office has warned employees about possible layoffs amid the County's budget shortfall. Reporting and the sheriff's message distinguish potential reductions from finalized personnel actions.",
+      "whoDecides": "County commissioners control adopted appropriations; the independently elected sheriff manages staffing and operations within applicable legal and labor requirements. The incoming sheriff's transition may affect decisions.",
+      "timeline": "A November 18, 2026 news report reproduces Sheriff Lucero's warning and describes county requests for budget reductions. Decisions for 2027 remain under consideration.",
+      "sources": [
+        {
+          "publisher": "KRDO13",
+          "title": "November 18 reporting with sheriff's message and official/union responses",
+          "url": "https://krdo.com/news/2026/11/18/pueblo-sheriff-warns-layoffs/"
+        },
+        {
+          "publisher": "Pueblo County",
+          "title": "County 2027 preliminary budget and budget calendar",
+          "url": "https://county.pueblo.org/budget-and-finance-department/2027-budget"
+        },
+        {
+          "publisher": "Pueblo County",
+          "title": "Board of County Commissioners: statutory budgeting responsibility",
+          "url": "https://county.pueblo.org/board-county-commissioners/board-county-commissioners"
+        }
+      ],
+      "story": [
+        "Pueblo County is preparing a difficult 2027 budget. On November 18, KRDO reported that Sheriff Dave Lucero had warned Sheriff's Office employees about possible layoffs. His message said decisions about numbers and types of positions were still being evaluated. Labor representatives challenged the proposed reductions, while county commissioners explained why they believed cost controls were necessary.",
+        "The question is not just how much a proposed budget line changes. Sheriff's Office services include patrol, investigations and detention responsibilities, and positions may require specialized training. A reduction in spending does not automatically prove a reduction in public safety; demonstrating effects would require the adopted budget, the staffing plan, actual service data and lawful employment decisions.",
+        "The Sheriff's Office also faces a leadership transition. KOS should follow the incoming administration's decisions, exact adopted appropriations, the distinction between vacant positions and employees being laid off, labor/contract rights and any measured changes to staffing or service delivery. Possible payroll concerns or future response impacts are not confirmed outcomes."
+      ],
+      "impact": [
+        [
+          "Federal",
+          "Federal labor and funding conditions may apply to particular positions or programs, if identified.",
+          "TO_MONITOR"
+        ],
+        [
+          "Colorado",
+          "State duties, jail standards and legal employment requirements continue regardless of local funding choices.",
+          "CONFIRMED_SCOPE"
+        ],
+        [
+          "Regional",
+          "Patrol and detention functions affect unincorporated county communities and wider criminal-justice partners.",
+          "CONFIRMED_SCOPE"
+        ],
+        [
+          "City & county",
+          "Commissioners set appropriations; Sheriff's Office leadership evaluates lawful staffing and service plans.",
+          "CONFIRMED_SCOPE"
+        ],
+        [
+          "Neighborhood",
+          "Changes in patrol availability or response require actual operational and geographic measurements.",
+          "TO_MONITOR"
+        ],
+        [
+          "Household",
+          "Employee livelihoods and public service accessibility may be affected if reductions occur, but decisions remain pending.",
+          "PROPOSAL"
+        ]
+      ],
+      "follow": [
+        "Verify adopted Sheriff and Detention appropriations against the County's final budget.",
+        "Track documented staffing actions, union responses, due process and leadership transition.",
+        "Measure actual service and safety effects with comparable data rather than projected claims."
+      ],
+      "risks": [
+        "Potential layoffs can be inaccurately reported as already finalized.",
+        "Budget targets, department reductions and actual eliminated positions are different measures.",
+        "An institution's budget dispute must not become a presumption of misconduct."
+      ],
+      "provenance": "Dated journalistic reporting reproducing a sheriff email and statements, cross-referenced with County official budget and authority materials. No personnel files accessed.",
+      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID"
+    },
+    {
       "id": "qp:change:medicaid-2027",
       "slug": "medicaid-2027",
-      "priority": 1,
+      "priority": 3,
       "category": "Health & benefits",
       "jurisdiction": "Federal → Colorado",
       "state": "ENACTED_UPCOMING",
@@ -113,169 +288,8 @@
         "People may mistake a statewide headline for a personal loss of coverage.",
         "Incorrect explanations about exemptions could cause unnecessary alarm."
       ],
-      "provenance": "Original state-program guidance, not an individual eligibility determination."
-    },
-    {
-      "id": "qp:change:county-budget-2027",
-      "slug": "county-budget-2027",
-      "priority": 2,
-      "category": "Government & money",
-      "jurisdiction": "Pueblo County",
-      "state": "PROPOSED_UNDER_REVIEW",
-      "stateLabel": "Preliminary · under review",
-      "asOf": "2026-11-21",
-      "effectiveAt": "2027",
-      "decisionAt": null,
-      "reviewDue": "2026-11-30",
-      "subjects": [
-        "money",
-        "governance",
-        "state-federal",
-        "social",
-        "safety",
-        "infrastructure"
-      ],
-      "title": "Pueblo County's 2027 budget: what will actually be funded?",
-      "lead": "The County has published its preliminary proposed budget and presentations. The next essential comparison is proposal versus adopted allocations and actual expenditures.",
-      "whoDecides": "The Pueblo County Board of County Commissioners decides the county budget through its statutory process; departments and funded entities implement approved allocations.",
-      "timeline": "2027 fiscal planning is underway. The County's official page currently separates preliminary budget materials from its adopted-budget and amendment sections.",
-      "sources": [
-        {
-          "publisher": "Pueblo County",
-          "title": "Official 2027 budget, presentations and calendar",
-          "url": "https://county.pueblo.org/budget-and-finance-department/2027-budget"
-        },
-        {
-          "publisher": "Pueblo County",
-          "title": "County commissioners' priorities and updates",
-          "url": "https://county.pueblo.org/board-county-commissioners-office/what-we-are-working"
-        }
-      ],
-      "story": [
-        "Pueblo County's 2027 budget determines how county government plans to fund departments, employees, services and capital responsibilities. The County has published a preliminary budget, a meeting calendar and financial-outlook materials. A preliminary budget communicates proposed priorities; it is not proof that every line item has been finally adopted, contracted or spent.",
-        "The important research question is not only which totals went up or down. KOS must connect the County's proposed figures with the responsible departments, legal obligations, grants and payments, staffing assumptions, and the services people actually receive. A reduction proposed for one office may have a different effect from the same nominal reduction in another service.",
-        "Residents need to know when commissioners decide, which appropriations are final, how changes compare with previous years and which consequences are directly supported by official records. Neighborhood and household impacts should not be asserted until affected services, locations or populations can be identified from evidence."
-      ],
-      "impact": [
-        [
-          "Federal",
-          "Federal programs and grant conditions may constrain eligible county spending; identify the specific instrument for each claim.",
-          "TO_MONITOR"
-        ],
-        [
-          "Colorado",
-          "State mandates, aid and law may affect County responsibilities; check each relevant budget line.",
-          "TO_MONITOR"
-        ],
-        [
-          "Regional",
-          "County services operate across city, Pueblo West and rural areas; effects differ by program.",
-          "CONFIRMED_SCOPE"
-        ],
-        [
-          "City & county",
-          "Commissioners, finance staff and departments decide, administer and report the budget.",
-          "CONFIRMED_SCOPE"
-        ],
-        [
-          "Neighborhood",
-          "Service changes must be matched to actual facilities, locations and program coverage.",
-          "TO_MONITOR"
-        ],
-        [
-          "Household",
-          "Taxpayer and service-recipient effects require documented rates, service rules or actual program changes.",
-          "TO_MONITOR"
-        ]
-      ],
-      "follow": [
-        "Track preliminary versus adopted budgets and later amendments.",
-        "Crosswalk each material change to department, program, fund, contract and payment stage.",
-        "Monitor countywide services, employee impacts and capital maintenance without inventing neighborhood effects."
-      ],
-      "risks": [
-        "Proposed cuts may be presented as completed layoffs or service closures.",
-        "Totals without fund restrictions may misrepresent resources actually available."
-      ],
-      "provenance": "Official County budget hub; no private budget records accessed."
-    },
-    {
-      "id": "qp:change:city-budget-2027",
-      "slug": "city-budget-2027",
-      "priority": 3,
-      "category": "Government & money",
-      "jurisdiction": "City of Pueblo",
-      "state": "PROPOSED_UNDER_REVIEW",
-      "stateLabel": "Proposed · under review",
-      "asOf": "2026-11-21",
-      "effectiveAt": "2027",
-      "decisionAt": null,
-      "reviewDue": "2026-11-30",
-      "subjects": [
-        "money",
-        "governance",
-        "infrastructure",
-        "housing",
-        "social"
-      ],
-      "title": "Pueblo City's 2027 budget: services, staffing and projects",
-      "lead": "The City provides a proposed 2027 budget through its Finance Department. Residents need a clear account of what is planned, approved and eventually delivered.",
-      "whoDecides": "City Council is responsible for adopting appropriations under the applicable municipal process; City departments administer approved programs.",
-      "timeline": "2027 budget development and review; use official City Council and Finance records to establish adoption and amendments.",
-      "sources": [
-        {
-          "publisher": "City of Pueblo",
-          "title": "Finance Department and 2027 proposed budget link",
-          "url": "https://www.pueblo.us/92/Finance"
-        }
-      ],
-      "story": [
-        "The City of Pueblo's 2027 proposed budget describes how municipal resources may be allocated across services, departments and projects. The City's Finance Department links to the proposal and financial records. Proposals should be compared with final council action and subsequent spending, not treated as completed outcomes.",
-        "Residents often experience the budget through specific services—roads, utilities, parks, public facilities and community programs—rather than through the total amount. KOS should connect relevant budget decisions to who manages the work, which neighborhoods are served, contractual commitments and maintenance over time.",
-        "At the review date, the official Finance page identifies the proposal but does not by itself establish that every proposed item has been adopted or delivered. We will not infer neighborhood-level reductions or rate changes without matching evidence."
-      ],
-      "impact": [
-        [
-          "Federal",
-          "Identify federal grants or mandates tied to a specific City program before asserting effects.",
-          "TO_MONITOR"
-        ],
-        [
-          "Colorado",
-          "Identify state aid and compliance duties for affected programs.",
-          "TO_MONITOR"
-        ],
-        [
-          "Regional",
-          "City decisions may interact with county, utility and regional plans; identify documented agreements.",
-          "TO_MONITOR"
-        ],
-        [
-          "City & county",
-          "City Council adopts, and City staff implement, authorized municipal allocations.",
-          "CONFIRMED_SCOPE"
-        ],
-        [
-          "Neighborhood",
-          "Projects and service sites require maps and actual budget references to identify local effects.",
-          "TO_MONITOR"
-        ],
-        [
-          "Household",
-          "Resident bills, service access and property implications are issue-specific; no single household outcome can be inferred.",
-          "TO_MONITOR"
-        ]
-      ],
-      "follow": [
-        "Track official Council action on the proposed budget.",
-        "Separate appropriations, contracts, paid invoices and completed work.",
-        "Compare city and county decisions where they share services or financing."
-      ],
-      "risks": [
-        "A project included in a budget may never be completed.",
-        "Citywide totals can hide which services are geographically or legally restricted."
-      ],
-      "provenance": "Official City Finance Department source, budget status subject to further checking."
+      "provenance": "Original state-program guidance, not an individual eligibility determination.",
+      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID"
     },
     {
       "id": "qp:change:energy-rate-2027",
@@ -358,12 +372,92 @@
         "Proposed average bill figures can be mistaken for approved individual bills.",
         "Conflicting expected decision dates require explicit reconciliation."
       ],
-      "provenance": "Utility applicant explanation and City-posted PUC notice, with proposal status retained."
+      "provenance": "Utility applicant explanation and City-posted PUC notice, with proposal status retained.",
+      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID"
+    },
+    {
+      "id": "qp:change:city-budget-2027",
+      "slug": "city-budget-2027",
+      "priority": 5,
+      "category": "Government & money",
+      "jurisdiction": "City of Pueblo",
+      "state": "PROPOSED_UNDER_REVIEW",
+      "stateLabel": "Proposed · under review",
+      "asOf": "2026-11-21",
+      "effectiveAt": "2027",
+      "decisionAt": null,
+      "reviewDue": "2026-11-30",
+      "subjects": [
+        "money",
+        "governance",
+        "infrastructure",
+        "housing",
+        "social"
+      ],
+      "title": "Pueblo City's 2027 budget: services, staffing and projects",
+      "lead": "The City provides a proposed 2027 budget through its Finance Department. Residents need a clear account of what is planned, approved and eventually delivered.",
+      "whoDecides": "City Council is responsible for adopting appropriations under the applicable municipal process; City departments administer approved programs.",
+      "timeline": "2027 budget development and review; use official City Council and Finance records to establish adoption and amendments.",
+      "sources": [
+        {
+          "publisher": "City of Pueblo",
+          "title": "Finance Department and 2027 proposed budget link",
+          "url": "https://www.pueblo.us/92/Finance"
+        }
+      ],
+      "story": [
+        "The City of Pueblo's 2027 proposed budget describes how municipal resources may be allocated across services, departments and projects. The City's Finance Department links to the proposal and financial records. Proposals should be compared with final council action and subsequent spending, not treated as completed outcomes.",
+        "Residents often experience the budget through specific services—roads, utilities, parks, public facilities and community programs—rather than through the total amount. KOS should connect relevant budget decisions to who manages the work, which neighborhoods are served, contractual commitments and maintenance over time.",
+        "At the review date, the official Finance page identifies the proposal but does not by itself establish that every proposed item has been adopted or delivered. We will not infer neighborhood-level reductions or rate changes without matching evidence."
+      ],
+      "impact": [
+        [
+          "Federal",
+          "Identify federal grants or mandates tied to a specific City program before asserting effects.",
+          "TO_MONITOR"
+        ],
+        [
+          "Colorado",
+          "Identify state aid and compliance duties for affected programs.",
+          "TO_MONITOR"
+        ],
+        [
+          "Regional",
+          "City decisions may interact with county, utility and regional plans; identify documented agreements.",
+          "TO_MONITOR"
+        ],
+        [
+          "City & county",
+          "City Council adopts, and City staff implement, authorized municipal allocations.",
+          "CONFIRMED_SCOPE"
+        ],
+        [
+          "Neighborhood",
+          "Projects and service sites require maps and actual budget references to identify local effects.",
+          "TO_MONITOR"
+        ],
+        [
+          "Household",
+          "Resident bills, service access and property implications are issue-specific; no single household outcome can be inferred.",
+          "TO_MONITOR"
+        ]
+      ],
+      "follow": [
+        "Track official Council action on the proposed budget.",
+        "Separate appropriations, contracts, paid invoices and completed work.",
+        "Compare city and county decisions where they share services or financing."
+      ],
+      "risks": [
+        "A project included in a budget may never be completed.",
+        "Citywide totals can hide which services are geographically or legally restricted."
+      ],
+      "provenance": "Official City Finance Department source, budget status subject to further checking.",
+      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID"
     },
     {
       "id": "qp:change:csac-2027",
       "slug": "csac-2027",
-      "priority": 5,
+      "priority": 6,
       "category": "Community services",
       "jurisdiction": "City of Pueblo / Pueblo County",
       "state": "ANNOUNCED_DISPUTED_PROCESS",
@@ -442,12 +536,99 @@
         "Presenting applications as awards may mislead providers and residents.",
         "A one-sided institutional account cannot resolve an active dispute."
       ],
-      "provenance": "City official releases; County perspective and final awards need independent reconciliation."
+      "provenance": "City official releases; County perspective and final awards need independent reconciliation.",
+      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID"
+    },
+    {
+      "id": "qp:change:pueblo-west-infrastructure-2027",
+      "slug": "pueblo-west-infrastructure-2027",
+      "priority": 7,
+      "category": "Water, roads and local finance",
+      "jurisdiction": "Pueblo West Metropolitan District",
+      "state": "MULTIPLE_PROJECT_STATES",
+      "stateLabel": "Projects approved · budget/rates under review",
+      "asOf": "2026-11-21",
+      "effectiveAt": "2027",
+      "decisionAt": null,
+      "reviewDue": "2026-12-15",
+      "subjects": [
+        "water",
+        "infrastructure",
+        "money",
+        "governance",
+        "housing",
+        "energy"
+      ],
+      "title": "Pueblo West's 2027 water, wastewater and road decisions",
+      "lead": "The District approved specific infrastructure steps while still considering its proposed 2027 budget, funding alternatives, wastewater rate scenarios and road financing.",
+      "whoDecides": "The Pueblo West Metropolitan District Board makes district decisions; some road funding choices involve Pueblo County and other statutory or voter authorities.",
+      "timeline": "The District's October 2 recap summarizes September 2026 Board actions, then schedules additional budget and financing discussions. Verify later formal actions before describing them as adopted.",
+      "sources": [
+        {
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "September 2026 District Board business summary",
+          "url": "https://www.pueblowestmetro.us/Blog.aspx?IID=14"
+        },
+        {
+          "publisher": "Pueblo West Metropolitan District",
+          "title": "District homepage and current meetings",
+          "url": "https://www.pueblowestmetro.us/"
+        }
+      ],
+      "story": [
+        "Pueblo West faces several interconnected decisions about services residents rely on every day. In its September 2026 Board recap, the Metropolitan District reported action on a water storage expansion and wastewater facility design work. These are distinct from later construction completion and measured improvements in service.",
+        "District staff also presented a long-range financial view of water and wastewater infrastructure needs, while the Board asked for more information about financing alternatives, debt and potential wastewater rate scenarios. The same update discussed a preliminary 2027 District budget and continuing road-funding questions. The Board stated that no wastewater rate change was approved in that discussion.",
+        "For residents, the practical question is how planned infrastructure, district finances and household bills may interact over time. KOS must trace each proposed project to its responsible authority, funding stage, construction and maintenance risks, reliable service outcomes, and any adopted rates or agreements—without combining separate District, County and voter decisions into a single claim."
+      ],
+      "impact": [
+        [
+          "Federal",
+          "Some district infrastructure funds may have federal conditions; tie each claim to an actual grant or contract.",
+          "TO_MONITOR"
+        ],
+        [
+          "Colorado",
+          "State water, wastewater and public-finance regulation governs relevant aspects of operations.",
+          "CONFIRMED_SCOPE"
+        ],
+        [
+          "Regional",
+          "District supply and road systems connect residents and employers to wider Pueblo County infrastructure.",
+          "CONFIRMED_SCOPE"
+        ],
+        [
+          "City & county",
+          "District Board and County road agreements have separate authority and financing paths.",
+          "CONFIRMED_SCOPE"
+        ],
+        [
+          "Neighborhood",
+          "Project-specific service areas and road segments require District maps and design records.",
+          "TO_MONITOR"
+        ],
+        [
+          "Household",
+          "Any future rate, debt or service change depends on actual approved decisions and customer class.",
+          "TO_MONITOR"
+        ]
+      ],
+      "follow": [
+        "Check the final adopted 2027 District budget and later board votes.",
+        "Distinguish approved water-storage contracts from future projects and completed assets.",
+        "Trace wastewater funding scenarios and road intergovernmental agreements before estimating household effects."
+      ],
+      "risks": [
+        "Long-range need estimates are not approved spending or immediate household bills.",
+        "Approval of design work is not proof that a facility is completed.",
+        "A proposed financing or road agreement may change before final authorization."
+      ],
+      "provenance": "October 2 official Pueblo West District summary of September 2026 Board actions; future budget/rate status must be refreshed.",
+      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID"
     },
     {
       "id": "qp:change:ag-overtime-2027",
       "slug": "ag-overtime-2027",
-      "priority": 6,
+      "priority": 8,
       "category": "Agriculture & work",
       "jurisdiction": "Colorado statewide / Pueblo region",
       "state": "ENACTED_UPCOMING",
@@ -520,7 +701,29 @@
         "The 56-hour threshold does not apply to every farm worker without exception.",
         "Claims that food prices will change are predictions unless supported by real evidence."
       ],
-      "provenance": "Enacted Colorado General Assembly bill summary, not individualized labor advice."
+      "provenance": "Enacted Colorado General Assembly bill summary, not individualized labor advice.",
+      "identityClass": "EDITORIAL_WATCH_KEY_NOT_CANONICAL_ISSUE_ID"
     }
-  ]
+  ],
+  "featuredCount": 8,
+  "featuredIssueIds": [
+    "qp:change:county-budget-2027",
+    "qp:change:sheriff-staffing-2027",
+    "qp:change:medicaid-2027",
+    "qp:change:energy-rate-2027",
+    "qp:change:city-budget-2027",
+    "qp:change:csac-2027",
+    "qp:change:pueblo-west-infrastructure-2027",
+    "qp:change:ag-overtime-2027"
+  ],
+  "featureDesign": {
+    "alwaysFeature": 8,
+    "notMoreThan": 8,
+    "relatedViaSubjectIds": true,
+    "product": "Context first, links to original sources and connected subjects",
+    "leap": "LEAP is a KOS-wide evidence-based next-step lens; each issue has context-specific options, triggers, positive/negative effects, risks, needs and monitoring.",
+    "showStateSeparately": true,
+    "neverInventCurrentStatus": true,
+    "updatePolicy": "Source/review dates must be rechecked before newer status; no automatic publish."
+  }
 }
