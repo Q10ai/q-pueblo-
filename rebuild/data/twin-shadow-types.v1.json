@@ -1,0 +1,279 @@
+{
+  "schema": "qp.kos.twin-shadow-types.v1",
+  "asOf": "2026-11-21",
+  "phase": "CONTROLLED_NONOPERATIONAL_REFERENCE",
+  "purpose": "Distinct real-world twin and shadow families connect to Q Pueblo subjects as bounded contextual and learning inputs, not as autonomous authorities or an assertion that a live digital twin exists.",
+  "twinTypes": [
+    {
+      "key": "infrastructure",
+      "title": "Physical infrastructure",
+      "description": "Assets, capacity, failures, repairs and lifecycle",
+      "planes": [
+        "physical",
+        "economic",
+        "temporal"
+      ],
+      "requiresRealData": true,
+      "publicEligibility": "AGGREGATE_OR_PUBLIC_SYSTEM_ONLY"
+    },
+    {
+      "key": "water-energy",
+      "title": "Water and energy networks",
+      "description": "Reservoir, supply, grid, fuel and dependency behavior",
+      "planes": [
+        "physical",
+        "information-provenance",
+        "temporal"
+      ],
+      "requiresRealData": true,
+      "publicEligibility": "AGGREGATE_OR_PUBLIC_SYSTEM_ONLY"
+    },
+    {
+      "key": "operations",
+      "title": "Services and operations",
+      "description": "Process steps, workforce capacity and service continuity",
+      "planes": [
+        "economic",
+        "social-cultural",
+        "temporal"
+      ],
+      "requiresRealData": true,
+      "publicEligibility": "AGGREGATE_OR_PUBLIC_SYSTEM_ONLY"
+    },
+    {
+      "key": "governance",
+      "title": "Government and institutional authority",
+      "description": "Dated roles, jurisdiction, decision paths and oversight",
+      "planes": [
+        "social-cultural",
+        "information-provenance",
+        "temporal"
+      ],
+      "requiresRealData": true,
+      "publicEligibility": "AGGREGATE_OR_PUBLIC_SYSTEM_ONLY"
+    },
+    {
+      "key": "finance",
+      "title": "Public and regional finance",
+      "description": "Budgets, awards, contracts, payments, outcomes and debt",
+      "planes": [
+        "economic",
+        "temporal"
+      ],
+      "requiresRealData": true,
+      "publicEligibility": "AGGREGATE_OR_PUBLIC_SYSTEM_ONLY"
+    },
+    {
+      "key": "health-population",
+      "title": "Population health and service capacity",
+      "description": "Aggregate care access and public-health system loads, never diagnoses",
+      "planes": [
+        "biological",
+        "social-cultural",
+        "temporal"
+      ],
+      "requiresRealData": true,
+      "publicEligibility": "AGGREGATE_OR_PUBLIC_SYSTEM_ONLY"
+    },
+    {
+      "key": "education",
+      "title": "School and learning systems",
+      "description": "Enrollment, facilities, programs, access and measurable outcomes",
+      "planes": [
+        "social-cultural",
+        "economic",
+        "temporal"
+      ],
+      "requiresRealData": true,
+      "publicEligibility": "AGGREGATE_OR_PUBLIC_SYSTEM_ONLY"
+    },
+    {
+      "key": "housing-community",
+      "title": "Housing and community resources",
+      "description": "Aggregate housing supply, affordability and community service coverage",
+      "planes": [
+        "social-cultural",
+        "economic",
+        "physical"
+      ],
+      "requiresRealData": true,
+      "publicEligibility": "AGGREGATE_OR_PUBLIC_SYSTEM_ONLY"
+    },
+    {
+      "key": "food-agriculture",
+      "title": "Food and agricultural systems",
+      "description": "Crops, irrigation, storage, food supply and producer dependencies",
+      "planes": [
+        "biological",
+        "physical",
+        "economic"
+      ],
+      "requiresRealData": true,
+      "publicEligibility": "AGGREGATE_OR_PUBLIC_SYSTEM_ONLY"
+    },
+    {
+      "key": "environment",
+      "title": "Ecosystems and natural resources",
+      "description": "Water, land, air, habitat, drought, wildfire and restoration",
+      "planes": [
+        "biological",
+        "physical",
+        "temporal"
+      ],
+      "requiresRealData": true,
+      "publicEligibility": "AGGREGATE_OR_PUBLIC_SYSTEM_ONLY"
+    },
+    {
+      "key": "transport",
+      "title": "Mobility and logistics",
+      "description": "Roads, bridges, freight, rail, airport, transit and access",
+      "planes": [
+        "physical",
+        "economic"
+      ],
+      "requiresRealData": true,
+      "publicEligibility": "AGGREGATE_OR_PUBLIC_SYSTEM_ONLY"
+    },
+    {
+      "key": "digital-cyber",
+      "title": "Digital systems and cyber resilience",
+      "description": "Networks, service dependencies, integrity and safe failure",
+      "planes": [
+        "synthetic",
+        "security-adversarial",
+        "information-provenance"
+      ],
+      "requiresRealData": true,
+      "publicEligibility": "AGGREGATE_OR_PUBLIC_SYSTEM_ONLY"
+    },
+    {
+      "key": "economy-workforce",
+      "title": "Jobs and supply chains",
+      "description": "Regional employment, employers, labor and essential inputs",
+      "planes": [
+        "economic",
+        "social-cultural",
+        "temporal"
+      ],
+      "requiresRealData": true,
+      "publicEligibility": "AGGREGATE_OR_PUBLIC_SYSTEM_ONLY"
+    },
+    {
+      "key": "history-futures",
+      "title": "Historical and future systems",
+      "description": "Observed past states, scenario branches and uncertain future alternatives",
+      "planes": [
+        "temporal",
+        "possibility"
+      ],
+      "requiresRealData": true,
+      "publicEligibility": "AGGREGATE_OR_PUBLIC_SYSTEM_ONLY"
+    }
+  ],
+  "shadowTypes": [
+    {
+      "key": "observation",
+      "title": "Observation shadow",
+      "description": "Read-only view of publicly sourced conditions, not direct control",
+      "publicEligible": true,
+      "authority": "READ_ONLY_AND_NON_EXECUTING"
+    },
+    {
+      "key": "baseline-comparator",
+      "title": "Baseline and comparator shadow",
+      "description": "Compare before/after records, institutional alternatives or human-reviewed baselines",
+      "publicEligible": true,
+      "authority": "READ_ONLY_AND_NON_EXECUTING"
+    },
+    {
+      "key": "counterfactual",
+      "title": "Counterfactual shadow",
+      "description": "What-if comparison using explicit assumptions, not an observed outcome",
+      "publicEligible": true,
+      "authority": "READ_ONLY_AND_NON_EXECUTING"
+    },
+    {
+      "key": "risk-failure",
+      "title": "Failure and cascading-risk shadow",
+      "description": "Explore SHOCK dependencies and independent backup failures as scenarios",
+      "publicEligible": true,
+      "authority": "READ_ONLY_AND_NON_EXECUTING"
+    },
+    {
+      "key": "cyber-adversarial",
+      "title": "Adversarial testing shadow",
+      "description": "Bounded defensive test results without offensive execution or live intrusion",
+      "publicEligible": true,
+      "authority": "READ_ONLY_AND_NON_EXECUTING"
+    },
+    {
+      "key": "data-quality",
+      "title": "Evidence-quality shadow",
+      "description": "Source ages, contradictions, missing coverage and provenance problems",
+      "publicEligible": true,
+      "authority": "READ_ONLY_AND_NON_EXECUTING"
+    },
+    {
+      "key": "governance-policy",
+      "title": "Policy and authority shadow",
+      "description": "Compare proposed versus effective rules and documented accountable authorities",
+      "publicEligible": true,
+      "authority": "READ_ONLY_AND_NON_EXECUTING"
+    },
+    {
+      "key": "fiscal",
+      "title": "Financial shadow",
+      "description": "Reconcile proposed, awarded, invoiced, paid and delivered spending",
+      "publicEligible": true,
+      "authority": "READ_ONLY_AND_NON_EXECUTING"
+    },
+    {
+      "key": "ecological",
+      "title": "Environmental shadow",
+      "description": "Track source-verified changes in ecological conditions without claiming full causal proof",
+      "publicEligible": true,
+      "authority": "READ_ONLY_AND_NON_EXECUTING"
+    },
+    {
+      "key": "social-aggregate",
+      "title": "Community-impact shadow",
+      "description": "Aggregate service and access outcomes, not profiles of individual residents",
+      "publicEligible": true,
+      "authority": "READ_ONLY_AND_NON_EXECUTING"
+    },
+    {
+      "key": "model-comparator",
+      "title": "External model shadow",
+      "description": "Compare licensed model output with observed records and independent benchmarks",
+      "publicEligible": true,
+      "authority": "READ_ONLY_AND_NON_EXECUTING"
+    },
+    {
+      "key": "historical-version",
+      "title": "Historical-version shadow",
+      "description": "Maintain past snapshots and correction lineage without retroactive erasure",
+      "publicEligible": true,
+      "authority": "READ_ONLY_AND_NON_EXECUTING"
+    },
+    {
+      "key": "human-functional",
+      "title": "Human functional shadow",
+      "description": "Private, consent-bound personal-support concept, never a public person replica",
+      "publicEligible": false,
+      "authority": "READ_ONLY_AND_NON_EXECUTING"
+    }
+  ],
+  "universalGuards": {
+    "individualReplica": false,
+    "publicHumanFunctionalShadow": false,
+    "autonomousAction": false,
+    "autonomousPublishing": false,
+    "modelAgreementIsEvidence": false,
+    "shadowResultIsAnObservedFact": false,
+    "externalModelLicenseRequired": true,
+    "explicitConsentForPrivateData": true,
+    "independentValidationForForecastClaims": true,
+    "learningPromotionRequiresHumanApproval": true,
+    "privacyAndSafetyReview": true
+  }
+}
