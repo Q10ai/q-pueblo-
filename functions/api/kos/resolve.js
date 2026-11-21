@@ -6,7 +6,10 @@ const paths=Object.freeze({
  priority:'data/qp-priority-navigation-2026-11-19.json',
  graph:'data/qp-three-hop-2026-11-13.json',
  living:'data/qp-living-research-discovery-2026-11-19.json',
- reports:'data/qp-current-reports.json'
+ reports:'data/qp-current-reports.json',
+ site:'data/qp-site-inventory.json',
+ historical:'data/q-pueblo-issue-index-2026-11-09.json',
+ identity:'data/qp-issue-identity-crosswalk-2026-11-19.json'
 });
 const load=async(env,request,path)=>{
  if(!env?.ASSETS?.fetch)throw new Error('Static research asset service unavailable');
@@ -25,7 +28,7 @@ const ranked=(arr,term,max)=>arr.map((x,i)=>({
  .slice(0,max).map(({_score,_date,_order,...row})=>row);
 const urlOK=s=>{try{const u=new URL(s);return u.protocol==='https:'&&!u.username&&!u.password&&u.hostname.includes('.')&&u.href.length<1600}catch{return false}};
 export async function resolveKOS({env,request,familyId,topicIndex=null,idea=null}){
- const [families,mapping,priority,graph,living,reports]=await Promise.all(
+ const [families,mapping,priority,graph,living,reports,site,historical,identity]=await Promise.all(
   Object.values(paths).map(path=>load(env,request,path))
  );
  if(families.schema!=='qp-subject-families-v1'||mapping.schema!=='qp-kos-resource-links-v1')throw new Error('KOS registry version mismatch');
@@ -73,6 +76,26 @@ export async function resolveKOS({env,request,familyId,topicIndex=null,idea=null
   rights:r.rights,description:r.description
  })).filter(r=>r.url),matchPhrase,20);
  const editorial=family?(family.links||[]).filter(s=>/^(?:[a-z0-9-]+\/)*[a-z0-9-]+\.html(?:#[a-z0-9-]+)?$/i.test(s)).slice(0,9):[];
+ // Keep the legacy issue index separate; matching titles are not resolved identity proof.
+ const relatedGraphIds=new Set(connectedIssues.map(r=>r.id));
+ const historicalCrosswalk=identity.rows.filter(r=>r.graphId&&relatedGraphIds.has(r.graphId)&&r.historicalId)
+  .slice(0,28).map(r=>({historicalId:r.historicalId,graphId:r.graphId,state:r.state,
+   identityStatus:'candidate-not-verified'}));
+ const histIds=new Set(historicalCrosswalk.map(r=>r.historicalId));
+ const historicalIssues=ranked(historical.issues.filter(r=>histIds.has(r.id)||
+  (!family&&score(r.title,title)>=2)).map(r=>({
+   id:r.id,title:r.title,domain:r.domain,category:r.category,
+   lastReviewed:r.lastReviewed,status:r.status,
+   sourceUrls:(r.availableSourceUrls||[]).filter(urlOK).slice(0,3)
+  })),matchPhrase,16);
+ const editorialRoutes=new Set(editorial.map(r=>r.split('#')[0]));
+ const siteRoutes=ranked(site.rows.filter(r=>r.route!=='404.html' &&
+  (groups.includes(r.group)||editorialRoutes.has(r.route)||
+  (!family&&score(r.title,title)>=2))).map(r=>({
+   route:r.route,title:r.title,group:r.group,
+   canonicalId:r.canonicalId||null,livingId:r.livingId||null,
+   type:'published-route-link-not-evidence'
+  })),matchPhrase,18);
  const sourceCandidates=[];
  const add=(kind,title,url,checkedAt=null,sourceStatus='discovery-lead')=>{
   if(!urlOK(url)||sourceCandidates.some(c=>c.url===url)||sourceCandidates.length>=45)return;
@@ -82,6 +105,7 @@ export async function resolveKOS({env,request,familyId,topicIndex=null,idea=null
  for(const i of connectedIssues)add('issue-public-record',i.title,i.sourceUrl,i.date,'historical-registry-association');
  for(const e of connectedEntities)add('entity-public-record',e.name,e.sourceUrl,null,'entity-identity-not-verified');
  for(const r of resources)add('external-resource',r.title,r.url,r.checked,'catalogued-link-content-not-verified');
+ for(const r of historicalIssues)for(const url of r.sourceUrls)add('historical-issue-source',r.title,url,r.lastReviewed,'historical-index-link-not-rechecked');
  return {
   schema:'qp-kos-resolved-context-v1',subject:title,
   family:family?{id:family.id,title:family.title,coverage:family.coverage}:null,
@@ -90,6 +114,7 @@ export async function resolveKOS({env,request,familyId,topicIndex=null,idea=null
   evidenceBoundary:'Connections are research leads only. Content, timing, attribution, jurisdiction and causal edges must be checked against original records before supporting a claim. No autonomous authority.',
   asOf:{families:families.asOf,mapping:mapping.asOf,living:living.asOf,priority:priority.asOf},
   connectedIssues,connectedEntities,canonical,research,resources,editorial,
+  historicalIssues,historicalCrosswalk,siteRoutes,
   sourceCandidates
  };
 }
