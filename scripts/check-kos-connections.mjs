@@ -89,7 +89,7 @@ assert.equal(cap.publicPublishing,false);
 assert.equal(cap.connectedResearchLinks,true);
 const post=await paperPost({request:new Request('https://qpueblo.pages.dev/api/kos/paper',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({family:'agriculture',topic:0,privacyConsent:true})}),env});
 assert.equal(post.status,503,'No release-gated live research backend must fail closed');
-const page=read('kos.html'),script=read('kos-subject.js'),areas=read('areas.html');
+const page=read('kos.html'),script=read('kos-subject.js');
 assert(page.includes('id="kos-on-demand"')&&page.includes('id="kos-connected-sources"'));
 assert(script.includes('/api/kos/links?')&&script.includes('/api/kos/paper'));
 assert.equal((areas.match(/class="qp-kos-topic"/g)||[]).length,77);
