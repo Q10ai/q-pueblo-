@@ -1,7 +1,7 @@
 // Q Pueblo v2 - deterministic *provisional* production. No model, retrieval,
 // publication, memory admission, or private Q capability is invoked here.
 import {createHash} from "node:crypto";
-const TYPES=new Set(["STORY","REAL_EXAMPLE","RX_OPTION","CONFLICT_PATH","SCENARIO","EVIDENCE_VIEW","LEARNING","ENTITY_VIEW","FINANCE_VIEW","SOURCE_REGISTER","PRIVATE_BUILD_REFERRAL"]);
+const TYPES=new Set(["STORY","REAL_EXAMPLE","RX_OPTION","CONFLICT_PATH","SCENARIO","EVIDENCE_VIEW","LEARNING","ENTITY_VIEW","FINANCE_VIEW","SOURCE_REGISTER","PRIVATE_BUILD_REFERRAL","CONCERN_EXPLAINER"]);
 const STATUSES=new Set(["SUPPORTED_HISTORICAL","SUPPORTED_CURRENT","HYPOTHESIS_NOT_FORECAST","SOURCE_LEAD_NOT_VERIFIED"]);
 const FORBIDDEN=/(?:\bsk-[a-z0-9]{12,}\b|\bbearer\s+[a-z0-9_.-]{12,}\b|\b(?:api[_-]?key|password|secret|access[_-]?token)\s*[:=]\s*["']?\S{5,}|\b\d{3}-\d{2}-\d{4}\b)/i;
 const plain=s=>typeof s==="string"&&s.trim().length>0&&s.length<=5000&&!FORBIDDEN.test(s);
@@ -67,7 +67,7 @@ function buildOption(option,breakdown,ci,{minAttributes=3}={}){
    limitations:["Potential benefits and harms are assessments, not measured outcomes","No autonomous decision or action"]});
 }
 export function createProduction({breakdown,linear},{
- examples=[],options=[],scenarios=[],learning=[],privateBuildRequest=null
+ examples=[],options=[],scenarios=[],learning=[],concerns=[],privateBuildRequest=null
 }={}){
  if(breakdown?.schema!=="qp.kos.breakdown.v1"||linear?.schema!=="qp.kos.linear.v1"||
   breakdown.subjectId!==linear.subjectId||breakdown.asOf!==linear.asOf)
@@ -123,6 +123,59 @@ export function createProduction({breakdown,linear},{
    products.push(makeProduct({kind:"LEARNING",subjectId:breakdown.subjectId,asOf:breakdown.asOf,
     data:{title:l.title,explanation:l.explanation,readability:"grade-10",level:l.level||"GENERAL"},
     claims:l.claimIds,sources:unique(cs.flatMap(c=>c.sourceIds))}));
+ }
+ // Address public concerns without inventing the audience's fears or claiming all
+ // competing assertions have equal evidence. No individual behavioral profiling.
+ for(const concern of (Array.isArray(concerns)?concerns:[]).slice(0,25)){
+   if(!concern||concern.visibility!=="PUBLIC"||
+      concern.disclosure!=="PUBLIC_CONTEXT_ALLOWED"||
+      concern.sensitivity==="PRIVATE"||concern.sensitivity==="RESTRICTED")continue;
+   if(!["PUBLIC_CONCERN","COMMON_MISUNDERSTANDING","DOCUMENTED_DISAGREEMENT"].includes(concern.kind))continue;
+   if(!["EVIDENCE_SUPPORTED","EVIDENCE_MIXED","NOT_YET_ESTABLISHED"].includes(concern.evidenceStatus))continue;
+   const required=[concern.question,concern.explanation,concern.whatIsKnown,
+      concern.whatIsUncertain,concern.whatItMeans];
+   if(!permittedText(required))continue;
+   const cs=citedClaims(concern.groundingClaimIds,ci);
+   if(!cs)continue;
+   const perspectives=Array.isArray(concern.documentedPerspectives)?
+      concern.documentedPerspectives.slice(0,6):[];
+   // Perspectives must be explicit public institutional/role contexts, not
+   // private psychographic guesses or inferred personal emotions.
+   const perspectivesValid=perspectives.every(p=>
+     p&&p.visibility==="PUBLIC"&&p.disclosure==="PUBLIC_CONTEXT_ALLOWED"&&
+     permittedText([p.context,p.explanation])&&
+     citedClaims(p.claimIds,ci));
+   if(!perspectivesValid)continue;
+   const paths=Array.isArray(concern.practicalPaths)?concern.practicalPaths:[];
+   if(paths.length>8||!permittedText(paths))continue;
+   const allClaims=unique([...concern.groundingClaimIds,
+      ...perspectives.flatMap(p=>p.claimIds)]);
+   const references=unique(allClaims.flatMap(id=>ci.get(id).sourceIds));
+   const product=makeProduct({
+    kind:"CONCERN_EXPLAINER",
+    subjectId:breakdown.subjectId,asOf:breakdown.asOf,
+    data:{
+     question:concern.question,kind:concern.kind,
+     evidenceStatus:concern.evidenceStatus,
+     explanation:concern.explanation,
+     whatIsKnown:concern.whatIsKnown,
+     whatIsUncertain:concern.whatIsUncertain,
+     whatItMeans:concern.whatItMeans,
+     practicalPaths:paths,
+     documentedPerspectives:perspectives.map(p=>({
+      context:p.context,explanation:p.explanation,claimIds:unique(p.claimIds)
+     })),
+     interpretationRule:"Take concerns seriously without assuming motives, fears, beliefs or identities. Distinguish evidence from values and unresolved facts. Do not manufacture balance when support is unequal.",
+     readerLevel:"approximately grade 10"
+    },
+    claims:allClaims,sources:references,
+    limitations:[
+      "Public concern context is not evidence about an individual person's emotions or beliefs",
+      "Evidence-status labels are provisional until independently corroborated",
+      "No personal profiling, coercive persuasion or automatic publication"
+    ]
+   });
+   products.push(product);
  }
  const selected=products.slice(0,40);
  const sources=unique(selected.flatMap(p=>p.provenance.sourceIds)).map(id=>si.get(id))
