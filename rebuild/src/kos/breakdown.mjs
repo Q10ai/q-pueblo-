@@ -33,7 +33,9 @@ export function createBreakdown(packet,{maxNodes=80,maxHops=3,maxClaims=100,maxE
    isCurrent(c,date)&&(!c.eventDate||day(c.eventDate))&&
    (!c.planes||membership(c).length===c.planes.length)
  );
- const claimMap=byId(claims);
+ // A discovered lead can be useful for recall without authorizing a graph edge.
+ const substantiated=claims.filter(c=>states.has(c.state));
+ const claimMap=byId(substantiated);
  const edges=packet.edges.filter(e=>safeId(e.id)&&
     nodes.has(e.fromId)&&nodes.has(e.toId)&&
     e.reviewState==="SOURCE_CHECKED"&&publicRecord(e)&&
@@ -63,8 +65,13 @@ export function createBreakdown(packet,{maxNodes=80,maxHops=3,maxClaims=100,maxE
    }
    frontier=next;
  }
- const selectedClaims=claims.filter(c=>c.nodeIds.some(id=>seen.has(id)))
+ const selectedClaims=substantiated.filter(c=>c.nodeIds.some(id=>seen.has(id)))
     .slice(0,max(maxClaims,100,220));
+ const unresolved=claims.filter(c=>c.state==="CONTESTED"&&c.nodeIds.some(id=>seen.has(id)))
+    .slice(0,20).map(c=>({id:c.id,sourceIds:unique(c.sourceIds),text:c.text}));
+ const leads=claims.filter(c=>!states.has(c.state)&&c.state!=="CONTESTED"&&c.nodeIds.some(id=>seen.has(id)))
+    .slice(0,20).map(c=>({id:c.id,state:c.state,sourceIds:unique(c.sourceIds),
+     boundary:"CONTEXT_ONLY_NOT_PROOF"}));
  const cited=new Set([
   ...selectedClaims.flatMap(c=>c.sourceIds),
   ...[...pickedEdges.values()].flatMap(e=>e.sourceIds)
@@ -97,6 +104,7 @@ export function createBreakdown(packet,{maxNodes=80,maxHops=3,maxClaims=100,maxE
    nodeIds:unique(c.nodeIds),planes:membership(c),
    sourceIds:unique(c.sourceIds)
   })),
+  unresolved,leads,
   sources:[...cited].map(id=>sources.get(id)).filter(Boolean).map(s=>({
     id:s.id,title:s.title,url:s.url,checkedAt:s.checkedAt,
     publisher:s.publisher||null
