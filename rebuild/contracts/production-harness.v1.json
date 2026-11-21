@@ -29,6 +29,11 @@
       "allowAction": false
     },
     {
+      "id": "expert-panel",
+      "contract": "Select topic-relevant specialist disciplines and independent skeptic/alternative/consequence review; source-link every finding, label simulated AI vs verified human expertise, record independence groups, reconcile against original evidence, never vote on truth or disclose private Q methods",
+      "allowAction": false
+    },
+    {
       "id": "linear",
       "contract": "chronological source-linked paragraphs; grade-10 editorial review needed",
       "allowAction": false
@@ -107,6 +112,10 @@
     "Where views conflict, sources are weighted by strength and scope; unsupported alternatives are not presented as equally true",
     "Every concern explainer includes supported facts, meaningful uncertainty, real-world implications, claim/source provenance and provisional review state",
     "Twins and shadows cannot certify their source inputs, impersonate individuals or control public systems",
-    "Human-admitted source corrections and red-team findings retain history, provenance and review before production changes"
+    "Human-admitted source corrections and red-team findings retain history, provenance and review before production changes",
+    "Expert-panel role planning never claims a real expert or external LLM was consulted without a separate authenticated receipt",
+    "Correlated agents or shared LLM providers do not count as independent corroboration; source-check against original evidence",
+    "External AI review requires explicit provider-specific authorization and a minimum public-data-only disclosure capsule",
+    "Panel disagreements and novel links create human-reviewed source leads or correction candidates, not automatic fact promotion"
   ]
 }
