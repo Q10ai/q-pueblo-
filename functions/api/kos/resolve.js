@@ -17,7 +17,12 @@ const load=async(env,request,path)=>{
 };
 const tokens=s=>String(s||'').toLowerCase().normalize('NFKD').replace(/[^\p{L}\p{N}]+/gu,' ').split(' ').filter(w=>w.length>3&&!['pueblo','county','colorado','issues','history','people','regional','public','about','their','from','with','what','local','city','current'].includes(w));
 const score=(s,term)=>{const x=String(s||'').toLowerCase();return tokens(term).reduce((n,t)=>n+(x.includes(t)?1:0),0);};
-const ranked=(arr,term,max)=>!term?arr.slice(0,max):arr.map((x,i)=>({...x,_score:score([x.title,x.name,x.keywords,x.category,x.description].join(' '),term),_order:i})).sort((a,b)=>b._score-a._score||a._order-b._order).slice(0,max).map(({_score,_order,...row})=>row);
+const sourceDay=x=>{const v=x.sourceChecked||x.checked||x.date||'';return /^\d{4}-\d{2}-\d{2}$/.test(v)?v:'';};
+const ranked=(arr,term,max)=>arr.map((x,i)=>({
+ ...x,_score:term?score([x.title,x.name,x.keywords,x.category,x.description].join(' '),term):0,
+ _date:sourceDay(x),_order:i
+})).sort((a,b)=>b._score-a._score||b._date.localeCompare(a._date)||a._order-b._order)
+ .slice(0,max).map(({_score,_date,_order,...row})=>row);
 const urlOK=s=>{try{const u=new URL(s);return u.protocol==='https:'&&!u.username&&!u.password&&u.hostname.includes('.')&&u.href.length<1600}catch{return false}};
 export async function resolveKOS({env,request,familyId,topicIndex=null,idea=null}){
  const [families,mapping,priority,graph,living,reports]=await Promise.all(
