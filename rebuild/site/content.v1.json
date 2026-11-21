@@ -658,21 +658,57 @@
   "sourceHighlights": [
     {
       "slug": "money",
-      "title": "Pueblo County's 2027 preliminary budget",
-      "summary": "The County has published its preliminary 2027 budget and supporting presentation materials. A proposal should not be confused with adopted spending.",
-      "publisher": "Pueblo County",
+      "title": "What is changing in Pueblo County's 2027 budget?",
+      "summary": "The County has published preliminary budget materials. This is the starting point for checking proposed spending and the services potentially affected—not evidence that each item has been approved or paid.",
+      "publisher": "Pueblo County Budget and Finance",
       "url": "https://county.pueblo.org/budget-and-finance-department/2027-budget",
       "checked": "2026-11-21",
-      "kind": "Official budget documents"
+      "kind": "Official preliminary budget"
     },
     {
-      "slug": "environment",
-      "title": "Pueblo Mountain Park recovery",
-      "summary": "The City describes fire damage, the park closure and its work documenting losses and possible recovery funding. Follow the City's page for new official information.",
-      "publisher": "City of Pueblo",
-      "url": "https://www.pueblo.us/3153/Pueblo-Mountain-Park",
+      "slug": "energy",
+      "title": "What could the proposed Black Hills electric rate increase mean?",
+      "summary": "Black Hills Energy is asking Colorado regulators for additional annual revenue. Explore the filed proposal, customer impacts, utility explanations and the review process; requested rates are not approved rates.",
+      "publisher": "Black Hills Energy, regulatory filing information",
+      "url": "https://www.blackhillsenergy.com/billing-and-payments/rates-and-regulatory-information/2026-colorado-electric-regulatory-rate-review",
       "checked": "2026-11-21",
-      "kind": "Official project update"
+      "kind": "Utility rate proposal, under review"
+    },
+    {
+      "slug": "governance",
+      "title": "City and County differences over nonprofit funding",
+      "summary": "The City reports a disagreement over the 2027 Community Services Advisory Commission funding partnership. Its announcement identifies potential consequences for local nonprofits; other institutional perspectives and final decisions still need checking.",
+      "publisher": "City of Pueblo official statement",
+      "url": "https://www.pueblo.us/m/newsflash/Home/Detail/5027",
+      "checked": "2026-11-21",
+      "kind": "Official City statement; competing claims require reconciliation"
+    },
+    {
+      "slug": "governance",
+      "title": "What is proposed for Pueblo's 2027 city budget?",
+      "summary": "The City's Finance Department links to its 2027 proposed budget. The proposal, later council decisions and actual expenditures should be examined separately.",
+      "publisher": "City of Pueblo Finance Department",
+      "url": "https://www.pueblo.us/92/Finance",
+      "checked": "2026-11-21",
+      "kind": "Official budget resources"
     }
-  ]
+  ],
+  "priorityMethod": {
+    "schema": "qp.v2.editorial-priority.v1",
+    "factors": [
+      "direct household or service impact",
+      "confirmed upcoming decision or deadline",
+      "breadth of residents or organizations affected",
+      "public funds and financial materiality",
+      "credible safety or continuity risk",
+      "strength and freshness of original-source evidence"
+    ],
+    "excludeAsAutomaticLead": [
+      "routine department announcements",
+      "historic-only items without current consequence",
+      "repeated agency publicity",
+      "uncorroborated social media claims"
+    ],
+    "rule": "The design team manually reviews feature order. KOS can propose importance but cannot rank sensationalism above factual impact or automatically publish alerts."
+  }
 }
