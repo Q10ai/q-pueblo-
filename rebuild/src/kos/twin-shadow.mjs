@@ -52,6 +52,14 @@ function modelList(candidates,kind,breakdown,limits){
       (allNodes.get(id).kind||"").toLowerCase()))){
       rejected.private++;continue;
    }
+   // A model cannot borrow an unrelated claim or cited source to seem verified.
+   const claimMap=new Map(breakdown.claims.map(c=>[c.id,c]));
+   const claimRefs=r.claimIds.map(id=>claimMap.get(id));
+   const supportedSources=new Set(claimRefs.flatMap(c=>c.sourceIds));
+   if(!r.sourceIds.every(id=>supportedSources.has(id))||
+      !claimRefs.some(c=>c.nodeIds.some(id=>r.nodeIds.includes(id)))){
+      rejected.unverified++;continue;
+   }
    if(r.planes!=null && (!Array.isArray(r.planes)||!r.planes.every(p=>PLANES.includes(p)))){
       rejected.unsafe++;continue;
    }
