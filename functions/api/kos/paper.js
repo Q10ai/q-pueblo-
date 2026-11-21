@@ -6,7 +6,7 @@ const json=(body,status=200)=>new Response(JSON.stringify(body),{
   status,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}
 });
 const active=env=>env?.QP_KOS_ON_DEMAND==='enabled' &&
-  env?.QP_KOS_RATE_GUARD==='enforced' &&
+  env?.QP_KOS_RATE_GUARD==='enforced' && typeof env?.QP_KOS_RATE_LIMITER?.limit==='function' &&
   typeof env?.QP_KOS_SERVICE_TOKEN==='string' && env.QP_KOS_SERVICE_TOKEN.length>=20 &&
   typeof env?.QP_KOS_SERVICE_URL==='string' && /^https:\/\//.test(env.QP_KOS_SERVICE_URL) &&
   !/^https:\/\/(?:localhost|127\.|10\.|192\.168\.|172\.(?:1[6-9]|2\d|3[01])\.)/i.test(env.QP_KOS_SERVICE_URL);
@@ -60,6 +60,11 @@ export async function onRequestPost({request,env}){
  const requested=typeof idea==='string' && idea.trim().length>=3 && idea.trim().length<=240;
  if(!scoped&&!requested)return json({error:'Specify a valid subject'},400);
  if(data?.privacyConsent!==true)return json({error:'Consent is required for sending a request to the governed research service'},400);
+ // Enforce a real provider-side rate limit; a configuration flag alone is not a limit.
+ const key=request.headers.get('CF-Connecting-IP');
+ if(!key||key.length>70)return json({error:'Rate-limit identity unavailable'},503);
+ try{const result=await env.QP_KOS_RATE_LIMITER.limit({key});if(result?.success!==true)return json({error:'Request rate limit reached'},429);}
+ catch{return json({error:'Rate limit is unavailable; generation is paused'},503);}
  let connections;
  try{
   connections=await resolveKOS({env,request,familyId:scoped?family:null,topicIndex:scoped?topic??null:null,idea:requested?idea.trim():null});
