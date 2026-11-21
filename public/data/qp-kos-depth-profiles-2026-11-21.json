@@ -1,0 +1,123 @@
+{
+  "schema": "qp-kos-proportional-context-v1",
+  "asOf": "2026-11-21",
+  "purpose": "Maintain a complete, accurate, plain-language story for a high-school reader while supporting unlimited evidence-backed institutional research depth without forced section counts.",
+  "reader": {
+    "target": "approximately grade 10; preserve original technical meaning",
+    "defaultProduct": "one cohesive full-context paper, not a directory or research to-do list",
+    "lead": "State the supported answer and why it matters in the first paragraphs.",
+    "style": [
+      "Plain English, define unfamiliar terms when first used.",
+      "Use connected paragraphs and informative headings only when they help.",
+      "Prefer explainable descriptions over unexplained scores, graphs or acronym lists.",
+      "Do not rely on clickable appendices to convey essential facts.",
+      "When uncertain, explain what is known and why the evidence is limited without flooding the reader with missing-data prompts.",
+      "No invented quotes, source details, funding amounts, incidents or causal relationships.",
+      "Present public sources and corrections access without inserting internal logs."
+    ],
+    "accessibility": [
+      "mobile-first responsive flow",
+      "high-contrast logo-derived theme",
+      "keyboard and screen reader access",
+      "clear 44px or larger interaction targets where practical",
+      "readable font size and line spacing",
+      "plain link names rather than generic tool jargon"
+    ]
+  },
+  "research": {
+    "depthPolicy": "Scale to verified complexity, impact and source support, not the page count or number of template headings.",
+    "primaryModes": [
+      {
+        "id": "everyday-subject",
+        "description": "Complete subject narrative, relevant local facts, source-backed relationships, outcomes and practical choices."
+      },
+      {
+        "id": "multi-entity-system",
+        "description": "Crosswalk several organizations or jurisdictions with source-backed authority, roles, money, assets, people and dependencies."
+      },
+      {
+        "id": "institutional-full-context",
+        "description": "For complex public and private institutions, retain a source-traceable institutional evidence layer alongside the readable main story."
+      }
+    ],
+    "enhancedEntityTriggers": [
+      "Verified parent/subsidiary or inter-agency hierarchy across levels",
+      "Multiple dated jurisdictions, regulators or legal authorities",
+      "Material multi-year funding, debt, contract and payment flows",
+      "Critical infrastructure, workforce, service or supply-chain responsibilities",
+      "Substantive public safety, environmental, civil rights or Child Zero consequences",
+      "Documented disputes, investigations, audit findings or conflicting source records",
+      "Long historical changes and future dependency risks"
+    ],
+    "entityDimensions": [
+      {
+        "id": "identity",
+        "description": "Exact legal name, aliases, jurisdiction, business form, public/private/regulated status, history and identity confidence."
+      },
+      {
+        "id": "authority",
+        "description": "Statutory/contractual authority, board/commission, leadership appointments/terms, who can decide and who can overturn."
+      },
+      {
+        "id": "three-tier-network",
+        "description": "Major sector → institution → departments, service lines, roles, programs, contractors and source-proven connected organizations; resolve aliases before joining."
+      },
+      {
+        "id": "operations",
+        "description": "What it actually does, who it serves, service area, sites and major physical/digital assets, capacity and measurable performance."
+      },
+      {
+        "id": "workers-and-supply",
+        "description": "Staffing, work conditions, bargaining if relevant, critical vendors, suppliers and dependent organizations."
+      },
+      {
+        "id": "funding",
+        "description": "Funds by source, annual and multi-year budgets, proposed/awarded/obligated/contracted/invoiced/paid/achieved distinctions, debt, rates, grants and long-life liabilities."
+      },
+      {
+        "id": "projects-and-assets",
+        "description": "Programs, service delivery, capital projects, materials, maintenance, procurement, lifecycle, standards and measurable outcomes."
+      },
+      {
+        "id": "law-and-regulation",
+        "description": "Applicable rules and deadlines, regulators, permits, litigation, due process, civil rights and oversight."
+      },
+      {
+        "id": "people-and-community",
+        "description": "People and places served, affected groups, accessible services, children and other vulnerable populations, distribution of benefit and burden."
+      },
+      {
+        "id": "history-and-trends",
+        "description": "LL historical transitions, predecessor entities, source versions, comparison years and decisions that shaped the present."
+      },
+      {
+        "id": "evidence-and-conflicts",
+        "description": "Original evidence ledger, source dates, counterclaims, independent corroboration, audit/court findings and remaining material uncertainties."
+      },
+      {
+        "id": "impact-and-shock",
+        "description": "Cross-system disruptions, single points of failure, backup independence, human consequences and service recovery."
+      },
+      {
+        "id": "options-and-future",
+        "description": "Feasible RX remedies, accountable owners, costed alternatives, T2Y/EE gates, Twin assumptions and LEAP pathways."
+      }
+    ],
+    "sourceRules": [
+      "No original-source verification means no assertion of current authority, spending or confirmed consequences.",
+      "Source depth must expand for major claims, rather than filling 40 arbitrary headings.",
+      "Do not infer parent/child institutions from similar names or historical registry candidates.",
+      "Public entity data only; never reveal private personnel, children, patients or congregation membership.",
+      "Share the complete available explanation, not a research request list.",
+      "LL, Quilt, TTL, Child Zero, T2Y, EE, SHOCK/BACKUP and Twin are analytical lenses, not mandatory headings.",
+      "An entity may have no data for a dimension; omit irrelevant/unverified sections from the public paper and keep a short material limitation in narrative.",
+      "Any public release remains subject to accountable human approval."
+    ]
+  },
+  "presentation": {
+    "main": "A single rich narrative with paragraph-linked evidence citations; primary content always visible.",
+    "additional": "Expanders only for genuinely supported detailed financials, dated entity crosswalks, source tables, source contradictions and technical methods.",
+    "onDemand": "If governed source verification is enabled, KOS retrieves/reconciles sources before returning a provisional paper; no unattended publication.",
+    "currentStatus": "Design contract and lookup integration only; does not represent an active research AI service."
+  }
+}
