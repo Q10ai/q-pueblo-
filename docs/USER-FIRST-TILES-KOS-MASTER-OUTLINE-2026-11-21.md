@@ -129,6 +129,45 @@ A lawful strike, budget proposal, routine infrastructure upgrade or public debat
 
 **Public UI:** put only a short optional “What could disrupt this?” expandable section under the subject story. No automatic threat badges, invented hazard severity scores or endless disaster panels.
 
+## Logo-derived visual language and high-school reading standard
+
+The actual `public/assets/pueblo-mark.webp` was visually reviewed. It shows **purple and orchid sky, indigo, sunset-orange and pink, bright Pueblo gold, turquoise and chile green**. Use this specific artwork and color story, not a standard blue-only AI gradient. These values are visually matched design choices, not a claim of pixel-perfect measured palette extraction.
+
+| Color role | Approximate logo-informed choice | Use |
+|---|---|---|
+| Night indigo | `#171238` | Background and contrast base |
+| Pueblo purple | `#70357F` | Tile and header accent, selected themes |
+| Orchid | `#DEAFF8` | Accessible purple highlight on dark surfaces |
+| Sunset orange | `#FFD39E` | Energy, historical and money accent |
+| Warm gold | `#F5C875` | Titles, outlines and core navigation |
+| Turquoise | `#A7ECE0` | Readable source links and actions |
+| Chile green | `#BFE2A4` | Environmental and regional distinction |
+
+The verified logo-informed palette is implemented in `public/public-experience.css` as `QP LOGO-PALETTE V1`. Purple should be visible at first glance. Preserve the original illustrated Pueblo sprite tiles without image regeneration or generic stock artwork.
+
+**Reader-first high-school usability:**
+- A student can understand where to click and what a subject means within the first screen.
+- KOS provides the real answer and continuous historical/current/contextual explanation, not instructions to research it themselves.
+- Ordinary language, short clear paragraphs, headings only when useful; explain legal, financial, engineering or scientific terms on first use.
+- Legible contrast, line length, spacing, 44px interaction targets where feasible, mobile accessibility and keyboard focus. The browser audit remains a release gate.
+- Useful actions use real-world terms such as **Check a claim**, **Find help**, **Follow the money**, **Compare options**, not EE, RX or SUPRA labels as front doors.
+
+### Proportional KOS research depth for larger entities
+
+Full context does **not** require a rigid number of sections. The depth follows the real-world size, complexity, consequences and quality of available original records. The shared machine-readable research contract is `public/data/qp-kos-depth-profiles-2026-11-21.json`.
+
+For an ordinary neighborhood activity, a concise but complete contextual story may be enough. For a county government, large hospital, utility, regulated company, public authority or large industrial entity, the research must examine source-supported:
+1. legal identity, predecessors and aliases, true jurisdiction and legal authority;
+2. major organization → institution → departments, officials, decision roles, contracts and documented partnerships;
+3. operations, service areas, physical/digital assets, workers and suppliers;
+4. multi-year revenue, grants, financial authority, budgets, debt, wages, procurement, invoices, actual payments and real delivered outcomes;
+5. policy, regulations, courts, oversight, audits, procurement and public accountability;
+6. neighborhood and human effects, child protection, distribution of benefits and burdens;
+7. original dated chronology, historical LL, contradictory accounts and source provenance;
+8. regional three-hop crosswalks, source-backed causal consequences, SHOCK/BACKUP, effective alternatives and LEAP.
+
+These evidence dimensions are **internal coverage checks, never public placeholder sections**. Put the full understandable answer first. Technical financial tables, original source ledgers and organization graphs are optional deeper views when they contain actual substantiated information. Missing or irrelevant dimensions must not produce empty public panels or invented facts. Large-entity depth is not a claim that the public beta currently produces these papers on demand; governed source retrieval and an approved publication process remain separate.
+
 ## Embedded action placements (replaces the separate tools front door)
 
 Never show a resident EE/T2Y formulas, route cost weights, a developer prompt generator, a bare empty crosswalk or an initial 40-perspective form. Present natural reader labels in context:
