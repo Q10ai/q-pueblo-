@@ -116,7 +116,7 @@ export async function resolveKOS({env,request,familyId,topicIndex=null,idea=null
  const normalized=s=>String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
  const exactEntity=connectedEntities.find(e=>normalized(e.name)===normalized(title));
  const focusIsEntity=!!exactEntity || (!family &&
-  /\\b(department|school district|university|hospital|medical center|energy company|utility|county government|city government|authority|commission|corporation|inc|llc)\\b/i.test(title));
+  /\b(department|school district|university|hospital|medical center|energy company|utility|county government|city government|authority|commission|corporation|inc|llc)\b/i.test(title));
  const researchMode=focusIsEntity?'institutional-full-context':
   (family&&topicIndex===null?'multi-entity-system':'everyday-subject');
  const depthPlan={
