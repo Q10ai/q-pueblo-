@@ -1,0 +1,202 @@
+{
+  "schema": "qp.clean.legacy-aliases.v1",
+  "date": "2026-11-21",
+  "status": "discovery-only",
+  "source": "Explicitly scoped previous Q Pueblo topic categories; not a verified mapping of every historical article, issue, source or entity.",
+  "defaultUnmapped": "unresolved_manual_review",
+  "archiveLinkPolicy": "Maintain original legacy route/URL; no automatic rewriting of archived source content or canonical publication until page-level equivalence and source checks.",
+  "records": [
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "government",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:governance",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "state-federal",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:state-federal",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "legal",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:law",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "law-enforcement",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:safety",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "finance",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:money",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "economy",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:economy",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "agriculture",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:agriculture",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "housing",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:housing",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "places",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:places",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "social",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:social",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "healthcare",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:healthcare",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "education",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:education",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "culture",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:culture",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "recreation",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:recreation",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "environment",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:environment",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "infrastructure",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:infrastructure",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "media",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:media",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "ai-era",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:ai",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "ai-governance",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:ai-rights",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "solutions",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:solutions",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "history",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:history",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "help",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:help",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "q-kos",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:kos",
+      "notes": "Used to locate old material; individual source claims, entity relations and funds require separate verification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "utilities",
+      "resolution": "ambiguous_topic_scope",
+      "candidateTargets": [
+        "qp:subject:water",
+        "qp:subject:energy"
+      ],
+      "notes": "Do not auto-map a combined utilities record to Water or Energy; require exact content classification."
+    },
+    {
+      "legacyNamespace": "qp-2026-subtopic",
+      "legacyId": "utilities:topic:0",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:energy",
+      "notes": "Historical 2026 subtopic 0 was electric/gas utilities; verify before using individual sources."
+    },
+    {
+      "legacyNamespace": "qp-2026-subtopic",
+      "legacyId": "utilities:topic:1",
+      "resolution": "editorial_scope_equivalent_not_evidence",
+      "targetId": "qp:subject:water",
+      "notes": "Historical 2026 subtopic 1 concerned water; verify documents and claim scope."
+    },
+    {
+      "legacyNamespace": "qp-2026-subject-family",
+      "legacyId": "shock",
+      "resolution": "moved_to_sitewide_method",
+      "targetId": "qp:method:shock",
+      "notes": "SHOCK is applied across all relevant KOS papers; it is not a law-enforcement subject."
+    }
+  ]
+}
